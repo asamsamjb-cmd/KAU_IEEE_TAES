@@ -1,0 +1,40 @@
+{
+  "identity": "66be2001eaa909a164f6c9b3f72580ea5f4f63a500cc5af61c8bdf51f309640a",
+  "files": {
+    "training_reports.json": "fa7b040d6284145fc4518b744668240f6f76bd2925c8939704be34bf253c8499",
+    "seed_20260610/training_complete.json": "811994e313f90bae268717392be4009e81764609c5050ba0d0b5e25764af62e5",
+    "seed_20260610/model.pt": "b455b912813be9e8eaa6a0b1bd1d621162c6cf4783dfae6e4f79a747f33cbb71",
+    "seed_20260610/val_predictions.npz": "d8a4bbfef9cf5d30ed34da6da0a634d493c0efb91d2f464c1f273a23f3b22b15",
+    "seed_20260610/training_report.json": "35be59bb02923609ed0586483aef98b7a75745a24ee81f912c7d0b883366ca45",
+    "seed_20260610/history.csv": "92748584e11d3f6d7d55f2422392d01c8cbbb9dda14c4cb285a150551bdc2538",
+    "seed_20260611/training_complete.json": "fc71e39db940e22b69123df4044a1dd79b614bfdc561d4067f26879c15b107be",
+    "seed_20260611/model.pt": "238a7bea2b2c4ae2bb24e455cca51e979ff3c7d35d1c97972f2cd1673440f798",
+    "seed_20260611/val_predictions.npz": "64dc277d5a421604bc88ee79a442d4209d62485bd10b0a2fb6982d55f7d9f3b5",
+    "seed_20260611/training_report.json": "ef75b7664c10d72c2bfd1b260a5347ad34e7c836f0c04ebb2bf15d468ee61849",
+    "seed_20260611/history.csv": "1a3cc51f7898b6b85bbbaea2d93d59c4cd69247bc8a796ff3ab8ab702563851b",
+    "seed_20260612/training_complete.json": "3e63fb338b46ad02a271d397ecc8556bfcfd36bca8eb1419ac4a5119242ec81b",
+    "seed_20260612/model.pt": "2e76932b1d13e6299afdff0f86b225e98705e1c622dd45a33be499ee42d4b0e8",
+    "seed_20260612/val_predictions.npz": "4d5ecb93fe7bd809afeb01ba2a7d328a7078203e10c5e58de2799b4002956285",
+    "seed_20260612/training_report.json": "05ddf3510d308476bd348fea86dbfc8dd0310c403f5b296eaeb4576a96a0465f",
+    "seed_20260612/history.csv": "81bd69d04bf6243ac2b91a2aa183d9cc5625190113fc5f6db01a552a468a8c7a",
+    "seed_20260613/training_complete.json": "8786bf937e2335d85ecb6a6168f1595fee547877af2e25f58b9c3ce13556b5bd",
+    "seed_20260613/model.pt": "cb42a40563809ceaf663e34aa50c573063decff17d6cb1d8bb37cfecb1ad8c53",
+    "seed_20260613/val_predictions.npz": "8c4df2d51c74ba317aa1df2ab5e1912c3405cc0331350dc56c8070350fb65d28",
+    "seed_20260613/training_report.json": "2d958ce60c26add074d4609c28f7fb9c320e7f7f2ac19f5c21732f31200a5ab1",
+    "seed_20260613/history.csv": "930c216c39c3598d6a40411e52e22f6ac94047df3656db1478627624d7b3075e",
+    "seed_20260614/training_complete.json": "54abd01401d88de0cc5895e3d02e953dd0a6193bf2f17e2a9c6300feffd3d9a4",
+    "seed_20260614/model.pt": "2ad1b04794280ba582687def2c132dd94a30a57f913847a3f82cd6d831a732ab",
+    "seed_20260614/val_predictions.npz": "b32f78d96490d67aaaa64db221035169c13e8b9987af17ac6b09a76a377e4d40",
+    "seed_20260614/training_report.json": "cbf954f1626e6e9ca3020b7a8a8a7fa2cb936f16cb012fb8f2e286335f8dc8da",
+    "seed_20260614/history.csv": "47c2fa4bc957685a04acb35232eaa0884699169f1325612d5392332df3fcc1e7"
+  },
+  "committed_at_utc": "2026-10-09T07:38:48.033614+00:00",
+  "all_fit_seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614
+  ],
+  "test_scoring_started": false
+}

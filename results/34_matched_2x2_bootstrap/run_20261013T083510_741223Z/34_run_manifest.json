@@ -1,0 +1,29 @@
+{
+  "schema": "taes_step34_matched_2x2_bootstrap_v1",
+  "status": "COMPLETE",
+  "started_utc": "2026-10-13T08:35:07.301626+00:00",
+  "finished_utc": "2026-10-13T08:35:10.811317+00:00",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "seeds": [
+    20260610,
+    20260611,
+    20260612
+  ],
+  "models": [
+    "TST_L10",
+    "TST_L20",
+    "MeanMax_MLP_L10",
+    "MeanMax_MLP_L20"
+  ],
+  "population": "matched L20-eligible test cohort, 30,561 endpoints / 751 episodes (Steps 27/29/30)",
+  "statistical_scope": "conditional on fixed encoder, benchmark and head seeds; post-test exploratory extension; CI crossing zero is not evidence of equivalence",
+  "script_sha256": "6589f64b4aad1aa6cc961b6999a94e636b2326cd09fb81e91e96d6ff58b16b85",
+  "artifacts": {
+    "34_bootstrap_distribution.npz": "63649f24ca1b73da493d5e357659719f95f50d27ce363a58174fa8ea5ca01bd5",
+    "34_cells.csv": "0e3bc4e80158b17dd24ba29b519cbb5017d8960c7a7b8404e9db7553de06f4aa",
+    "34_contrasts.csv": "6182096a6dff5fe669419d5f0e6c4c917fa0d1a0aee8765e4dc007305b538a05",
+    "34_gate_report.json": "dd5b8093c38752af43e3c464a93146b621d900e4d3e919f84642473c1e8ec006",
+    "34_per_seed_macro_f1.csv": "9f9393d506c0c4ef25df7b64d11ff62350e51e07a304b4234359510e6faae491",
+    "sources.txt": "db8de6b559e945257ae1899bf5bfb0de4408d8b3b9f64e4d1a648ccc204031f9"
+  }
+}

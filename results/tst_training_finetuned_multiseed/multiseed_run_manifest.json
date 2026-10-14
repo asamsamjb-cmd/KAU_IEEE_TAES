@@ -1,0 +1,130 @@
+{
+  "job_id": "a1f4410c7aa2f82da76c4ea0ff0ee55a5c7db4ca2cc0f61bb9e6e36914f81b61",
+  "identity": {
+    "runner_sha256": "4226762fae7e88400b08abd44b8fcd26205de7bbabd557381ae72aa2c95c66df",
+    "train_script": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\11.train_tst_classifier.py",
+    "train_script_sha256": "a2101c08cfecbd6af80975195a1bfde265462c0e7939c15ec06ca8d2e4d3967d",
+    "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed",
+    "seeds": [
+      20260610,
+      20260611,
+      20260612,
+      20260613,
+      20260614,
+      20260615,
+      20260616,
+      20260617,
+      20260618,
+      20260619
+    ],
+    "ordered_lengths": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "python": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\.venv\\Scripts\\python.exe",
+    "missing_aware": false,
+    "main_run": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main"
+  },
+  "runs": [
+    {
+      "seed": 20260610,
+      "status": "reused_main",
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main",
+      "step11_run_id": "9072c471a3088f8247ecfd0fc3389ee1623e3fa45dafec61a77f3c3fa885ff20",
+      "manifest_sha256": "d99c4c424251e0b0dbf062de3e181309b271b4ec64a1e4b118246fe20c62805b"
+    },
+    {
+      "seed": 20260611,
+      "status": "completed",
+      "elapsed_seconds": 928.555228471756,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260611",
+      "step11_run_id": "65105b4d72e2da7feda49f3107701b8ff0ff2128fa391f5be2341fdcc4042e82",
+      "manifest_sha256": "d559f2e7d34b1597f7c05965796f5f0a5bfbdc74f3099618a1e817b7de1dacca"
+    },
+    {
+      "seed": 20260612,
+      "status": "completed",
+      "elapsed_seconds": 688.900824546814,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260612",
+      "step11_run_id": "b798283e3e1079fbe98d7722d9aba6b3f1d7e056ea7b6b18bc491f7828fe30e9",
+      "manifest_sha256": "04331ccd699a7d28681d90e4a283504a55483812292610b7635ccf3e543add13"
+    },
+    {
+      "seed": 20260613,
+      "status": "completed",
+      "elapsed_seconds": 856.1848773956299,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260613",
+      "step11_run_id": "9764fef3c9311c6f7f80a905db43117cd2d54645f4b5e90e84fc1b361ed730a2",
+      "manifest_sha256": "94fae516941cd09d034777a4423af5a78237a19bd54b11d2f1b81168c9dbe8ad"
+    },
+    {
+      "seed": 20260614,
+      "status": "completed",
+      "elapsed_seconds": 891.2945833206177,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260614",
+      "step11_run_id": "09fd7f25005093e5032ef36e1037477838fced95603ba141131e08688ffbe115",
+      "manifest_sha256": "b4d9c34097c26c4d3c0d4c383cddba6d0950bc5beb4b30fd943c95d4684dec67"
+    },
+    {
+      "seed": 20260615,
+      "status": "completed",
+      "elapsed_seconds": 960.9183945655823,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260615",
+      "step11_run_id": "c5f6bf921c68bf5b7d1fa65f7173f63bd282bd4ddd710ef634f4d233025cc29d",
+      "manifest_sha256": "b4908b07f53e624e914970fa4c800cc640865b3538ea454d2003199456807ae7"
+    },
+    {
+      "seed": 20260616,
+      "status": "completed",
+      "elapsed_seconds": 796.111236333847,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260616",
+      "step11_run_id": "900c1d5e46519435183eb918fe83f82f699872c8bb2e7bc6cc5813a6f42d8cd4",
+      "manifest_sha256": "69c40482ca036c771424af71a17c43940463201bea96c4f1c0645dd9756f1448"
+    },
+    {
+      "seed": 20260617,
+      "status": "completed",
+      "elapsed_seconds": 851.5213904380798,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260617",
+      "step11_run_id": "31dd7b533b8ac7f8e51e825678459cef0905263f30024155c31df2d80f5e7a40",
+      "manifest_sha256": "949d544b7931cf0f826eb08819d80e584a9f41a7b448baa44382b0057a94cd88"
+    },
+    {
+      "seed": 20260618,
+      "status": "completed",
+      "elapsed_seconds": 922.9718606472015,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618",
+      "step11_run_id": "cec4b1653dd4a3fd0ce97147061ec9f0a149a59cea1b3a8c39b3a0cd8fd0cf44",
+      "manifest_sha256": "08f2dd509ff60ff85f8ff1c24a3dc0072159fde33889790978346d0c5bba9f25"
+    },
+    {
+      "seed": 20260619,
+      "status": "completed",
+      "elapsed_seconds": 929.8131265640259,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260619",
+      "step11_run_id": "9b75877d4f4e9e64fd8365cb591d153a1eb68ddfcff9c8bc19cd116f3a74dd39",
+      "manifest_sha256": "4ae4723bf74bf8d4a86413af61a2360811483e31afb110825a28ba2527fe5f31"
+    }
+  ],
+  "archived_incomplete": [],
+  "status": "COMPLETE",
+  "last_error": null,
+  "active_seed": null,
+  "artifacts": {
+    "raw_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\multiseed_raw_results.csv",
+    "summary_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\multiseed_summary.csv",
+    "table_tex": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\multiseed_tst_table.tex",
+    "sentence_tex": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\multiseed_tst_sentence.tex",
+    "validation_json": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\multiseed_validation.json"
+  },
+  "artifact_sha256": {
+    "multiseed_raw_results.csv": "713fd3391723113f509d82c703c97f65ea9dad3de7a96cf5d309ff0d9d43969e",
+    "multiseed_summary.csv": "abf1c373200a2ee892144067249d557e101b800bf2dd71385fb5e13eb0059f74",
+    "multiseed_tst_table.tex": "28fd32e3e764acb52e59fb01c0cdee9ce6ff28e91529a6f0de06284f17cdc577",
+    "multiseed_tst_sentence.tex": "c1016bef4af13c06b06dc74ca0136ea36c1eb1eacce58f2b811d6440806a2adb",
+    "multiseed_validation.json": "62c2efa58b23cfc1ca517ca57af3469dfbb8ba329686564a71c5a84c019cb1ab"
+  }
+}

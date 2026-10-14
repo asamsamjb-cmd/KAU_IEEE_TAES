@@ -1,0 +1,13 @@
+﻿model,view,population,endpoint_count,normal_count,normal_non_normal_predictions,replay_count,replay_predicted_as_replay,replay_predicted_as_normal,replay_predicted_as_other_attack
+Rule_L10,observed_partial,primary_middle_command,10,5,0,5,5,0,0
+Rule_L10,observed_partial,secondary_command_controls,20,20,0,0,0,0,0
+Rule_L10,freshness_unk,primary_middle_command,10,5,0,5,0,5,0
+Rule_L10,freshness_unk,secondary_command_controls,20,20,0,0,0,0,0
+TST_L1,observed_partial,primary_middle_command,10,5,0,5,5,0,0
+TST_L1,observed_partial,secondary_command_controls,20,20,0,0,0,0,0
+TST_L1,freshness_unk,primary_middle_command,10,5,0,5,0,5,0
+TST_L1,freshness_unk,secondary_command_controls,20,20,0,0,0,0,0
+TST_L10,observed_partial,primary_middle_command,10,5,5,5,5,0,0
+TST_L10,observed_partial,secondary_command_controls,20,20,20,0,0,0,0
+TST_L10,freshness_unk,primary_middle_command,10,5,5,5,0,0,5
+TST_L10,freshness_unk,secondary_command_controls,20,20,20,0,0,0,0

@@ -1,0 +1,15 @@
+{
+  "record": {
+    "representation": "Semantic22",
+    "split": "val",
+    "encoder_hash": "f2506219dd27b60eddbd032519133b2f4af72e5f1aac0075576a606ed9a74f6d",
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "shape": [
+      37371,
+      880
+    ],
+    "dtype": "float64",
+    "aggregation": "mean_std0_min_max_last"
+  },
+  "file_sha256": "a4b5c6867adb29067b869195d070e5aad2fcdd3f1e773cdece71ae931c4d5928"
+}

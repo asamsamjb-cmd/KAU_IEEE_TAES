@@ -1,0 +1,23 @@
+﻿field,v2_rule
+observation_stage,Retain V1 evidence or UNK; do not impute a normal state
+path_type,Configured logical endpoint roles and representative TC/TLM packet direction
+direction,Configured logical endpoint roles and representative TC/TLM packet direction
+source_role,Configured logical endpoint roles and representative TC/TLM packet direction
+destination_role,Configured logical endpoint roles and representative TC/TLM packet direction
+protocol_context,Retain V1 evidence or UNK; do not impute a normal state
+operational_phase,Retain V1 evidence or UNK; do not impute a normal state
+message_type,Retain TELECOMMAND; set TELEMETRY only for a validated downlink packet
+service_context,Retain TTC_CONTROL for TC; telemetry service remains UNK (HK subtype not certified)
+command_intent,Retain causal V1 TC/event evidence; scoped non-command TLM uses NO_COMMAND or NOT_APPLICABLE
+payload_or_parameter_context,Retain V1 evidence or UNK; do not impute a normal state
+sequence_freshness_status,Retain causal V1 TC/event evidence; scoped non-command TLM uses NO_COMMAND or NOT_APPLICABLE
+control_security_state,Retain causal V1 TC/event evidence; scoped non-command TLM uses NO_COMMAND or NOT_APPLICABLE
+signal_quality_state,Retain V1 evidence or UNK; do not impute a normal state
+tracking_stability,Retain V1 evidence or UNK; do not impute a normal state
+navigation_consistency,Retain V1 evidence or UNK; do not impute a normal state
+timing_consistency,Retain V1 evidence or UNK; do not impute a normal state
+decoder_status,Retain V1 evidence or UNK; do not impute a normal state
+command_execution_result,Retain causal V1 TC/event evidence; scoped non-command TLM uses NO_COMMAND or NOT_APPLICABLE
+retry_timeout_state,Retain V1 evidence or UNK; do not impute a normal state
+session_state,Retain V1 evidence or UNK; do not impute a normal state
+state_transition_consistency,Retain V1 evidence or UNK; do not impute a normal state

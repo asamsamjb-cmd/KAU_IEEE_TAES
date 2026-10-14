@@ -1,0 +1,7 @@
+{
+  "windows": 25,
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "max_abs_difference": 3.2186508178710938e-06,
+  "status": "PASS"
+}

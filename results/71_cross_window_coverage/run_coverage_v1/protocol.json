@@ -1,0 +1,165 @@
+{
+  "version": "shared_nominal_cross_window_coverage_v1",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "script_sha256": "6f38b85520b65e44278a92d3182c7ea5de4283efa36b15d2e5e57c9814ddf524",
+  "source_step62_identity": "2586c25f0b1a16d8fcd50fe025d46396d6a7da322ecba7b119bc401f9c2b3fe8",
+  "input_sha256": {
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1\\run_manifest.json": "fd5bf28b48d0ff129a53fe9d45f2e6b45c2993155eb734ecf4b16cf9fbd61e11",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1\\protocol.json": "d3c2b09ce3f28ffdbb4831f334d78023e2cd41d9b22446a7c7e2c31473c0711f",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\build_manifest.json": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\episode_split_manifest.csv": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1\\endpoint_audit_train.csv": "62c8a122b26c1b28c1c8bc472a08d2d0f6a1fcf06a0db8494ae8ee97c28a34a0",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1\\endpoint_audit_val.csv": "3af2c3ba7ec34366fba863f5dcc6d18b23a7900b64cd964fde6c2339173f5b21",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1\\endpoint_audit_test.csv": "de0821f1c067c3489b16e5a28c77ca35caf345a2e63a09546e2e8c1460d8d29e"
+  },
+  "fields": [
+    "observation_stage",
+    "path_type",
+    "direction",
+    "source_role",
+    "destination_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "service_context",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "labels": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "conditions": [
+    "CurrentOnly",
+    "FixedHistory",
+    "VariableHistory"
+  ],
+  "length": 10,
+  "masked_fields": 8,
+  "fit_seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614
+  ],
+  "mask_banks": [
+    71101,
+    71102,
+    71103
+  ],
+  "training": {
+    "epochs": 30,
+    "batch_endpoints": 1024,
+    "hidden": [
+      128,
+      64
+    ],
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "clip_norm": 5.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0
+  },
+  "vocabulary_sha256": "0a60828e241e043f65023cb2e2564e75f0a167e45e49e22a93e4933c67bdb578",
+  "population": {
+    "train": {
+      "rows": 211006,
+      "episodes": 3511,
+      "endpoints": 179414,
+      "endpoint_episodes": 3510,
+      "class_endpoints": [
+        30210,
+        30152,
+        30383,
+        29841,
+        28919,
+        29909
+      ]
+    },
+    "val": {
+      "rows": 44148,
+      "episodes": 753,
+      "endpoints": 37371,
+      "endpoint_episodes": 753,
+      "class_endpoints": [
+        6261,
+        5922,
+        5908,
+        6025,
+        6673,
+        6582
+      ]
+    },
+    "test": {
+      "rows": 44846,
+      "episodes": 752,
+      "endpoints": 38078,
+      "endpoint_episodes": 752,
+      "class_endpoints": [
+        5762,
+        6465,
+        6176,
+        6725,
+        6758,
+        6192
+      ]
+    }
+  },
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "torch": "2.12.0+cu126",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 167 Stepping 1, GenuineIntel",
+    "threads": 4,
+    "torch_build": "PyTorch built with:\n  - C++ Version: 202002\n  - MSVC 194234444\n  - Intel(R) oneAPI Math Kernel Library Version 2026.0-Product Build 20260401 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.11.2 (Git Hash 03c022d3ffdcee958cfacbe720048e725fdf644c)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX512\n  - CUDA Runtime 12.6\n  - NVCC architecture flags: -gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_61,code=sm_61;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_90,code=sm_90\n  - CuDNN 91.0.2  (built against CUDA 12.9)\n  - Magma 2.5.4\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=7661cd9c6b841b62b7f411aa52ec51f05457263b, CUDA_FLAGS= -DLIBCUDACXX_ENABLE_SIMPLIFIED_COMPLEX_OPERATIONS -Xcompiler /Zc:__cplusplus -Xcompiler /Zc:preprocessor -Xcompiler /w -w -Xcompiler /FS -Xfatbin -compress-all -DONNX_NAMESPACE=onnx_torch --use-local-env -gencode arch=compute_50,code=sm_50 -gencode arch=compute_60,code=sm_60 -gencode arch=compute_61,code=sm_61 -gencode arch=compute_70,code=sm_70 -gencode arch=compute_75,code=sm_75 -gencode arch=compute_80,code=sm_80 -gencode arch=compute_86,code=sm_86 -gencode arch=compute_90,code=sm_90 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --Werror cross-execution-space-call --no-host-device-move-forward --expt-relaxed-constexpr --expt-extended-lambda -Xfatbin -compress-all -Xcompiler=/wd4819,/wd4503,/wd4190,/wd4244,/wd4251,/wd4275,/wd4522 -Wno-deprecated-gpu-targets --expt-extended-lambda -DCUB_WRAPPED_NAMESPACE=at_cuda_detail -DDISABLE_CUSPARSE_DEPRECATED -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__, CUDA_VERSION=12.6, CUDNN_VERSION=9.10.2, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.12.0, USE_CUDA=ON, USE_CUDNN=ON, USE_CUSPARSELT=OFF, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, USE_XCCL=OFF, USE_XPU=OFF, \n",
+    "device": "cpu",
+    "dtype": "float32",
+    "deterministic_algorithms": true
+  },
+  "mask_protocol": "PCG64 uniform eight-of-22 independently per endpoint/lag; Fixed reuses Variable terminal mask. No labels/values/IDs in mask generator.",
+  "train_masks": "Fresh each epoch; RNG seed derive_seed(71,201,epoch); identical across fit seeds. Equal three-view loss per endpoint.",
+  "eval_masks": "Three paired banks; derive_seed(71,101 for val or 102 for test,bank). Same across fit seeds.",
+  "observation_budget": "Both history views retain 14x10 slots; CurrentOnly is one masked record repeated, not independent 140 observations.",
+  "representation": "Train-only field one-hot plus unseen and artificial-mask channels; arithmetic mean over 10 -> shared MLP128/64/6. No normalization fit on val/test.",
+  "checkpoint": "One common checkpoint per fit: max equal-weight mean validation macro-F1 over 3 views x 3 banks; tie lower NLL then earliest epoch.",
+  "primary": "VariableHistory minus FixedHistory six-class macro-F1; one contrast, conditional paired episode CI95",
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 2026100971,
+    "unit": "whole episode within each of six classes",
+    "fit_and_mask_resampling": false
+  },
+  "test_gate": "No test fields encoded, masks/features built, or predictions generated before all five fits frozen; metadata and hashes inspected earlier.",
+  "limitations": [
+    "Same synthetic benchmark already examined; not independent confirmation or external validity.",
+    "Masks intervene on field slots, not a globally consistent sensor-outage trace.",
+    "Equal slots are not equal information. Varying masks changes repetition/coverage and missingness pattern together.",
+    "Shared diagnostic model is not an optimized separate classifier per condition; partial-observation ambiguity remains.",
+    "Episode/scenario labels retained even when observable evidence is absent; no physical-active labels.",
+    "No claim about TST/BERT, individual-field necessity, or semantic-vs-raw superiority."
+  ],
+  "identity": "66be2001eaa909a164f6c9b3f72580ea5f4f63a500cc5af61c8bdf51f309640a"
+}

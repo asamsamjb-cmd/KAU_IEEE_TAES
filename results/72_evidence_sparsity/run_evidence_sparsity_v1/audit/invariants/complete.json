@@ -1,0 +1,19 @@
+{
+  "identity": "ac99fc0e2ff5c1559e4b2a6a4af1453cc90c64d2a7ed57566211e5ff145b3e0c",
+  "contract": "c7b34563cd2ec687037020f4a7b4a58ef84d7c0cc050f60b4c55a38ab02ea544",
+  "result": {
+    "levels": [
+      "R100",
+      "R060",
+      "R035",
+      "R020"
+    ],
+    "normal_records_identical_across_levels": true,
+    "endpoints_labels_blocks_identical_across_levels": true,
+    "R100_reproduces_step49_P_reference": true
+  },
+  "completed_at_utc": "2026-10-09T08:09:52.497294+00:00",
+  "artifact_sha256": {
+    "audit.json": "50997d18c146e8b6fc32f63ddce1acddde05cefa9c11b9873a0dafdf132d4b61"
+  }
+}

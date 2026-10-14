@@ -1,0 +1,12 @@
+{
+  "version": "missing8_fixed_masks_omission_and_current_window_v1",
+  "primary_serialization": "literal_UNK",
+  "omission_role": "paired supplementary sensitivity; no result-based selection",
+  "current_window_reference": "Original Step 8 classifier on the same frozen CLS at each L10 endpoint. Not a newly trained TST L1.",
+  "diagnostics": "Paired-nominal projection changes after removing the same fields from both records; not a truth-derived predictor.",
+  "subgroup_metrics": "Descriptive endpoint accuracy and per-class recall, with support and head-seed dispersion; no independent-window inference.",
+  "scope": "Aggregation under missing observations with one fixed encoder. Neither encoder superiority nor temporal-order necessity is established.",
+  "no_change": "No retained paired-nominal field change does not prove absence of class information.",
+  "chronology": "Supplement defined after reviewing clean encoder comparison and NOS3 sensitivity; not preregistered research.",
+  "main_result": "All eligible endpoints remain in primary comparisons. Subgroups never select checkpoints, masks, thresholds or families."
+}

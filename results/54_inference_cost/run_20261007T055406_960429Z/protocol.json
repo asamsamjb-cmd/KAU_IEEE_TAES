@@ -1,0 +1,68 @@
+{
+  "version": "shared_nominal_inference_cost_v1",
+  "inventory_sha256": "fad1bf2ebd55d1c811f76d18ca08b5fa8dd226ccf8a7d55400d3cda23b78fafa",
+  "runtime": {
+    "python": "3.14.5",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "torch": "2.12.0+cu126",
+    "transformers": "5.10.2",
+    "numpy": "2.4.6",
+    "device": "cuda:0",
+    "device_name": "NVIDIA GeForce RTX 3060",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "torch_threads": 8,
+    "torch_interop_threads": 8,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "cuda_matmul_tf32": false,
+    "cudnn_tf32": false,
+    "precision": "FP32",
+    "gpu_activity": {
+      "status": "NO_OTHER_COMPUTE_PROCESS_REPORTED",
+      "gpu_uuid": "c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "other_compute_processes": [],
+      "limitation": "nvidia-smi may omit graphics/WDDM activity; this is not a proof of an idle device."
+    }
+  },
+  "samples": 64,
+  "repeats": 3,
+  "warmup_first_sample": 20,
+  "warmup_each_other_sample": 1,
+  "sample_seed": 2026101501,
+  "scopes": [
+    "full10_model_only",
+    "stream1_model_only",
+    "full10_end_to_end",
+    "stream1_end_to_end",
+    "head_only"
+  ],
+  "decision_batch_size": 1,
+  "sequence_length": 10,
+  "full10_encoder_window_batch": 10,
+  "stream1_encoder_window_batch": 1,
+  "end_to_end": "in-memory 22 field values -> serialization/tokenization or category lookup -> CPU-to-device -> encoder -> aggregator -> CPU class id",
+  "model_only": "preprocessed device tensors -> encoder and aggregator -> device logits; synchronized wall clock",
+  "head_only": "resident cached [1,10,768] CLS features -> pooling when required and classifier -> device logits",
+  "memory_residency": "encoder plus head remain loaded in every scope, including head_only; only the current sample/cache is on GPU",
+  "stream1": "nine previously encoded CLS vectors already resident on device; encode one new window and concatenate/update context",
+  "excludes": [
+    "disk I/O",
+    "model loading",
+    "raw-to-22-field extraction",
+    "telemetry acquisition/wait time",
+    "network transport"
+  ],
+  "limitations": [
+    "Hardware-specific measurements; not satellite onboard latency.",
+    "PyTorch allocated/reserved GPU memory; not CPU RAM, whole-process GPU memory or whole-device usage.",
+    "Formal encoders use original fixed padding; shared Step8 uses original dynamic padding. Compare aggregators within the shared track.",
+    "All timed heads use FP32. Historical pooling accuracy used AMP; no new full FP32 accuracy evaluation is claimed.",
+    "Repeated timings share samples/checkpoints; they are not independent training seeds or accuracy confidence intervals."
+  ],
+  "canary": {
+    "atol": 0.0001,
+    "rtol": 0.0001,
+    "formal_predictions_exact": true
+  }
+}

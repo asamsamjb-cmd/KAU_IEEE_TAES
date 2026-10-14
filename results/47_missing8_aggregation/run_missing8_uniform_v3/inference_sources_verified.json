@@ -1,0 +1,21 @@
+{
+  "identity": "fac4e1499678351b6982f559cb23e9136bc542162b669ae22d2a2dac0de2c7e0",
+  "contract": "97d5bc9baca35af42321e1a5cde8289dc1de1eb76a2a9776fe1c91df96fa18e2",
+  "result": {
+    "status": "PASS",
+    "heads": 50,
+    "primary_conditions": 4,
+    "additional_omission_conditions": 3,
+    "current_window_reference": true
+  },
+  "completed_at_utc": "2026-10-06T11:43:42.766187+00:00",
+  "artifact_sha256": {
+    "predictions.npz": "6f20e0b081cb1185cadea056814108dfe3153ce8e2089e7efb72d8cd9e5c8860",
+    "masks.npz": "76660ac2a6679cc557de66340fca29e7be80ff70a4e44f02c7b271021dfd2bb5",
+    "evaluation_endpoints_L10.csv": "817150a89d5aed299450eb6e3cdfd1a42d71fdc37f75889eff452f6d6373a958",
+    "clean_context_observable_effects_L10.csv": "3a9b7d87ba9dede0291e052918645de7927ab9fcf017ed905c0c52985e5baf40",
+    "validation_selection.json": "19109e25ffc794e4125cd2cd23be0060a06463fa536e42deedeed9c29bf31fe6",
+    "supplemental_predictions.npz": "b883618b0785d4574726e9e6f494c3e58c03a54e960a69460b50b706b45e8498",
+    "paired_nominal_field_changes.npz": "a206ae32c7113539fedffa1c2e042a987a9f5470a127d22c9a607705ac9e51f1"
+  }
+}

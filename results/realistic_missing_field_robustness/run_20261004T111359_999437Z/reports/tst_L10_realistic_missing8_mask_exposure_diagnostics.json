@@ -1,0 +1,241 @@
+{
+  "evaluation_population": "common_L10_endpoints",
+  "model_context_length": 10,
+  "total_sequences": 38078,
+  "strata": {
+    "current_masked": {
+      "num_sequences": 19067,
+      "fraction_of_population": 0.5007353327380639,
+      "support_by_label": {
+        "NORMAL": 2877,
+        "RF_LINK_JAMMING": 3268,
+        "GNSS_SPOOFING": 3092,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 3393,
+        "TELECOMMAND_REPLAY": 3358,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 3079
+      },
+      "accuracy": 0.7189384800965019,
+      "normal_prediction_fraction": 0.3711648397755284,
+      "macro_f1_present_true_classes": 0.7316053633037002,
+      "present_true_labels": [
+        "NORMAL",
+        "RF_LINK_JAMMING",
+        "GNSS_SPOOFING",
+        "UNAUTHORIZED_TELECOMMAND_INJECTION",
+        "TELECOMMAND_REPLAY",
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+      ],
+      "absent_true_labels": [],
+      "confusion_matrix": [
+        [
+          2693,
+          7,
+          17,
+          27,
+          17,
+          116
+        ],
+        [
+          1526,
+          1433,
+          5,
+          7,
+          29,
+          268
+        ],
+        [
+          1074,
+          5,
+          1875,
+          6,
+          8,
+          124
+        ],
+        [
+          193,
+          0,
+          5,
+          3119,
+          19,
+          57
+        ],
+        [
+          797,
+          3,
+          4,
+          21,
+          2450,
+          83
+        ],
+        [
+          794,
+          8,
+          4,
+          115,
+          20,
+          2138
+        ]
+      ]
+    },
+    "history_only_masked": {
+      "num_sequences": 13779,
+      "fraction_of_population": 0.36186249277798205,
+      "support_by_label": {
+        "NORMAL": 2178,
+        "RF_LINK_JAMMING": 2228,
+        "GNSS_SPOOFING": 2228,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 2438,
+        "TELECOMMAND_REPLAY": 2418,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 2289
+      },
+      "accuracy": 0.7775600551563974,
+      "normal_prediction_fraction": 0.34342114812395674,
+      "macro_f1_present_true_classes": 0.7918518577259385,
+      "present_true_labels": [
+        "NORMAL",
+        "RF_LINK_JAMMING",
+        "GNSS_SPOOFING",
+        "UNAUTHORIZED_TELECOMMAND_INJECTION",
+        "TELECOMMAND_REPLAY",
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+      ],
+      "absent_true_labels": [],
+      "confusion_matrix": [
+        [
+          2073,
+          15,
+          19,
+          11,
+          1,
+          59
+        ],
+        [
+          852,
+          1262,
+          4,
+          3,
+          2,
+          105
+        ],
+        [
+          268,
+          3,
+          1938,
+          4,
+          0,
+          15
+        ],
+        [
+          252,
+          0,
+          3,
+          2163,
+          0,
+          20
+        ],
+        [
+          552,
+          3,
+          6,
+          11,
+          1797,
+          49
+        ],
+        [
+          735,
+          7,
+          4,
+          62,
+          0,
+          1481
+        ]
+      ]
+    },
+    "no_context_masked": {
+      "num_sequences": 5232,
+      "fraction_of_population": 0.13740217448395398,
+      "support_by_label": {
+        "NORMAL": 707,
+        "RF_LINK_JAMMING": 969,
+        "GNSS_SPOOFING": 856,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 894,
+        "TELECOMMAND_REPLAY": 982,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 824
+      },
+      "accuracy": 0.7780963302752294,
+      "normal_prediction_fraction": 0.32626146788990823,
+      "macro_f1_present_true_classes": 0.7959111141044707,
+      "present_true_labels": [
+        "NORMAL",
+        "RF_LINK_JAMMING",
+        "GNSS_SPOOFING",
+        "UNAUTHORIZED_TELECOMMAND_INJECTION",
+        "TELECOMMAND_REPLAY",
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+      ],
+      "absent_true_labels": [],
+      "confusion_matrix": [
+        [
+          647,
+          35,
+          13,
+          1,
+          1,
+          10
+        ],
+        [
+          275,
+          688,
+          5,
+          0,
+          0,
+          1
+        ],
+        [
+          79,
+          0,
+          777,
+          0,
+          0,
+          0
+        ],
+        [
+          140,
+          6,
+          4,
+          744,
+          0,
+          0
+        ],
+        [
+          277,
+          2,
+          5,
+          1,
+          697,
+          0
+        ],
+        [
+          289,
+          7,
+          8,
+          2,
+          0,
+          518
+        ]
+      ]
+    }
+  },
+  "interpretation": "Descriptive conditioning on actual input masking after fixed-model prediction. Mask exposure is not remaining attack evidence. Step 7/10 complete-data counterfactual effect flags are not recomputed or relabeled as post-mask observability. Strata may have different class/context composition; present-class F1 has a changing class basis. Primary metrics retain every endpoint.",
+  "provenance": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "step11_run_id": "9072c471a3088f8247ecfd0fc3389ee1623e3fa45dafec61a77f3c3fa885ff20",
+    "step18_run_id": "34b01110d483dfeb8c5c3b011f2bccd61f942a372de221dc8a80a0d5799f9772",
+    "head_seed": 20260610
+  },
+  "condition": "realistic_missing8",
+  "model": "DistilBERT--TST-L10"
+}

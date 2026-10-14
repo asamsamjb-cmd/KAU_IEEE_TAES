@@ -1,0 +1,178 @@
+{
+  "experiment": "finetuned_distilbert_l10_lstm_baseline",
+  "purpose": "Architecture-control baseline against fixed fine-tuned DistilBERT--TST-L10",
+  "input_representation": "Fixed fine-tuned DistilBERT [CLS] embedding sequence",
+  "sequence_length": 10,
+  "temporal_context_seconds": 10,
+  "same_as_tst": {
+    "fixed_finetuned_distilbert_embeddings": true,
+    "episode_bounded_l10_sequence_indices": true,
+    "terminal_window_labels": true,
+    "train_val_test_splits": true
+  },
+  "not_used_as_features": [
+    "scenario_id",
+    "episode_id",
+    "episode_type",
+    "episode_step",
+    "window_id",
+    "timestamp",
+    "label",
+    "split",
+    "audit_current_observable_effect",
+    "audit_history_effect_window_count",
+    "audit_context_effect_window_count",
+    "audit_effect_stratum"
+  ],
+  "label_order": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "label_to_id": {
+    "NORMAL": 0,
+    "RF_LINK_JAMMING": 1,
+    "GNSS_SPOOFING": 2,
+    "UNAUTHORIZED_TELECOMMAND_INJECTION": 3,
+    "TELECOMMAND_REPLAY": 4,
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 5
+  },
+  "input_shapes": {
+    "train": {
+      "embedding_shape": [
+        211006,
+        768
+      ],
+      "sequence_indices_shape": [
+        179414,
+        10
+      ],
+      "label_shape": [
+        179414
+      ],
+      "lazy_sequence_construction": true
+    },
+    "val": {
+      "embedding_shape": [
+        44148,
+        768
+      ],
+      "sequence_indices_shape": [
+        37371,
+        10
+      ],
+      "label_shape": [
+        37371
+      ],
+      "lazy_sequence_construction": true
+    },
+    "test": {
+      "embedding_shape": [
+        44846,
+        768
+      ],
+      "sequence_indices_shape": [
+        38078,
+        10
+      ],
+      "label_shape": [
+        38078
+      ],
+      "lazy_sequence_construction": true
+    }
+  },
+  "revised_pipeline_provenance": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "embedding_report_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\embedding_extraction_report.json",
+    "sequence_report_index_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\sequence_build_report_index.json",
+    "embedding_encoder_source": "finetuned",
+    "representation_type": "supervised_finetuned_distilbert_cls",
+    "source_model_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model",
+    "embedding_dim": 768,
+    "step10_source_embedding_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main",
+    "step10_output_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main",
+    "step10_sequence_lengths": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "status": "verified_finetuned_main"
+  },
+  "embedding_encoder_metadata": {
+    "train": {
+      "embedding_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\train_window_embeddings.npz",
+      "embedding_encoder_source": null,
+      "encoder_model_name": null,
+      "frozen_encoder": null,
+      "available_npz_keys": [
+        "embeddings",
+        "label_ids",
+        "row_indices"
+      ],
+      "metadata_verification_status": "npz_metadata_absent_report_verified"
+    },
+    "val": {
+      "embedding_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\val_window_embeddings.npz",
+      "embedding_encoder_source": null,
+      "encoder_model_name": null,
+      "frozen_encoder": null,
+      "available_npz_keys": [
+        "embeddings",
+        "label_ids",
+        "row_indices"
+      ],
+      "metadata_verification_status": "npz_metadata_absent_report_verified"
+    },
+    "test": {
+      "embedding_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\test_window_embeddings.npz",
+      "embedding_encoder_source": null,
+      "encoder_model_name": null,
+      "frozen_encoder": null,
+      "available_npz_keys": [
+        "embeddings",
+        "label_ids",
+        "row_indices"
+      ],
+      "metadata_verification_status": "npz_metadata_absent_report_verified"
+    }
+  },
+  "expected_test_l10_sequence_count": 38078,
+  "embedding_metadata_policy": {
+    "authoritative_provenance": "Step 9/Step 10 JSON reports",
+    "npz_metadata": "validated when present; report provenance used when absent"
+  },
+  "model_config": {
+    "input_dim": 768,
+    "projected_dim": 128,
+    "hidden_dim": 128,
+    "num_layers": 1,
+    "dropout": 0.25,
+    "bidirectional": false,
+    "sequence_length": 10,
+    "num_classes": 6
+  },
+  "train_config": {
+    "max_epochs": 30,
+    "patience": 7,
+    "batch_size": 256,
+    "learning_rate": 7e-05,
+    "weight_decay": 0.0005,
+    "grad_clip_norm": 1.0,
+    "use_amp": true,
+    "use_class_weights": false,
+    "label_smoothing": 0.03
+  },
+  "source_artifacts": {
+    "embedding_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main",
+    "sequence_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main",
+    "split_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits"
+  }
+}

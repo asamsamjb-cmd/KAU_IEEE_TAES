@@ -1,0 +1,29 @@
+{
+  "version": "shared_nominal_encoder_input_audit_v3",
+  "research_purpose": "TAES revision: representation plus temporal evidence aggregation",
+  "required_steps": [
+    7,
+    8,
+    9
+  ],
+  "optional_reference_steps": [
+    10,
+    11,
+    12
+  ],
+  "no_training_or_model_inference": true,
+  "observable_splits_read": [
+    "train",
+    "val"
+  ],
+  "episode_inventory_read": "all splits, metadata/counts only",
+  "raw_or_serialized_test_read": false,
+  "predictions_or_embeddings_read": false,
+  "observable_effect_sidecars_read": false,
+  "observability_linkage": "Step 7/9/10 recorded manifest/hash linkage only; audit annotations are not features",
+  "counts_source": "current Step 7 build and episode inventory; no historic hardcodes",
+  "reference_head_seed": 20260610,
+  "silent_truncation_allowed": false,
+  "tokenizer_unknown_allowed": false,
+  "alternative_encoder_protocol_status": "DRAFT"
+}

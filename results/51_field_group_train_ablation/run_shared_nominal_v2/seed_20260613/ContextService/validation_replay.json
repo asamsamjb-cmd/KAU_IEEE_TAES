@@ -1,0 +1,12 @@
+{
+  "window": {
+    "max_abs_error": 0.0,
+    "compared_values": 264888,
+    "predictions_checked": true
+  },
+  "tst": {
+    "max_abs_error": 0.0,
+    "compared_values": 224226,
+    "predictions_checked": true
+  }
+}

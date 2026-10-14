@@ -1,0 +1,19 @@
+{
+  "protocol_id": "d169218861a325368fbcd4d7df8c799ee3bf19a36b02ca9c31d328627aebeddd",
+  "status": "PREPARED",
+  "splits": {
+    "train": {
+      "windows": 211006,
+      "endpoints": 179414,
+      "episodes": 3511,
+      "masked_unique_inputs": 402
+    },
+    "val": {
+      "windows": 44148,
+      "endpoints": 37371,
+      "episodes": 753,
+      "masked_unique_inputs": 287
+    }
+  },
+  "test_windows_read": false
+}

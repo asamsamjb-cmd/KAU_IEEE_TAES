@@ -1,0 +1,112 @@
+{
+  "status": "GATES_PASSED",
+  "G1_input_hashes": "Step 27 checkpoints/cache/ZIP and Step 9 test embeddings matched their manifests",
+  "step72_input_sha256": {
+    "R100": {
+      "records": "c77b4bfef15a27241e9f818a5ff038ea307b8484c2f54f3d7b768b6fd6ae3e7b",
+      "effects": "f6049b58dbfd00a1cbc2b55986e4a22153520a6d62a7eb8a43e7bd62ad4588ab",
+      "endpoints": "dea78031d05d499e85d08c4b086329a6f2cdede2af4c1e1a840ebb878cacc2e9",
+      "embeddings": "3fbf4b7e3c0d862bb00cb466331fae51805a61e72a803ba61b10d3d46e99fb14",
+      "combined": "68f79090d00285561b334b7485e9232ac22aa659b19799040fdeb7b4230c11ce",
+      "lsweep": "7a17183bf8c3a1f2406cf2219c1a95ed7e0523e6908db2e7e255a31dea6cf89e"
+    },
+    "R060": {
+      "records": "1c436c533fd8d6f544273a8d7adb318cf7572448e74330352cb09627acacd9d5",
+      "effects": "1e62055e651969de0c8fcd3b9dacf4209b358cdecf3baa53338771b86f7f0b0c",
+      "endpoints": "dea78031d05d499e85d08c4b086329a6f2cdede2af4c1e1a840ebb878cacc2e9",
+      "embeddings": "76a28d7afe453eb87c6094f0d14d7a9ce2f1b42a9f1cbe5ab2af0214b381ba51",
+      "combined": "02af21f53d15736dbc860f96db64f4085ef4ac6f78d80bb463ebd77c613e6d5a",
+      "lsweep": "8e748c74926f300c5d58b0da79e69efaf5a796cfc4480347a4cc1fe3196d22d1"
+    },
+    "R035": {
+      "records": "9fcdc49f104c170d5c0bebd03ef3098412afbce5bd97b7105b27d4bb76adfef2",
+      "effects": "556873e9a6502c9bf70a61c21e6aa4f299c6f3d5e09bf2cfb73f9a0f458c0eb9",
+      "endpoints": "dea78031d05d499e85d08c4b086329a6f2cdede2af4c1e1a840ebb878cacc2e9",
+      "embeddings": "3e50e2a73d357b8d700a3bc57765212e00ebeefef563c75bdbb64a22c8c6709f",
+      "combined": "962c930281e60b97a6e3efd6775864bc8d1425f1aeeced3f811da09c0ca162bb",
+      "lsweep": "7ec7886083e085253363c67e310157b0e9f4d9b615fd316e68a893edf926edaa"
+    },
+    "R020": {
+      "records": "5a1ee07deb8e3205c70fce740f867588faef73e6e2c95b19928631d597108344",
+      "effects": "30cfbea7a5245160d8ce28d2af35b96fe1944e245ed06904320ef08e029d0f62",
+      "endpoints": "dea78031d05d499e85d08c4b086329a6f2cdede2af4c1e1a840ebb878cacc2e9",
+      "embeddings": "4e902f572422c04fe6786ca022dce638ba32cfd06ce15aa619bb72e70927a560",
+      "combined": "970f6d0a2f4157ccda4981672f78802d9012d3c667107b23cb975b8449979328",
+      "lsweep": "cc4b52a779cd45c0b2470fc3e60b4d07cd76dcaedf53140d6dee54aa9ad7b082"
+    }
+  },
+  "G2_step72_alignment": "records, window flags and L10 endpoints aligned; L10 and L20 blocks contiguous within episodes",
+  "G3_step72_reproduced": {
+    "rows": 40,
+    "tolerance": 1e-06
+  },
+  "G4_inference_canary": {
+    "status": "PASS",
+    "rows": [
+      {
+        "seed": 20260610,
+        "endpoints": 30561,
+        "decision_mismatches": 0,
+        "route": "step11_evaluate_model"
+      },
+      {
+        "seed": 20260611,
+        "endpoints": 30561,
+        "decision_mismatches": 0,
+        "route": "step11_evaluate_model"
+      },
+      {
+        "seed": 20260612,
+        "endpoints": 30561,
+        "decision_mismatches": 0,
+        "route": "step11_evaluate_model"
+      }
+    ]
+  },
+  "levels": {
+    "R100": {
+      "retention": 1.0,
+      "tst_below_reference_at_every_L": true,
+      "tst_monotone_nondecreasing_in_L": true,
+      "gain_L10_to_L20_tst": 0.054767217584477224,
+      "gain_L10_to_L20_reference": 0.05157681946865933,
+      "gain_L1_to_L20_tst": 0.4907045167345526,
+      "gain_L1_to_L20_reference": 0.4901297228985741,
+      "cohort_endpoints": 32028,
+      "cohort_episodes": 900
+    },
+    "R060": {
+      "retention": 0.6,
+      "tst_below_reference_at_every_L": false,
+      "tst_monotone_nondecreasing_in_L": true,
+      "gain_L10_to_L20_tst": 0.08627644549540403,
+      "gain_L10_to_L20_reference": 0.08573255621992903,
+      "gain_L1_to_L20_tst": 0.5506076989144892,
+      "gain_L1_to_L20_reference": 0.5772488343740618,
+      "cohort_endpoints": 32028,
+      "cohort_episodes": 900
+    },
+    "R035": {
+      "retention": 0.35,
+      "tst_below_reference_at_every_L": false,
+      "tst_monotone_nondecreasing_in_L": true,
+      "gain_L10_to_L20_tst": 0.11528618280488045,
+      "gain_L10_to_L20_reference": 0.11862538837608672,
+      "gain_L1_to_L20_tst": 0.538389105994636,
+      "gain_L1_to_L20_reference": 0.6009354412678046,
+      "cohort_endpoints": 32028,
+      "cohort_episodes": 900
+    },
+    "R020": {
+      "retention": 0.2,
+      "tst_below_reference_at_every_L": false,
+      "tst_monotone_nondecreasing_in_L": true,
+      "gain_L10_to_L20_tst": 0.13333257276146682,
+      "gain_L10_to_L20_reference": 0.14351744484764883,
+      "gain_L1_to_L20_tst": 0.4676170235272771,
+      "gain_L1_to_L20_reference": 0.5600508769733272,
+      "cohort_endpoints": 32028,
+      "cohort_episodes": 900
+    }
+  }
+}

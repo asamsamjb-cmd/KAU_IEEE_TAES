@@ -1,0 +1,278 @@
+{
+  "protocol_id": "4a13b3cbace9901bc7778e59b710786a8d1f1851ea3b77acdcfb81c1c54d13f9",
+  "fitted_jobs": 35,
+  "completed_at": "2026-10-09T13:51:16.625422+00:00",
+  "report": [
+    {
+      "job": "label_RawScoped_f005_s20260610",
+      "representation": "RawScoped",
+      "fraction": 0.05,
+      "seed": 20260610,
+      "train_endpoints": 9068,
+      "validation_macro_f1": 0.795813647026146
+    },
+    {
+      "job": "label_RawScoped_f005_s20260611",
+      "representation": "RawScoped",
+      "fraction": 0.05,
+      "seed": 20260611,
+      "train_endpoints": 9182,
+      "validation_macro_f1": 0.7664531521573332
+    },
+    {
+      "job": "label_RawScoped_f005_s20260612",
+      "representation": "RawScoped",
+      "fraction": 0.05,
+      "seed": 20260612,
+      "train_endpoints": 9390,
+      "validation_macro_f1": 0.7951706129190752
+    },
+    {
+      "job": "label_RawScoped_f010_s20260610",
+      "representation": "RawScoped",
+      "fraction": 0.1,
+      "seed": 20260610,
+      "train_endpoints": 18340,
+      "validation_macro_f1": 0.8144477193255509
+    },
+    {
+      "job": "label_RawScoped_f010_s20260611",
+      "representation": "RawScoped",
+      "fraction": 0.1,
+      "seed": 20260611,
+      "train_endpoints": 17083,
+      "validation_macro_f1": 0.8090594702437448
+    },
+    {
+      "job": "label_RawScoped_f010_s20260612",
+      "representation": "RawScoped",
+      "fraction": 0.1,
+      "seed": 20260612,
+      "train_endpoints": 18525,
+      "validation_macro_f1": 0.8122210357425064
+    },
+    {
+      "job": "label_RawScoped_f025_s20260610",
+      "representation": "RawScoped",
+      "fraction": 0.25,
+      "seed": 20260610,
+      "train_endpoints": 44377,
+      "validation_macro_f1": 0.8262143833582103
+    },
+    {
+      "job": "label_RawScoped_f025_s20260611",
+      "representation": "RawScoped",
+      "fraction": 0.25,
+      "seed": 20260611,
+      "train_endpoints": 44256,
+      "validation_macro_f1": 0.8245695969721328
+    },
+    {
+      "job": "label_RawScoped_f025_s20260612",
+      "representation": "RawScoped",
+      "fraction": 0.25,
+      "seed": 20260612,
+      "train_endpoints": 46842,
+      "validation_macro_f1": 0.8257676389341285
+    },
+    {
+      "job": "label_RawScoped_f050_s20260610",
+      "representation": "RawScoped",
+      "fraction": 0.5,
+      "seed": 20260610,
+      "train_endpoints": 90417,
+      "validation_macro_f1": 0.8320048141916114
+    },
+    {
+      "job": "label_RawScoped_f050_s20260611",
+      "representation": "RawScoped",
+      "fraction": 0.5,
+      "seed": 20260611,
+      "train_endpoints": 88811,
+      "validation_macro_f1": 0.8313606126960114
+    },
+    {
+      "job": "label_RawScoped_f050_s20260612",
+      "representation": "RawScoped",
+      "fraction": 0.5,
+      "seed": 20260612,
+      "train_endpoints": 91912,
+      "validation_macro_f1": 0.8350791805768555
+    },
+    {
+      "job": "label_RawScoped_f100_s20260610",
+      "representation": "RawScoped",
+      "fraction": 1.0,
+      "seed": 20260610,
+      "train_endpoints": 179414,
+      "validation_macro_f1": 0.8413948854044163
+    },
+    {
+      "job": "label_RawScoped_f100_s20260611",
+      "representation": "RawScoped",
+      "fraction": 1.0,
+      "seed": 20260611,
+      "train_endpoints": 179414,
+      "validation_macro_f1": 0.8413948854044163
+    },
+    {
+      "job": "label_RawScoped_f100_s20260612",
+      "representation": "RawScoped",
+      "fraction": 1.0,
+      "seed": 20260612,
+      "train_endpoints": 179414,
+      "validation_macro_f1": 0.8413948854044163
+    },
+    {
+      "job": "label_Semantic22_f005_s20260610",
+      "representation": "Semantic22",
+      "fraction": 0.05,
+      "seed": 20260610,
+      "train_endpoints": 9068,
+      "validation_macro_f1": 0.7743905833237811
+    },
+    {
+      "job": "label_Semantic22_f005_s20260611",
+      "representation": "Semantic22",
+      "fraction": 0.05,
+      "seed": 20260611,
+      "train_endpoints": 9182,
+      "validation_macro_f1": 0.7461949072692038
+    },
+    {
+      "job": "label_Semantic22_f005_s20260612",
+      "representation": "Semantic22",
+      "fraction": 0.05,
+      "seed": 20260612,
+      "train_endpoints": 9390,
+      "validation_macro_f1": 0.773833520039176
+    },
+    {
+      "job": "label_Semantic22_f010_s20260610",
+      "representation": "Semantic22",
+      "fraction": 0.1,
+      "seed": 20260610,
+      "train_endpoints": 18340,
+      "validation_macro_f1": 0.8019699491583828
+    },
+    {
+      "job": "label_Semantic22_f010_s20260611",
+      "representation": "Semantic22",
+      "fraction": 0.1,
+      "seed": 20260611,
+      "train_endpoints": 17083,
+      "validation_macro_f1": 0.7987936555470366
+    },
+    {
+      "job": "label_Semantic22_f010_s20260612",
+      "representation": "Semantic22",
+      "fraction": 0.1,
+      "seed": 20260612,
+      "train_endpoints": 18525,
+      "validation_macro_f1": 0.8024440800542663
+    },
+    {
+      "job": "label_Semantic22_f025_s20260610",
+      "representation": "Semantic22",
+      "fraction": 0.25,
+      "seed": 20260610,
+      "train_endpoints": 44377,
+      "validation_macro_f1": 0.8158134812553359
+    },
+    {
+      "job": "label_Semantic22_f025_s20260611",
+      "representation": "Semantic22",
+      "fraction": 0.25,
+      "seed": 20260611,
+      "train_endpoints": 44256,
+      "validation_macro_f1": 0.8161770564254233
+    },
+    {
+      "job": "label_Semantic22_f025_s20260612",
+      "representation": "Semantic22",
+      "fraction": 0.25,
+      "seed": 20260612,
+      "train_endpoints": 46842,
+      "validation_macro_f1": 0.8178260571822603
+    },
+    {
+      "job": "label_Semantic22_f050_s20260610",
+      "representation": "Semantic22",
+      "fraction": 0.5,
+      "seed": 20260610,
+      "train_endpoints": 90417,
+      "validation_macro_f1": 0.8253484331886058
+    },
+    {
+      "job": "label_Semantic22_f050_s20260611",
+      "representation": "Semantic22",
+      "fraction": 0.5,
+      "seed": 20260611,
+      "train_endpoints": 88811,
+      "validation_macro_f1": 0.8256193026453479
+    },
+    {
+      "job": "label_Semantic22_f050_s20260612",
+      "representation": "Semantic22",
+      "fraction": 0.5,
+      "seed": 20260612,
+      "train_endpoints": 91912,
+      "validation_macro_f1": 0.824737852781727
+    },
+    {
+      "job": "label_Semantic22_f100_s20260610",
+      "representation": "Semantic22",
+      "fraction": 1.0,
+      "seed": 20260610,
+      "train_endpoints": 179414,
+      "validation_macro_f1": 0.832815128962262
+    },
+    {
+      "job": "label_Semantic22_f100_s20260611",
+      "representation": "Semantic22",
+      "fraction": 1.0,
+      "seed": 20260611,
+      "train_endpoints": 179414,
+      "validation_macro_f1": 0.832815128962262
+    },
+    {
+      "job": "label_Semantic22_f100_s20260612",
+      "representation": "Semantic22",
+      "fraction": 1.0,
+      "seed": 20260612,
+      "train_endpoints": 179414,
+      "validation_macro_f1": 0.832815128962262
+    },
+    {
+      "job": "fusion_stacker_s20260610",
+      "seed": 20260610,
+      "role": "validation_stacker",
+      "source": "three group-specific val predictions"
+    },
+    {
+      "job": "fusion_stacker_s20260611",
+      "seed": 20260611,
+      "role": "validation_stacker",
+      "source": "three group-specific val predictions"
+    },
+    {
+      "job": "fusion_stacker_s20260612",
+      "seed": 20260612,
+      "role": "validation_stacker",
+      "source": "three group-specific val predictions"
+    },
+    {
+      "job": "fusion_stacker_s20260613",
+      "seed": 20260613,
+      "role": "validation_stacker",
+      "source": "three group-specific val predictions"
+    },
+    {
+      "job": "fusion_stacker_s20260614",
+      "seed": 20260614,
+      "role": "validation_stacker",
+      "source": "three group-specific val predictions"
+    }
+  ],
+  "test_scoring_started": false
+}

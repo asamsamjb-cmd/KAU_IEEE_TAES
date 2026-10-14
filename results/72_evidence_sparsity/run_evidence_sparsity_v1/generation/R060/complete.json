@@ -1,0 +1,329 @@
+{
+  "identity": "cff8b885a7e25fc6ea0affce1929f34c707a21f176d5c17b51863625dd736da7",
+  "contract": "1d3ec25ba2932ecd87bc2dcb49057e3bd319e24516034d3c6657a15e7a68bd68",
+  "result": {
+    "condition": "R060",
+    "records": 49152,
+    "episodes": 906,
+    "paired_episode_blocks": 150,
+    "endpoints": 41028,
+    "current_schema_categories_valid": true,
+    "mapper_reconstruction_exact": true,
+    "shared_counterfactual_background_exact": true,
+    "unmodified_reference_prefix_replayed": false,
+    "label_semantics": "Original maker scenario/episode labels; no filtering or relabeling",
+    "changed_fraction_vs_reference": {
+      "observation_stage": 0.0,
+      "path_type": 0.0,
+      "direction": 0.0,
+      "source_role": 0.0,
+      "destination_role": 0.0,
+      "protocol_context": 0.0,
+      "operational_phase": 0.0,
+      "message_type": 0.03985595703125,
+      "service_context": 0.043721516927083336,
+      "command_intent": 0.05303955078125,
+      "payload_or_parameter_context": 0.0560302734375,
+      "sequence_freshness_status": 0.03497314453125,
+      "control_security_state": 0.048563639322916664,
+      "signal_quality_state": 0.016092936197916668,
+      "tracking_stability": 0.029683430989583332,
+      "navigation_consistency": 0.07735188802083333,
+      "timing_consistency": 0.049723307291666664,
+      "decoder_status": 0.015523274739583334,
+      "command_execution_result": 0.0577392578125,
+      "retry_timeout_state": 0.013163248697916666,
+      "session_state": 0.024393717447916668,
+      "state_transition_consistency": 0.034566243489583336
+    },
+    "token_counts": {
+      "observation_stage": {
+        "PROTOCOL_HANDLER": 12342,
+        "RF_RECEIVER": 10338,
+        "COMMAND_HANDLER": 8262,
+        "ONBOARD_MONITOR": 6936,
+        "SESSION_MANAGER": 6840,
+        "GNSS_RECEIVER": 4434
+      },
+      "path_type": {
+        "GATEWAY_LEO": 19482,
+        "LEO_LEO": 8298,
+        "GNSS_LEO": 7098,
+        "UAV_LEO": 5028,
+        "IOT_LEO": 4974,
+        "INTERNAL_ONBOARD": 4272
+      },
+      "direction": {
+        "GROUND_TO_SPACE": 16008,
+        "USER_TO_SPACE": 10002,
+        "SPACE_TO_SPACE": 8298,
+        "GNSS_TO_SPACE": 7098,
+        "INTERNAL": 4272,
+        "SPACE_TO_GROUND": 3474
+      },
+      "source_role": {
+        "GROUND_GATEWAY": 11856,
+        "PEER_LEO": 8298,
+        "MONITORED_LEO": 7746,
+        "GNSS_CONSTELLATION": 7098,
+        "UAV_TERMINAL": 5028,
+        "IOT_TERMINAL": 4974,
+        "GROUND_CONTROL_SERVICE": 4152
+      },
+      "destination_role": {
+        "MONITORED_LEO": 41406,
+        "OBC": 4272,
+        "GROUND_GATEWAY": 3474
+      },
+      "protocol_context": {
+        "CCSDS_TTC": 19482,
+        "CCSDS_ISL": 8298,
+        "GNSS_NAV": 7098,
+        "3GPP_NTN": 5028,
+        "MIOTY": 4974,
+        "ONBOARD_INTERNAL": 4272
+      },
+      "operational_phase": {
+        "DATA_RELAY": 15516,
+        "COMMAND_SESSION": 12414,
+        "CONTACT_WINDOW": 9852,
+        "GNSS_NAVIGATION": 7098,
+        "PAYLOAD_OPERATION": 2436,
+        "ROUTINE_MONITORING": 1836
+      },
+      "message_type": {
+        "TELECOMMAND": 11229,
+        "TELEMETRY": 9661,
+        "NOMINAL_MIXED_TRAFFIC": 8475,
+        "UAV_TELEMETRY": 4750,
+        "IOT_REPORT": 4543,
+        "GNSS_OBSERVATION": 2358,
+        "COMMAND_UPLINK": 2262,
+        "PNT_SOLUTION": 1884,
+        "NAVIGATION_MESSAGE": 1470,
+        "PARTIAL_FRAME": 1134,
+        "GNSS_TIMING_UPDATE": 744,
+        "NAVIGATION_STATE_UPDATE": 642
+      },
+      "service_context": {
+        "TTC_CONTROL": 10569,
+        "HOUSEKEEPING": 8469,
+        "ISL_ROUTING": 5389,
+        "UAV_NTN_SERVICE": 4750,
+        "IOT_UPLINK": 4543,
+        "PAYLOAD_DATA": 4272,
+        "CONTROL_SESSION": 2922,
+        "GNSS_PNT": 2556,
+        "PNT_MONITORING": 2388,
+        "TIMING_SYNCHRONIZATION": 1368,
+        "DEGRADED_SERVICE": 1140,
+        "NAVIGATION_FILTERING": 786
+      },
+      "command_intent": {
+        "NO_COMMAND": 35661,
+        "STATUS_REQUEST": 3456,
+        "TIME_SYNC": 2262,
+        "NOMINAL_CONTROL": 1740,
+        "HOUSEKEEPING": 1075,
+        "MODE_CHANGE": 1024,
+        "CONFIG_UPDATE": 984,
+        "PAYLOAD_CONFIG": 965,
+        "ORBIT_CONTROL": 830,
+        "ROUTE_UPDATE": 662,
+        "ATTITUDE_ADJUST": 477,
+        "SESSION_REAUTH": 16
+      },
+      "payload_or_parameter_context": {
+        "NOMINAL_PARAMETER": 42651,
+        "CONFIG_PARAMETER": 1206,
+        "PARTIAL_PAYLOAD": 1134,
+        "STATUS_PARAMETER": 798,
+        "CONTROL_PARAMETER": 756,
+        "TIME_RESIDUAL_VARIATION": 489,
+        "TIME_SYNC_PARAMETER": 483,
+        "ROUTINE_PARAMETER": 450,
+        "PARAMETER_RANGE_VIOLATION": 365,
+        "POSITION_RESIDUAL_VARIATION": 202,
+        "PHASE_TRANSITION_PARAMETER": 157,
+        "SCHEDULED_CONFIG_PARAMETER": 149,
+        "NAV_RESIDUAL_VARIATION": 127,
+        "MISSION_PHASE_MISMATCH_PARAMETER": 60,
+        "SUSPICIOUS_PARAMETER_PATTERN": 48,
+        "CONTEXT_MISMATCH_PARAMETER": 36,
+        "OUT_OF_POLICY_PARAMETER": 30,
+        "POLICY_SYNC_CONTEXT": 11
+      },
+      "sequence_freshness_status": {
+        "NOT_APPLICABLE": 35661,
+        "FRESH": 12678,
+        "REPLAYED": 517,
+        "STALE": 122,
+        "OUT_OF_ORDER": 100,
+        "ACCEPTED": 49,
+        "DUPLICATE": 25
+      },
+      "control_security_state": {
+        "NOT_APPLICABLE": 35661,
+        "AUTH_VALID": 11136,
+        "VALID_LOOKING_ANOMALOUS": 1724,
+        "UNAUTHORIZED": 208,
+        "AUTH_FAILED": 186,
+        "INTEGRITY_FAILED": 142,
+        "AUTH_MISSING": 80,
+        "SOURCE_UNVERIFIED": 15
+      },
+      "signal_quality_state": {
+        "NOMINAL": 43746,
+        "FLUCTUATING": 4912,
+        "DEGRADED": 436,
+        "SEVERELY_DEGRADED": 58
+      },
+      "tracking_stability": {
+        "STABLE": 42204,
+        "CYCLE_SLIP_LIKE": 4408,
+        "UNSTABLE": 2154,
+        "LOCK_LOSS": 386
+      },
+      "navigation_consistency": {
+        "CONSISTENT": 44739,
+        "DRIFTING": 2645,
+        "JUMP_DETECTED": 932,
+        "INCONSISTENT": 604,
+        "UNAVAILABLE": 232
+      },
+      "timing_consistency": {
+        "CONSISTENT": 45852,
+        "DRIFTING": 2838,
+        "INCONSISTENT": 451,
+        "OFFSET_JUMP": 11
+      },
+      "decoder_status": {
+        "DECODE_OK": 47654,
+        "DECODE_WARN": 1014,
+        "CRC_FAIL": 267,
+        "DECODE_FAIL": 114,
+        "FRAME_LOSS": 103
+      },
+      "command_execution_result": {
+        "NO_COMMAND": 35661,
+        "EXECUTED": 8769,
+        "ACCEPTED": 2132,
+        "BLOCKED": 1808,
+        "REJECTED": 521,
+        "HELD": 195,
+        "TIMEOUT": 66
+      },
+      "retry_timeout_state": {
+        "NORMAL": 48033,
+        "RETRY_INCREASED": 925,
+        "TIMEOUT": 115,
+        "BURST_TIMEOUT": 79
+      },
+      "session_state": {
+        "ACTIVE": 40766,
+        "NO_SESSION": 7341,
+        "DEGRADED": 593,
+        "ABNORMAL": 415,
+        "RESET": 30,
+        "LINK_LOSS": 7
+      },
+      "state_transition_consistency": {
+        "NO_CHANGE": 35699,
+        "CONSISTENT": 12724,
+        "DELAYED_TRANSITION": 424,
+        "UNEXPECTED_TRANSITION": 226,
+        "FORBIDDEN_TRANSITION": 79
+      }
+    },
+    "attack_active_windows_by_label": {
+      "NORMAL": 0,
+      "RF_LINK_JAMMING": 3962,
+      "GNSS_SPOOFING": 3176,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 3464,
+      "TELECOMMAND_REPLAY": 2277,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 2104
+    },
+    "attack_attempts_by_label": {
+      "NORMAL": 0,
+      "RF_LINK_JAMMING": 3962,
+      "GNSS_SPOOFING": 3176,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 5224,
+      "TELECOMMAND_REPLAY": 2696,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 2861
+    },
+    "nominal_benign_window_fraction": 0.0523681640625,
+    "receiver_fields": [
+      "ttc_snr_db",
+      "ttc_frame_loss_rate",
+      "ttc_rtt_ms",
+      "isl_snr_db",
+      "isl_frame_loss_rate",
+      "isl_rtt_ms",
+      "iot_snr_db",
+      "iot_frame_loss_rate",
+      "iot_rtt_ms",
+      "uav_rsrp_dbm",
+      "uav_sinr_db",
+      "uav_frame_loss_rate",
+      "uav_rtt_ms",
+      "gnss_cn0_mean_dbhz",
+      "gnss_cn0_std_db",
+      "gnss_tracking_jitter",
+      "gnss_carrier_lock_ratio",
+      "position_jump_m",
+      "velocity_jump_mps",
+      "pseudorange_residual_m",
+      "time_residual_ns",
+      "clock_drift_ppm"
+    ],
+    "baseline_receiver_sd": [
+      2.239695958417915,
+      0.006477733993365441,
+      145.76061902568077,
+      2.499073058916259,
+      0.006344674651534842,
+      35.702369290239076,
+      4.004307287100523,
+      0.018483017786631736,
+      878.8368907540662,
+      5.897977139121032,
+      4.005096940885659,
+      0.013312966305576294,
+      246.26155282814747,
+      3.0003051827222103,
+      0.5975059656976485,
+      0.04033402742440184,
+      0.009932658719613664,
+      1.938847906791091,
+      0.10835629130891951,
+      1.7566141356825316,
+      24.32053535315401,
+      0.01131409875821473
+    ],
+    "cross_label_identical_L10_fraction": 0.352685970556693,
+    "collision_scope": "64-bit vector fingerprints; descriptive only; no rows removed",
+    "effect_strata": {
+      "history_only_changed": 17547,
+      "no_observable_change": 16363,
+      "current_changed": 7118
+    }
+  },
+  "completed_at_utc": "2026-10-09T08:06:06.932974+00:00",
+  "artifact_sha256": {
+    "evaluation_records.csv": "1c436c533fd8d6f544273a8d7adb318cf7572448e74330352cb09627acacd9d5",
+    "evaluation_window_observable_effects.csv": "1e62055e651969de0c8fcd3b9dacf4209b358cdecf3baa53338771b86f7f0b0c",
+    "evaluation_endpoints_L10.csv": "dea78031d05d499e85d08c4b086329a6f2cdede2af4c1e1a840ebb878cacc2e9",
+    "evaluation_context_observable_effects_L10.csv": "48cc198a3f0e5f56a7c7aa88888d437c106d116d6f6368ec4fea69215b094f08",
+    "endpoint_blocks.csv": "2e442c8f44aecabee84c12c65dad38f52cfcd2c61584dd7baa91901a6246f901",
+    "latent_episode_truth.csv": "6ea9ba34d94a5ae6d2f066f7d1304e4fd4ed767fc4fef9a39a817b92d84b8e85",
+    "sequences_L10.npz": "6a2978fedd6c3e47bef0db7a429909d45d7325ebf03567f2516899c340add5b2",
+    "measurement_audit.npz": "a8c63a6886d3ae40b6b540105598043b31b96a3d59d163bac8533e1149698fcf",
+    "generation_audit.json": "62d7eb4027bb88dc61ad3f042c17c70a5957108459af04ebdb1873158f59b394",
+    "raw_class_1.csv.gz": "efdd26be6741627210bbbf6a5c592750c6eb23bc056ed5a81c7d747c6353478d",
+    "raw_class_2.csv.gz": "312a477c7782065961e6663156d32c27b0df5b799b2151a093a3002beceba89c",
+    "raw_class_3.csv.gz": "0194ee7451e0966513e3dbedb706050ebe971f0df0646230eb735983db7f6f98",
+    "raw_class_4.csv.gz": "aba892295c2126377218e91f09848778838af20ded2af28e2b3648eadbfb38b9",
+    "raw_class_5.csv.gz": "47913819333faa35b137e316a5972750fbfb0ac6fdf9c93b6cef3e1c9dad34bd",
+    "raw_class_6.csv.gz": "f9f26f1f6b0bc7d1bf8667c4b000e0eadc8a0b277e48fb44367176142f73b1a8"
+  }
+}

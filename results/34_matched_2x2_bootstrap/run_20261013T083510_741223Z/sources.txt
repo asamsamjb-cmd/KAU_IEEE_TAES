@@ -1,0 +1,17 @@
+# Step 34 inputs (2026-10-13T08:35:07.301626+00:00)
+zip27	C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\27_L20_TST_VALIDATION_PILOT\27_L20_FINAL_TEST_REVIEW.zip	36f0a86158d9cac6af0730182590166136f77008aeb680a20f34cab57e5c4b80
+zip29	C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\29_L10_MATCHED_TST_CONTROL\29_L10_MATCHED_FINAL_TEST_REVIEW.zip	2d9a38c27c08ea06853b5db7770d3ea26d420c9a86d33319df6e2ea5f137a6d1
+zip30	C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\30_MATCHED_MEANMAX_L10_L20\30_MATCHED_MEANMAX_FINAL_TEST_REVIEW.zip	0541510c19207d4eacc3362f0bada2ee53e24f35f340d785f8911f074642f325
+step28_audit_used_for_27_members	True	C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\28_l20_evidence_location\run_20261013T031358_531557Z
+member 27:seed_20260610/test_predictions.csv	2fc5fff8d7428aa10f28c32104ffe79c30750838300d1cb31a222c185cca3e7f
+member 27:seed_20260611/test_predictions.csv	0adb654269446b5d04ce821e2b6349bd997237ed85113252390e2417b8e02f7e
+member 27:seed_20260612/test_predictions.csv	8a4b1e14c843793d5d0b69571c1da6da530007883a7e684e77f48ac24018c73b
+member 29:seed_20260610/test_predictions.csv	6b66100ffe28c10253b85cd0317f0b45b879458a8d71a55078006be61b39899c
+member 29:seed_20260611/test_predictions.csv	84184387f89c82280aee2ad22620d3e2d2fa4a6c5c9503936f6021a30854b92b
+member 29:seed_20260612/test_predictions.csv	00af59f55d7b3715e5df7304e6ee1ce872c58bbb2502ba34fd8e05f65672f067
+member 30:L10/seed_20260610/test_predictions.csv	d9335d3e48e6cc04a167d7859635a9ec7514c5932123a3e62da0f76cf85d8eea
+member 30:L10/seed_20260611/test_predictions.csv	c21688becc3abcf456db4a329586258d6b7181b39ddcc316b4d3b9942a2db7a7
+member 30:L10/seed_20260612/test_predictions.csv	6ea457a9828007c58ba77e928070cc6472209bed7f205d607f045dc565dc1165
+member 30:L20/seed_20260610/test_predictions.csv	df5e6b2783c14b5f3660eeeac027f1ea8297139755819b30490877a8acab134d
+member 30:L20/seed_20260611/test_predictions.csv	cc54943e01e995abeffc919523b491ce586c8bec85768cc196cd77b25d12ea1a
+member 30:L20/seed_20260612/test_predictions.csv	d7a620ae75c2dafe93b884b6bc95f51686a15f28b121ddefcc6a8ffa2eea696f

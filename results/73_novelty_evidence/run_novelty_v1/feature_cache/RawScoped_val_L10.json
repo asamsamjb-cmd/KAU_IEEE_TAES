@@ -1,0 +1,15 @@
+{
+  "record": {
+    "representation": "RawScoped",
+    "split": "val",
+    "encoder_hash": "8f64d8606f55f99d276241053ce6c282916218d72c84b2e090e1a44c07201ced",
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "shape": [
+      37371,
+      890
+    ],
+    "dtype": "float64",
+    "aggregation": "mean_std0_min_max_last"
+  },
+  "file_sha256": "e3f153332f381c6f72e582955cfd209d9e3f0b2aeb8ee39460b1f96e1e5a97ef"
+}

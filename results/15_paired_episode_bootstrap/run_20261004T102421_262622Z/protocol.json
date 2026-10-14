@@ -1,0 +1,64 @@
+{
+  "version": "1.1",
+  "created_utc": "20261004T102421_262622Z",
+  "project_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성",
+  "dataset_contract": {
+    "dataset_version": "shared_nominal_v2",
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "expected_test_l10_count": 38078,
+    "sources": {
+      "step10_sequence_index": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "step12_multiseed_validation": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "step13_pooling_summary": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "step14_lstm_summary": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b"
+    }
+  },
+  "models": [
+    "TST",
+    "Mean_MLP",
+    "Max_MLP",
+    "MeanMax_MLP",
+    "LSTM"
+  ],
+  "head_seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614,
+    20260615,
+    20260616,
+    20260617,
+    20260618,
+    20260619
+  ],
+  "L": 10,
+  "expected_sequences": 38078,
+  "bootstrap_replicates": 20000,
+  "bootstrap_rng_seed": 20260926,
+  "batch_size": 100,
+  "resampling": "class-stratified whole episodes with replacement; shared across all runs",
+  "estimand": "mean of per-head-seed sequence-level six-class Macro-F1",
+  "seed_treatment": "fixed trained runs; arithmetic mean, not ensemble; no seed resampling",
+  "ci_method": "percentile; numpy quantile default linear interpolation",
+  "primary_ci": 0.95,
+  "contrast_sign": "comparator minus TST",
+  "contrast_count": 4,
+  "bonferroni_marginal_ci": 0.9875,
+  "seed_sd_ddof": 1,
+  "practical_equivalence_margin": null,
+  "conditioning": "fixed training data, encoder, heads, generation regime and class episode counts",
+  "assumption": "episodes independent/exchangeable within class",
+  "numpy": "2.4.6",
+  "pandas": "3.0.3",
+  "python": "3.14.5",
+  "script_sha256": "af5b31f47fa6b34ccc85c6d72d576a9ad3aa20989594e6cdfdc4a536a0d3bcd7",
+  "source_templates": {
+    "TST": "outputs/shared_nominal_v2/tst_training_finetuned_multiseed/seed_{seed}/L10/predictions/test_predictions_L10.csv",
+    "Mean_MLP": "outputs/shared_nominal_v2/39_pooling_mlp_finetuned_main/predictions/mean_seed{seed}_test_predictions.csv",
+    "Max_MLP": "outputs/shared_nominal_v2/39_pooling_mlp_finetuned_main/predictions/max_seed{seed}_test_predictions.csv",
+    "MeanMax_MLP": "outputs/shared_nominal_v2/39_pooling_mlp_finetuned_main/predictions/meanmax_seed{seed}_test_predictions.csv",
+    "LSTM": "outputs/shared_nominal_v2/lstm_finetuned_distilbert_l10/predictions/seed{seed}_test_predictions.csv"
+  },
+  "audit_only": false
+}

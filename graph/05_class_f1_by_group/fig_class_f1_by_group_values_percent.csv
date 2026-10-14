@@ -1,0 +1,7 @@
+,None,Context,Message/control,Receiver,Trace
+Normal,64.84,61.13,48.75,45.29,52.29
+RF Link Jamming,86.32,85.38,84.46,66.84,29.49
+GNSS Spoofing,95.58,95.4,94.47,0.0,95.07
+TC Injection,94.81,79.63,39.72,93.94,91.12
+TC Replay,84.72,84.56,19.71,84.47,83.56
+TT&C Path Compromise,81.81,74.92,6.27,78.09,72.39

@@ -1,0 +1,40 @@
+{
+  "status": "GATES_PASSED",
+  "G1_member_hashes": "29/30 members matched their final_test records; 27 members matched the Step 28 input audit",
+  "G2_alignment": {
+    "endpoints": 30561,
+    "episodes": 751,
+    "endpoint_sha256": "51510e4bd6b487059a84bd666f5255a0121b7c327c7ffb4ac2bfa2e31cee7800",
+    "episodes_per_class": {
+      "NORMAL": 129,
+      "RF_LINK_JAMMING": 125,
+      "GNSS_SPOOFING": 125,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 123,
+      "TELECOMMAND_REPLAY": 127,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 122
+    }
+  },
+  "G3_point_estimates_reproduced": {
+    "TST_L10": 0.8853917078511703,
+    "TST_L20": 0.9489953531780269,
+    "MeanMax_MLP_L10": 0.8861897791981792,
+    "MeanMax_MLP_L20": 0.9486756022415684
+  },
+  "bootstrap": {
+    "draws": 20000,
+    "rng": "numpy default_rng(20261013)",
+    "stratification": "six-class whole-episode multinomial, shared draws",
+    "seed_handling": "fixed head seeds; per-draw macro-F1 per seed averaged over 3 seeds; seeds not resampled",
+    "family": [
+      "C1_TST_L20_minus_matched_TST_L10",
+      "C2_MeanMax_L20_minus_MeanMax_L10",
+      "C3_TST_L20_minus_MeanMax_L20"
+    ],
+    "bonferroni_marginal_level_pct": 98.333,
+    "weights_sha256": "0a71e7ce75dcbe977b44530fe1f0b6236a30f3819304ee9d7c317ecbca127ad0"
+  },
+  "identity": {
+    "29": "509819ee3b4b3c280198a1a8a37652b2e3cd9d7646d09b503f131a8470c064f9",
+    "30": "de14da0de6c8e1d0f7fb861026c9e9ef795e986e30e3833be1ce964f2c2c003c"
+  }
+}

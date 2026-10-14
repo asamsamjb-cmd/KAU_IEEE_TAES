@@ -1,0 +1,12 @@
+                                            precision    recall  f1-score   support
+
+                                    NORMAL       0.28      0.28      0.28      7422
+                           RF_LINK_JAMMING       0.53      0.32      0.40      7038
+                             GNSS_SPOOFING       0.87      0.69      0.77      7042
+        UNAUTHORIZED_TELECOMMAND_INJECTION       0.51      0.30      0.38      7141
+                        TELECOMMAND_REPLAY       0.25      0.67      0.36      7825
+GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE       0.77      0.13      0.23      7680
+
+                                  accuracy                           0.40     44148
+                                 macro avg       0.53      0.40      0.40     44148
+                              weighted avg       0.53      0.40      0.40     44148

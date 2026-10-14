@@ -1,0 +1,103 @@
+{
+  "status": "BUSY",
+  "gpu_uuid": "c99a6425-b53e-4c58-65b5-66923c1b5e53",
+  "other_compute_processes": [
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 1792,
+      "name": "[Insufficient Permissions]",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 5052,
+      "name": "[Insufficient Permissions]",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 8464,
+      "name": "C:\\Windows\\explorer.exe",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 13676,
+      "name": "C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftStickyNotes_6.1.4.0_x64__8wekyb3d8bbwe\\Microsoft.Notes.exe",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 15700,
+      "name": "C:\\Windows\\SystemApps\\Microsoft.Windows.Search_cw5n1h2txyewy\\SearchApp.exe",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 20516,
+      "name": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 21764,
+      "name": "C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.25072.81.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 23340,
+      "name": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA GeForce Experience\\NVIDIA Share.exe",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 5316,
+      "name": "[Insufficient Permissions]",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 23440,
+      "name": "[Insufficient Permissions]",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 22288,
+      "name": "C:\\Users\\User\\AppData\\Local\\Programs\\Notion\\Notion.exe",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 17076,
+      "name": "C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 27284,
+      "name": "C:\\Program Files\\JetBrains\\PyCharm 2026.1.2\\jbr\\bin\\cef_server.exe",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 11496,
+      "name": "C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 20656,
+      "name": "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE",
+      "memory_mib": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "pid": 17180,
+      "name": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\154.0.4258.62\\msedgewebview2.exe",
+      "memory_mib": "[N/A]"
+    }
+  ],
+  "limitation": "nvidia-smi may omit graphics/WDDM activity; this is not a proof of an idle device."
+}

@@ -1,0 +1,16 @@
+Step 72 evidence-retention sweep. Learned heads: ten seeds per setting (metrics_by_run / lsweep_metrics_by_run).
+Reference: true label if audit_context_effect_window_count > 0 else NORMAL, over all L=10 endpoints.
+Coverage: share of attack-labeled L=10 endpoints with audit_context_effect_window_count > 0.
+
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\evaluation\R100\metrics_by_run.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\evaluation\R100\lsweep_metrics_by_run.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\generation\R100\evaluation_context_observable_effects_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\evaluation\R060\metrics_by_run.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\evaluation\R060\lsweep_metrics_by_run.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\generation\R060\evaluation_context_observable_effects_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\evaluation\R035\metrics_by_run.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\evaluation\R035\lsweep_metrics_by_run.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\generation\R035\evaluation_context_observable_effects_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\evaluation\R020\metrics_by_run.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\evaluation\R020\lsweep_metrics_by_run.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\72_evidence_sparsity\run_evidence_sparsity_v1\generation\R020\evaluation_context_observable_effects_L10.csv

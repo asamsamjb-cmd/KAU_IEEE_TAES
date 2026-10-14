@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_missingness_adaptation.py", line 840, in main
+    execute(args,workspace,out,report);code=0
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_missingness_adaptation.py", line 744, in execute
+    groups=split_manifest(e,context)
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_missingness_adaptation.py", line 222, in split_manifest
+    require({'episode_id','split'} <= set(frame.columns), 'Episode split manifest lacks episode_id/split')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_missingness_adaptation.py", line 41, in require
+    raise ValueError(message)
+ValueError: Episode split manifest lacks episode_id/split

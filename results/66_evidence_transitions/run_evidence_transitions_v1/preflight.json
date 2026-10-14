@@ -1,0 +1,12 @@
+{
+  "status": "STEP66_PREFLIGHT_PASS",
+  "protocol_identity": "af03a209b2df9bb5ab63cfa28345081e49cadbaf4ceaf2dd28738515049c151a",
+  "test_windows": 44846,
+  "test_endpoints": 38078,
+  "episodes": 752,
+  "event_runs": 8675,
+  "interior_gaps": 4113,
+  "fully_followed_audit_quiet_suffixes": 60,
+  "physical_recovery_evaluation": "NOT_SUPPORTED",
+  "scope": "Existing within-episode evidence transitions only"
+}

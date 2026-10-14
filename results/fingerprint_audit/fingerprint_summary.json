@@ -1,0 +1,38 @@
+{
+ "evidence_rows_NORMAL": 0,
+ "evidence_rows_RF": 8525,
+ "evidence_rows_GNSS": 35910,
+ "evidence_rows_INJ": 11526,
+ "evidence_rows_REPLAY": 7451,
+ "evidence_rows_GND": 6895,
+ "window_level": {
+  "n_test": 67110,
+  "accuracy": 0.21069885263001042,
+  "macro_f1": 0.16350677713832987,
+  "per_class_f1": {
+   "NORMAL": 0.225,
+   "RF": 0.269,
+   "GNSS": 0.105,
+   "INJ": 0.302,
+   "REPLAY": 0.038,
+   "GND": 0.043
+  }
+ },
+ "sequence_level": {
+  "n_test": 5538,
+  "accuracy": 0.19465511014806788,
+  "balanced_accuracy": 0.2540011057194896,
+  "macro_f1": 0.1774086190699553,
+  "normal_recall": 0.16185199841709538,
+  "per_class_f1": {
+   "NORMAL": 0.249,
+   "RF": 0.317,
+   "GNSS": 0.031,
+   "INJ": 0.191,
+   "REPLAY": 0.133,
+   "GND": 0.144
+  }
+ },
+ "token_asymmetries": 0,
+ "gate": "PASS"
+}

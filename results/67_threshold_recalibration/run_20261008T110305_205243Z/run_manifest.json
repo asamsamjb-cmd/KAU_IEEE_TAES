@@ -1,0 +1,14 @@
+{
+  "status": "FAILED",
+  "version": "shared_nominal_threshold_recalibration_v1",
+  "completed_at_utc": "2026-10-08T11:03:13.862679+00:00",
+  "elapsed_seconds": 9.029363499997999,
+  "output_sha256": {
+    "failure.json": "232a93a9f1375c8b82f2760ae6a478d6b788a3138bb61da72550857d074d609e",
+    "source/59.raw_semantic_representation_baseline.py": "f9d4e611135c390d0f29f6f8097640235430909e9246b1d30bb732d80616ff7a",
+    "source/67.threshold_recalibration_shift.py": "47db78f82f09b2688498e3e0674dc46990bc4d3f3cba05cca5b1af574318fb19",
+    "source/shared_context_v4.py": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+    "source/shared_nominal.py": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d"
+  },
+  "identity": "a179a3decad8c645c81564ba1b47727ed4a647260f40fad79d8be7457c969687"
+}

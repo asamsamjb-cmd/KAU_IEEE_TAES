@@ -1,0 +1,47 @@
+{
+  "schema": "taes_step33_evidence_sparsity_L20_v1",
+  "status": "COMPLETE",
+  "started_utc": "2026-10-13T04:39:29.327735+00:00",
+  "finished_utc": "2026-10-13T04:39:50.834652+00:00",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "seeds": [
+    20260610,
+    20260611,
+    20260612
+  ],
+  "lengths": [
+    1,
+    2,
+    3,
+    5,
+    10,
+    20
+  ],
+  "levels": [
+    "R100",
+    "R060",
+    "R035",
+    "R020"
+  ],
+  "population": "per level: L20-eligible endpoints of the Step 72 L10 endpoint set; all lengths scored on the same endpoints",
+  "heads": {
+    "L1-L10": "Step 12 frozen heads (Step 72 saved predictions, three of ten seeds)",
+    "L20": "Step 27 frozen heads"
+  },
+  "inference_route": "step11_evaluate_model",
+  "device": "cuda",
+  "statistical_scope": "descriptive; 3 head seeds, mean and ddof=1 SD; within-generator sensitivity analysis; exploratory extension designed after the L20 test was inspected",
+  "script_sha256": "8dbecf8424287aabbe667da47cb96a009448566538774026980522b151fbb726",
+  "artifacts": {
+    "33_gate_report.json": "8011fe2d792de074ce1b66a4fd25e913e5324a8c08e1651be7490d92e53b915e",
+    "33_L20_predictions_R020.npz": "10b650d13267ff598b27f7e862a160816fc5c8b2afbd57390709302f16262196",
+    "33_L20_predictions_R035.npz": "73f1511be5cbf9eb178cee0bc80db1efd5493e07f0b2c75de902ae6717e25854",
+    "33_L20_predictions_R060.npz": "f4ec0c360e098b525e863b9897687b5875946050a3a249921f387815b200e02a",
+    "33_L20_predictions_R100.npz": "d5cc62f0bebe107fa67621125a8d82e7010a2ef4495e224d264407623cbf3831",
+    "33_level_groups.csv": "27e8abf0b1e0785c110bc65b86e91638d2489d4ce7ec4c9564bfcd256a2ea55d",
+    "33_level_length_grid.csv": "83dbe03a2011ff74a0c69cb4a25855122066a52b273ba9f295e57f10c2e7b216",
+    "33_per_seed_metrics.csv": "dfde2dad72cf3cbc72648af1c9cf025231659d46dad8c38a5767460396613472",
+    "33_step72_reproduction.csv": "6be5e16d806b9592efa30f57dbda22cc4f427ba52b1c97dc8f78b77d7d57c027",
+    "sources.txt": "ae757669d35e2db6166140cfa9c45f978391e546e2a4abf016018d8c6cbfed9e"
+  }
+}

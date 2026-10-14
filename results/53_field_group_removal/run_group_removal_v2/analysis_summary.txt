@@ -1,0 +1,12 @@
+Step53: four test-time field-group removals on current shared_nominal_v2. No training or selection.
+All 22 field names/slots, test records, episodes and eligible L10 endpoints retained, including quiet contexts.
+Literal UNK replaces all values in a group; this is not tokenizer [UNK] and not column deletion.
+Clean reference: authenticated current Step47 TST predictions, after exact clean decision/probability replay.
+Four clean-minus-removal mean per-head six-class macro-F1 contrasts; negative drops retained.
+20,000 class-stratified paired whole-episode draws; 98.75% marginal Bonferroni intervals (family 4).
+Conditional on encoder, fitted heads, corpus and masks; no head/seed/group resampling.
+Distinct from Step51 train-time field subsets and Step47 uniform Missing-8. Unequal group sizes.
+No causal necessity, per-field importance, raw/canonical or cross-window aggregation superiority claim.
+A CI including zero does not demonstrate equivalence. Clean context effect strata remain diagnostics only;
+they do not identify attack evidence surviving removal. Update Fig.5 caption/protocol with the current
+corpus, Step8 encoder, ten TST heads and literal UNK; legacy Fig.5 values are not directly comparable.

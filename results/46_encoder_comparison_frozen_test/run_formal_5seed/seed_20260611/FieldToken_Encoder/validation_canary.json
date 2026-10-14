@@ -1,0 +1,22 @@
+{
+  "window": {
+    "max_abs_error": 0.0,
+    "compared_values": 3072,
+    "predictions_checked": true
+  },
+  "features": {
+    "max_abs_error": 0.0,
+    "compared_values": 393216,
+    "predictions_checked": false
+  },
+  "tst": {
+    "max_abs_error": 0.0,
+    "compared_values": 3072,
+    "predictions_checked": true
+  },
+  "status": "PASS",
+  "window_rows": 512,
+  "sequences": 512,
+  "atol": 1e-05,
+  "rtol": 1e-05
+}

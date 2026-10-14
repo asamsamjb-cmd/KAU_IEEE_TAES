@@ -1,0 +1,106 @@
+{
+  "status": "ALL_TRAINVAL_JOBS_VERIFIED",
+  "jobs": [
+    {
+      "seed": 20260610,
+      "condition": "actual_history",
+      "completion_sha256": "4cd0ab0fea03bac48899296212132b37464a0f2ebe48e804be0943a20d88a177"
+    },
+    {
+      "seed": 20260610,
+      "condition": "repeat_current",
+      "completion_sha256": "b2a474e458d0ee1d1bdeea93faadd18c37d78317ba343edfc9fee5214a9ae27f"
+    },
+    {
+      "seed": 20260611,
+      "condition": "actual_history",
+      "completion_sha256": "e0b2a8e6474647e775fa722750aff8272525f8d8177e796c3209fe12b097ead1"
+    },
+    {
+      "seed": 20260611,
+      "condition": "repeat_current",
+      "completion_sha256": "21be59daa34dd97cefd9a11803ad86c17b1c9ce65188349d9ba05fb4d6399199"
+    },
+    {
+      "seed": 20260612,
+      "condition": "actual_history",
+      "completion_sha256": "9e1a9bc87f5d03c105a69015811e2cd09c2151e00abfb05cb8a16252ee892f7e"
+    },
+    {
+      "seed": 20260612,
+      "condition": "repeat_current",
+      "completion_sha256": "1cf3adc7455559d1c629957105bc1545e163c3837a57af9b0e6ac690aa592da4"
+    },
+    {
+      "seed": 20260613,
+      "condition": "actual_history",
+      "completion_sha256": "2e5f3c529af740162a00d9a2ca1a91780768097b3d8750f43815ffabb6a2eb13"
+    },
+    {
+      "seed": 20260613,
+      "condition": "repeat_current",
+      "completion_sha256": "7efff29bf2355781012f6b85285fb71304f4b695618319dba9957e61cd3d7cd5"
+    },
+    {
+      "seed": 20260614,
+      "condition": "actual_history",
+      "completion_sha256": "fc6ac9faff6c9328f32c5f20e1d4d3621ed0d61bcd6dcc9cf1c9d4c79887164e"
+    },
+    {
+      "seed": 20260614,
+      "condition": "repeat_current",
+      "completion_sha256": "e360442c4bc77b304a8d11f4001f7156f1e3131b345c4f34b4e58df5ba2bfe28"
+    },
+    {
+      "seed": 20260615,
+      "condition": "actual_history",
+      "completion_sha256": "f192f2ab91cd8a052f031ba4954fef60a56594923998eed2b7937943c942f097"
+    },
+    {
+      "seed": 20260615,
+      "condition": "repeat_current",
+      "completion_sha256": "531cdb385927851018aecfb8aa906922ba40270d366d31894472c7e787d83761"
+    },
+    {
+      "seed": 20260616,
+      "condition": "actual_history",
+      "completion_sha256": "f6a60496d071b89a1a4102a486456961e8deeb405cdf9927f8c91aa5cdc00d99"
+    },
+    {
+      "seed": 20260616,
+      "condition": "repeat_current",
+      "completion_sha256": "b98727dccb72ab71d4365765b35b7583065b2fca0a7fb1d5dc4c3cb5dc85b6e5"
+    },
+    {
+      "seed": 20260617,
+      "condition": "actual_history",
+      "completion_sha256": "0b38669ebb7d30588ed7cd3747f0422e8221134d0bb0a0d6ef5d95fbccf20673"
+    },
+    {
+      "seed": 20260617,
+      "condition": "repeat_current",
+      "completion_sha256": "7ce25f915bebc1928f7b3d557e76d34eaf186ef1e78bbe19e2cb2712a6ae6fa0"
+    },
+    {
+      "seed": 20260618,
+      "condition": "actual_history",
+      "completion_sha256": "7fa6c1b48f63d73db92788864465905f336620cec418c8a0f11bb4679f51c775"
+    },
+    {
+      "seed": 20260618,
+      "condition": "repeat_current",
+      "completion_sha256": "3e6e951f0957bc84abf21f4fc2f06fe65af5213b5fdcf29af28452fdaa25fc10"
+    },
+    {
+      "seed": 20260619,
+      "condition": "actual_history",
+      "completion_sha256": "11bba314bef5529e9d3bab5a4b49cb41ab87c1843bde9d25c534f372500e681b"
+    },
+    {
+      "seed": 20260619,
+      "condition": "repeat_current",
+      "completion_sha256": "c332b427fc1dc114f18c46a48e2dea23f695286c11ec3617909f2531e9ab0f83"
+    }
+  ],
+  "opened_at_utc": "2026-10-07T17:31:44.844097+00:00"
+}

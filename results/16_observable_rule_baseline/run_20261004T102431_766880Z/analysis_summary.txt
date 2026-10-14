@@ -1,0 +1,17 @@
+Step 16 semantic-rule evaluation
+
+Rule thresholds were fixed using common-endpoint validation only.
+Rule_L1 and Rule_L10 are evaluated at the same L10 endpoints.
+L10 additionally uses corroborated coarse command-category recurrence.
+No CI or statistical superiority/equivalence conclusion is produced.
+Existing Step 15 confidence intervals do not include these rule baselines.
+
+split    model  n_sequences  n_episodes           population  macro_f1  accuracy  normal_false_alarm_rate  conflict_rate  exact_tie_rate  normal_prediction_rate
+  val  Rule_L1        37371         753 common_L10_endpoints  0.341322  0.373124                 0.055582       0.038345        0.000214                0.723101
+  val Rule_L10        37371         753 common_L10_endpoints  0.631902  0.623103                 0.109407       0.203232        0.015654                0.396323
+ test  Rule_L1        38078         752 common_L10_endpoints  0.344354  0.366931                 0.057792       0.037554        0.000446                0.717291
+ test Rule_L10        38078         752 common_L10_endpoints  0.655976  0.646883                 0.114891       0.208047        0.017727                0.371133
+
+Next review: data_audit, selected thresholds, per-class errors, conflict/tie rates.
+Do not revise rules or thresholds in response to these test results.
+After the audit, continue the prespecified encoder comparison.

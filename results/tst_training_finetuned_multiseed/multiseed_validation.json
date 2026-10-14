@@ -1,0 +1,255 @@
+{
+  "status": "VALIDATED",
+  "seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614,
+    20260615,
+    20260616,
+    20260617,
+    20260618,
+    20260619
+  ],
+  "ordered_lengths": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "complete_grid": true,
+  "primary_table_columns": [
+    "test_common_accuracy",
+    "test_common_macro_f1",
+    "test_common_weighted_f1"
+  ],
+  "std_ddof": 1,
+  "statistical_scope": "Head seed variability conditional on fixed encoder/data; not bootstrap CI.",
+  "source_contract": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "input_sha256": {
+      "splits/train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+      "splits/val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+      "splits/test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+      "splits/label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+      "splits/episode_split_manifest.csv": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05"
+    },
+    "step8_model_sha256": {
+      "trained_distilbert_model/config.json": "64b9bbcd239e60e66c2e64802e8555112964cb86e71e9fdbcf023b72f5f778b0",
+      "trained_distilbert_model/label_mapping.json": "253649f289bdf8046aed8caeb3ef65e347af7038223a0f2ea2ee5b1d35f9e7ff",
+      "trained_distilbert_model/model.safetensors": "0792b13df30bed87dced1507a389cbd084558aa2fa3bdeb07299c3909b76464c",
+      "trained_distilbert_model/tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "trained_distilbert_model/tokenizer_config.json": "71cd48543bec670f50e0c9c3556df16b1f58ea720ead6a1b4675f08870c60b17",
+      "trained_distilbert_model/training_args.bin": "a4659c5ed492d23051158b76c31dec84b689475caaced9969fe0ce6d51a27643",
+      "trained_distilbert_model/training_provenance.json": "7c2b3bfa0996b59a79563f43c64bf29f2f829251ca950a0896e1cf1b2a7b221c"
+    },
+    "step9_artifacts": {
+      "embedding_extraction_report.json": "d7525913bea9dd5c713b0d3b67372577db1eb4c0587c02a4da310acac4c68822",
+      "train_window_embeddings.npz": "b6b86adb4cd0b2dcf8d151927d63482d5ef83eb8cb285001a81a72d74b52b7e4",
+      "train_window_metadata.csv": "c09de8d275999b7a6d7b56e75690e47cf15c796bdea9d3a5bfa47e9a0e3b977c",
+      "val_window_embeddings.npz": "a92ab043244aed7f49e50dca125f38e67c6c2d287eb00b66c556597fbd786d51",
+      "val_window_metadata.csv": "95024aac342046f89290926ff96edf53b8e29be5901297032c4f5c5facd513a2",
+      "test_window_embeddings.npz": "67dfc1e4f3a128013dcc585f9b8d80b33bfb8d2d85f6b2a6fe4d9628391becd1",
+      "test_window_metadata.csv": "86f13ac47bc3fc6c337736da94dfac05c1e96e7907c3d8d37b4aa3089d0c7f68"
+    },
+    "step10_artifacts": {
+      "sequence_build_report_index.json": "bff8d5a1ac7a06ce5492f9ad0f0d12e51102e34ce1f51dad07a6e7a83ff76a02",
+      "sequence_build_report_L1.json": "2cbac562e75c450f25fe3f4db42d43b26273ffc78ac19fb86cc6d2d5f12178ce",
+      "train_tst_sequences_L1.npz": "f6f8fd86ab4913ffc4e61a487346fcfbdce382270795ae2b71d0ddd569b0d607",
+      "train_tst_sequence_metadata_L1.csv": "b885c3228e6eaefdd9db95d9b5fb8ae463e58a3cf87d28f13a848fcb7ae5134a",
+      "train_tst_sequence_observable_effects_L1.csv": "edc2697f2bd980f1e941a1a2b55196218133b8d43c872f0e9552dfce4c5781b0",
+      "val_tst_sequences_L1.npz": "8a2fd8b67dd646a24694a7bf54d630993ed9f464d67a30f2ff95e522eb916316",
+      "val_tst_sequence_metadata_L1.csv": "29d4a86743b90a47432b3e9d01a834f66ef7d58fe8ae0744847e17e9ffa73519",
+      "val_tst_sequence_observable_effects_L1.csv": "e7d2ac33d124c02d9251ff31b515947acfe38b8e37ac1601dc4d194e6a69ccbb",
+      "test_tst_sequences_L1.npz": "72ffac3dfd56e64f8c0df066429bcc01694bc0213a299db83e7ffe17e29785da",
+      "test_tst_sequence_metadata_L1.csv": "3cb221452e0462154480c3ef45772c88113436874d199b96eaa197604f504ae4",
+      "test_tst_sequence_observable_effects_L1.csv": "1654e064e6521bfc2b3fa6a054ddb96ca52156142cac1cc2791fad1c79603871",
+      "sequence_build_report_L2.json": "19282176fe0a77095de538db5dade65698bca438cb9a92561012354f8de04a40",
+      "train_tst_sequences_L2.npz": "6c624d670ba87d421d305fcbef81107831176e90a64e13ff34f0506e6ab1af18",
+      "train_tst_sequence_metadata_L2.csv": "53ec666c74f4cda7d1f5559474f70c77c0a0f67295dd3440a98f7b5216f313bb",
+      "train_tst_sequence_observable_effects_L2.csv": "9cd2cdbc317ac9b625f45493805e1930dff48566d0fd51b7e718a23e62d6396a",
+      "val_tst_sequences_L2.npz": "f51546201759dbc341e26c4558fd34bf17830d0a0fdc787405eb8db5a8a8baa9",
+      "val_tst_sequence_metadata_L2.csv": "546ee6e711dbf0a08d84ebfd68a27667334f78b48dead5d55d7f194a89847e1c",
+      "val_tst_sequence_observable_effects_L2.csv": "91539d172b7e7c26eb048de65426beed42c428e3228ff4834915c3ffba17160f",
+      "test_tst_sequences_L2.npz": "8ca54c3dc58bf9773971cec1e55dda4f1bba6e6fcced071c6a8ba69c8c7c685d",
+      "test_tst_sequence_metadata_L2.csv": "1a82e9839e72c13d97c87237ed0f638874f40ba9e49f70842a9a17105c0935d4",
+      "test_tst_sequence_observable_effects_L2.csv": "833003d839d18c64cea1536eb0f9b214c9c32f91081d678f011ebe18b74d4715",
+      "sequence_build_report_L3.json": "d6f237cb58f3cd4b3d96742a5b39661b7a64d9647a5f972329bea5174996a498",
+      "train_tst_sequences_L3.npz": "dc0f44a5d1c54181a8dd219ebef6ae79e8b699f59d13f43962ce376f417ddf62",
+      "train_tst_sequence_metadata_L3.csv": "85a1f43425e2e8b11f3f90ea013b863c58fd268b5d28bc55712b6f1da4514df7",
+      "train_tst_sequence_observable_effects_L3.csv": "1f7b5539cbfaf063a1d48126a3fa2fcd3d6a518c7e303cce508aaec2fb2266a7",
+      "val_tst_sequences_L3.npz": "9a4b2f47946f432b212faf837f4d447656a2ad90148be2537ef78021da58b68f",
+      "val_tst_sequence_metadata_L3.csv": "139c3359fcf1bc6cc09062c3d3e2f145c358a18c675fef06a5cde66dd114ef37",
+      "val_tst_sequence_observable_effects_L3.csv": "0ef15912b1812fbc152b649ae679c449f9a598f29e20fd1f6357b7a1d0ef9a05",
+      "test_tst_sequences_L3.npz": "5ad0ebbebc2e18c7d2452113489a22511bcfda4cf89cc68b9632d7a0e1b85c7a",
+      "test_tst_sequence_metadata_L3.csv": "8bb1c02ac703fcc3ad8f8f578c3186b0d4918e1351a18aa67a951fa23047a8d1",
+      "test_tst_sequence_observable_effects_L3.csv": "a5e7486f2df28e1e1fc48260d7701e455d91725d92dc98ea2578df71f06eb29a",
+      "sequence_build_report_L5.json": "069989e7631fb8780227af54563eb79a7e1a5edbf862903a147b168d453aa528",
+      "train_tst_sequences_L5.npz": "285f6368de068705fe5aeae9e19bfa9026a5688b6200acf8bb96dee49842bf7b",
+      "train_tst_sequence_metadata_L5.csv": "95895671d2a4ed7e2e43ab684d5f0da3b3306d485668c50dee46c6f1e4a5f264",
+      "train_tst_sequence_observable_effects_L5.csv": "a09de9fcabee496c2a8663e9da2d9f3b3b2098894dc93608dda912ada4b02b95",
+      "val_tst_sequences_L5.npz": "835354c8003c4ae1c636823e46402750465c5852e1da207efc957113c3285672",
+      "val_tst_sequence_metadata_L5.csv": "549d34cbccb1c80fc93bcd8f71cb8b20b7e5dcf2c0a8c2b0e435f7ced5e4541c",
+      "val_tst_sequence_observable_effects_L5.csv": "3ae09f3b4f7c895476c1c730c973a7810f4b8987b428a5882181aa3f50129e1c",
+      "test_tst_sequences_L5.npz": "41f7843c2940c8e8d4747703c98f3776f310f8c2d719d3913d36e4548d449ce3",
+      "test_tst_sequence_metadata_L5.csv": "a27ceec7a5e3795be96f10f2a2a865417cfdc80370549614ccacc973bf581b41",
+      "test_tst_sequence_observable_effects_L5.csv": "1191aa687f8ba878e8563fa68fbdaf6b54d4420b9e35523ff802cca39bdba345",
+      "sequence_build_report_L10.json": "3a7251ae524206f79ca01dea7e03c344c53063f62ef9a12e188acff9820abf05",
+      "train_tst_sequences_L10.npz": "2c9a1e6f061102aa8767d8d67fe55dc807d181376900078e85d310c369959add",
+      "train_tst_sequence_metadata_L10.csv": "09bb20d5318c6c92449a72812c5c3653769df8c2f5fd1161af8846149f534039",
+      "train_tst_sequence_observable_effects_L10.csv": "32e702be60898171121dd6bbdee125b7e644552f7ddaf4e1bb2c815d4153ce21",
+      "val_tst_sequences_L10.npz": "b17f2a4145e6f89eeaa98d631b07c82315e286f2899ffb8158735127453d13db",
+      "val_tst_sequence_metadata_L10.csv": "3cfa6308e1ff332cfc9ad8e5fb392c2ecd8b3bb9fdd9af5bfb7a261a762cabcb",
+      "val_tst_sequence_observable_effects_L10.csv": "36baf87cc16dc5f5b458ab79d3acef799e17ea767eb57928b7dc69bdfebf28d9",
+      "test_tst_sequences_L10.npz": "d93eb86d5f4f5acdc185c22e0dc377e15da4cd17cf1bde6e30b30b7dc308efff",
+      "test_tst_sequence_metadata_L10.csv": "817150a89d5aed299450eb6e3cdfd1a42d71fdc37f75889eff452f6d6373a958",
+      "test_tst_sequence_observable_effects_L10.csv": "3a9b7d87ba9dede0291e052918645de7927ab9fcf017ed905c0c52985e5baf40"
+    },
+    "manifest_sha256": {
+      "step8": "665b994dc422fdadd0d8a0cda690d7cd082074ad320537bb873c0afd778be968",
+      "step9": "dbdff8a70be63b51ed0f73167d2d878a2df8daedae70c6be227d2d018df70b17",
+      "step10": "7580acc3d0fc1d02a3fea2252d89a442cfdddfcd9ecf171b2106cf1a555bd7d0"
+    },
+    "common_endpoint_report": {
+      "reference_length": 10,
+      "rule": "Intersection of end_row_indices across L within each split; no rows filtered by Step 10.",
+      "downstream_rule": "Compare context lengths on these same endpoints; report all-available-window results separately.",
+      "splits": {
+        "train": {
+          "common_endpoint_count": 179414,
+          "sorted_end_row_indices_sha256": "d05c6340c61c0bfb2dbea11b238a44bdbcda51613663d2b55ccccfd9c207a761",
+          "available_sequences_by_L": {
+            "1": 211006,
+            "2": 207495,
+            "3": 203984,
+            "5": 196964,
+            "10": 179414
+          }
+        },
+        "val": {
+          "common_endpoint_count": 37371,
+          "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2",
+          "available_sequences_by_L": {
+            "1": 44148,
+            "2": 43395,
+            "3": 42642,
+            "5": 41136,
+            "10": 37371
+          }
+        },
+        "test": {
+          "common_endpoint_count": 38078,
+          "sorted_end_row_indices_sha256": "98860cb9acd0348efe69583e7dce14c09f2b59c77c1a43b2a545065cd241098b",
+          "available_sequences_by_L": {
+            "1": 44846,
+            "2": 44094,
+            "3": 43342,
+            "5": 41838,
+            "10": 38078
+          }
+        }
+      }
+    },
+    "observability_audit": {
+      "schema_version": "counterfactual_observable_change_v1",
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+      "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "split_files": {
+        "train": "audit/train_window_observable_effects.csv",
+        "val": "audit/val_window_observable_effects.csv",
+        "test": "audit/test_window_observable_effects.csv"
+      },
+      "artifacts": {
+        "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+        "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+        "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+      },
+      "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+    }
+  },
+  "common_prediction_keys_sha256": {
+    "val": "6dcfeb5d14610a479f05c9853eb89a023eeec6ef6e1a0026029d7d617599d7c3",
+    "test": "f4a00aa8ca02ea306a904aaafe9e9e4aa2889875cde9c47fd5b761a29a523281"
+  },
+  "observable_effect_keys_sha256": {
+    "val/L1": "f0900ed07c15a005cfb5ba09ae611100ad5234d4bb4f9bf40c43539594087ea9",
+    "test/L1": "a681fc61f5a839e3ba68fd2f70401461d5c41dbbf43c71bfacdcae3a8526281d",
+    "val/L2": "786d3ec9fe480f5a61c39690280156cbff8a6e83c85def44c92c37f0b6d37cb9",
+    "test/L2": "6c0f3dd901add0f364983b6ebe2b90413c7c6b205efaa165966de48a06ce0dd4",
+    "val/L3": "99d1fd1f55403aa27db17d7ebe090e48e7e7fd37b22df46e875a3af0f79d28ac",
+    "test/L3": "e0ebd1dd509ce20ba807a2091972b8607f8e5e9b9749f5446e99c6c971d4760a",
+    "val/L5": "d9d825cef83fe1ca2af97f03796679b54596d1c591733ab6468f2dd04004ae0f",
+    "test/L5": "5a40ec440755d42fd3ede5882a8eecf6280779924bee7b7843027739e24b8e51",
+    "val/L10": "965e171d5895824332cb44e8a0333f16eb3fc4a56701d85736a77ed928d6f471",
+    "test/L10": "53e3d62474b4e1712fce57101d3e8c9eb54edc97c747dff617c971fc3b2266f5"
+  },
+  "observable_effect_scope": "Same audit annotations across head seeds at each L; diagnostic only, never seed selection or model inputs.",
+  "runs": [
+    {
+      "seed": 20260610,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main",
+      "run_id": "9072c471a3088f8247ecfd0fc3389ee1623e3fa45dafec61a77f3c3fa885ff20",
+      "manifest_sha256": "d99c4c424251e0b0dbf062de3e181309b271b4ec64a1e4b118246fe20c62805b"
+    },
+    {
+      "seed": 20260611,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260611",
+      "run_id": "65105b4d72e2da7feda49f3107701b8ff0ff2128fa391f5be2341fdcc4042e82",
+      "manifest_sha256": "d559f2e7d34b1597f7c05965796f5f0a5bfbdc74f3099618a1e817b7de1dacca"
+    },
+    {
+      "seed": 20260612,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260612",
+      "run_id": "b798283e3e1079fbe98d7722d9aba6b3f1d7e056ea7b6b18bc491f7828fe30e9",
+      "manifest_sha256": "04331ccd699a7d28681d90e4a283504a55483812292610b7635ccf3e543add13"
+    },
+    {
+      "seed": 20260613,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260613",
+      "run_id": "9764fef3c9311c6f7f80a905db43117cd2d54645f4b5e90e84fc1b361ed730a2",
+      "manifest_sha256": "94fae516941cd09d034777a4423af5a78237a19bd54b11d2f1b81168c9dbe8ad"
+    },
+    {
+      "seed": 20260614,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260614",
+      "run_id": "09fd7f25005093e5032ef36e1037477838fced95603ba141131e08688ffbe115",
+      "manifest_sha256": "b4d9c34097c26c4d3c0d4c383cddba6d0950bc5beb4b30fd943c95d4684dec67"
+    },
+    {
+      "seed": 20260615,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260615",
+      "run_id": "c5f6bf921c68bf5b7d1fa65f7173f63bd282bd4ddd710ef634f4d233025cc29d",
+      "manifest_sha256": "b4908b07f53e624e914970fa4c800cc640865b3538ea454d2003199456807ae7"
+    },
+    {
+      "seed": 20260616,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260616",
+      "run_id": "900c1d5e46519435183eb918fe83f82f699872c8bb2e7bc6cc5813a6f42d8cd4",
+      "manifest_sha256": "69c40482ca036c771424af71a17c43940463201bea96c4f1c0645dd9756f1448"
+    },
+    {
+      "seed": 20260617,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260617",
+      "run_id": "31dd7b533b8ac7f8e51e825678459cef0905263f30024155c31df2d80f5e7a40",
+      "manifest_sha256": "949d544b7931cf0f826eb08819d80e584a9f41a7b448baa44382b0057a94cd88"
+    },
+    {
+      "seed": 20260618,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618",
+      "run_id": "cec4b1653dd4a3fd0ce97147061ec9f0a149a59cea1b3a8c39b3a0cd8fd0cf44",
+      "manifest_sha256": "08f2dd509ff60ff85f8ff1c24a3dc0072159fde33889790978346d0c5bba9f25"
+    },
+    {
+      "seed": 20260619,
+      "output_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260619",
+      "run_id": "9b75877d4f4e9e64fd8365cb591d153a1eb68ddfcff9c8bc19cd116f3a74dd39",
+      "manifest_sha256": "4ae4723bf74bf8d4a86413af61a2360811483e31afb110825a28ba2527fe5f31"
+    }
+  ]
+}

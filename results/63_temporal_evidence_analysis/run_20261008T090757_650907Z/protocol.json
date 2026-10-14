@@ -1,0 +1,51 @@
+{
+  "version": "shared_nominal_temporal_evidence_analysis_v1",
+  "created_at_utc": "2026-10-08T09:08:04.328330+00:00",
+  "script_sha256": "29a8d528634f30b355584e31d82dce0fc522b227862f0b6051bfeb0d0a4d7681",
+  "source_step62_identity": "2586c25f0b1a16d8fcd50fe025d46396d6a7da322ecba7b119bc401f9c2b3fe8",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "labels": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "conditions": [
+    "actual_history",
+    "repeat_current"
+  ],
+  "seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614,
+    20260615,
+    20260616,
+    20260617,
+    20260618,
+    20260619
+  ],
+  "post_hoc": true,
+  "training": false,
+  "primary": "history_only_changed: actual_history minus repeat_current five-attack-class macro recall",
+  "groups": "all attack; normal; current/history-only/no change; current-unchanged past count0..9; history-only recent lag1..9",
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 2026100763,
+    "unit": "class-stratified whole episode",
+    "fixed_head_seeds": true,
+    "paired": true,
+    "primary_ci": 0.95,
+    "secondary_intervals": "pointwise exploratory"
+  },
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3"
+  },
+  "interpretation": "Observed 22-field projection change is audit information, never a model feature or an oracle bound.",
+  "identity": "ea479fc47178fa0649bab8dc512e94fea20b329168fc4908a97dbe33f8791612"
+}

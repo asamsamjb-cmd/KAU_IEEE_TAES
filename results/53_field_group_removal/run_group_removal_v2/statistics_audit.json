@@ -1,0 +1,16 @@
+{
+  "draws": 20000,
+  "seed": 2026100153,
+  "batch_size": 100,
+  "unit": "class-stratified paired whole episode; complete overlapping L10 endpoints retained",
+  "estimand": "per-head endpoint six-class macro-F1 then equal mean of ten heads; not ensemble or pooled-seed F1",
+  "CI_scope": "conditional on frozen encoder, ten fitted heads, this shared_nominal_v2 realization and four declared groups",
+  "multiplicity": "four clean-minus-group contrasts; 98.75% marginal Bonferroni linear-percentile intervals",
+  "head_seed_resampling": false,
+  "group_resampling": false,
+  "quiet_endpoint_filtering": false,
+  "equivalence_claim": false,
+  "causal_necessity_claim": false,
+  "per_field_importance_claim": false,
+  "groups_equal_size": false
+}

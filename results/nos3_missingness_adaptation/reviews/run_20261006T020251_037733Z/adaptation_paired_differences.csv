@@ -1,0 +1,5 @@
+﻿architecture,condition,direction,delta_macro_f1,delta_normal_false_alarm_fraction,delta_replay_recall
+TST_L10,clean,mixed_mask14 training minus clean training,0.000420934402648232,-0.0036445678583825053,0.0007398638650488731
+TST_L10,fixed_mask14,mixed_mask14 training minus clean training,0.3491070525011103,0.5439083651509893,0.007694584196507814
+MeanMax_MLP,clean,mixed_mask14 training minus clean training,0.0016741188886919556,-0.014925373134328353,-0.00029594554601952705
+MeanMax_MLP,fixed_mask14,mixed_mask14 training minus clean training,0.3228305385467707,0.43578618535230823,0.010802012429713015

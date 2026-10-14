@@ -1,0 +1,23 @@
+{
+  "retrospective": true,
+  "warnings": [],
+  "main_metric": "paired_correct on ALL_ATTACKS/ALL; endpoint-weighted, mean over fixed trained heads",
+  "denominators": "Unconditional on nominal correctness; no conditional-detection denominator. ALL_ATTACKS pools endpoints. Classes are balanced in ALL but may not be balanced within CHANGED/UNCHANGED strata.",
+  "strata": "ALL includes every pair. CHANGED and UNCHANGED partition ALL by exact full-L10 22-field differences. Benign nominal strata use any recorded baseline impairment flag in L10, as audit metadata only.",
+  "intervals": {
+    "draws": 20000,
+    "seed": 2026100701,
+    "unit": "whole shared nominal episode",
+    "pairing": "same multiplicity vector across all six class replicas, all models, and all four regimes",
+    "estimator": "ratio of endpoint sums after episode resampling; fixed-head mean; not equal-weight episode-rate mean",
+    "head_seed_resampling": false,
+    "generator_seed_resampling": false,
+    "encoder_seed_resampling": false,
+    "intervals": "linear percentile95, conditional on fixed source realization/encoder/heads; no equivalence tests",
+    "empty_strata": "NA, not zero. Omit zero-denominator draws and report their count; CI suppressed if <2 contributing clusters",
+    "multiplicity": "32 TST-minus-comparator contrasts for ALL_ATTACKS/ALL paired_correct: four conditions x eight comparators. Provide unadjusted95 and Bonferroni95 across those32 only; all analyses retrospective/descriptive"
+  },
+  "limitations": "Within-generator matched prediction response, not external validity, raw-vs-semantic superiority, absence of all simulator fingerprints, or isolated-factor causal identification.",
+  "identical_input_check": "Pipeline consistency only; deterministic incorrect models can also pass.",
+  "elapsed_seconds": 15.840123099998891
+}

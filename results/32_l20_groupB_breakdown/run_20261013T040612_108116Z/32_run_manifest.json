@@ -1,0 +1,30 @@
+{
+  "schema": "taes_step32_groupB_breakdown_v1",
+  "status": "COMPLETE",
+  "started_utc": "2026-10-13T04:06:10.952491+00:00",
+  "finished_utc": "2026-10-13T04:06:12.125123+00:00",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "seeds": [
+    20260610,
+    20260611,
+    20260612
+  ],
+  "population": "Step 28 group B: attack-labelled L20-eligible test endpoints with paired-nominal change only in windows 11-20 before the endpoint",
+  "models": {
+    "L10": "Step 12 historical heads (3 of 10 seeds)",
+    "L20": "Step 27 heads"
+  },
+  "statistical_scope": "descriptive; 3 head seeds, mean and ddof=1 SD; subgroup identified with the nondeployable paired-nominal audit; exploratory extension designed after the L20 test was inspected",
+  "script_sha256": "e9239b9d3766080b9cc85dd047e3b5ac132c5e807d877f6cafdf2a35b769daf2",
+  "artifacts": {
+    "32_gate_report.json": "13cbf144d7fef27e3cc71f9914e6a8777d53f3dfb64900347c43f4bf81293a20",
+    "32_groupB_by_bin.csv": "bbe11bbc0f08ef2abe765dd4284d421e9e8e46906d87321f4769abf060aeaa20",
+    "32_groupB_by_bin_by_class.csv": "fbbfa56a1af90d11e9e56f53932200464d2114bf64aa412e226f62eda5b46512",
+    "32_groupB_by_bin_by_class_by_seed.csv": "5298134ffb805c6a586970318937469cfdf14723676a503131f6afb8e0e452e4",
+    "32_groupB_by_bin_by_seed.csv": "404b8cb3c0e7a5444b7e88d5a9eb76befb7f8ab301d1c91256fab478afdcb966",
+    "32_groupB_by_count_full.csv": "b3615d8d0be0080b1e6f3b747f7bdb550cc72808db32ed75376edfdc5b3c422a",
+    "32_groupB_by_count_full_by_seed.csv": "f4f02b17f1a033bbe75a932e5a14a3f5e0330f38aff38198124153ea5a62a767",
+    "32_groupB_endpoints.csv": "129b8e6ecb6320cd7ff02a744030505f2c6e2e21d3198a16c1787e3ce4cce5db",
+    "sources.txt": "81fc5c195b50ac32b893a8d0864b46090cee558c461a4454bce9fe32e0cf687a"
+  }
+}

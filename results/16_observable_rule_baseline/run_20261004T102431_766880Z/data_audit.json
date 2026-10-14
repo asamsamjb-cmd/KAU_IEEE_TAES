@@ -1,0 +1,71 @@
+{
+  "train": {
+    "records": 211006,
+    "episodes": 3511,
+    "class_records": {
+      "GNSS_SPOOFING": 35657,
+      "NORMAL": 35646,
+      "RF_LINK_JAMMING": 35372,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 35030,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 35027,
+      "TELECOMMAND_REPLAY": 34274
+    },
+    "class_episodes": {
+      "GNSS_SPOOFING": 586,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 569,
+      "NORMAL": 604,
+      "RF_LINK_JAMMING": 580,
+      "TELECOMMAND_REPLAY": 595,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 577
+    },
+    "extra_columns_not_used_as_features": [],
+    "sequences": null,
+    "alignment_passed": false
+  },
+  "val": {
+    "records": 44148,
+    "episodes": 753,
+    "class_records": {
+      "TELECOMMAND_REPLAY": 7825,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7680,
+      "NORMAL": 7422,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 7141,
+      "GNSS_SPOOFING": 7042,
+      "RF_LINK_JAMMING": 7038
+    },
+    "class_episodes": {
+      "GNSS_SPOOFING": 126,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 122,
+      "NORMAL": 129,
+      "RF_LINK_JAMMING": 124,
+      "TELECOMMAND_REPLAY": 128,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 124
+    },
+    "extra_columns_not_used_as_features": [],
+    "sequences": 37371,
+    "alignment_passed": true
+  },
+  "test": {
+    "records": 44846,
+    "episodes": 752,
+    "class_records": {
+      "TELECOMMAND_REPLAY": 7901,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 7832,
+      "RF_LINK_JAMMING": 7590,
+      "GNSS_SPOOFING": 7301,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7290,
+      "NORMAL": 6932
+    },
+    "class_episodes": {
+      "GNSS_SPOOFING": 125,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 122,
+      "NORMAL": 130,
+      "RF_LINK_JAMMING": 125,
+      "TELECOMMAND_REPLAY": 127,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 123
+    },
+    "extra_columns_not_used_as_features": [],
+    "sequences": 38078,
+    "alignment_passed": true
+  }
+}

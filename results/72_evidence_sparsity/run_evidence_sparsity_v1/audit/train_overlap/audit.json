@@ -1,0 +1,19 @@
+{
+  "R100": {
+    "rows": 49152,
+    "matching_rows": 46133
+  },
+  "R060": {
+    "rows": 49152,
+    "matching_rows": 46952
+  },
+  "R035": {
+    "rows": 49152,
+    "matching_rows": 47493
+  },
+  "R020": {
+    "rows": 49152,
+    "matching_rows": 47828
+  },
+  "scope": "64-bit hashes of 22-field vectors only; descriptive finite-vocabulary overlap; no row removal or independence proof"
+}

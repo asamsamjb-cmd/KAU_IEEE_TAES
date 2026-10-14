@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "prediction_rows": 8090,
+  "identical_decisions": true,
+  "max_abs_difference": 3.958120942115784e-09
+}

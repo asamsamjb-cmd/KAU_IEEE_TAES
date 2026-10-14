@@ -1,0 +1,36 @@
+{
+  "stage": "future_test_evaluation_not_executed_here",
+  "primary_endpoint": "macro_f1_at_fixed_L10_test_endpoints",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "primary_population": "all eligible L10 endpoints with supplied episode labels, including quiet attack windows; no evidence-based exclusion or relabeling",
+  "observability_interpretation": "counterfactual annotations are diagnostic only; aggregate scores do not establish attack-evidence use or an information-theoretic ceiling",
+  "expected_test_windows": 44846,
+  "expected_test_l10": 38078,
+  "expected_test_episodes": 752,
+  "expected_test_l10_episodes": 752,
+  "test_count_source": "authenticated Step 7 manifest/episode inventory; no test windows opened; evaluator must independently verify",
+  "point_estimate": "arithmetic mean of per-seed macro-F1; no probability ensemble",
+  "seed_variation": "sample SD across five encoder-training seeds",
+  "contrasts": [
+    "DistilBERT_Pretrained_Finetune minus CategoricalEmbedding_MLP",
+    "DistilBERT_Pretrained_Finetune minus FieldToken_Encoder",
+    "DistilBERT_Pretrained_Finetune minus DistilBERT_RandomInit_Train"
+  ],
+  "primary_contrast_scope": "encoder comparisons at L10 conditional on the same TST architecture/training recipe",
+  "bootstrap_unit": "class-stratified whole eligible episode, paired across all models and seeds",
+  "bootstrap_draws": 20000,
+  "marginal_confidence": 0.95,
+  "three_contrast_bonferroni_confidence": 0.9833333333333333,
+  "secondary_within_encoder_temporal_contrasts": [
+    "CategoricalEmbedding_MLP: L10 TST minus window classifier at common L10 endpoints",
+    "FieldToken_Encoder: L10 TST minus window classifier at common L10 endpoints",
+    "DistilBERT_RandomInit_Train: L10 TST minus window classifier at common L10 endpoints",
+    "DistilBERT_Pretrained_Finetune: L10 TST minus window classifier at common L10 endpoints"
+  ],
+  "secondary_four_contrast_bonferroni_confidence": 0.9875,
+  "multiplicity_scope": "three primary encoder contrasts and four explicitly secondary within-encoder contrasts are separate families; no joint seven-contrast coverage claim",
+  "temporal_interpretation": "same endpoint population, but differing head capacity/training; use pooling/LSTM controls for aggregator interpretation",
+  "uncertainty_scope": "episode CI conditional on the trained seeds; report encoder-seed SD separately; fixed TST seed",
+  "equivalence_claim": false,
+  "test_used_for_selection": false
+}

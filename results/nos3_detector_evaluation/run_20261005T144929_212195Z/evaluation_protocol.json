@@ -1,0 +1,27 @@
+{
+  "models": [
+    "TST_L1",
+    "TST_L10",
+    "Frozen_Rule_L10_if_saved_specification_is_verified"
+  ],
+  "views": [
+    "observed_partial",
+    "freshness_unk"
+  ],
+  "primary": "Second command in each run; 5 normal and 5 replay endpoints, paired by campaign pair",
+  "secondary": "First and third command controls; 20 ordinary command endpoints",
+  "label_order": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "bin_seconds": 1,
+  "decision": "Unmodified six-class argmax; no thresholds tuned on NOS3",
+  "rule": "Previously fixed Rule v1 thresholds; unavailable rule is reported separately, never substituted",
+  "history_ablation": "Only sequence_freshness_status becomes UNK; all other 21 fields and endpoints unchanged",
+  "technical_control": "First 16 saved common endpoints reproduce embeddings and L1/L10 probabilities",
+  "exact_frame_reference": "Raw within-run byte history diagnostic, not a learned detector or no-history baseline"
+}

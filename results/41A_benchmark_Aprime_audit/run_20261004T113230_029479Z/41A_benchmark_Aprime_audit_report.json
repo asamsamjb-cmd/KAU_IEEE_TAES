@@ -1,0 +1,1757 @@
+{
+  "protocol_version": "shared_nominal_seed_duplicate_context_v3",
+  "scope": [
+    "Exact duplicate audit does not detect near-duplicates or establish independent episodes.",
+    "Distinct seed integers do not prove independent random processes.",
+    "Low context-only scores do not prove absence of every shortcut.",
+    "No physical realism, external validity or encoder/aggregator necessity is established."
+  ],
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+  "maker_static_audit": {
+    "all_six_canonical_makers_present": true,
+    "all_seeds_present": true,
+    "distinct_declared_default_seeds": true,
+    "all_use_shared_nominal_builder": true,
+    "all_use_shared_projection": true,
+    "all_use_shared_code_version": true,
+    "maker_numbers_match": true,
+    "shared_runtime_uses_substrate_and_projection": true,
+    "separate_seedsequence_calls_in_background_and_attack_runtime": true,
+    "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+    "shared_nominal_code_version": "2.0-shared-nominal-substrate",
+    "scope": "Static delegation and call patterns only. Different default seeds are descriptive; no statistical independence or shortcut absence is inferred. No makers executed."
+  },
+  "generation_lineage": {
+    "records": [
+      {
+        "label": "NORMAL",
+        "status": "VERIFIED_CSV_SOURCE_BINDING",
+        "recorded_seed": 42,
+        "recorded_default_seed_matches": true,
+        "learning_sha256": "1315ee3cd9d44a8d051c736cd3f78ec161e8b8c31ba834ae4d8fbb94dfb607b4",
+        "maker_sha256": "f43a6d6b43dc644125e88f44406a4994a218ca02c9c27b17e76c8c0c4f41620f",
+        "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+        "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+        "raw_audit_sha256": "6ac19d5eb978b8e4152c95895c0b4503fd6fda3471264f4553173332e3dd1694",
+        "archive_paths": [
+          "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-18-23_929339_01_REVIEW.zip"
+        ],
+        "recorded_episodes": 863,
+        "recorded_code_version": "2.0-shared-nominal-substrate",
+        "recorded_observable_effect_windows": 0
+      },
+      {
+        "label": "RF_LINK_JAMMING",
+        "status": "VERIFIED_CSV_SOURCE_BINDING",
+        "recorded_seed": 142,
+        "recorded_default_seed_matches": true,
+        "learning_sha256": "1206c26fd04b930bfbd9d3b6019160f275a747f7dcac03b5bcc9278aeb69daa7",
+        "maker_sha256": "991990fc1398042967de14c08c419f6a95e73e349dfef855a7df071c6324ad49",
+        "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+        "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+        "raw_audit_sha256": "4494aa08bac5fb7e2be647fdb5c92011a61af3e5a99ddc88006c0d20b8790569",
+        "archive_paths": [
+          "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-19-27_123425_02_REVIEW.zip"
+        ],
+        "recorded_episodes": 829,
+        "recorded_code_version": "2.0-shared-nominal-substrate",
+        "recorded_observable_effect_windows": 14112
+      },
+      {
+        "label": "GNSS_SPOOFING",
+        "status": "VERIFIED_CSV_SOURCE_BINDING",
+        "recorded_seed": 242,
+        "recorded_default_seed_matches": true,
+        "learning_sha256": "45b0cd16157c10a3f71810cf6a951732942625d0604335bf7070825c5d4c8351",
+        "maker_sha256": "41bb6e6785bfe0b61bc771dc94f0d7a7756fdfab03c9c018029c7f60afd8e2fd",
+        "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+        "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+        "raw_audit_sha256": "e185d42287642606527693192798fbc9d9434c0e62ff3191ad35bc0d8f638479",
+        "archive_paths": [
+          "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-23-57_349741_03_REVIEW.zip"
+        ],
+        "recorded_episodes": 837,
+        "recorded_code_version": "2.0-shared-nominal-substrate",
+        "recorded_observable_effect_windows": 34603
+      },
+      {
+        "label": "UNAUTHORIZED_TELECOMMAND_INJECTION",
+        "status": "VERIFIED_CSV_SOURCE_BINDING",
+        "recorded_seed": 314,
+        "recorded_default_seed_matches": true,
+        "learning_sha256": "e305217262cb9eeaaedd225094c1f63544cbb713c0d80b9a7b233bb10ca2ccf9",
+        "maker_sha256": "1b8e2696cca74acf8300c4e042ec9a3315a48751d4b3ecf6adf96d652fd9bd69",
+        "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+        "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+        "raw_audit_sha256": "44b6bc69becbecb0557882663e042f730f4397cc863202492607e48c9cf11b9d",
+        "archive_paths": [
+          "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-24-59_573841_04_REVIEW.zip"
+        ],
+        "recorded_episodes": 824,
+        "recorded_code_version": "2.0-shared-nominal-substrate",
+        "recorded_observable_effect_windows": 11526
+      },
+      {
+        "label": "TELECOMMAND_REPLAY",
+        "status": "VERIFIED_CSV_SOURCE_BINDING",
+        "recorded_seed": 442,
+        "recorded_default_seed_matches": true,
+        "learning_sha256": "704e8b5abf2660229aa1a239137c98a078d6d3c9d5018ab42781651e4764f241",
+        "maker_sha256": "0f8f8b5dc873db22507d8dc938b1f2ba9ed211b4f73be22ff7e298a3080359bc",
+        "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+        "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+        "raw_audit_sha256": "7c3bab0bc39ed797297e93d3ed387bf5448363c4537b5543a72da9a725b9b078",
+        "archive_paths": [
+          "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-26-35_086194_05_REVIEW.zip"
+        ],
+        "recorded_episodes": 850,
+        "recorded_code_version": "2.0-shared-nominal-substrate",
+        "recorded_observable_effect_windows": 7451
+      },
+      {
+        "label": "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+        "status": "VERIFIED_CSV_SOURCE_BINDING",
+        "recorded_seed": 342,
+        "recorded_default_seed_matches": true,
+        "learning_sha256": "0af15af824a10cc0356982be82bbf64c1ea8e260def7adfa5a65af1ac4e5ebcb",
+        "maker_sha256": "17b69eb554d8417f145b7bbbdd07b030410fc8b3a1e20b9688e6bbe09015f1af",
+        "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+        "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+        "raw_audit_sha256": "d7295d882e47ccdaef40ba8610d2bb78267ce4df2320f09e082dda7a96b1360d",
+        "archive_paths": [
+          "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-28-11_541593_06_REVIEW.zip"
+        ],
+        "recorded_episodes": 813,
+        "recorded_code_version": "2.0-shared-nominal-substrate",
+        "recorded_observable_effect_windows": 6880
+      }
+    ],
+    "all_csvs_bound_to_current_sources": true,
+    "distinct_recorded_seeds": true,
+    "ignored_or_unreadable_candidate_archives": [],
+    "scope": "Actual learning/raw/shared source byte binding; archived assertions are not rerun physics or causal proofs."
+  },
+  "source_dataset": {
+    "total_rows": 300000,
+    "rows_per_class": 50000,
+    "episodes_total": 5016,
+    "formal_default_300000_row_size": true
+  },
+  "split_integrity": {
+    "counts": {
+      "train": {
+        "rows": 211006,
+        "episodes": 3511,
+        "sequences_stride1": {
+          "1": 211006,
+          "2": 207495,
+          "3": 203984,
+          "5": 196964,
+          "10": 179414
+        }
+      },
+      "val": {
+        "rows": 44148,
+        "episodes": 753,
+        "sequences_stride1": {
+          "1": 44148,
+          "2": 43395,
+          "3": 42642,
+          "5": 41136,
+          "10": 37371
+        }
+      },
+      "test": {
+        "rows": 44846,
+        "episodes": 752,
+        "sequences_stride1": {
+          "1": 44846,
+          "2": 44094,
+          "3": 43342,
+          "5": 41838,
+          "10": 38078
+        }
+      }
+    },
+    "pairwise_episode_overlap": {
+      "train_vs_val": {
+        "overlap_count": 0,
+        "examples": []
+      },
+      "train_vs_test": {
+        "overlap_count": 0,
+        "examples": []
+      },
+      "val_vs_test": {
+        "overlap_count": 0,
+        "examples": []
+      }
+    },
+    "no_episode_overlap": true,
+    "total_split_rows": 300000,
+    "expected_total_rows": 300000,
+    "rows_by_label_across_splits": {
+      "NORMAL": 50000,
+      "RF_LINK_JAMMING": 50000,
+      "GNSS_SPOOFING": 50000,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 50000,
+      "TELECOMMAND_REPLAY": 50000,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 50000
+    },
+    "all_rows_assigned": true,
+    "exact_original_record_coverage": true,
+    "all_canonical_values_preserved": true,
+    "unified_csv_matches_original_sources": true,
+    "episode_manifest_matches_records": true,
+    "recorded_split_seed_reproduced": true,
+    "source_episode_id_cross_label_collisions": 0,
+    "source_id_rewrite_applied": false,
+    "scope": "Exact records and supplied episode IDs; not proof that distinct episodes are statistically independent."
+  },
+  "observable_effect_audit": {
+    "source_binding": "RAW_AND_SPLITS_VERIFIED",
+    "schema": {
+      "schema_version": "counterfactual_observable_change_v1",
+      "split_files": {
+        "train": "audit/train_window_observable_effects.csv",
+        "val": "audit/val_window_observable_effects.csv",
+        "test": "audit/test_window_observable_effects.csv"
+      },
+      "columns": [
+        "scenario_id",
+        "episode_id",
+        "episode_type",
+        "episode_step",
+        "window_id",
+        "timestamp",
+        "label",
+        "audit_observable_effect_present",
+        "audit_observable_difference_count",
+        "audit_persistent_effect_present",
+        "audit_attack_active"
+      ],
+      "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+    },
+    "streams": [
+      {
+        "raw_audit_file": "normal_observable_dataset_with_raw.csv",
+        "rows": 50000,
+        "background_stream": "42:5132109:1",
+        "observable_effect_windows": 0,
+        "persistent_effect_windows": 0,
+        "paired_background": false,
+        "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability.",
+        "label": "NORMAL"
+      },
+      {
+        "raw_audit_file": "rf_link_jamming_observable_dataset_with_raw.csv",
+        "rows": 50000,
+        "background_stream": "142:5132109:2",
+        "observable_effect_windows": 14112,
+        "persistent_effect_windows": 0,
+        "paired_background": false,
+        "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability.",
+        "label": "RF_LINK_JAMMING"
+      },
+      {
+        "raw_audit_file": "gnss_spoofing_observable_dataset_with_raw.csv",
+        "rows": 50000,
+        "background_stream": "242:5132109:3",
+        "observable_effect_windows": 34603,
+        "persistent_effect_windows": 3043,
+        "paired_background": false,
+        "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability.",
+        "label": "GNSS_SPOOFING"
+      },
+      {
+        "raw_audit_file": "unauthorized_telecommand_injection_observable_dataset_with_raw.csv",
+        "rows": 50000,
+        "background_stream": "314:5132109:4",
+        "observable_effect_windows": 11526,
+        "persistent_effect_windows": 0,
+        "paired_background": false,
+        "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability.",
+        "label": "UNAUTHORIZED_TELECOMMAND_INJECTION"
+      },
+      {
+        "raw_audit_file": "telecommand_replay_observable_dataset_with_raw.csv",
+        "rows": 50000,
+        "background_stream": "442:5132109:5",
+        "observable_effect_windows": 7451,
+        "persistent_effect_windows": 0,
+        "paired_background": false,
+        "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability.",
+        "label": "TELECOMMAND_REPLAY"
+      },
+      {
+        "raw_audit_file": "ground_segment_ttc_control_path_compromise_observable_dataset_with_raw.csv",
+        "rows": 50000,
+        "background_stream": "342:5132109:6",
+        "observable_effect_windows": 6880,
+        "persistent_effect_windows": 0,
+        "paired_background": false,
+        "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability.",
+        "label": "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+      }
+    ],
+    "independent_default_stream_ids_distinct": true,
+    "paired_backgrounds_present": false,
+    "interpretation": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability. Distinct recorded streams are not a proof of statistical independence."
+  },
+  "cross_label_exact_observable_row_collisions": {
+    "num_cross_label_hashes": 4548,
+    "rows_in_cross_label_hashes": 243558,
+    "examples": [
+      {
+        "hash": "00006ac4ad02316e3ecf8f5b63ae09495528ac04fe0c201549956cdf0fb5346e",
+        "labels": [
+          "GNSS_SPOOFING",
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+          "NORMAL",
+          "RF_LINK_JAMMING",
+          "TELECOMMAND_REPLAY",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION"
+        ]
+      },
+      {
+        "hash": "000262f52d53605003273e7cb04b5afd6ddceab2276b19d7968fae156daedd9b",
+        "labels": [
+          "GNSS_SPOOFING",
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+          "NORMAL",
+          "RF_LINK_JAMMING",
+          "TELECOMMAND_REPLAY",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION"
+        ]
+      },
+      {
+        "hash": "00075f231efaad1eb0da20536ac0541f4c7074e0790a5c5cd09226756a8a81b2",
+        "labels": [
+          "GNSS_SPOOFING",
+          "NORMAL",
+          "RF_LINK_JAMMING"
+        ]
+      },
+      {
+        "hash": "000c5b34c1551f60338f8d008904e5c2b56b3838a1ea78f8ac80878dd90505e3",
+        "labels": [
+          "GNSS_SPOOFING",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION"
+        ]
+      },
+      {
+        "hash": "0020a90debe950eeaded1bcc4ea73af7ae5ac74ff317f3565a06fcc8a8fc420f",
+        "labels": [
+          "GNSS_SPOOFING",
+          "NORMAL",
+          "RF_LINK_JAMMING"
+        ]
+      },
+      {
+        "hash": "0049a22287de7c41825a3a264750be68c15c0d207af9e6267de5bbe2063c70f9",
+        "labels": [
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+          "RF_LINK_JAMMING"
+        ]
+      },
+      {
+        "hash": "005c38fdef592a759d24bb0e53b13b894c8283d380b01bb146dcc98fc7e94926",
+        "labels": [
+          "NORMAL",
+          "TELECOMMAND_REPLAY",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION"
+        ]
+      },
+      {
+        "hash": "005eada744b681cdec5ecc3d8a76cf37d892b64ebf33849103141346c7bf099d",
+        "labels": [
+          "GNSS_SPOOFING",
+          "TELECOMMAND_REPLAY"
+        ]
+      },
+      {
+        "hash": "0077bb3e46201addfd6b6dc0f8811e9a6d568169c77e2357182e2a6dcd72b1e6",
+        "labels": [
+          "GNSS_SPOOFING",
+          "TELECOMMAND_REPLAY",
+          "RF_LINK_JAMMING"
+        ]
+      },
+      {
+        "hash": "00787336f55fe66ba03feb1ecb92befb3f993b5de39291e66a1cce6750d2a94d",
+        "labels": [
+          "RF_LINK_JAMMING",
+          "NORMAL"
+        ]
+      },
+      {
+        "hash": "00832efe77ae5a06adff211c6098ef8a0f3e69381c120ccd35037e8c24758427",
+        "labels": [
+          "NORMAL",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION"
+        ]
+      },
+      {
+        "hash": "008379f5d6b401372d33d89cbaa89c09af71577cff470acab95e54294b34d3f3",
+        "labels": [
+          "NORMAL",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION"
+        ]
+      },
+      {
+        "hash": "008eab6efcbb6d174e37781d3e9d5d1c61c61c0581591ef5da38dace8d57eee2",
+        "labels": [
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+          "NORMAL",
+          "TELECOMMAND_REPLAY",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION"
+        ]
+      },
+      {
+        "hash": "0091d20ebd7bedb04dacc52069a2936d3bf480261cbbd0e8585f00fdbe0ea3f1",
+        "labels": [
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+          "RF_LINK_JAMMING"
+        ]
+      },
+      {
+        "hash": "009414e10f751ac945eb4d606cb00e8f66b87f424a8bc1dc43a08847146f4053",
+        "labels": [
+          "NORMAL",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION"
+        ]
+      },
+      {
+        "hash": "0095b1ec6176b75f8a4b55ce4483f692e8a37abe071cb725d42a1dbd6f54f05d",
+        "labels": [
+          "GNSS_SPOOFING",
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+          "NORMAL",
+          "RF_LINK_JAMMING",
+          "TELECOMMAND_REPLAY",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION"
+        ]
+      },
+      {
+        "hash": "00a2a40f30f3acb94c6c8930c157117aa9e1a8ef1032f2fe3f553abb0a378da9",
+        "labels": [
+          "RF_LINK_JAMMING",
+          "TELECOMMAND_REPLAY"
+        ]
+      },
+      {
+        "hash": "00b74393ab58cc85f2b3115ff6c6332ff43ed72d8e7299efd82b928bd3b177de",
+        "labels": [
+          "GNSS_SPOOFING",
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+          "NORMAL",
+          "RF_LINK_JAMMING",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION",
+          "TELECOMMAND_REPLAY"
+        ]
+      },
+      {
+        "hash": "00c4e1ca129048a30fafcad29bc93481e0afcb43146b9928e95b3d472ea9b6dd",
+        "labels": [
+          "GNSS_SPOOFING",
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+          "NORMAL",
+          "RF_LINK_JAMMING",
+          "TELECOMMAND_REPLAY",
+          "UNAUTHORIZED_TELECOMMAND_INJECTION"
+        ]
+      },
+      {
+        "hash": "00d4025aafa4194c17dbc85a96600bc7ee72ac584f1c20cf3673fdf15ace2f0c",
+        "labels": [
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+          "RF_LINK_JAMMING",
+          "TELECOMMAND_REPLAY"
+        ]
+      }
+    ]
+  },
+  "cross_split_exact_observable_row_overlap": {
+    "train_vs_val": {
+      "shared_signatures": 4990,
+      "same_label_shared_signatures": 4335,
+      "cross_label_shared_signatures": 2722,
+      "left_rows_in_shared_signatures": 185043,
+      "right_rows_with_left_signature": 41517,
+      "right_row_overlap_fraction": 0.940405001359065,
+      "example_signatures": [
+        "00006ac4ad02316e3ecf8f5b63ae09495528ac04fe0c201549956cdf0fb5346e",
+        "000262f52d53605003273e7cb04b5afd6ddceab2276b19d7968fae156daedd9b",
+        "00252e7fc773fc919aca9a9c918077c92849ba3145c55c792df21f1c62ae5f26",
+        "002e22576e9e99fc04860ea458b1a9b712a5b5fca23a671d27ff314520baf024",
+        "005919e3ba8c5173cffe640bb24953117a2bdd0e0c9153157f65fd5f05447941",
+        "005ed3e383fc33e1dd0944af6d3cd18679f324f40eaabc04ca92037089ddda75",
+        "0077bb3e46201addfd6b6dc0f8811e9a6d568169c77e2357182e2a6dcd72b1e6",
+        "00787336f55fe66ba03feb1ecb92befb3f993b5de39291e66a1cce6750d2a94d",
+        "007b39976814f743c1415615edbe31165a7f96fb0543308a123c982a52c15565",
+        "0095b1ec6176b75f8a4b55ce4483f692e8a37abe071cb725d42a1dbd6f54f05d"
+      ]
+    },
+    "train_vs_test": {
+      "shared_signatures": 5013,
+      "same_label_shared_signatures": 4327,
+      "cross_label_shared_signatures": 2780,
+      "left_rows_in_shared_signatures": 184656,
+      "right_rows_with_left_signature": 42050,
+      "right_row_overlap_fraction": 0.9376533024127013,
+      "example_signatures": [
+        "00006ac4ad02316e3ecf8f5b63ae09495528ac04fe0c201549956cdf0fb5346e",
+        "000262f52d53605003273e7cb04b5afd6ddceab2276b19d7968fae156daedd9b",
+        "000c5b34c1551f60338f8d008904e5c2b56b3838a1ea78f8ac80878dd90505e3",
+        "002e22576e9e99fc04860ea458b1a9b712a5b5fca23a671d27ff314520baf024",
+        "0049a22287de7c41825a3a264750be68c15c0d207af9e6267de5bbe2063c70f9",
+        "0077bb3e46201addfd6b6dc0f8811e9a6d568169c77e2357182e2a6dcd72b1e6",
+        "007b39976814f743c1415615edbe31165a7f96fb0543308a123c982a52c15565",
+        "00832efe77ae5a06adff211c6098ef8a0f3e69381c120ccd35037e8c24758427",
+        "008379f5d6b401372d33d89cbaa89c09af71577cff470acab95e54294b34d3f3",
+        "0091d20ebd7bedb04dacc52069a2936d3bf480261cbbd0e8585f00fdbe0ea3f1"
+      ]
+    },
+    "val_vs_test": {
+      "shared_signatures": 3188,
+      "same_label_shared_signatures": 2591,
+      "cross_label_shared_signatures": 1884,
+      "left_rows_in_shared_signatures": 38626,
+      "right_rows_with_left_signature": 39207,
+      "right_row_overlap_fraction": 0.8742585737858449,
+      "example_signatures": [
+        "00006ac4ad02316e3ecf8f5b63ae09495528ac04fe0c201549956cdf0fb5346e",
+        "000262f52d53605003273e7cb04b5afd6ddceab2276b19d7968fae156daedd9b",
+        "002e22576e9e99fc04860ea458b1a9b712a5b5fca23a671d27ff314520baf024",
+        "003fe88ec34b678dccf2a1f53b799db990ecc82090ee742840116d0d5e87ecaf",
+        "0077bb3e46201addfd6b6dc0f8811e9a6d568169c77e2357182e2a6dcd72b1e6",
+        "007b39976814f743c1415615edbe31165a7f96fb0543308a123c982a52c15565",
+        "0095b1ec6176b75f8a4b55ce4483f692e8a37abe071cb725d42a1dbd6f54f05d",
+        "009769d633d1246db2669e269ee83c42254263de31bd2701a7f6fdaa6cdd6743",
+        "00c4e1ca129048a30fafcad29bc93481e0afcb43146b9928e95b3d472ea9b6dd",
+        "0111b54198edaaf258101e9a1acac2743827668fcb0343a756e566bfddc41485"
+      ]
+    }
+  },
+  "cross_label_exact_episode_trajectory_collisions": {
+    "num_cross_label_hashes": 0,
+    "rows_in_cross_label_hashes": 0,
+    "examples": []
+  },
+  "cross_split_exact_episode_trajectory_overlap": {
+    "train_vs_val": {
+      "shared_signatures": 0,
+      "same_label_shared_signatures": 0,
+      "cross_label_shared_signatures": 0,
+      "left_rows_in_shared_signatures": 0,
+      "right_rows_with_left_signature": 0,
+      "right_row_overlap_fraction": 0.0,
+      "example_signatures": []
+    },
+    "train_vs_test": {
+      "shared_signatures": 0,
+      "same_label_shared_signatures": 0,
+      "cross_label_shared_signatures": 0,
+      "left_rows_in_shared_signatures": 0,
+      "right_rows_with_left_signature": 0,
+      "right_row_overlap_fraction": 0.0,
+      "example_signatures": []
+    },
+    "val_vs_test": {
+      "shared_signatures": 0,
+      "same_label_shared_signatures": 0,
+      "cross_label_shared_signatures": 0,
+      "left_rows_in_shared_signatures": 0,
+      "right_rows_with_left_signature": 0,
+      "right_row_overlap_fraction": 0.0,
+      "example_signatures": []
+    }
+  },
+  "cross_split_exact_L10_sequence_overlap": {
+    "train_vs_val": {
+      "shared_signatures": 0,
+      "same_label_shared_signatures": 0,
+      "cross_label_shared_signatures": 0,
+      "left_rows_in_shared_signatures": 0,
+      "right_rows_with_left_signature": 0,
+      "right_row_overlap_fraction": 0.0,
+      "example_signatures": []
+    },
+    "train_vs_test": {
+      "shared_signatures": 0,
+      "same_label_shared_signatures": 0,
+      "cross_label_shared_signatures": 0,
+      "left_rows_in_shared_signatures": 0,
+      "right_rows_with_left_signature": 0,
+      "right_row_overlap_fraction": 0.0,
+      "example_signatures": []
+    },
+    "val_vs_test": {
+      "shared_signatures": 0,
+      "same_label_shared_signatures": 0,
+      "cross_label_shared_signatures": 0,
+      "left_rows_in_shared_signatures": 0,
+      "right_rows_with_left_signature": 0,
+      "right_row_overlap_fraction": 0.0,
+      "example_signatures": []
+    }
+  },
+  "cross_label_exact_L10_sequence_collisions": {
+    "num_cross_label_hashes": 0,
+    "rows_in_cross_label_hashes": 0,
+    "examples": []
+  },
+  "shared_context_empirical_audit": {
+    "declared_profile_count": 16,
+    "observed_profile_count": 16,
+    "out_of_pool_profile_count": 0,
+    "out_of_pool_rows": 0,
+    "total_variation_from_declared_mixture_by_label": {
+      "NORMAL": 0.007841509433962269,
+      "RF_LINK_JAMMING": 0.005840377358490554,
+      "GNSS_SPOOFING": 0.008106037735849045,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 0.004598867924528301,
+      "TELECOMMAND_REPLAY": 0.004825283018867931,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 0.0060924528301886695
+    },
+    "interpretation": "Descriptive empirical association; no p-value, independence proof or score-driven regeneration rule."
+  },
+  "context_only_probes": {
+    "fit_split": "train",
+    "features": [
+      "observation_stage",
+      "path_type",
+      "direction",
+      "source_role",
+      "destination_role",
+      "protocol_context",
+      "operational_phase"
+    ],
+    "tie_rule": "canonical label order",
+    "logistic_fit": {
+      "status": "COMPLETED",
+      "method": "train-only one-hot 7-context-field logistic regression",
+      "sklearn_version": "1.9.0",
+      "C": 1.0,
+      "max_iter": 1000,
+      "solver": "lbfgs",
+      "seed": 20260610,
+      "warnings": [],
+      "iterations": [
+        11
+      ],
+      "test_or_val_used_for_fit_or_selection": false
+    },
+    "results": {
+      "val": {
+        "all_windows": {
+          "rows": 44148,
+          "unseen_context_rows": 0,
+          "prior_references": {
+            "references": {
+              "uniform_independent_random": {
+                "population_limit_macro_f1": 0.1665933692177631,
+                "expected_accuracy": 0.16666666666666666
+              },
+              "train_prior_independent_random": {
+                "population_limit_macro_f1": 0.16655261515788353,
+                "expected_accuracy": 0.1666000519413418
+              }
+            },
+            "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+          },
+          "models": {
+            "majority_mapping": {
+              "accuracy": 0.1654208571169702,
+              "macro_f1": 0.11443291054555871,
+              "balanced_accuracy_six_class_macro_recall": 0.16852861384470305,
+              "rows": 44148,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.1676473981769932,
+                  "recall": 0.39153866882241983,
+                  "f1": 0.23477136855711747,
+                  "support": 7422
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.16007572570466974,
+                  "recall": 0.10812730889457232,
+                  "f1": 0.1290705563093623,
+                  "support": 7038
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.1631858407079646,
+                  "recall": 0.45825049701789267,
+                  "f1": 0.2406682328373793,
+                  "support": 7042
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7141
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7825
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.17899343544857768,
+                  "recall": 0.05325520833333333,
+                  "f1": 0.08208730556949323,
+                  "support": 7680
+                }
+              }
+            },
+            "train_majority_baseline": {
+              "accuracy": 0.15950892452659238,
+              "macro_f1": 0.04585531028195611,
+              "balanced_accuracy_six_class_macro_recall": 0.16666666666666666,
+              "rows": 44148,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7422
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7038
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.15950892452659238,
+                  "recall": 1.0,
+                  "f1": 0.27513186169173665,
+                  "support": 7042
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7141
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7825
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7680
+                }
+              }
+            },
+            "logistic": {
+              "accuracy": 0.16501313762797862,
+              "macro_f1": 0.10662575765094391,
+              "balanced_accuracy_six_class_macro_recall": 0.16809712383914846,
+              "rows": 44148,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.1676473981769932,
+                  "recall": 0.39153866882241983,
+                  "f1": 0.23477136855711747,
+                  "support": 7422
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.15271786022433131,
+                  "recall": 0.05029838022165388,
+                  "f1": 0.07567336468576315,
+                  "support": 7038
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.1628022151186349,
+                  "recall": 0.5134904856574837,
+                  "f1": 0.24722250709328958,
+                  "support": 7042
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7141
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7825
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.17899343544857768,
+                  "recall": 0.05325520833333333,
+                  "f1": 0.08208730556949323,
+                  "support": 7680
+                }
+              }
+            }
+          }
+        },
+        "common_L10_endpoints": {
+          "rows": 37371,
+          "unseen_context_rows": 0,
+          "prior_references": {
+            "references": {
+              "uniform_independent_random": {
+                "population_limit_macro_f1": 0.16656692647408486,
+                "expected_accuracy": 0.16666666666666663
+              },
+              "train_prior_independent_random": {
+                "population_limit_macro_f1": 0.1665201522492968,
+                "expected_accuracy": 0.1665878907376429
+              }
+            },
+            "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+          },
+          "models": {
+            "majority_mapping": {
+              "accuracy": 0.16486045329266008,
+              "macro_f1": 0.11440885588649952,
+              "balanced_accuracy_six_class_macro_recall": 0.1688577579568826,
+              "rows": 37371,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.16668939187346604,
+                  "recall": 0.39051269765213226,
+                  "f1": 0.23364709255100577,
+                  "support": 6261
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.1611703446565832,
+                  "recall": 0.10976021614319487,
+                  "f1": 0.13058764439979909,
+                  "support": 5922
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.16207987582830877,
+                  "recall": 0.4595463777928233,
+                  "f1": 0.23963987819409507,
+                  "support": 5908
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6025
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6673
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.1829077644606566,
+                  "recall": 0.05332725615314494,
+                  "f1": 0.08257852017409717,
+                  "support": 6582
+                }
+              }
+            },
+            "train_majority_baseline": {
+              "accuracy": 0.1580904979797169,
+              "macro_f1": 0.045503207868327206,
+              "balanced_accuracy_six_class_macro_recall": 0.16666666666666666,
+              "rows": 37371,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6261
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 5922
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.1580904979797169,
+                  "recall": 1.0,
+                  "f1": 0.27301924720996323,
+                  "support": 5908
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6025
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6673
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6582
+                }
+              }
+            },
+            "logistic": {
+              "accuracy": 0.16467314227609645,
+              "macro_f1": 0.1068080364021657,
+              "balanced_accuracy_six_class_macro_recall": 0.16868316065109637,
+              "rows": 37371,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.16668939187346604,
+                  "recall": 0.39051269765213226,
+                  "f1": 0.23364709255100577,
+                  "support": 6261
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.15890269151138717,
+                  "recall": 0.05184059439378588,
+                  "f1": 0.07817672523554876,
+                  "support": 5922
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.16183959261616804,
+                  "recall": 0.5164184157075152,
+                  "f1": 0.24644588045234248,
+                  "support": 5908
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6025
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6673
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.1829077644606566,
+                  "recall": 0.05332725615314494,
+                  "f1": 0.08257852017409717,
+                  "support": 6582
+                }
+              }
+            }
+          }
+        }
+      },
+      "test": {
+        "all_windows": {
+          "rows": 44846,
+          "unseen_context_rows": 0,
+          "prior_references": {
+            "references": {
+              "uniform_independent_random": {
+                "population_limit_macro_f1": 0.16658149175379688,
+                "expected_accuracy": 0.16666666666666666
+              },
+              "train_prior_independent_random": {
+                "population_limit_macro_f1": 0.1665354724133147,
+                "expected_accuracy": 0.16658985702810972
+              }
+            },
+            "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+          },
+          "models": {
+            "majority_mapping": {
+              "accuracy": 0.16188734781251393,
+              "macro_f1": 0.1139059072609183,
+              "balanced_accuracy_six_class_macro_recall": 0.16834676167052598,
+              "rows": 44846,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.15616515837104072,
+                  "recall": 0.39829774956722447,
+                  "f1": 0.22436209978872096,
+                  "support": 6932
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.1782993617459337,
+                  "recall": 0.11409749670619236,
+                  "f1": 0.1391499959829678,
+                  "support": 7590
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.16237514430557648,
+                  "recall": 0.4430899876729215,
+                  "f1": 0.2376579488686453,
+                  "support": 7301
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7832
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7901
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.16680637049455155,
+                  "recall": 0.05459533607681756,
+                  "f1": 0.08226539892517569,
+                  "support": 7290
+                }
+              }
+            },
+            "train_majority_baseline": {
+              "accuracy": 0.16280158765553226,
+              "macro_f1": 0.046669351384867136,
+              "balanced_accuracy_six_class_macro_recall": 0.16666666666666666,
+              "rows": 44846,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6932
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7590
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.16280158765553226,
+                  "recall": 1.0,
+                  "f1": 0.2800161083092028,
+                  "support": 7301
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7832
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7901
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7290
+                }
+              }
+            },
+            "logistic": {
+              "accuracy": 0.16003656959372073,
+              "macro_f1": 0.10481222744925471,
+              "balanced_accuracy_six_class_macro_recall": 0.16686752428316406,
+              "rows": 44846,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.15616515837104072,
+                  "recall": 0.39829774956722447,
+                  "f1": 0.22436209978872096,
+                  "support": 6932
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.16782006920415224,
+                  "recall": 0.05111989459815547,
+                  "f1": 0.07836800646334074,
+                  "support": 7590
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.1615631119814848,
+                  "recall": 0.49719216545678674,
+                  "f1": 0.24387785951829083,
+                  "support": 7301
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7832
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7901
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.16680637049455155,
+                  "recall": 0.05459533607681756,
+                  "f1": 0.08226539892517569,
+                  "support": 7290
+                }
+              }
+            }
+          }
+        },
+        "common_L10_endpoints": {
+          "rows": 38078,
+          "unseen_context_rows": 0,
+          "prior_references": {
+            "references": {
+              "uniform_independent_random": {
+                "population_limit_macro_f1": 0.1665410101247212,
+                "expected_accuracy": 0.16666666666666666
+              },
+              "train_prior_independent_random": {
+                "population_limit_macro_f1": 0.16648737707462186,
+                "expected_accuracy": 0.16657475015738224
+              }
+            },
+            "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+          },
+          "models": {
+            "majority_mapping": {
+              "accuracy": 0.15985608487840747,
+              "macro_f1": 0.11306352599099952,
+              "balanced_accuracy_six_class_macro_recall": 0.1677548578513227,
+              "rows": 38078,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.1520463938141581,
+                  "recall": 0.39586948976049985,
+                  "f1": 0.21970718551338855,
+                  "support": 5762
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.18055555555555555,
+                  "recall": 0.11662799690641917,
+                  "f1": 0.14171600413494972,
+                  "support": 6465
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.16098283007696862,
+                  "recall": 0.44025259067357514,
+                  "f1": 0.23575825890921703,
+                  "support": 6176
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6725
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6758
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.16567164179104477,
+                  "recall": 0.05377906976744186,
+                  "f1": 0.08119970738844184,
+                  "support": 6192
+                }
+              }
+            },
+            "train_majority_baseline": {
+              "accuracy": 0.16219339251011083,
+              "macro_f1": 0.04651933535198325,
+              "balanced_accuracy_six_class_macro_recall": 0.16666666666666666,
+              "rows": 38078,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 5762
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6465
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.16219339251011083,
+                  "recall": 1.0,
+                  "f1": 0.2791160121118995,
+                  "support": 6176
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6725
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6758
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6192
+                }
+              }
+            },
+            "logistic": {
+              "accuracy": 0.15799149114974526,
+              "macro_f1": 0.10400110127632844,
+              "balanced_accuracy_six_class_macro_recall": 0.16633705847458036,
+              "rows": 38078,
+              "per_class": {
+                "NORMAL": {
+                  "precision": 0.1520463938141581,
+                  "recall": 0.39586948976049985,
+                  "f1": 0.21970718551338855,
+                  "support": 5762
+                },
+                "RF_LINK_JAMMING": {
+                  "precision": 0.17015968063872255,
+                  "recall": 0.05274555297757154,
+                  "f1": 0.08052898807415279,
+                  "support": 6465
+                },
+                "GNSS_SPOOFING": {
+                  "precision": 0.1605812611478334,
+                  "recall": 0.4956282383419689,
+                  "f1": 0.24257072668198748,
+                  "support": 6176
+                },
+                "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6725
+                },
+                "TELECOMMAND_REPLAY": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6758
+                },
+                "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                  "precision": 0.16567164179104477,
+                  "recall": 0.05377906976744186,
+                  "f1": 0.08119970738844184,
+                  "support": 6192
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "no_hyperparameter_or_seed_selection": true,
+    "scope": "Single-window diagnostic; no time-series context is supplied to these probes. L10-common only aligns evaluation targets, and does not make this a temporal model."
+  },
+  "context_only_probe_majority_mapping": {
+    "status": "COMPLETED",
+    "accuracy": 0.16188734781251393,
+    "macro_f1": 0.1139059072609183,
+    "balanced_accuracy_six_class_macro_recall": 0.16834676167052598,
+    "rows": 44846,
+    "per_class": {
+      "NORMAL": {
+        "precision": 0.15616515837104072,
+        "recall": 0.39829774956722447,
+        "f1": 0.22436209978872096,
+        "support": 6932
+      },
+      "RF_LINK_JAMMING": {
+        "precision": 0.1782993617459337,
+        "recall": 0.11409749670619236,
+        "f1": 0.1391499959829678,
+        "support": 7590
+      },
+      "GNSS_SPOOFING": {
+        "precision": 0.16237514430557648,
+        "recall": 0.4430899876729215,
+        "f1": 0.2376579488686453,
+        "support": 7301
+      },
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 7832
+      },
+      "TELECOMMAND_REPLAY": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 7901
+      },
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+        "precision": 0.16680637049455155,
+        "recall": 0.05459533607681756,
+        "f1": 0.08226539892517569,
+        "support": 7290
+      }
+    }
+  },
+  "context_only_probe_logistic": {
+    "status": "COMPLETED",
+    "method": "train-only one-hot 7-context-field logistic regression",
+    "sklearn_version": "1.9.0",
+    "C": 1.0,
+    "max_iter": 1000,
+    "solver": "lbfgs",
+    "seed": 20260610,
+    "warnings": [],
+    "iterations": [
+      11
+    ],
+    "test_or_val_used_for_fit_or_selection": false,
+    "accuracy": 0.16003656959372073,
+    "macro_f1": 0.10481222744925471,
+    "balanced_accuracy_six_class_macro_recall": 0.16686752428316406,
+    "rows": 44846,
+    "per_class": {
+      "NORMAL": {
+        "precision": 0.15616515837104072,
+        "recall": 0.39829774956722447,
+        "f1": 0.22436209978872096,
+        "support": 6932
+      },
+      "RF_LINK_JAMMING": {
+        "precision": 0.16782006920415224,
+        "recall": 0.05111989459815547,
+        "f1": 0.07836800646334074,
+        "support": 7590
+      },
+      "GNSS_SPOOFING": {
+        "precision": 0.1615631119814848,
+        "recall": 0.49719216545678674,
+        "f1": 0.24387785951829083,
+        "support": 7301
+      },
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 7832
+      },
+      "TELECOMMAND_REPLAY": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 7901
+      },
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+        "precision": 0.16680637049455155,
+        "recall": 0.05459533607681756,
+        "f1": 0.08226539892517569,
+        "support": 7290
+      }
+    }
+  },
+  "no_observable_change_fingerprint_probes": {
+    "status": "COMPLETED",
+    "lengths": [
+      1,
+      10
+    ],
+    "selection": "zero observable projection differences in every window of the original context",
+    "features": [
+      "observation_stage",
+      "path_type",
+      "direction",
+      "source_role",
+      "destination_role",
+      "protocol_context",
+      "operational_phase",
+      "message_type",
+      "service_context",
+      "command_intent",
+      "payload_or_parameter_context",
+      "sequence_freshness_status",
+      "control_security_state",
+      "signal_quality_state",
+      "tracking_stability",
+      "navigation_consistency",
+      "timing_consistency",
+      "decoder_status",
+      "command_execution_result",
+      "retry_timeout_state",
+      "session_state",
+      "state_transition_consistency"
+    ],
+    "fit_split": "train",
+    "results": {
+      "1": {
+        "fit": {
+          "status": "COMPLETED",
+          "features": "22 field/value token counts over original contiguous windows; no metadata or flags",
+          "fit_split": "train",
+          "vocabulary_fit_split": "train",
+          "train_rows": 158301,
+          "train_class_support": {
+            "NORMAL": 35646,
+            "RF_LINK_JAMMING": 25389,
+            "GNSS_SPOOFING": 10993,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 26950,
+            "TELECOMMAND_REPLAY": 29088,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 30235
+          },
+          "C": 1.0,
+          "max_iter": 1000,
+          "solver": "lbfgs",
+          "seed": 20260610,
+          "sklearn_version": "1.9.0",
+          "warnings": [],
+          "iterations": [
+            177
+          ],
+          "test_or_val_used_for_fit_or_selection": false
+        },
+        "splits": {
+          "val": {
+            "rows": 33398,
+            "class_support": {
+              "NORMAL": 7422,
+              "RF_LINK_JAMMING": 5083,
+              "GNSS_SPOOFING": 2099,
+              "UNAUTHORIZED_TELECOMMAND_INJECTION": 5468,
+              "TELECOMMAND_REPLAY": 6708,
+              "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 6618
+            },
+            "absent_true_labels": [],
+            "status": "COMPLETED",
+            "accuracy": 0.221240792861848,
+            "macro_f1": 0.13005044947842917,
+            "balanced_accuracy_six_class_macro_recall": 0.1786530830730153,
+            "per_class": {
+              "NORMAL": {
+                "precision": 0.23548402411812183,
+                "recall": 0.6682834815413635,
+                "f1": 0.34825346673687907,
+                "support": 7422
+              },
+              "RF_LINK_JAMMING": {
+                "precision": 0.2222222222222222,
+                "recall": 0.0011804052724768838,
+                "f1": 0.0023483365949119373,
+                "support": 5083
+              },
+              "GNSS_SPOOFING": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 2099
+              },
+              "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                "precision": 0.18928220255653885,
+                "recall": 0.2112289685442575,
+                "f1": 0.1996542783059637,
+                "support": 5468
+              },
+              "TELECOMMAND_REPLAY": {
+                "precision": 0.2081447963800905,
+                "recall": 0.027429934406678593,
+                "f1": 0.04847207586933614,
+                "support": 6708
+              },
+              "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                "precision": 0.2036828260052612,
+                "recall": 0.1637957086733152,
+                "f1": 0.18157453936348408,
+                "support": 6618
+              }
+            },
+            "normal_recall": 0.6682834815413635,
+            "normal_prediction_fraction": 0.6306665069764656,
+            "prior_references": {
+              "references": {
+                "uniform_independent_random": {
+                  "population_limit_macro_f1": 0.1615433328700697,
+                  "expected_accuracy": 0.16666666666666666
+                },
+                "train_prior_independent_random": {
+                  "population_limit_macro_f1": 0.16653482046827395,
+                  "expected_accuracy": 0.18144180205878072
+                }
+              },
+              "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+            },
+            "unknown_token_occurrences": 0,
+            "total_token_occurrences": 734756
+          },
+          "test": {
+            "rows": 33729,
+            "class_support": {
+              "NORMAL": 6932,
+              "RF_LINK_JAMMING": 5416,
+              "GNSS_SPOOFING": 2305,
+              "UNAUTHORIZED_TELECOMMAND_INJECTION": 6056,
+              "TELECOMMAND_REPLAY": 6753,
+              "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 6267
+            },
+            "absent_true_labels": [],
+            "status": "COMPLETED",
+            "accuracy": 0.21198375285362744,
+            "macro_f1": 0.12735058281599865,
+            "balanced_accuracy_six_class_macro_recall": 0.17911943350421775,
+            "per_class": {
+              "NORMAL": {
+                "precision": 0.2201457229371688,
+                "recall": 0.6712348528563186,
+                "f1": 0.3315519452757589,
+                "support": 6932
+              },
+              "RF_LINK_JAMMING": {
+                "precision": 0.125,
+                "recall": 0.00036927621861152144,
+                "f1": 0.0007363770250368188,
+                "support": 5416
+              },
+              "GNSS_SPOOFING": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 2305
+              },
+              "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                "precision": 0.20247469066366705,
+                "recall": 0.20805812417437253,
+                "f1": 0.20522843879794772,
+                "support": 6056
+              },
+              "TELECOMMAND_REPLAY": {
+                "precision": 0.19487750556792874,
+                "recall": 0.025914408411076558,
+                "f1": 0.04574565416285453,
+                "support": 6753
+              },
+              "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                "precision": 0.1942815249266862,
+                "recall": 0.1691399393649274,
+                "f1": 0.1808410816343939,
+                "support": 6267
+              }
+            },
+            "normal_recall": 0.6712348528563186,
+            "normal_prediction_fraction": 0.6266417622817161,
+            "prior_references": {
+              "references": {
+                "uniform_independent_random": {
+                  "population_limit_macro_f1": 0.16250863202426635,
+                  "expected_accuracy": 0.16666666666666666
+                },
+                "train_prior_independent_random": {
+                  "population_limit_macro_f1": 0.16650574814428687,
+                  "expected_accuracy": 0.17962294416152969
+                }
+              },
+              "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+            },
+            "unknown_token_occurrences": 0,
+            "total_token_occurrences": 742038
+          }
+        }
+      },
+      "10": {
+        "fit": {
+          "status": "COMPLETED_WITH_WARNINGS",
+          "features": "22 field/value token counts over original contiguous windows; no metadata or flags",
+          "fit_split": "train",
+          "vocabulary_fit_split": "train",
+          "train_rows": 56337,
+          "train_class_support": {
+            "NORMAL": 30210,
+            "RF_LINK_JAMMING": 6392,
+            "GNSS_SPOOFING": 940,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 2586,
+            "TELECOMMAND_REPLAY": 7826,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 8383
+          },
+          "C": 1.0,
+          "max_iter": 1000,
+          "solver": "lbfgs",
+          "seed": 20260610,
+          "sklearn_version": "1.9.0",
+          "warnings": [
+            {
+              "category": "ConvergenceWarning",
+              "message": "lbfgs failed to converge after 1000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+            }
+          ],
+          "iterations": [
+            1000
+          ],
+          "test_or_val_used_for_fit_or_selection": false
+        },
+        "splits": {
+          "val": {
+            "rows": 11985,
+            "class_support": {
+              "NORMAL": 6261,
+              "RF_LINK_JAMMING": 1333,
+              "GNSS_SPOOFING": 158,
+              "UNAUTHORIZED_TELECOMMAND_INJECTION": 449,
+              "TELECOMMAND_REPLAY": 1964,
+              "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 1820
+            },
+            "absent_true_labels": [],
+            "status": "COMPLETED",
+            "accuracy": 0.5224030037546934,
+            "macro_f1": 0.1227483277885565,
+            "balanced_accuracy_six_class_macro_recall": 0.17028464543311436,
+            "per_class": {
+              "NORMAL": {
+                "precision": 0.5236775818639798,
+                "recall": 0.996166746526114,
+                "f1": 0.6864784546805349,
+                "support": 6261
+              },
+              "RF_LINK_JAMMING": {
+                "precision": 0.42857142857142855,
+                "recall": 0.00900225056264066,
+                "f1": 0.01763409257898604,
+                "support": 1333
+              },
+              "GNSS_SPOOFING": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 158
+              },
+              "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                "precision": 0.5454545454545454,
+                "recall": 0.013363028953229399,
+                "f1": 0.02608695652173913,
+                "support": 449
+              },
+              "TELECOMMAND_REPLAY": {
+                "precision": 0.23076923076923078,
+                "recall": 0.0015274949083503055,
+                "f1": 0.0030349013657056147,
+                "support": 1964
+              },
+              "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                "precision": 0.13043478260869565,
+                "recall": 0.0016483516483516484,
+                "f1": 0.0032555615843733042,
+                "support": 1820
+              }
+            },
+            "normal_recall": 0.996166746526114,
+            "normal_prediction_fraction": 0.9937421777221527,
+            "prior_references": {
+              "references": {
+                "uniform_independent_random": {
+                  "population_limit_macro_f1": 0.13265111914236086,
+                  "expected_accuracy": 0.16666666666666666
+                },
+                "train_prior_independent_random": {
+                  "population_limit_macro_f1": 0.1663703209532584,
+                  "expected_accuracy": 0.3400513370174179
+                }
+              },
+              "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+            },
+            "unknown_token_occurrences": 0,
+            "total_token_occurrences": 2636700
+          },
+          "test": {
+            "rows": 11101,
+            "class_support": {
+              "NORMAL": 5762,
+              "RF_LINK_JAMMING": 1175,
+              "GNSS_SPOOFING": 196,
+              "UNAUTHORIZED_TELECOMMAND_INJECTION": 622,
+              "TELECOMMAND_REPLAY": 1752,
+              "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 1594
+            },
+            "absent_true_labels": [],
+            "status": "COMPLETED",
+            "accuracy": 0.5172506981353031,
+            "macro_f1": 0.11676800502890979,
+            "balanced_accuracy_six_class_macro_recall": 0.1672400313727526,
+            "per_class": {
+              "NORMAL": {
+                "precision": 0.5192638926661227,
+                "recall": 0.9940992710864284,
+                "f1": 0.6821890073244804,
+                "support": 5762
+              },
+              "RF_LINK_JAMMING": {
+                "precision": 0.21428571428571427,
+                "recall": 0.002553191489361702,
+                "f1": 0.005046257359125316,
+                "support": 1175
+              },
+              "GNSS_SPOOFING": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 196
+              },
+              "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 622
+              },
+              "TELECOMMAND_REPLAY": {
+                "precision": 0.09090909090909091,
+                "recall": 0.001141552511415525,
+                "f1": 0.002254791431792559,
+                "support": 1752
+              },
+              "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+                "precision": 0.36,
+                "recall": 0.0056461731493099125,
+                "f1": 0.011117974058060531,
+                "support": 1594
+              }
+            },
+            "normal_recall": 0.9940992710864284,
+            "normal_prediction_fraction": 0.9936942617782182,
+            "prior_references": {
+              "references": {
+                "uniform_independent_random": {
+                  "population_limit_macro_f1": 0.13566277560365275,
+                  "expected_accuracy": 0.16666666666666666
+                },
+                "train_prior_independent_random": {
+                  "population_limit_macro_f1": 0.16642700700145183,
+                  "expected_accuracy": 0.33650144396190984
+                }
+              },
+              "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+            },
+            "unknown_token_occurrences": 0,
+            "total_token_occurrences": 2442220
+          }
+        }
+      }
+    },
+    "score_based_pass_fail_threshold": null,
+    "interpretation": "A residual-signature diagnostic, not an attack detector or independence test. No projection change does not imply no class information. Conditioning on no change can select different contexts by attack class/target; class priors and episode dependence matter. No oracle bound, universal chance threshold, or seed-regeneration rule is inferred. Main evaluation populations and supplied scenario labels are unchanged."
+  },
+  "verdict": {
+    "record_and_split_integrity": "CONFIRMED",
+    "current_maker_source_binding": "CONFIRMED",
+    "static_rng_shared_sampler_patterns": "MATCH",
+    "statistical_independence": "NOT_ESTABLISHED_BY_THIS_AUDIT",
+    "context_shortcut_absence": "NOT_PROVEN; inspect held-out diagnostics and conditional population coverage",
+    "benchmark_Aprime_decision": "REVIEW_REQUIRED",
+    "review_flags": [
+      "At least one conditional 22-field fingerprint probe is unavailable or has fitting warnings; inspect class support and status."
+    ],
+    "duplicate_interpretation": "Single categorical rows may legitimately repeat. Exact overlap is reported, not automatically removed. Even a clean exact-duplicate check does not exclude near-duplicates or shared generator mechanisms.",
+    "revision_interpretation": "Use these diagnostics to delimit benchmark evidence; do not regenerate/select seeds to hit a desired context score."
+  }
+}

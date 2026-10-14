@@ -1,0 +1,211 @@
+{
+  "train_majority_label": "GNSS_SPOOFING",
+  "majority_mapping": [
+    {
+      "context": [
+        "COMMAND_HANDLER",
+        "GATEWAY_LEO",
+        "GROUND_TO_SPACE",
+        "GROUND_GATEWAY",
+        "MONITORED_LEO",
+        "CCSDS_TTC",
+        "COMMAND_SESSION"
+      ],
+      "predicted_label": "GNSS_SPOOFING"
+    },
+    {
+      "context": [
+        "COMMAND_HANDLER",
+        "LEO_LEO",
+        "SPACE_TO_SPACE",
+        "PEER_LEO",
+        "MONITORED_LEO",
+        "CCSDS_ISL",
+        "COMMAND_SESSION"
+      ],
+      "predicted_label": "NORMAL"
+    },
+    {
+      "context": [
+        "GNSS_RECEIVER",
+        "GNSS_LEO",
+        "GNSS_TO_SPACE",
+        "GNSS_CONSTELLATION",
+        "MONITORED_LEO",
+        "GNSS_NAV",
+        "GNSS_NAVIGATION"
+      ],
+      "predicted_label": "NORMAL"
+    },
+    {
+      "context": [
+        "ONBOARD_MONITOR",
+        "GNSS_LEO",
+        "GNSS_TO_SPACE",
+        "GNSS_CONSTELLATION",
+        "MONITORED_LEO",
+        "GNSS_NAV",
+        "GNSS_NAVIGATION"
+      ],
+      "predicted_label": "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+    },
+    {
+      "context": [
+        "ONBOARD_MONITOR",
+        "INTERNAL_ONBOARD",
+        "INTERNAL",
+        "MONITORED_LEO",
+        "OBC",
+        "ONBOARD_INTERNAL",
+        "PAYLOAD_OPERATION"
+      ],
+      "predicted_label": "GNSS_SPOOFING"
+    },
+    {
+      "context": [
+        "ONBOARD_MONITOR",
+        "INTERNAL_ONBOARD",
+        "INTERNAL",
+        "MONITORED_LEO",
+        "OBC",
+        "ONBOARD_INTERNAL",
+        "ROUTINE_MONITORING"
+      ],
+      "predicted_label": "NORMAL"
+    },
+    {
+      "context": [
+        "PROTOCOL_HANDLER",
+        "GATEWAY_LEO",
+        "GROUND_TO_SPACE",
+        "GROUND_GATEWAY",
+        "MONITORED_LEO",
+        "CCSDS_TTC",
+        "CONTACT_WINDOW"
+      ],
+      "predicted_label": "NORMAL"
+    },
+    {
+      "context": [
+        "PROTOCOL_HANDLER",
+        "GATEWAY_LEO",
+        "SPACE_TO_GROUND",
+        "MONITORED_LEO",
+        "GROUND_GATEWAY",
+        "CCSDS_TTC",
+        "CONTACT_WINDOW"
+      ],
+      "predicted_label": "GNSS_SPOOFING"
+    },
+    {
+      "context": [
+        "PROTOCOL_HANDLER",
+        "IOT_LEO",
+        "USER_TO_SPACE",
+        "IOT_TERMINAL",
+        "MONITORED_LEO",
+        "MIOTY",
+        "DATA_RELAY"
+      ],
+      "predicted_label": "RF_LINK_JAMMING"
+    },
+    {
+      "context": [
+        "PROTOCOL_HANDLER",
+        "LEO_LEO",
+        "SPACE_TO_SPACE",
+        "PEER_LEO",
+        "MONITORED_LEO",
+        "CCSDS_ISL",
+        "DATA_RELAY"
+      ],
+      "predicted_label": "NORMAL"
+    },
+    {
+      "context": [
+        "RF_RECEIVER",
+        "GATEWAY_LEO",
+        "GROUND_TO_SPACE",
+        "GROUND_GATEWAY",
+        "MONITORED_LEO",
+        "CCSDS_TTC",
+        "CONTACT_WINDOW"
+      ],
+      "predicted_label": "GNSS_SPOOFING"
+    },
+    {
+      "context": [
+        "RF_RECEIVER",
+        "IOT_LEO",
+        "USER_TO_SPACE",
+        "IOT_TERMINAL",
+        "MONITORED_LEO",
+        "MIOTY",
+        "DATA_RELAY"
+      ],
+      "predicted_label": "GNSS_SPOOFING"
+    },
+    {
+      "context": [
+        "RF_RECEIVER",
+        "LEO_LEO",
+        "SPACE_TO_SPACE",
+        "PEER_LEO",
+        "MONITORED_LEO",
+        "CCSDS_ISL",
+        "DATA_RELAY"
+      ],
+      "predicted_label": "RF_LINK_JAMMING"
+    },
+    {
+      "context": [
+        "RF_RECEIVER",
+        "UAV_LEO",
+        "USER_TO_SPACE",
+        "UAV_TERMINAL",
+        "MONITORED_LEO",
+        "3GPP_NTN",
+        "DATA_RELAY"
+      ],
+      "predicted_label": "GNSS_SPOOFING"
+    },
+    {
+      "context": [
+        "SESSION_MANAGER",
+        "GATEWAY_LEO",
+        "GROUND_TO_SPACE",
+        "GROUND_CONTROL_SERVICE",
+        "MONITORED_LEO",
+        "CCSDS_TTC",
+        "COMMAND_SESSION"
+      ],
+      "predicted_label": "NORMAL"
+    },
+    {
+      "context": [
+        "SESSION_MANAGER",
+        "UAV_LEO",
+        "USER_TO_SPACE",
+        "UAV_TERMINAL",
+        "MONITORED_LEO",
+        "3GPP_NTN",
+        "DATA_RELAY"
+      ],
+      "predicted_label": "GNSS_SPOOFING"
+    }
+  ],
+  "logistic": {
+    "status": "COMPLETED",
+    "method": "train-only one-hot 7-context-field logistic regression",
+    "sklearn_version": "1.9.0",
+    "C": 1.0,
+    "max_iter": 1000,
+    "solver": "lbfgs",
+    "seed": 20260610,
+    "warnings": [],
+    "iterations": [
+      11
+    ],
+    "test_or_val_used_for_fit_or_selection": false
+  }
+}

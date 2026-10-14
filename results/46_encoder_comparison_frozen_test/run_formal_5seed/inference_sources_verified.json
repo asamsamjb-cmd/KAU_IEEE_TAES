@@ -1,0 +1,36 @@
+{
+  "identity": "579a44a808416afc38ba0fd2b5f95e1926acf40a224f883c17586555ac53de5f",
+  "contract": "2d06655c54b968a97fb3a1ebc092e27f9e3df804d56cef782c8969cd4da7bb7f",
+  "result": {
+    "status": "SOURCE_INPUTS_VERIFIED",
+    "pipelines": 20,
+    "step46_protocol_identity": "563d73fe6fd6e2e7db05318b188be8c5686d8301fff5b43c52ae3c1d7206ed8d",
+    "source45_protocol_identity": "640397450d04b260de9328575942d532c9b1052e8c28bde29af285e9cf5f8d30",
+    "source_manifest_sha256": "f849c0e79d109197596db049f7ca3454faa5e05eebec1276b0631daa890248fa"
+  },
+  "completed_at_utc": "2026-10-06T11:14:41.757421+00:00",
+  "artifact_sha256": {
+    "evaluation_endpoints_L10.csv": "dc694f22937bb0f77fd095e038830b2fde6cf11d56bf21d54d39c084ea68d08e",
+    "observability_endpoints_L10.csv": "3e1a8085bc9332aad16fdc8dc4528b3a126f279c30a203d03dea3dbd85b8fb88",
+    "seed_20260610/CategoricalEmbedding_MLP/pipeline_complete.json": "2816712489668309e7ef8cab56bdb3395616ce6a5341d3f56efc0523b498c401",
+    "seed_20260610/DistilBERT_Pretrained_Finetune/pipeline_complete.json": "64a10f94723389b70492179e512aa32acb6e9dbd63aa30ba72f3c56ca37900a5",
+    "seed_20260610/DistilBERT_RandomInit_Train/pipeline_complete.json": "03aa78f91f5031a8e9725944faea3dedefff88ea7d1b2fa7c92ea0ca70931e22",
+    "seed_20260610/FieldToken_Encoder/pipeline_complete.json": "6ec2e740a5210d55657b778b956ce72f6639cf1164da31d22718e92377a890f7",
+    "seed_20260611/CategoricalEmbedding_MLP/pipeline_complete.json": "b47f23ac4e98803147e290159c7e800e9468766cc3ebd94e5a45e8f8bfb00870",
+    "seed_20260611/DistilBERT_Pretrained_Finetune/pipeline_complete.json": "593f114a5244d01f9ca65c4fa9d7147b9801b115b8cb5994b26d84382c2ed6ad",
+    "seed_20260611/DistilBERT_RandomInit_Train/pipeline_complete.json": "b6f6875b8b869a29bb633f8b9dea9e49fdc60f964a38314399218f407d4784be",
+    "seed_20260611/FieldToken_Encoder/pipeline_complete.json": "e239f271fad71b6bc9fee83b49a30ae9da3b5abf124ca587304cef27d14e7878",
+    "seed_20260612/CategoricalEmbedding_MLP/pipeline_complete.json": "a30493ce1d9b9d3d33d1a3b323be6347a70e5feb4df47434d3924d8d09a673d1",
+    "seed_20260612/DistilBERT_Pretrained_Finetune/pipeline_complete.json": "71bbcdb35c3c4dc2e173cdcf95e76caca0d08b585a04bc53ff397a8624156f5a",
+    "seed_20260612/DistilBERT_RandomInit_Train/pipeline_complete.json": "7e9993022a41b84dd55448082fdcf3e45800beb602135512ff81ef7f1b61bdb0",
+    "seed_20260612/FieldToken_Encoder/pipeline_complete.json": "5d3e205c62999b4a5cd3132ad625a69e0da2eb517a74555b58a219719bd84556",
+    "seed_20260613/CategoricalEmbedding_MLP/pipeline_complete.json": "336b7c4354f9dc0e98c9d24e33c2cc8c604e10c1031df8a4a04632894de00523",
+    "seed_20260613/DistilBERT_Pretrained_Finetune/pipeline_complete.json": "1772b11e6bd22422788bcb3c5c0131d6f74658a74db187a3ed28925ec319fc87",
+    "seed_20260613/DistilBERT_RandomInit_Train/pipeline_complete.json": "58b86b638214b67fb8899b24917972f351660267816167becba0a29e84f102a4",
+    "seed_20260613/FieldToken_Encoder/pipeline_complete.json": "117fd242a8eca0255c2d07e3a87d4be26da80a875d7b493a8258f7678f3fa7f7",
+    "seed_20260614/CategoricalEmbedding_MLP/pipeline_complete.json": "cb196a066477761db0bcf0df7fbf1a690c92021f5142fd491f2c48adea768391",
+    "seed_20260614/DistilBERT_Pretrained_Finetune/pipeline_complete.json": "d1ec61efdafe5eab7da361cf9a32af8532e8692bce8553c7f65c8e7ad5a2faf8",
+    "seed_20260614/DistilBERT_RandomInit_Train/pipeline_complete.json": "3a127ed4e83d42251857574ee6670ee363ac44d4ba07d265c274b7b87f74105a",
+    "seed_20260614/FieldToken_Encoder/pipeline_complete.json": "c8205bad931bf29bc36a49c19f06c8f66bd1f20cc4cda44d805f8503f0f02376"
+  }
+}

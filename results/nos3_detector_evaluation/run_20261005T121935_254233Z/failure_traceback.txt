@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 770, in main
+    engine = FrozenEngine(context, args.threads)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 392, in __init__
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

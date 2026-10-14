@@ -1,0 +1,224 @@
+{
+  "identity": "a86d3f14eff2015ab52f461490d1a8eb5c32e61d562eac2a5ce307e144806df2",
+  "contract": "6cdce90475350c0308289296f44cca1aa7431ea2451d453e458c944fb1a39b3c",
+  "result": {
+    "seed": 20260612,
+    "condition": "FieldToken_Encoder",
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step46_protocol_identity": "563d73fe6fd6e2e7db05318b188be8c5686d8301fff5b43c52ae3c1d7206ed8d",
+    "evaluation_precision": "float32",
+    "temporal_delta_macro_f1": 0.40934771054490426,
+    "l1_all": {
+      "n": 44846,
+      "macro_f1": 0.40346244859387476,
+      "accuracy": 0.40037015564375866,
+      "weighted_f1": 0.4032422798148935,
+      "class_f1": [
+        0.30664916885389326,
+        0.39147029538665784,
+        0.7706037560142791,
+        0.37046380749078206,
+        0.359127770769508,
+        0.22245989304812835
+      ],
+      "confusion_matrix": [
+        [
+          2804,
+          505,
+          121,
+          147,
+          3324,
+          31
+        ],
+        [
+          2004,
+          2359,
+          146,
+          111,
+          2926,
+          44
+        ],
+        [
+          957,
+          192,
+          4965,
+          37,
+          1133,
+          17
+        ],
+        [
+          1499,
+          413,
+          107,
+          1909,
+          3883,
+          21
+        ],
+        [
+          2060,
+          523,
+          119,
+          141,
+          4982,
+          76
+        ],
+        [
+          2032,
+          470,
+          127,
+          129,
+          3596,
+          936
+        ]
+      ]
+    },
+    "l1_matched_endpoints": {
+      "n": 38078,
+      "macro_f1": 0.43310841606467876,
+      "accuracy": 0.4307211513209727,
+      "weighted_f1": 0.43280554815730216,
+      "class_f1": [
+        0.3182716554215225,
+        0.42404392640400734,
+        0.8313452329124945,
+        0.3960285586791611,
+        0.37603694518087744,
+        0.25292417779000964
+      ],
+      "confusion_matrix": [
+        [
+          2335,
+          416,
+          100,
+          128,
+          2753,
+          30
+        ],
+        [
+          1619,
+          2201,
+          127,
+          89,
+          2394,
+          35
+        ],
+        [
+          569,
+          115,
+          4774,
+          27,
+          682,
+          9
+        ],
+        [
+          1135,
+          345,
+          93,
+          1775,
+          3360,
+          17
+        ],
+        [
+          1638,
+          444,
+          99,
+          115,
+          4397,
+          65
+        ],
+        [
+          1615,
+          395,
+          116,
+          105,
+          3042,
+          919
+        ]
+      ]
+    },
+    "l10": {
+      "n": 38078,
+      "macro_f1": 0.842456126609583,
+      "accuracy": 0.8311360890803089,
+      "weighted_f1": 0.8462509274084904,
+      "class_f1": [
+        0.6429368575624083,
+        0.8584404455869752,
+        0.9529935675408214,
+        0.945259725133939,
+        0.8447806868412104,
+        0.8103254769921436
+      ],
+      "confusion_matrix": [
+        [
+          5473,
+          109,
+          63,
+          40,
+          22,
+          55
+        ],
+        [
+          1398,
+          5009,
+          29,
+          3,
+          1,
+          25
+        ],
+        [
+          362,
+          28,
+          5778,
+          0,
+          0,
+          8
+        ],
+        [
+          584,
+          18,
+          23,
+          6087,
+          0,
+          13
+        ],
+        [
+          1665,
+          17,
+          30,
+          10,
+          4969,
+          67
+        ],
+        [
+          1781,
+          24,
+          27,
+          14,
+          14,
+          4332
+        ]
+      ]
+    },
+    "encoder_parameters": 129728,
+    "window_model_parameters": 724934,
+    "tst_parameters": 234758,
+    "deployment_parameters": 364486,
+    "inference_seconds_including_feature_io": 1.7527163000195287,
+    "encoder_best_epoch": 1,
+    "encoder_convergence": "PLATEAU_OBSERVED",
+    "tst_best_epoch": 21,
+    "tst_convergence": "PLATEAU_OBSERVED"
+  },
+  "completed_at_utc": "2026-10-06T10:41:17.597790+00:00",
+  "artifact_sha256": {
+    "test_predictions_L1_all.csv": "1403fc5b52bee6d46866eaf11c1d598636d72c7bb5fbc5700908428258f9ec6d",
+    "test_predictions_L10.csv": "dfc47a4e39fb49bbeda91b3dffbe904b0bf3d85d47b24b1ad27db586a24021f1",
+    "test_window_logits.npy": "779319283504a9ecf561519ba774227f94081b5a212591e5bf8707871ab669e6",
+    "test_tst_logits_L10.npy": "0d57926813b35e3b4908ccdaf5d87a4509c332593738e13c9af4e57e61573a61",
+    "test_embeddings.npy": "32a251fc89c2759b2976de56e0f383ec6f28c1727385791039d86d656e6032cb",
+    "metrics.json": "259b80e45e590e8e16349032172c1556ba26a8240b5f704fc7a667130913272b",
+    "validation_canary.json": "4e00f32069ca308e2b31030b0a65f65de9aa8dcd7446e3e9829133a300223e7c",
+    "test_predictions_window_common_L10.csv": "ecbb49f8f58cb96efc006a8f88f4ec99d030fe1795ec6b62df24df3d95d66c07"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "identity": "64657af30eceb8b4896834aaed655b4416a31265ce118424c81788b195639ad3",
+  "contract": "01eb772eae0690d718d280b7b4c75e1cb9479d32678c4d708197aa8cc60eebc9",
+  "result": {
+    "pipelines": 20,
+    "encoder_seeds": 5,
+    "bootstrap_draws": 20000,
+    "endpoints": 38078,
+    "episodes": 752,
+    "raw_test_episodes": 752,
+    "primary_contrasts": 3,
+    "secondary_contrasts": 4,
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step46_protocol_identity": "563d73fe6fd6e2e7db05318b188be8c5686d8301fff5b43c52ae3c1d7206ed8d"
+  },
+  "completed_at_utc": "2026-10-06T11:15:08.096027+00:00",
+  "artifact_sha256": {
+    "analysis_summary.txt": "86f06306558b3aae03b525360a1b8a2a4062ffde2dc5dd011fed711bf016dc37",
+    "bootstrap_distribution.npz": "7d983c30fa5ebf9a0639fef4f3ed2feca486351bc91ed2de14f1d9c556c9717f",
+    "episode_inventory.csv": "c717aa2e2441436bb9860047307b1b85c66568dbe132e6efd52f68d845ba8637",
+    "metrics_by_seed.csv": "c54770dfc589a5ac73e5930c52c5ce832e9235ce2e074e6af681d811e797e349",
+    "model_summary.csv": "d63cab978b460393f4f25e2fe4ca7d7d51bd5fd585dd3c5d991e263f6248429e",
+    "model_summary.json": "605255c79dd580a5fd997c7470a752bc8cad15e2c0fc59a77447c71c4140caed",
+    "observable_effect_diagnostics_by_seed.csv": "c5986f9541f4cdf11d4cd48c10a972f27fb81722c68031c15064a809ebae847d",
+    "observable_effect_diagnostics_scope.json": "f98d87aa5118ae7fa9878e221cf9899615aa71e79134e7ff1b508dd5c810dfd0",
+    "observable_effect_diagnostics_summary.csv": "f17c34a2854ca0fb49c6e5d646308f33494152f68f4ec93e4c791c5f2b2a4398",
+    "paired_comparisons.csv": "0315c4051ca033c3d7e174734dd31b4dbee010ae8afdd099eca91814f910c30e",
+    "paired_comparisons.json": "a97280bda91cddc3addce92480f82f12ba2ae9f99221ce11a474102767440d7b",
+    "per_class_f1.csv": "8298c3dad064e4e6639d74979831612a1be4e8d047886f6c78575ca208ec363f",
+    "seed_mean_row_normalized_confusion.csv": "66b6b2c86520ba5f46492e568a9a9b14b8846062fd32c2f817546a179433dc78",
+    "temporal_comparisons.csv": "672a3efa9c96f64f21a6bc04266ebc027bb7abb534edac709674a6176cc317d6",
+    "temporal_comparisons.json": "f3d78866b2da4ec873caad9c504d1fab7870aa0e50282e042f31811a92bbea43"
+  }
+}

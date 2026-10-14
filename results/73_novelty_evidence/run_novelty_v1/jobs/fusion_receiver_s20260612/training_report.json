@@ -1,0 +1,80 @@
+{
+  "selection": "Fixed iteration budget; no validation or test selection",
+  "best_iteration": 150,
+  "budget_exhausted": false,
+  "stopping": "PRESPECIFIED_FIXED_BUDGET",
+  "internal_random_validation": false,
+  "training_seconds": 58.6109140999979,
+  "warnings": [],
+  "seed": 20260612,
+  "family": "HGB",
+  "validation_replay": "PASS",
+  "validation": {
+    "n": 37371,
+    "macro_f1": 0.41635491470529207,
+    "balanced_accuracy": 0.4163601468109612,
+    "accuracy": 0.4063578710765032,
+    "normal_false_alarm_rate": 0.730554224564766,
+    "support": [
+      6261,
+      5922,
+      5908,
+      6025,
+      6673,
+      6582
+    ],
+    "confusion": [
+      [
+        1687,
+        527,
+        79,
+        1531,
+        909,
+        1528
+      ],
+      [
+        552,
+        3754,
+        22,
+        603,
+        410,
+        581
+      ],
+      [
+        89,
+        29,
+        5553,
+        96,
+        50,
+        91
+      ],
+      [
+        1620,
+        548,
+        45,
+        1448,
+        947,
+        1417
+      ],
+      [
+        1745,
+        432,
+        55,
+        1735,
+        1125,
+        1581
+      ],
+      [
+        1684,
+        554,
+        59,
+        1654,
+        1012,
+        1619
+      ]
+    ]
+  },
+  "features": 340,
+  "training_rows": 179414,
+  "validation_rows": 37371
+}

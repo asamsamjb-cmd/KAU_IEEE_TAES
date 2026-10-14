@@ -1,0 +1,12 @@
+# Step 32 inputs (2026-10-13T04:06:10.952491+00:00)
+step27_final_zip	C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\27_L20_TST_VALIDATION_PILOT\27_L20_FINAL_TEST_REVIEW.zip	36f0a86158d9cac6af0730182590166136f77008aeb680a20f34cab57e5c4b80
+step28_run	C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\28_l20_evidence_location\run_20261013T031358_531557Z
+step28/28_input_audit.json	ab63b20888bb7d1da9a670f638c2e211ff7024323319737e5bcc68e5e0b79936
+step28/28_endpoint_evidence.csv	2c69da459fa7f95f3e9d344666cbddac416a9b1d2a48394a2de0d4e510ab94bb
+step28/28_group_summary.csv	8d4f6394e18865e422e8be3acd79729cd968a2c8d7c7840f8b7522b10109a942
+step27_member seed_20260610/test_predictions.csv	2fc5fff8d7428aa10f28c32104ffe79c30750838300d1cb31a222c185cca3e7f
+step27_member seed_20260611/test_predictions.csv	0adb654269446b5d04ce821e2b6349bd997237ed85113252390e2417b8e02f7e
+step27_member seed_20260612/test_predictions.csv	8a4b1e14c843793d5d0b69571c1da6da530007883a7e684e77f48ac24018c73b
+historical L10 seed=20260610	C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_main\L10\predictions\test_predictions_L10.csv	dcbacdf276688e9ffc1c4cebecf787dc0349d25c76902da017f0161ce59f45b7
+historical L10 seed=20260611	C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260611\L10\predictions\test_predictions_L10.csv	7f6a9d2cf6674a5f2ef887db0540cb127dc8a1e23790c0de4d42e2b546a7680c
+historical L10 seed=20260612	C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260612\L10\predictions\test_predictions_L10.csv	a5838fb8b28288a245fb7d8a97e4e6fd4f2c77f7cb8b6f57471fdfb9b56c999c

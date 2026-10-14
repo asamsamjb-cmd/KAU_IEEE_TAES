@@ -1,0 +1,15 @@
+{
+  "identity": "b22eb96124e2b3c36141fe249e9d7c61dcdd7d6d44dcd8a85a17de3d9cdddd3d",
+  "contract": "90f5570aa3dbbcec80494fe11055909b943a194642f449e12c57abbcef141ffd",
+  "result": {
+    "realization": "P_mild",
+    "records": 49152,
+    "endpoints": 41028,
+    "runs": 53
+  },
+  "completed_at_utc": "2026-10-07T05:29:24.110480+00:00",
+  "artifact_sha256": {
+    "predictions.npz": "a1c64cb129a2e89f57b86222270f391f8f1335c4cff6d5b34ed67ac05e1c345d",
+    "metrics_by_run.csv": "5371423309eb1b9c6cb85cb8816f81a8f5c2efe35cd3a9c3a5ddcead3a6d38f2"
+  }
+}

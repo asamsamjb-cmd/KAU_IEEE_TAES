@@ -1,0 +1,239 @@
+{
+  "source_dataset": "shared_nominal_v2",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "vocabulary_source": "Step 43 train-only vocabulary",
+  "vocabulary_sha256": "035d7b1a6cafc4241a241bc30a055f470511fa4057ae5669b285f57d7bb0c58c",
+  "fields": [
+    "observation_stage",
+    "path_type",
+    "direction",
+    "source_role",
+    "destination_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "service_context",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "vocabulary": {
+    "observation_stage": {
+      "COMMAND_HANDLER": 1,
+      "GNSS_RECEIVER": 2,
+      "ONBOARD_MONITOR": 3,
+      "PROTOCOL_HANDLER": 4,
+      "RF_RECEIVER": 5,
+      "SESSION_MANAGER": 6
+    },
+    "path_type": {
+      "GATEWAY_LEO": 1,
+      "GNSS_LEO": 2,
+      "INTERNAL_ONBOARD": 3,
+      "IOT_LEO": 4,
+      "LEO_LEO": 5,
+      "UAV_LEO": 6
+    },
+    "direction": {
+      "GNSS_TO_SPACE": 1,
+      "GROUND_TO_SPACE": 2,
+      "INTERNAL": 3,
+      "SPACE_TO_GROUND": 4,
+      "SPACE_TO_SPACE": 5,
+      "USER_TO_SPACE": 6
+    },
+    "source_role": {
+      "GNSS_CONSTELLATION": 1,
+      "GROUND_CONTROL_SERVICE": 2,
+      "GROUND_GATEWAY": 3,
+      "IOT_TERMINAL": 4,
+      "MONITORED_LEO": 5,
+      "PEER_LEO": 6,
+      "UAV_TERMINAL": 7
+    },
+    "destination_role": {
+      "GROUND_GATEWAY": 1,
+      "MONITORED_LEO": 2,
+      "OBC": 3
+    },
+    "protocol_context": {
+      "3GPP_NTN": 1,
+      "CCSDS_ISL": 2,
+      "CCSDS_TTC": 3,
+      "GNSS_NAV": 4,
+      "MIOTY": 5,
+      "ONBOARD_INTERNAL": 6
+    },
+    "operational_phase": {
+      "COMMAND_SESSION": 1,
+      "CONTACT_WINDOW": 2,
+      "DATA_RELAY": 3,
+      "GNSS_NAVIGATION": 4,
+      "PAYLOAD_OPERATION": 5,
+      "ROUTINE_MONITORING": 6
+    },
+    "message_type": {
+      "COMMAND_UPLINK": 1,
+      "GNSS_OBSERVATION": 2,
+      "GNSS_TIMING_UPDATE": 3,
+      "IOT_REPORT": 4,
+      "NAVIGATION_MESSAGE": 5,
+      "NAVIGATION_STATE_UPDATE": 6,
+      "NOMINAL_MIXED_TRAFFIC": 7,
+      "PARTIAL_FRAME": 8,
+      "PNT_SOLUTION": 9,
+      "TELECOMMAND": 10,
+      "TELEMETRY": 11,
+      "UAV_TELEMETRY": 12
+    },
+    "service_context": {
+      "CONTROL_SESSION": 1,
+      "DEGRADED_SERVICE": 2,
+      "GNSS_PNT": 3,
+      "HOUSEKEEPING": 4,
+      "IOT_UPLINK": 5,
+      "ISL_ROUTING": 6,
+      "NAVIGATION_FILTERING": 7,
+      "PAYLOAD_DATA": 8,
+      "PNT_MONITORING": 9,
+      "TIMING_SYNCHRONIZATION": 10,
+      "TTC_CONTROL": 11,
+      "UAV_NTN_SERVICE": 12
+    },
+    "command_intent": {
+      "ATTITUDE_ADJUST": 1,
+      "CONFIG_UPDATE": 2,
+      "HOUSEKEEPING": 3,
+      "MODE_CHANGE": 4,
+      "NOMINAL_CONTROL": 5,
+      "NO_COMMAND": 6,
+      "ORBIT_CONTROL": 7,
+      "PAYLOAD_CONFIG": 8,
+      "ROUTE_UPDATE": 9,
+      "SESSION_REAUTH": 10,
+      "STATUS_REQUEST": 11,
+      "TIME_SYNC": 12
+    },
+    "payload_or_parameter_context": {
+      "CONFIG_PARAMETER": 1,
+      "CONTEXT_MISMATCH_PARAMETER": 2,
+      "CONTROL_PARAMETER": 3,
+      "MISSION_PHASE_MISMATCH_PARAMETER": 4,
+      "NAV_RESIDUAL_VARIATION": 5,
+      "NOMINAL_PARAMETER": 6,
+      "OUT_OF_POLICY_PARAMETER": 7,
+      "PARAMETER_RANGE_VIOLATION": 8,
+      "PARTIAL_PAYLOAD": 9,
+      "PHASE_TRANSITION_PARAMETER": 10,
+      "POLICY_SYNC_CONTEXT": 11,
+      "POSITION_RESIDUAL_VARIATION": 12,
+      "ROUTINE_PARAMETER": 13,
+      "SCHEDULED_CONFIG_PARAMETER": 14,
+      "STATUS_PARAMETER": 15,
+      "SUSPICIOUS_PARAMETER_PATTERN": 16,
+      "TIME_RESIDUAL_VARIATION": 17,
+      "TIME_SYNC_PARAMETER": 18
+    },
+    "sequence_freshness_status": {
+      "ACCEPTED": 1,
+      "DUPLICATE": 2,
+      "FRESH": 3,
+      "NOT_APPLICABLE": 4,
+      "OUT_OF_ORDER": 5,
+      "REPLAYED": 6,
+      "STALE": 7
+    },
+    "control_security_state": {
+      "AUTH_FAILED": 1,
+      "AUTH_MISSING": 2,
+      "AUTH_VALID": 3,
+      "INTEGRITY_FAILED": 4,
+      "NOT_APPLICABLE": 5,
+      "SOURCE_UNVERIFIED": 6,
+      "UNAUTHORIZED": 7,
+      "VALID_LOOKING_ANOMALOUS": 8
+    },
+    "signal_quality_state": {
+      "DEGRADED": 1,
+      "FLUCTUATING": 2,
+      "NOMINAL": 3,
+      "SEVERELY_DEGRADED": 4
+    },
+    "tracking_stability": {
+      "CYCLE_SLIP_LIKE": 1,
+      "LOCK_LOSS": 2,
+      "STABLE": 3,
+      "UNSTABLE": 4
+    },
+    "navigation_consistency": {
+      "CONSISTENT": 1,
+      "DRIFTING": 2,
+      "INCONSISTENT": 3,
+      "JUMP_DETECTED": 4,
+      "UNAVAILABLE": 5
+    },
+    "timing_consistency": {
+      "CONSISTENT": 1,
+      "DRIFTING": 2,
+      "INCONSISTENT": 3,
+      "OFFSET_JUMP": 4
+    },
+    "decoder_status": {
+      "CRC_FAIL": 1,
+      "DECODE_FAIL": 2,
+      "DECODE_OK": 3,
+      "DECODE_WARN": 4,
+      "FRAME_LOSS": 5
+    },
+    "command_execution_result": {
+      "ACCEPTED": 1,
+      "BLOCKED": 2,
+      "EXECUTED": 3,
+      "HELD": 4,
+      "NO_COMMAND": 5,
+      "REJECTED": 6,
+      "TIMEOUT": 7
+    },
+    "retry_timeout_state": {
+      "BURST_TIMEOUT": 1,
+      "NORMAL": 2,
+      "RETRY_INCREASED": 3,
+      "TIMEOUT": 4
+    },
+    "session_state": {
+      "ABNORMAL": 1,
+      "ACTIVE": 2,
+      "DEGRADED": 3,
+      "LINK_LOSS": 4,
+      "NO_SESSION": 5,
+      "RESET": 6
+    },
+    "state_transition_consistency": {
+      "CONSISTENT": 1,
+      "DELAYED_TRANSITION": 2,
+      "FORBIDDEN_TRANSITION": 3,
+      "INCOMPLETE_TRANSITION": 4,
+      "NO_CHANGE": 5,
+      "UNEXPECTED_TRANSITION": 6
+    }
+  },
+  "missing_placeholder": "UNK",
+  "serializer": "observable22_fixed_order_is_v1",
+  "source_sha256": {
+    "16.observable_rule_baseline(4).py": "37faee5ee47742d8e59ed815cf7d9fb923b8e0a2275f2cdb79c29a439bc5579e",
+    "18.generate_realistic_missing_field_tests(2).py": "372bb9f9878cc13a51af1ba8cdbcd79c3b886bb98157b0f632f3300f37a005d1",
+    "shared_nominal.py": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+    "19.evaluate_realistic_missing_field_robustness(1).py": "b513703ba2614f99b0beae88f465b5416669ff10370a93ca6a545a82b38d0962"
+  },
+  "reviewed_projection_source": "def has_command_activity(raw: Dict[str, Any]) -> bool:\n    return int(raw.get(\"raw_command_count\", 0)) > 0\n\ndef normalize_sequence_freshness(raw: Dict[str, Any]) -> str:\n    if not has_command_activity(raw):\n        return \"NOT_APPLICABLE\"\n\n    if raw.get(\"unknown_sequence_flag\", 0) == 1:\n        return \"UNKNOWN\"\n\n    # Common deterministic mapping. The generator, not this extractor,\n    # determines which sequence events exist in a scenario.\n    if raw.get(\"accepted_sequence_flag\", 0) == 1:\n        return \"ACCEPTED\"\n\n    if raw[\"duplicate_flag\"] == 1:\n        return \"REPLAYED\"\n\n    if raw[\"sequence_gap\"] == 1:\n        return \"FRESH\"\n\n    if raw[\"sequence_gap\"] == 0:\n        return \"DUPLICATE\"\n\n    if raw[\"sequence_gap\"] < 0:\n        return \"STALE\"\n\n    if raw[\"sequence_gap\"] > 1:\n        return \"OUT_OF_ORDER\"\n\n    return \"UNKNOWN\""
+}

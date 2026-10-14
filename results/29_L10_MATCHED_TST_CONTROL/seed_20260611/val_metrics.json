@@ -1,0 +1,23 @@
+{
+  "seed": 20260611,
+  "best_epoch": 8,
+  "trained_epochs": 15,
+  "training_elapsed_seconds": 118.18687890000001,
+  "val": {
+    "accuracy": 0.8681009349552629,
+    "macro_precision": 0.9170236375522931,
+    "macro_recall": 0.8714708775543424,
+    "macro_f1": 0.8794087900171906,
+    "weighted_precision": 0.917524566156059,
+    "weighted_recall": 0.868100934955263,
+    "weighted_f1": 0.8776937114738687,
+    "total": 29841,
+    "correct": 25905,
+    "loss": 0.510637646258179
+  },
+  "n_train_sequences": 144321,
+  "n_val_sequences": 29841,
+  "length": 10,
+  "source_L20_cohort": true,
+  "selection": "val_macro_f1, Step11 original training protocol"
+}

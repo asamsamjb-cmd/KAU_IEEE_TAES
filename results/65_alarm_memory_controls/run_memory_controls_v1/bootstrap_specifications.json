@@ -1,0 +1,473 @@
+{
+  "specifications": [
+    {
+      "metric": "ungated_class_recall",
+      "evidence_group": "current_changed",
+      "target_fpr": null,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "ungated_class_recall",
+      "evidence_group": "history_only_changed",
+      "target_fpr": null,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "ungated_class_recall",
+      "evidence_group": "no_change_in_L10",
+      "target_fpr": null,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "alarm_gated_correct_type_recall",
+      "evidence_group": "current_changed",
+      "target_fpr": 0.01,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "alarm_gated_correct_type_recall",
+      "evidence_group": "history_only_changed",
+      "target_fpr": 0.01,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "alarm_gated_correct_type_recall",
+      "evidence_group": "no_change_in_L10",
+      "target_fpr": 0.01,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "event_detection_probability",
+      "evidence_group": null,
+      "target_fpr": 0.01,
+      "anchor": "active",
+      "alarm_type": "any_attack",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_capped_delay_seconds",
+      "evidence_group": null,
+      "target_fpr": 0.01,
+      "anchor": "active",
+      "alarm_type": "any_attack",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_detection_probability",
+      "evidence_group": null,
+      "target_fpr": 0.01,
+      "anchor": "active",
+      "alarm_type": "correct_type",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_capped_delay_seconds",
+      "evidence_group": null,
+      "target_fpr": 0.01,
+      "anchor": "active",
+      "alarm_type": "correct_type",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_detection_probability",
+      "evidence_group": null,
+      "target_fpr": 0.01,
+      "anchor": "observable",
+      "alarm_type": "any_attack",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_capped_delay_seconds",
+      "evidence_group": null,
+      "target_fpr": 0.01,
+      "anchor": "observable",
+      "alarm_type": "any_attack",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_detection_probability",
+      "evidence_group": null,
+      "target_fpr": 0.01,
+      "anchor": "observable",
+      "alarm_type": "correct_type",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_capped_delay_seconds",
+      "evidence_group": null,
+      "target_fpr": 0.01,
+      "anchor": "observable",
+      "alarm_type": "correct_type",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "normal_endpoint_fpr",
+      "evidence_group": "NORMAL",
+      "target_fpr": 0.01,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "normal_episode_any_alarm_probability",
+      "evidence_group": "NORMAL",
+      "target_fpr": 0.01,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "normal_run_starts_per_1000_seconds",
+      "evidence_group": "NORMAL",
+      "target_fpr": 0.01,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "normal_mean_episode_longest_alarm_seconds",
+      "evidence_group": "NORMAL",
+      "target_fpr": 0.01,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "alarm_gated_correct_type_recall",
+      "evidence_group": "current_changed",
+      "target_fpr": 0.05,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "alarm_gated_correct_type_recall",
+      "evidence_group": "history_only_changed",
+      "target_fpr": 0.05,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "alarm_gated_correct_type_recall",
+      "evidence_group": "no_change_in_L10",
+      "target_fpr": 0.05,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "event_detection_probability",
+      "evidence_group": null,
+      "target_fpr": 0.05,
+      "anchor": "active",
+      "alarm_type": "any_attack",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_capped_delay_seconds",
+      "evidence_group": null,
+      "target_fpr": 0.05,
+      "anchor": "active",
+      "alarm_type": "any_attack",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_detection_probability",
+      "evidence_group": null,
+      "target_fpr": 0.05,
+      "anchor": "active",
+      "alarm_type": "correct_type",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_capped_delay_seconds",
+      "evidence_group": null,
+      "target_fpr": 0.05,
+      "anchor": "active",
+      "alarm_type": "correct_type",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_detection_probability",
+      "evidence_group": null,
+      "target_fpr": 0.05,
+      "anchor": "observable",
+      "alarm_type": "any_attack",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_capped_delay_seconds",
+      "evidence_group": null,
+      "target_fpr": 0.05,
+      "anchor": "observable",
+      "alarm_type": "any_attack",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_detection_probability",
+      "evidence_group": null,
+      "target_fpr": 0.05,
+      "anchor": "observable",
+      "alarm_type": "correct_type",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "event_capped_delay_seconds",
+      "evidence_group": null,
+      "target_fpr": 0.05,
+      "anchor": "observable",
+      "alarm_type": "correct_type",
+      "horizon_seconds": 10
+    },
+    {
+      "metric": "normal_endpoint_fpr",
+      "evidence_group": "NORMAL",
+      "target_fpr": 0.05,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "normal_episode_any_alarm_probability",
+      "evidence_group": "NORMAL",
+      "target_fpr": 0.05,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "normal_run_starts_per_1000_seconds",
+      "evidence_group": "NORMAL",
+      "target_fpr": 0.05,
+      "anchor": null,
+      "horizon_seconds": null
+    },
+    {
+      "metric": "normal_mean_episode_longest_alarm_seconds",
+      "evidence_group": "NORMAL",
+      "target_fpr": 0.05,
+      "anchor": null,
+      "horizon_seconds": null
+    }
+  ],
+  "classes": [
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "methods": [
+    "ActualHistory",
+    "RepeatCurrent",
+    "MaxHold10",
+    "ProbabilityMean10",
+    "FiniteEWMA10"
+  ],
+  "seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614,
+    20260615,
+    20260616,
+    20260617,
+    20260618,
+    20260619
+  ],
+  "draws": 20000,
+  "seed": 2026100865
+}

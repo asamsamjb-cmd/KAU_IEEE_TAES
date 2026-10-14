@@ -1,0 +1,58 @@
+{
+  "draws": 20000,
+  "seed": 2026100759,
+  "episodes": 752,
+  "endpoints": 38078,
+  "seed_resampling": false,
+  "estimand": "Arithmetic mean of per-seed endpoint-level macro-F1; not ensemble or pooled-seed confusion",
+  "resampling": "Whole episodes within each true class, same draw across all methods and fixed seeds",
+  "uncertainty": "Conditional on these trained seeds, this synthetic realization and fixed protocol; assumes within-class episode exchangeability",
+  "equivalence_margin": null,
+  "primary_family": "Two L10 Semantic22-minus-Raw contrasts; L1 and optional combined families reported separately",
+  "comparisons": [
+    {
+      "contrast": "Semantic22_minus_Raw_L10_HGB",
+      "family": "primary_L10_two_models",
+      "delta_macro_f1": -0.03718198738432543,
+      "ci95_low": -0.0448468216754394,
+      "ci95_high": -0.03017190377456083,
+      "bonferroni_confidence": 0.975,
+      "bonferroni_low": -0.04606211820488781,
+      "bonferroni_high": -0.029132975256683367,
+      "interpretation": "raw_higher"
+    },
+    {
+      "contrast": "Semantic22_minus_Raw_L10_MLP",
+      "family": "primary_L10_two_models",
+      "delta_macro_f1": -0.0357063835036473,
+      "ci95_low": -0.04322186948568946,
+      "ci95_high": -0.028869357175978706,
+      "bonferroni_confidence": 0.975,
+      "bonferroni_low": -0.04434331817223986,
+      "bonferroni_high": -0.027884919679256544,
+      "interpretation": "raw_higher"
+    },
+    {
+      "contrast": "Semantic22_minus_Raw_L1_HGB",
+      "family": "secondary_L1_two_models",
+      "delta_macro_f1": -0.11267564526077489,
+      "ci95_low": -0.12273108516644493,
+      "ci95_high": -0.10257300033919602,
+      "bonferroni_confidence": 0.975,
+      "bonferroni_low": -0.12406774579726951,
+      "bonferroni_high": -0.1011072531898598,
+      "interpretation": "raw_higher"
+    },
+    {
+      "contrast": "Semantic22_minus_Raw_L1_MLP",
+      "family": "secondary_L1_two_models",
+      "delta_macro_f1": -0.10403070055928204,
+      "ci95_low": -0.11340043612057478,
+      "ci95_high": -0.09461032746572186,
+      "bonferroni_confidence": 0.975,
+      "bonferroni_low": -0.11461048079266524,
+      "bonferroni_high": -0.09318245697392032,
+      "interpretation": "raw_higher"
+    }
+  ]
+}

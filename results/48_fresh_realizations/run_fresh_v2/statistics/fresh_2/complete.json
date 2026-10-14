@@ -1,0 +1,13 @@
+{
+  "identity": "9107c07e27c5d8177550de2e7c0a9da143d018c5331c5fb24d166ff07e1178f8",
+  "contract": "2124c73b348ce8b13e6317dabcae02ac52fdb97f890f6353806b576cd2a33ed8",
+  "result": {
+    "draws": 20000,
+    "seed": 3481176628
+  },
+  "completed_at_utc": "2026-10-06T13:31:48.917894+00:00",
+  "artifact_sha256": {
+    "bootstrap.npz": "cc4955dc2b0058c7fa044a0bce59fb7c2fe2867dae5527c9a978eac5d9f38625",
+    "episode_confusions.npz": "2a70051825eab8df17981265e0bd68efee88544639d6011b091a454a7e45f0df"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "status": "ALL_CONVERGED",
+  "fits": {
+    "context_L1": {
+      "status": "COMPLETED",
+      "converged": true,
+      "max_iter": 10000,
+      "iterations": [
+        11
+      ],
+      "iteration_limit_reached": false,
+      "convergence_warning_count": 0,
+      "tol": 0.0001,
+      "class_weight": null,
+      "warnings": [],
+      "convergence_criterion": "No ConvergenceWarning and every n_iter_ < max_iter at the unchanged solver tolerance.",
+      "held_out_metrics_require_converged_fit": true,
+      "method": "train-only one-hot 7-context-field logistic regression",
+      "sklearn_version": "1.9.0",
+      "C": 1.0,
+      "solver": "lbfgs",
+      "seed": 20260610,
+      "test_or_val_used_for_fit_or_selection": false
+    },
+    "no_change_L1": {
+      "status": "COMPLETED",
+      "converged": true,
+      "max_iter": 10000,
+      "iterations": [
+        177
+      ],
+      "iteration_limit_reached": false,
+      "convergence_warning_count": 0,
+      "tol": 0.0001,
+      "class_weight": null,
+      "warnings": [],
+      "convergence_criterion": "No ConvergenceWarning and every n_iter_ < max_iter at the unchanged solver tolerance.",
+      "held_out_metrics_require_converged_fit": true,
+      "features": "22 field/value token counts over original contiguous windows; no metadata or flags",
+      "fit_split": "train",
+      "vocabulary_fit_split": "train",
+      "train_rows": 158301,
+      "train_class_support": {
+        "NORMAL": 35646,
+        "RF_LINK_JAMMING": 25389,
+        "GNSS_SPOOFING": 10993,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 26950,
+        "TELECOMMAND_REPLAY": 29088,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 30235
+      },
+      "C": 1.0,
+      "solver": "lbfgs",
+      "seed": 20260610,
+      "sklearn_version": "1.9.0",
+      "test_or_val_used_for_fit_or_selection": false
+    },
+    "no_change_L10": {
+      "status": "COMPLETED",
+      "converged": true,
+      "max_iter": 10000,
+      "iterations": [
+        2894
+      ],
+      "iteration_limit_reached": false,
+      "convergence_warning_count": 0,
+      "tol": 0.0001,
+      "class_weight": null,
+      "warnings": [],
+      "convergence_criterion": "No ConvergenceWarning and every n_iter_ < max_iter at the unchanged solver tolerance.",
+      "held_out_metrics_require_converged_fit": true,
+      "features": "22 field/value token counts over original contiguous windows; no metadata or flags",
+      "fit_split": "train",
+      "vocabulary_fit_split": "train",
+      "train_rows": 56337,
+      "train_class_support": {
+        "NORMAL": 30210,
+        "RF_LINK_JAMMING": 6392,
+        "GNSS_SPOOFING": 940,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 2586,
+        "TELECOMMAND_REPLAY": 7826,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 8383
+      },
+      "C": 1.0,
+      "solver": "lbfgs",
+      "seed": 20260610,
+      "sklearn_version": "1.9.0",
+      "test_or_val_used_for_fit_or_selection": false
+    }
+  },
+  "interpretation": "Numerical convergence only. Review any other fitting warnings separately. A completed audit or converged fit does not prove chance-level performance or absence of shortcuts. Predictions from unconfirmed fits are retained for diagnosis, not as converged evidence."
+}

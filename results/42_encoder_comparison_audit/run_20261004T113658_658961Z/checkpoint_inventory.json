@@ -1,0 +1,49 @@
+{
+  "status": "VERIFIED_CURRENT_BYTES_AND_RECORDED_8_TO_9_CHAIN",
+  "files": [
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\config.json",
+      "sha256": "64b9bbcd239e60e66c2e64802e8555112964cb86e71e9fdbcf023b72f5f778b0",
+      "size_bytes": 1309,
+      "read_at_utc": "2026-10-04T11:36:58.747949+00:00"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\label_mapping.json",
+      "sha256": "253649f289bdf8046aed8caeb3ef65e347af7038223a0f2ea2ee5b1d35f9e7ff",
+      "size_bytes": 2219,
+      "read_at_utc": "2026-10-04T11:36:58.748901+00:00"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\model.safetensors",
+      "sha256": "0792b13df30bed87dced1507a389cbd084558aa2fa3bdeb07299c3909b76464c",
+      "size_bytes": 267844872,
+      "read_at_utc": "2026-10-04T11:36:58.988577+00:00"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\tokenizer.json",
+      "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "size_bytes": 711396,
+      "read_at_utc": "2026-10-04T11:36:58.990104+00:00"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\tokenizer_config.json",
+      "sha256": "71cd48543bec670f50e0c9c3556df16b1f58ea720ead6a1b4675f08870c60b17",
+      "size_bytes": 366,
+      "read_at_utc": "2026-10-04T11:36:58.991061+00:00"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\training_args.bin",
+      "sha256": "a4659c5ed492d23051158b76c31dec84b689475caaced9969fe0ce6d51a27643",
+      "size_bytes": 5421,
+      "read_at_utc": "2026-10-04T11:36:58.992140+00:00"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\training_provenance.json",
+      "sha256": "7c2b3bfa0996b59a79563f43c64bf29f2f829251ca950a0896e1cf1b2a7b221c",
+      "size_bytes": 1682,
+      "read_at_utc": "2026-10-04T11:36:58.993328+00:00"
+    }
+  ],
+  "claim": "Current model/tokenizer bytes match Step 8 completion and the Step 9 extraction source record.",
+  "limits": "No encoder inference, embedding-content reproduction, generation-lineage or test-content audit here; Step 41 covers maker/source diagnostics."
+}

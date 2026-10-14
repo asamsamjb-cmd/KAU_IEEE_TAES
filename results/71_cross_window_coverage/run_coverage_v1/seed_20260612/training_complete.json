@@ -1,0 +1,10 @@
+{
+  "identity": "1443c68e444b290e640534a6212826e406a582b0d9e1ed1e5844eef8842616c1",
+  "files": {
+    "model.pt": "2e76932b1d13e6299afdff0f86b225e98705e1c622dd45a33be499ee42d4b0e8",
+    "val_predictions.npz": "4d5ecb93fe7bd809afeb01ba2a7d328a7078203e10c5e58de2799b4002956285",
+    "training_report.json": "05ddf3510d308476bd348fea86dbfc8dd0310c403f5b296eaeb4576a96a0465f",
+    "history.csv": "81bd69d04bf6243ac2b91a2aa183d9cc5625190113fc5f6db01a552a468a8c7a"
+  },
+  "committed_at_utc": "2026-10-09T07:34:34.830121+00:00"
+}

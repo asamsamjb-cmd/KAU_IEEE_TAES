@@ -1,0 +1,308 @@
+{
+  "encoder_settings_verified_for_current_cohort": true,
+  "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+  "step8_training_protocol": {
+    "model_name": "distilbert-base-uncased",
+    "serializer_version": "observable22_fixed_order_is_v1",
+    "seed": 20260610,
+    "max_length": 256,
+    "epochs": 3,
+    "train_batch": 16,
+    "eval_batch": 32,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "sample_limits": [
+      null,
+      null,
+      null
+    ],
+    "selection": "validation macro-F1",
+    "label_policy": "preserve supplied episode/scenario labels"
+  },
+  "step8_runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "torch": "2.12.0+cu126",
+    "transformers": "5.10.2",
+    "datasets": "5.0.0",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 3060"
+  },
+  "initializer_commit": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+  "step9_extraction_protocol": {
+    "seed": 20260610,
+    "batch_size": 64,
+    "num_workers": 0,
+    "dtype": "float32",
+    "fp16": false,
+    "compressed_npz": true,
+    "serializer_version": "observable22_fixed_order_is_v1"
+  },
+  "sequence_reference": {
+    "status": "VERIFIED_MANIFEST_CHAIN",
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "common_endpoint_report": {
+      "reference_length": 10,
+      "rule": "Intersection of end_row_indices across L within each split; no rows filtered by Step 10.",
+      "downstream_rule": "Compare context lengths on these same endpoints; report all-available-window results separately.",
+      "splits": {
+        "train": {
+          "common_endpoint_count": 179414,
+          "sorted_end_row_indices_sha256": "d05c6340c61c0bfb2dbea11b238a44bdbcda51613663d2b55ccccfd9c207a761",
+          "available_sequences_by_L": {
+            "1": 211006,
+            "2": 207495,
+            "3": 203984,
+            "5": 196964,
+            "10": 179414
+          }
+        },
+        "val": {
+          "common_endpoint_count": 37371,
+          "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2",
+          "available_sequences_by_L": {
+            "1": 44148,
+            "2": 43395,
+            "3": 42642,
+            "5": 41136,
+            "10": 37371
+          }
+        },
+        "test": {
+          "common_endpoint_count": 38078,
+          "sorted_end_row_indices_sha256": "98860cb9acd0348efe69583e7dce14c09f2b59c77c1a43b2a545065cd241098b",
+          "available_sequences_by_L": {
+            "1": 44846,
+            "2": 44094,
+            "3": 43342,
+            "5": 41838,
+            "10": 38078
+          }
+        }
+      }
+    },
+    "train_val_endpoint_identity": "recomputed from verified Step 9 metadata",
+    "test_endpoint_identity": "declared Step 10 digest only; no test metadata/arrays read",
+    "observable_effect_sidecars": "Step 7/10 manifest linkage only; no sidecar contents read",
+    "sequence_array_contents": "not read or independently revalidated in Step 42"
+  },
+  "temporal_reference": {
+    "status": "VERIFIED_MANIFEST_CHAIN",
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main",
+    "step11_run_id": "9072c471a3088f8247ecfd0fc3389ee1623e3fa45dafec61a77f3c3fa885ff20",
+    "preset_head_seed": 20260610,
+    "recorded_settings": {
+      "DEFAULT_RANDOM_SEED": 20260610,
+      "SPLITS": [
+        "train",
+        "val",
+        "test"
+      ],
+      "SEQUENCE_LENGTHS": [
+        1,
+        2,
+        3,
+        5,
+        10
+      ],
+      "EXPECTED_OBSERVABLE_WINDOW_SECONDS": 1,
+      "TST_TEMPORAL_CONTEXT_SECONDS": [
+        1,
+        2,
+        3,
+        5,
+        10
+      ],
+      "MAX_EPOCHS": 30,
+      "PATIENCE": 7,
+      "BATCH_SIZE": 256,
+      "NUM_WORKERS": 0,
+      "LEARNING_RATE": 7e-05,
+      "WEIGHT_DECAY": 0.0005,
+      "GRAD_CLIP_NORM": 1.0,
+      "USE_CLASS_WEIGHTS": false,
+      "USE_AMP": true,
+      "D_MODEL": 128,
+      "NUM_HEADS": 4,
+      "NUM_ENCODER_LAYERS": 1,
+      "DIM_FEEDFORWARD": 256,
+      "DROPOUT": 0.25,
+      "POOLING": "last",
+      "SAVE_VAL_PREDICTIONS": true,
+      "SAVE_TEST_PREDICTIONS": true,
+      "SAVE_TRAINING_CURVE_PNG": true,
+      "PRIMARY_SELECTION_METRIC": "val_macro_f1",
+      "COMMON_EVALUATION_REFERENCE_LENGTH": 10,
+      "COMMON_EVALUATION_MIN_END_POSITION": 9,
+      "REPORT_COMMON_POPULATION_METRICS": true,
+      "REPORT_NON_OVERLAP_METRICS": true,
+      "STRICT_CLASS_COVERAGE_CHECK": true,
+      "STRICT_SEQUENCE_INDEPENDENCE_MODE": true,
+      "SEQUENCE_FIT_SUBSET": "full",
+      "PRIMARY_TEST_SUBSET": "full",
+      "RAISE_ON_EPISODE_SPLIT_OVERLAP": true,
+      "USE_SHORTCUT_RESISTANT_TRAINING": false,
+      "LABEL_SMOOTHING": 0.03,
+      "TRAIN_GAUSSIAN_NOISE_STD": 0.015,
+      "TRAIN_HISTORY_TOKEN_DROPOUT_PROB": 0.1,
+      "TRAIN_LAST_WINDOW_REPLACEMENT_PROB": 0.15,
+      "TRAIN_LAST_WINDOW_REPLACEMENT": "history_mean",
+      "USE_LENGTH_AWARE_REGULARIZATION": false,
+      "LENGTH_AWARE_REGULARIZATION": {
+        "1": {
+          "gaussian_noise_std": 0.0,
+          "history_token_dropout_prob": 0.0,
+          "last_window_replacement_prob": 0.0
+        },
+        "2": {
+          "gaussian_noise_std": 0.015,
+          "history_token_dropout_prob": 0.06,
+          "last_window_replacement_prob": 0.05
+        },
+        "3": {
+          "gaussian_noise_std": 0.015,
+          "history_token_dropout_prob": 0.07,
+          "last_window_replacement_prob": 0.06
+        },
+        "5": {
+          "gaussian_noise_std": 0.018,
+          "history_token_dropout_prob": 0.08,
+          "last_window_replacement_prob": 0.07
+        },
+        "10": {
+          "gaussian_noise_std": 0.02,
+          "history_token_dropout_prob": 0.1,
+          "last_window_replacement_prob": 0.08
+        }
+      },
+      "USE_MISSING_AWARE_TRAINING": false,
+      "MISSING_AWARE_REPLACEMENT": "sequence_mean",
+      "MISSING_AWARE_REGULARIZATION": {
+        "1": {
+          "gaussian_noise_std": 0.0,
+          "sequence_dim_dropout_prob": 0.0,
+          "window_dim_dropout_prob": 0.0,
+          "token_replacement_prob": 0.0,
+          "last_token_replacement_prob": 0.0
+        },
+        "2": {
+          "gaussian_noise_std": 0.0,
+          "sequence_dim_dropout_prob": 0.0,
+          "window_dim_dropout_prob": 0.0,
+          "token_replacement_prob": 0.0,
+          "last_token_replacement_prob": 0.0
+        },
+        "3": {
+          "gaussian_noise_std": 0.003,
+          "sequence_dim_dropout_prob": 0.01,
+          "window_dim_dropout_prob": 0.01,
+          "token_replacement_prob": 0.0,
+          "last_token_replacement_prob": 0.0
+        },
+        "5": {
+          "gaussian_noise_std": 0.006,
+          "sequence_dim_dropout_prob": 0.02,
+          "window_dim_dropout_prob": 0.02,
+          "token_replacement_prob": 0.004,
+          "last_token_replacement_prob": 0.001
+        },
+        "10": {
+          "gaussian_noise_std": 0.008,
+          "sequence_dim_dropout_prob": 0.03,
+          "window_dim_dropout_prob": 0.03,
+          "token_replacement_prob": 0.006,
+          "last_token_replacement_prob": 0.002
+        }
+      },
+      "RUN_ROBUST_EVIDENCE_BUDGET_EVAL": false,
+      "USE_ROBUST_EVAL_AS_PRIMARY_FOR_LONG_CONTEXTS": false,
+      "ROBUST_PRIMARY_MIN_SEQUENCE_LENGTH": 5,
+      "ROBUST_MC_REPEATS": 5,
+      "ROBUST_KEEP_WINDOWS_BY_LENGTH": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "5": 1,
+        "10": 1
+      },
+      "ROBUST_LAST_WINDOW_KEEP_PROB_BY_LENGTH": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "5": 0.0,
+        "10": 0.0
+      },
+      "ROBUST_DIM_DROPOUT_PROB_BY_LENGTH": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.3,
+        "10": 0.4
+      },
+      "ROBUST_GAUSSIAN_NOISE_STD_BY_LENGTH": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.07,
+        "10": 0.09
+      },
+      "RUN_TEMPORAL_ABLATION_EVAL": true,
+      "TEMPORAL_ABLATION_MODES": [
+        "history_zero",
+        "repeat_last",
+        "prefix_reverse"
+      ],
+      "DETERMINISTIC_CUDNN": false,
+      "OBSERVABLE_EFFECT_AUDIT_COLUMNS": [
+        "audit_current_observable_effect",
+        "audit_history_effect_window_count",
+        "audit_context_effect_window_count",
+        "audit_effect_stratum"
+      ],
+      "OBSERVABLE_EFFECT_STRATA": [
+        "current_changed",
+        "history_only_changed",
+        "no_observable_change"
+      ]
+    },
+    "expected_main_controls": {
+      "D_MODEL": 128,
+      "NUM_HEADS": 4,
+      "NUM_ENCODER_LAYERS": 1,
+      "DIM_FEEDFORWARD": 256,
+      "DROPOUT": 0.25,
+      "POOLING": "last",
+      "MAX_EPOCHS": 30,
+      "PATIENCE": 7,
+      "BATCH_SIZE": 256,
+      "LEARNING_RATE": 7e-05,
+      "WEIGHT_DECAY": 0.0005,
+      "GRAD_CLIP_NORM": 1.0,
+      "USE_CLASS_WEIGHTS": false,
+      "LABEL_SMOOTHING": 0.03,
+      "PRIMARY_SELECTION_METRIC": "val_macro_f1",
+      "USE_SHORTCUT_RESISTANT_TRAINING": false,
+      "USE_LENGTH_AWARE_REGULARIZATION": false,
+      "USE_MISSING_AWARE_TRAINING": false,
+      "RUN_ROBUST_EVIDENCE_BUDGET_EVAL": false,
+      "USE_ROBUST_EVAL_AS_PRIMARY_FOR_LONG_CONTEXTS": false,
+      "SEQUENCE_FIT_SUBSET": "full",
+      "PRIMARY_TEST_SUBSET": "full"
+    },
+    "main_control_differences": {},
+    "selection_source": "explicit/main preset seed",
+    "selected_lengths_in_original_order": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "seed_policy": "Seed once before the ordered selected-L loop; same as original Step 11. No partial-run skipping.",
+    "checkpoint_contents_or_predictions_read": false,
+    "interpretation": "Configuration provenance only; no head reproduction or metric re-evaluation."
+  },
+  "encoder_test_scores_used_for_selection": false
+}

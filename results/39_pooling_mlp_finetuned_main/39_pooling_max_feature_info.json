@@ -1,0 +1,20 @@
+{
+  "pooling_mode": "max",
+  "feature_shapes": {
+    "train": [
+      179414,
+      768
+    ],
+    "val": [
+      37371,
+      768
+    ],
+    "test": [
+      38078,
+      768
+    ]
+  },
+  "standardization": {
+    "standardized": false
+  }
+}

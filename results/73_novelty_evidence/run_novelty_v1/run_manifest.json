@@ -1,0 +1,9 @@
+{
+  "status": "NOVELTY_CONTROLS_COMPLETE",
+  "protocol_id": "4a13b3cbace9901bc7778e59b710786a8d1f1851ea3b77acdcfb81c1c54d13f9",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "records": 13,
+  "contrasts": 7,
+  "completed_at": "2026-10-09T13:57:42.486304+00:00",
+  "test_used_for_selection": false
+}

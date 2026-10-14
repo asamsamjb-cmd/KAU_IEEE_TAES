@@ -1,0 +1,47 @@
+{
+  "train": {
+    "windows": 211006,
+    "episodes": 3511,
+    "full_endpoint_count": 211006,
+    "common_endpoint_count": 179414,
+    "sequence_counts": {
+      "1": 211006,
+      "2": 207495,
+      "3": 203984,
+      "5": 196964,
+      "10": 179414
+    },
+    "full_end_row_indices_sha256": "f5cdd1e50bc50df5115ceab21d81bf4b8359820c39b910984e249e851fd2803b",
+    "sorted_end_row_indices_sha256": "d05c6340c61c0bfb2dbea11b238a44bdbcda51613663d2b55ccccfd9c207a761"
+  },
+  "val": {
+    "windows": 44148,
+    "episodes": 753,
+    "full_endpoint_count": 44148,
+    "common_endpoint_count": 37371,
+    "sequence_counts": {
+      "1": 44148,
+      "2": 43395,
+      "3": 42642,
+      "5": 41136,
+      "10": 37371
+    },
+    "full_end_row_indices_sha256": "48ee786a840dabf0aba6a4ddcd2a8a542d06bccb29d2ffe75d9edd95eb916bab",
+    "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2"
+  },
+  "test": {
+    "windows": 44846,
+    "episodes": 752,
+    "full_endpoint_count": 44846,
+    "common_endpoint_count": 38078,
+    "sequence_counts": {
+      "1": 44846,
+      "2": 44094,
+      "3": 43342,
+      "5": 41838,
+      "10": 38078
+    },
+    "full_end_row_indices_sha256": "d2b0afcbb9e15bb1975814873e42dc138cc53a4ce809b52a8ea3a53708424466",
+    "sorted_end_row_indices_sha256": "98860cb9acd0348efe69583e7dce14c09f2b59c77c1a43b2a545065cd241098b"
+  }
+}

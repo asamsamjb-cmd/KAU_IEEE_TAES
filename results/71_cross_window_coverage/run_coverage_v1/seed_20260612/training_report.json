@@ -1,0 +1,19 @@
+{
+  "identity": "1443c68e444b290e640534a6212826e406a582b0d9e1ed1e5844eef8842616c1",
+  "seed": 20260612,
+  "initial_state_sha256": "ffc53bfed146c995dbe0cabcdaa75d0cdac2d25f35df0c53250bfba8d4d1d542",
+  "selected_state_sha256": "5d862f230c8e5787a7cd6dcbca1337456104a55e850b25641317c1ee4a12b0fe",
+  "parameter_count": 34118,
+  "epochs_completed": 30,
+  "best_epoch": 19,
+  "selected_val_macro_f1": 0.6426761731980274,
+  "selected_val_nll": 0.9180618263494534,
+  "examples_per_condition_per_epoch": 179414,
+  "updates_per_epoch": 176,
+  "test_accessed": false,
+  "one_shared_model_for_all_views": true,
+  "validation_replay": "PASS",
+  "fixed_epoch_budget": true,
+  "validation_score_still_improving_at_final_epoch": false,
+  "interpretation": "Jointly trained diagnostic model; not condition-wise optimal classifiers or convergence guarantee"
+}

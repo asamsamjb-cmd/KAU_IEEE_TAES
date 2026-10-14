@@ -1,0 +1,50 @@
+{
+  "identity": "f7027a06d1152336a265ab45b1bf101e196336c589fb4875f9e9dee8fe586d8e",
+  "artifact_sha256": {
+    "encoder/complete.json": "2ae9e8a6d631bb1cb7cebf71a61f536e63ec05ab7011d4a1254a94af24d5f5f5",
+    "encoder/best.pt": "159f82591605a657b3ea60bf66a05a5eb95685f675c257819e13d66030a900da",
+    "encoder/last.pt": "10b1e900b2f6fbeeb067252db6888f87e1295206e9324bd0a65b807a00cf165c",
+    "encoder/history.csv": "22ef46dc1d09595f9d8393a1bbb4ac482128e5b5fbc44d7c1379f29130cebffb",
+    "encoder/val_logits.npy": "3ea69ce4568091cd08289d5e4b568de5cee4d5515ce68a2eee4f94f6f34f1523",
+    "tst/complete.json": "9db0673ef6f27fb118a6e2bba779e930b0d485c772116bd1a8fce7005dbf34fb",
+    "tst/best.pt": "47e02408be135bdca0078efcdd8aaf135d6225b752cd8d3ba935cbc86be4283f",
+    "tst/last.pt": "6f9f848dd1143bce6553bc131d1d973bbca051a453e1eab3c043100104b070e8",
+    "tst/history.csv": "48e1a636c219fed7a2f600b183283f101bf79e7fc4bfa3e193c16b1acb93c237",
+    "tst/val_logits.npy": "45c1ee318f149e9f2f4920268f84dee835bf458b39ab491e0b76d76f5029caa0"
+  },
+  "summary": {
+    "seed": 20260612,
+    "setting": "ReceiverOnly",
+    "n_fields": 4,
+    "encoder_val_macro_f1": 0.2554964140158545,
+    "l10_val_macro_f1": 0.38652900265087453,
+    "encoder_best_epoch": 1,
+    "tst_best_epoch": 6,
+    "encoder_convergence": "PLATEAU_OBSERVED",
+    "tst_convergence": "PLATEAU_OBSERVED",
+    "encoder_training_seconds": 22.1596053999383,
+    "tst_training_seconds": 87.59447400009958,
+    "evaluation_precision": "float32",
+    "extraction_precision": "float32",
+    "window_head_seed": 20260929,
+    "tst_seed": 20260610,
+    "encoder_optimizer_updates": 4125,
+    "tst_optimizer_updates": 9109,
+    "encoder_epochs_completed": 5,
+    "tst_epochs_completed": 13
+  },
+  "completed_at_utc": "2026-10-06T17:07:42.443508+00:00",
+  "embedding_provenance": {
+    "identity": "51274bdc11ae7ed813650ea323c13ea0b4bd1a202aead9cf6af3105a54a43b05",
+    "precision": "float32",
+    "elapsed_seconds": 3.0270913999993354,
+    "rows": {
+      "train": 211006,
+      "val": 44148
+    },
+    "sha256": {
+      "train": "bdbf56056bcb3f1e844f6a8129237ebc5e8780495f611c3f60c4fafaf4d4218c",
+      "val": "51545b79656f406b84912d40cc758d672b478c405989f05faae4bb7b439e7073"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "accuracy": 0.8220812929811886,
+  "macro_precision": 0.8993351417444521,
+  "macro_recall": 0.8257684435805435,
+  "macro_f1": 0.8389043113132195,
+  "weighted_precision": 0.8994675615855938,
+  "weighted_recall": 0.8220812929811887,
+  "weighted_f1": 0.8365742304228088,
+  "total": 37371,
+  "correct": 30722,
+  "loss": 0.6028397838376715,
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+  "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+  "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+  "step14_run_id": "c1ec63ded151c36e2ab44d6b21e1b730265aef57a9884aa0bb553151cb7d7b74",
+  "seed": 20260614,
+  "split": "val",
+  "evaluation_population": "verified Step 10 L10 common endpoints",
+  "common_endpoint_count": 37371,
+  "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2",
+  "observable_effect_diagnostics": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\lstm_finetuned_distilbert_l10\\reports\\seed20260614_val_observable_effect_diagnostics.json"
+}

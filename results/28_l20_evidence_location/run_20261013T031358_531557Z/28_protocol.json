@@ -1,0 +1,38 @@
+{
+  "analysis": "Step 28-A matched L10/L20 evidence-location and bootstrap",
+  "version": "28_exploratory_post_test_v1",
+  "test_already_inspected_before_design": true,
+  "predeclared_directional_expectations": {
+    "B_only_older10": "L20 additional records may produce the largest gain",
+    "A_recent10": "smaller gains anticipated but neither sign nor magnitude assumed",
+    "C_no_change20": "limited gains expected but normal class prediction is NOT enforced"
+  },
+  "models": [
+    "historical TST L10",
+    "Step27 TST L20"
+  ],
+  "seeds": [
+    20260610,
+    20260611,
+    20260612
+  ],
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20261013,
+  "bootstrap_batch": 100,
+  "resampling": "within-six-class, whole-episode stratified paired multinomial bootstrap",
+  "estimand": "arithmetic mean across 3 fixed per-seed six-class endpoint macro-F1 scores",
+  "contrast": "L20 minus L10",
+  "ci": "two-sided 95% percentile, conditional",
+  "subgroups": "posthoc attack-label A/B/C; subgroup transition and recall descriptive only",
+  "no_training": true,
+  "baseline_training_cohorts_are_unmatched": true,
+  "standard_error_or_seed_resampling": false,
+  "scope": "controlled shared_nominal_v2 benchmark; no operational detection guarantee",
+  "software": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3"
+  },
+  "code_sha256": "043c8e047e3399ffad251c49a731017014550a27f11c25221fbc2697ff87fbd2",
+  "audit_only": false
+}

@@ -1,0 +1,5017 @@
+{
+  "protocol_identity": "8db457f25d9056895b70b6488d543b72baeecd2593e3ec2f5da8d5a040584c35",
+  "jobs": 60,
+  "test_scoring_started": false,
+  "reports": [
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 38.774967600009404,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.5137057706300984,
+        "balanced_accuracy": 0.49895492493401683,
+        "accuracy": 0.49184561022016854,
+        "normal_false_alarm_rate": 0.4679331716518459,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3949,
+            72,
+            61,
+            1112,
+            907,
+            1321
+          ],
+          [
+            765,
+            5564,
+            8,
+            215,
+            193,
+            293
+          ],
+          [
+            1037,
+            9,
+            5090,
+            318,
+            236,
+            352
+          ],
+          [
+            2240,
+            57,
+            59,
+            2775,
+            815,
+            1195
+          ],
+          [
+            3207,
+            56,
+            55,
+            1134,
+            2028,
+            1345
+          ],
+          [
+            3086,
+            58,
+            71,
+            1219,
+            938,
+            2308
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Raw_L1_HGB_seed20260610",
+      "representation": "Raw",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 39.65423700000974,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.5127387334805383,
+        "balanced_accuracy": 0.4979411552555815,
+        "accuracy": 0.49084896258041133,
+        "normal_false_alarm_rate": 0.4688763136620857,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3942,
+            70,
+            58,
+            1188,
+            910,
+            1254
+          ],
+          [
+            792,
+            5568,
+            8,
+            229,
+            171,
+            270
+          ],
+          [
+            1055,
+            10,
+            5086,
+            300,
+            235,
+            356
+          ],
+          [
+            2243,
+            55,
+            56,
+            2741,
+            841,
+            1205
+          ],
+          [
+            3194,
+            53,
+            58,
+            1157,
+            2023,
+            1340
+          ],
+          [
+            3080,
+            58,
+            69,
+            1212,
+            951,
+            2310
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Raw_L1_HGB_seed20260611",
+      "representation": "Raw",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 37.80108949998976,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.5137220269765715,
+        "balanced_accuracy": 0.49883022055842935,
+        "accuracy": 0.491800308054725,
+        "normal_false_alarm_rate": 0.4657774184855834,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3965,
+            66,
+            60,
+            1090,
+            910,
+            1331
+          ],
+          [
+            796,
+            5565,
+            8,
+            231,
+            164,
+            274
+          ],
+          [
+            1042,
+            9,
+            5087,
+            313,
+            250,
+            341
+          ],
+          [
+            2272,
+            57,
+            58,
+            2728,
+            866,
+            1160
+          ],
+          [
+            3189,
+            53,
+            56,
+            1160,
+            2059,
+            1308
+          ],
+          [
+            3075,
+            56,
+            72,
+            1211,
+            958,
+            2308
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Raw_L1_HGB_seed20260612",
+      "representation": "Raw",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 36.99357659999805,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.5143934901175069,
+        "balanced_accuracy": 0.4999136033960279,
+        "accuracy": 0.4927969556944822,
+        "normal_false_alarm_rate": 0.459983831851253,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4008,
+            68,
+            60,
+            1118,
+            851,
+            1317
+          ],
+          [
+            773,
+            5564,
+            7,
+            232,
+            159,
+            303
+          ],
+          [
+            1039,
+            9,
+            5089,
+            314,
+            230,
+            361
+          ],
+          [
+            2257,
+            57,
+            54,
+            2770,
+            793,
+            1210
+          ],
+          [
+            3186,
+            50,
+            57,
+            1135,
+            1996,
+            1401
+          ],
+          [
+            3137,
+            61,
+            72,
+            1199,
+            882,
+            2329
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Raw_L1_HGB_seed20260613",
+      "representation": "Raw",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 37.38958669999556,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.5143031486528183,
+        "balanced_accuracy": 0.49892056798058587,
+        "accuracy": 0.4919362145510555,
+        "normal_false_alarm_rate": 0.47184047426569653,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3920,
+            69,
+            54,
+            1123,
+            966,
+            1290
+          ],
+          [
+            778,
+            5565,
+            8,
+            204,
+            202,
+            281
+          ],
+          [
+            1030,
+            9,
+            5087,
+            299,
+            252,
+            365
+          ],
+          [
+            2280,
+            58,
+            55,
+            2732,
+            844,
+            1172
+          ],
+          [
+            3152,
+            52,
+            58,
+            1135,
+            2090,
+            1338
+          ],
+          [
+            3116,
+            56,
+            75,
+            1140,
+            969,
+            2324
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Raw_L1_HGB_seed20260614",
+      "representation": "Raw",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 19,
+      "epochs_completed": 25,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 30.718191499996465,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.5051998838915052,
+        "balanced_accuracy": 0.49320682354989476,
+        "accuracy": 0.4857751200507384,
+        "normal_false_alarm_rate": 0.5688493667475074,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3200,
+            93,
+            97,
+            1519,
+            476,
+            2037
+          ],
+          [
+            642,
+            5508,
+            27,
+            340,
+            102,
+            419
+          ],
+          [
+            855,
+            24,
+            5031,
+            433,
+            116,
+            583
+          ],
+          [
+            1697,
+            75,
+            62,
+            3184,
+            392,
+            1731
+          ],
+          [
+            2439,
+            71,
+            93,
+            1700,
+            1556,
+            1966
+          ],
+          [
+            2438,
+            66,
+            97,
+            1666,
+            446,
+            2967
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Raw_L1_MLP_seed20260610",
+      "representation": "Raw",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 21,
+      "epochs_completed": 33,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 37.88465079999878,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.5105872961422118,
+        "balanced_accuracy": 0.4953272891694705,
+        "accuracy": 0.48813083265380086,
+        "normal_false_alarm_rate": 0.5353004580975478,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3449,
+            81,
+            66,
+            1473,
+            1024,
+            1329
+          ],
+          [
+            721,
+            5505,
+            15,
+            296,
+            222,
+            279
+          ],
+          [
+            955,
+            28,
+            5006,
+            414,
+            282,
+            357
+          ],
+          [
+            1909,
+            69,
+            56,
+            3150,
+            840,
+            1117
+          ],
+          [
+            2741,
+            64,
+            58,
+            1595,
+            2087,
+            1280
+          ],
+          [
+            2738,
+            64,
+            55,
+            1539,
+            931,
+            2353
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Raw_L1_MLP_seed20260611",
+      "representation": "Raw",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 13,
+      "epochs_completed": 25,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 29.38254340000276,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.5082803590574024,
+        "balanced_accuracy": 0.49600200919935206,
+        "accuracy": 0.4883573434810184,
+        "normal_false_alarm_rate": 0.48154136351387766,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3848,
+            91,
+            77,
+            1452,
+            666,
+            1288
+          ],
+          [
+            761,
+            5517,
+            22,
+            306,
+            139,
+            293
+          ],
+          [
+            1079,
+            23,
+            5034,
+            407,
+            187,
+            312
+          ],
+          [
+            2317,
+            78,
+            54,
+            3119,
+            533,
+            1040
+          ],
+          [
+            3156,
+            81,
+            82,
+            1508,
+            1767,
+            1231
+          ],
+          [
+            3126,
+            74,
+            80,
+            1495,
+            630,
+            2275
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Raw_L1_MLP_seed20260612",
+      "representation": "Raw",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 23,
+      "epochs_completed": 31,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 35.41655790001096,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.510892903422364,
+        "balanced_accuracy": 0.49439799058513817,
+        "accuracy": 0.48851590106007065,
+        "normal_false_alarm_rate": 0.4320937752627324,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4215,
+            111,
+            83,
+            456,
+            1455,
+            1102
+          ],
+          [
+            855,
+            5527,
+            20,
+            107,
+            308,
+            221
+          ],
+          [
+            1170,
+            33,
+            5020,
+            132,
+            374,
+            313
+          ],
+          [
+            2687,
+            84,
+            55,
+            2099,
+            1303,
+            913
+          ],
+          [
+            3540,
+            90,
+            80,
+            469,
+            2648,
+            998
+          ],
+          [
+            3562,
+            68,
+            70,
+            458,
+            1464,
+            2058
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Raw_L1_MLP_seed20260613",
+      "representation": "Raw",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 25,
+      "epochs_completed": 37,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 42.60895639999944,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.5079926784320589,
+        "balanced_accuracy": 0.4935868165116843,
+        "accuracy": 0.486273443870617,
+        "normal_false_alarm_rate": 0.5366478038264619,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3439,
+            98,
+            56,
+            1571,
+            794,
+            1464
+          ],
+          [
+            692,
+            5520,
+            14,
+            331,
+            182,
+            299
+          ],
+          [
+            970,
+            22,
+            4969,
+            465,
+            221,
+            395
+          ],
+          [
+            1843,
+            74,
+            33,
+            3176,
+            748,
+            1267
+          ],
+          [
+            2633,
+            95,
+            56,
+            1624,
+            1970,
+            1447
+          ],
+          [
+            2598,
+            86,
+            49,
+            1661,
+            892,
+            2394
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Raw_L1_MLP_seed20260614",
+      "representation": "Raw",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 182.8214822000009,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8726324087733515,
+        "balanced_accuracy": 0.8677186785763328,
+        "accuracy": 0.8621926092424608,
+        "normal_false_alarm_rate": 0.04903370068679125,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5954,
+            22,
+            4,
+            36,
+            67,
+            178
+          ],
+          [
+            127,
+            5782,
+            0,
+            1,
+            4,
+            8
+          ],
+          [
+            175,
+            0,
+            5710,
+            0,
+            2,
+            21
+          ],
+          [
+            441,
+            0,
+            0,
+            5516,
+            14,
+            54
+          ],
+          [
+            1822,
+            22,
+            3,
+            49,
+            4698,
+            79
+          ],
+          [
+            1937,
+            5,
+            6,
+            36,
+            37,
+            4561
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Raw_L10_HGB_seed20260610",
+      "representation": "Raw",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 190.42041950000566,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8726324087733515,
+        "balanced_accuracy": 0.8677186785763328,
+        "accuracy": 0.8621926092424608,
+        "normal_false_alarm_rate": 0.04903370068679125,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5954,
+            22,
+            4,
+            36,
+            67,
+            178
+          ],
+          [
+            127,
+            5782,
+            0,
+            1,
+            4,
+            8
+          ],
+          [
+            175,
+            0,
+            5710,
+            0,
+            2,
+            21
+          ],
+          [
+            441,
+            0,
+            0,
+            5516,
+            14,
+            54
+          ],
+          [
+            1822,
+            22,
+            3,
+            49,
+            4698,
+            79
+          ],
+          [
+            1937,
+            5,
+            6,
+            36,
+            37,
+            4561
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Raw_L10_HGB_seed20260611",
+      "representation": "Raw",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 187.18261039999197,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8726324087733515,
+        "balanced_accuracy": 0.8677186785763328,
+        "accuracy": 0.8621926092424608,
+        "normal_false_alarm_rate": 0.04903370068679125,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5954,
+            22,
+            4,
+            36,
+            67,
+            178
+          ],
+          [
+            127,
+            5782,
+            0,
+            1,
+            4,
+            8
+          ],
+          [
+            175,
+            0,
+            5710,
+            0,
+            2,
+            21
+          ],
+          [
+            441,
+            0,
+            0,
+            5516,
+            14,
+            54
+          ],
+          [
+            1822,
+            22,
+            3,
+            49,
+            4698,
+            79
+          ],
+          [
+            1937,
+            5,
+            6,
+            36,
+            37,
+            4561
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Raw_L10_HGB_seed20260612",
+      "representation": "Raw",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 188.28661069998634,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8726324087733515,
+        "balanced_accuracy": 0.8677186785763328,
+        "accuracy": 0.8621926092424608,
+        "normal_false_alarm_rate": 0.04903370068679125,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5954,
+            22,
+            4,
+            36,
+            67,
+            178
+          ],
+          [
+            127,
+            5782,
+            0,
+            1,
+            4,
+            8
+          ],
+          [
+            175,
+            0,
+            5710,
+            0,
+            2,
+            21
+          ],
+          [
+            441,
+            0,
+            0,
+            5516,
+            14,
+            54
+          ],
+          [
+            1822,
+            22,
+            3,
+            49,
+            4698,
+            79
+          ],
+          [
+            1937,
+            5,
+            6,
+            36,
+            37,
+            4561
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Raw_L10_HGB_seed20260613",
+      "representation": "Raw",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 197.8329620000004,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8726324087733515,
+        "balanced_accuracy": 0.8677186785763328,
+        "accuracy": 0.8621926092424608,
+        "normal_false_alarm_rate": 0.04903370068679125,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5954,
+            22,
+            4,
+            36,
+            67,
+            178
+          ],
+          [
+            127,
+            5782,
+            0,
+            1,
+            4,
+            8
+          ],
+          [
+            175,
+            0,
+            5710,
+            0,
+            2,
+            21
+          ],
+          [
+            441,
+            0,
+            0,
+            5516,
+            14,
+            54
+          ],
+          [
+            1822,
+            22,
+            3,
+            49,
+            4698,
+            79
+          ],
+          [
+            1937,
+            5,
+            6,
+            36,
+            37,
+            4561
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Raw_L10_HGB_seed20260614",
+      "representation": "Raw",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 39.637438899997505,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8600407759603518,
+        "balanced_accuracy": 0.8541890472246778,
+        "accuracy": 0.8490273206497017,
+        "normal_false_alarm_rate": 0.08353298195176484,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5738,
+            87,
+            41,
+            72,
+            73,
+            250
+          ],
+          [
+            183,
+            5716,
+            1,
+            3,
+            1,
+            18
+          ],
+          [
+            322,
+            5,
+            5549,
+            4,
+            13,
+            15
+          ],
+          [
+            446,
+            10,
+            4,
+            5459,
+            11,
+            95
+          ],
+          [
+            1778,
+            37,
+            22,
+            34,
+            4716,
+            86
+          ],
+          [
+            1875,
+            27,
+            11,
+            51,
+            67,
+            4551
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Raw_L10_MLP_seed20260610",
+      "representation": "Raw",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 38.48733530000027,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8604591041368065,
+        "balanced_accuracy": 0.8552572668314601,
+        "accuracy": 0.8500441518824757,
+        "normal_false_alarm_rate": 0.08001916626736938,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5760,
+            87,
+            53,
+            74,
+            111,
+            176
+          ],
+          [
+            177,
+            5726,
+            1,
+            4,
+            6,
+            8
+          ],
+          [
+            281,
+            5,
+            5587,
+            10,
+            5,
+            20
+          ],
+          [
+            448,
+            4,
+            10,
+            5438,
+            30,
+            95
+          ],
+          [
+            1750,
+            39,
+            27,
+            58,
+            4749,
+            50
+          ],
+          [
+            1885,
+            35,
+            23,
+            65,
+            67,
+            4507
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Raw_L10_MLP_seed20260611",
+      "representation": "Raw",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 2,
+      "epochs_completed": 14,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 42.246644099999685,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8601305003568852,
+        "balanced_accuracy": 0.8553647827145529,
+        "accuracy": 0.8501779454657354,
+        "normal_false_alarm_rate": 0.10509503274237342,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5603,
+            60,
+            70,
+            40,
+            147,
+            341
+          ],
+          [
+            168,
+            5733,
+            0,
+            2,
+            11,
+            8
+          ],
+          [
+            246,
+            4,
+            5623,
+            7,
+            11,
+            17
+          ],
+          [
+            433,
+            8,
+            5,
+            5467,
+            33,
+            79
+          ],
+          [
+            1684,
+            35,
+            37,
+            56,
+            4769,
+            92
+          ],
+          [
+            1774,
+            16,
+            31,
+            83,
+            101,
+            4577
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Raw_L10_MLP_seed20260612",
+      "representation": "Raw",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 38.64317509999091,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8546209259813451,
+        "balanced_accuracy": 0.8490935750388865,
+        "accuracy": 0.8440501993524391,
+        "normal_false_alarm_rate": 0.1156364797955598,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5537,
+            79,
+            33,
+            98,
+            146,
+            368
+          ],
+          [
+            177,
+            5716,
+            0,
+            5,
+            8,
+            16
+          ],
+          [
+            350,
+            5,
+            5495,
+            8,
+            7,
+            43
+          ],
+          [
+            400,
+            11,
+            7,
+            5479,
+            41,
+            87
+          ],
+          [
+            1695,
+            31,
+            22,
+            67,
+            4761,
+            97
+          ],
+          [
+            1798,
+            28,
+            22,
+            62,
+            117,
+            4555
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Raw_L10_MLP_seed20260613",
+      "representation": "Raw",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 38.32916850000038,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8602883522960195,
+        "balanced_accuracy": 0.8549441473188352,
+        "accuracy": 0.8496427711326965,
+        "normal_false_alarm_rate": 0.07474844274077619,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5793,
+            96,
+            29,
+            73,
+            80,
+            190
+          ],
+          [
+            174,
+            5727,
+            1,
+            4,
+            7,
+            9
+          ],
+          [
+            341,
+            5,
+            5541,
+            7,
+            4,
+            10
+          ],
+          [
+            440,
+            12,
+            3,
+            5498,
+            21,
+            51
+          ],
+          [
+            1768,
+            40,
+            20,
+            65,
+            4710,
+            70
+          ],
+          [
+            1901,
+            31,
+            14,
+            87,
+            66,
+            4483
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Raw_L10_MLP_seed20260614",
+      "representation": "Raw",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 38.05916590000561,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4283688893309902,
+        "balanced_accuracy": 0.41461786767922,
+        "accuracy": 0.4108679894898976,
+        "normal_false_alarm_rate": 0.4512260846133118,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4073,
+            146,
+            56,
+            1106,
+            661,
+            1380
+          ],
+          [
+            2650,
+            2097,
+            30,
+            804,
+            474,
+            983
+          ],
+          [
+            1105,
+            32,
+            5088,
+            294,
+            159,
+            364
+          ],
+          [
+            2387,
+            88,
+            49,
+            2724,
+            612,
+            1281
+          ],
+          [
+            3309,
+            119,
+            55,
+            1189,
+            1773,
+            1380
+          ],
+          [
+            3276,
+            130,
+            71,
+            1124,
+            695,
+            2384
+          ]
+        ]
+      },
+      "features": 178,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "RawScoped_L1_HGB_seed20260610",
+      "representation": "RawScoped",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 37.95869300000777,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.42765858762068737,
+        "balanced_accuracy": 0.41453803977798787,
+        "accuracy": 0.4106867808281236,
+        "normal_false_alarm_rate": 0.44165992993802206,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4144,
+            139,
+            58,
+            1091,
+            636,
+            1354
+          ],
+          [
+            2666,
+            2080,
+            30,
+            802,
+            487,
+            973
+          ],
+          [
+            1100,
+            28,
+            5092,
+            300,
+            148,
+            374
+          ],
+          [
+            2430,
+            94,
+            53,
+            2767,
+            605,
+            1192
+          ],
+          [
+            3309,
+            110,
+            58,
+            1162,
+            1784,
+            1402
+          ],
+          [
+            3301,
+            123,
+            69,
+            1239,
+            684,
+            2264
+          ]
+        ]
+      },
+      "features": 178,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "RawScoped_L1_HGB_seed20260611",
+      "representation": "RawScoped",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 38.78755029999593,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.42817463621469637,
+        "balanced_accuracy": 0.4148438940433145,
+        "accuracy": 0.41109450031711514,
+        "normal_false_alarm_rate": 0.4575586095392078,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4026,
+            147,
+            54,
+            1173,
+            680,
+            1342
+          ],
+          [
+            2642,
+            2080,
+            33,
+            801,
+            507,
+            975
+          ],
+          [
+            1064,
+            35,
+            5096,
+            319,
+            161,
+            367
+          ],
+          [
+            2341,
+            103,
+            57,
+            2767,
+            623,
+            1250
+          ],
+          [
+            3227,
+            110,
+            62,
+            1268,
+            1793,
+            1365
+          ],
+          [
+            3189,
+            113,
+            72,
+            1220,
+            699,
+            2387
+          ]
+        ]
+      },
+      "features": 178,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "RawScoped_L1_HGB_seed20260612",
+      "representation": "RawScoped",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 38.3529406000016,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.42769988060828074,
+        "balanced_accuracy": 0.4144207212887336,
+        "accuracy": 0.41059617649723656,
+        "normal_false_alarm_rate": 0.45675020210185935,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4032,
+            141,
+            57,
+            1171,
+            640,
+            1381
+          ],
+          [
+            2606,
+            2081,
+            30,
+            874,
+            449,
+            998
+          ],
+          [
+            1081,
+            33,
+            5086,
+            313,
+            153,
+            376
+          ],
+          [
+            2315,
+            93,
+            50,
+            2803,
+            610,
+            1270
+          ],
+          [
+            3243,
+            125,
+            59,
+            1236,
+            1772,
+            1390
+          ],
+          [
+            3218,
+            122,
+            71,
+            1209,
+            707,
+            2353
+          ]
+        ]
+      },
+      "features": 178,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "RawScoped_L1_HGB_seed20260613",
+      "representation": "RawScoped",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 38.107637100009015,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4266269294499383,
+        "balanced_accuracy": 0.41304836184429927,
+        "accuracy": 0.40923711153393133,
+        "normal_false_alarm_rate": 0.4602533009970359,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4006,
+            161,
+            54,
+            1127,
+            669,
+            1405
+          ],
+          [
+            2662,
+            2087,
+            31,
+            836,
+            454,
+            968
+          ],
+          [
+            1041,
+            32,
+            5088,
+            306,
+            179,
+            396
+          ],
+          [
+            2360,
+            93,
+            52,
+            2758,
+            599,
+            1279
+          ],
+          [
+            3273,
+            120,
+            53,
+            1230,
+            1754,
+            1395
+          ],
+          [
+            3197,
+            121,
+            73,
+            1234,
+            681,
+            2374
+          ]
+        ]
+      },
+      "features": 178,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "RawScoped_L1_HGB_seed20260614",
+      "representation": "RawScoped",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 15,
+      "epochs_completed": 27,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 35.982090100005735,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4216361933911001,
+        "balanced_accuracy": 0.4127857603233898,
+        "accuracy": 0.40803660414967835,
+        "normal_false_alarm_rate": 0.5142818647264888,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3605,
+            252,
+            86,
+            1800,
+            378,
+            1301
+          ],
+          [
+            2282,
+            2127,
+            49,
+            1383,
+            290,
+            907
+          ],
+          [
+            970,
+            73,
+            5037,
+            504,
+            100,
+            358
+          ],
+          [
+            2075,
+            140,
+            45,
+            3438,
+            374,
+            1069
+          ],
+          [
+            2887,
+            199,
+            83,
+            1951,
+            1512,
+            1193
+          ],
+          [
+            2810,
+            198,
+            84,
+            1926,
+            367,
+            2295
+          ]
+        ]
+      },
+      "features": 178,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "RawScoped_L1_MLP_seed20260610",
+      "representation": "RawScoped",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 16,
+      "epochs_completed": 28,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 36.28980290000618,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.42443257410339985,
+        "balanced_accuracy": 0.414037707127399,
+        "accuracy": 0.40975808643653167,
+        "normal_false_alarm_rate": 0.4280517380759903,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4245,
+            182,
+            72,
+            1272,
+            314,
+            1337
+          ],
+          [
+            2830,
+            2087,
+            41,
+            907,
+            246,
+            927
+          ],
+          [
+            1176,
+            46,
+            5027,
+            338,
+            77,
+            378
+          ],
+          [
+            2563,
+            118,
+            54,
+            2948,
+            280,
+            1178
+          ],
+          [
+            3478,
+            137,
+            60,
+            1383,
+            1459,
+            1308
+          ],
+          [
+            3453,
+            157,
+            70,
+            1374,
+            302,
+            2324
+          ]
+        ]
+      },
+      "features": 178,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "RawScoped_L1_MLP_seed20260611",
+      "representation": "RawScoped",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 23,
+      "epochs_completed": 27,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 35.983523099988815,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4232422916503101,
+        "balanced_accuracy": 0.4127779076434095,
+        "accuracy": 0.4084896258041134,
+        "normal_false_alarm_rate": 0.5053893829156562,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3671,
+            133,
+            100,
+            1615,
+            473,
+            1430
+          ],
+          [
+            2420,
+            2053,
+            73,
+            1173,
+            338,
+            981
+          ],
+          [
+            1021,
+            30,
+            5061,
+            429,
+            113,
+            388
+          ],
+          [
+            2108,
+            86,
+            73,
+            3210,
+            425,
+            1239
+          ],
+          [
+            2957,
+            111,
+            91,
+            1705,
+            1559,
+            1402
+          ],
+          [
+            2878,
+            93,
+            100,
+            1652,
+            477,
+            2480
+          ]
+        ]
+      },
+      "features": 178,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "RawScoped_L1_MLP_seed20260612",
+      "representation": "RawScoped",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 18,
+      "epochs_completed": 30,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 39.46768860000884,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4281322148684818,
+        "balanced_accuracy": 0.412503783942017,
+        "accuracy": 0.41030171242185376,
+        "normal_false_alarm_rate": 0.4616006467259499,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3996,
+            361,
+            87,
+            309,
+            1921,
+            748
+          ],
+          [
+            2608,
+            2230,
+            47,
+            240,
+            1378,
+            535
+          ],
+          [
+            1113,
+            100,
+            5035,
+            92,
+            505,
+            197
+          ],
+          [
+            2402,
+            224,
+            61,
+            2026,
+            1805,
+            623
+          ],
+          [
+            3293,
+            286,
+            75,
+            353,
+            3089,
+            729
+          ],
+          [
+            3270,
+            301,
+            85,
+            343,
+            1943,
+            1738
+          ]
+        ]
+      },
+      "features": 178,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "RawScoped_L1_MLP_seed20260613",
+      "representation": "RawScoped",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 15,
+      "epochs_completed": 27,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 35.348602599988226,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.42843227644491827,
+        "balanced_accuracy": 0.4144050956408047,
+        "accuracy": 0.4107547340762889,
+        "normal_false_alarm_rate": 0.4896254378873619,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3788,
+            179,
+            58,
+            1291,
+            681,
+            1425
+          ],
+          [
+            2434,
+            2093,
+            36,
+            965,
+            562,
+            948
+          ],
+          [
+            1043,
+            53,
+            5014,
+            369,
+            171,
+            392
+          ],
+          [
+            2151,
+            102,
+            40,
+            2913,
+            701,
+            1234
+          ],
+          [
+            3045,
+            130,
+            58,
+            1302,
+            1886,
+            1404
+          ],
+          [
+            2939,
+            157,
+            62,
+            1336,
+            746,
+            2440
+          ]
+        ]
+      },
+      "features": 178,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "RawScoped_L1_MLP_seed20260614",
+      "representation": "RawScoped",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 192.0850575999939,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8413948854044163,
+        "balanced_accuracy": 0.8310192614858013,
+        "accuracy": 0.827138690428407,
+        "normal_false_alarm_rate": 0.069477719214183,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5826,
+            130,
+            7,
+            57,
+            86,
+            155
+          ],
+          [
+            1268,
+            4594,
+            0,
+            3,
+            16,
+            41
+          ],
+          [
+            157,
+            19,
+            5703,
+            5,
+            2,
+            22
+          ],
+          [
+            431,
+            18,
+            0,
+            5523,
+            8,
+            45
+          ],
+          [
+            1786,
+            44,
+            3,
+            47,
+            4714,
+            79
+          ],
+          [
+            1880,
+            77,
+            5,
+            38,
+            31,
+            4551
+          ]
+        ]
+      },
+      "features": 890,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "RawScoped_L10_HGB_seed20260610",
+      "representation": "RawScoped",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 183.03634050000983,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8413948854044163,
+        "balanced_accuracy": 0.8310192614858013,
+        "accuracy": 0.827138690428407,
+        "normal_false_alarm_rate": 0.069477719214183,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5826,
+            130,
+            7,
+            57,
+            86,
+            155
+          ],
+          [
+            1268,
+            4594,
+            0,
+            3,
+            16,
+            41
+          ],
+          [
+            157,
+            19,
+            5703,
+            5,
+            2,
+            22
+          ],
+          [
+            431,
+            18,
+            0,
+            5523,
+            8,
+            45
+          ],
+          [
+            1786,
+            44,
+            3,
+            47,
+            4714,
+            79
+          ],
+          [
+            1880,
+            77,
+            5,
+            38,
+            31,
+            4551
+          ]
+        ]
+      },
+      "features": 890,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "RawScoped_L10_HGB_seed20260611",
+      "representation": "RawScoped",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 186.28595649999625,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8413948854044163,
+        "balanced_accuracy": 0.8310192614858013,
+        "accuracy": 0.827138690428407,
+        "normal_false_alarm_rate": 0.069477719214183,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5826,
+            130,
+            7,
+            57,
+            86,
+            155
+          ],
+          [
+            1268,
+            4594,
+            0,
+            3,
+            16,
+            41
+          ],
+          [
+            157,
+            19,
+            5703,
+            5,
+            2,
+            22
+          ],
+          [
+            431,
+            18,
+            0,
+            5523,
+            8,
+            45
+          ],
+          [
+            1786,
+            44,
+            3,
+            47,
+            4714,
+            79
+          ],
+          [
+            1880,
+            77,
+            5,
+            38,
+            31,
+            4551
+          ]
+        ]
+      },
+      "features": 890,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "RawScoped_L10_HGB_seed20260612",
+      "representation": "RawScoped",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 186.78587970000808,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8413948854044163,
+        "balanced_accuracy": 0.8310192614858013,
+        "accuracy": 0.827138690428407,
+        "normal_false_alarm_rate": 0.069477719214183,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5826,
+            130,
+            7,
+            57,
+            86,
+            155
+          ],
+          [
+            1268,
+            4594,
+            0,
+            3,
+            16,
+            41
+          ],
+          [
+            157,
+            19,
+            5703,
+            5,
+            2,
+            22
+          ],
+          [
+            431,
+            18,
+            0,
+            5523,
+            8,
+            45
+          ],
+          [
+            1786,
+            44,
+            3,
+            47,
+            4714,
+            79
+          ],
+          [
+            1880,
+            77,
+            5,
+            38,
+            31,
+            4551
+          ]
+        ]
+      },
+      "features": 890,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "RawScoped_L10_HGB_seed20260613",
+      "representation": "RawScoped",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 190.0474525000027,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8413948854044163,
+        "balanced_accuracy": 0.8310192614858013,
+        "accuracy": 0.827138690428407,
+        "normal_false_alarm_rate": 0.069477719214183,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5826,
+            130,
+            7,
+            57,
+            86,
+            155
+          ],
+          [
+            1268,
+            4594,
+            0,
+            3,
+            16,
+            41
+          ],
+          [
+            157,
+            19,
+            5703,
+            5,
+            2,
+            22
+          ],
+          [
+            431,
+            18,
+            0,
+            5523,
+            8,
+            45
+          ],
+          [
+            1786,
+            44,
+            3,
+            47,
+            4714,
+            79
+          ],
+          [
+            1880,
+            77,
+            5,
+            38,
+            31,
+            4551
+          ]
+        ]
+      },
+      "features": 890,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "RawScoped_L10_HGB_seed20260614",
+      "representation": "RawScoped",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 30.863765500005684,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8203102442544244,
+        "balanced_accuracy": 0.811517432280839,
+        "accuracy": 0.8079794493056113,
+        "normal_false_alarm_rate": 0.15684395463983392,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5279,
+            228,
+            71,
+            143,
+            131,
+            409
+          ],
+          [
+            1231,
+            4522,
+            15,
+            28,
+            32,
+            94
+          ],
+          [
+            262,
+            15,
+            5575,
+            17,
+            10,
+            29
+          ],
+          [
+            371,
+            20,
+            17,
+            5488,
+            20,
+            109
+          ],
+          [
+            1574,
+            87,
+            38,
+            94,
+            4733,
+            147
+          ],
+          [
+            1659,
+            96,
+            48,
+            110,
+            71,
+            4598
+          ]
+        ]
+      },
+      "features": 890,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "RawScoped_L10_MLP_seed20260610",
+      "representation": "RawScoped",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 31.386792399993283,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8270650280184744,
+        "balanced_accuracy": 0.8175113979745848,
+        "accuracy": 0.8136790559524765,
+        "normal_false_alarm_rate": 0.11052547516371192,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5569,
+            312,
+            69,
+            121,
+            101,
+            89
+          ],
+          [
+            1235,
+            4586,
+            17,
+            27,
+            21,
+            36
+          ],
+          [
+            289,
+            26,
+            5561,
+            10,
+            6,
+            16
+          ],
+          [
+            408,
+            25,
+            11,
+            5521,
+            11,
+            49
+          ],
+          [
+            1686,
+            120,
+            32,
+            90,
+            4714,
+            31
+          ],
+          [
+            1856,
+            106,
+            22,
+            106,
+            35,
+            4457
+          ]
+        ]
+      },
+      "features": 890,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "RawScoped_L10_MLP_seed20260611",
+      "representation": "RawScoped",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 2,
+      "epochs_completed": 14,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 33.04667330000666,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.827454180933859,
+        "balanced_accuracy": 0.8177825202613923,
+        "accuracy": 0.8141874715688635,
+        "normal_false_alarm_rate": 0.13144865037533937,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5438,
+            231,
+            69,
+            40,
+            177,
+            306
+          ],
+          [
+            1235,
+            4550,
+            16,
+            17,
+            54,
+            50
+          ],
+          [
+            239,
+            13,
+            5623,
+            6,
+            11,
+            16
+          ],
+          [
+            412,
+            16,
+            5,
+            5476,
+            33,
+            83
+          ],
+          [
+            1654,
+            100,
+            31,
+            50,
+            4749,
+            89
+          ],
+          [
+            1725,
+            105,
+            33,
+            58,
+            70,
+            4591
+          ]
+        ]
+      },
+      "features": 890,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "RawScoped_L10_MLP_seed20260612",
+      "representation": "RawScoped",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 31.221654699998908,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8254400062386807,
+        "balanced_accuracy": 0.8146295440640273,
+        "accuracy": 0.8111637365871933,
+        "normal_false_alarm_rate": 0.11324069637438106,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5552,
+            155,
+            40,
+            90,
+            72,
+            352
+          ],
+          [
+            1307,
+            4481,
+            16,
+            15,
+            32,
+            71
+          ],
+          [
+            317,
+            11,
+            5529,
+            4,
+            6,
+            41
+          ],
+          [
+            433,
+            11,
+            7,
+            5480,
+            20,
+            74
+          ],
+          [
+            1668,
+            82,
+            27,
+            66,
+            4699,
+            131
+          ],
+          [
+            1791,
+            83,
+            20,
+            72,
+            43,
+            4573
+          ]
+        ]
+      },
+      "features": 890,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "RawScoped_L10_MLP_seed20260613",
+      "representation": "RawScoped",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 2,
+      "epochs_completed": 14,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 33.34087329999602,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.824988722546473,
+        "balanced_accuracy": 0.8155536390622754,
+        "accuracy": 0.8118862219367959,
+        "normal_false_alarm_rate": 0.13400415269126342,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5422,
+            264,
+            62,
+            73,
+            126,
+            314
+          ],
+          [
+            1240,
+            4545,
+            9,
+            19,
+            29,
+            80
+          ],
+          [
+            259,
+            9,
+            5602,
+            4,
+            7,
+            27
+          ],
+          [
+            407,
+            18,
+            5,
+            5488,
+            23,
+            84
+          ],
+          [
+            1646,
+            107,
+            26,
+            64,
+            4702,
+            128
+          ],
+          [
+            1711,
+            128,
+            29,
+            68,
+            64,
+            4582
+          ]
+        ]
+      },
+      "features": 890,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "RawScoped_L10_MLP_seed20260614",
+      "representation": "RawScoped",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 32.161232200000086,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4049800302385272,
+        "balanced_accuracy": 0.401703193611078,
+        "accuracy": 0.39668841170607955,
+        "normal_false_alarm_rate": 0.37483158178388576,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4640,
+            688,
+            143,
+            1043,
+            302,
+            606
+          ],
+          [
+            3118,
+            2388,
+            102,
+            779,
+            224,
+            427
+          ],
+          [
+            1380,
+            209,
+            4863,
+            355,
+            75,
+            160
+          ],
+          [
+            3160,
+            408,
+            100,
+            2697,
+            259,
+            517
+          ],
+          [
+            4040,
+            539,
+            103,
+            1167,
+            1392,
+            584
+          ],
+          [
+            4086,
+            531,
+            120,
+            1116,
+            294,
+            1533
+          ]
+        ]
+      },
+      "features": 176,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Semantic22_L1_HGB_seed20260610",
+      "representation": "Semantic22",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 32.108535599996685,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4049800302385272,
+        "balanced_accuracy": 0.401703193611078,
+        "accuracy": 0.39668841170607955,
+        "normal_false_alarm_rate": 0.37483158178388576,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4640,
+            688,
+            143,
+            1043,
+            302,
+            606
+          ],
+          [
+            3118,
+            2388,
+            102,
+            779,
+            224,
+            427
+          ],
+          [
+            1380,
+            209,
+            4863,
+            355,
+            75,
+            160
+          ],
+          [
+            3160,
+            408,
+            100,
+            2697,
+            259,
+            517
+          ],
+          [
+            4040,
+            539,
+            103,
+            1167,
+            1392,
+            584
+          ],
+          [
+            4086,
+            531,
+            120,
+            1116,
+            294,
+            1533
+          ]
+        ]
+      },
+      "features": 176,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Semantic22_L1_HGB_seed20260611",
+      "representation": "Semantic22",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 32.225301300000865,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4049800302385272,
+        "balanced_accuracy": 0.401703193611078,
+        "accuracy": 0.39668841170607955,
+        "normal_false_alarm_rate": 0.37483158178388576,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4640,
+            688,
+            143,
+            1043,
+            302,
+            606
+          ],
+          [
+            3118,
+            2388,
+            102,
+            779,
+            224,
+            427
+          ],
+          [
+            1380,
+            209,
+            4863,
+            355,
+            75,
+            160
+          ],
+          [
+            3160,
+            408,
+            100,
+            2697,
+            259,
+            517
+          ],
+          [
+            4040,
+            539,
+            103,
+            1167,
+            1392,
+            584
+          ],
+          [
+            4086,
+            531,
+            120,
+            1116,
+            294,
+            1533
+          ]
+        ]
+      },
+      "features": 176,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Semantic22_L1_HGB_seed20260612",
+      "representation": "Semantic22",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 33.585155799999484,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4049800302385272,
+        "balanced_accuracy": 0.401703193611078,
+        "accuracy": 0.39668841170607955,
+        "normal_false_alarm_rate": 0.37483158178388576,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4640,
+            688,
+            143,
+            1043,
+            302,
+            606
+          ],
+          [
+            3118,
+            2388,
+            102,
+            779,
+            224,
+            427
+          ],
+          [
+            1380,
+            209,
+            4863,
+            355,
+            75,
+            160
+          ],
+          [
+            3160,
+            408,
+            100,
+            2697,
+            259,
+            517
+          ],
+          [
+            4040,
+            539,
+            103,
+            1167,
+            1392,
+            584
+          ],
+          [
+            4086,
+            531,
+            120,
+            1116,
+            294,
+            1533
+          ]
+        ]
+      },
+      "features": 176,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Semantic22_L1_HGB_seed20260613",
+      "representation": "Semantic22",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 32.137350599994534,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4049800302385272,
+        "balanced_accuracy": 0.401703193611078,
+        "accuracy": 0.39668841170607955,
+        "normal_false_alarm_rate": 0.37483158178388576,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4640,
+            688,
+            143,
+            1043,
+            302,
+            606
+          ],
+          [
+            3118,
+            2388,
+            102,
+            779,
+            224,
+            427
+          ],
+          [
+            1380,
+            209,
+            4863,
+            355,
+            75,
+            160
+          ],
+          [
+            3160,
+            408,
+            100,
+            2697,
+            259,
+            517
+          ],
+          [
+            4040,
+            539,
+            103,
+            1167,
+            1392,
+            584
+          ],
+          [
+            4086,
+            531,
+            120,
+            1116,
+            294,
+            1533
+          ]
+        ]
+      },
+      "features": 176,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Semantic22_L1_HGB_seed20260614",
+      "representation": "Semantic22",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 15.333031600006507,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.40820916799089724,
+        "balanced_accuracy": 0.4006283606786998,
+        "accuracy": 0.3969602246987406,
+        "normal_false_alarm_rate": 0.7310697925087577,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            1996,
+            968,
+            158,
+            1358,
+            812,
+            2130
+          ],
+          [
+            1264,
+            2600,
+            111,
+            951,
+            672,
+            1440
+          ],
+          [
+            588,
+            311,
+            4864,
+            403,
+            228,
+            648
+          ],
+          [
+            777,
+            580,
+            119,
+            2984,
+            814,
+            1867
+          ],
+          [
+            1417,
+            837,
+            107,
+            1393,
+            1970,
+            2101
+          ],
+          [
+            1304,
+            828,
+            128,
+            1447,
+            862,
+            3111
+          ]
+        ]
+      },
+      "features": 176,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Semantic22_L1_MLP_seed20260610",
+      "representation": "Semantic22",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 12,
+      "epochs_completed": 24,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 25.535203300009016,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4114565711481571,
+        "balanced_accuracy": 0.4022471727246631,
+        "accuracy": 0.3985458004892634,
+        "normal_false_alarm_rate": 0.4400431150633253,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4156,
+            693,
+            138,
+            556,
+            315,
+            1564
+          ],
+          [
+            2821,
+            2363,
+            109,
+            439,
+            242,
+            1064
+          ],
+          [
+            1237,
+            207,
+            4863,
+            199,
+            79,
+            457
+          ],
+          [
+            2690,
+            410,
+            108,
+            2200,
+            295,
+            1438
+          ],
+          [
+            3617,
+            561,
+            107,
+            599,
+            1409,
+            1532
+          ],
+          [
+            3530,
+            538,
+            126,
+            556,
+            326,
+            2604
+          ]
+        ]
+      },
+      "features": 176,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Semantic22_L1_MLP_seed20260611",
+      "representation": "Semantic22",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 14,
+      "epochs_completed": 26,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 30.613124299998162,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.4112413334024185,
+        "balanced_accuracy": 0.40383838360039515,
+        "accuracy": 0.39965570354262936,
+        "normal_false_alarm_rate": 0.46294799245486395,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3986,
+            608,
+            155,
+            1004,
+            212,
+            1457
+          ],
+          [
+            2660,
+            2299,
+            109,
+            785,
+            161,
+            1024
+          ],
+          [
+            1180,
+            194,
+            4860,
+            330,
+            48,
+            430
+          ],
+          [
+            2514,
+            362,
+            105,
+            2667,
+            189,
+            1304
+          ],
+          [
+            3348,
+            470,
+            111,
+            1124,
+            1350,
+            1422
+          ],
+          [
+            3318,
+            469,
+            122,
+            1079,
+            210,
+            2482
+          ]
+        ]
+      },
+      "features": 176,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Semantic22_L1_MLP_seed20260612",
+      "representation": "Semantic22",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 10,
+      "epochs_completed": 22,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 25.596218099992257,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.414342041816887,
+        "balanced_accuracy": 0.4016054010695745,
+        "accuracy": 0.3985684515719851,
+        "normal_false_alarm_rate": 0.4450282942603072,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            4119,
+            870,
+            139,
+            226,
+            1219,
+            849
+          ],
+          [
+            2831,
+            2533,
+            99,
+            136,
+            832,
+            607
+          ],
+          [
+            1226,
+            280,
+            4853,
+            78,
+            323,
+            282
+          ],
+          [
+            2814,
+            486,
+            102,
+            1853,
+            1111,
+            775
+          ],
+          [
+            3541,
+            720,
+            111,
+            228,
+            2364,
+            861
+          ],
+          [
+            3614,
+            680,
+            125,
+            208,
+            1179,
+            1874
+          ]
+        ]
+      },
+      "features": 176,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Semantic22_L1_MLP_seed20260613",
+      "representation": "Semantic22",
+      "length": 1
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 4,
+      "epochs_completed": 16,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 18.686122600003728,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 44148,
+        "macro_f1": 0.41268291350014424,
+        "balanced_accuracy": 0.40405091106003893,
+        "accuracy": 0.39997281870073387,
+        "normal_false_alarm_rate": 0.5532201562921046,
+        "support": [
+          7422,
+          7038,
+          7042,
+          7141,
+          7825,
+          7680
+        ],
+        "confusion": [
+          [
+            3316,
+            687,
+            145,
+            1226,
+            323,
+            1725
+          ],
+          [
+            2201,
+            2409,
+            100,
+            904,
+            275,
+            1149
+          ],
+          [
+            959,
+            228,
+            4855,
+            384,
+            104,
+            512
+          ],
+          [
+            1857,
+            412,
+            110,
+            2828,
+            313,
+            1621
+          ],
+          [
+            2647,
+            567,
+            105,
+            1205,
+            1493,
+            1808
+          ],
+          [
+            2661,
+            556,
+            122,
+            1215,
+            369,
+            2757
+          ]
+        ]
+      },
+      "features": 176,
+      "training_rows": 211006,
+      "validation_rows": 44148,
+      "key": "Semantic22_L1_MLP_seed20260614",
+      "representation": "Semantic22",
+      "length": 1
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 162.61931789999653,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.832815128962262,
+        "balanced_accuracy": 0.8217255227625415,
+        "accuracy": 0.8180407267667442,
+        "normal_false_alarm_rate": 0.08497045200447217,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5729,
+            123,
+            87,
+            74,
+            69,
+            179
+          ],
+          [
+            1351,
+            4502,
+            13,
+            19,
+            15,
+            22
+          ],
+          [
+            292,
+            6,
+            5568,
+            12,
+            2,
+            28
+          ],
+          [
+            426,
+            16,
+            3,
+            5555,
+            11,
+            14
+          ],
+          [
+            1800,
+            42,
+            18,
+            63,
+            4667,
+            83
+          ],
+          [
+            1832,
+            64,
+            38,
+            46,
+            52,
+            4550
+          ]
+        ]
+      },
+      "features": 880,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Semantic22_L10_HGB_seed20260610",
+      "representation": "Semantic22",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 160.59704229999625,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.832815128962262,
+        "balanced_accuracy": 0.8217255227625415,
+        "accuracy": 0.8180407267667442,
+        "normal_false_alarm_rate": 0.08497045200447217,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5729,
+            123,
+            87,
+            74,
+            69,
+            179
+          ],
+          [
+            1351,
+            4502,
+            13,
+            19,
+            15,
+            22
+          ],
+          [
+            292,
+            6,
+            5568,
+            12,
+            2,
+            28
+          ],
+          [
+            426,
+            16,
+            3,
+            5555,
+            11,
+            14
+          ],
+          [
+            1800,
+            42,
+            18,
+            63,
+            4667,
+            83
+          ],
+          [
+            1832,
+            64,
+            38,
+            46,
+            52,
+            4550
+          ]
+        ]
+      },
+      "features": 880,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Semantic22_L10_HGB_seed20260611",
+      "representation": "Semantic22",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 159.88953340001171,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.832815128962262,
+        "balanced_accuracy": 0.8217255227625415,
+        "accuracy": 0.8180407267667442,
+        "normal_false_alarm_rate": 0.08497045200447217,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5729,
+            123,
+            87,
+            74,
+            69,
+            179
+          ],
+          [
+            1351,
+            4502,
+            13,
+            19,
+            15,
+            22
+          ],
+          [
+            292,
+            6,
+            5568,
+            12,
+            2,
+            28
+          ],
+          [
+            426,
+            16,
+            3,
+            5555,
+            11,
+            14
+          ],
+          [
+            1800,
+            42,
+            18,
+            63,
+            4667,
+            83
+          ],
+          [
+            1832,
+            64,
+            38,
+            46,
+            52,
+            4550
+          ]
+        ]
+      },
+      "features": 880,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Semantic22_L10_HGB_seed20260612",
+      "representation": "Semantic22",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 160.11407300000428,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.832815128962262,
+        "balanced_accuracy": 0.8217255227625415,
+        "accuracy": 0.8180407267667442,
+        "normal_false_alarm_rate": 0.08497045200447217,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5729,
+            123,
+            87,
+            74,
+            69,
+            179
+          ],
+          [
+            1351,
+            4502,
+            13,
+            19,
+            15,
+            22
+          ],
+          [
+            292,
+            6,
+            5568,
+            12,
+            2,
+            28
+          ],
+          [
+            426,
+            16,
+            3,
+            5555,
+            11,
+            14
+          ],
+          [
+            1800,
+            42,
+            18,
+            63,
+            4667,
+            83
+          ],
+          [
+            1832,
+            64,
+            38,
+            46,
+            52,
+            4550
+          ]
+        ]
+      },
+      "features": 880,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Semantic22_L10_HGB_seed20260613",
+      "representation": "Semantic22",
+      "length": 10
+    },
+    {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 160.28918560000602,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.832815128962262,
+        "balanced_accuracy": 0.8217255227625415,
+        "accuracy": 0.8180407267667442,
+        "normal_false_alarm_rate": 0.08497045200447217,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5729,
+            123,
+            87,
+            74,
+            69,
+            179
+          ],
+          [
+            1351,
+            4502,
+            13,
+            19,
+            15,
+            22
+          ],
+          [
+            292,
+            6,
+            5568,
+            12,
+            2,
+            28
+          ],
+          [
+            426,
+            16,
+            3,
+            5555,
+            11,
+            14
+          ],
+          [
+            1800,
+            42,
+            18,
+            63,
+            4667,
+            83
+          ],
+          [
+            1832,
+            64,
+            38,
+            46,
+            52,
+            4550
+          ]
+        ]
+      },
+      "features": 880,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Semantic22_L10_HGB_seed20260614",
+      "representation": "Semantic22",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 30.07361390000733,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8192171191655481,
+        "balanced_accuracy": 0.8091134882087051,
+        "accuracy": 0.8053838537903723,
+        "normal_false_alarm_rate": 0.12505989458552946,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5478,
+            219,
+            166,
+            72,
+            76,
+            250
+          ],
+          [
+            1294,
+            4491,
+            38,
+            13,
+            35,
+            51
+          ],
+          [
+            306,
+            13,
+            5558,
+            4,
+            13,
+            14
+          ],
+          [
+            449,
+            18,
+            7,
+            5444,
+            21,
+            86
+          ],
+          [
+            1725,
+            66,
+            59,
+            51,
+            4636,
+            136
+          ],
+          [
+            1787,
+            92,
+            80,
+            56,
+            76,
+            4491
+          ]
+        ]
+      },
+      "features": 880,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Semantic22_L10_MLP_seed20260610",
+      "representation": "Semantic22",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 30.5009723000112,
+      "warnings": [],
+      "seed": 20260611,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8236751398428513,
+        "balanced_accuracy": 0.8140746595753755,
+        "accuracy": 0.810280698937679,
+        "normal_false_alarm_rate": 0.11994888995368147,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5510,
+            206,
+            180,
+            142,
+            43,
+            180
+          ],
+          [
+            1292,
+            4514,
+            26,
+            33,
+            15,
+            42
+          ],
+          [
+            281,
+            16,
+            5574,
+            6,
+            4,
+            27
+          ],
+          [
+            403,
+            17,
+            10,
+            5522,
+            9,
+            64
+          ],
+          [
+            1710,
+            69,
+            36,
+            85,
+            4659,
+            114
+          ],
+          [
+            1816,
+            84,
+            67,
+            78,
+            35,
+            4502
+          ]
+        ]
+      },
+      "features": 880,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Semantic22_L10_MLP_seed20260611",
+      "representation": "Semantic22",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 2,
+      "epochs_completed": 14,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 32.59661090000009,
+      "warnings": [],
+      "seed": 20260612,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8213275447257219,
+        "balanced_accuracy": 0.812196524879988,
+        "accuracy": 0.8084878649219983,
+        "normal_false_alarm_rate": 0.14853857211308097,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5331,
+            304,
+            202,
+            32,
+            89,
+            303
+          ],
+          [
+            1244,
+            4540,
+            39,
+            8,
+            40,
+            51
+          ],
+          [
+            247,
+            5,
+            5620,
+            0,
+            9,
+            27
+          ],
+          [
+            420,
+            26,
+            21,
+            5455,
+            18,
+            85
+          ],
+          [
+            1682,
+            98,
+            48,
+            41,
+            4655,
+            149
+          ],
+          [
+            1661,
+            124,
+            83,
+            31,
+            70,
+            4613
+          ]
+        ]
+      },
+      "features": 880,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Semantic22_L10_MLP_seed20260612",
+      "representation": "Semantic22",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 1,
+      "epochs_completed": 13,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 30.525167900006636,
+      "warnings": [],
+      "seed": 20260613,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8230969744454173,
+        "balanced_accuracy": 0.8134113098446347,
+        "accuracy": 0.8098258007545958,
+        "normal_false_alarm_rate": 0.12426130011180325,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5483,
+            130,
+            198,
+            102,
+            123,
+            225
+          ],
+          [
+            1295,
+            4480,
+            25,
+            29,
+            43,
+            50
+          ],
+          [
+            294,
+            7,
+            5567,
+            6,
+            18,
+            16
+          ],
+          [
+            402,
+            12,
+            12,
+            5497,
+            33,
+            69
+          ],
+          [
+            1665,
+            62,
+            49,
+            65,
+            4726,
+            106
+          ],
+          [
+            1761,
+            70,
+            68,
+            56,
+            116,
+            4511
+          ]
+        ]
+      },
+      "features": 880,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Semantic22_L10_MLP_seed20260613",
+      "representation": "Semantic22",
+      "length": 10
+    },
+    {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 2,
+      "epochs_completed": 14,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 32.849737900003674,
+      "warnings": [],
+      "seed": 20260614,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 37371,
+        "macro_f1": 0.8204588518967543,
+        "balanced_accuracy": 0.8098391146755874,
+        "accuracy": 0.8062668914398865,
+        "normal_false_alarm_rate": 0.13767768727040408,
+        "support": [
+          6261,
+          5922,
+          5908,
+          6025,
+          6673,
+          6582
+        ],
+        "confusion": [
+          [
+            5399,
+            230,
+            133,
+            102,
+            108,
+            289
+          ],
+          [
+            1321,
+            4479,
+            13,
+            18,
+            34,
+            57
+          ],
+          [
+            310,
+            14,
+            5543,
+            0,
+            19,
+            22
+          ],
+          [
+            423,
+            20,
+            5,
+            5480,
+            16,
+            81
+          ],
+          [
+            1737,
+            73,
+            24,
+            42,
+            4678,
+            119
+          ],
+          [
+            1746,
+            129,
+            45,
+            62,
+            48,
+            4552
+          ]
+        ]
+      },
+      "features": 880,
+      "training_rows": 179414,
+      "validation_rows": 37371,
+      "key": "Semantic22_L10_MLP_seed20260614",
+      "representation": "Semantic22",
+      "length": 10
+    }
+  ]
+}

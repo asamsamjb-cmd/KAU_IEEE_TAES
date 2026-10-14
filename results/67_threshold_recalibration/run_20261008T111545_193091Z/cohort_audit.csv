@@ -1,0 +1,5 @@
+﻿condition,records,endpoints,shared_blocks,block_source,records_outside_endpoint_episodes,episodes_outside,endpoint_table_consistent
+P_reference,49152,41028,150,endpoint_blocks.csv:block_id,24,P_GNSSSPF_EP_00150;P_GTTC_COMP_EP_00150;P_NORMAL_EP_00150;P_RFJAM_EP_00150;P_TCINJ_EP_00150;P_TCREPLAY_EP_00150,True
+P_mild,49152,41028,150,endpoint_blocks.csv:block_id,24,P_GNSSSPF_EP_00150;P_GTTC_COMP_EP_00150;P_NORMAL_EP_00150;P_RFJAM_EP_00150;P_TCINJ_EP_00150;P_TCREPLAY_EP_00150,True
+P_moderate,49152,41028,150,endpoint_blocks.csv:block_id,24,P_GNSSSPF_EP_00150;P_GTTC_COMP_EP_00150;P_NORMAL_EP_00150;P_RFJAM_EP_00150;P_TCINJ_EP_00150;P_TCREPLAY_EP_00150,True
+P_severe,49152,41028,150,endpoint_blocks.csv:block_id,24,P_GNSSSPF_EP_00150;P_GTTC_COMP_EP_00150;P_NORMAL_EP_00150;P_RFJAM_EP_00150;P_TCINJ_EP_00150;P_TCREPLAY_EP_00150,True

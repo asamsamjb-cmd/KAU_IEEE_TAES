@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "embedding_max_abs_difference": 0.0,
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "distilbert": {
+    "decision_mismatches": 0,
+    "max_abs_probability_difference": 2.679542541184077e-07
+  },
+  "tst": {
+    "3": {
+      "decision_mismatches": 0,
+      "max_abs_probability_difference": 2.979812618875144e-08
+    },
+    "10": {
+      "decision_mismatches": 0,
+      "max_abs_probability_difference": 2.9800415024539006e-08
+    }
+  }
+}

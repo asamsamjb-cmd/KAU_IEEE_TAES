@@ -1,0 +1,2 @@
+﻿Detector,L,Evaluation population,Endpoints,Normal endpoints,Head seeds,Macro-F1,Macro-F1 SD,FA_N (%),FA_N SD (percentage points)
+DistilBERT + LSTM,1,common_L10_eligible_test_endpoints,38078,5762,10,0.4354709581049316,0.002960402442195933,50.418257549461984,20.811053046196555

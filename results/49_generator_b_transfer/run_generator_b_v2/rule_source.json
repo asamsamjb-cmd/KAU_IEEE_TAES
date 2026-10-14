@@ -1,0 +1,30 @@
+{
+  "folder": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z",
+  "code": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z\\rule_spec.json",
+  "code_sha256": "04ea54a5631fa769eeb36746efaf4f4b4a95071dd2b23eab710f8063e6be7027",
+  "code_kind": "hash-bound original inference functions in rule_spec.json",
+  "producer_script_sha256": "c883b7f7493abd8fa1db4ea7089789661d3d4d6d1e33e9c72253675f9c6ab22f",
+  "run_id": "run_20261004T102431_766880Z",
+  "contract_adapter": "dataset_contract_v1",
+  "config_sha256": "02b895a7b6b208e605d6b082263759f975c52371f062ce83f65f0b2dc44a1893",
+  "thresholds": [
+    0.1,
+    0.5,
+    0.3,
+    0.2,
+    0.1
+  ],
+  "original_replay": {
+    "val": {
+      "rows": 37371,
+      "macro_f1": 0.6319023208804043,
+      "max_abs_score_error": 0.0
+    },
+    "test": {
+      "rows": 38078,
+      "macro_f1": 0.6559763819524583,
+      "max_abs_score_error": 0.0
+    }
+  },
+  "original_test_macro_f1": 0.6559763819524583
+}

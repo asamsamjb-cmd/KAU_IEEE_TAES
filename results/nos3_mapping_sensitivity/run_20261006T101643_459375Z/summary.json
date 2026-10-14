@@ -1,0 +1,62 @@
+{
+  "code_version": "1.0-nos3-evidence-mapping-sensitivity",
+  "mapping_version": "08.2-restricted-evidence-mapping",
+  "status": "MAPPING_SENSITIVITY_COMPLETE",
+  "errors": [],
+  "started_utc": "2026-10-06T10:16:43.462910+00:00",
+  "audit_only": false,
+  "detector_evaluation_performed": true,
+  "formal_external_validation": false,
+  "post_hoc_analysis": true,
+  "additional_live_commands_sent": 0,
+  "trained": false,
+  "stages": {
+    "mapping": "COMPLETE",
+    "controls": "COMPLETE",
+    "V1": "COMPLETE",
+    "V2": "COMPLETE"
+  },
+  "mapping_audit": {
+    "mapping_version": "08.2-restricted-evidence-mapping",
+    "total_windows": 899,
+    "window_counts": {
+      "TC": 30,
+      "TLM": 869
+    },
+    "unk_counts_by_kind": {
+      "TC": {
+        "12": 20,
+        "13": 10
+      },
+      "TLM": {
+        "11": 869
+      }
+    },
+    "first_frame_rule": "UNK",
+    "cold_start_unk_count": 10,
+    "command_receive_event_cross_second_count": 0,
+    "validated_tlm_packets_in_complete_windows": 19313,
+    "unobserved_window_count": 0
+  },
+  "protocol_sha256": "df2d311e6db7fa5a2a92957f13a34eab8076238e3badd2f7d8ba6bbc930cc149",
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "torch": "2.12.0+cu126",
+    "transformers": "5.10.2",
+    "device": "cpu",
+    "threads": 2,
+    "pandas": "3.0.3",
+    "precision": "float32",
+    "autocast": false
+  },
+  "results": {
+    "neural_conditions": 8,
+    "common_endpoints": 809,
+    "unique_command_endpoints": 30,
+    "prediction_rows": 16180,
+    "command_prediction_rows": 600,
+    "rule_serialization_duplicated": false
+  },
+  "finished_utc": "2026-10-06T10:17:09.979269+00:00"
+}

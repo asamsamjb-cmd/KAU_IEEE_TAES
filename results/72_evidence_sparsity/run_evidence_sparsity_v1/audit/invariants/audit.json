@@ -1,0 +1,11 @@
+{
+  "levels": [
+    "R100",
+    "R060",
+    "R035",
+    "R020"
+  ],
+  "normal_records_identical_across_levels": true,
+  "endpoints_labels_blocks_identical_across_levels": true,
+  "R100_reproduces_step49_P_reference": true
+}

@@ -1,0 +1,52 @@
+{
+  "feature_matrices": [
+    {
+      "representation": "RawScoped",
+      "split": "train",
+      "endpoints": 179414,
+      "features": 890,
+      "matrix_gib": 1.19
+    },
+    {
+      "representation": "RawScoped",
+      "split": "val",
+      "endpoints": 37371,
+      "features": 890,
+      "matrix_gib": 0.248
+    },
+    {
+      "representation": "RawScoped",
+      "split": "test",
+      "endpoints": 38078,
+      "features": 890,
+      "matrix_gib": 0.252
+    },
+    {
+      "representation": "Semantic22",
+      "split": "train",
+      "endpoints": 179414,
+      "features": 880,
+      "matrix_gib": 1.176
+    },
+    {
+      "representation": "Semantic22",
+      "split": "val",
+      "endpoints": 37371,
+      "features": 880,
+      "matrix_gib": 0.245
+    },
+    {
+      "representation": "Semantic22",
+      "split": "test",
+      "endpoints": 38078,
+      "features": 880,
+      "matrix_gib": 0.25
+    }
+  ],
+  "estimated_all_feature_cache_gib": 3.3610128611326218,
+  "missing_cache_gib": 3.3610128611326218,
+  "largest_four_matrix_working_gib": 4.7587889432907104,
+  "memory_budget_gib": 8.0,
+  "free_disk_gib": 30.88735580444336,
+  "note": "HGB internals and pandas dataframes need further RAM; this is a lower bound, not a hard peak limit"
+}

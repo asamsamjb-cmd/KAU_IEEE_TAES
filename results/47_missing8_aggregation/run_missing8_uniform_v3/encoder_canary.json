@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "max_abs_error": 0.0,
+  "rows": 512,
+  "batch_size": 64,
+  "max_length": 256,
+  "precision": "FP32",
+  "dynamic_padding": true,
+  "serialization": "literal_UNK",
+  "max_token_length": 215,
+  "truncated_rows": 0,
+  "tokenizer_UNK_rows": 0
+}

@@ -1,0 +1,110 @@
+{
+  "records": [
+    {
+      "label": "NORMAL",
+      "status": "VERIFIED_CSV_SOURCE_BINDING",
+      "recorded_seed": 42,
+      "recorded_default_seed_matches": true,
+      "learning_sha256": "1315ee3cd9d44a8d051c736cd3f78ec161e8b8c31ba834ae4d8fbb94dfb607b4",
+      "maker_sha256": "f43a6d6b43dc644125e88f44406a4994a218ca02c9c27b17e76c8c0c4f41620f",
+      "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+      "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+      "raw_audit_sha256": "6ac19d5eb978b8e4152c95895c0b4503fd6fda3471264f4553173332e3dd1694",
+      "archive_paths": [
+        "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-18-23_929339_01_REVIEW.zip"
+      ],
+      "recorded_episodes": 863,
+      "recorded_code_version": "2.0-shared-nominal-substrate",
+      "recorded_observable_effect_windows": 0
+    },
+    {
+      "label": "RF_LINK_JAMMING",
+      "status": "VERIFIED_CSV_SOURCE_BINDING",
+      "recorded_seed": 142,
+      "recorded_default_seed_matches": true,
+      "learning_sha256": "1206c26fd04b930bfbd9d3b6019160f275a747f7dcac03b5bcc9278aeb69daa7",
+      "maker_sha256": "991990fc1398042967de14c08c419f6a95e73e349dfef855a7df071c6324ad49",
+      "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+      "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+      "raw_audit_sha256": "4494aa08bac5fb7e2be647fdb5c92011a61af3e5a99ddc88006c0d20b8790569",
+      "archive_paths": [
+        "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-19-27_123425_02_REVIEW.zip"
+      ],
+      "recorded_episodes": 829,
+      "recorded_code_version": "2.0-shared-nominal-substrate",
+      "recorded_observable_effect_windows": 14112
+    },
+    {
+      "label": "GNSS_SPOOFING",
+      "status": "VERIFIED_CSV_SOURCE_BINDING",
+      "recorded_seed": 242,
+      "recorded_default_seed_matches": true,
+      "learning_sha256": "45b0cd16157c10a3f71810cf6a951732942625d0604335bf7070825c5d4c8351",
+      "maker_sha256": "41bb6e6785bfe0b61bc771dc94f0d7a7756fdfab03c9c018029c7f60afd8e2fd",
+      "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+      "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+      "raw_audit_sha256": "e185d42287642606527693192798fbc9d9434c0e62ff3191ad35bc0d8f638479",
+      "archive_paths": [
+        "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-23-57_349741_03_REVIEW.zip"
+      ],
+      "recorded_episodes": 837,
+      "recorded_code_version": "2.0-shared-nominal-substrate",
+      "recorded_observable_effect_windows": 34603
+    },
+    {
+      "label": "UNAUTHORIZED_TELECOMMAND_INJECTION",
+      "status": "VERIFIED_CSV_SOURCE_BINDING",
+      "recorded_seed": 314,
+      "recorded_default_seed_matches": true,
+      "learning_sha256": "e305217262cb9eeaaedd225094c1f63544cbb713c0d80b9a7b233bb10ca2ccf9",
+      "maker_sha256": "1b8e2696cca74acf8300c4e042ec9a3315a48751d4b3ecf6adf96d652fd9bd69",
+      "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+      "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+      "raw_audit_sha256": "44b6bc69becbecb0557882663e042f730f4397cc863202492607e48c9cf11b9d",
+      "archive_paths": [
+        "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-24-59_573841_04_REVIEW.zip"
+      ],
+      "recorded_episodes": 824,
+      "recorded_code_version": "2.0-shared-nominal-substrate",
+      "recorded_observable_effect_windows": 11526
+    },
+    {
+      "label": "TELECOMMAND_REPLAY",
+      "status": "VERIFIED_CSV_SOURCE_BINDING",
+      "recorded_seed": 442,
+      "recorded_default_seed_matches": true,
+      "learning_sha256": "704e8b5abf2660229aa1a239137c98a078d6d3c9d5018ab42781651e4764f241",
+      "maker_sha256": "0f8f8b5dc873db22507d8dc938b1f2ba9ed211b4f73be22ff7e298a3080359bc",
+      "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+      "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+      "raw_audit_sha256": "7c3bab0bc39ed797297e93d3ed387bf5448363c4537b5543a72da9a725b9b078",
+      "archive_paths": [
+        "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-26-35_086194_05_REVIEW.zip"
+      ],
+      "recorded_episodes": 850,
+      "recorded_code_version": "2.0-shared-nominal-substrate",
+      "recorded_observable_effect_windows": 7451
+    },
+    {
+      "label": "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+      "status": "VERIFIED_CSV_SOURCE_BINDING",
+      "recorded_seed": 342,
+      "recorded_default_seed_matches": true,
+      "learning_sha256": "0af15af824a10cc0356982be82bbf64c1ea8e260def7adfa5a65af1ac4e5ebcb",
+      "maker_sha256": "17b69eb554d8417f145b7bbbdd07b030410fc8b3a1e20b9688e6bbe09015f1af",
+      "shared_nominal_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+      "shared_context_sha256": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+      "raw_audit_sha256": "d7295d882e47ccdaef40ba8610d2bb78267ce4df2320f09e082dda7a96b1360d",
+      "archive_paths": [
+        "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\2026-10-04_01-28-11_541593_06_REVIEW.zip"
+      ],
+      "recorded_episodes": 813,
+      "recorded_code_version": "2.0-shared-nominal-substrate",
+      "recorded_observable_effect_windows": 6880
+    }
+  ],
+  "all_csvs_bound_to_current_sources": true,
+  "distinct_recorded_seeds": true,
+  "ignored_or_unreadable_candidate_archives": [],
+  "scope": "Actual learning/raw/shared source byte binding; archived assertions are not rerun physics or causal proofs."
+}

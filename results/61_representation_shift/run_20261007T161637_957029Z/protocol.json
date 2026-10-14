@@ -1,0 +1,90 @@
+{
+  "version": "raw_semantic_frozen_parameter_shift_v1",
+  "script_sha256": "dcf8eaa6e14b52630918cbc3e7b2d3bce89612eb83405a4d69f3151042ca9796",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "source49": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\49_parameter_stress\\run_parameter_stress_v1",
+  "source59": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\59_raw_semantic\\run_raw_semantic_v1",
+  "step49_protocol_identity": "f9346c2f6eb8c770324639dd3218edf0b2c38dda415251c2f57e3bb1a764d0ab",
+  "step59_protocol_identity": "246ddf93e4eb23a18953a5593b0df6086e9352ed08a06311cadca3837008da5b",
+  "step60_code_sha256": "250c5d7513638c978ef2126b3e39c2575df68ad721d36d4761bd8d46b21f9102",
+  "step59_code_sha256": "7088988e35a0b4b51cdee40ab675cebdbc05a500ca4cd8a3d6c4090efa903468",
+  "conditions": [
+    "P_reference",
+    "P_mild",
+    "P_moderate",
+    "P_severe"
+  ],
+  "groups": [
+    {
+      "representation": "Raw",
+      "family": "HGB"
+    },
+    {
+      "representation": "Semantic22",
+      "family": "HGB"
+    },
+    {
+      "representation": "Raw",
+      "family": "MLP"
+    },
+    {
+      "representation": "Semantic22",
+      "family": "MLP"
+    }
+  ],
+  "seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614
+  ],
+  "length": 10,
+  "training": false,
+  "normalization": "Original Step59 train-fitted vocabulary, explicit UNSEEN bins and saved MLP scaler; no fit on shift",
+  "aggregation": "Numeric and one-hot columns: mean,std(ddof0),min,max,last; identical operations for both representations",
+  "raw_monitor_policy": {
+    "source_unverified_flag": "source_unverified_flag OR source_unverified_benign_flag",
+    "policy_inconsistent_flag": "policy_inconsistent_flag OR valid_looking_benign_flag"
+  },
+  "preflight_only": false,
+  "validation_replay": "16 evenly spaced validation endpoints per true class; audit only, no model selection",
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 2026100761,
+    "unit": "whole common nominal episode including all six class replicas",
+    "pairing": "same multiplicities across four regimes, representations, learners and fixed seeds",
+    "estimator": "mean of per-seed endpoint Macro-F1/FPR/recall; no probability ensemble or pooled-seed confusion",
+    "resample_training_seeds": false,
+    "resample_generator_seeds": false,
+    "intervals": "conditional linear-percentile95; primary Bonferroni16 over 4 conditions x2 learners x2 metrics; secondary change family Bonferroni12"
+  },
+  "interpretation": [
+    "Retrospective analysis using previously observed source regimes; not preregistered confirmation.",
+    "Same generator with joint parameter changes; no external validity or isolated factor-causality claim.",
+    "Raw simulated measurements and monitor outputs; not raw RF waveforms.",
+    "Deterministic projection does not create information; differences are learner/feature interactions.",
+    "Raw and semantic temporal statistics do not preserve every ordering detail.",
+    "Report absolute scores and NORMAL false alarms as well as changes; smaller loss alone is not superiority.",
+    "All endpoints including quiet/unchanged inputs retained; no label, provenance, baseline or cause fields enter model.",
+    "Intervals conditional on these trained models and one paired nominal realization; not formal equivalence."
+  ],
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3",
+    "threads": 8,
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "source59_runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "identity": "d6f46af35c467a8053ee0a0334ff5c853a9f4a7d074b8a75930a6f67801eef91"
+}

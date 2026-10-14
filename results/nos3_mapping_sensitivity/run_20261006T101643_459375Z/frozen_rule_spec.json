@@ -1,0 +1,305 @@
+{
+  "version": "shared_nominal_v2_semantic_rules_v1",
+  "available_fields": [
+    "observation_stage",
+    "path_type",
+    "direction",
+    "source_role",
+    "destination_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "service_context",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "used_fields": [
+    "path_type",
+    "direction",
+    "source_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "canonical_labels": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "membership_sets": {
+    "command_intent": [
+      "STATUS_REQUEST",
+      "TIME_SYNC",
+      "CONFIG_UPDATE",
+      "NOMINAL_CONTROL",
+      "HOUSEKEEPING",
+      "ORBIT_CONTROL",
+      "POLICY_UPDATE",
+      "ROUTING_UPDATE",
+      "ROUTE_UPDATE",
+      "SESSION_REAUTH",
+      "PAYLOAD_CONFIG",
+      "MODE_CHANGE",
+      "ATTITUDE_ADJUST",
+      "CONFIG_CHANGE",
+      "LINK_RECONFIGURATION",
+      "PAYLOAD_DISABLE",
+      "RESET",
+      "GCS_GATEWAY_SYNC"
+    ],
+    "command_message": [
+      "TELECOMMAND",
+      "COMMAND_UPLINK",
+      "COMMAND_VALIDATION_EVENT",
+      "PARTIAL_COMMAND_FRAME",
+      "UNKNOWN_COMMAND"
+    ],
+    "bad_signal": [
+      "DEGRADED",
+      "SEVERELY_DEGRADED",
+      "LOST"
+    ],
+    "severe_signal": [
+      "SEVERELY_DEGRADED",
+      "LOST"
+    ],
+    "bad_decoder": [
+      "CRC_FAIL",
+      "DECODE_FAIL",
+      "FRAME_LOSS",
+      "PARTIAL_DECODE",
+      "SYNC_LOSS"
+    ],
+    "usable_decoder": [
+      "DECODE_OK",
+      "DECODE_WARN"
+    ],
+    "usable_signal": [
+      "NOMINAL",
+      "FLUCTUATING",
+      "DEGRADED"
+    ],
+    "bad_tracking": [
+      "UNSTABLE",
+      "CYCLE_SLIP_LIKE",
+      "LOCK_LOSS"
+    ],
+    "bad_retry": [
+      "RETRY_INCREASED",
+      "TIMEOUT",
+      "BURST_TIMEOUT",
+      "LINK_OUTAGE"
+    ],
+    "bad_navigation": [
+      "DRIFTING",
+      "INCONSISTENT",
+      "JUMP_DETECTED"
+    ],
+    "bad_timing": [
+      "DRIFTING",
+      "INCONSISTENT",
+      "OFFSET_JUMP"
+    ],
+    "failed_security": [
+      "AUTH_FAILED",
+      "AUTH_MISSING",
+      "INTEGRITY_FAILED",
+      "UNAUTHORIZED"
+    ],
+    "weak_security": [
+      "AUTH_FAILED",
+      "AUTH_MISSING",
+      "INTEGRITY_FAILED",
+      "UNAUTHORIZED",
+      "AUTH_UNVERIFIED",
+      "INTEGRITY_UNVERIFIED",
+      "SOURCE_UNVERIFIED",
+      "VALID_LOOKING_ANOMALOUS"
+    ],
+    "valid_looking": [
+      "AUTH_VALID",
+      "VALID_LOOKING_ANOMALOUS"
+    ],
+    "bad_payload": [
+      "CONTEXT_MISMATCH_PARAMETER",
+      "OUT_OF_POLICY_PARAMETER",
+      "PARAMETER_RANGE_VIOLATION",
+      "UNEXPECTED_TARGET_PARAMETER",
+      "MALFORMED_PARAMETER",
+      "UNAUTHORIZED_PARAMETER"
+    ],
+    "bad_session": [
+      "ABNORMAL",
+      "DEGRADED",
+      "EXPIRED",
+      "RESET",
+      "NO_SESSION"
+    ],
+    "bad_transition": [
+      "DELAYED_TRANSITION",
+      "INCOMPLETE_TRANSITION",
+      "INCONSISTENT",
+      "FORBIDDEN_TRANSITION",
+      "UNEXPECTED_TRANSITION"
+    ],
+    "severe_transition": [
+      "FORBIDDEN_TRANSITION",
+      "UNEXPECTED_TRANSITION",
+      "INCONSISTENT"
+    ],
+    "old_freshness": [
+      "DUPLICATE",
+      "STALE",
+      "REPLAYED"
+    ],
+    "uncertain_freshness": [
+      "OUT_OF_ORDER",
+      "UNKNOWN",
+      "MISSING_SEQUENCE"
+    ],
+    "held_execution": [
+      "HELD",
+      "BLOCKED",
+      "REJECTED",
+      "FAILED",
+      "TIMEOUT"
+    ],
+    "accepted_execution": [
+      "ACCEPTED",
+      "EXECUTED",
+      "QUEUED"
+    ],
+    "sensitive_intent": [
+      "CONFIG_UPDATE",
+      "CONFIG_CHANGE",
+      "PAYLOAD_CONFIG",
+      "MODE_CHANGE",
+      "ATTITUDE_ADJUST",
+      "ORBIT_CONTROL",
+      "POLICY_UPDATE",
+      "ROUTING_UPDATE",
+      "ROUTE_UPDATE",
+      "LINK_RECONFIGURATION",
+      "PAYLOAD_DISABLE",
+      "RESET"
+    ],
+    "recurrence_excluded_intent": [
+      "STATUS_REQUEST",
+      "HOUSEKEEPING",
+      "TIME_SYNC",
+      "NO_COMMAND"
+    ],
+    "command_phase": [
+      "COMMAND_SESSION",
+      "CONTACT_WINDOW"
+    ],
+    "command_path": [
+      "GATEWAY_LEO",
+      "LEO_LEO"
+    ],
+    "command_protocol": [
+      "CCSDS_TTC",
+      "CCSDS_ISL"
+    ],
+    "command_direction": [
+      "GROUND_TO_SPACE",
+      "SPACE_TO_SPACE"
+    ],
+    "ground_source": [
+      "GROUND_GATEWAY",
+      "GROUND_CONTROL_SERVICE",
+      "GCS_OPERATOR",
+      "MAINTENANCE_OPERATOR"
+    ]
+  },
+  "clauses": {
+    "RF_LINK_JAMMING": [
+      "bad_signal OR bad_decoder",
+      "(bad_signal OR bad_tracking) AND (bad_decoder OR bad_retry OR link_loss)",
+      "(severe_signal AND bad_decoder) OR (bad_signal AND bad_decoder AND bad_retry)"
+    ],
+    "GNSS_SPOOFING": [
+      "bad_navigation OR bad_timing",
+      "(bad_navigation OR bad_timing) AND usable_signal AND usable_decoder",
+      "bad_navigation AND bad_timing"
+    ],
+    "UNAUTHORIZED_TELECOMMAND_INJECTION": [
+      "command AND (weak_security OR bad_payload OR (context_off AND bad_session))",
+      "command AND ((weak_security AND (bad_payload OR bad_transition OR bad_session)) OR (context_off AND bad_payload))",
+      "command AND failed_security"
+    ],
+    "TELECOMMAND_REPLAY": [
+      "command AND (old_freshness OR (uncertain_freshness AND corroboration))",
+      "command AND old_freshness AND corroboration",
+      "command AND explicit_replayed"
+    ],
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": [
+      "command AND valid_looking AND (bad_payload OR bad_transition)",
+      "command AND valid_looking AND ((bad_payload AND bad_transition) OR (sensitive_intent AND bad_transition AND bad_session))",
+      "command AND valid_looking AND accepted_execution AND ((severe_transition AND (bad_payload OR sensitive_intent)) OR (bad_payload AND bad_transition AND ground_source))"
+    ]
+  },
+  "command": "recognized command intent OR recognized command message type",
+  "context_off": "NOT (command_phase AND command_path AND command_protocol AND command_direction)",
+  "corroboration": "held_execution OR bad_session OR bad_transition",
+  "recurrence": "same recognized non-status intent and parameter as any prior eligible window inside this sequence; current corroboration OR old/uncertain freshness; add at most one to replay score and cap at three",
+  "L1": "last window only",
+  "L10": "arithmetic mean of ten window scores with recurrence support",
+  "threshold_grid": [
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.1
+  ],
+  "starts": [
+    0.5,
+    1.5
+  ],
+  "max_sweeps": 3,
+  "objective": "validation common-endpoint six-class sequence macro-F1",
+  "tie_selection": "lower normal FAR, then larger threshold sum, then lexicographically larger thresholds",
+  "conflict": "largest score/threshold among eligible attacks; exact ties use canonical order",
+  "normal_fallback": "no attack reaches its threshold",
+  "implementation": {
+    "window_evidence": "def window_evidence(frame):\n    \"\"\"Only explicitly allowlisted observable columns reach the rule engine.\"\"\"\n    require(set(FIELDS) <= set(frame.columns), 'Missing observable fields')\n    x = {k: frame[k].to_numpy(dtype=str) for k in FIELDS}\n\n    def isin(field, group):\n        return np.isin(x[field], TOKENS[group])\n\n    command = (isin('command_intent', 'command_intent') |\n               isin('message_type', 'command_message'))\n    signal = isin('signal_quality_state', 'bad_signal')\n    severe = isin('signal_quality_state', 'severe_signal')\n    decoder = isin('decoder_status', 'bad_decoder')\n    tracking = isin('tracking_stability', 'bad_tracking')\n    retry = isin('retry_timeout_state', 'bad_retry')\n    nav = isin('navigation_consistency', 'bad_navigation')\n    timing = isin('timing_consistency', 'bad_timing')\n    weak = isin('control_security_state', 'weak_security')\n    failed = isin('control_security_state', 'failed_security')\n    valid = isin('control_security_state', 'valid_looking')\n    payload = isin('payload_or_parameter_context', 'bad_payload')\n    session = isin('session_state', 'bad_session')\n    transition = isin('state_transition_consistency', 'bad_transition')\n    transition_severe = isin('state_transition_consistency', 'severe_transition')\n    old = isin('sequence_freshness_status', 'old_freshness')\n    uncertain = isin('sequence_freshness_status', 'uncertain_freshness')\n    held = isin('command_execution_result', 'held_execution')\n    accepted = isin('command_execution_result', 'accepted_execution')\n    sensitive = isin('command_intent', 'sensitive_intent')\n    ground = isin('source_role', 'ground_source')\n    # Corroboration only. A shared context is not necessarily an exclusive sensor origin.\n    context_off = ~(isin('operational_phase', 'command_phase') &\n                    isin('path_type', 'command_path') &\n                    isin('protocol_context', 'command_protocol') &\n                    isin('direction', 'command_direction'))\n    corroboration = held | session | transition\n    clauses = [\n      [signal | decoder, (signal | tracking) &\n       (decoder | retry | (x['session_state'] == 'LINK_LOSS')),\n       (severe & decoder) | (signal & decoder & retry)],\n      [nav | timing, (nav | timing) & isin('signal_quality_state', 'usable_signal') &\n       isin('decoder_status', 'usable_decoder'), nav & timing],\n      [command & (weak | payload | (context_off & session)),\n       command & ((weak & (payload | transition | session)) | (context_off & payload)),\n       command & failed],\n      [command & (old | (uncertain & corroboration)), command & old & corroboration,\n       command & (x['sequence_freshness_status'] == 'REPLAYED')],\n      [command & valid & (payload | transition),\n       command & valid & ((payload & transition) | (sensitive & transition & session)),\n       command & valid & accepted & ((transition_severe & (payload | sensitive)) |\n                                    (payload & transition & ground))],\n    ]\n    scores = np.column_stack([np.column_stack(c).sum(axis=1) for c in clauses]).astype(float)\n    aux = {'repeat_eligible': command & isin('command_intent', 'command_intent') &\n           ~isin('command_intent', 'recurrence_excluded_intent'),\n           'corroboration': corroboration | old | uncertain,\n           'intent': x['command_intent'], 'parameter': x['payload_or_parameter_context']}\n    return scores, aux\n",
+    "aggregate_evidence": "def aggregate_evidence(frame, indices, length):\n    require(length in (1, LENGTH), 'Only L1 and L10 are prespecified')\n    scores, aux = window_evidence(frame)\n    if length == 1:\n        return scores[indices[:, -1]].copy()\n    values = scores[indices].copy()\n    intent = aux['intent'][indices]\n    parameter = aux['parameter'][indices]\n    eligible = aux['repeat_eligible'][indices]\n    for t in range(1, indices.shape[1]):\n        earlier = ((intent[:, :t] == intent[:, t, None]) &\n                   (parameter[:, :t] == parameter[:, t, None]) & eligible[:, :t]).any(axis=1)\n        bonus = earlier & eligible[:, t] & aux['corroboration'][indices[:, t]]\n        values[:, t, 3] = np.minimum(3, values[:, t, 3] + bonus)\n    return values.mean(axis=1)\n",
+    "classify": "def classify(scores, thresholds):\n    thresholds = np.asarray(thresholds, dtype=float)\n    require(thresholds.shape == (5,) and np.all(np.isfinite(thresholds)) and\n            np.all(thresholds > 0), 'Invalid five-class threshold vector')\n    ratios = scores / thresholds\n    eligible = ratios >= 1.\n    top = ratios.max(axis=1)\n    pred = np.where(top >= 1., ratios.argmax(axis=1) + 1, 0)\n    return pred, {'eligible_attack_count': eligible.sum(axis=1),\n                  'tie_at_max': ((ratios == top[:, None]).sum(axis=1) > 1) & (top >= 1),\n                  'max_score_threshold_ratio': top}\n",
+    "metrics": "def metrics(y, pred):\n    cm = confusion(y, pred)\n    tp = np.diag(cm).astype(float); denom = cm.sum(0) + cm.sum(1)\n    f1 = np.divide(2 * tp, denom, out=np.zeros(6), where=denom != 0)\n    return {'macro_f1': float(f1.mean()), 'accuracy': float(tp.sum() / cm.sum()),\n            'normal_false_alarm_rate': float((cm[0].sum() - cm[0, 0]) / cm[0].sum())\n            if cm[0].sum() else None}\n",
+    "confusion": "def confusion(y, pred):\n    y = np.asarray(y, dtype=np.int64); pred = np.asarray(pred, dtype=np.int64)\n    require(y.shape == pred.shape and y.ndim == 1 and len(y) > 0, 'Invalid prediction shape')\n    require(np.isin(y, range(6)).all() and np.isin(pred, range(6)).all(), 'Invalid label ID')\n    return np.bincount(y * 6 + pred, minlength=36).reshape(6, 6)\n",
+    "calibrate": "def calibrate(scores, y, model_name):\n    \"\"\"Finite, deterministic coordinate search. Never accepts test inputs.\"\"\"\n    require(set(np.unique(y)) == set(range(6)), 'Validation must contain all six classes')\n    trace = []\n\n    def evaluate(thresholds, start, sweep, coordinate):\n        pred, _ = classify(scores, thresholds)\n        result = metrics(y, pred)\n        trace.append({'model': model_name, 'start': start, 'sweep': sweep,\n                      'coordinate': coordinate, 'thresholds': json.dumps(list(thresholds)), **result})\n        rank = (result['macro_f1'], -result['normal_false_alarm_rate'],\n                sum(thresholds), tuple(thresholds))\n        return rank, result\n\n    global_rank = None; selected = None\n    for start in STARTS:\n        current = [start] * 5\n        rank, result = evaluate(current, start, -1, 'initial')\n        for sweep in range(MAX_SWEEPS):\n            old = list(current)\n            for j, label in enumerate(ATTACKS):\n                best_rank, best_result, best = rank, result, list(current)\n                for threshold in GRID:\n                    candidate = list(current); candidate[j] = threshold\n                    candidate_rank, candidate_result = evaluate(candidate, start, sweep, label)\n                    if candidate_rank > best_rank:\n                        best_rank, best_result, best = candidate_rank, candidate_result, candidate\n                rank, result, current = best_rank, best_result, best\n            if current == old:\n                break\n        if global_rank is None or rank > global_rank:\n            global_rank = rank\n            selected = {'thresholds': list(current), 'validation_macro_f1': result['macro_f1'],\n                        'validation_normal_false_alarm_rate': result['normal_false_alarm_rate']}\n    return selected, trace\n"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "identity": "af03a209b2df9bb5ab63cfa28345081e49cadbaf4ceaf2dd28738515049c151a",
+  "spec_hash": "b2336c7c06cba15246cc3f4876ab09955fad5027dbb5903be08a7664e6fc8825",
+  "seed": 20260615,
+  "artifacts": {
+    "events.csv.gz": "6deac08a46949b9e35f2611428c69311042de833c035ba1633d74840e2033e85",
+    "gaps.csv.gz": "3032dfc1b79f115ba674a42863124ae4ed65fa082a2eb6e13d614fb8b2ae8f78",
+    "tails.csv.gz": "9602165f31722897f000782687f1def18270d6ae925181ceb0a675fb27b1e2ac",
+    "normal_episodes.csv.gz": "1ace9c433b8bd97e698462ed0c1cb356cd0ec6cf03748c0fb50f2d361d6c75ec",
+    "components.npz": "22996bef9ae7f8b52ddc790f2545e30bd1d255fe644f20c40fd87bc9f816945f"
+  },
+  "completed_at_utc": "2026-10-08T13:26:08.776423+00:00",
+  "event_rows": 86750,
+  "gap_rows": 41130,
+  "tail_rows": 12440
+}

@@ -1,0 +1,26 @@
+{
+  "identity": "b6d1119994f63b406806725ca819f9c4c164c68e9837b9cc55f1fee307801a8d",
+  "contract": "1ea4880d967d875f8b61b865f30ccef5ad781cfdf4bd762df49d49a966f2edd8",
+  "result": {
+    "realizations": 3,
+    "draws": 20000
+  },
+  "completed_at_utc": "2026-10-06T13:31:58.685313+00:00",
+  "artifact_sha256": {
+    "bootstrap_distribution.npz": "7f941c0d79da2a51c120119493f79ef669a5f311b0db89547b01930dbeeb90f5",
+    "by_realization.csv": "8a50eea2c7ac704527d449c167f0a2a0b0e20980e7e2b45ba2a9606c92d8aba7",
+    "fresh_1/bootstrap.npz": "3b604d4912b48efcf2bda87e862c36890594e739429708d6b441b6b389fb20d7",
+    "fresh_1/complete.json": "fb3e3d74b97fd2e951e17cf1029247da569d34919ac321eb7c17deeccd1f4457",
+    "fresh_1/episode_confusions.npz": "c0ff17b0a975fa42afa9d7f39c7fce1afbe980f292315fe38c136a30ad6873ec",
+    "fresh_2/bootstrap.npz": "cc4955dc2b0058c7fa044a0bce59fb7c2fe2867dae5527c9a978eac5d9f38625",
+    "fresh_2/complete.json": "839ff6b126275e5cbbf46adbf050fc02e2188ad376f68badeb84866105fa5473",
+    "fresh_2/episode_confusions.npz": "2a70051825eab8df17981265e0bd68efee88544639d6011b091a454a7e45f0df",
+    "fresh_3/bootstrap.npz": "38c894e5890467477cb943c0871337b35a78833c042fdddd02f122f49f47a3c4",
+    "fresh_3/complete.json": "4abb55e94359d6972a3b82dc302ce69b7ebfeb1320814fd1bce6494fe4281e26",
+    "fresh_3/episode_confusions.npz": "0174907a7e9f755b0ac23972237dcf90aaa192cd69a1cf7d17cea02ee463bfbc",
+    "model_summary.csv": "a6d1e40436d3b9d6440f22ec44149a15116896189c10a64c88beaa3c860333b4",
+    "paired_comparisons_fresh.csv": "74fc6c55add3b382a0a238fc3dca38e1d366c3e13aab732d41624392473e57e5",
+    "per_class_f1.csv": "993fdfba0446a120a384b107abbd35bced6093f8b141d2fb4c1f362350dcbfc4",
+    "projection_change_diagnostics.csv": "2aff7f34f415c3733c9905aa2f064a538a4bf980b90a5ad72300016e5c80bef7"
+  }
+}

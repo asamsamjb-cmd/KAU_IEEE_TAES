@@ -1,0 +1,254 @@
+{
+  "protocol_version": "label_independent_structured_missing_v2",
+  "input_contract_version": "shared_nominal_v2",
+  "source_contract": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "nominal_substrate": "shared_nominal_v2",
+    "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "observability_audit": {
+      "schema_version": "counterfactual_observable_change_v1",
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+      "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "split_files": {
+        "train": "audit/train_window_observable_effects.csv",
+        "val": "audit/val_window_observable_effects.csv",
+        "test": "audit/test_window_observable_effects.csv"
+      },
+      "artifacts": {
+        "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+        "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+        "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+      },
+      "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+    }
+  },
+  "step": 18,
+  "run_id": "34b01110d483dfeb8c5c3b011f2bccd61f942a372de221dc8a80a0d5799f9772",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "source_test_sha256": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+  "condition_paths": {
+    "complete": "test_complete_observable.csv",
+    "realistic_missing2": "test_realistic_missing2_observable.csv",
+    "realistic_missing5": "test_realistic_missing5_observable.csv",
+    "realistic_missing8": "test_realistic_missing8_observable.csv"
+  },
+  "schema": {
+    "metadata_fields": [
+      "scenario_id",
+      "episode_id",
+      "episode_type",
+      "episode_step",
+      "window_id",
+      "timestamp",
+      "label"
+    ],
+    "observable_fields": [
+      "observation_stage",
+      "path_type",
+      "direction",
+      "source_role",
+      "destination_role",
+      "protocol_context",
+      "operational_phase",
+      "message_type",
+      "service_context",
+      "command_intent",
+      "payload_or_parameter_context",
+      "sequence_freshness_status",
+      "control_security_state",
+      "signal_quality_state",
+      "tracking_stability",
+      "navigation_consistency",
+      "timing_consistency",
+      "decoder_status",
+      "command_execution_result",
+      "retry_timeout_state",
+      "session_state",
+      "state_transition_consistency"
+    ],
+    "canonical_columns": [
+      "scenario_id",
+      "episode_id",
+      "episode_type",
+      "episode_step",
+      "window_id",
+      "timestamp",
+      "label",
+      "observation_stage",
+      "path_type",
+      "direction",
+      "source_role",
+      "destination_role",
+      "protocol_context",
+      "operational_phase",
+      "message_type",
+      "service_context",
+      "command_intent",
+      "payload_or_parameter_context",
+      "sequence_freshness_status",
+      "control_security_state",
+      "signal_quality_state",
+      "tracking_stability",
+      "navigation_consistency",
+      "timing_consistency",
+      "decoder_status",
+      "command_execution_result",
+      "retry_timeout_state",
+      "session_state",
+      "state_transition_consistency"
+    ],
+    "label_order": [
+      "NORMAL",
+      "RF_LINK_JAMMING",
+      "GNSS_SPOOFING",
+      "UNAUTHORIZED_TELECOMMAND_INJECTION",
+      "TELECOMMAND_REPLAY",
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+    ],
+    "observable_window_seconds": 1
+  },
+  "seed": 20260610,
+  "placeholder": "UNK",
+  "mask_selection": "uniform permutation of nine evidence fields, independent of ground-truth labels",
+  "rng_key": "seed, stream (k for bursts; zero for fields), opaque first-appearance episode ordinal",
+  "nested_field_sets": true,
+  "nested_burst_masks": false,
+  "observable_effect_audit_use": "Step 7 effect flags describe the complete data; they are not recomputed after masking, are not model inputs, and never select fields, bursts or evaluation endpoints.",
+  "burst_range_meaning": "proposal lengths; overlapping proposals merge and target fractions may overshoot",
+  "scope": "Synthetic structured stress only; one mask seed; joint severity changes k/fraction/burst length. Thirteen protected context/control fields remain visible by design. No field-calibrated claim.",
+  "summaries": [
+    {
+      "condition": "realistic_missing2",
+      "rows": 44846,
+      "affected_rows": 11949,
+      "affected_row_ratio": 0.26644516790795164,
+      "missing_count_per_affected_row": 2,
+      "average_missing_fields_per_row": 0.5328903358159033,
+      "placeholder": "UNK",
+      "affected_fraction_target": 0.25,
+      "burst_length_range_rows": [
+        2,
+        4
+      ],
+      "num_burst_records": 3349,
+      "masked_field_counts": {
+        "signal_quality_state": 2794,
+        "tracking_stability": 2439,
+        "navigation_consistency": 2795,
+        "timing_consistency": 2752,
+        "decoder_status": 2586,
+        "command_execution_result": 3018,
+        "retry_timeout_state": 2459,
+        "session_state": 2600,
+        "state_transition_consistency": 2455
+      },
+      "protected_context_fields": [
+        "observation_stage",
+        "path_type",
+        "direction",
+        "source_role",
+        "destination_role",
+        "protocol_context",
+        "operational_phase"
+      ],
+      "protected_message_control_fields": [
+        "message_type",
+        "service_context",
+        "command_intent",
+        "payload_or_parameter_context",
+        "sequence_freshness_status",
+        "control_security_state"
+      ],
+      "generation_rule": "Field loss is generated as episode-local contiguous outage bursts. Within each episode outage, the same RF/GNSS receiver evidence or operational trace fields are masked, preserving temporal consistency under a prespecified synthetic stress scenario, without operational calibration."
+    },
+    {
+      "condition": "realistic_missing5",
+      "rows": 44846,
+      "affected_rows": 16821,
+      "affected_row_ratio": 0.37508361949783703,
+      "missing_count_per_affected_row": 5,
+      "average_missing_fields_per_row": 1.8754180974891852,
+      "placeholder": "UNK",
+      "affected_fraction_target": 0.35,
+      "burst_length_range_rows": [
+        3,
+        6
+      ],
+      "num_burst_records": 2959,
+      "masked_field_counts": {
+        "signal_quality_state": 9917,
+        "tracking_stability": 9061,
+        "navigation_consistency": 9528,
+        "timing_consistency": 8876,
+        "decoder_status": 9339,
+        "command_execution_result": 9840,
+        "retry_timeout_state": 9372,
+        "session_state": 8779,
+        "state_transition_consistency": 9393
+      },
+      "protected_context_fields": [
+        "observation_stage",
+        "path_type",
+        "direction",
+        "source_role",
+        "destination_role",
+        "protocol_context",
+        "operational_phase"
+      ],
+      "protected_message_control_fields": [
+        "message_type",
+        "service_context",
+        "command_intent",
+        "payload_or_parameter_context",
+        "sequence_freshness_status",
+        "control_security_state"
+      ],
+      "generation_rule": "Field loss is generated as episode-local contiguous outage bursts. Within each episode outage, the same RF/GNSS receiver evidence or operational trace fields are masked, preserving temporal consistency under a prespecified synthetic stress scenario, without operational calibration."
+    },
+    {
+      "condition": "realistic_missing8",
+      "rows": 44846,
+      "affected_rows": 21786,
+      "affected_row_ratio": 0.4857958346340811,
+      "missing_count_per_affected_row": 8,
+      "average_missing_fields_per_row": 3.886366677072649,
+      "placeholder": "UNK",
+      "affected_fraction_target": 0.45,
+      "burst_length_range_rows": [
+        4,
+        8
+      ],
+      "num_burst_records": 2636,
+      "masked_field_counts": {
+        "signal_quality_state": 19644,
+        "tracking_stability": 19064,
+        "navigation_consistency": 19729,
+        "timing_consistency": 19519,
+        "decoder_status": 19385,
+        "command_execution_result": 19227,
+        "retry_timeout_state": 19308,
+        "session_state": 19267,
+        "state_transition_consistency": 19145
+      },
+      "protected_context_fields": [
+        "observation_stage",
+        "path_type",
+        "direction",
+        "source_role",
+        "destination_role",
+        "protocol_context",
+        "operational_phase"
+      ],
+      "protected_message_control_fields": [
+        "message_type",
+        "service_context",
+        "command_intent",
+        "payload_or_parameter_context",
+        "sequence_freshness_status",
+        "control_security_state"
+      ],
+      "generation_rule": "Field loss is generated as episode-local contiguous outage bursts. Within each episode outage, the same RF/GNSS receiver evidence or operational trace fields are masked, preserving temporal consistency under a prespecified synthetic stress scenario, without operational calibration."
+    }
+  ]
+}

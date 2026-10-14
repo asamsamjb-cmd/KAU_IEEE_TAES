@@ -1,0 +1,4 @@
+{
+  "validation_f1": 0.8317029419893961,
+  "fit_data": "Validation predictions ONLY; no test scores or test labels"
+}

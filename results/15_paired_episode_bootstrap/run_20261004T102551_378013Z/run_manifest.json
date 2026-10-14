@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE",
+  "output_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\15_paired_episode_bootstrap\\run_20261004T102551_378013Z",
+  "protocol_sha256": "f983166d27a5d084ee39687fb5f3a4c308281ced3475efbc318fe9d64fa0fa70",
+  "metadata_sha256": "817150a89d5aed299450eb6e3cdfd1a42d71fdc37f75889eff452f6d6373a958",
+  "metadata_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\test_tst_sequence_metadata_L10.csv",
+  "n_sequences": 38078,
+  "n_episodes": 752,
+  "class_episode_counts": {
+    "GNSS_SPOOFING": 125,
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 122,
+    "NORMAL": 130,
+    "RF_LINK_JAMMING": 125,
+    "TELECOMMAND_REPLAY": 127,
+    "UNAUTHORIZED_TELECOMMAND_INJECTION": 123
+  },
+  "finished_utc": "2026-10-04T10:26:17.912266+00:00",
+  "output_sha256": {
+    "analysis_summary.md": "1f0f8b7b6d1544222f4642e5ffa08d1b368593a7ba8b864cf856247e48ab70ad",
+    "bootstrap_distribution.npz": "a5ffcaefc89e4c2cc50cc27456c5b3245b123e63db2d3aac6e69a78cdc775978",
+    "episode_inventory.csv": "b1af1536dd70e328ac12c37bb5f75b23b4bacc1200c06623b63a2b1f4c256bff",
+    "input_audit.csv": "f0cc4adcb8d801192b37c6232d742fb31e05b6e7d30bc0d0dc32d60f9bd4ce8f",
+    "metrics_by_seed.csv": "d341ae0f73599243c7a2b90515013f4e4355b504d17ab6d92a6d4902ee4a1f09",
+    "model_summary.csv": "775bbf6a75e209bf7a9f30fe8516138cc9139617665232b86395c9242e469560",
+    "paired_comparisons.csv": "ee87ae8719e6f59dad8a1307729acf5960410fec9a5e7395aba4a9ece7296155",
+    "protocol.json": "f983166d27a5d084ee39687fb5f3a4c308281ced3475efbc318fe9d64fa0fa70",
+    "seed_average_row_normalized_confusion.csv": "5a1dc169a944dec9e38d0825efe6f9afdaa1215d96e8f461ef8174326017deaf"
+  }
+}

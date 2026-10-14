@@ -1,0 +1,19 @@
+{
+  "B_reference": {
+    "rows": 49152,
+    "matching_rows": 15070
+  },
+  "B_mild": {
+    "rows": 49152,
+    "matching_rows": 8476
+  },
+  "B_moderate": {
+    "rows": 49152,
+    "matching_rows": 3142
+  },
+  "B_severe": {
+    "rows": 49152,
+    "matching_rows": 807
+  },
+  "scope": "64-bit hashes of 22-field vectors only; descriptive finite-vocabulary overlap; no row removal or independence proof"
+}

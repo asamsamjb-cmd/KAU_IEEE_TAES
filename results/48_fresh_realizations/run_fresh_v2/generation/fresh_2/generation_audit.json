@@ -1,0 +1,46 @@
+{
+  "name": "fresh_2",
+  "maker_seeds": [
+    2037888509,
+    1965495612,
+    1124197177,
+    3567231910,
+    176531115,
+    825907856
+  ],
+  "split_seed": 1814352162,
+  "original_replay_passed": false,
+  "population": {
+    "train": {
+      "rows": 210550,
+      "episodes": 3520
+    },
+    "val": {
+      "rows": 44306,
+      "episodes": 755
+    },
+    "test": {
+      "rows": 45144,
+      "episodes": 752
+    }
+  },
+  "fresh_train_val_used_for_fitting_or_selection": false,
+  "filtering": false,
+  "observable_row_overlap": {
+    "original_train": {
+      "rows_matching": 42419,
+      "total_rows": 45144
+    },
+    "fresh_1_test": {
+      "rows_matching": 39657,
+      "total_rows": 45144
+    }
+  },
+  "endpoints": 38376,
+  "eligible_episodes": 752,
+  "effect_strata": {
+    "history_only_changed": 15641,
+    "no_observable_change": 12249,
+    "current_changed": 10486
+  }
+}

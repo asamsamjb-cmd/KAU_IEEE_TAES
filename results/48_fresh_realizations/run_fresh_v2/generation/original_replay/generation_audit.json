@@ -1,0 +1,29 @@
+{
+  "name": "original_replay",
+  "maker_seeds": [
+    42,
+    142,
+    242,
+    314,
+    442,
+    342
+  ],
+  "split_seed": 20260610,
+  "original_replay_passed": true,
+  "population": {
+    "train": {
+      "rows": 211006,
+      "episodes": 3511
+    },
+    "val": {
+      "rows": 44148,
+      "episodes": 753
+    },
+    "test": {
+      "rows": 44846,
+      "episodes": 752
+    }
+  },
+  "fresh_train_val_used_for_fitting_or_selection": false,
+  "filtering": false
+}

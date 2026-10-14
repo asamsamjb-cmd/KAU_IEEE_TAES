@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 773, in main
+    clean = clean_control(context, engine, out)
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 522, in clean_control
+    require(np.all(np.diff(seconds) == 1000000000), "Clean timestamps are not consecutive seconds")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 54, in require
+    raise ValueError(message)
+ValueError: Clean timestamps are not consecutive seconds

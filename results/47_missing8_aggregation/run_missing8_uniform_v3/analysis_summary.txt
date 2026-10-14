@@ -1,0 +1,11 @@
+Step 47 complete: uniform label-blind Missing-8; 3 masks, 50 trained heads + 3 probability controls.
+Validation-selected pooling family: MeanMax_MLP; EWMA alpha: 0.25.
+Primary contrast: TST minus selected pooling, Missing-8 mean over masks and head seeds.
+20,000 paired class-stratified episode bootstrap draws; fixed heads/masks, not seed resampling.
+95% CI containing zero is not equivalence. Seven-comparator Bonferroni intervals are also saved.
+Uniform all-row masking is separate from Step18/19 structured masking. Selected slots already UNK need not change.
+Post-mask projection diagnostics and a current-window classifier are supplied separately; no endpoint filtering in primary metrics.
+Clause-omission sensitivity uses identical masks, checkpoints and endpoints; literal UNK remains primary.
+Projection changes are privileged paired-nominal diagnostics, not model features, a bound or a proof of identifiability.
+One encoder is fixed throughout; encoder superiority and a unique need for temporal order are not tested here.
+No NOS3, Generator B, fresh realization or learned temporal-statistics head in this run.

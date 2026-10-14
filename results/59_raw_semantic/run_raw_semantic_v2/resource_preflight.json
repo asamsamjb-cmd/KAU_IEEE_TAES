@@ -1,0 +1,150 @@
+{
+  "memory_budget_gib": 8.0,
+  "scope": "Conservative four-matrix feature working estimate, not a hard total-process RAM cap; also allow RAM for source frames, learner internals and the OS",
+  "matrices": [
+    {
+      "representation": "Raw",
+      "length": 1,
+      "split": "train",
+      "rows": 211006,
+      "features": 174,
+      "estimated_working_gib": 1.0941935777664185
+    },
+    {
+      "representation": "Raw",
+      "length": 1,
+      "split": "val",
+      "rows": 44148,
+      "features": 174,
+      "estimated_working_gib": 0.22893404960632324
+    },
+    {
+      "representation": "Raw",
+      "length": 1,
+      "split": "test",
+      "rows": 44846,
+      "features": 174,
+      "estimated_working_gib": 0.2325536012649536
+    },
+    {
+      "representation": "Raw",
+      "length": 10,
+      "split": "train",
+      "rows": 179414,
+      "features": 870,
+      "estimated_working_gib": 4.651849865913391
+    },
+    {
+      "representation": "Raw",
+      "length": 10,
+      "split": "val",
+      "rows": 37371,
+      "features": 870,
+      "estimated_working_gib": 0.9689560532569885
+    },
+    {
+      "representation": "Raw",
+      "length": 10,
+      "split": "test",
+      "rows": 38078,
+      "features": 870,
+      "estimated_working_gib": 0.987287163734436
+    },
+    {
+      "representation": "RawScoped",
+      "length": 1,
+      "split": "train",
+      "rows": 211006,
+      "features": 178,
+      "estimated_working_gib": 1.1193474531173706
+    },
+    {
+      "representation": "RawScoped",
+      "length": 1,
+      "split": "val",
+      "rows": 44148,
+      "features": 178,
+      "estimated_working_gib": 0.23419690132141113
+    },
+    {
+      "representation": "RawScoped",
+      "length": 1,
+      "split": "test",
+      "rows": 44846,
+      "features": 178,
+      "estimated_working_gib": 0.23789966106414795
+    },
+    {
+      "representation": "RawScoped",
+      "length": 10,
+      "split": "train",
+      "rows": 179414,
+      "features": 890,
+      "estimated_working_gib": 4.7587889432907104
+    },
+    {
+      "representation": "RawScoped",
+      "length": 10,
+      "split": "val",
+      "rows": 37371,
+      "features": 890,
+      "estimated_working_gib": 0.9912309050559998
+    },
+    {
+      "representation": "RawScoped",
+      "length": 10,
+      "split": "test",
+      "rows": 38078,
+      "features": 890,
+      "estimated_working_gib": 1.0099834203720093
+    },
+    {
+      "representation": "Semantic22",
+      "length": 1,
+      "split": "train",
+      "rows": 211006,
+      "features": 176,
+      "estimated_working_gib": 1.1067705154418945
+    },
+    {
+      "representation": "Semantic22",
+      "length": 1,
+      "split": "val",
+      "rows": 44148,
+      "features": 176,
+      "estimated_working_gib": 0.2315654754638672
+    },
+    {
+      "representation": "Semantic22",
+      "length": 1,
+      "split": "test",
+      "rows": 44846,
+      "features": 176,
+      "estimated_working_gib": 0.23522663116455078
+    },
+    {
+      "representation": "Semantic22",
+      "length": 10,
+      "split": "train",
+      "rows": 179414,
+      "features": 880,
+      "estimated_working_gib": 4.705319404602051
+    },
+    {
+      "representation": "Semantic22",
+      "length": 10,
+      "split": "val",
+      "rows": 37371,
+      "features": 880,
+      "estimated_working_gib": 0.9800934791564941
+    },
+    {
+      "representation": "Semantic22",
+      "length": 10,
+      "split": "test",
+      "rows": 38078,
+      "features": 880,
+      "estimated_working_gib": 0.9986352920532227
+    }
+  ]
+}

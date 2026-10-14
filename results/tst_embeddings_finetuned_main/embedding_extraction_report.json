@@ -1,0 +1,268 @@
+{
+  "step": "9_extract_distilbert_embeddings",
+  "status": "COMPLETE",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+  "run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+  "input_sha256": {
+    "splits/train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+    "splits/val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+    "splits/test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+    "splits/label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+    "splits/episode_split_manifest.csv": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05"
+  },
+  "step8_model_sha256": {
+    "trained_distilbert_model/config.json": "64b9bbcd239e60e66c2e64802e8555112964cb86e71e9fdbcf023b72f5f778b0",
+    "trained_distilbert_model/label_mapping.json": "253649f289bdf8046aed8caeb3ef65e347af7038223a0f2ea2ee5b1d35f9e7ff",
+    "trained_distilbert_model/model.safetensors": "0792b13df30bed87dced1507a389cbd084558aa2fa3bdeb07299c3909b76464c",
+    "trained_distilbert_model/tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "trained_distilbert_model/tokenizer_config.json": "71cd48543bec670f50e0c9c3556df16b1f58ea720ead6a1b4675f08870c60b17",
+    "trained_distilbert_model/training_args.bin": "a4659c5ed492d23051158b76c31dec84b689475caaced9969fe0ce6d51a27643",
+    "trained_distilbert_model/training_provenance.json": "7c2b3bfa0996b59a79563f43c64bf29f2f829251ca950a0896e1cf1b2a7b221c"
+  },
+  "serializer_version": "observable22_fixed_order_is_v1",
+  "label_semantics": "supplied scenario/episode class; not instantaneous attack presence",
+  "input_order": "unchanged Step 7 CSV row order; embedding_row_index is split-local",
+  "extraction_rule": "eval + inference mode, no fitting, no normalization, all rows retained",
+  "downstream_rule": "Use the same encoder and endpoint set for TST, LSTM, and pooling comparisons.",
+  "source_model_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model",
+  "embedding_encoder_source": "finetuned",
+  "encoder_source_summary": {
+    "embedding_encoder_source": "finetuned",
+    "model_source": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model",
+    "tokenizer_source": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model",
+    "tokenizer_sha256": "e2a73874b67afe3161292f54d8d42fc17ce7d930587a9785c2a653a4b06d2d08",
+    "initializer_commit": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+    "representation_type": "supervised_finetuned_distilbert_cls",
+    "embedding_dim": 768,
+    "weight_updates": false,
+    "pooling": "last_hidden_state[:, 0, :]",
+    "normalization": "none"
+  },
+  "base_encoder_name": "distilbert-base-uncased",
+  "source_label_mapping": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\label_mapping.json",
+  "output_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main",
+  "random_seed": 20260610,
+  "observable_window_seconds": 1,
+  "tst_sequence_lengths": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "tst_temporal_context_seconds": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "step7_temporal_metadata": {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\label_mapping.json",
+    "observable_window_seconds": 1,
+    "tst_sequence_lengths": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "tst_temporal_context_seconds": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ]
+  },
+  "split_temporal_summaries": {
+    "train": {
+      "split": "train",
+      "episode_count": 3511,
+      "min_episode_length_rows": 2,
+      "mean_episode_length_rows": 60.09854742238679,
+      "max_episode_length_rows": 140,
+      "mean_episode_duration_seconds": 60.09854742238679,
+      "timestamp_spacing_seconds": 1
+    },
+    "val": {
+      "split": "val",
+      "episode_count": 753,
+      "min_episode_length_rows": 20,
+      "mean_episode_length_rows": 58.62948207171315,
+      "max_episode_length_rows": 140,
+      "mean_episode_duration_seconds": 58.62948207171315,
+      "timestamp_spacing_seconds": 1
+    },
+    "test": {
+      "split": "test",
+      "episode_count": 752,
+      "min_episode_length_rows": 16,
+      "mean_episode_length_rows": 59.63563829787234,
+      "max_episode_length_rows": 140,
+      "mean_episode_duration_seconds": 59.63563829787234,
+      "timestamp_spacing_seconds": 1
+    }
+  },
+  "label_distribution_summary": {
+    "total_rows": 300000,
+    "expected_total_rows": 300000,
+    "expected_rows_per_class": 50000,
+    "label_distribution": {
+      "NORMAL": 50000,
+      "RF_LINK_JAMMING": 50000,
+      "GNSS_SPOOFING": 50000,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 50000,
+      "TELECOMMAND_REPLAY": 50000,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 50000
+    }
+  },
+  "device": "cuda",
+  "batch_size": 64,
+  "num_workers": 0,
+  "use_fp16_inference": false,
+  "embedding_dim": 768,
+  "embedding_dtype": "float32",
+  "save_compressed_npz": true,
+  "max_length": 256,
+  "metadata_fields": [
+    "scenario_id",
+    "episode_id",
+    "episode_type",
+    "episode_step",
+    "window_id",
+    "timestamp",
+    "label"
+  ],
+  "observable_fields": [
+    "observation_stage",
+    "path_type",
+    "direction",
+    "source_role",
+    "destination_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "service_context",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "label_order": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "label_to_id": {
+    "NORMAL": 0,
+    "RF_LINK_JAMMING": 1,
+    "GNSS_SPOOFING": 2,
+    "UNAUTHORIZED_TELECOMMAND_INJECTION": 3,
+    "TELECOMMAND_REPLAY": 4,
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 5
+  },
+  "input_rule": "Serialize observable fields only. Metadata is preserved only in metadata CSV for episode-level TST sequence construction. Each metadata row corresponds to one 1-second observable window.",
+  "splits": {
+    "train": {
+      "split": "train",
+      "rows": 211006,
+      "serialization_matches_step8": true,
+      "max_tokens": 217,
+      "truncated_rows": 0,
+      "tokenizer_unk_rows": 0,
+      "embedding_shape": [
+        211006,
+        768
+      ],
+      "embedding_dtype": "float32",
+      "embedding_npz_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\train_window_embeddings.npz",
+      "metadata_csv_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\train_window_metadata.csv",
+      "label_distribution": {
+        "NORMAL": 35646,
+        "RF_LINK_JAMMING": 35372,
+        "GNSS_SPOOFING": 35657,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 35027,
+        "TELECOMMAND_REPLAY": 34274,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 35030
+      },
+      "batch_size": 64,
+      "max_length": 256,
+      "save_compressed_npz": true,
+      "alignment_check_passed": true,
+      "nan_count": 0,
+      "inf_count": 0
+    },
+    "val": {
+      "split": "val",
+      "rows": 44148,
+      "serialization_matches_step8": true,
+      "max_tokens": 217,
+      "truncated_rows": 0,
+      "tokenizer_unk_rows": 0,
+      "embedding_shape": [
+        44148,
+        768
+      ],
+      "embedding_dtype": "float32",
+      "embedding_npz_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\val_window_embeddings.npz",
+      "metadata_csv_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\val_window_metadata.csv",
+      "label_distribution": {
+        "NORMAL": 7422,
+        "RF_LINK_JAMMING": 7038,
+        "GNSS_SPOOFING": 7042,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 7141,
+        "TELECOMMAND_REPLAY": 7825,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7680
+      },
+      "batch_size": 64,
+      "max_length": 256,
+      "save_compressed_npz": true,
+      "alignment_check_passed": true,
+      "nan_count": 0,
+      "inf_count": 0
+    },
+    "test": {
+      "split": "test",
+      "rows": 44846,
+      "serialization_matches_step8": true,
+      "max_tokens": 217,
+      "truncated_rows": 0,
+      "tokenizer_unk_rows": 0,
+      "embedding_shape": [
+        44846,
+        768
+      ],
+      "embedding_dtype": "float32",
+      "embedding_npz_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\test_window_embeddings.npz",
+      "metadata_csv_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\test_window_metadata.csv",
+      "label_distribution": {
+        "NORMAL": 6932,
+        "RF_LINK_JAMMING": 7590,
+        "GNSS_SPOOFING": 7301,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 7832,
+        "TELECOMMAND_REPLAY": 7901,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7290
+      },
+      "batch_size": 64,
+      "max_length": 256,
+      "save_compressed_npz": true,
+      "alignment_check_passed": true,
+      "nan_count": 0,
+      "inf_count": 0
+    }
+  }
+}

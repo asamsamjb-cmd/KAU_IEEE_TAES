@@ -1,0 +1,16 @@
+{
+  "split": "val",
+  "common_endpoints": 29841,
+  "note": "Nondeployable descriptive paired-nominal change; not a bound, model input or selection target.",
+  "attack_labeled_endpoints": 24870,
+  "L10_in_context_change_attack": 21549,
+  "L20_in_context_change_attack": 23281,
+  "L20_additional_evidence_attack": 1732,
+  "L10_coverage_attack": 0.866465621230398,
+  "L20_coverage_attack": 0.9361077603538399,
+  "L20_additional_coverage_attack": 0.0696421391234419,
+  "endpoint_sha256": "848fe202527e9f4e6716df216cc1dadae841f88e7467be9a68db4ebfe8561fea",
+  "L10_nondeployable_reference_macro_f1": 0.8986964883359251,
+  "L20_nondeployable_reference_macro_f1": 0.9500869013734428,
+  "episodes": 753
+}

@@ -1,0 +1,384 @@
+{
+  "status": "COMPLETED",
+  "lengths": [
+    1,
+    10
+  ],
+  "selection": "zero observable projection differences in every window of the original context",
+  "features": [
+    "observation_stage",
+    "path_type",
+    "direction",
+    "source_role",
+    "destination_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "service_context",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "fit_split": "train",
+  "results": {
+    "1": {
+      "fit": {
+        "status": "COMPLETED",
+        "features": "22 field/value token counts over original contiguous windows; no metadata or flags",
+        "fit_split": "train",
+        "vocabulary_fit_split": "train",
+        "train_rows": 158301,
+        "train_class_support": {
+          "NORMAL": 35646,
+          "RF_LINK_JAMMING": 25389,
+          "GNSS_SPOOFING": 10993,
+          "UNAUTHORIZED_TELECOMMAND_INJECTION": 26950,
+          "TELECOMMAND_REPLAY": 29088,
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 30235
+        },
+        "C": 1.0,
+        "max_iter": 1000,
+        "solver": "lbfgs",
+        "seed": 20260610,
+        "sklearn_version": "1.9.0",
+        "warnings": [],
+        "iterations": [
+          177
+        ],
+        "test_or_val_used_for_fit_or_selection": false
+      },
+      "splits": {
+        "val": {
+          "rows": 33398,
+          "class_support": {
+            "NORMAL": 7422,
+            "RF_LINK_JAMMING": 5083,
+            "GNSS_SPOOFING": 2099,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 5468,
+            "TELECOMMAND_REPLAY": 6708,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 6618
+          },
+          "absent_true_labels": [],
+          "status": "COMPLETED",
+          "accuracy": 0.221240792861848,
+          "macro_f1": 0.13005044947842917,
+          "balanced_accuracy_six_class_macro_recall": 0.1786530830730153,
+          "per_class": {
+            "NORMAL": {
+              "precision": 0.23548402411812183,
+              "recall": 0.6682834815413635,
+              "f1": 0.34825346673687907,
+              "support": 7422
+            },
+            "RF_LINK_JAMMING": {
+              "precision": 0.2222222222222222,
+              "recall": 0.0011804052724768838,
+              "f1": 0.0023483365949119373,
+              "support": 5083
+            },
+            "GNSS_SPOOFING": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 2099
+            },
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+              "precision": 0.18928220255653885,
+              "recall": 0.2112289685442575,
+              "f1": 0.1996542783059637,
+              "support": 5468
+            },
+            "TELECOMMAND_REPLAY": {
+              "precision": 0.2081447963800905,
+              "recall": 0.027429934406678593,
+              "f1": 0.04847207586933614,
+              "support": 6708
+            },
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+              "precision": 0.2036828260052612,
+              "recall": 0.1637957086733152,
+              "f1": 0.18157453936348408,
+              "support": 6618
+            }
+          },
+          "normal_recall": 0.6682834815413635,
+          "normal_prediction_fraction": 0.6306665069764656,
+          "prior_references": {
+            "references": {
+              "uniform_independent_random": {
+                "population_limit_macro_f1": 0.1615433328700697,
+                "expected_accuracy": 0.16666666666666666
+              },
+              "train_prior_independent_random": {
+                "population_limit_macro_f1": 0.16653482046827395,
+                "expected_accuracy": 0.18144180205878072
+              }
+            },
+            "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+          },
+          "unknown_token_occurrences": 0,
+          "total_token_occurrences": 734756
+        },
+        "test": {
+          "rows": 33729,
+          "class_support": {
+            "NORMAL": 6932,
+            "RF_LINK_JAMMING": 5416,
+            "GNSS_SPOOFING": 2305,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 6056,
+            "TELECOMMAND_REPLAY": 6753,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 6267
+          },
+          "absent_true_labels": [],
+          "status": "COMPLETED",
+          "accuracy": 0.21198375285362744,
+          "macro_f1": 0.12735058281599865,
+          "balanced_accuracy_six_class_macro_recall": 0.17911943350421775,
+          "per_class": {
+            "NORMAL": {
+              "precision": 0.2201457229371688,
+              "recall": 0.6712348528563186,
+              "f1": 0.3315519452757589,
+              "support": 6932
+            },
+            "RF_LINK_JAMMING": {
+              "precision": 0.125,
+              "recall": 0.00036927621861152144,
+              "f1": 0.0007363770250368188,
+              "support": 5416
+            },
+            "GNSS_SPOOFING": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 2305
+            },
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+              "precision": 0.20247469066366705,
+              "recall": 0.20805812417437253,
+              "f1": 0.20522843879794772,
+              "support": 6056
+            },
+            "TELECOMMAND_REPLAY": {
+              "precision": 0.19487750556792874,
+              "recall": 0.025914408411076558,
+              "f1": 0.04574565416285453,
+              "support": 6753
+            },
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+              "precision": 0.1942815249266862,
+              "recall": 0.1691399393649274,
+              "f1": 0.1808410816343939,
+              "support": 6267
+            }
+          },
+          "normal_recall": 0.6712348528563186,
+          "normal_prediction_fraction": 0.6266417622817161,
+          "prior_references": {
+            "references": {
+              "uniform_independent_random": {
+                "population_limit_macro_f1": 0.16250863202426635,
+                "expected_accuracy": 0.16666666666666666
+              },
+              "train_prior_independent_random": {
+                "population_limit_macro_f1": 0.16650574814428687,
+                "expected_accuracy": 0.17962294416152969
+              }
+            },
+            "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+          },
+          "unknown_token_occurrences": 0,
+          "total_token_occurrences": 742038
+        }
+      }
+    },
+    "10": {
+      "fit": {
+        "status": "COMPLETED_WITH_WARNINGS",
+        "features": "22 field/value token counts over original contiguous windows; no metadata or flags",
+        "fit_split": "train",
+        "vocabulary_fit_split": "train",
+        "train_rows": 56337,
+        "train_class_support": {
+          "NORMAL": 30210,
+          "RF_LINK_JAMMING": 6392,
+          "GNSS_SPOOFING": 940,
+          "UNAUTHORIZED_TELECOMMAND_INJECTION": 2586,
+          "TELECOMMAND_REPLAY": 7826,
+          "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 8383
+        },
+        "C": 1.0,
+        "max_iter": 1000,
+        "solver": "lbfgs",
+        "seed": 20260610,
+        "sklearn_version": "1.9.0",
+        "warnings": [
+          {
+            "category": "ConvergenceWarning",
+            "message": "lbfgs failed to converge after 1000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+          }
+        ],
+        "iterations": [
+          1000
+        ],
+        "test_or_val_used_for_fit_or_selection": false
+      },
+      "splits": {
+        "val": {
+          "rows": 11985,
+          "class_support": {
+            "NORMAL": 6261,
+            "RF_LINK_JAMMING": 1333,
+            "GNSS_SPOOFING": 158,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 449,
+            "TELECOMMAND_REPLAY": 1964,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 1820
+          },
+          "absent_true_labels": [],
+          "status": "COMPLETED",
+          "accuracy": 0.5224030037546934,
+          "macro_f1": 0.1227483277885565,
+          "balanced_accuracy_six_class_macro_recall": 0.17028464543311436,
+          "per_class": {
+            "NORMAL": {
+              "precision": 0.5236775818639798,
+              "recall": 0.996166746526114,
+              "f1": 0.6864784546805349,
+              "support": 6261
+            },
+            "RF_LINK_JAMMING": {
+              "precision": 0.42857142857142855,
+              "recall": 0.00900225056264066,
+              "f1": 0.01763409257898604,
+              "support": 1333
+            },
+            "GNSS_SPOOFING": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 158
+            },
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+              "precision": 0.5454545454545454,
+              "recall": 0.013363028953229399,
+              "f1": 0.02608695652173913,
+              "support": 449
+            },
+            "TELECOMMAND_REPLAY": {
+              "precision": 0.23076923076923078,
+              "recall": 0.0015274949083503055,
+              "f1": 0.0030349013657056147,
+              "support": 1964
+            },
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+              "precision": 0.13043478260869565,
+              "recall": 0.0016483516483516484,
+              "f1": 0.0032555615843733042,
+              "support": 1820
+            }
+          },
+          "normal_recall": 0.996166746526114,
+          "normal_prediction_fraction": 0.9937421777221527,
+          "prior_references": {
+            "references": {
+              "uniform_independent_random": {
+                "population_limit_macro_f1": 0.13265111914236086,
+                "expected_accuracy": 0.16666666666666666
+              },
+              "train_prior_independent_random": {
+                "population_limit_macro_f1": 0.1663703209532584,
+                "expected_accuracy": 0.3400513370174179
+              }
+            },
+            "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+          },
+          "unknown_token_occurrences": 0,
+          "total_token_occurrences": 2636700
+        },
+        "test": {
+          "rows": 11101,
+          "class_support": {
+            "NORMAL": 5762,
+            "RF_LINK_JAMMING": 1175,
+            "GNSS_SPOOFING": 196,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 622,
+            "TELECOMMAND_REPLAY": 1752,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 1594
+          },
+          "absent_true_labels": [],
+          "status": "COMPLETED",
+          "accuracy": 0.5172506981353031,
+          "macro_f1": 0.11676800502890979,
+          "balanced_accuracy_six_class_macro_recall": 0.1672400313727526,
+          "per_class": {
+            "NORMAL": {
+              "precision": 0.5192638926661227,
+              "recall": 0.9940992710864284,
+              "f1": 0.6821890073244804,
+              "support": 5762
+            },
+            "RF_LINK_JAMMING": {
+              "precision": 0.21428571428571427,
+              "recall": 0.002553191489361702,
+              "f1": 0.005046257359125316,
+              "support": 1175
+            },
+            "GNSS_SPOOFING": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 196
+            },
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 622
+            },
+            "TELECOMMAND_REPLAY": {
+              "precision": 0.09090909090909091,
+              "recall": 0.001141552511415525,
+              "f1": 0.002254791431792559,
+              "support": 1752
+            },
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+              "precision": 0.36,
+              "recall": 0.0056461731493099125,
+              "f1": 0.011117974058060531,
+              "support": 1594
+            }
+          },
+          "normal_recall": 0.9940992710864284,
+          "normal_prediction_fraction": 0.9936942617782182,
+          "prior_references": {
+            "references": {
+              "uniform_independent_random": {
+                "population_limit_macro_f1": 0.13566277560365275,
+                "expected_accuracy": 0.16666666666666666
+              },
+              "train_prior_independent_random": {
+                "population_limit_macro_f1": 0.16642700700145183,
+                "expected_accuracy": 0.33650144396190984
+              }
+            },
+            "note": "Population-limit F1 references, not exact finite-sample expected F1 or uncertainty intervals. Macro-F1 is not universally 1/6 when class proportions differ."
+          },
+          "unknown_token_occurrences": 0,
+          "total_token_occurrences": 2442220
+        }
+      }
+    }
+  },
+  "score_based_pass_fail_threshold": null,
+  "interpretation": "A residual-signature diagnostic, not an attack detector or independence test. No projection change does not imply no class information. Conditioning on no change can select different contexts by attack class/target; class priors and episode dependence matter. No oracle bound, universal chance threshold, or seed-regeneration rule is inferred. Main evaluation populations and supplied scenario labels are unchanged."
+}

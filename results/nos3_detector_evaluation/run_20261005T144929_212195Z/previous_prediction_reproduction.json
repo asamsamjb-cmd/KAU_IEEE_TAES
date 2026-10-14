@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "predictions_checked": 120,
+  "identical_decisions": true,
+  "max_abs_probability_difference": 0.0,
+  "atol": 0.0001,
+  "rtol": 0.0001
+}

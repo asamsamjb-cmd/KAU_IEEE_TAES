@@ -1,0 +1,19 @@
+{
+  "identity": "e4cb3883a79820c1db4d584342e1ba37e84c72f172d7d4aa7cf68060fdd87350",
+  "contract": "af94fcf103dab9c5d9049fa54508dff71803a15bbf486126885cce46af7aeec9",
+  "result": {
+    "draws": 20000,
+    "seed": 2026101402,
+    "clusters": 150
+  },
+  "completed_at_utc": "2026-10-09T08:29:44.276468+00:00",
+  "artifact_sha256": {
+    "block_confusions.npz": "bdb2e6a76e462f49b929bb9d07f6c3daa832363d3e9df6b4555c0c1e39638946",
+    "bootstrap_distribution.npz": "426191836edab9d7bb8663c80f3ddfa290c3931c839094a9275fc78ba35c9dc2",
+    "model_summary.csv": "c6cc6f22d457dd2219e4c5c3e8acd4688eafa01c0309d059e9f59698a33c98e2",
+    "paired_stress_changes.csv": "7ef109349707d64fe8f7b4a9a5ff2bf6c0bee7051393b5536eeed8804c53d10c",
+    "per_class_f1.csv": "73cd8537da69a13704b7ce3740c9be6d007956fe7e43aed177904db3b58233b6",
+    "projection_change_diagnostics.csv": "af9dbb62215b01195dac35effc224a7f148495415fb3cba149ef2468cce39028",
+    "TST_paired_comparisons.csv": "c396d7cd3f6b1688c06b1bd820bc49d9c6dcb20865107d27ec0ff9ba693132f6"
+  }
+}

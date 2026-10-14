@@ -1,0 +1,56 @@
+{
+  "train": {
+    "rows": 211006,
+    "episodes": 3511,
+    "derived_l10_sequences": 179414,
+    "class_rows": {
+      "GNSS_SPOOFING": 35657,
+      "NORMAL": 35646,
+      "RF_LINK_JAMMING": 35372,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 35030,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 35027,
+      "TELECOMMAND_REPLAY": 34274
+    },
+    "step9_alignment": {
+      "alignment": "PASS",
+      "keys": [
+        "episode_id",
+        "episode_step",
+        "window_id"
+      ],
+      "rows_reordered": false
+    },
+    "exact_step8_serialization": true
+  },
+  "val": {
+    "rows": 44148,
+    "episodes": 753,
+    "derived_l10_sequences": 37371,
+    "class_rows": {
+      "TELECOMMAND_REPLAY": 7825,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7680,
+      "NORMAL": 7422,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 7141,
+      "GNSS_SPOOFING": 7042,
+      "RF_LINK_JAMMING": 7038
+    },
+    "step9_alignment": {
+      "alignment": "PASS",
+      "keys": [
+        "episode_id",
+        "episode_step",
+        "window_id"
+      ],
+      "rows_reordered": false
+    },
+    "exact_step8_serialization": true
+  },
+  "reserved_test": {
+    "raw_rows_declared": 44846,
+    "raw_episodes": 752,
+    "L10_eligible_episodes": 752,
+    "common_L10_endpoints_declared": 38078,
+    "contents_independently_read_or_verified": false,
+    "source": "Step 7 episode inventory and recorded split hash"
+  }
+}

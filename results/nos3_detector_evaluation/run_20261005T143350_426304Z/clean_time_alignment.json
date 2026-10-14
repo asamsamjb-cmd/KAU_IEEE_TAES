@@ -1,0 +1,149 @@
+{
+  "pandas_version": "3.0.3",
+  "checks": [
+    {
+      "context": "Clean L10 sequence 0, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:01:52+00:00",
+      "last_timestamp": "2026-01-01 00:02:01+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 1, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:01:53+00:00",
+      "last_timestamp": "2026-01-01 00:02:02+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 2, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:01:54+00:00",
+      "last_timestamp": "2026-01-01 00:02:03+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 3, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:01:55+00:00",
+      "last_timestamp": "2026-01-01 00:02:04+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 4, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:01:56+00:00",
+      "last_timestamp": "2026-01-01 00:02:05+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 5, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:01:57+00:00",
+      "last_timestamp": "2026-01-01 00:02:06+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 6, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:01:58+00:00",
+      "last_timestamp": "2026-01-01 00:02:07+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 7, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:01:59+00:00",
+      "last_timestamp": "2026-01-01 00:02:08+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 8, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:02:00+00:00",
+      "last_timestamp": "2026-01-01 00:02:09+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 9, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:02:01+00:00",
+      "last_timestamp": "2026-01-01 00:02:10+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 10, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:02:02+00:00",
+      "last_timestamp": "2026-01-01 00:02:11+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 11, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:02:03+00:00",
+      "last_timestamp": "2026-01-01 00:02:12+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 12, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:02:04+00:00",
+      "last_timestamp": "2026-01-01 00:02:13+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 13, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:02:05+00:00",
+      "last_timestamp": "2026-01-01 00:02:14+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 14, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:02:06+00:00",
+      "last_timestamp": "2026-01-01 00:02:15+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    },
+    {
+      "context": "Clean L10 sequence 15, episode GNSSSPF_EP_00002",
+      "parsed_dtype": "datetime64[us, UTC]",
+      "timestamp_count": 10,
+      "first_timestamp": "2026-01-01 00:02:07+00:00",
+      "last_timestamp": "2026-01-01 00:02:16+00:00",
+      "interval": "Exactly one second",
+      "status": "PASS"
+    }
+  ]
+}

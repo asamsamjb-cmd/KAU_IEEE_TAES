@@ -1,0 +1,27 @@
+{
+  "identity": "f44a10c0932f1cc7bcb3c309d345d020c12de480c60d9874c37a908f8ce5fc38",
+  "contract": "6cd463ff1327f0952a5c05dc415fc982fa2d36bc9b30930edecfafcdff04e6b8",
+  "result": {
+    "B_reference": {
+      "rows": 49152,
+      "matching_rows": 15070
+    },
+    "B_mild": {
+      "rows": 49152,
+      "matching_rows": 8476
+    },
+    "B_moderate": {
+      "rows": 49152,
+      "matching_rows": 3142
+    },
+    "B_severe": {
+      "rows": 49152,
+      "matching_rows": 807
+    },
+    "scope": "64-bit hashes of 22-field vectors only; descriptive finite-vocabulary overlap; no row removal or independence proof"
+  },
+  "completed_at_utc": "2026-10-06T14:20:06.468590+00:00",
+  "artifact_sha256": {
+    "audit.json": "825a1fd95bbb4369359bcb5a2a05e46535feb78f3290e4d1744c094fe0647f78"
+  }
+}

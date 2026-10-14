@@ -1,0 +1,20 @@
+{
+  "train": {
+    "windows": 211006,
+    "episodes": 3511,
+    "common_endpoint_count": 179414,
+    "sorted_end_row_indices_sha256": "d05c6340c61c0bfb2dbea11b238a44bdbcda51613663d2b55ccccfd9c207a761"
+  },
+  "val": {
+    "windows": 44148,
+    "episodes": 753,
+    "common_endpoint_count": 37371,
+    "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2"
+  },
+  "test": {
+    "windows": 44846,
+    "episodes": 752,
+    "common_endpoint_count": 38078,
+    "sorted_end_row_indices_sha256": "98860cb9acd0348efe69583e7dce14c09f2b59c77c1a43b2a545065cd241098b"
+  }
+}

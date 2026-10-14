@@ -1,0 +1,7 @@
+{
+  "status": "FAILED",
+  "output_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\15_paired_episode_bootstrap\\run_20261004T102421_262622Z",
+  "protocol_sha256": "f56f794df27a3ac0caccb957aeccc8d4711deb261503b577c3d94fdaa22ed00a",
+  "error_type": "FileNotFoundError",
+  "error": "Need all 50 prediction CSVs and Step-10 metadata. Missing 1 file(s); no bootstrap performed:\nC:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260610\\L10\\predictions\\test_predictions_L10.csv"
+}

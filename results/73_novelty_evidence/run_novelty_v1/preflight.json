@@ -1,0 +1,24 @@
+{
+  "status": "PREFLIGHT_PASS",
+  "updated_at": "2026-10-09T12:33:02.224022+00:00",
+  "population": {
+    "train": {
+      "windows": 211006,
+      "endpoints_L10": 179414,
+      "episodes": 3511
+    },
+    "val": {
+      "windows": 44148,
+      "endpoints_L10": 37371,
+      "episodes": 753
+    },
+    "test": {
+      "windows": 44846,
+      "endpoints_L10": 38078,
+      "episodes": 752
+    }
+  },
+  "resource_matrix_count": 6,
+  "train_val_overlap_cells": 48,
+  "protocol_id": "4a13b3cbace9901bc7778e59b710786a8d1f1851ea3b77acdcfb81c1c54d13f9"
+}

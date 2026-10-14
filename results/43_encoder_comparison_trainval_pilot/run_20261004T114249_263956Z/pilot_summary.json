@@ -1,0 +1,31 @@
+[
+  {
+    "condition": "CategoricalEmbedding_MLP",
+    "candidate": "main",
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step43_protocol_identity": "77905b7b87e2cda6aabcd09f3e629677a5aee40f8c0e0717e2816f6b241f286c",
+    "encoder_seed": 20260928,
+    "tst_seed": 20260610,
+    "encoder_parameters": 290560,
+    "window_model_parameters": 885766,
+    "tst_parameters": 234758,
+    "window_val_macro_f1": 0.4102741869154524,
+    "window_val_count": 44148,
+    "window_val_common_macro_f1": 0.44049774769732414,
+    "common_val_count": 37371,
+    "l10_val_macro_f1": 0.8370016377354128,
+    "l10_val_count": 37371,
+    "temporal_delta_val_common_macro_f1": 0.39650389003808867,
+    "encoder_best_epoch": 7,
+    "encoder_epochs": 11,
+    "encoder_convergence": "PLATEAU_OBSERVED",
+    "tst_best_epoch": 14,
+    "tst_epochs": 21,
+    "tst_convergence": "PLATEAU_OBSERVED",
+    "encoder_training_seconds": 59.35561809997307,
+    "tst_training_seconds": 182.8054330999148,
+    "peak_gpu_bytes": 57864704,
+    "evaluation_precision": "float32",
+    "formal_experiment": false
+  }
+]

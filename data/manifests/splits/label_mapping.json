@@ -1,0 +1,76 @@
+{
+  "label_order": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "label_to_id": {
+    "NORMAL": 0,
+    "RF_LINK_JAMMING": 1,
+    "GNSS_SPOOFING": 2,
+    "UNAUTHORIZED_TELECOMMAND_INJECTION": 3,
+    "TELECOMMAND_REPLAY": 4,
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 5
+  },
+  "id_to_label": {
+    "0": "NORMAL",
+    "1": "RF_LINK_JAMMING",
+    "2": "GNSS_SPOOFING",
+    "3": "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "4": "TELECOMMAND_REPLAY",
+    "5": "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  },
+  "metadata_fields": [
+    "scenario_id",
+    "episode_id",
+    "episode_type",
+    "episode_step",
+    "window_id",
+    "timestamp",
+    "label"
+  ],
+  "observable_fields": [
+    "observation_stage",
+    "path_type",
+    "direction",
+    "source_role",
+    "destination_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "service_context",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "observable_window_seconds": 1,
+  "tst_sequence_lengths": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "tst_temporal_context_seconds": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "distilbert_input_rule": "Serialize OBSERVABLE_FIELDS only. Never serialize metadata/raw/split columns.",
+  "tst_sequence_rule": "Use episode-bounded sequence construction only. L maps directly to seconds because window_seconds=1."
+}

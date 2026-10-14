@@ -1,0 +1,124 @@
+[
+  {
+    "condition": "remove_context",
+    "rows": 44846,
+    "removed_fields": [
+      "observation_stage",
+      "path_type",
+      "direction",
+      "source_role",
+      "destination_role",
+      "protocol_context",
+      "operational_phase"
+    ],
+    "n_removed_fields": 7,
+    "masked_cells": 313922,
+    "newly_changed_cells": 313922,
+    "already_UNK_cells": 0,
+    "replacement": "UNK",
+    "all_records_masked": true,
+    "uses_label": false,
+    "retained_fields_and_metadata_unchanged": true,
+    "encoding": {
+      "rows": 44846,
+      "batch_size": 64,
+      "max_length": 256,
+      "precision": "FP32",
+      "dynamic_padding": true,
+      "serialization": "literal_UNK",
+      "max_token_length": 195,
+      "truncated_rows": 0,
+      "tokenizer_UNK_rows": 0
+    }
+  },
+  {
+    "condition": "remove_message",
+    "rows": 44846,
+    "removed_fields": [
+      "message_type",
+      "service_context",
+      "command_intent",
+      "payload_or_parameter_context",
+      "sequence_freshness_status",
+      "control_security_state"
+    ],
+    "n_removed_fields": 6,
+    "masked_cells": 269076,
+    "newly_changed_cells": 269076,
+    "already_UNK_cells": 0,
+    "replacement": "UNK",
+    "all_records_masked": true,
+    "uses_label": false,
+    "retained_fields_and_metadata_unchanged": true,
+    "encoding": {
+      "rows": 44846,
+      "batch_size": 64,
+      "max_length": 256,
+      "precision": "FP32",
+      "dynamic_padding": true,
+      "serialization": "literal_UNK",
+      "max_token_length": 202,
+      "truncated_rows": 0,
+      "tokenizer_UNK_rows": 0
+    }
+  },
+  {
+    "condition": "remove_receiver",
+    "rows": 44846,
+    "removed_fields": [
+      "signal_quality_state",
+      "tracking_stability",
+      "navigation_consistency",
+      "timing_consistency"
+    ],
+    "n_removed_fields": 4,
+    "masked_cells": 179384,
+    "newly_changed_cells": 179384,
+    "already_UNK_cells": 0,
+    "replacement": "UNK",
+    "all_records_masked": true,
+    "uses_label": false,
+    "retained_fields_and_metadata_unchanged": true,
+    "encoding": {
+      "rows": 44846,
+      "batch_size": 64,
+      "max_length": 256,
+      "precision": "FP32",
+      "dynamic_padding": true,
+      "serialization": "literal_UNK",
+      "max_token_length": 216,
+      "truncated_rows": 0,
+      "tokenizer_UNK_rows": 0
+    }
+  },
+  {
+    "condition": "remove_trace",
+    "rows": 44846,
+    "removed_fields": [
+      "decoder_status",
+      "command_execution_result",
+      "retry_timeout_state",
+      "session_state",
+      "state_transition_consistency"
+    ],
+    "n_removed_fields": 5,
+    "masked_cells": 224230,
+    "newly_changed_cells": 224230,
+    "already_UNK_cells": 0,
+    "replacement": "UNK",
+    "all_records_masked": true,
+    "uses_label": false,
+    "retained_fields_and_metadata_unchanged": true,
+    "encoding": {
+      "rows": 44846,
+      "batch_size": 64,
+      "max_length": 256,
+      "precision": "FP32",
+      "dynamic_padding": true,
+      "serialization": "literal_UNK",
+      "max_token_length": 213,
+      "truncated_rows": 0,
+      "tokenizer_UNK_rows": 0
+    }
+  }
+]

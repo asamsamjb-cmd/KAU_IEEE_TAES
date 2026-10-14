@@ -1,0 +1,78 @@
+{
+  "status": "GATES_PASSED",
+  "G1_input_hashes": "Step 27 checkpoints/cache/ZIP and Step 9 test embeddings matched their manifests",
+  "G2_step72_alignment": "records, window flags and L10 endpoints aligned; L10 and L20 blocks contiguous within episodes",
+  "G3_step72_reproduced": {
+    "rows": 40,
+    "tolerance": 1e-06
+  },
+  "G4_inference_canary": {
+    "status": "PASS",
+    "rows": [
+      {
+        "seed": 20260610,
+        "endpoints": 30561,
+        "decision_mismatches": 0,
+        "route": "step11_evaluate_model"
+      },
+      {
+        "seed": 20260611,
+        "endpoints": 30561,
+        "decision_mismatches": 0,
+        "route": "step11_evaluate_model"
+      },
+      {
+        "seed": 20260612,
+        "endpoints": 30561,
+        "decision_mismatches": 0,
+        "route": "step11_evaluate_model"
+      }
+    ]
+  },
+  "levels": {
+    "R100": {
+      "retention": 1.0,
+      "tst_below_reference_at_every_L": true,
+      "tst_monotone_nondecreasing_in_L": true,
+      "gain_L10_to_L20_tst": 0.054767217584477224,
+      "gain_L10_to_L20_reference": 0.05157681946865933,
+      "gain_L1_to_L20_tst": 0.4907045167345526,
+      "gain_L1_to_L20_reference": 0.4901297228985741,
+      "cohort_endpoints": 32028,
+      "cohort_episodes": 900
+    },
+    "R060": {
+      "retention": 0.6,
+      "tst_below_reference_at_every_L": false,
+      "tst_monotone_nondecreasing_in_L": true,
+      "gain_L10_to_L20_tst": 0.08627644549540403,
+      "gain_L10_to_L20_reference": 0.08573255621992903,
+      "gain_L1_to_L20_tst": 0.5506076989144892,
+      "gain_L1_to_L20_reference": 0.5772488343740618,
+      "cohort_endpoints": 32028,
+      "cohort_episodes": 900
+    },
+    "R035": {
+      "retention": 0.35,
+      "tst_below_reference_at_every_L": false,
+      "tst_monotone_nondecreasing_in_L": true,
+      "gain_L10_to_L20_tst": 0.11528618280488045,
+      "gain_L10_to_L20_reference": 0.11862538837608672,
+      "gain_L1_to_L20_tst": 0.538389105994636,
+      "gain_L1_to_L20_reference": 0.6009354412678046,
+      "cohort_endpoints": 32028,
+      "cohort_episodes": 900
+    },
+    "R020": {
+      "retention": 0.2,
+      "tst_below_reference_at_every_L": false,
+      "tst_monotone_nondecreasing_in_L": true,
+      "gain_L10_to_L20_tst": 0.13333257276146682,
+      "gain_L10_to_L20_reference": 0.14351744484764883,
+      "gain_L1_to_L20_tst": 0.4676170235272771,
+      "gain_L1_to_L20_reference": 0.5600508769733272,
+      "cohort_endpoints": 32028,
+      "cohort_episodes": 900
+    }
+  }
+}

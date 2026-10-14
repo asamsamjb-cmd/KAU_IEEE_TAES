@@ -1,0 +1,28 @@
+{
+  "identity": "abe6d339c84ee67ee1032cf74b04f3a003ddec0e558011856c6e2af16aa61cf6",
+  "contract": "f1a9ca52b77fb54f90084d9067ebc47d0d00e4ac398d5561040fe589d37244f0",
+  "result": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "torch": "2.12.0+cu126",
+    "transformers": "5.10.2",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "device_index": 0,
+    "threads": 8,
+    "interop_threads": 8,
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "float32_matmul_precision": "highest",
+    "deterministic_algorithms": false,
+    "startup_cudnn_deterministic": false,
+    "cublas_workspace_config": null,
+    "cudnn_benchmark": true
+  },
+  "completed_at_utc": "2026-10-07T01:36:39.279665+00:00",
+  "artifact_sha256": {
+    "training_runtime.json": "7305ed9d9bda0ee772a27b0b5c187bfcd8306c26cdf2092baa37d5f24421ac60"
+  }
+}

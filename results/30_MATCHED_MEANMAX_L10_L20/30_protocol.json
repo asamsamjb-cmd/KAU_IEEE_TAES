@@ -1,0 +1,31 @@
+{
+  "experiment": "taes_step30_matched_l10_l20_meanmax_v1",
+  "identity_hash": "de14da0de6c8e1d0f7fb861026c9e9ef795e986e30e3833be1ce964f2c2c003c",
+  "prior_context": "Step27 L20 Test was inspected before Step30 design; exploratory post-test extension.",
+  "hypothesis": "Additional context improves episode-scenario classification with an order-insensitive aggregator too.",
+  "input": "fine-tuned DistilBERT frozen CLS embeddings; mean+max concatenation",
+  "training_policy": "L10 and L20 use exactly the same L20-eligible train/validation endpoints",
+  "selected_models": "Both prespecified lengths and all three seeds; no best-length/seed cherry-picking",
+  "training_settings": {
+    "epochs": 30,
+    "patience": 7,
+    "batch_size": 256,
+    "lr": 7e-05,
+    "weight_decay": 0.0005,
+    "grad_clip": 1.0,
+    "hidden_dim": 256,
+    "mlp_layers": 2,
+    "dropout": 0.25,
+    "input_norm": true,
+    "standardization": false,
+    "label_smoothing": 0.03,
+    "amp": true,
+    "checkpoint_selection": "highest unperturbed validation six-class macro-F1",
+    "train_and_val_fit": "all L20 eligible endpoints",
+    "test_input_access": "test source files authenticated for cohort integrity; no new Test inference/scoring until explicit --final-test"
+  },
+  "test_policy": "No Test inference during training/validation; Test evaluated only by --final-test.",
+  "uncertainty": "Seed sample SD, not CI. No paired-bootstrap computed in Step30.",
+  "seed_note": "Head-seed numbers match as labels, not equal initializations or paired training.",
+  "scope": "Controlled generator-specific episode-scenario classification; not live attack onset detection."
+}

@@ -1,0 +1,52 @@
+{
+  "split": "val",
+  "num_head_seeds": 3,
+  "common_endpoints": 29841,
+  "common_episodes": 753,
+  "endpoint_sha256": "848fe202527e9f4e6716df216cc1dadae841f88e7467be9a68db4ebfe8561fea",
+  "evidence_availability": {
+    "split": "val",
+    "common_endpoints": 29841,
+    "note": "Nondeployable descriptive paired-nominal change; not a bound, model input or selection target.",
+    "attack_labeled_endpoints": 24870,
+    "L10_in_context_change_attack": 21549,
+    "L20_in_context_change_attack": 23281,
+    "L20_additional_evidence_attack": 1732,
+    "L10_coverage_attack": 0.866465621230398,
+    "L20_coverage_attack": 0.9361077603538399,
+    "L20_additional_coverage_attack": 0.0696421391234419,
+    "endpoint_sha256": "848fe202527e9f4e6716df216cc1dadae841f88e7467be9a68db4ebfe8561fea",
+    "L10_nondeployable_reference_macro_f1": 0.8986964883359251,
+    "L20_nondeployable_reference_macro_f1": 0.9500869013734428,
+    "episodes": 753
+  },
+  "statistical_scope": "Exploratory 3-seed mean/sample SD conditional on fixed dataset/encoder; NOT bootstrap CI.",
+  "limitations": [
+    "L10 and L20 training cohorts differ in early episode endpoints.",
+    "Identical numeric seed IDs do not guarantee paired parameter initializations.",
+    "No test-set-based selection is permitted by the pilot stage."
+  ],
+  "L10_macro_f1_mean": 0.8789443011318737,
+  "L10_macro_f1_sd": 0.00046799965974870524,
+  "L20_macro_f1_mean": 0.934605883013404,
+  "L20_macro_f1_sd": 6.361251226235936e-05,
+  "L10_accuracy_mean": 0.8679557208761994,
+  "L10_accuracy_sd": 0.0004189984547772195,
+  "L20_accuracy_mean": 0.9304536264423667,
+  "L20_accuracy_sd": 6.975858716082428e-05,
+  "L10_weighted_f1_mean": 0.8772539798173197,
+  "L10_weighted_f1_sd": 0.0004382482750822992,
+  "L20_weighted_f1_mean": 0.9335018471002621,
+  "L20_weighted_f1_sd": 5.1997852112450794e-05,
+  "delta_L20_minus_L10_mean": 0.05566158188153025,
+  "delta_L20_minus_L10_sd": 0.00044847631181575275,
+  "selected_head_seeds": [
+    20260610,
+    20260611,
+    20260612
+  ],
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "identity_hash": "34570f1987792581a535a8ff9ef6a2e09e35aef1f3f6061a4550dc37e87b32c3",
+  "created": "2026-10-12T16:04:32.188487+00:00",
+  "decision_rule": "Inspect validation only; separately decide whether to run --final-test."
+}

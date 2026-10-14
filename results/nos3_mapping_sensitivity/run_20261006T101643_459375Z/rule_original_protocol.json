@@ -1,0 +1,86 @@
+{
+  "version": "shared_nominal_v2_semantic_rules_v1",
+  "dataset_contract": {
+    "dataset_version": "shared_nominal_v2",
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "expected_counts": {
+      "train": [
+        211006,
+        3511,
+        179414
+      ],
+      "val": [
+        44148,
+        753,
+        37371
+      ],
+      "test": [
+        44846,
+        752,
+        38078
+      ]
+    },
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266"
+  },
+  "expected_counts": {
+    "train": [
+      211006,
+      3511,
+      179414
+    ],
+    "val": [
+      44148,
+      753,
+      37371
+    ],
+    "test": [
+      44846,
+      752,
+      38078
+    ]
+  },
+  "rule_spec_sha256": "7e9c25d84664ad5d2504960608f1770fc2922d2f28c687785bf914f4d6884754",
+  "available_observable_fields": [
+    "observation_stage",
+    "path_type",
+    "direction",
+    "source_role",
+    "destination_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "service_context",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "metadata_feature_use": false,
+  "test_access": "after_config_freeze_only",
+  "primary_population": "common L10 endpoints; stride 1; terminal-window labels",
+  "models": [
+    "Rule_L1",
+    "Rule_L10"
+  ],
+  "calibration_seed": null,
+  "uncertainty": "point estimates only; no bootstrap or seed duplication",
+  "design_provenance": "generator-informed semantic rules; latent generator values excluded",
+  "limitations": [
+    "heuristic baseline, not exhaustive rule optimization",
+    "L10 combines averaging and recurrence support",
+    "coarse recurrence is not packet identity",
+    "episode classification is not onset detection",
+    "synthetic performance is not operational validation"
+  ]
+}

@@ -1,0 +1,1152 @@
+{
+  "version": "step66_within_episode_evidence_transitions_v1",
+  "script_sha256": "715a232335d69565bb9e791307cd2ef61e6a035a92b303bf09d43bdeb1671c7c",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "source_step65_identity": "511ed4b92f91f723e280392182437f68245408bc4c2a2626bd8ba1e5239b04e5",
+  "source_step62_identity": "2586c25f0b1a16d8fcd50fe025d46396d6a7da322ecba7b119bc401f9c2b3fe8",
+  "source_input_sha256": {
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\run_manifest.json": "7f19933c67e7d2ee77b3fb6b90689659ef330582b59493b185ccdabc294f9a80",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\bootstrap_episode_components.npz": "c5a58e1ce8975814db5834517483d04d41f8ef4a223bf3d048b8e182717904c8",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\bootstrap_specifications.json": "9405e6cc1d396c83f5327d267bdd86fad3166fbd44845a317ab508fd6e7eaf18",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\classification_by_seed.csv": "d63f5eb9188ecb292c9c42819ce976c33c5e776ffad0fbca53002a2628b9c153",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_evidence_test.csv": "29ea8359c8255c9b8d13e4443f51902604b52dd223b152d8184d7c8e2507a9b5",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_predictions\\test_scores_20260610.npz": "d39205ddbb9f59b70501a1d498371054a96fe7321957b4f861e32b2a513c11e4",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_predictions\\test_scores_20260611.npz": "51d8fc965c32f4aa9e56a30a0bdf24ab874fde5b8e0e7fc184d415e6806d5f89",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_predictions\\test_scores_20260612.npz": "fe45c615020c9f617f86c16bbe8bf58a8408d174dcb4690bd221673f27c80d92",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_predictions\\test_scores_20260613.npz": "64a1bad4b5d0a2a3992e34f29800d2a637365fc71283d3f66e17c1bb3b3deb5b",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_predictions\\test_scores_20260614.npz": "222927cf948c2ac2d840a861304c91d066320345a2343dc111e88b1c577354ef",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_predictions\\test_scores_20260615.npz": "410b83d654349ad0f0f24b5ddc910fa003efc032b2e300014bb37ded11c314dc",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_predictions\\test_scores_20260616.npz": "8dfec26f0fc8e37548ecf0dcacd87c7f97b949f628bd360b93a4bef6a0c91b81",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_predictions\\test_scores_20260617.npz": "96300d2c56465325b424dbf8c0e8b10481ca15c279e80dcc993a2aaecd6fb303",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_predictions\\test_scores_20260618.npz": "7eb7c1fff0ee319d524814a527dba8dea9af90164191c7012b67db65d845e9c5",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\endpoint_predictions\\test_scores_20260619.npz": "30f27bafeca3c43359ddf3360b53a2b3acfa876734e746816b78451134bf3bb7",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\event_catalog_test.csv": "d1d5bb4f3a14ab09fe1eeb5a3c04fb0ef9084f23ac3a6fcb7072cc80246f1ab9",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\event_metrics_by_seed.csv": "bf73756c9c0e18925219a3d24f01d787aecb9d9fe41fac7d207510b8e529a04f",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\event_metrics_mean_heads.csv": "53efd1fc6fb140d88cc86fdd5a8857f3d92048335cd416f3edff32aaf749b720",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\events_by_seed\\seed_20260610.csv": "66a8e642774d36555686ca89a86f0ac49e2cb50f51a6956445ac8a6af374f890",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\events_by_seed\\seed_20260611.csv": "0bbee0bc5ed03be7a7f5278faf70a80f3674e0dd3d1e9c68b1b61812792f1c75",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\events_by_seed\\seed_20260612.csv": "d1df0b0483f51d0493e9d5ee42e4b92e155a7ec403e3854a58b8f872e49c4589",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\events_by_seed\\seed_20260613.csv": "706b483ab55551eba95f87c4daaddb3e0d1b529e184148f4f7634431b5e90985",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\events_by_seed\\seed_20260614.csv": "07d754929ddd6ff8e20b8aecd1690b77c1efbd82d25f3b400a99a5254d210ac5",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\events_by_seed\\seed_20260615.csv": "8a235dbe99c3289d21bd23e35f49af6486012c5436028ecdeb5cdd48d4c145bd",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\events_by_seed\\seed_20260616.csv": "eda159e98f09d31fc9ec56c9e496393a8269935b3dded564d8b2dba43e6058cd",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\events_by_seed\\seed_20260617.csv": "9cd65eb98ab881b06ec0d1f2c748b7b177f5163b94f739fd82533e9ce8581cd5",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\events_by_seed\\seed_20260618.csv": "aa1a728d2d1df58f8c2196b871b836a2814b95c368b7c112b9750e3ab85e939a",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\events_by_seed\\seed_20260619.csv": "c955e2987a8245cb45dd4a0aa736d902730bfdf7393f0d508f1815eff0f8be9d",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\input_audit.json": "245ddb6353844768a5970303b065f0c20f434e6f644d2c2e42c8455bc5afbc30",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\metric_intervals.csv": "01b6e1b373c5e5ae4792556db867d45c49ae2a28c083ff32a3df51ed65d9810c",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\metrics_by_seed.csv": "4445061a3654426b9a46d89aa0b3d425c999fe58202e28cb7ae5d241ff12f28f",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\normal_episode_results_by_seed.csv": "8e9f382e1a8c0f8fc1e34c2d3393da280daf633545619a749f4909dd5041b036",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\normal_metrics_by_seed.csv": "114b646a90fb47828a4fbfc1e56ad2d4d978a56888204673549738d2e0c31a16",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\normal_metrics_mean_heads.csv": "ecb4d596fe90b68e57bc442df1997ef7998be5ba379290b22f97dc7b3795fe85",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\paired_comparisons.csv": "be398738231b6d02bbc63fc009de3ed5d451d5590fc8aebb677a5544d39af7df",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\population_audit.csv": "618effdd99f88ed92ec70ffa2881c0673d0b0d37bd30add88a64b8a801c7542f",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_test_20260610.npz": "ad7bd024e46ccfd951eee8cb19f26e42cdf68bcfa7aff44f1833544a6a8e58bf",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_test_20260611.npz": "a9e6b92688c011a58fcdf170cb52d87045935f681dfbfa99e23a1e8b566c7eec",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_test_20260612.npz": "6654e0ce9f43d930f5e10b427f74d2ebe687bc0d73f9c0e06804df47bee784f2",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_test_20260613.npz": "2e343bdf9f9003edf1c969014bbd2c1bad9b909514ac2939e11fe448903ec0d4",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_test_20260614.npz": "c3f76cfc35fe0cc590abb2df36c0c338fd8783eafcc3fa1946a57fd821c3f60f",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_test_20260615.npz": "4cf687c08a3e8b6abbf30f2d14d9f08b58db8a273ecff54f8561457d6df7bb7a",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_test_20260616.npz": "9568579b57db3adfe875d02a74201bf5c144c2bdb4b056743cc8064f4e867c9f",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_test_20260617.npz": "4f50fb92c307097560a50deb29e05f342f2d2dd6ea7e937718357134b35b1c34",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_test_20260618.npz": "7ab92b22159984c38866a206938f9eaf6d7f465b5a46275924cf60a7e5bc86fc",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_test_20260619.npz": "f2134104e7406c67e182295166a28f1b529f86c5f19ae2ac373fef90449f1ab5",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_val_20260610.npz": "51dd99160f26e5475d16b14b70cd69e2a5c823587b6069ddf10e4a14908ed0dd",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_val_20260611.npz": "fa18d1e048d71991b2c8e6383b0a0992e1c1aff0be069aea270b4c88961ded1a",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_val_20260612.npz": "0ae7b92014934767c87e8135141d396285f9ff87bb1aa9ead9c34dd108f647dd",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_val_20260613.npz": "942fa4047fe6f1740d95c0e5c431b8bf5513066c0e88981bc835477346377695",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_val_20260614.npz": "77d970e76dbee41547d9a123d684756d68bfa6796f5b60f72b03f0991ad08a42",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_val_20260615.npz": "97547692f21bc57b510b0220c9caa84d806e2689bc08a74f7b6f9e0bd30c3471",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_val_20260616.npz": "64d1429f0dc43b79d13ca674f5d0612932636dece6b16f559a37a7c02dfb1aaf",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_val_20260617.npz": "17ca11ce59feda6c6f4a1595a3dec406000d146d1cfb41b24c9f981ce8276947",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_val_20260618.npz": "a9185ec2b96b1a19239646baf91c322dda2e47721e8cc0ee14646f98e013ce47",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\prefix_predictions\\prefix_val_20260619.npz": "213e26e44eed89280d1ae1c1b6178dcbd38e621cb468dc9509aa413f50923998",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\primary_bootstrap_samples.npz": "13ae1bf30b1f09f4770cb6dc68219a667d64feb55372cddc627ada25d3df1f8c",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\primary_comparisons.csv": "aeaed4eff3838cbb64f570f74aa3aff3e8c5297f8d284e96e965fefc1f93b369",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\protocol.json": "9e725e776ceb01327257e9fdf2288ddabab3eae1d2ae01eacf84cd2fe2e3c3d1",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\source\\11.train_tst_classifier.py": "a2101c08cfecbd6af80975195a1bfde265462c0e7939c15ec06ca8d2e4d3967d",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\source\\62.temporal_information_control.py": "b5095475f0ff9aedd0b9797b24e39636041c0d20e914cf2d7a98fd9eab56cb81",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\source\\63.temporal_evidence_analysis.py": "29a8d528634f30b355584e31d82dce0fc522b227862f0b6051bfeb0d0a4d7681",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\source\\64.alarm_delay_evaluation.py": "0c698e566ab736fbec1a0143b0bc49b66273258eea0f064f10f7ec09658b7444",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\source\\65.alarm_memory_controls.py": "2d55e4da2748fb26959fdbbc9d7c86240feabc5011bfd6caf61533e3cc7895c5",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\calibration.json": "3bc3a46548e941e187741c6d8a237d7b0e2d304c4e283bd15a16f2f77cb1d7d4",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_test_20260610.json": "a5ee3e39ffdd45dabcadb85a2462dfc3dcacc054e0905ccf2e2bb4c2065c670f",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_test_20260611.json": "46d349601c3500e97a08ab655c79a36e8beb96f02347c4bd57ee6167c71eb222",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_test_20260612.json": "20a025753943a93d6f6fcc5f0369adb657b2e0726fbf9dc21acee4f5821d9bfa",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_test_20260613.json": "268636f841f234eb5d7f297cbf7c0e72baa81b44b32e8d1dbd0808d421c1373c",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_test_20260614.json": "6a21a5811c5ecaa58ce5006fb94e445b1906774abece75d9ac68a531f8d3158a",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_test_20260615.json": "59db6ff9a8e17ba9c6840783567cc00f97834aa61cfe9fda9669f2c08565fe53",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_test_20260616.json": "f37b02c7ecfbe1e14298e1366bcc836bcc23b2a65998b7e1d8e5fac75bf6a6e1",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_test_20260617.json": "e475a18a30d23f45e5ddaae66bb9f4e19e1fa2a487a1f3e2dc4270aad51773a7",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_test_20260618.json": "d4aa3b2062fd3e10d776b00e8c3be9ed9f873e0623afeab9101997abd2ba695b",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_test_20260619.json": "73edbb35896a1c7de209e479f032029ecf0e9cecdfbc4a9624d636db1766c856",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_val_20260610.json": "4d46ce2e78487a21e5810ff48b544c883f1755fd25c69d84a2547e6b729129f9",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_val_20260611.json": "654a4d35c3df10ea737a5640e702fb0e87f3c351f710197e3c265dc97576e139",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_val_20260612.json": "71a3c8bfb43d6017066a0d93a092c7368509ef20ae505b8762d9fc9622345d96",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_val_20260613.json": "7cdf30da4ecd019fc271873313bebfa4a123ffa610fb79185d63ef9a82cb8e6d",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_val_20260614.json": "d959894fd62c787b55ee8ca152241dca483a10904cf84f47dc1593ec988f1bfb",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_val_20260615.json": "2dfdaa8d239a0e38437bb8b8a7f05964eac9f234b2a71a2412b782e8f760f436",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_val_20260616.json": "51412ebcd234ab507c3f99e8d14ba6b4f28dd7cecc1d806afd10b2c6ea61b9e8",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_val_20260617.json": "79d60b65da218e46371d74c3b489eb8a1f828dfed72215dd706c0a442865314f",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_val_20260618.json": "9aa81bc03ed3f829e320f85ff1333caf1b4bf9d613d076b4d4eb129dc4473471",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\prefix_val_20260619.json": "7891076bcc722c4a48a3577d6addb98affbc5fd87f77b70e9322194117fb76d5",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\test_scores_20260610.json": "8e7ad351011d5ae50c4ca18b5253651e288ec219c062e877a1680d8f9cb23631",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\test_scores_20260611.json": "1d420660b435e1e6bf95a910af976b2a9e5e792c78b7cf55d671d2bd4c849bad",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\test_scores_20260612.json": "1bb25d5631f443fe2225d21fd09e678a6e8626f91ff1379e3cee837c5dc4eb10",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\test_scores_20260613.json": "2b1ea2bb3638ebc606cad5c44aeb23b668c73f22a8b14737fb970e45856df03f",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\test_scores_20260614.json": "509049635a028e08791a661a87a1bbc1164f1e0983922abf225d4380b103fd11",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\test_scores_20260615.json": "75a3defc01cb6a188d45bec73f29f408b2f253ca8cf7ab15439ab8116797d055",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\test_scores_20260616.json": "820019f73115e8c0f59f39e88d65df23961fbd92b12be6b0d16b83d19dd07eb3",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\test_scores_20260617.json": "eca8c1f14960e7225b60bfaccea23563a2a58d5fde155e65a5677ff683523ab6",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\test_scores_20260618.json": "12ca0d2e689890a28ea1b3059743dd4f56512fcd1366940ffe4478c23c344f57",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\state\\test_scores_20260619.json": "3f0446eb555267e954ffb9d4c8df2687142b1088649f66fa79b748a105ef6cb9",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\summary.json": "4410a0835735bd8caa276165024535492ba52f703fa599638876d5d1a05c9f63",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\threshold_lock.json": "850928ac419a0d7d98f54247072387702b59206e5fffb811d6fc1667287a7f7a",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\thresholds.csv": "abb60fe0baf10cc93b90b84719757bce22448d9e42d808a816b284ea958a3b2c",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\65_alarm_memory_controls\\run_memory_controls_v1\\thresholds.json": "16807b70725be6fc3ef75815b7e203c586053f59b6b0ac01a4c2d57b9e13b085",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\build_manifest.json": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\audit\\test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1"
+  },
+  "methods": [
+    "ActualHistory",
+    "RepeatCurrent",
+    "MaxHold10",
+    "ProbabilityMean10",
+    "FiniteEWMA10"
+  ],
+  "head_seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614,
+    20260615,
+    20260616,
+    20260617,
+    20260618,
+    20260619
+  ],
+  "validation_fpr_targets": [
+    0.01,
+    0.05
+  ],
+  "training": false,
+  "new_inference": false,
+  "new_generator": false,
+  "threshold_recalibration": false,
+  "post_hoc": true,
+  "scope": "Within-original-episode audit-transition analysis only; no new independent stream or physical recovery experiment.",
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "threads": 4
+  },
+  "source_labels": "Original episode/scenario labels retained; not an instantaneous compromised-state detector.",
+  "segmentation": "Maximal one-second positive runs of intervention and observable audit flags; not independent attack incidents.",
+  "alarm": "Strict Step65 score > locked per-method/per-head threshold; all predictions/thresholds unchanged.",
+  "new_alert": "Known consecutive scored OFF->ON only; initial high after unavailable score is unknown, not a new alert.",
+  "response": {
+    "horizon_seconds": 10,
+    "interval": "[onset,onset+10s] inclusive; stop before next same-kind onset",
+    "attribution": "No shared response window for two same-kind onsets; anchor types are separate analyses.",
+    "dense_bursts": "Additional in-scored-run outcomes retain every positive run with >=1 eligible endpoint, regardless of fixed-horizon censoring. Variable duration, not a standardized 10s estimand.",
+    "denominator": "Known within-record onset, next onset after deadline, record/scored deadline available; independent of early success.",
+    "warmup": "First nine decisions unavailable, neither filled nor shifted; start at episode step0 is left-boundary uncertain.",
+    "censoring": "All events retained in catalogue/details; incomplete horizons excluded from fixed-horizon ratios even if early success."
+  },
+  "gaps": "All strictly interior zero-observable-change runs; not declared normal or active threat. Correct type uses retained episode class.",
+  "suffixes": {
+    "observable": "After last observable-change flag within this finite record; active/persistent flags can remain.",
+    "audit_quiet": "After last occurrence of ANY active, persistent or observable flag; no operational recovery claim.",
+    "no_prior_effect": "No suffix is invented for episodes without a prior relevant positive flag.",
+    "width_windows": 10,
+    "interval": "[suffix_start,suffix_start+10) one-second decisions (10 samples)",
+    "stable_nonalarm_decisions": 5,
+    "confirmation": "End timestamp of first five consecutive known nonalarms; minimum delay4s.",
+    "capped_delay": "10s if no confirmation in first10 windows; initially silent outputs included, not clearance conditional on detection.",
+    "full_followup": "All first10 suffix windows must exist and be scored; no conditional rescue for early silence."
+  },
+  "normal": "Only original NORMAL episodes; specific benign-lookalike event labels are not available to this evaluator.",
+  "statistics": {
+    "draws": 20000,
+    "seed": 2026100866,
+    "unit": "Class-stratified paired whole episode",
+    "fixed": "Heads, encoder, validation thresholds; no head or calibration resampling.",
+    "weights": "Five attack classes equal; repeated bursts/long gaps contribute event/window counts within class.",
+    "interval": "Percentile95%; suppressed for missing class, <2 eligible episodes in a class, or any undefined bootstrap draw.",
+    "focal_family": 4,
+    "focal": "ActualHistory-MaxHold10 x 2 targets x gap correct-type fraction and audit-quiet suffix alarm fraction.",
+    "correction": "Individual1-.05/4 percentile intervals for the four focal contrasts; other intervals exploratory.",
+    "caution": "Retention and residual occupancy are separate objectives. No composite winner or post-test tuning."
+  },
+  "metric_specifications": [
+    {
+      "metric": "normal_endpoint_alarm_fraction",
+      "group": "NORMAL",
+      "target_fpr": 0.01,
+      "direction": "lower",
+      "target_classes": [
+        0
+      ]
+    },
+    {
+      "metric": "normal_episode_any_alarm_probability",
+      "group": "NORMAL",
+      "target_fpr": 0.01,
+      "direction": "lower",
+      "target_classes": [
+        0
+      ]
+    },
+    {
+      "metric": "normal_observed_runs_per1000_endpoints",
+      "group": "NORMAL",
+      "target_fpr": 0.01,
+      "direction": "lower",
+      "target_classes": [
+        0
+      ]
+    },
+    {
+      "metric": "gap_alarm_fraction",
+      "group": "all",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_correct_type_alarm_fraction",
+      "group": "all",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_alarm_fraction",
+      "group": "1-3",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_correct_type_alarm_fraction",
+      "group": "1-3",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_alarm_fraction",
+      "group": "4-9",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_correct_type_alarm_fraction",
+      "group": "4-9",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_alarm_fraction",
+      "group": "10+",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_correct_type_alarm_fraction",
+      "group": "10+",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_mean_longest_no_alarm_run",
+      "group": "all",
+      "target_fpr": 0.01,
+      "direction": "lower",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_alarm_fraction_first10",
+      "group": "after_last_observable_change",
+      "target_fpr": 0.01,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_silence_confirmation_probability_first10",
+      "group": "after_last_observable_change",
+      "target_fpr": 0.01,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_capped_confirmation_delay_s",
+      "group": "after_last_observable_change",
+      "target_fpr": 0.01,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_alarm_fraction_first10",
+      "group": "after_last_marked_activity",
+      "target_fpr": 0.01,
+      "direction": "lower",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_silence_confirmation_probability_first10",
+      "group": "after_last_marked_activity",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_capped_confirmation_delay_s",
+      "group": "after_last_marked_activity",
+      "target_fpr": 0.01,
+      "direction": "lower",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_present_by10s",
+      "group": "observable:all",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_by10s",
+      "group": "observable:all",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_in_scored_run",
+      "group": "observable:all",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_in_scored_run",
+      "group": "observable:all",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_preexisting_alarm_probability",
+      "group": "observable:all",
+      "target_fpr": 0.01,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_present_by10s",
+      "group": "observable:repeated",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_by10s",
+      "group": "observable:repeated",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_in_scored_run",
+      "group": "observable:repeated",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_in_scored_run",
+      "group": "observable:repeated",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_preexisting_alarm_probability",
+      "group": "observable:repeated",
+      "target_fpr": 0.01,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_present_by10s",
+      "group": "intervention:all",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_by10s",
+      "group": "intervention:all",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_in_scored_run",
+      "group": "intervention:all",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_in_scored_run",
+      "group": "intervention:all",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_preexisting_alarm_probability",
+      "group": "intervention:all",
+      "target_fpr": 0.01,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_present_by10s",
+      "group": "intervention:repeated",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_by10s",
+      "group": "intervention:repeated",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_in_scored_run",
+      "group": "intervention:repeated",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_in_scored_run",
+      "group": "intervention:repeated",
+      "target_fpr": 0.01,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_preexisting_alarm_probability",
+      "group": "intervention:repeated",
+      "target_fpr": 0.01,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "normal_endpoint_alarm_fraction",
+      "group": "NORMAL",
+      "target_fpr": 0.05,
+      "direction": "lower",
+      "target_classes": [
+        0
+      ]
+    },
+    {
+      "metric": "normal_episode_any_alarm_probability",
+      "group": "NORMAL",
+      "target_fpr": 0.05,
+      "direction": "lower",
+      "target_classes": [
+        0
+      ]
+    },
+    {
+      "metric": "normal_observed_runs_per1000_endpoints",
+      "group": "NORMAL",
+      "target_fpr": 0.05,
+      "direction": "lower",
+      "target_classes": [
+        0
+      ]
+    },
+    {
+      "metric": "gap_alarm_fraction",
+      "group": "all",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_correct_type_alarm_fraction",
+      "group": "all",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_alarm_fraction",
+      "group": "1-3",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_correct_type_alarm_fraction",
+      "group": "1-3",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_alarm_fraction",
+      "group": "4-9",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_correct_type_alarm_fraction",
+      "group": "4-9",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_alarm_fraction",
+      "group": "10+",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_correct_type_alarm_fraction",
+      "group": "10+",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "gap_mean_longest_no_alarm_run",
+      "group": "all",
+      "target_fpr": 0.05,
+      "direction": "lower",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_alarm_fraction_first10",
+      "group": "after_last_observable_change",
+      "target_fpr": 0.05,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_silence_confirmation_probability_first10",
+      "group": "after_last_observable_change",
+      "target_fpr": 0.05,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_capped_confirmation_delay_s",
+      "group": "after_last_observable_change",
+      "target_fpr": 0.05,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_alarm_fraction_first10",
+      "group": "after_last_marked_activity",
+      "target_fpr": 0.05,
+      "direction": "lower",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_silence_confirmation_probability_first10",
+      "group": "after_last_marked_activity",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "tail_capped_confirmation_delay_s",
+      "group": "after_last_marked_activity",
+      "target_fpr": 0.05,
+      "direction": "lower",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_present_by10s",
+      "group": "observable:all",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_by10s",
+      "group": "observable:all",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_in_scored_run",
+      "group": "observable:all",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_in_scored_run",
+      "group": "observable:all",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_preexisting_alarm_probability",
+      "group": "observable:all",
+      "target_fpr": 0.05,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_present_by10s",
+      "group": "observable:repeated",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_by10s",
+      "group": "observable:repeated",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_in_scored_run",
+      "group": "observable:repeated",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_in_scored_run",
+      "group": "observable:repeated",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_preexisting_alarm_probability",
+      "group": "observable:repeated",
+      "target_fpr": 0.05,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_present_by10s",
+      "group": "intervention:all",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_by10s",
+      "group": "intervention:all",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_in_scored_run",
+      "group": "intervention:all",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_in_scored_run",
+      "group": "intervention:all",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_preexisting_alarm_probability",
+      "group": "intervention:all",
+      "target_fpr": 0.05,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_present_by10s",
+      "group": "intervention:repeated",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_by10s",
+      "group": "intervention:repeated",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_any_alarm_in_scored_run",
+      "group": "intervention:repeated",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_known_new_alert_in_scored_run",
+      "group": "intervention:repeated",
+      "target_fpr": 0.05,
+      "direction": "higher",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "metric": "event_preexisting_alarm_probability",
+      "group": "intervention:repeated",
+      "target_fpr": 0.05,
+      "direction": "descriptive",
+      "target_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "identity": "af03a209b2df9bb5ab63cfa28345081e49cadbaf4ceaf2dd28738515049c151a"
+}

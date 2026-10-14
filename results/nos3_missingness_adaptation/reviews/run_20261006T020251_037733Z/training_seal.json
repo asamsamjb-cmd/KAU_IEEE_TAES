@@ -1,0 +1,171 @@
+{
+  "protocol_id": "d169218861a325368fbcd4d7df8c799ee3bf19a36b02ca9c31d328627aebeddd",
+  "artifacts": {
+    "heads/TST_L10__clean/best.pt": "dd652ada46d012534f2345d3018b546395899a8eee7b4f852dd0bd170064bc74",
+    "heads/TST_L10__clean/complete.json": "b8537d9a55c6bbe7b7d3c5218735149208c7caf78b06a1cea4ad151c4e3f97d1",
+    "heads/TST_L10__clean/history.json": "ca45031dc290edf60e5a5cef3d8caf8ed514c600de3240ca8ae71978ef39afd1",
+    "heads/TST_L10__mixed_mask14/best.pt": "ce78732ab066053f8a382f9e09bc5d5b8f03514e06725ecb4d99ef6f9410c383",
+    "heads/TST_L10__mixed_mask14/complete.json": "201df29a5e6ee7dbcb5091115c9c78da91eeffa83f05ecbee7dacf4e6a9f6527",
+    "heads/TST_L10__mixed_mask14/history.json": "95083baa16451ba4653bff286bafaef28b52282813561bde65287bc6d9591c41",
+    "heads/MeanMax_MLP__clean/best.pt": "1213ec98bf225406c8f1b99fdf3600c8275bc01b71ae389ab072b70c73e845c8",
+    "heads/MeanMax_MLP__clean/complete.json": "ed8d13bd0fe939d2dae56973de38759432afe4220efb57a8ea42736c080fe532",
+    "heads/MeanMax_MLP__clean/history.json": "f1c52bea8bd5339a910ca90e1cd1587f36a5460ab99382b321d124d7759b5f04",
+    "heads/MeanMax_MLP__mixed_mask14/best.pt": "cd90cf1f887c2bf0b7013087611725893f53300accfe67a9c23c409156097cf1",
+    "heads/MeanMax_MLP__mixed_mask14/complete.json": "fb5f1f2e037dd98e1c5aa022359ac2444dcbd9aba3315821679b1b1fd2265530",
+    "heads/MeanMax_MLP__mixed_mask14/history.json": "eff0df9b155d7481d235b8188c3c49214b54b152f40465f0101513f17d76b770"
+  },
+  "heads": {
+    "TST_L10__clean": {
+      "identity": {
+        "kind": "TST_L10",
+        "arm": "clean",
+        "config": {
+          "input_dim": 768,
+          "num_classes": 6,
+          "sequence_length": 10,
+          "temporal_context_seconds": 10,
+          "d_model": 128,
+          "num_heads": 4,
+          "num_encoder_layers": 1,
+          "dim_feedforward": 256,
+          "dropout": 0.25,
+          "pooling": "last"
+        },
+        "recipe": {
+          "seed": 20260610,
+          "epochs": 30,
+          "batch_size": 256,
+          "learning_rate": 7e-05,
+          "weight_decay": 0.0005,
+          "label_smoothing": 0.03,
+          "grad_clip_norm": 1.0,
+          "protocol_id": "d169218861a325368fbcd4d7df8c799ee3bf19a36b02ca9c31d328627aebeddd"
+        },
+        "device": "cpu"
+      },
+      "status": "COMPLETE",
+      "initial_state_sha256": "5c7ccb9c000f4ab9a944ab70a396abc7b50bfc4973f20f3fd369226710fd10ed",
+      "selected_epoch": 5,
+      "selection_score": 0.523514052388993,
+      "optimizer_steps": 21030,
+      "masked_sequence_presentations": 0,
+      "total_sequence_presentations": 5382420,
+      "best_checkpoint_sha256": "dd652ada46d012534f2345d3018b546395899a8eee7b4f852dd0bd170064bc74",
+      "parameter_count": 234758
+    },
+    "TST_L10__mixed_mask14": {
+      "identity": {
+        "kind": "TST_L10",
+        "arm": "mixed_mask14",
+        "config": {
+          "input_dim": 768,
+          "num_classes": 6,
+          "sequence_length": 10,
+          "temporal_context_seconds": 10,
+          "d_model": 128,
+          "num_heads": 4,
+          "num_encoder_layers": 1,
+          "dim_feedforward": 256,
+          "dropout": 0.25,
+          "pooling": "last"
+        },
+        "recipe": {
+          "seed": 20260610,
+          "epochs": 30,
+          "batch_size": 256,
+          "learning_rate": 7e-05,
+          "weight_decay": 0.0005,
+          "label_smoothing": 0.03,
+          "grad_clip_norm": 1.0,
+          "protocol_id": "d169218861a325368fbcd4d7df8c799ee3bf19a36b02ca9c31d328627aebeddd"
+        },
+        "device": "cpu"
+      },
+      "status": "COMPLETE",
+      "initial_state_sha256": "5c7ccb9c000f4ab9a944ab70a396abc7b50bfc4973f20f3fd369226710fd10ed",
+      "selected_epoch": 30,
+      "selection_score": 0.6949743366982923,
+      "optimizer_steps": 21030,
+      "masked_sequence_presentations": 2690352,
+      "total_sequence_presentations": 5382420,
+      "best_checkpoint_sha256": "ce78732ab066053f8a382f9e09bc5d5b8f03514e06725ecb4d99ef6f9410c383",
+      "parameter_count": 234758
+    },
+    "MeanMax_MLP__clean": {
+      "identity": {
+        "kind": "MeanMax_MLP",
+        "arm": "clean",
+        "config": {
+          "input_dim": 768,
+          "num_classes": 6,
+          "sequence_length": 10,
+          "temporal_context_seconds": 10,
+          "d_model": 128,
+          "num_heads": 4,
+          "num_encoder_layers": 1,
+          "dim_feedforward": 256,
+          "dropout": 0.25,
+          "pooling": "last"
+        },
+        "recipe": {
+          "seed": 20260610,
+          "epochs": 30,
+          "batch_size": 256,
+          "learning_rate": 7e-05,
+          "weight_decay": 0.0005,
+          "label_smoothing": 0.03,
+          "grad_clip_norm": 1.0,
+          "protocol_id": "d169218861a325368fbcd4d7df8c799ee3bf19a36b02ca9c31d328627aebeddd"
+        },
+        "device": "cpu"
+      },
+      "status": "COMPLETE",
+      "initial_state_sha256": "e777e51ffd7c3d2451a4ba0beaa6a364ba16ff8c8ee489990bb6411656cd964d",
+      "selected_epoch": 30,
+      "selection_score": 0.5177494874932098,
+      "optimizer_steps": 21030,
+      "masked_sequence_presentations": 0,
+      "total_sequence_presentations": 5382420,
+      "best_checkpoint_sha256": "1213ec98bf225406c8f1b99fdf3600c8275bc01b71ae389ab072b70c73e845c8",
+      "parameter_count": 199046
+    },
+    "MeanMax_MLP__mixed_mask14": {
+      "identity": {
+        "kind": "MeanMax_MLP",
+        "arm": "mixed_mask14",
+        "config": {
+          "input_dim": 768,
+          "num_classes": 6,
+          "sequence_length": 10,
+          "temporal_context_seconds": 10,
+          "d_model": 128,
+          "num_heads": 4,
+          "num_encoder_layers": 1,
+          "dim_feedforward": 256,
+          "dropout": 0.25,
+          "pooling": "last"
+        },
+        "recipe": {
+          "seed": 20260610,
+          "epochs": 30,
+          "batch_size": 256,
+          "learning_rate": 7e-05,
+          "weight_decay": 0.0005,
+          "label_smoothing": 0.03,
+          "grad_clip_norm": 1.0,
+          "protocol_id": "d169218861a325368fbcd4d7df8c799ee3bf19a36b02ca9c31d328627aebeddd"
+        },
+        "device": "cpu"
+      },
+      "status": "COMPLETE",
+      "initial_state_sha256": "e777e51ffd7c3d2451a4ba0beaa6a364ba16ff8c8ee489990bb6411656cd964d",
+      "selected_epoch": 24,
+      "selection_score": 0.6797031415962085,
+      "optimizer_steps": 21030,
+      "masked_sequence_presentations": 2690352,
+      "total_sequence_presentations": 5382420,
+      "best_checkpoint_sha256": "cd90cf1f887c2bf0b7013087611725893f53300accfe67a9c23c409156097cf1",
+      "parameter_count": 199046
+    }
+  }
+}

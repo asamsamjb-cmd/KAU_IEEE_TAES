@@ -1,0 +1,37 @@
+{
+  "primary": {
+    "group": "history_only_changed",
+    "target": "ATTACK_MACRO",
+    "metric": "five_attack_class_macro_recall",
+    "endpoints": 16263,
+    "episodes": 611,
+    "actual_head_seed_sd": 0.0031717979872248276,
+    "repeat_head_seed_sd": 0.03125061426048111,
+    "paired_head_seed_sd": 0.028916632913575827,
+    "actual_history": 0.9482441189360225,
+    "repeat_current": 0.13878069666674614,
+    "difference": 0.8094634222692763,
+    "actual_ci95_low": 0.9383895738084347,
+    "actual_ci95_high": 0.957614893122744,
+    "repeat_ci95_low": 0.13464785569533513,
+    "repeat_ci95_high": 0.14313382058248295,
+    "ci95_low": 0.7985620081213735,
+    "ci95_high": 0.8198124808227257,
+    "ci_status": "ok",
+    "finite_bootstrap_draws": 20000,
+    "bootstrap_draws": 20000
+  },
+  "all_groups_reported": true,
+  "training": false,
+  "new_inference": false,
+  "conclusion_scope": "Mechanistic association within the inspected Step62 dataset; not independent confirmation or causal mediation.",
+  "primary_interpretation": "Positive history-only contrast supports use of past observable projection changes when current projection is unchanged.",
+  "limitations": [
+    "Observable changes are paired nominal-versus-actual 22-field differences; they are not guaranteed class-identifying evidence.",
+    "No-change predictions alone cannot prove leakage, impossibility or a Bayes error bound.",
+    "Count/recency strata can differ in episode difficulty and attack stage; trends are descriptive, not randomized effects.",
+    "CIs condition on the fixed ten head seeds, one encoder and generator; no seed, encoder or generator resampling.",
+    "Secondary CIs are pointwise exploratory intervals, without multiplicity correction.",
+    "No result here proves BERT necessity, 22-field superiority over raw, fine order sensitivity or TST superiority over LSTM."
+  ]
+}

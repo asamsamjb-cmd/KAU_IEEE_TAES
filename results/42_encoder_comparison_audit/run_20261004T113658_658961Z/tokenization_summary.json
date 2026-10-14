@@ -1,0 +1,47 @@
+{
+  "max_length": 256,
+  "tokenizer_class": "BertTokenizer",
+  "tokenizer_sha256": "e2a73874b67afe3161292f54d8d42fc17ce7d930587a9785c2a653a4b06d2d08",
+  "tokenizer_source": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model",
+  "local_files_only": true,
+  "actual_pipeline_truncation": false,
+  "truncation_coverage": "diagnostic hypothetical clipping only; any loss fails this audit",
+  "all_train_validation_rows_checked": true,
+  "test_token_coverage_checked": false,
+  "splits": {
+    "train": {
+      "rows": 211006,
+      "tokenizer_unknown_rows": 0,
+      "tokenizer_unknown_tokens": 0,
+      "coverage_interpretation": "hypothetical truncation at max_length; real Step 8/9 reject overlength",
+      "truncated_rows": 0,
+      "truncated_fraction": 0.0,
+      "all_22_clauses_retained_rows": 211006,
+      "min_tokens": 180,
+      "max_tokens": 217,
+      "mean_tokens": 192.91072765703345,
+      "p50_p95_p99_tokens": [
+        191.0,
+        205.0,
+        209.0
+      ]
+    },
+    "val": {
+      "rows": 44148,
+      "tokenizer_unknown_rows": 0,
+      "tokenizer_unknown_tokens": 0,
+      "coverage_interpretation": "hypothetical truncation at max_length; real Step 8/9 reject overlength",
+      "truncated_rows": 0,
+      "truncated_fraction": 0.0,
+      "all_22_clauses_retained_rows": 44148,
+      "min_tokens": 180,
+      "max_tokens": 217,
+      "mean_tokens": 192.83315212467156,
+      "p50_p95_p99_tokens": [
+        191.0,
+        205.0,
+        209.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "identity": "c150c22a4a9b169219dacd3663a136eea4520102439abbe04602d2cb76eef7de",
+  "files": {
+    "test_predictions.npz": "ee959b4fd8e6708264fb7045dff893750b1424436eef77790585dd74505c5acf"
+  },
+  "committed_at_utc": "2026-10-09T07:38:55.931738+00:00",
+  "shared_state_sha256": "4b2b9daf1d964b7dbc987173e3499a3f1f6fe228ef89032ba11483562656420b",
+  "test_used_for_selection": false
+}

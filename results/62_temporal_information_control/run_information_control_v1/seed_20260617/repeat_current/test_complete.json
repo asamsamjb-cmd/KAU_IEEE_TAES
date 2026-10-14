@@ -1,0 +1,71 @@
+{
+  "contract": "4211f1e364779128cdc8d145150edf54ed9f2bcf3f74784ec2d06459b03c6379",
+  "result": {
+    "macro_f1": 0.44501597883062494,
+    "normal_fpr": 0.7146824019437695,
+    "per_class_recall": {
+      "NORMAL": 0.28531759805623047,
+      "RF_LINK_JAMMING": 0.37540603248259863,
+      "GNSS_SPOOFING": 0.772020725388601,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 0.26066914498141264,
+      "TELECOMMAND_REPLAY": 0.3187333530630364,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 0.599967700258398
+    },
+    "confusion_matrix": [
+      [
+        1644,
+        511,
+        91,
+        74,
+        816,
+        2626
+      ],
+      [
+        917,
+        2427,
+        115,
+        65,
+        603,
+        2338
+      ],
+      [
+        406,
+        143,
+        4768,
+        50,
+        187,
+        622
+      ],
+      [
+        416,
+        376,
+        81,
+        1753,
+        968,
+        3131
+      ],
+      [
+        878,
+        480,
+        82,
+        70,
+        2154,
+        3094
+      ],
+      [
+        946,
+        461,
+        100,
+        73,
+        897,
+        3715
+      ]
+    ],
+    "n": 38078,
+    "loss": 1.3343268442106344
+  },
+  "artifact_sha256": {
+    "test_predictions.csv": "e59f832dec3a899b7ee8f8e2b65b07c935f94d2c1f46a8debe38e9572214e21e",
+    "test_metrics.json": "02ce9a9646891d81fe34ef59ec5ea1eb742fae6ff5df6514da096d747dba09f6"
+  }
+}

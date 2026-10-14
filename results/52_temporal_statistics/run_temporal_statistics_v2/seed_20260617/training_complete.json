@@ -1,0 +1,21 @@
+{
+  "identity": "6f2c3429422c6e9d06a25bb31dfa7d2ad0d63c84d533324e8686bc81eb174ec0",
+  "contract": "a1af8daddd6666304b73e97f9d41f2d2e5c97c390c4f8fafd589f6fbfe1b3308",
+  "result": {
+    "seed": 20260617,
+    "best_epoch": 9,
+    "epochs_completed": 16,
+    "val_macro_f1": 0.840473578801178,
+    "convergence": "PLATEAU_OBSERVED",
+    "parameters": 794374,
+    "training_seconds": 105.46967520006001
+  },
+  "completed_at_utc": "2026-10-07T01:51:14.746927+00:00",
+  "artifact_sha256": {
+    "best.pt": "aa24fb6588290ecec9ace0fc07605fe0c89cd3a58870b11c3285d84ff18e8185",
+    "history.csv": "0302c04e3768bfc469304e915dcfd5ff2c0710df6da05d877aea3e7c2880caf9",
+    "validation_predictions.npz": "47c44cd98b7559b8d53897bd4df88f0fb4c162e9fb16e411e49f0672118c8b34",
+    "resume.json": "c1669c50e10e6351ddd45a90e226a7cd8df14c5886426796050e9d2bb5546c05",
+    "resume/epoch_016.pt": "5864f4ec264ae31e70286b3d8158d5bc1196e7bee3a6331e158ba5355d4fd991"
+  }
+}

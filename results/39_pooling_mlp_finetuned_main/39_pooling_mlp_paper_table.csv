@@ -1,0 +1,4 @@
+﻿Model,Context,Order-sensitive,Accuracy,Macro-Precision,Macro-Recall,Macro-F1,Notes
+Fine-tuned DistilBERT (fixed) + Mean Pooling + MLP,L=10,No,0.836 $\pm$ 0.000,0.900 $\pm$ 0.001,0.838 $\pm$ 0.000,0.847 $\pm$ 0.000,"same TST embeddings, same L10 sequence indices, terminal-window labels"
+Fine-tuned DistilBERT (fixed) + Max Pooling + MLP,L=10,No,0.833 $\pm$ 0.000,0.894 $\pm$ 0.001,0.835 $\pm$ 0.001,0.844 $\pm$ 0.000,"same TST embeddings, same L10 sequence indices, terminal-window labels"
+Fine-tuned DistilBERT (fixed) + Mean+Max Pooling + MLP,L=10,No,0.835 $\pm$ 0.000,0.896 $\pm$ 0.002,0.837 $\pm$ 0.001,0.846 $\pm$ 0.001,"same TST embeddings, same L10 sequence indices, terminal-window labels"

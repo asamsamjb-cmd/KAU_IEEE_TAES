@@ -1,0 +1,17 @@
+{
+  "identity": "80c90159dfef9b69b092881849eabe98f7074b861fd3bc4e773bc68def969851",
+  "contract": "edbbbb93aeb711646c41d41aea105ea0c4416e2be8d565d958bca7197a005ecf",
+  "result": {
+    "status": "PASS",
+    "heads": 10,
+    "conditions": 5
+  },
+  "completed_at_utc": "2026-10-07T02:15:57.815706+00:00",
+  "artifact_sha256": {
+    "predictions.npz": "bba54e73a0de34cfdacc6e1810e779880bd59236212ac3247ddc9d1679d75b9c",
+    "evaluation_endpoints_L10.csv": "817150a89d5aed299450eb6e3cdfd1a42d71fdc37f75889eff452f6d6373a958",
+    "clean_context_observable_effects_L10.csv": "3a9b7d87ba9dede0291e052918645de7927ab9fcf017ed905c0c52985e5baf40",
+    "mask_audits.json": "61bf8024733ee18139b81d70652fe9c5484834748116de4fe537380a8655654f",
+    "clean_replay.json": "cb6bc3496fcd69fffe750b7e37ec56f29d333368405d8c71fc7b1e919319235b"
+  }
+}

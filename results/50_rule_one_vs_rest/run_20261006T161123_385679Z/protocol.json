@@ -1,0 +1,52 @@
+{
+  "version": "step50_shared_nominal_independent_ovr_v2_1",
+  "design_status": "retrospective revision analysis; Step16 multiclass results previously observed",
+  "review_mapping": [
+    "R2-5 partial: scenario-wise one-vs-rest conventional heuristic evaluation",
+    "R2-1 supplemental: domain-informed rule diagnostics"
+  ],
+  "labels": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "models": [
+    "Rule_L1",
+    "Rule_L10"
+  ],
+  "population": "shared_nominal_v2 A test, complete common L10 endpoints, terminal label",
+  "n_endpoints": 38078,
+  "n_episodes": 752,
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "step16_run_id": "run_20261004T102431_766880Z",
+  "configuration_sha256": "02b895a7b6b208e605d6b082263759f975c52371f062ce83f65f0b2dc44a1893",
+  "observable_effects": "diagnostics only; no endpoint filtering, feature use, relabeling or threshold selection",
+  "effect_strata": "model-specific: L1 current window only; L10 current and preceding nine windows",
+  "decision": "each pre-fusion evidence_j / original threshold_j >= 1; multiple alarms allowed",
+  "negative_class": "NORMAL plus the other four attacks",
+  "threshold_selection": "reuse Step16 validation multiclass calibration; no binary optimization",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 2026100150,
+  "batch_size": 200,
+  "rng": "numpy.random.PCG64",
+  "resampling": "whole episodes within six true-label strata, paired across all detectors/models",
+  "point_weighting": "pooled endpoint counts, not episode-average F1",
+  "interval": "percentile linear quantiles; 95% marginal for metrics and deltas",
+  "multiplicity": "five L10-minus-L1 F1 contrasts; 99% Bonferroni marginal intervals, nominal 95% family target under bootstrap approximation",
+  "undefined_precision": "blank CSV; precision CI blank if any bootstrap draw is undefined",
+  "limitations": [
+    "generator-informed heuristic, not a published detector reproduction or exhaustive rules baseline",
+    "not external, SIL, operational, onset-detection or simultaneous-multiattack validation",
+    "L10 changes aggregation, recurrence and validation thresholds; not a pure temporal ablation",
+    "conditional on original rules/validation selection; no generator or threshold-selection uncertainty",
+    "episodes assumed approximately independent/exchangeable within true class",
+    "family adjustment covers these five contrasts only, not the entire revision",
+    "zero observed normal false alarms yield a degenerate empirical percentile CI, not a population risk upper bound",
+    "does not establish TST superiority or complete R2-5 by itself",
+    "no_observable_change means no change in the recorded 22-field counterfactual projection; not proof of zero information or an oracle ceiling",
+    "effect-stratum summaries are descriptive; L1 and L10 strata are not identical paired subpopulations"
+  ]
+}

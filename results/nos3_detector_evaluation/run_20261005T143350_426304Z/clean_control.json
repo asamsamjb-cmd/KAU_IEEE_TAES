@@ -1,0 +1,38 @@
+{
+  "selection": "First 16 Step 10 common endpoints by sequence_id; no label/performance selection",
+  "endpoint_rows": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "window_count": 25,
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "embedding_max_abs_difference": 3.0994415283203125e-06,
+  "tst": {
+    "1": {
+      "max_abs_probability_difference": 9.177979125973845e-06,
+      "identical_decisions": true,
+      "passed": true
+    },
+    "10": {
+      "max_abs_probability_difference": 4.795599060058997e-05,
+      "identical_decisions": true,
+      "passed": true
+    }
+  },
+  "status": "PASS"
+}

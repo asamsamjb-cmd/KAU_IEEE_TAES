@@ -1,0 +1,3 @@
+% L=1 cells only: replace the two LSTM L=1 dashes; preserve the verified L=10 cells.
+% Common L10-eligible endpoints; means over head seeds.
+0.435 & 50.4\%

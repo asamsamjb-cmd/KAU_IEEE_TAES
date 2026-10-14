@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE",
+  "completed_at_utc": "2026-10-08T09:09:40.670793+00:00",
+  "output_sha256": {
+    "event_catalog_test.csv": "d1d5bb4f3a14ab09fe1eeb5a3c04fb0ef9084f23ac3a6fcb7072cc80246f1ab9",
+    "event_catalog_val.csv": "a216b17488f44a393d8471fad96ddd7a4dc5a50d06f62bac8694ba641f499099",
+    "event_intervals_10s.csv": "58a81ee010da32cf6bfc6f1ee1afa3d841d6f1786848bd7915c44f576e47520b",
+    "event_metrics_by_seed.csv": "c83c3042b9a92d8a34d121f33d04fe5323e6034b17a5d8cd999ca3b5bfa66a4c",
+    "event_metrics_mean_heads.csv": "bea1b6e1dd237ca31149fbe93de8b6811d226ac1be5fdde5f9f22154eb526c39",
+    "event_results_by_seed.csv": "e7e726b759adaedd168d3021f69ce4118b7062085d4edfbe66398d4a23a31eb4",
+    "input_audit.json": "63661572b2f993e90ef359c0e2a2fe4b646607b9b628e22cc2eb7bd6b917bf39",
+    "normal_episode_results_by_seed.csv": "1136a5cde5f84e1f4c61364d30df1534e3721393fd4efacb75b3bde2f1d068ac",
+    "normal_metric_intervals.csv": "b1051feddcebde674d7ba7dc805fff6719e80440e73c8c845c304c91781e1438",
+    "normal_metrics_by_seed.csv": "3e565ef60f70d0ebd725fb76a15267ea5a9c95e5bfd6e90139cc79d6179a9b8a",
+    "population_audit.csv": "faa67021e95f51ce51f468782b07b8e67a3ccbcac4e55be85db17a9db5ba73e2",
+    "primary_detection_10s.csv": "83513e7e269d9d216cdf1860b91599cbc00f91be44b633793988f1660f2f6ee6",
+    "primary_episode_bootstrap.csv": "8f1c112ea4043236191bb45661afe97f64c461f0018d0f3dc3637669d72b6ff1",
+    "protocol.json": "14247fb376d0403fc22c1ac8c67c221f253ed40250e7fceb39705cbef054dd04",
+    "source/63.temporal_evidence_analysis.py": "29a8d528634f30b355584e31d82dce0fc522b227862f0b6051bfeb0d0a4d7681",
+    "source/64.alarm_delay_evaluation.py": "0c698e566ab736fbec1a0143b0bc49b66273258eea0f064f10f7ec09658b7444",
+    "summary.json": "912269bf03031318cf3c1a573105cc33cba2527db643a5f1566e07ab087a86bd",
+    "threshold_lock.json": "7f8f8729f632cdbb024b7b6fcbb56e91b3198ded08cef7c11cac5884728ab028",
+    "thresholds.csv": "8f5bd0fd34ab1c16dafed98bd97aece743621ce7dd32b352df12496a951bb4a2",
+    "thresholds.json": "261eb8d48853700473d8862141d426cd2a31aa345e0a59fc81693955a3d0aa8d"
+  },
+  "details": {},
+  "training": false,
+  "new_inference": false
+}

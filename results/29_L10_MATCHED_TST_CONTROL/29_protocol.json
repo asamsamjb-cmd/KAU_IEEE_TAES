@@ -1,0 +1,18 @@
+{
+  "identity_hash": "509819ee3b4b3c280198a1a8a37652b2e3cd9d7646d09b503f131a8470c064f9",
+  "experiment": "taes_step29_matched_l10_tst_control_v1",
+  "stage": "validation",
+  "exploratory": true,
+  "selection": "val_macro_f1 of matched L10 checkpoint only; no test used to select epoch",
+  "training_population": "Exactly Step27 L20-eligible training endpoints, with last-ten embedding inputs",
+  "validation_population": "Exactly Step27 L20-eligible validation endpoints",
+  "comparison": "Stored Step27 L20 validation-selected head versus new matched L10 head",
+  "test_note": "L20 Test already inspected before this follow-up; not new independent confirmation",
+  "fixed_seeds": [
+    20260610,
+    20260611,
+    20260612
+  ],
+  "different_model_lengths_not_paired_initialization": true,
+  "bootstrap": "No inferential bootstrap in Step29; Step28's original L10 bootstrap does not apply to matched L10"
+}

@@ -1,0 +1,224 @@
+{
+  "identity": "14f07274fab1d64ccedb0c8c492c149dac3f24b93e4a1912adb844e0868e20ce",
+  "contract": "eb9b1b81fddff22dcc05977292384062921a285f07e8dbe67692570b68863566",
+  "result": {
+    "seed": 20260612,
+    "condition": "DistilBERT_Pretrained_Finetune",
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step46_protocol_identity": "563d73fe6fd6e2e7db05318b188be8c5686d8301fff5b43c52ae3c1d7206ed8d",
+    "evaluation_precision": "float32",
+    "temporal_delta_macro_f1": 0.40933155271209526,
+    "l1_all": {
+      "n": 44846,
+      "macro_f1": 0.40407912722529,
+      "accuracy": 0.3959104490924497,
+      "weighted_f1": 0.4025424872651384,
+      "class_f1": [
+        0.29211492216175167,
+        0.409402390438247,
+        0.7699334262269701,
+        0.3677715451300357,
+        0.24869777235952564,
+        0.33655470703520984
+      ],
+      "confusion_matrix": [
+        [
+          2308,
+          607,
+          140,
+          35,
+          0,
+          3842
+        ],
+        [
+          1510,
+          2569,
+          158,
+          38,
+          0,
+          3315
+        ],
+        [
+          809,
+          243,
+          4973,
+          22,
+          0,
+          1254
+        ],
+        [
+          1070,
+          436,
+          98,
+          1803,
+          0,
+          4425
+        ],
+        [
+          1576,
+          557,
+          119,
+          39,
+          1122,
+          4488
+        ],
+        [
+          1597,
+          548,
+          129,
+          36,
+          0,
+          4980
+        ]
+      ]
+    },
+    "l1_matched_endpoints": {
+      "n": 38078,
+      "macro_f1": 0.4343742283481273,
+      "accuracy": 0.42636167865959346,
+      "weighted_f1": 0.43292348143073456,
+      "class_f1": [
+        0.3051891635731775,
+        0.44403089234204896,
+        0.8301493574157693,
+        0.39485680888369373,
+        0.28237387215656373,
+        0.3496452757175105
+      ],
+      "confusion_matrix": [
+        [
+          1932,
+          495,
+          120,
+          29,
+          0,
+          3186
+        ],
+        [
+          1193,
+          2386,
+          142,
+          33,
+          0,
+          2711
+        ],
+        [
+          498,
+          140,
+          4780,
+          18,
+          0,
+          740
+        ],
+        [
+          788,
+          348,
+          86,
+          1689,
+          0,
+          3814
+        ],
+        [
+          1229,
+          461,
+          99,
+          30,
+          1111,
+          3828
+        ],
+        [
+          1259,
+          452,
+          113,
+          31,
+          0,
+          4337
+        ]
+      ]
+    },
+    "l10": {
+      "n": 38078,
+      "macro_f1": 0.8437057810602225,
+      "accuracy": 0.8321865644204002,
+      "weighted_f1": 0.847467968183118,
+      "class_f1": [
+        0.6427440633245383,
+        0.856757894736842,
+        0.9563780568407139,
+        0.9464271829562242,
+        0.8442924326635314,
+        0.8156350558394851
+      ],
+      "confusion_matrix": [
+        [
+          5481,
+          178,
+          54,
+          28,
+          0,
+          21
+        ],
+        [
+          1358,
+          5087,
+          13,
+          5,
+          0,
+          2
+        ],
+        [
+          346,
+          39,
+          5788,
+          3,
+          0,
+          0
+        ],
+        [
+          593,
+          20,
+          26,
+          6086,
+          0,
+          0
+        ],
+        [
+          1705,
+          31,
+          33,
+          10,
+          4937,
+          42
+        ],
+        [
+          1810,
+          55,
+          14,
+          4,
+          0,
+          4309
+        ]
+      ]
+    },
+    "encoder_parameters": 66362880,
+    "window_model_parameters": 66958086,
+    "tst_parameters": 234758,
+    "deployment_parameters": 66597638,
+    "inference_seconds_including_feature_io": 326.68859709997196,
+    "encoder_best_epoch": 1,
+    "encoder_convergence": "PLATEAU_OBSERVED",
+    "tst_best_epoch": 14,
+    "tst_convergence": "PLATEAU_OBSERVED"
+  },
+  "completed_at_utc": "2026-10-06T10:52:24.319962+00:00",
+  "artifact_sha256": {
+    "test_predictions_L1_all.csv": "38c9e102cdcce7a1e15f92d6676ccadfc5f9bf502f7e14fac43afc0a5e409f80",
+    "test_predictions_L10.csv": "8c0ae9eeb81d7eeb366c886475967b72faa145a7461bbd5d5dab437ba40f4460",
+    "test_window_logits.npy": "5a0e25585f82938f1e254a391dae8892a2bfb3eb4d12b2e0389b62f958a60375",
+    "test_tst_logits_L10.npy": "6440e47c7f462fb529fceb8e23d050aeb705ca8d93b669a6dd1ec5623f4cb538",
+    "test_embeddings.npy": "4d8283470f86e17dc6de898324f12c0b2c165372d654f35cd01d5a7ebe83179b",
+    "metrics.json": "14a368f05d02586d63e2605ae096da517670e908bc6a6feb031469ec170f0e59",
+    "validation_canary.json": "4e00f32069ca308e2b31030b0a65f65de9aa8dcd7446e3e9829133a300223e7c",
+    "test_predictions_window_common_L10.csv": "64d2e0ff7af61cef46d757eb2a5d6723bc2eb6439379860dafe1d18d36dc7775"
+  }
+}

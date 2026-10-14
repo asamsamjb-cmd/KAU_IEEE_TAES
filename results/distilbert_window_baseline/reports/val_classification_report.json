@@ -1,0 +1,51 @@
+{
+  "NORMAL": {
+    "precision": 0.27836429239609783,
+    "recall": 0.2806521153327944,
+    "f1-score": 0.27950352230795034,
+    "support": 7422.0
+  },
+  "RF_LINK_JAMMING": {
+    "precision": 0.5266961995803218,
+    "recall": 0.3209718670076726,
+    "f1-score": 0.3988699567405315,
+    "support": 7038.0
+  },
+  "GNSS_SPOOFING": {
+    "precision": 0.8718772305496074,
+    "recall": 0.6938369781312127,
+    "f1-score": 0.7727344614897992,
+    "support": 7042.0
+  },
+  "UNAUTHORIZED_TELECOMMAND_INJECTION": {
+    "precision": 0.5103969754253308,
+    "recall": 0.30247864444755634,
+    "f1-score": 0.3798470060670008,
+    "support": 7141.0
+  },
+  "TELECOMMAND_REPLAY": {
+    "precision": 0.24556771029800076,
+    "recall": 0.6655591054313099,
+    "f1-score": 0.3587641649157855,
+    "support": 7825.0
+  },
+  "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+    "precision": 0.7725225225225225,
+    "recall": 0.133984375,
+    "f1-score": 0.22836218375499334,
+    "support": 7680.0
+  },
+  "accuracy": 0.399225332970916,
+  "macro avg": {
+    "precision": 0.5342374884619802,
+    "recall": 0.399580514225091,
+    "f1-score": 0.40301354921267674,
+    "support": 44148.0
+  },
+  "weighted avg": {
+    "precision": 0.5303060658672555,
+    "recall": 0.399225332970916,
+    "f1-score": 0.3985901197777806,
+    "support": 44148.0
+  }
+}

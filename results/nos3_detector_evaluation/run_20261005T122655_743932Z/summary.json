@@ -1,0 +1,41 @@
+{
+  "code_version": "1.0-nos3-frozen-detector-evaluation",
+  "status": "FAILED",
+  "started_utc": "2026-10-05T12:26:55.747820+00:00",
+  "project_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성",
+  "input_zip": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\2026-10-05_20-23-23_413130_09_NOS3_REPEATABILITY.zip",
+  "script_sha256": "bbf9164971c0e9d99302cd8881c52053334bc6f957e6da440a767b0691cc4616",
+  "analysis_kind": "Exploratory frozen-detector inference on partial NOS3 observations",
+  "formal_evaluation": false,
+  "model_input_ready_for_formal_evaluation": false,
+  "detector_evaluation_performed": false,
+  "trained": false,
+  "additional_live_commands_sent": 0,
+  "seed": 20260610,
+  "device": "cpu",
+  "threads": 2,
+  "errors": [
+    "ValueError: Clean timestamps are not consecutive seconds"
+  ],
+  "rule_errors": [],
+  "limitations": [
+    "Five paired repeats within one continuous NOS3 session, not five independent sessions.",
+    "Event-level intervention labels; silent windows have no assigned class truth.",
+    "Fourteen fields were never observed; the trained missingness range does not establish validity here.",
+    "Exact frame history is computed before the model; it is not TST temporal reasoning.",
+    "Original replay frame is outside the preceding ten-second model input.",
+    "Offline evidence-time bins do not measure online detection latency.",
+    "No claim of six-class external validation, RF attack coverage, authentication or anti-replay bypass."
+  ],
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "torch": "2.12.0+cu126",
+    "transformers": "5.10.2",
+    "device": "cpu",
+    "threads": 2,
+    "precision": "float32",
+    "autocast": false
+  },
+  "finished_utc": "2026-10-05T12:27:10.840209+00:00"
+}

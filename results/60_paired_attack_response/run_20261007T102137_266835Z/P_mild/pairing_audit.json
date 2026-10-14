@@ -1,0 +1,14 @@
+{
+  "condition": "P_mild",
+  "endpoints": 41028,
+  "normal_endpoints": 6838,
+  "attack_pairs": 34190,
+  "nominal_episode_clusters": 150,
+  "models": 54,
+  "changed_pairs": 26595,
+  "unchanged_pairs": 7595,
+  "identical_input_prediction_disagreements": 0,
+  "pairing": "Exact full-L10 nominal projection, episode/step alignment and full endpoint population verified",
+  "prediction_consistency_status": "CONSISTENT",
+  "consistency_scope": "Equality is a pipeline consistency check, not proof of semantic learning or absence of shortcuts. Disagreements can also reflect batch/numerical inference effects; no labels are corrected."
+}

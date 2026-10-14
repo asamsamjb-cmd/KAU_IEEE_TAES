@@ -1,0 +1,31 @@
+{
+  "timing": "Post-hoc diagnostics after the reviewed v1.1 NOS3 result; no subsequent tuning or model selection",
+  "primary_unchanged": true,
+  "main_seed": 20260610,
+  "serialization_conditions": [
+    "fixed_unk",
+    "omit_unknown_clauses"
+  ],
+  "trajectory": "All 809 within-run L10 endpoints; L1 and Rule use these same endpoints",
+  "quiet_windows": "No assigned class truth; report output distributions only",
+  "rule": "Same structured values for both text serializations; do not duplicate Rule trials",
+  "benchmark": "Full original common test endpoints, clean versus fixed label-independent mask14",
+  "unavailable_fields": [
+    "path_type",
+    "source_role",
+    "operational_phase",
+    "command_intent",
+    "payload_or_parameter_context",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "additional_live_commands": 0,
+  "training": false
+}

@@ -1,0 +1,15 @@
+{
+  "case": "formal46/DistilBERT_RandomInit_Train/seed_20260610",
+  "status": "PASS",
+  "samples": 64,
+  "encoder_max_abs_error": 1.9073486328125e-06,
+  "stream_vs_full_max_abs_logit_error": 9.5367431640625e-07,
+  "formal_reference_max_abs_logit_error": 1.1324882507324219e-06,
+  "shared_historical_native_precision_replay": null,
+  "shared_historical_prediction_disagreements": null,
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "historical_precision_note": "Native historical precision/batch replay must pass first. New FP32 per-sample differences are reported separately; no score-based selection."
+}

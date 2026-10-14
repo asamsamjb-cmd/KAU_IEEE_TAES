@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "kind": "MeanMax_MLP",
+    "arm": "mixed_mask14",
+    "config": {
+      "input_dim": 768,
+      "num_classes": 6,
+      "sequence_length": 10,
+      "temporal_context_seconds": 10,
+      "d_model": 128,
+      "num_heads": 4,
+      "num_encoder_layers": 1,
+      "dim_feedforward": 256,
+      "dropout": 0.25,
+      "pooling": "last"
+    },
+    "recipe": {
+      "seed": 20260610,
+      "epochs": 30,
+      "batch_size": 256,
+      "learning_rate": 7e-05,
+      "weight_decay": 0.0005,
+      "label_smoothing": 0.03,
+      "grad_clip_norm": 1.0,
+      "protocol_id": "d169218861a325368fbcd4d7df8c799ee3bf19a36b02ca9c31d328627aebeddd"
+    },
+    "device": "cpu"
+  },
+  "status": "COMPLETE",
+  "initial_state_sha256": "e777e51ffd7c3d2451a4ba0beaa6a364ba16ff8c8ee489990bb6411656cd964d",
+  "selected_epoch": 24,
+  "selection_score": 0.6797031415962085,
+  "optimizer_steps": 21030,
+  "masked_sequence_presentations": 2690352,
+  "total_sequence_presentations": 5382420,
+  "best_checkpoint_sha256": "cd90cf1f887c2bf0b7013087611725893f53300accfe67a9c23c409156097cf1",
+  "parameter_count": 199046
+}

@@ -1,0 +1,185 @@
+{
+  "status": "AUDIT_COMPLETE",
+  "started_at_utc": "2026-10-04T11:36:58.660518+00:00",
+  "protocol_version": "shared_nominal_encoder_input_audit_v3",
+  "script_sha256": "5f6cff2f38a150df331296423d832bd7d1f8dc6393ea100d4ff7932a67db4734",
+  "project_root": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성",
+  "python": "3.14.5",
+  "numpy": "2.4.6",
+  "pandas": "3.0.3",
+  "raw_test_data_read": false,
+  "training_performed": false,
+  "encoder_inference_performed": false,
+  "test_predictions_read": false,
+  "embedding_arrays_read": false,
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "source_contract": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "manifest_sha256": {
+      "step7": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "step8": "665b994dc422fdadd0d8a0cda690d7cd082074ad320537bb873c0afd778be968",
+      "step9": "dbdff8a70be63b51ed0f73167d2d878a2df8daedae70c6be227d2d018df70b17",
+      "step10": "7580acc3d0fc1d02a3fea2252d89a442cfdddfcd9ecf171b2106cf1a555bd7d0"
+    },
+    "input_sha256": {
+      "splits/train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+      "splits/val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+      "splits/test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+      "splits/label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+      "splits/episode_split_manifest.csv": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05"
+    },
+    "step8_model_sha256": {
+      "trained_distilbert_model/config.json": "64b9bbcd239e60e66c2e64802e8555112964cb86e71e9fdbcf023b72f5f778b0",
+      "trained_distilbert_model/label_mapping.json": "253649f289bdf8046aed8caeb3ef65e347af7038223a0f2ea2ee5b1d35f9e7ff",
+      "trained_distilbert_model/model.safetensors": "0792b13df30bed87dced1507a389cbd084558aa2fa3bdeb07299c3909b76464c",
+      "trained_distilbert_model/tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "trained_distilbert_model/tokenizer_config.json": "71cd48543bec670f50e0c9c3556df16b1f58ea720ead6a1b4675f08870c60b17",
+      "trained_distilbert_model/training_args.bin": "a4659c5ed492d23051158b76c31dec84b689475caaced9969fe0ce6d51a27643",
+      "trained_distilbert_model/training_provenance.json": "7c2b3bfa0996b59a79563f43c64bf29f2f829251ca950a0896e1cf1b2a7b221c"
+    },
+    "step9_artifacts": {
+      "embedding_extraction_report.json": "d7525913bea9dd5c713b0d3b67372577db1eb4c0587c02a4da310acac4c68822",
+      "train_window_embeddings.npz": "b6b86adb4cd0b2dcf8d151927d63482d5ef83eb8cb285001a81a72d74b52b7e4",
+      "train_window_metadata.csv": "c09de8d275999b7a6d7b56e75690e47cf15c796bdea9d3a5bfa47e9a0e3b977c",
+      "val_window_embeddings.npz": "a92ab043244aed7f49e50dca125f38e67c6c2d287eb00b66c556597fbd786d51",
+      "val_window_metadata.csv": "95024aac342046f89290926ff96edf53b8e29be5901297032c4f5c5facd513a2",
+      "test_window_embeddings.npz": "67dfc1e4f3a128013dcc585f9b8d80b33bfb8d2d85f6b2a6fe4d9628391becd1",
+      "test_window_metadata.csv": "86f13ac47bc3fc6c337736da94dfac05c1e96e7907c3d8d37b4aa3089d0c7f68"
+    },
+    "tokenizer_sha256": "e2a73874b67afe3161292f54d8d42fc17ce7d930587a9785c2a653a4b06d2d08",
+    "observability_audit": {
+      "schema_version": "counterfactual_observable_change_v1",
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+      "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "split_files": {
+        "train": "audit/train_window_observable_effects.csv",
+        "val": "audit/val_window_observable_effects.csv",
+        "test": "audit/test_window_observable_effects.csv"
+      },
+      "artifacts": {
+        "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+        "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+        "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+      },
+      "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+    },
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "step10_artifacts": {
+      "sequence_build_report_index.json": "bff8d5a1ac7a06ce5492f9ad0f0d12e51102e34ce1f51dad07a6e7a83ff76a02",
+      "sequence_build_report_L1.json": "2cbac562e75c450f25fe3f4db42d43b26273ffc78ac19fb86cc6d2d5f12178ce",
+      "train_tst_sequences_L1.npz": "f6f8fd86ab4913ffc4e61a487346fcfbdce382270795ae2b71d0ddd569b0d607",
+      "train_tst_sequence_metadata_L1.csv": "b885c3228e6eaefdd9db95d9b5fb8ae463e58a3cf87d28f13a848fcb7ae5134a",
+      "train_tst_sequence_observable_effects_L1.csv": "edc2697f2bd980f1e941a1a2b55196218133b8d43c872f0e9552dfce4c5781b0",
+      "val_tst_sequences_L1.npz": "8a2fd8b67dd646a24694a7bf54d630993ed9f464d67a30f2ff95e522eb916316",
+      "val_tst_sequence_metadata_L1.csv": "29d4a86743b90a47432b3e9d01a834f66ef7d58fe8ae0744847e17e9ffa73519",
+      "val_tst_sequence_observable_effects_L1.csv": "e7d2ac33d124c02d9251ff31b515947acfe38b8e37ac1601dc4d194e6a69ccbb",
+      "test_tst_sequences_L1.npz": "72ffac3dfd56e64f8c0df066429bcc01694bc0213a299db83e7ffe17e29785da",
+      "test_tst_sequence_metadata_L1.csv": "3cb221452e0462154480c3ef45772c88113436874d199b96eaa197604f504ae4",
+      "test_tst_sequence_observable_effects_L1.csv": "1654e064e6521bfc2b3fa6a054ddb96ca52156142cac1cc2791fad1c79603871",
+      "sequence_build_report_L2.json": "19282176fe0a77095de538db5dade65698bca438cb9a92561012354f8de04a40",
+      "train_tst_sequences_L2.npz": "6c624d670ba87d421d305fcbef81107831176e90a64e13ff34f0506e6ab1af18",
+      "train_tst_sequence_metadata_L2.csv": "53ec666c74f4cda7d1f5559474f70c77c0a0f67295dd3440a98f7b5216f313bb",
+      "train_tst_sequence_observable_effects_L2.csv": "9cd2cdbc317ac9b625f45493805e1930dff48566d0fd51b7e718a23e62d6396a",
+      "val_tst_sequences_L2.npz": "f51546201759dbc341e26c4558fd34bf17830d0a0fdc787405eb8db5a8a8baa9",
+      "val_tst_sequence_metadata_L2.csv": "546ee6e711dbf0a08d84ebfd68a27667334f78b48dead5d55d7f194a89847e1c",
+      "val_tst_sequence_observable_effects_L2.csv": "91539d172b7e7c26eb048de65426beed42c428e3228ff4834915c3ffba17160f",
+      "test_tst_sequences_L2.npz": "8ca54c3dc58bf9773971cec1e55dda4f1bba6e6fcced071c6a8ba69c8c7c685d",
+      "test_tst_sequence_metadata_L2.csv": "1a82e9839e72c13d97c87237ed0f638874f40ba9e49f70842a9a17105c0935d4",
+      "test_tst_sequence_observable_effects_L2.csv": "833003d839d18c64cea1536eb0f9b214c9c32f91081d678f011ebe18b74d4715",
+      "sequence_build_report_L3.json": "d6f237cb58f3cd4b3d96742a5b39661b7a64d9647a5f972329bea5174996a498",
+      "train_tst_sequences_L3.npz": "dc0f44a5d1c54181a8dd219ebef6ae79e8b699f59d13f43962ce376f417ddf62",
+      "train_tst_sequence_metadata_L3.csv": "85a1f43425e2e8b11f3f90ea013b863c58fd268b5d28bc55712b6f1da4514df7",
+      "train_tst_sequence_observable_effects_L3.csv": "1f7b5539cbfaf063a1d48126a3fa2fcd3d6a518c7e303cce508aaec2fb2266a7",
+      "val_tst_sequences_L3.npz": "9a4b2f47946f432b212faf837f4d447656a2ad90148be2537ef78021da58b68f",
+      "val_tst_sequence_metadata_L3.csv": "139c3359fcf1bc6cc09062c3d3e2f145c358a18c675fef06a5cde66dd114ef37",
+      "val_tst_sequence_observable_effects_L3.csv": "0ef15912b1812fbc152b649ae679c449f9a598f29e20fd1f6357b7a1d0ef9a05",
+      "test_tst_sequences_L3.npz": "5ad0ebbebc2e18c7d2452113489a22511bcfda4cf89cc68b9632d7a0e1b85c7a",
+      "test_tst_sequence_metadata_L3.csv": "8bb1c02ac703fcc3ad8f8f578c3186b0d4918e1351a18aa67a951fa23047a8d1",
+      "test_tst_sequence_observable_effects_L3.csv": "a5e7486f2df28e1e1fc48260d7701e455d91725d92dc98ea2578df71f06eb29a",
+      "sequence_build_report_L5.json": "069989e7631fb8780227af54563eb79a7e1a5edbf862903a147b168d453aa528",
+      "train_tst_sequences_L5.npz": "285f6368de068705fe5aeae9e19bfa9026a5688b6200acf8bb96dee49842bf7b",
+      "train_tst_sequence_metadata_L5.csv": "95895671d2a4ed7e2e43ab684d5f0da3b3306d485668c50dee46c6f1e4a5f264",
+      "train_tst_sequence_observable_effects_L5.csv": "a09de9fcabee496c2a8663e9da2d9f3b3b2098894dc93608dda912ada4b02b95",
+      "val_tst_sequences_L5.npz": "835354c8003c4ae1c636823e46402750465c5852e1da207efc957113c3285672",
+      "val_tst_sequence_metadata_L5.csv": "549d34cbccb1c80fc93bcd8f71cb8b20b7e5dcf2c0a8c2b0e435f7ced5e4541c",
+      "val_tst_sequence_observable_effects_L5.csv": "3ae09f3b4f7c895476c1c730c973a7810f4b8987b428a5882181aa3f50129e1c",
+      "test_tst_sequences_L5.npz": "41f7843c2940c8e8d4747703c98f3776f310f8c2d719d3913d36e4548d449ce3",
+      "test_tst_sequence_metadata_L5.csv": "a27ceec7a5e3795be96f10f2a2a865417cfdc80370549614ccacc973bf581b41",
+      "test_tst_sequence_observable_effects_L5.csv": "1191aa687f8ba878e8563fa68fbdaf6b54d4420b9e35523ff802cca39bdba345",
+      "sequence_build_report_L10.json": "3a7251ae524206f79ca01dea7e03c344c53063f62ef9a12e188acff9820abf05",
+      "train_tst_sequences_L10.npz": "2c9a1e6f061102aa8767d8d67fe55dc807d181376900078e85d310c369959add",
+      "train_tst_sequence_metadata_L10.csv": "09bb20d5318c6c92449a72812c5c3653769df8c2f5fd1161af8846149f534039",
+      "train_tst_sequence_observable_effects_L10.csv": "32e702be60898171121dd6bbdee125b7e644552f7ddaf4e1bb2c815d4153ce21",
+      "val_tst_sequences_L10.npz": "b17f2a4145e6f89eeaa98d631b07c82315e286f2899ffb8158735127453d13db",
+      "val_tst_sequence_metadata_L10.csv": "3cfa6308e1ff332cfc9ad8e5fb392c2ecd8b3bb9fdd9af5bfb7a261a762cabcb",
+      "val_tst_sequence_observable_effects_L10.csv": "36baf87cc16dc5f5b458ab79d3acef799e17ea767eb57928b7dc69bdfebf28d9",
+      "test_tst_sequences_L10.npz": "d93eb86d5f4f5acdc185c22e0dc377e15da4cd17cf1bde6e30b30b7dc308efff",
+      "test_tst_sequence_metadata_L10.csv": "817150a89d5aed299450eb6e3cdfd1a42d71fdc37f75889eff452f6d6373a958",
+      "test_tst_sequence_observable_effects_L10.csv": "3a9b7d87ba9dede0291e052918645de7927ab9fcf017ed905c0c52985e5baf40"
+    },
+    "common_endpoint_report": {
+      "reference_length": 10,
+      "rule": "Intersection of end_row_indices across L within each split; no rows filtered by Step 10.",
+      "downstream_rule": "Compare context lengths on these same endpoints; report all-available-window results separately.",
+      "splits": {
+        "train": {
+          "common_endpoint_count": 179414,
+          "sorted_end_row_indices_sha256": "d05c6340c61c0bfb2dbea11b238a44bdbcda51613663d2b55ccccfd9c207a761",
+          "available_sequences_by_L": {
+            "1": 211006,
+            "2": 207495,
+            "3": 203984,
+            "5": 196964,
+            "10": 179414
+          }
+        },
+        "val": {
+          "common_endpoint_count": 37371,
+          "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2",
+          "available_sequences_by_L": {
+            "1": 44148,
+            "2": 43395,
+            "3": 42642,
+            "5": 41136,
+            "10": 37371
+          }
+        },
+        "test": {
+          "common_endpoint_count": 38078,
+          "sorted_end_row_indices_sha256": "98860cb9acd0348efe69583e7dce14c09f2b59c77c1a43b2a545065cd241098b",
+          "available_sequences_by_L": {
+            "1": 44846,
+            "2": 44094,
+            "3": 43342,
+            "5": 41838,
+            "10": 38078
+          }
+        }
+      }
+    }
+  },
+  "transformers": "5.10.2",
+  "readiness": "READY_FOR_PROTOCOL_REVIEW",
+  "elapsed_seconds": 262.78019499999937,
+  "audit_claim": "Input/provenance checks completed; no alternative-encoder comparison performed",
+  "test_content_verification": "NOT_PERFORMED; only upstream declared hashes and episode counts used",
+  "finished_at_utc": "2026-10-04T11:41:21.441423+00:00",
+  "output_sha256": {
+    "checkpoint_inventory.json": "e5ccf00bb4ab8727ad9f4bf19b0570b26ab1cb2fe24b5719b1e5800acc0430ba",
+    "comparison_design.json": "3ca4b43013cf4b4985c89b1aa53528819a636420e031a8f8ffba5b14371b78f2",
+    "dataset_audit.json": "0b3729eb36e7770edb6dd4b16a1656f8d152345aa5c510fecf6e5e22b6ba6785",
+    "findings.csv": "2083e3d346661cc5c5aed803c06f8179bd913258e11a675cd4b2839ee24e20b0",
+    "input_audit.json": "8b695da1ac2df18b120cc436d5f606f28d0a1f7404904a51d5cbdd64262b11ef",
+    "protocol.json": "4cb43557c4138e6e69bdd4837ae580af0df528221d4eabcbdeb3f0881f3ffbf0",
+    "reference_settings.json": "5d29fd9cfe853d3c6628f3657018aa14b46938273ada59577fd1bce205c3468d",
+    "token_coverage_by_field.csv": "c7f3621b4dd21478734b81e9d4549ce6119508ab798f023af19947e65615c925",
+    "token_length_histogram.csv": "99ae1cb15530a36ce7e32b4a8762a9ab7036089102492fc3c67f25cd91ceec84",
+    "tokenization_summary.json": "f411804b637f92451211c03a0a8755fdc608594faa38c797036148d31f8f6592",
+    "train_field_vocabulary.json": "035d7b1a6cafc4241a241bc30a055f470511fa4057ae5669b285f57d7bb0c58c",
+    "truncation_examples.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "vocabulary_audit.csv": "bdeb9ee23e757dfe6812352b6afdb7c5585f1d8e140a78a6c3015f509c17640d"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "protocol_identity": "6143e2605cf2b3cddf12d99ab5b3b21b7b486445a3f6c1d858436352e12c93a0",
+  "completed_at_utc": "2026-10-08T17:48:10.717087+00:00",
+  "artifacts": {
+    "scores_test.npz": "1396bc256f9a566601f5e6f1ee453ee03ab429cfedc9f8679cc4ae68a552e20f",
+    "raw_rf_components_test.npz": "737ea836a61ff14d4c47269fe6a61621c8077a55a98cf6dadbe9cad0cb213dc4",
+    "coverage_test.csv": "07816a55055cee74bf27284b7296b8619b9c6d10b107439cb4c967faff3d8f2a",
+    "hgb_replay_test.json": "76189a8e2735797a450845c61808a188f3494659486a3401ca350631d34fe4fe",
+    "test_input_audit.json": "97cea6b1a07d91e5dc4fb4831277cd0d78096b5561f1e6ef4c4169de7841f412"
+  }
+}

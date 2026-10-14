@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "identity_hash": "34570f1987792581a535a8ff9ef6a2e09e35aef1f3f6061a4550dc37e87b32c3",
+  "seed": 20260611,
+  "completed": "2026-10-12T16:02:42.251145+00:00",
+  "artifacts": {
+    "best_L20.pt": "e2322773baa9486514199af48e5e48f3b360279c9018cce9e18a50607c666c08",
+    "history.csv": "7a58c761452c7db5b879fc76bc4141c3e6ffe993cb8180e3027db805345ae5bf",
+    "val_predictions.csv": "1fdae71cf1e5bfc510f2fd47d716a2209ccc216daa198a1c256a6d7db42f39ba",
+    "val_metrics.json": "a242c39541f8aff4f5af62989336256de77bdc8c215d7b8fc6a7383d01603a6f"
+  },
+  "best_epoch": 10,
+  "training_elapsed_seconds": 156.65765139999712,
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 3060",
+  "amp": true
+}

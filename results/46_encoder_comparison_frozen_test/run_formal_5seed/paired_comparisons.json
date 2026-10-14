@@ -1,0 +1,41 @@
+[
+  {
+    "reference": "DistilBERT_Pretrained_Finetune",
+    "comparator": "CategoricalEmbedding_MLP",
+    "delta_macro_f1": -0.0003898224321161603,
+    "delta_percentage_points": -0.03898224321161603,
+    "ci95_low": -0.0021391574830516543,
+    "ci95_high": 0.0013121395263815346,
+    "bonferroni_confidence": 0.9833333333333333,
+    "bonferroni_low": -0.002527864577205423,
+    "bonferroni_high": 0.001679447149712609,
+    "ci95_interpretation": "zero_included_not_equivalence",
+    "familywise_interpretation": "zero_included_not_equivalence"
+  },
+  {
+    "reference": "DistilBERT_Pretrained_Finetune",
+    "comparator": "FieldToken_Encoder",
+    "delta_macro_f1": 0.0011142349627010217,
+    "delta_percentage_points": 0.11142349627010217,
+    "ci95_low": -0.0005582626921296879,
+    "ci95_high": 0.002844978730619421,
+    "bonferroni_confidence": 0.9833333333333333,
+    "bonferroni_low": -0.0009251789884119372,
+    "bonferroni_high": 0.00324783441600591,
+    "ci95_interpretation": "zero_included_not_equivalence",
+    "familywise_interpretation": "zero_included_not_equivalence"
+  },
+  {
+    "reference": "DistilBERT_Pretrained_Finetune",
+    "comparator": "DistilBERT_RandomInit_Train",
+    "delta_macro_f1": 0.001135335465184184,
+    "delta_percentage_points": 0.1135335465184184,
+    "ci95_low": -0.0002760143316835689,
+    "ci95_high": 0.002552542815289909,
+    "bonferroni_confidence": 0.9833333333333333,
+    "bonferroni_low": -0.0005924841302653176,
+    "bonferroni_high": 0.002906475348681137,
+    "ci95_interpretation": "zero_included_not_equivalence",
+    "familywise_interpretation": "zero_included_not_equivalence"
+  }
+]

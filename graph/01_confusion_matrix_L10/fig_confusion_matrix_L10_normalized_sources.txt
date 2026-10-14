@@ -1,0 +1,13 @@
+Per-seed confusion CSVs averaged (row-normalized per seed, then mean):
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_main\L10\reports\confusion_matrix_test_common_population_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260611\L10\reports\confusion_matrix_test_common_population_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260612\L10\reports\confusion_matrix_test_common_population_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260613\L10\reports\confusion_matrix_test_common_population_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260614\L10\reports\confusion_matrix_test_common_population_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260615\L10\reports\confusion_matrix_test_common_population_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260616\L10\reports\confusion_matrix_test_common_population_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260617\L10\reports\confusion_matrix_test_common_population_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260618\L10\reports\confusion_matrix_test_common_population_L10.csv
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\tst_training_finetuned_multiseed\seed_20260619\L10\reports\confusion_matrix_test_common_population_L10.csv
+
+Cross-check file: C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\15_paired_episode_bootstrap\run_20261004T102551_378013Z\seed_average_row_normalized_confusion.csv

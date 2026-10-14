@@ -1,0 +1,22 @@
+Step 46: revised representation/evidence-aggregation test comparison
+
+L10 population: 38,078 endpoints / 752 eligible whole episodes.
+Raw test: 44,846 windows / 752 episodes. No quiet-window filtering.
+Four encoders x five encoder seeds; fixed TST/head/shuffle RNG policy from Step 45.
+Point estimates average per-seed six-class macro-F1, not probabilities or pooled-confusion F1.
+Episode CIs condition on these trained seeds. Sample encoder-seed SD is reported separately.
+Primary: pretrained minus alternatives at L10; three-contrast family, 95% / 98.333333% intervals.
+Secondary: TST minus window at identical L10 endpoints; four-contrast family, 95% / 98.75% intervals.
+Families are separate; there is no simultaneous seven-contrast coverage claim.
+Temporal differences include different head capacity/training; interpret alongside pooling/LSTM controls.
+No equivalence inference from zero-containing intervals; no architecture necessity or full-convergence claim.
+L1-all and L10 have different populations; only matched endpoints support the paired temporal contrast.
+Observable-effect diagnostics are descriptive and separate from the primary all-endpoint estimates.
+No measured counterfactual projection change does not prove no class information or define an oracle ceiling.
+Diagnostic annotations do not enter model inputs, checkpoint selection, exclusion rules or significance tests.
+Timing includes feature extraction and I/O; it is not an onboard latency benchmark.
+
+CategoricalEmbedding_MLP: L10 mean=0.844916482, seed SD=0.000822496
+FieldToken_Encoder: L10 mean=0.843412425, seed SD=0.001464592
+DistilBERT_RandomInit_Train: L10 mean=0.843391324, seed SD=0.003116890
+DistilBERT_Pretrained_Finetune: L10 mean=0.844526660, seed SD=0.000932557

@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "heads": 10,
+  "splits": [
+    "val",
+    "test"
+  ],
+  "records": [
+    {
+      "split": "val",
+      "seed": 20260610,
+      "status": "PASS",
+      "rows": 37371,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    },
+    {
+      "split": "val",
+      "seed": 20260611,
+      "status": "PASS",
+      "rows": 37371,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.9800415024539006e-08
+    },
+    {
+      "split": "val",
+      "seed": 20260612,
+      "status": "PASS",
+      "rows": 37371,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.9798889134013962e-08
+    },
+    {
+      "split": "val",
+      "seed": 20260613,
+      "status": "PASS",
+      "rows": 37371,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.9800415024539006e-08
+    },
+    {
+      "split": "val",
+      "seed": 20260614,
+      "status": "PASS",
+      "rows": 37371,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    },
+    {
+      "split": "val",
+      "seed": 20260615,
+      "status": "PASS",
+      "rows": 37371,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.979431157346113e-08
+    },
+    {
+      "split": "val",
+      "seed": 20260616,
+      "status": "PASS",
+      "rows": 37371,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    },
+    {
+      "split": "val",
+      "seed": 20260617,
+      "status": "PASS",
+      "rows": 37371,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    },
+    {
+      "split": "val",
+      "seed": 20260618,
+      "status": "PASS",
+      "rows": 37371,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.979812618875144e-08
+    },
+    {
+      "split": "val",
+      "seed": 20260619,
+      "status": "PASS",
+      "rows": 37371,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980117796980153e-08
+    },
+    {
+      "split": "test",
+      "seed": 20260610,
+      "status": "PASS",
+      "rows": 38078,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.9800415024539006e-08
+    },
+    {
+      "split": "test",
+      "seed": 20260611,
+      "status": "PASS",
+      "rows": 38078,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.9800415024539006e-08
+    },
+    {
+      "split": "test",
+      "seed": 20260612,
+      "status": "PASS",
+      "rows": 38078,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    },
+    {
+      "split": "test",
+      "seed": 20260613,
+      "status": "PASS",
+      "rows": 38078,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.9800415024539006e-08
+    },
+    {
+      "split": "test",
+      "seed": 20260614,
+      "status": "PASS",
+      "rows": 38078,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    },
+    {
+      "split": "test",
+      "seed": 20260615,
+      "status": "PASS",
+      "rows": 38078,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    },
+    {
+      "split": "test",
+      "seed": 20260616,
+      "status": "PASS",
+      "rows": 38078,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    },
+    {
+      "split": "test",
+      "seed": 20260617,
+      "status": "PASS",
+      "rows": 38078,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    },
+    {
+      "split": "test",
+      "seed": 20260618,
+      "status": "PASS",
+      "rows": 38078,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    },
+    {
+      "split": "test",
+      "seed": 20260619,
+      "status": "PASS",
+      "rows": 38078,
+      "prediction_mismatches": 0,
+      "max_abs_probability_error": 2.980194091506405e-08
+    }
+  ]
+}

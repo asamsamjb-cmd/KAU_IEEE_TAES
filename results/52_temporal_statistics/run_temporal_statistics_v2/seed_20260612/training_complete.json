@@ -1,0 +1,21 @@
+{
+  "identity": "308f7b96d057b2a104119f9c76f5dce62d5908465387ca4195d4331e92c932a6",
+  "contract": "00f5b847d5db082e7866d8f417ce21b21bf5302ea277692e390bf5b496740958",
+  "result": {
+    "seed": 20260612,
+    "best_epoch": 12,
+    "epochs_completed": 19,
+    "val_macro_f1": 0.8405876438947133,
+    "convergence": "PLATEAU_OBSERVED",
+    "parameters": 794374,
+    "training_seconds": 110.18120020022616
+  },
+  "completed_at_utc": "2026-10-07T01:42:39.020537+00:00",
+  "artifact_sha256": {
+    "best.pt": "4f5f679c01765febd1f1d94852a471975b743a4e090efc03e42a9a01172cf8b2",
+    "history.csv": "710c944560e92210f0379fa0a8aee3486c2e5725e3896207faa7f1bb4e3897da",
+    "validation_predictions.npz": "1cdf0a94eb323540a7057bcb65f066b3fdd90b62e628dc4ffa8fe3764ae67c31",
+    "resume.json": "66ea8327a9cf4f0f5dd26702043f2e7f98d5710a4162bf5ac4a9a8c5381e4bbe",
+    "resume/epoch_019.pt": "2cd82668d1cd2825f3123a1b4ef8a01ed75c53bb9d29adc2bb755536aa6edfc7"
+  }
+}

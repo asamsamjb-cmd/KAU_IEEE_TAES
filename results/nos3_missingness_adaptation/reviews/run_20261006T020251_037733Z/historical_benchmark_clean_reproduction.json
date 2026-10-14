@@ -1,0 +1,80 @@
+[
+  {
+    "model": "TST_L1",
+    "endpoint_count": 38078,
+    "passed": true,
+    "status": "NUMERICAL_AGREEMENT_WITH_BOUNDARY_CHANGES",
+    "probability_comparison_passed": true,
+    "probability_mismatch_rows": 0,
+    "atol": 0.0001,
+    "rtol": 0.0001,
+    "max_abs_probability_difference": 3.0031497192384293e-05,
+    "identical_decisions": false,
+    "decision_change_count": 44,
+    "decision_change_fraction": 0.0011555228741005304,
+    "boundary_consistent_change_count": 44,
+    "unexplained_decision_change_count": 0,
+    "historical_label_inconsistency_count": 0,
+    "historical_metrics": {
+      "endpoint_count": 38078,
+      "correct": 16116,
+      "accuracy": 0.42323651452282157,
+      "macro_f1": 0.436056757648503,
+      "normal_count": 5762,
+      "normal_false_alarms": 2024,
+      "normal_false_alarm_fraction": 0.3512669212079139
+    },
+    "current_cpu_metrics": {
+      "endpoint_count": 38078,
+      "correct": 16123,
+      "accuracy": 0.42342034770733755,
+      "macro_f1": 0.4361765110376809,
+      "normal_count": 5762,
+      "normal_false_alarms": 2026,
+      "normal_false_alarm_fraction": 0.35161402290871224
+    },
+    "delta_cpu_minus_historical_macro_f1": 0.00011975338917791234,
+    "delta_cpu_minus_historical_accuracy": 0.00018383318451598019,
+    "paired_benchmark_baseline": "Current CPU FP32 clean predictions; the mask14 condition uses the same engine",
+    "interpretation": "Probability agreement within the original tolerance does not imply identical decisions or metrics. All decision changes are disclosed; no historical prediction is substituted. The specific numerical/backend cause is not established by this audit."
+  },
+  {
+    "model": "TST_L10",
+    "endpoint_count": 38078,
+    "passed": true,
+    "status": "NUMERICAL_AND_DECISION_AGREEMENT",
+    "probability_comparison_passed": true,
+    "probability_mismatch_rows": 0,
+    "atol": 0.0001,
+    "rtol": 0.0001,
+    "max_abs_probability_difference": 5.319503936762615e-05,
+    "identical_decisions": true,
+    "decision_change_count": 0,
+    "decision_change_fraction": 0.0,
+    "boundary_consistent_change_count": 0,
+    "unexplained_decision_change_count": 0,
+    "historical_label_inconsistency_count": 0,
+    "historical_metrics": {
+      "endpoint_count": 38078,
+      "correct": 31811,
+      "accuracy": 0.8354167760911813,
+      "macro_f1": 0.8469799535472023,
+      "normal_count": 5762,
+      "normal_false_alarms": 221,
+      "normal_false_alarm_fraction": 0.0383547379382159
+    },
+    "current_cpu_metrics": {
+      "endpoint_count": 38078,
+      "correct": 31811,
+      "accuracy": 0.8354167760911813,
+      "macro_f1": 0.8469799535472023,
+      "normal_count": 5762,
+      "normal_false_alarms": 221,
+      "normal_false_alarm_fraction": 0.0383547379382159
+    },
+    "delta_cpu_minus_historical_macro_f1": 0.0,
+    "delta_cpu_minus_historical_accuracy": 0.0,
+    "paired_benchmark_baseline": "Current CPU FP32 clean predictions; the mask14 condition uses the same engine",
+    "interpretation": "Probability agreement within the original tolerance does not imply identical decisions or metrics. All decision changes are disclosed; no historical prediction is substituted. The specific numerical/backend cause is not established by this audit."
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "python": "3.14.5",
+  "numpy": "2.4.6",
+  "pandas": "3.0.3",
+  "torch": "2.12.0+cu126",
+  "transformers": "5.10.2",
+  "cuda": "12.6",
+  "cudnn": 91002,
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "device_index": 0,
+  "threads": 8,
+  "interop_threads": 8,
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "float32_matmul_precision": "highest",
+  "deterministic_algorithms": false,
+  "startup_cudnn_deterministic": false,
+  "cublas_workspace_config": null
+}

@@ -1,0 +1,83 @@
+{
+  "inventory": [
+    {
+      "source": "Step46",
+      "status": "VERIFIED_DESCRIPTIVE_REFERENCE",
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed"
+    },
+    {
+      "source": "Rule16",
+      "status": "VERIFIED_DESCRIPTIVE_REFERENCE",
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z"
+    }
+  ],
+  "jobs": [
+    {
+      "group": "Reference46_CategoricalEmbedding_MLP_TST_L10",
+      "seed": 20260610,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed\\seed_20260610\\CategoricalEmbedding_MLP\\test_predictions_L10.csv",
+      "sha256": "5b8597c4ff61cf1656b55faaf9f8b34e0b59a64ac689251dbf625f45e45edaa7"
+    },
+    {
+      "group": "Reference46_CategoricalEmbedding_MLP_TST_L10",
+      "seed": 20260611,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed\\seed_20260611\\CategoricalEmbedding_MLP\\test_predictions_L10.csv",
+      "sha256": "2ac4a3983aaa4649cf03cef08cfd5a05190778ed7c023ac4d242306020d82baa"
+    },
+    {
+      "group": "Reference46_CategoricalEmbedding_MLP_TST_L10",
+      "seed": 20260612,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed\\seed_20260612\\CategoricalEmbedding_MLP\\test_predictions_L10.csv",
+      "sha256": "1fd4f839731d07e0a07e34510f88843129ecfdb9db85dad17266500bd6984774"
+    },
+    {
+      "group": "Reference46_CategoricalEmbedding_MLP_TST_L10",
+      "seed": 20260613,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed\\seed_20260613\\CategoricalEmbedding_MLP\\test_predictions_L10.csv",
+      "sha256": "2860d95a71053495009f916ce00932baea50882723eb0486916f7eb3aaa7d373"
+    },
+    {
+      "group": "Reference46_CategoricalEmbedding_MLP_TST_L10",
+      "seed": 20260614,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed\\seed_20260614\\CategoricalEmbedding_MLP\\test_predictions_L10.csv",
+      "sha256": "f59fa228f7a85da2edf5e9ea7adf6474b1b09051cb5746ff0729c546d24f8990"
+    },
+    {
+      "group": "Reference46_DistilBERT_Pretrained_Finetune_TST_L10",
+      "seed": 20260610,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed\\seed_20260610\\DistilBERT_Pretrained_Finetune\\test_predictions_L10.csv",
+      "sha256": "e9f43683bb12968ac290f6f3e0e0007d1c8e9f3e95585067c8e10b741f0d997c"
+    },
+    {
+      "group": "Reference46_DistilBERT_Pretrained_Finetune_TST_L10",
+      "seed": 20260611,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed\\seed_20260611\\DistilBERT_Pretrained_Finetune\\test_predictions_L10.csv",
+      "sha256": "31febef43ce972b1b3795c1ced891cdc0da4353ceac0d98ed78218d632e3dfba"
+    },
+    {
+      "group": "Reference46_DistilBERT_Pretrained_Finetune_TST_L10",
+      "seed": 20260612,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed\\seed_20260612\\DistilBERT_Pretrained_Finetune\\test_predictions_L10.csv",
+      "sha256": "8c0ae9eeb81d7eeb366c886475967b72faa145a7461bbd5d5dab437ba40f4460"
+    },
+    {
+      "group": "Reference46_DistilBERT_Pretrained_Finetune_TST_L10",
+      "seed": 20260613,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed\\seed_20260613\\DistilBERT_Pretrained_Finetune\\test_predictions_L10.csv",
+      "sha256": "cf03bc557ef5b39d20161b2bbcbaf9697833183537a1a9b2441c4849f170c018"
+    },
+    {
+      "group": "Reference46_DistilBERT_Pretrained_Finetune_TST_L10",
+      "seed": 20260614,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\46_encoder_comparison_frozen_test\\run_formal_5seed\\seed_20260614\\DistilBERT_Pretrained_Finetune\\test_predictions_L10.csv",
+      "sha256": "99aa85583528ee0c2dafafbad365461555bcb90050ae25d246924ea9edf88ae9"
+    },
+    {
+      "group": "Reference16_Rule_L10",
+      "seed": null,
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z\\test_predictions_Rule_L10.csv",
+      "sha256": "24c02d92d9763ccc2c47ce44069fdfe18489026fc81436dccac09b7dc137cf45"
+    }
+  ],
+  "role": "Previously evaluated different pipelines. Descriptive context with episode CIs; excluded from primary representation contrasts and never a model-selection signal."
+}

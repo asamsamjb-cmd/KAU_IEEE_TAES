@@ -1,0 +1,140 @@
+{
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "step27_zip": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\27_L20_TST_VALIDATION_PILOT\\27_L20_FINAL_TEST_REVIEW.zip",
+  "step27_zip_sha256": "36f0a86158d9cac6af0730182590166136f77008aeb680a20f34cab57e5c4b80",
+  "step27_identity_hash": "34570f1987792581a535a8ff9ef6a2e09e35aef1f3f6061a4550dc37e87b32c3",
+  "window_metadata_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\test_window_metadata.csv",
+  "window_audit_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\audit\\test_window_observable_effects.csv",
+  "window_hashes": {
+    "test_window_metadata.csv": "86f13ac47bc3fc6c337736da94dfac05c1e96e7907c3d8d37b4aa3089d0c7f68",
+    "test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+  },
+  "window_validation": {
+    "test_windows": 44846,
+    "all_test_episodes": 752,
+    "L20_eligible_episodes": 751,
+    "normal_window_paired_change_count": 0,
+    "audit_changed_window_count": 11117
+  },
+  "cohort_validation": {
+    "test_endpoints": 30561,
+    "episodes": 751,
+    "attack_endpoints": 26096,
+    "group_counts": {
+      "A_recent10": 22988,
+      "Normal": 4465,
+      "B_only_older10": 1961,
+      "C_no_change20": 1147
+    },
+    "endpoint_digest_sha256": "51510e4bd6b487059a84bd666f5255a0121b7c327c7ffb4ac2bfa2e31cee7800",
+    "paired_nominal_reference_is_non_deployable": true
+  },
+  "historical_L10_source_run_ids": {
+    "20260610": "9072c471a3088f8247ecfd0fc3389ee1623e3fa45dafec61a77f3c3fa885ff20",
+    "20260611": "65105b4d72e2da7feda49f3107701b8ff0ff2128fa391f5be2341fdcc4042e82",
+    "20260612": "b798283e3e1079fbe98d7722d9aba6b3f1d7e056ea7b6b18bc491f7828fe30e9"
+  },
+  "prediction_audits": [
+    {
+      "seed": 20260610,
+      "L10_file": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L10\\predictions\\test_predictions_L10.csv",
+      "L10_file_sha256": "dcbacdf276688e9ffc1c4cebecf787dc0349d25c76902da017f0161ce59f45b7",
+      "L10_rows": 38078,
+      "L20_zip_member": "seed_20260610/test_predictions.csv",
+      "L20_member_sha256": "2fc5fff8d7428aa10f28c32104ffe79c30750838300d1cb31a222c185cca3e7f",
+      "L20_rows": 30561,
+      "L10_original_manifest": {
+        "available": true,
+        "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\run_manifest.json",
+        "sha256": "d99c4c424251e0b0dbf062de3e181309b271b4ec64a1e4b118246fe20c62805b"
+      },
+      "metrics_check": {
+        "seed": 20260610,
+        "L10": {
+          "macro_f1": 0.8856485505640261,
+          "accuracy": 0.8802067995157227,
+          "normal_false_alarm_fraction": 0.03404255319148936
+        },
+        "L20": {
+          "macro_f1": 0.9493052028363267,
+          "accuracy": 0.9495762573214227,
+          "normal_false_alarm_fraction": 0.024412094064949607
+        },
+        "delta_macro_f1": 0.06365665227230055
+      }
+    },
+    {
+      "seed": 20260611,
+      "L10_file": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260611\\L10\\predictions\\test_predictions_L10.csv",
+      "L10_file_sha256": "7f6a9d2cf6674a5f2ef887db0540cb127dc8a1e23790c0de4d42e2b546a7680c",
+      "L10_rows": 38078,
+      "L20_zip_member": "seed_20260611/test_predictions.csv",
+      "L20_member_sha256": "0adb654269446b5d04ce821e2b6349bd997237ed85113252390e2417b8e02f7e",
+      "L20_rows": 30561,
+      "L10_original_manifest": {
+        "available": true,
+        "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260611\\run_manifest.json",
+        "sha256": "d559f2e7d34b1597f7c05965796f5f0a5bfbdc74f3099618a1e817b7de1dacca"
+      },
+      "metrics_check": {
+        "seed": 20260611,
+        "L10": {
+          "macro_f1": 0.8857657666832465,
+          "accuracy": 0.8804358496122509,
+          "normal_false_alarm_fraction": 0.03471444568868981
+        },
+        "L20": {
+          "macro_f1": 0.9489455612899237,
+          "accuracy": 0.9491508785707274,
+          "normal_false_alarm_fraction": 0.023292273236282194
+        },
+        "delta_macro_f1": 0.06317979460667722
+      }
+    },
+    {
+      "seed": 20260612,
+      "L10_file": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260612\\L10\\predictions\\test_predictions_L10.csv",
+      "L10_file_sha256": "a5838fb8b28288a245fb7d8a97e4e6fd4f2c77f7cb8b6f57471fdfb9b56c999c",
+      "L10_rows": 38078,
+      "L20_zip_member": "seed_20260612/test_predictions.csv",
+      "L20_member_sha256": "8a4b1e14c843793d5d0b69571c1da6da530007883a7e684e77f48ac24018c73b",
+      "L20_rows": 30561,
+      "L10_original_manifest": {
+        "available": true,
+        "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260612\\run_manifest.json",
+        "sha256": "04331ccd699a7d28681d90e4a283504a55483812292610b7635ccf3e543add13"
+      },
+      "metrics_check": {
+        "seed": 20260612,
+        "L10": {
+          "macro_f1": 0.8834612065660349,
+          "accuracy": 0.8782762344164131,
+          "normal_false_alarm_fraction": 0.04412094064949608
+        },
+        "L20": {
+          "macro_f1": 0.9487352954078304,
+          "accuracy": 0.9490199928012827,
+          "normal_false_alarm_fraction": 0.02553191489361702
+        },
+        "delta_macro_f1": 0.06527408884179553
+      }
+    }
+  ],
+  "source_27_reported_evidence": {
+    "split": "test",
+    "common_endpoints": 30561,
+    "note": "Nondeployable descriptive paired-nominal change; not a bound, model input or selection target.",
+    "attack_labeled_endpoints": 26096,
+    "L10_in_context_change_attack": 22988,
+    "L20_in_context_change_attack": 24949,
+    "L20_additional_evidence_attack": 1961,
+    "L10_coverage_attack": 0.880901287553648,
+    "L20_coverage_attack": 0.9560469037400368,
+    "L20_additional_coverage_attack": 0.07514561618638872,
+    "endpoint_sha256": "51510e4bd6b487059a84bd666f5255a0121b7c327c7ffb4ac2bfa2e31cee7800",
+    "L10_nondeployable_reference_macro_f1": 0.9035547434861697,
+    "L20_nondeployable_reference_macro_f1": 0.9621996947682687,
+    "episodes": 751
+  },
+  "original_step15_bootstrap_estimator": "whole-episode class stratification; same draw for all models/seeds"
+}

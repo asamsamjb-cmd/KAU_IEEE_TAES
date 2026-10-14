@@ -1,0 +1,62 @@
+{
+  "identity": "49ea94baf0bca8b6d2e2b35971424b32aff0a839bdcc59d35550da4269356d83",
+  "contract": "3a6197e5a23050da2691214dd0b9a3093d4bbdce1661013a030d64f0cc64f29a",
+  "result": {
+    "name": "original_replay",
+    "maker_seeds": [
+      42,
+      142,
+      242,
+      314,
+      442,
+      342
+    ],
+    "split_seed": 20260610,
+    "original_replay_passed": true,
+    "population": {
+      "train": {
+        "rows": 211006,
+        "episodes": 3511
+      },
+      "val": {
+        "rows": 44148,
+        "episodes": 753
+      },
+      "test": {
+        "rows": 44846,
+        "episodes": 752
+      }
+    },
+    "fresh_train_val_used_for_fitting_or_selection": false,
+    "filtering": false
+  },
+  "completed_at_utc": "2026-10-06T13:01:34.453336+00:00",
+  "artifact_sha256": {
+    "class_1/observable.csv": "1315ee3cd9d44a8d051c736cd3f78ec161e8b8c31ba834ae4d8fbb94dfb607b4",
+    "class_1/observable_with_raw.csv": "5e1147089aba9b34770e93bc33711a56cf7b3f0162169b4b65c87a5214eddf14",
+    "class_1/complete.json": "fa451a5f21b5bc3c144c5750f83038e950ca31133430fd4e892e8af3a9d4717c",
+    "class_2/observable.csv": "1206c26fd04b930bfbd9d3b6019160f275a747f7dcac03b5bcc9278aeb69daa7",
+    "class_2/observable_with_raw.csv": "b0b84597fc7395b29e8aa6c88f0e4f5d5a45af9fbd62af8fa04eaa3ab839db4d",
+    "class_2/complete.json": "b21550d7a55cd24e7fba9d2c490bb4360edffd9c08bc1239481f1ae30f363852",
+    "class_3/observable.csv": "45b0cd16157c10a3f71810cf6a951732942625d0604335bf7070825c5d4c8351",
+    "class_3/observable_with_raw.csv": "2ebdc44395e31cc71ad501dbf5a4e9655f7a85226e8e89f978c0dc97e1214444",
+    "class_3/complete.json": "28a9c8c44c0164374d364b7ae21a9fa5d083080c8b2576c852a3a4da74efa7f6",
+    "class_4/observable.csv": "e305217262cb9eeaaedd225094c1f63544cbb713c0d80b9a7b233bb10ca2ccf9",
+    "class_4/observable_with_raw.csv": "56d9217af2dcc16900c5fdd1f3c90a5d34806f6ad014d0714356bc7edfef3883",
+    "class_4/complete.json": "66ce63e7d664b0f9fa02ccae086e1ee773e1a475e43883c723a0b74ba1dc7ffa",
+    "class_5/observable.csv": "704e8b5abf2660229aa1a239137c98a078d6d3c9d5018ab42781651e4764f241",
+    "class_5/observable_with_raw.csv": "1908afb28c5ef42173aee483b0e1794f344b92c917a06b30aa0ef9550d66ef17",
+    "class_5/complete.json": "479d80d40d6b033313ca4f70771565e1d41ea68d371d1aecd59452f00ff66113",
+    "class_6/observable.csv": "0af15af824a10cc0356982be82bbf64c1ea8e260def7adfa5a65af1ac4e5ebcb",
+    "class_6/observable_with_raw.csv": "74a4286e518d142622646e426998f74ddac06ad324b60aca84f185a2bc6ea4a7",
+    "class_6/complete.json": "ea9d1b1def7e122d40a9e59968498e6b2adafb35505bced8fe1bfc20729732e4",
+    "episode_split_manifest.csv": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05",
+    "train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+    "train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+    "val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+    "val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+    "test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+    "test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e",
+    "generation_audit.json": "d7c030b87ac3c81dd3c012592b60ef4352bf550a0fabe0948e1c82e6d3cf51d3"
+  }
+}

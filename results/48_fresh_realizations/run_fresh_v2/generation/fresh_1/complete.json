@@ -1,0 +1,80 @@
+{
+  "identity": "e58f67f1b30ab9fa2d4ab31d6cc66a304d02e39eadf6bddd6e10ba0c7890e3ae",
+  "contract": "23b0f3f8203ea23fdb4e13a5fc72e75fc929699442ca5e5375b71207c28c7a4a",
+  "result": {
+    "name": "fresh_1",
+    "maker_seeds": [
+      1754031957,
+      432127698,
+      3183227520,
+      318666098,
+      2781632442,
+      3439734493
+    ],
+    "split_seed": 3449719792,
+    "original_replay_passed": false,
+    "population": {
+      "train": {
+        "rows": 210911,
+        "episodes": 3529
+      },
+      "val": {
+        "rows": 43847,
+        "episodes": 755
+      },
+      "test": {
+        "rows": 45242,
+        "episodes": 757
+      }
+    },
+    "fresh_train_val_used_for_fitting_or_selection": false,
+    "filtering": false,
+    "observable_row_overlap": {
+      "original_train": {
+        "rows_matching": 42432,
+        "total_rows": 45242
+      }
+    },
+    "endpoints": 38429,
+    "eligible_episodes": 757,
+    "effect_strata": {
+      "history_only_changed": 15507,
+      "no_observable_change": 12511,
+      "current_changed": 10411
+    }
+  },
+  "completed_at_utc": "2026-10-06T13:07:43.192047+00:00",
+  "artifact_sha256": {
+    "class_1/observable.csv": "64da15009fc6d19356ed9807232aa392f07905ac9a0e508602ccc9b99e2a5e07",
+    "class_1/observable_with_raw.csv": "36c075d954fb38df68ccf45f0abbc6b98eb896e16a4ae23c576e0c877b019e1f",
+    "class_1/complete.json": "6cbc0d2a474c47ac5bafe6571cd06381fed920d9edf26587fc057c7f19b1c13c",
+    "class_2/observable.csv": "48bb0dc9420904645a022013e769fe983e86357ccd2c2e6a54b3f9444a67300f",
+    "class_2/observable_with_raw.csv": "2cec07c2c4634aa9a715233e52c66f47a633ceb7aa9411fd3540413aaddeda06",
+    "class_2/complete.json": "bbb1584539458df8d048cd31da8ec8ca4a3928d7867d03739f09a91efb2e4136",
+    "class_3/observable.csv": "9faefa600da7146866d45d192838d7464b0c64d1b663f526d871af7dfb89fb62",
+    "class_3/observable_with_raw.csv": "d6deabf0767a9efcf8624288bd100acde5db2c764a16d7f18f8008e280adbf21",
+    "class_3/complete.json": "042334d75d388552d8891cc83fb4197c040d15911beb55ef5735b2490aa8e727",
+    "class_4/observable.csv": "a9ea3b19fb28157a60979ed28aa549f9594d3a0d23dc2ec0f8001b3b6bfc8b29",
+    "class_4/observable_with_raw.csv": "465549db93f9156ec5f00aa71f24352300cb9e97b0a7f72fca2c6ac3c98bc85c",
+    "class_4/complete.json": "dceffb4ab1ecd58e42c840feb1466c00dc62735db94654742a767f4874046cd4",
+    "class_5/observable.csv": "04a50797b03df32dddfcbb604d9311275a99b2c42090f21c7d45c6f9a7a3b2a6",
+    "class_5/observable_with_raw.csv": "9e767e1e10f9dd38e9b613b18bdee67de1ed9caf8a40a38e00735bed9b5693da",
+    "class_5/complete.json": "f236cc9e0afe859300932339e41cf08848029ee22ac7f4a7c1ce29d9f6e6e30f",
+    "class_6/observable.csv": "ce7b6e203c85b6f7f643eca0d42bbf01a5ff493f1edcc84d6fceb81df752832c",
+    "class_6/observable_with_raw.csv": "7352c3457afbe2f20d9824f9c1f1ac0b8907d07640edd8ef321657bca8e7b1d9",
+    "class_6/complete.json": "d436790ef75d2a43660c693cedc68c8dabe29cfed79f8096a3921663247e9e35",
+    "episode_split_manifest.csv": "b8417d6a6eb84b9d647b99ad805e1087d9bd98e2de5c146af9916d6cf420f188",
+    "train_observable.csv": "9e7632a23ebfa29ed11290772a45ff2be3b9da6f1841071d7c7a2a8d8332d18e",
+    "train_window_observable_effects.csv": "25398c75b7e74725fa28ddff6d58358167b5fbc00f7102ca13f8c41ac846c5f9",
+    "val_observable.csv": "bc31204d586887257f046100e503b196152d2eee7cdc6a80e7fc6c7749d391f8",
+    "val_window_observable_effects.csv": "2236149f54be8d1488baf9f27c379d27c6fe673656643627b2947b5abc65f007",
+    "test_observable.csv": "05face3f62a04c268439e1c6781d14fba83d7c45b3507df2853272223caa2980",
+    "test_window_observable_effects.csv": "06cc840adc7f3b7a2a7caf4c51f73ab04720b25f7826d61e820d9dc8282a695a",
+    "evaluation_records.csv": "267ccb025adf7c35673cb88bce26409d9e600bb9582128cbe93a240eea640a2d",
+    "evaluation_window_observable_effects.csv": "bbfc352b85d6db2027669aeb65492984f009268a5d6b29d0c815948b50530708",
+    "evaluation_endpoints_L10.csv": "9781663b002be69ae3b55b437fc41eaf6344bd24c3bd5a92a317197d1c99ce70",
+    "evaluation_context_observable_effects_L10.csv": "9007042401b3674a20d7c7288c8c1030323c8330b3b913b52306e75ce83bf9f3",
+    "sequences_L10.npz": "b3d07310b3673e11e0258da1eca4a044e3b4848c0826804b54af5865c31579ca",
+    "generation_audit.json": "a33fae9e39e4cd650ee84ac895fb8665e118d6bd2d7cff1287690c5a3a3371a3"
+  }
+}

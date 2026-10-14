@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "identity_hash": "de14da0de6c8e1d0f7fb861026c9e9ef795e986e30e3833be1ce964f2c2c003c",
+  "length": 20,
+  "seed": 20260612,
+  "best_epoch": 12,
+  "trained_epochs": 19,
+  "training_elapsed_seconds": 82.09342150000157,
+  "artifacts": {
+    "best_meanmax.pt": "28533b75d5a45bea1d66b2e5987478140256dfdd8b116ef3d28decf474f2a636",
+    "history.csv": "d37a8f8fa8dd326349ceb9b3f350e7068ce4b40e3cf3e3fb82e3702e007416cb",
+    "val_predictions.csv": "436c55ff05c41c0a7cd6d25fc8adf5913642c1b4129b1943131ea9be88f33a44",
+    "val_metrics.json": "abaaf121c9ba944ddaefd9fe57e722db06f4dc5336780f458705b2a0dd9bfaff"
+  },
+  "completed": "2026-10-13T04:26:54.913396+00:00"
+}

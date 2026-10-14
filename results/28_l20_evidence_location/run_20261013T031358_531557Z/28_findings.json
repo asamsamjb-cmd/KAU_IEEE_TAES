@@ -1,0 +1,137 @@
+{
+  "status": "EXPLORATORY_POST_TEST",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "matched_test_endpoints": 30561,
+  "test_episodes": 751,
+  "group_counts": {
+    "A_recent10": 22988,
+    "Normal": 4465,
+    "B_only_older10": 1961,
+    "C_no_change20": 1147
+  },
+  "historical_L10_training_cohort_not_matched_to_L20": true,
+  "sampled_units": "class-stratified whole episodes",
+  "seed_handling": "three fixed model runs; macro-F1 computed per seed then averaged",
+  "model_seed_means": [
+    {
+      "length": 10,
+      "model": "TST_L10",
+      "n_seeds": 3,
+      "test_endpoints": 30561,
+      "test_episodes": 751,
+      "macro_f1_seed_mean": 0.8849585079377692,
+      "macro_f1_seed_sd_ddof1": 0.0012980248275742976,
+      "accuracy_seed_mean": 0.8796396278481288,
+      "accuracy_seed_sd_ddof1": 0.0011862745145682595,
+      "normal_false_alarm_fraction_seed_mean": 0.037625979843225084,
+      "normal_false_alarm_fraction_seed_sd_ddof1": 0.005634824468268364
+    },
+    {
+      "length": 20,
+      "model": "TST_L20",
+      "n_seeds": 3,
+      "test_endpoints": 30561,
+      "test_episodes": 751,
+      "macro_f1_seed_mean": 0.9489953531780269,
+      "macro_f1_seed_sd_ddof1": 0.00028819792392464146,
+      "accuracy_seed_mean": 0.949249042897811,
+      "accuracy_seed_sd_ddof1": 0.0002908345413211227,
+      "normal_false_alarm_fraction_seed_mean": 0.024412094064949607,
+      "normal_false_alarm_fraction_seed_sd_ddof1": 0.001119820828667413
+    }
+  ],
+  "paired_bootstrap": [
+    {
+      "metric": "macro_f1",
+      "contrast": "TST_L20_minus_TST_L10",
+      "L10_seed_mean": 0.8849585079377692,
+      "L20_seed_mean": 0.9489953531780269,
+      "delta": 0.06403684524025766,
+      "ci95_delta_low": 0.057764403967926994,
+      "ci95_delta_high": 0.07047803879796931,
+      "L10_ci95_low": 0.8727349036771589,
+      "L10_ci95_high": 0.8962900612400405,
+      "L20_ci95_low": 0.9398788304994883,
+      "L20_ci95_high": 0.9573386112291175,
+      "ci_basis": "paired six-class-stratified whole-episode percentile bootstrap",
+      "exploratory_post_test": true
+    },
+    {
+      "metric": "accuracy",
+      "contrast": "TST_L20_minus_TST_L10",
+      "L10_seed_mean": 0.8796396278481288,
+      "L20_seed_mean": 0.949249042897811,
+      "delta": 0.06960941504968221,
+      "ci95_delta_low": 0.0624362900426249,
+      "ci95_delta_high": 0.0768893207478216,
+      "L10_ci95_low": 0.8665177647027634,
+      "L10_ci95_high": 0.8919946932544969,
+      "L20_ci95_low": 0.9400066808735754,
+      "L20_ci95_high": 0.957738652218863,
+      "ci_basis": "paired six-class-stratified whole-episode percentile bootstrap",
+      "exploratory_post_test": true
+    },
+    {
+      "metric": "normal_false_alarm_fraction",
+      "contrast": "TST_L20_minus_TST_L10",
+      "L10_seed_mean": 0.037625979843225084,
+      "L20_seed_mean": 0.024412094064949607,
+      "delta": -0.013213885778275477,
+      "ci95_delta_low": -0.02570734891907599,
+      "ci95_delta_high": -0.0013335904168362222,
+      "L10_ci95_low": 0.02439561235059982,
+      "L10_ci95_high": 0.051988172180834645,
+      "L20_ci95_low": 0.009501848316027168,
+      "L20_ci95_high": 0.04181552001201019,
+      "ci_basis": "paired six-class-stratified whole-episode percentile bootstrap",
+      "exploratory_post_test": true
+    }
+  ],
+  "group_seed_means": [
+    {
+      "group": "A_recent10",
+      "endpoints": 22988,
+      "L10_recall_mean": 0.9815410939040659,
+      "L20_recall_mean": 0.99037178817934,
+      "delta_recall_mean": 0.00883069427527409,
+      "L10_wrong_L20_correct_seed_mean": 244.0,
+      "L10_correct_L20_wrong_seed_mean": 41.0,
+      "net_correction_seed_mean": 203.0
+    },
+    {
+      "group": "B_only_older10",
+      "endpoints": 1961,
+      "L10_recall_mean": 0.011218765935747069,
+      "L20_recall_mean": 0.9624341322454529,
+      "delta_recall_mean": 0.9512153663097059,
+      "L10_wrong_L20_correct_seed_mean": 1865.3333333333333,
+      "L10_correct_L20_wrong_seed_mean": 0.0,
+      "net_correction_seed_mean": 1865.3333333333333
+    },
+    {
+      "group": "C_no_change20",
+      "endpoints": 1147,
+      "L10_recall_mean": 0.0,
+      "L20_recall_mean": 0.0,
+      "delta_recall_mean": 0.0,
+      "L10_wrong_L20_correct_seed_mean": 0.0,
+      "L10_correct_L20_wrong_seed_mean": 0.0,
+      "net_correction_seed_mean": 0.0
+    },
+    {
+      "group": "Normal",
+      "endpoints": 4465,
+      "L10_recall_mean": 0.9623740201567749,
+      "L20_recall_mean": 0.9755879059350504,
+      "delta_recall_mean": 0.013213885778275461,
+      "L10_wrong_L20_correct_seed_mean": 110.66666666666667,
+      "L10_correct_L20_wrong_seed_mean": 51.666666666666664,
+      "net_correction_seed_mean": 59.0
+    }
+  ],
+  "limitations": [
+    "subgroups identified using nondeployable paired nominal audit",
+    "design followed inspection of Step 27 held-out test",
+    "not a TST-specific advantage or operational attack-state detection result"
+  ]
+}

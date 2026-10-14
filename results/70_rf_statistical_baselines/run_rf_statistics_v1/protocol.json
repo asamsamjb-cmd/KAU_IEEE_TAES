@@ -1,0 +1,136 @@
+{
+  "version": "shared_nominal_rf_statistics_v1",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "script_sha256": "a6831950f55c3a4614198e4051aa52840beb0bf3fb1f291b5112299fd02f5bc9",
+  "step59_identity": "8db457f25d9056895b70b6488d543b72baeecd2593e3ec2f5da8d5a040584c35",
+  "step62_identity": "2586c25f0b1a16d8fcd50fe025d46396d6a7da322ecba7b119bc401f9c2b3fe8",
+  "step16_manifest_sha256": "e82ae8bb6ffe19029b48fa4465b1f9b0f74544cc8d4d4a94452a03a4dcf1d651",
+  "input_paths": {
+    "step59": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\59_raw_semantic\\run_raw_semantic_v2",
+    "step62": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1",
+    "rule": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z"
+  },
+  "methods": [
+    "RF_Threshold_L1",
+    "RF_FiniteCUSUM_L10",
+    "Rule16_RF_L10",
+    "RawScoped_HGB_L10",
+    "TST62_ActualHistory_L10"
+  ],
+  "fit_seeds": [
+    [
+      -1
+    ],
+    [
+      -1
+    ],
+    [
+      -1
+    ],
+    [
+      20260610,
+      20260611,
+      20260612,
+      20260613,
+      20260614
+    ],
+    [
+      20260610,
+      20260611,
+      20260612,
+      20260613,
+      20260614,
+      20260615,
+      20260616,
+      20260617,
+      20260618,
+      20260619
+    ]
+  ],
+  "rf_measurements": {
+    "ttc": [
+      "ttc_snr_db",
+      "ttc_frame_loss_rate"
+    ],
+    "isl": [
+      "isl_snr_db",
+      "isl_frame_loss_rate"
+    ],
+    "iot": [
+      "iot_snr_db",
+      "iot_frame_loss_rate"
+    ],
+    "uav": [
+      "uav_sinr_db",
+      "uav_frame_loss_rate"
+    ]
+  },
+  "link_of_path": {
+    "GATEWAY_LEO": "ttc",
+    "LEO_LEO": "isl",
+    "IOT_LEO": "iot",
+    "UAV_LEO": "uav"
+  },
+  "reference": "All train NORMAL observed-link means/sample std; no effect conditioning",
+  "cusum": {
+    "length": 10,
+    "k": 0.5,
+    "source": "https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc323.htm",
+    "algorithm": "Within [t-9,t] recompute max(0,C+z-k) independently for each link and each of two measurements; hold if link unobserved; max across link/components at t.",
+    "signed_increments": true,
+    "no_pre_rectification": true,
+    "history_outside_L10": false,
+    "arl_guarantee": false
+  },
+  "targets": [
+    0.01,
+    0.05
+  ],
+  "score_definition": "RF class probability (index1), or RF pre-fusion rule evidence, or raw statistic; never 1-pNORMAL",
+  "calibration": "Each method/fit NORMAL-val endpoint quantile; strict >, ties conservative; val reused from checkpoint selection",
+  "primary": "RF positive-class F1 TST62 minus each of two new raw baselines at two budgets, four-comparison family",
+  "metric_conventions": "RF_LINK_JAMMING is positive; all other five scenario classes negative. Precision=0 when no RF alarms; a missing actual class denominator remains undefined. Normal RF FPR is not total any-attack FPR.",
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 2026100970,
+    "unit": "class-stratified paired whole episode",
+    "fit_seed_resampling": false,
+    "conditioned_on": "fixed model fits, normalization, validation thresholds and realization"
+  },
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3",
+    "threads": 2
+  },
+  "population": {
+    "train": {
+      "rows": 211006,
+      "endpoints": 179414,
+      "episodes": 3510
+    },
+    "val": {
+      "rows": 44148,
+      "endpoints": 37371,
+      "episodes": 753
+    },
+    "test": {
+      "rows": 44846,
+      "endpoints": 38078,
+      "episodes": 752
+    }
+  },
+  "scope": [
+    "Post-hoc internal RF-vs-rest comparison on previously inspected benchmark; not external confirmation.",
+    "Raw inputs are simulated monitor measurements, not RF waveform samples.",
+    "Raw detector sees only two measurements of selected link; Rule/TST and HGB use more information and different training objectives.",
+    "All episode scenario labels retained including unobserved RF windows; not instantaneous attack-active detection.",
+    "Raw measurement files contain all splits; only train NORMAL selected rows fit normalization, only val scores calibrate; test score computation begins after lock.",
+    "No new data, labels, neural training, neural inference, latency, onset or recovery metrics.",
+    "HGB-only CPU probability inference required because Step59 stored hard labels; exact hard-label replay required before use.",
+    "A threshold-calibrated Rule RF arm is distinct from native Rule16 multi-class decision. Original configuration is not overwritten."
+  ],
+  "identity": "6143e2605cf2b3cddf12d99ab5b3b21b7b486445a3f6c1d858436352e12c93a0"
+}

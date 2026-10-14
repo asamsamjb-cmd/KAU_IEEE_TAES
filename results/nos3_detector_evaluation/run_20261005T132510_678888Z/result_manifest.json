@@ -1,0 +1,21 @@
+{
+  "clean_control.json": "8a9c49426e087628ae2e783f98576238b5781cdf105b4943a8b090535d32d33e",
+  "clean_time_alignment.json": "263bf970fb991fc240e093f876b4c8093a74df1f1890b4c7b3bfe0d479b2838a",
+  "confusion_counts.csv": "1ea12d0c2f54b909d23bcacc6728996cd19e0362d3f26dca9c8509adbdabaa4f",
+  "endpoint_summary.csv": "22cb07b3dc44ffd22781d19fc68b86ab68dfbb07c7e429e2224b6aaae89fe2d3",
+  "evaluation_protocol.json": "34ab5a1a46d0d8c72f8f149216b7e479ab5af3ccbd21f98d6ceb6d2e96735e2a",
+  "event_endpoints.csv": "ffccc60123b6ef2d6514bbdd06ab9e2d53b9b0a2ac4254a19388cb8cf94f7284",
+  "event_predictions.csv": "e85c7c16df8b0f36a1948d5c755e457a966832cf3344ff5aaf8fc4e7c65f6018",
+  "exact_frame_reference_AUDIT_ONLY.csv": "ae5dba5cb4e2102d611e0736991f0c9705c5781a04d141ce6e0602163a7131af",
+  "frame_observer_AUDIT_ONLY.csv": "ed3c7b2646bf90dbd9ac20774a5d13e120b36bd7e96a24dcad773f81268ed7af",
+  "history_ablation_paired.csv": "9d4ee474213bb3531aeea93e0222e767b97ead4b22bb2b38bdd63beaea96cd94",
+  "input_sha256.json": "0fea54c0fb57160b5cc48e32a7d1875b8a5b7bde83eaffd4795cb4fcdf2a4fbb",
+  "model_provenance.json": "82ef03e58f6425c03491fee6518221ec1f2eb4fcb409bbf59800250df9391e7c",
+  "nos3_detector_evaluation.py": "81b5bfa5cfee86e1bd266d11cbc0023d7c76d3b40a27fda23543b79e7b47c6a2",
+  "observable_windows.csv": "3c2c59ea2d9b18ddfa6e72ce8675e9f0f632d7525ba050e500c637aebe830a0f",
+  "primary_input_collisions.csv": "232987679d4d1021c7404d5a16b86336326e80911f3b6550b3db8556ca3f1b35",
+  "rule_failure_traceback.txt": "b21d87de166f17d53ba0a0175f888d150e981193e2314f2066d026ac7b1dce76",
+  "rule_provenance.json": "98a1d707ce8266d6686b230a7f648359b1e5ec64890f2f38d4d9a49ec4652445",
+  "schema_contract.json": "be585a140873357fb0979b3f59402441f74e53cf1cdbc1fa24161245bfa3134d",
+  "summary.json": "984b40d154ebbc30379eb8f333cc8c0924ae036b0dc1f44abe15f3af025a337d"
+}

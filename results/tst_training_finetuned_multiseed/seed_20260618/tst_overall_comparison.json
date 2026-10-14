@@ -1,0 +1,558 @@
+{
+  "step": "11_train_tst_classifier_overall_comparison",
+  "provenance": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "step11_run_id": "cec4b1653dd4a3fd0ce97147061ec9f0a149a59cea1b3a8c39b3a0cd8fd0cf44"
+  },
+  "main_cross_length_columns": [
+    "val_common_macro_f1",
+    "test_common_macro_f1"
+  ],
+  "common_endpoint_report": {
+    "reference_length": 10,
+    "rule": "Intersection of end_row_indices across L within each split; no rows filtered by Step 10.",
+    "downstream_rule": "Compare context lengths on these same endpoints; report all-available-window results separately.",
+    "splits": {
+      "train": {
+        "common_endpoint_count": 179414,
+        "sorted_end_row_indices_sha256": "d05c6340c61c0bfb2dbea11b238a44bdbcda51613663d2b55ccccfd9c207a761",
+        "available_sequences_by_L": {
+          "1": 211006,
+          "2": 207495,
+          "3": 203984,
+          "5": 196964,
+          "10": 179414
+        }
+      },
+      "val": {
+        "common_endpoint_count": 37371,
+        "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2",
+        "available_sequences_by_L": {
+          "1": 44148,
+          "2": 43395,
+          "3": 42642,
+          "5": 41136,
+          "10": 37371
+        }
+      },
+      "test": {
+        "common_endpoint_count": 38078,
+        "sorted_end_row_indices_sha256": "98860cb9acd0348efe69583e7dce14c09f2b59c77c1a43b2a545065cd241098b",
+        "available_sequences_by_L": {
+          "1": 44846,
+          "2": 44094,
+          "3": 43342,
+          "5": 41838,
+          "10": 38078
+        }
+      }
+    }
+  },
+  "available_sequence_lengths": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "selected_sequence_lengths": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "selected_temporal_context_seconds": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "observable_window_seconds": 1,
+  "embedding_dim": 768,
+  "label_order": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "label_to_id": {
+    "NORMAL": 0,
+    "RF_LINK_JAMMING": 1,
+    "GNSS_SPOOFING": 2,
+    "UNAUTHORIZED_TELECOMMAND_INJECTION": 3,
+    "TELECOMMAND_REPLAY": 4,
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 5
+  },
+  "source_embedding_report": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\embedding_extraction_report.json",
+  "source_sequence_report_index": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\sequence_build_report_index.json",
+  "sequence_report_index": {
+    "step": "10_build_tst_sequences_index",
+    "status": "COMPLETE",
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "source_artifact_sha256": {
+      "embedding_extraction_report.json": "d7525913bea9dd5c713b0d3b67372577db1eb4c0587c02a4da310acac4c68822",
+      "train_window_embeddings.npz": "b6b86adb4cd0b2dcf8d151927d63482d5ef83eb8cb285001a81a72d74b52b7e4",
+      "train_window_metadata.csv": "c09de8d275999b7a6d7b56e75690e47cf15c796bdea9d3a5bfa47e9a0e3b977c",
+      "val_window_embeddings.npz": "a92ab043244aed7f49e50dca125f38e67c6c2d287eb00b66c556597fbd786d51",
+      "val_window_metadata.csv": "95024aac342046f89290926ff96edf53b8e29be5901297032c4f5c5facd513a2",
+      "test_window_embeddings.npz": "67dfc1e4f3a128013dcc585f9b8d80b33bfb8d2d85f6b2a6fe4d9628391becd1",
+      "test_window_metadata.csv": "86f13ac47bc3fc6c337736da94dfac05c1e96e7907c3d8d37b4aa3089d0c7f68"
+    },
+    "common_endpoint_report": {
+      "reference_length": 10,
+      "rule": "Intersection of end_row_indices across L within each split; no rows filtered by Step 10.",
+      "downstream_rule": "Compare context lengths on these same endpoints; report all-available-window results separately.",
+      "splits": {
+        "train": {
+          "common_endpoint_count": 179414,
+          "sorted_end_row_indices_sha256": "d05c6340c61c0bfb2dbea11b238a44bdbcda51613663d2b55ccccfd9c207a761",
+          "available_sequences_by_L": {
+            "1": 211006,
+            "2": 207495,
+            "3": 203984,
+            "5": 196964,
+            "10": 179414
+          }
+        },
+        "val": {
+          "common_endpoint_count": 37371,
+          "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2",
+          "available_sequences_by_L": {
+            "1": 44148,
+            "2": 43395,
+            "3": 42642,
+            "5": 41136,
+            "10": 37371
+          }
+        },
+        "test": {
+          "common_endpoint_count": 38078,
+          "sorted_end_row_indices_sha256": "98860cb9acd0348efe69583e7dce14c09f2b59c77c1a43b2a545065cd241098b",
+          "available_sequences_by_L": {
+            "1": 44846,
+            "2": 44094,
+            "3": 43342,
+            "5": 41838,
+            "10": 38078
+          }
+        }
+      }
+    },
+    "observability_audit": {
+      "schema_version": "counterfactual_observable_change_v1",
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+      "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "split_files": {
+        "train": "audit/train_window_observable_effects.csv",
+        "val": "audit/val_window_observable_effects.csv",
+        "test": "audit/test_window_observable_effects.csv"
+      },
+      "artifacts": {
+        "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+        "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+        "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+      },
+      "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+    },
+    "source_embedding_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main",
+    "output_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main",
+    "observable_window_seconds": 1,
+    "sequence_lengths": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "temporal_context_seconds": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "tst_context_mapping": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "5": 5,
+      "10": 10
+    },
+    "stride": 1,
+    "embedding_encoder_source": "finetuned",
+    "representation_type": "supervised_finetuned_distilbert_cls",
+    "materialize_X": false,
+    "reports": {
+      "L1": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\sequence_build_report_L1.json",
+      "L2": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\sequence_build_report_L2.json",
+      "L3": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\sequence_build_report_L3.json",
+      "L5": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\sequence_build_report_L5.json",
+      "L10": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\sequence_build_report_L10.json"
+    },
+    "required_step11_loading_rule": "For each L and split, load embeddings from C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main/{split}_window_embeddings.npz and sequence_indices from C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main/{split}_tst_sequences_L{L}.npz; construct X_batch as embeddings[sequence_indices_batch]."
+  },
+  "length_aware_regularization_enabled": false,
+  "length_aware_regularization_table": {
+    "1": {
+      "gaussian_noise_std": 0.0,
+      "history_token_dropout_prob": 0.0,
+      "last_window_replacement_prob": 0.0
+    },
+    "2": {
+      "gaussian_noise_std": 0.015,
+      "history_token_dropout_prob": 0.06,
+      "last_window_replacement_prob": 0.05
+    },
+    "3": {
+      "gaussian_noise_std": 0.015,
+      "history_token_dropout_prob": 0.07,
+      "last_window_replacement_prob": 0.06
+    },
+    "5": {
+      "gaussian_noise_std": 0.018,
+      "history_token_dropout_prob": 0.08,
+      "last_window_replacement_prob": 0.07
+    },
+    "10": {
+      "gaussian_noise_std": 0.02,
+      "history_token_dropout_prob": 0.1,
+      "last_window_replacement_prob": 0.08
+    }
+  },
+  "missing_aware_training_enabled": false,
+  "missing_aware_replacement": "sequence_mean",
+  "missing_aware_regularization_table": {
+    "1": {
+      "gaussian_noise_std": 0.0,
+      "sequence_dim_dropout_prob": 0.0,
+      "window_dim_dropout_prob": 0.0,
+      "token_replacement_prob": 0.0,
+      "last_token_replacement_prob": 0.0
+    },
+    "2": {
+      "gaussian_noise_std": 0.0,
+      "sequence_dim_dropout_prob": 0.0,
+      "window_dim_dropout_prob": 0.0,
+      "token_replacement_prob": 0.0,
+      "last_token_replacement_prob": 0.0
+    },
+    "3": {
+      "gaussian_noise_std": 0.003,
+      "sequence_dim_dropout_prob": 0.01,
+      "window_dim_dropout_prob": 0.01,
+      "token_replacement_prob": 0.0,
+      "last_token_replacement_prob": 0.0
+    },
+    "5": {
+      "gaussian_noise_std": 0.006,
+      "sequence_dim_dropout_prob": 0.02,
+      "window_dim_dropout_prob": 0.02,
+      "token_replacement_prob": 0.004,
+      "last_token_replacement_prob": 0.001
+    },
+    "10": {
+      "gaussian_noise_std": 0.008,
+      "sequence_dim_dropout_prob": 0.03,
+      "window_dim_dropout_prob": 0.03,
+      "token_replacement_prob": 0.006,
+      "last_token_replacement_prob": 0.002
+    }
+  },
+  "primary_test_subset": "full",
+  "fit_subset_for_train_and_validation": "full",
+  "robust_evidence_budget_eval_enabled": false,
+  "use_robust_eval_as_primary_for_long_contexts": false,
+  "robust_primary_min_sequence_length": 5,
+  "robust_mc_repeats": 5,
+  "robust_keep_windows_by_length": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "5": 1,
+    "10": 1
+  },
+  "robust_last_window_keep_prob_by_length": {
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "5": 0.0,
+    "10": 0.0
+  },
+  "robust_dim_dropout_prob_by_length": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "5": 0.3,
+    "10": 0.4
+  },
+  "robust_gaussian_noise_std_by_length": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "5": 0.07,
+    "10": 0.09
+  },
+  "comparison": [
+    {
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+      "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+      "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+      "step11_run_id": "cec4b1653dd4a3fd0ce97147061ec9f0a149a59cea1b3a8c39b3a0cd8fd0cf44",
+      "sequence_length": 1,
+      "temporal_context_seconds": 1,
+      "val_common_count": 37371,
+      "test_common_count": 38078,
+      "best_epoch": 6,
+      "elapsed_seconds": 103.6674747467041,
+      "best_checkpoint_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L1\\checkpoints\\best_tst_model_L1.pt",
+      "report_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L1\\reports\\evaluation_metrics_L1.json",
+      "val_accuracy": 0.40038053818972547,
+      "val_macro_f1": 0.4117433923074454,
+      "val_weighted_f1": 0.4069898392864535,
+      "val_common_accuracy": 0.4304407160632576,
+      "val_common_macro_f1": 0.4424619403391275,
+      "val_non_overlap_accuracy": 0.40038053818972547,
+      "val_non_overlap_macro_f1": 0.4117433923074454,
+      "val_common_non_overlap_accuracy": 0.4304407160632576,
+      "val_common_non_overlap_macro_f1": 0.4424619403391275,
+      "test_metric_protocol": "standard_unperturbed",
+      "test_accuracy": 0.39359140168576906,
+      "test_macro_f1": 0.40581282813069236,
+      "test_weighted_f1": 0.404129718800845,
+      "test_standard_accuracy": 0.39359140168576906,
+      "test_standard_macro_f1": 0.40581282813069236,
+      "test_standard_weighted_f1": 0.404129718800845,
+      "test_robust_accuracy": null,
+      "test_robust_macro_f1": null,
+      "test_robust_weighted_f1": null,
+      "test_full_accuracy": 0.39359140168576906,
+      "test_full_macro_f1": 0.40581282813069236,
+      "test_full_weighted_f1": 0.404129718800845,
+      "test_history_zero_accuracy": null,
+      "test_history_zero_macro_f1": null,
+      "test_repeat_last_accuracy": null,
+      "test_repeat_last_macro_f1": null,
+      "test_prefix_reverse_accuracy": null,
+      "test_prefix_reverse_macro_f1": null,
+      "test_common_accuracy": 0.42368296654236043,
+      "test_common_macro_f1": 0.43620374911922744,
+      "test_non_overlap_accuracy": 0.39359140168576906,
+      "test_non_overlap_macro_f1": 0.40581282813069236,
+      "test_common_non_overlap_accuracy": 0.42368296654236043,
+      "test_common_non_overlap_macro_f1": 0.43620374911922744,
+      "test_loss": 1.4030582340640951
+    },
+    {
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+      "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+      "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+      "step11_run_id": "cec4b1653dd4a3fd0ce97147061ec9f0a149a59cea1b3a8c39b3a0cd8fd0cf44",
+      "sequence_length": 2,
+      "temporal_context_seconds": 2,
+      "val_common_count": 37371,
+      "test_common_count": 38078,
+      "best_epoch": 6,
+      "elapsed_seconds": 124.46029996871948,
+      "best_checkpoint_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L2\\checkpoints\\best_tst_model_L2.pt",
+      "report_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L2\\reports\\evaluation_metrics_L2.json",
+      "val_accuracy": 0.5010024196335984,
+      "val_macro_f1": 0.5226852575457718,
+      "val_weighted_f1": 0.5178089993800271,
+      "val_common_accuracy": 0.5370474432046239,
+      "val_common_macro_f1": 0.5579286842051453,
+      "val_non_overlap_accuracy": 0.49771585198720875,
+      "val_non_overlap_macro_f1": 0.5197655542944685,
+      "val_common_non_overlap_accuracy": 0.5348553872232228,
+      "val_common_non_overlap_macro_f1": 0.5561338235100192,
+      "test_metric_protocol": "standard_unperturbed",
+      "test_accuracy": 0.4973465777656824,
+      "test_macro_f1": 0.5176236922001357,
+      "test_weighted_f1": 0.5180278350365036,
+      "test_standard_accuracy": 0.4973465777656824,
+      "test_standard_macro_f1": 0.5176236922001357,
+      "test_standard_weighted_f1": 0.5180278350365036,
+      "test_robust_accuracy": null,
+      "test_robust_macro_f1": null,
+      "test_robust_weighted_f1": null,
+      "test_full_accuracy": 0.4973465777656824,
+      "test_full_macro_f1": 0.5176236922001357,
+      "test_full_weighted_f1": 0.5180278350365036,
+      "test_history_zero_accuracy": 0.40073479384950333,
+      "test_history_zero_macro_f1": 0.4078260824181672,
+      "test_repeat_last_accuracy": 0.4001224656415839,
+      "test_repeat_last_macro_f1": 0.41008740220681267,
+      "test_prefix_reverse_accuracy": 0.4973465777656824,
+      "test_prefix_reverse_macro_f1": 0.5176236922001357,
+      "test_common_accuracy": 0.5355323283785913,
+      "test_common_macro_f1": 0.5538208146562166,
+      "test_non_overlap_accuracy": 0.49307740717432347,
+      "test_non_overlap_macro_f1": 0.5135235167198186,
+      "test_common_non_overlap_accuracy": 0.5326957064143882,
+      "test_common_non_overlap_macro_f1": 0.5511599011941075,
+      "test_loss": 1.2169555946559372
+    },
+    {
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+      "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+      "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+      "step11_run_id": "cec4b1653dd4a3fd0ce97147061ec9f0a149a59cea1b3a8c39b3a0cd8fd0cf44",
+      "sequence_length": 3,
+      "temporal_context_seconds": 3,
+      "val_common_count": 37371,
+      "test_common_count": 38078,
+      "best_epoch": 10,
+      "elapsed_seconds": 165.37288808822632,
+      "best_checkpoint_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L3\\checkpoints\\best_tst_model_L3.pt",
+      "report_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L3\\reports\\evaluation_metrics_L3.json",
+      "val_accuracy": 0.5730969466722949,
+      "val_macro_f1": 0.6016919486344589,
+      "val_weighted_f1": 0.5972481680603623,
+      "val_common_accuracy": 0.611543710363651,
+      "val_common_macro_f1": 0.6393364991825056,
+      "val_non_overlap_accuracy": 0.5656055363321799,
+      "val_non_overlap_macro_f1": 0.5944451374497369,
+      "val_common_non_overlap_accuracy": 0.6143876630301042,
+      "val_common_non_overlap_macro_f1": 0.6422686294803771,
+      "test_metric_protocol": "standard_unperturbed",
+      "test_accuracy": 0.5687785519819113,
+      "test_macro_f1": 0.5966225328507341,
+      "test_weighted_f1": 0.5983947012769804,
+      "test_standard_accuracy": 0.5687785519819113,
+      "test_standard_macro_f1": 0.5966225328507341,
+      "test_standard_weighted_f1": 0.5983947012769804,
+      "test_robust_accuracy": null,
+      "test_robust_macro_f1": null,
+      "test_robust_weighted_f1": null,
+      "test_full_accuracy": 0.5687785519819113,
+      "test_full_macro_f1": 0.5966225328507341,
+      "test_full_weighted_f1": 0.5983947012769804,
+      "test_history_zero_accuracy": 0.39818190208112225,
+      "test_history_zero_macro_f1": 0.4025914427755453,
+      "test_repeat_last_accuracy": 0.3985510590189654,
+      "test_repeat_last_macro_f1": 0.40215580970067766,
+      "test_prefix_reverse_accuracy": 0.5687785519819113,
+      "test_prefix_reverse_macro_f1": 0.5966565581841293,
+      "test_common_accuracy": 0.6074373654078471,
+      "test_common_macro_f1": 0.6337714625589254,
+      "test_non_overlap_accuracy": 0.5607133133678193,
+      "test_non_overlap_macro_f1": 0.5885029388462749,
+      "test_common_non_overlap_accuracy": 0.6099228047603731,
+      "test_common_non_overlap_macro_f1": 0.635768467857072,
+      "test_loss": 1.08005454510438
+    },
+    {
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+      "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+      "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+      "step11_run_id": "cec4b1653dd4a3fd0ce97147061ec9f0a149a59cea1b3a8c39b3a0cd8fd0cf44",
+      "sequence_length": 5,
+      "temporal_context_seconds": 5,
+      "val_common_count": 37371,
+      "test_common_count": 38078,
+      "best_epoch": 5,
+      "elapsed_seconds": 127.84855437278748,
+      "best_checkpoint_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L5\\checkpoints\\best_tst_model_L5.pt",
+      "report_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L5\\reports\\evaluation_metrics_L5.json",
+      "val_accuracy": 0.6786269933877869,
+      "val_macro_f1": 0.7090157757914679,
+      "val_weighted_f1": 0.7054235367998737,
+      "val_common_accuracy": 0.7117551042252014,
+      "val_common_macro_f1": 0.7391491215058528,
+      "val_non_overlap_accuracy": 0.6592106804075418,
+      "val_non_overlap_macro_f1": 0.6907642249446314,
+      "val_common_non_overlap_accuracy": 0.6980477780631903,
+      "val_common_non_overlap_macro_f1": 0.7256695858944627,
+      "test_metric_protocol": "standard_unperturbed",
+      "test_accuracy": 0.6767531908791051,
+      "test_macro_f1": 0.7054048697648426,
+      "test_weighted_f1": 0.7085652047216874,
+      "test_standard_accuracy": 0.6767531908791051,
+      "test_standard_macro_f1": 0.7054048697648426,
+      "test_standard_weighted_f1": 0.7085652047216874,
+      "test_robust_accuracy": null,
+      "test_robust_macro_f1": null,
+      "test_robust_weighted_f1": null,
+      "test_full_accuracy": 0.6767531908791051,
+      "test_full_macro_f1": 0.7054048697648426,
+      "test_full_weighted_f1": 0.7085652047216874,
+      "test_history_zero_accuracy": 0.4214350590372389,
+      "test_history_zero_macro_f1": 0.42285568934758705,
+      "test_repeat_last_accuracy": 0.40513408862756345,
+      "test_repeat_last_macro_f1": 0.40972560582538115,
+      "test_prefix_reverse_accuracy": 0.6767292891629619,
+      "test_prefix_reverse_macro_f1": 0.7053195815960693,
+      "test_common_accuracy": 0.7110142339408583,
+      "test_common_macro_f1": 0.7355915333272667,
+      "test_non_overlap_accuracy": 0.661708751297129,
+      "test_non_overlap_macro_f1": 0.6923395376850526,
+      "test_common_non_overlap_accuracy": 0.7018053276101502,
+      "test_common_non_overlap_macro_f1": 0.727558327916074,
+      "test_loss": 0.882610878369293
+    },
+    {
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+      "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+      "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+      "step11_run_id": "cec4b1653dd4a3fd0ce97147061ec9f0a149a59cea1b3a8c39b3a0cd8fd0cf44",
+      "sequence_length": 10,
+      "temporal_context_seconds": 10,
+      "val_common_count": 37371,
+      "test_common_count": 38078,
+      "best_epoch": 18,
+      "elapsed_seconds": 290.5392951965332,
+      "best_checkpoint_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L10\\checkpoints\\best_tst_model_L10.pt",
+      "report_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L10\\reports\\evaluation_metrics_L10.json",
+      "val_accuracy": 0.8225897085975756,
+      "val_macro_f1": 0.8393444174904178,
+      "val_weighted_f1": 0.8370048983561535,
+      "val_common_accuracy": 0.8225897085975756,
+      "val_common_macro_f1": 0.8393444174904178,
+      "val_non_overlap_accuracy": 0.7882728164867517,
+      "val_non_overlap_macro_f1": 0.8098050911795293,
+      "val_common_non_overlap_accuracy": 0.7882728164867517,
+      "val_common_non_overlap_macro_f1": 0.8098050911795293,
+      "test_metric_protocol": "standard_unperturbed",
+      "test_accuracy": 0.8353642523241767,
+      "test_macro_f1": 0.8468134602788743,
+      "test_weighted_f1": 0.8505504066803311,
+      "test_standard_accuracy": 0.8353642523241767,
+      "test_standard_macro_f1": 0.8468134602788743,
+      "test_standard_weighted_f1": 0.8505504066803311,
+      "test_robust_accuracy": null,
+      "test_robust_macro_f1": null,
+      "test_robust_weighted_f1": null,
+      "test_full_accuracy": 0.8353642523241767,
+      "test_full_macro_f1": 0.8468134602788743,
+      "test_full_weighted_f1": 0.8505504066803311,
+      "test_history_zero_accuracy": 0.4261515835915752,
+      "test_history_zero_macro_f1": 0.43419895965891403,
+      "test_repeat_last_accuracy": 0.4161195440937024,
+      "test_repeat_last_macro_f1": 0.4255528068076682,
+      "test_prefix_reverse_accuracy": 0.8349440621881401,
+      "test_prefix_reverse_macro_f1": 0.8464898690314554,
+      "test_common_accuracy": 0.8353642523241767,
+      "test_common_macro_f1": 0.8468134602788743,
+      "test_non_overlap_accuracy": 0.799662487945998,
+      "test_non_overlap_macro_f1": 0.8167038780370962,
+      "test_common_non_overlap_accuracy": 0.799662487945998,
+      "test_common_non_overlap_macro_f1": 0.8167038780370962,
+      "test_loss": 0.5778594932058252
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 1283, in main
+    report["benchmark"]=evaluate_benchmark_mask(context,engine,rule,clean,out,work)
+                        ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 1064, in evaluate_benchmark_mask
+    require(passed,f"Full clean predictions could not be reproduced: {model}; no mask scores should be interpreted")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 63, in require
+    raise ValueError(message)
+ValueError: Full clean predictions could not be reproduced: TST_L1; no mask scores should be interpreted

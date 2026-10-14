@@ -1,0 +1,183 @@
+{
+  "bootstrap_unit": "whole episode, stratified by class",
+  "draws": 20000,
+  "bootstrap_seed": 2026100762,
+  "head_seed_resampling": false,
+  "estimator": "mean of per-head metrics; no ensemble or pooled-head confusion",
+  "episodes": 752,
+  "episodes_per_class": {
+    "NORMAL": 130,
+    "RF_LINK_JAMMING": 125,
+    "GNSS_SPOOFING": 125,
+    "UNAUTHORIZED_TELECOMMAND_INJECTION": 123,
+    "TELECOMMAND_REPLAY": 127,
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 122
+  },
+  "interval_scope": "Conditional on this fixed encoder, these trained heads and this generator realization. No encoder/head-training/generator/external-validity uncertainty; descriptive percentile intervals.",
+  "primary_contrast": "actual_history minus repeat_current Macro-F1",
+  "multiplicity": "one primary contrast; FPR and recalls descriptive",
+  "macro_f1_difference": {
+    "estimate": 0.40657987618224134,
+    "ci95_low": 0.3963714806636268,
+    "ci95_high": 0.41707140623579125
+  },
+  "normal_fpr_difference": {
+    "estimate": -0.535629989586949,
+    "ci95_low": -0.552679684249195,
+    "ci95_high": -0.5182785851949895
+  },
+  "recall_NORMAL_difference": {
+    "estimate": 0.535629989586949,
+    "ci95_low": 0.5182785851949894,
+    "ci95_high": 0.5526796842491949
+  },
+  "recall_RF_LINK_JAMMING_difference": {
+    "estimate": 0.41868522815158554,
+    "ci95_low": 0.37492392726065665,
+    "ci95_high": 0.4621356882370141
+  },
+  "recall_GNSS_SPOOFING_difference": {
+    "estimate": 0.16381152849740954,
+    "ci95_low": 0.14759353954590407,
+    "ci95_high": 0.18001810407251434
+  },
+  "recall_UNAUTHORIZED_TELECOMMAND_INJECTION_difference": {
+    "estimate": 0.6456802973977694,
+    "ci95_low": 0.6323212850369638,
+    "ci95_high": 0.6596796245020435
+  },
+  "recall_TELECOMMAND_REPLAY_difference": {
+    "estimate": 0.4792542172240306,
+    "ci95_low": 0.4564570316066542,
+    "ci95_high": 0.5016221930247742
+  },
+  "recall_GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE_difference": {
+    "estimate": 0.1823158914728682,
+    "ci95_low": 0.1607128957408232,
+    "ci95_high": 0.20428494785645462
+  },
+  "conditions": {
+    "actual_history": {
+      "macro_f1": {
+        "estimate": 0.8469767961342353,
+        "ci95_low": 0.836510927226144,
+        "ci95_high": 0.8570276289997446
+      },
+      "normal_fpr": {
+        "estimate": 0.03729607775078098,
+        "ci95_low": 0.02479029107342832,
+        "ci95_high": 0.050862344644791745
+      },
+      "recall_NORMAL": {
+        "estimate": 0.962703922249219,
+        "ci95_low": 0.9491376553552082,
+        "ci95_high": 0.9752097089265717
+      },
+      "recall_RF_LINK_JAMMING": {
+        "estimate": 0.7884454756380511,
+        "ci95_low": 0.7428134291487575,
+        "ci95_high": 0.8321481940353733
+      },
+      "recall_GNSS_SPOOFING": {
+        "estimate": 0.9357512953367877,
+        "ci95_low": 0.9222355108800268,
+        "ci95_high": 0.9491537473887608
+      },
+      "recall_UNAUTHORIZED_TELECOMMAND_INJECTION": {
+        "estimate": 0.9055613382899628,
+        "ci95_low": 0.8888212386822957,
+        "ci95_high": 0.9224007340624981
+      },
+      "recall_TELECOMMAND_REPLAY": {
+        "estimate": 0.7353950873039359,
+        "ci95_low": 0.7055318846925976,
+        "ci95_high": 0.7640806395769512
+      },
+      "recall_GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+        "estimate": 0.6992409560723514,
+        "ci95_low": 0.6748439990965148,
+        "ci95_high": 0.7231408464342675
+      }
+    },
+    "repeat_current": {
+      "macro_f1": {
+        "estimate": 0.4403969199519939,
+        "ci95_low": 0.429089636733566,
+        "ci95_high": 0.4513829521987824
+      },
+      "normal_fpr": {
+        "estimate": 0.57292606733773,
+        "ci95_low": 0.5619790056452789,
+        "ci95_high": 0.5841633098764515
+      },
+      "recall_NORMAL": {
+        "estimate": 0.42707393266227,
+        "ci95_low": 0.41583669012354857,
+        "ci95_high": 0.438020994354721
+      },
+      "recall_RF_LINK_JAMMING": {
+        "estimate": 0.3697602474864656,
+        "ci95_low": 0.3183037254162574,
+        "ci95_high": 0.4239731213116855
+      },
+      "recall_GNSS_SPOOFING": {
+        "estimate": 0.7719397668393781,
+        "ci95_low": 0.7486297753964631,
+        "ci95_high": 0.7953622426569834
+      },
+      "recall_UNAUTHORIZED_TELECOMMAND_INJECTION": {
+        "estimate": 0.2598810408921933,
+        "ci95_low": 0.24896702234105297,
+        "ci95_high": 0.2709088997516833
+      },
+      "recall_TELECOMMAND_REPLAY": {
+        "estimate": 0.25614087007990527,
+        "ci95_low": 0.2459109377803029,
+        "ci95_high": 0.2662598720994387
+      },
+      "recall_GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": {
+        "estimate": 0.5169250645994832,
+        "ci95_low": 0.5059486910902657,
+        "ci95_high": 0.5276607610813392
+      }
+    }
+  },
+  "head_seed_sd": {
+    "actual_history": {
+      "macro_f1": 0.00027247315095425877,
+      "normal_fpr": 0.0033537700857636417,
+      "recall_NORMAL": 0.003353770085763646,
+      "recall_RF_LINK_JAMMING": 0.0026751972546801973,
+      "recall_GNSS_SPOOFING": 0.0032534191330897007,
+      "recall_UNAUTHORIZED_TELECOMMAND_INJECTION": 0.001089218625987126,
+      "recall_TELECOMMAND_REPLAY": 9.358619888038835e-05,
+      "recall_GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 0.0005850227384538079
+    },
+    "repeat_current": {
+      "macro_f1": 0.004128590952185007,
+      "normal_fpr": 0.1206149359925917,
+      "recall_NORMAL": 0.12061493599259171,
+      "recall_RF_LINK_JAMMING": 0.006569460032663083,
+      "recall_GNSS_SPOOFING": 0.0004266890193448282,
+      "recall_UNAUTHORIZED_TELECOMMAND_INJECTION": 0.018847325381729823,
+      "recall_TELECOMMAND_REPLAY": 0.13096685531295704,
+      "recall_GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 0.08426738539324764
+    }
+  },
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "encoder": "One frozen original Step8 fine-tuned DistilBERT; existing FP32 Step9 CLS",
+  "head_seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614,
+    20260615,
+    20260616,
+    20260617,
+    20260618,
+    20260619
+  ],
+  "parameter_count": 234758,
+  "interpretation": "Difference isolates access to actual additional historical embeddings for this matched TST head. A positive estimate is not evidence of temporal-order necessity or architecture superiority."
+}

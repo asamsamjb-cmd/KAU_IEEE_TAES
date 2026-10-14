@@ -1,0 +1,14 @@
+{
+  "identity": "66be2001eaa909a164f6c9b3f72580ea5f4f63a500cc5af61c8bdf51f309640a",
+  "files": {
+    "episode_components.npz": "653603d5c51ed897074c52d1d57466338bebec7df3f05cac7f1c5f298091614e",
+    "bootstrap_distribution.npz": "a82da986f24364f5ecb836b321cfd362e933ed845164f791942c793d2c5531d6",
+    "metrics_by_fit_mask.csv": "924b7aa4dba6a03b5d730ad4d7394d1a6498e09109234fa4ef5c7fc4c5edc5d3",
+    "class_metrics.csv": "c2eb42949d4bfa100006195c7948677261b9f09369e6b14c9934fdccf2e79933",
+    "model_summary.csv": "b6f9534176584d62f8c1f0cf591ffba3c12c7c4c7feed197434398a59af950a4",
+    "metric_intervals.csv": "29330d5d0e7220dae1746400fbafaa98ac47e073fd7a5958c3ae690ad1b8bdb1",
+    "paired_comparisons.csv": "ba34326c7eb1e16d2020ae32b13e2c9091f34e281e1249f9c273db51569eb91b",
+    "summary.json": "ff75bbeb3c786154de3996716dd69391a60a4a0c7f5e899a910078dd733b035b"
+  },
+  "committed_at_utc": "2026-10-09T07:38:58.595218+00:00"
+}

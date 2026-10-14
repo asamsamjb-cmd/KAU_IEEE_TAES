@@ -1,0 +1,87 @@
+{
+  "population": {
+    "train": {
+      "rows": 211006,
+      "episodes": 3511,
+      "endpoints": 179414,
+      "endpoint_episodes": 3510,
+      "class_endpoints": [
+        30210,
+        30152,
+        30383,
+        29841,
+        28919,
+        29909
+      ]
+    },
+    "val": {
+      "rows": 44148,
+      "episodes": 753,
+      "endpoints": 37371,
+      "endpoint_episodes": 753,
+      "class_endpoints": [
+        6261,
+        5922,
+        5908,
+        6025,
+        6673,
+        6582
+      ]
+    },
+    "test": {
+      "rows": 44846,
+      "episodes": 752,
+      "endpoints": 38078,
+      "endpoint_episodes": 752,
+      "class_endpoints": [
+        5762,
+        6465,
+        6176,
+        6725,
+        6758,
+        6192
+      ]
+    }
+  },
+  "hashes": {
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1\\run_manifest.json": "fd5bf28b48d0ff129a53fe9d45f2e6b45c2993155eb734ecf4b16cf9fbd61e11",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1\\protocol.json": "d3c2b09ce3f28ffdbb4831f334d78023e2cd41d9b22446a7c7e2c31473c0711f",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\build_manifest.json": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\episode_split_manifest.csv": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1\\endpoint_audit_train.csv": "62c8a122b26c1b28c1c8bc472a08d2d0f6a1fcf06a0db8494ae8ee97c28a34a0",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1\\endpoint_audit_val.csv": "3af2c3ba7ec34366fba863f5dcc6d18b23a7900b64cd964fde6c2339173f5b21",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\62_temporal_information_control\\run_information_control_v1\\endpoint_audit_test.csv": "de0821f1c067c3489b16e5a28c77ca35caf345a2e63a09546e2e8c1460d8d29e"
+  },
+  "models_or_audit_flags_loaded": false,
+  "fit_fields": [
+    "observation_stage",
+    "path_type",
+    "direction",
+    "source_role",
+    "destination_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "service_context",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "vocabulary_fit_split": "train",
+  "cache_val_gib": 0.062021540477871895,
+  "all_split_episodes_disjoint": true
+}

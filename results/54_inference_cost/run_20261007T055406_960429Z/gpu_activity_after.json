@@ -1,0 +1,6 @@
+{
+  "status": "NO_OTHER_COMPUTE_PROCESS_REPORTED",
+  "gpu_uuid": "c99a6425-b53e-4c58-65b5-66923c1b5e53",
+  "other_compute_processes": [],
+  "limitation": "nvidia-smi may omit graphics/WDDM activity; this is not a proof of an idle device."
+}

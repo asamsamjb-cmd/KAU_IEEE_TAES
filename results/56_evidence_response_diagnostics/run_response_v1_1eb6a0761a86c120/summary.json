@@ -1,0 +1,267 @@
+{
+  "status": "EVIDENCE_RESPONSE_COMPLETE",
+  "code_version": "1.0-frozen-evidence-response-diagnostics",
+  "started_at_utc": "2026-10-07T02:16:49.222075+00:00",
+  "finished_at_utc": "2026-10-07T02:16:55.626279+00:00",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "protocol_identity": "1eb6a0761a86c120ff910f06785c61875203c980a336a6dae13003ab1dcef378",
+  "clean_endpoints": 38078,
+  "episodes": 752,
+  "latency_episodes": 379,
+  "normal_episodes": 130,
+  "trained_head_count": 50,
+  "deterministic_controls": 4,
+  "selection_source": "Existing Step47 clean validation only",
+  "selected_pool": "MeanMax_MLP",
+  "eligibility_counts": {
+    "eligible": 379,
+    "change_before_first_prediction": 223,
+    "normal_control": 130,
+    "less_than_10s_followup": 15,
+    "no_observed_change": 5
+  },
+  "comparisons": [
+    {
+      "reference": "TST",
+      "comparator": "MeanMax_MLP",
+      "metric": "restricted_wait_s",
+      "delta_TST_minus_pool": -0.0071240105540897195,
+      "ci95_low": -0.022427440633245383,
+      "ci95_high": 0.0076517150395778236,
+      "bonferroni_low": -0.02559366754617415,
+      "bonferroni_high": 0.010817941952506587,
+      "family_size": 3,
+      "lower_is_better": true,
+      "adjusted_interval_direction": "zero_included_not_equivalence",
+      "interpretation": "This outcome only; no automatic overall advantage, noninferiority, attention-causality or ordering claim"
+    },
+    {
+      "reference": "TST",
+      "comparator": "MeanMax_MLP",
+      "metric": "detected_by_10s",
+      "delta_TST_minus_pool": -0.0013192612137203166,
+      "ci95_low": -0.00395778364116095,
+      "ci95_high": 0.0,
+      "bonferroni_low": -0.005277044854881266,
+      "bonferroni_high": 0.0,
+      "family_size": 3,
+      "lower_is_better": false,
+      "adjusted_interval_direction": "zero_included_not_equivalence",
+      "interpretation": "This outcome only; no automatic overall advantage, noninferiority, attention-causality or ordering claim"
+    },
+    {
+      "reference": "TST",
+      "comparator": "MeanMax_MLP",
+      "metric": "normal_episode_confirmed_alarm",
+      "delta_TST_minus_pool": -0.07769230769230769,
+      "ci95_low": -0.12000000000000001,
+      "ci95_high": -0.03769230769230769,
+      "bonferroni_low": -0.12999999999999998,
+      "bonferroni_high": -0.029230769230769237,
+      "family_size": 3,
+      "lower_is_better": true,
+      "adjusted_interval_direction": "TST_favorable",
+      "interpretation": "This outcome only; no automatic overall advantage, noninferiority, attention-causality or ordering claim"
+    }
+  ],
+  "main_latency": [
+    {
+      "family": "TST",
+      "label": "ALL_ATTACKS",
+      "episodes": 379,
+      "head_seeds": 10,
+      "restricted_wait_s": 1.6905013192612137,
+      "restricted_wait_head_sd": 0.008886943239450565,
+      "detected_by_10s": 0.9773087071240105,
+      "not_detected_by_10s": 0.022691292875989477,
+      "role": "restricted wait and detection probability, NOT attack-onset latency"
+    },
+    {
+      "family": "Mean_MLP",
+      "label": "ALL_ATTACKS",
+      "episodes": 379,
+      "head_seeds": 10,
+      "restricted_wait_s": 1.7213720316622692,
+      "restricted_wait_head_sd": 0.009241108556948959,
+      "detected_by_10s": 0.9770448548812665,
+      "not_detected_by_10s": 0.022955145118733533,
+      "role": "restricted wait and detection probability, NOT attack-onset latency"
+    },
+    {
+      "family": "Max_MLP",
+      "label": "ALL_ATTACKS",
+      "episodes": 379,
+      "head_seeds": 10,
+      "restricted_wait_s": 1.7179419525065964,
+      "restricted_wait_head_sd": 0.020034632047187206,
+      "detected_by_10s": 0.9765171503957785,
+      "not_detected_by_10s": 0.023482849604221534,
+      "role": "restricted wait and detection probability, NOT attack-onset latency"
+    },
+    {
+      "family": "MeanMax_MLP",
+      "label": "ALL_ATTACKS",
+      "episodes": 379,
+      "head_seeds": 10,
+      "restricted_wait_s": 1.6976253298153032,
+      "restricted_wait_head_sd": 0.014301126912350307,
+      "detected_by_10s": 0.978627968337731,
+      "not_detected_by_10s": 0.021372031662268975,
+      "role": "restricted wait and detection probability, NOT attack-onset latency"
+    },
+    {
+      "family": "LSTM",
+      "label": "ALL_ATTACKS",
+      "episodes": 379,
+      "head_seeds": 10,
+      "restricted_wait_s": 1.6934036939313983,
+      "restricted_wait_head_sd": 0.009374080981160412,
+      "detected_by_10s": 0.9744063324538258,
+      "not_detected_by_10s": 0.025593667546174204,
+      "role": "restricted wait and detection probability, NOT attack-onset latency"
+    },
+    {
+      "family": "ProbabilityMean",
+      "label": "ALL_ATTACKS",
+      "episodes": 379,
+      "head_seeds": 1,
+      "restricted_wait_s": 1.7968337730870712,
+      "restricted_wait_head_sd": null,
+      "detected_by_10s": 0.978891820580475,
+      "not_detected_by_10s": 0.02110817941952503,
+      "role": "restricted wait and detection probability, NOT attack-onset latency"
+    },
+    {
+      "family": "MajorityVote",
+      "label": "ALL_ATTACKS",
+      "episodes": 379,
+      "head_seeds": 1,
+      "restricted_wait_s": 6.242744063324539,
+      "restricted_wait_head_sd": null,
+      "detected_by_10s": 0.5963060686015831,
+      "not_detected_by_10s": 0.4036939313984169,
+      "role": "restricted wait and detection probability, NOT attack-onset latency"
+    },
+    {
+      "family": "EWMA",
+      "label": "ALL_ATTACKS",
+      "episodes": 379,
+      "head_seeds": 1,
+      "restricted_wait_s": 1.5039577836411608,
+      "restricted_wait_head_sd": null,
+      "detected_by_10s": 0.9815303430079155,
+      "not_detected_by_10s": 0.01846965699208447,
+      "role": "restricted wait and detection probability, NOT attack-onset latency"
+    },
+    {
+      "family": "Rule_L10",
+      "label": "ALL_ATTACKS",
+      "episodes": 379,
+      "head_seeds": 1,
+      "restricted_wait_s": 4.715039577836412,
+      "restricted_wait_head_sd": null,
+      "detected_by_10s": 0.7044854881266491,
+      "not_detected_by_10s": 0.29551451187335087,
+      "role": "restricted wait and detection probability, NOT attack-onset latency"
+    }
+  ],
+  "normal_alarms": [
+    {
+      "family": "TST",
+      "normal_episodes": 130,
+      "head_seeds": 10,
+      "normal_episode_confirmed_alarm": 0.19384615384615383,
+      "normal_endpoint_false_alarm": 0.039829920166608815,
+      "normal_confirmed_pair_rate": 0.029137073863636363,
+      "exposure": "Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+    },
+    {
+      "family": "Mean_MLP",
+      "normal_episodes": 130,
+      "head_seeds": 10,
+      "normal_episode_confirmed_alarm": 0.22692307692307692,
+      "normal_endpoint_false_alarm": 0.040697674418604654,
+      "normal_confirmed_pair_rate": 0.03293678977272728,
+      "exposure": "Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+    },
+    {
+      "family": "Max_MLP",
+      "normal_episodes": 130,
+      "head_seeds": 10,
+      "normal_episode_confirmed_alarm": 0.2992307692307692,
+      "normal_endpoint_false_alarm": 0.0576883026726831,
+      "normal_confirmed_pair_rate": 0.046697443181818184,
+      "exposure": "Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+    },
+    {
+      "family": "MeanMax_MLP",
+      "normal_episodes": 130,
+      "head_seeds": 10,
+      "normal_episode_confirmed_alarm": 0.27153846153846156,
+      "normal_endpoint_false_alarm": 0.050590072891357175,
+      "normal_confirmed_pair_rate": 0.03977272727272728,
+      "exposure": "Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+    },
+    {
+      "family": "LSTM",
+      "normal_episodes": 130,
+      "head_seeds": 10,
+      "normal_episode_confirmed_alarm": 0.23846153846153845,
+      "normal_endpoint_false_alarm": 0.04057618882332524,
+      "normal_confirmed_pair_rate": 0.03149857954545455,
+      "exposure": "Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+    },
+    {
+      "family": "ProbabilityMean",
+      "normal_episodes": 130,
+      "head_seeds": 1,
+      "normal_episode_confirmed_alarm": 0.38461538461538464,
+      "normal_endpoint_false_alarm": 0.08382506074279764,
+      "normal_confirmed_pair_rate": 0.06906960227272728,
+      "exposure": "Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+    },
+    {
+      "family": "MajorityVote",
+      "normal_episodes": 130,
+      "head_seeds": 1,
+      "normal_episode_confirmed_alarm": 1.0,
+      "normal_endpoint_false_alarm": 0.745400902464422,
+      "normal_confirmed_pair_rate": 0.681640625,
+      "exposure": "Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+    },
+    {
+      "family": "EWMA",
+      "normal_episodes": 130,
+      "head_seeds": 1,
+      "normal_episode_confirmed_alarm": 0.6615384615384615,
+      "normal_endpoint_false_alarm": 0.10482471364109684,
+      "normal_confirmed_pair_rate": 0.06321022727272728,
+      "exposure": "Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+    },
+    {
+      "family": "Rule_L10",
+      "normal_episodes": 130,
+      "head_seeds": 1,
+      "normal_episode_confirmed_alarm": 0.47692307692307695,
+      "normal_endpoint_false_alarm": 0.11489066296424852,
+      "normal_confirmed_pair_rate": 0.10262784090909091,
+      "exposure": "Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+    }
+  ],
+  "new_training": false,
+  "new_inference": false,
+  "limitations": [
+    "attack-onset delay",
+    "short-attack detection",
+    "causal attention explanation",
+    "temporal-order superiority",
+    "statistical equivalence from an interval including zero",
+    "deployment validation",
+    "Retrospective follow-up analysis on an already inspected test set.",
+    "379 is not an independent new campaign; eligibility excludes early changes and short follow-up.",
+    "Pre-evidence correct predictions can precede first observable change; latency alone is not evidence responsiveness.",
+    "Normal episode event rates depend on observed episode duration; durations are identical across compared models.",
+    "An interval including zero does not establish equal false-alarm rates or equivalence.",
+    "Sparse-bin results are descriptive and may differ in class/episode composition."
+  ]
+}

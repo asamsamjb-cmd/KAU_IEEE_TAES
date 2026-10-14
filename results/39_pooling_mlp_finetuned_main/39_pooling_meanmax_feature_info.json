@@ -1,0 +1,20 @@
+{
+  "pooling_mode": "meanmax",
+  "feature_shapes": {
+    "train": [
+      179414,
+      1536
+    ],
+    "val": [
+      37371,
+      1536
+    ],
+    "test": [
+      38078,
+      1536
+    ]
+  },
+  "standardization": {
+    "standardized": false
+  }
+}

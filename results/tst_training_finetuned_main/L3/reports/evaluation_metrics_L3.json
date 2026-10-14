@@ -1,0 +1,950 @@
+{
+  "step": "11_train_tst_classifier",
+  "provenance": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "step11_run_id": "9072c471a3088f8247ecfd0fc3389ee1623e3fa45dafec61a77f3c3fa885ff20"
+  },
+  "common_endpoint_report": {
+    "reference_length": 10,
+    "rule": "Intersection of end_row_indices across L within each split; no rows filtered by Step 10.",
+    "downstream_rule": "Compare context lengths on these same endpoints; report all-available-window results separately.",
+    "splits": {
+      "train": {
+        "common_endpoint_count": 179414,
+        "sorted_end_row_indices_sha256": "d05c6340c61c0bfb2dbea11b238a44bdbcda51613663d2b55ccccfd9c207a761",
+        "available_sequences_by_L": {
+          "1": 211006,
+          "2": 207495,
+          "3": 203984,
+          "5": 196964,
+          "10": 179414
+        }
+      },
+      "val": {
+        "common_endpoint_count": 37371,
+        "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2",
+        "available_sequences_by_L": {
+          "1": 44148,
+          "2": 43395,
+          "3": 42642,
+          "5": 41136,
+          "10": 37371
+        }
+      },
+      "test": {
+        "common_endpoint_count": 38078,
+        "sorted_end_row_indices_sha256": "98860cb9acd0348efe69583e7dce14c09f2b59c77c1a43b2a545065cd241098b",
+        "available_sequences_by_L": {
+          "1": 44846,
+          "2": 44094,
+          "3": 43342,
+          "5": 41838,
+          "10": 38078
+        }
+      }
+    }
+  },
+  "observable_effect_diagnostics": {
+    "val": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\observable_effect_diagnostics_val_L3.json",
+    "test": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\observable_effect_diagnostics_test_L3.json"
+  },
+  "sequence_length": 3,
+  "temporal_context_seconds": 3,
+  "best_epoch": 4,
+  "elapsed_seconds": 92.97649645805359,
+  "device": "cuda",
+  "model_config": {
+    "input_dim": 768,
+    "num_classes": 6,
+    "sequence_length": 3,
+    "temporal_context_seconds": 3,
+    "d_model": 128,
+    "num_heads": 4,
+    "num_encoder_layers": 1,
+    "dim_feedforward": 256,
+    "dropout": 0.25,
+    "pooling": "last"
+  },
+  "train_config": {
+    "random_seed": 20260610,
+    "max_epochs": 30,
+    "patience": 7,
+    "batch_size": 256,
+    "learning_rate": 7e-05,
+    "weight_decay": 0.0005,
+    "grad_clip_norm": 1.0,
+    "use_class_weights": false,
+    "use_amp": true,
+    "primary_selection_metric": "val_macro_f1",
+    "use_shortcut_resistant_training": false,
+    "label_smoothing": 0.03,
+    "train_gaussian_noise_std": 0.015,
+    "train_history_token_dropout_prob": 0.1,
+    "train_last_window_replacement_prob": 0.15,
+    "train_last_window_replacement": "history_mean",
+    "use_length_aware_regularization": false,
+    "use_missing_aware_training": false,
+    "missing_aware_replacement": "sequence_mean",
+    "run_robust_evidence_budget_eval": false,
+    "use_robust_eval_as_primary_for_long_contexts": false,
+    "robust_primary_min_sequence_length": 5,
+    "robust_mc_repeats": 5
+  },
+  "training_regularization_rule": "Optional embedding perturbations follow the recorded enable flags and are off by default. Label smoothing retains its original setting. Standard validation/test inputs are unperturbed; episode labels and available sequences are retained.",
+  "length_aware_regularization_enabled": false,
+  "length_aware_regularization_params_for_this_length": {
+    "gaussian_noise_std": 0.015,
+    "history_token_dropout_prob": 0.1,
+    "last_window_replacement_prob": 0.15
+  },
+  "length_aware_regularization_table": {
+    "1": {
+      "gaussian_noise_std": 0.0,
+      "history_token_dropout_prob": 0.0,
+      "last_window_replacement_prob": 0.0
+    },
+    "2": {
+      "gaussian_noise_std": 0.015,
+      "history_token_dropout_prob": 0.06,
+      "last_window_replacement_prob": 0.05
+    },
+    "3": {
+      "gaussian_noise_std": 0.015,
+      "history_token_dropout_prob": 0.07,
+      "last_window_replacement_prob": 0.06
+    },
+    "5": {
+      "gaussian_noise_std": 0.018,
+      "history_token_dropout_prob": 0.08,
+      "last_window_replacement_prob": 0.07
+    },
+    "10": {
+      "gaussian_noise_std": 0.02,
+      "history_token_dropout_prob": 0.1,
+      "last_window_replacement_prob": 0.08
+    }
+  },
+  "missing_aware_training_enabled": false,
+  "missing_aware_replacement": "sequence_mean",
+  "missing_aware_params_for_this_length": {
+    "gaussian_noise_std": 0.0,
+    "sequence_dim_dropout_prob": 0.0,
+    "window_dim_dropout_prob": 0.0,
+    "token_replacement_prob": 0.0,
+    "last_token_replacement_prob": 0.0
+  },
+  "missing_aware_regularization_table": {
+    "1": {
+      "gaussian_noise_std": 0.0,
+      "sequence_dim_dropout_prob": 0.0,
+      "window_dim_dropout_prob": 0.0,
+      "token_replacement_prob": 0.0,
+      "last_token_replacement_prob": 0.0
+    },
+    "2": {
+      "gaussian_noise_std": 0.0,
+      "sequence_dim_dropout_prob": 0.0,
+      "window_dim_dropout_prob": 0.0,
+      "token_replacement_prob": 0.0,
+      "last_token_replacement_prob": 0.0
+    },
+    "3": {
+      "gaussian_noise_std": 0.003,
+      "sequence_dim_dropout_prob": 0.01,
+      "window_dim_dropout_prob": 0.01,
+      "token_replacement_prob": 0.0,
+      "last_token_replacement_prob": 0.0
+    },
+    "5": {
+      "gaussian_noise_std": 0.006,
+      "sequence_dim_dropout_prob": 0.02,
+      "window_dim_dropout_prob": 0.02,
+      "token_replacement_prob": 0.004,
+      "last_token_replacement_prob": 0.001
+    },
+    "10": {
+      "gaussian_noise_std": 0.008,
+      "sequence_dim_dropout_prob": 0.03,
+      "window_dim_dropout_prob": 0.03,
+      "token_replacement_prob": 0.006,
+      "last_token_replacement_prob": 0.002
+    }
+  },
+  "missing_aware_training_rule": "Optional training-only embedding-space augmentation, disabled for the clean main run. Embedding masking is not literal observable-field deletion and is not evidence of field-level robustness.",
+  "label_order": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "label_to_id": {
+    "NORMAL": 0,
+    "RF_LINK_JAMMING": 1,
+    "GNSS_SPOOFING": 2,
+    "UNAUTHORIZED_TELECOMMAND_INJECTION": 3,
+    "TELECOMMAND_REPLAY": 4,
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 5
+  },
+  "class_weights": null,
+  "class_coverage": {
+    "train": {
+      "split": "train",
+      "sequence_length": 3,
+      "num_sequences": 203984,
+      "num_classes": 6,
+      "support_by_class_id": {
+        "0": 34438,
+        "1": 34212,
+        "2": 34485,
+        "3": 33873,
+        "4": 33084,
+        "5": 33892
+      },
+      "support_by_label": {
+        "NORMAL": 34438,
+        "RF_LINK_JAMMING": 34212,
+        "GNSS_SPOOFING": 34485,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 33873,
+        "TELECOMMAND_REPLAY": 33084,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 33892
+      },
+      "missing_class_ids": [],
+      "missing_labels": []
+    },
+    "val": {
+      "split": "val",
+      "sequence_length": 3,
+      "num_sequences": 42642,
+      "num_classes": 6,
+      "support_by_class_id": {
+        "0": 7164,
+        "1": 6790,
+        "2": 6790,
+        "3": 6893,
+        "4": 7569,
+        "5": 7436
+      },
+      "support_by_label": {
+        "NORMAL": 7164,
+        "RF_LINK_JAMMING": 6790,
+        "GNSS_SPOOFING": 6790,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 6893,
+        "TELECOMMAND_REPLAY": 7569,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7436
+      },
+      "missing_class_ids": [],
+      "missing_labels": []
+    },
+    "test": {
+      "split": "test",
+      "sequence_length": 3,
+      "num_sequences": 43342,
+      "num_classes": 6,
+      "support_by_class_id": {
+        "0": 6672,
+        "1": 7340,
+        "2": 7051,
+        "3": 7586,
+        "4": 7647,
+        "5": 7046
+      },
+      "support_by_label": {
+        "NORMAL": 6672,
+        "RF_LINK_JAMMING": 7340,
+        "GNSS_SPOOFING": 7051,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 7586,
+        "TELECOMMAND_REPLAY": 7647,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7046
+      },
+      "missing_class_ids": [],
+      "missing_labels": []
+    }
+  },
+  "strict_class_coverage": {
+    "train": {
+      "split": "train_strict",
+      "sequence_length": 3,
+      "num_sequences": 203984,
+      "num_classes": 6,
+      "support_by_class_id": {
+        "0": 34438,
+        "1": 34212,
+        "2": 34485,
+        "3": 33873,
+        "4": 33084,
+        "5": 33892
+      },
+      "support_by_label": {
+        "NORMAL": 34438,
+        "RF_LINK_JAMMING": 34212,
+        "GNSS_SPOOFING": 34485,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 33873,
+        "TELECOMMAND_REPLAY": 33084,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 33892
+      },
+      "missing_class_ids": [],
+      "missing_labels": []
+    },
+    "val": {
+      "split": "val_strict",
+      "sequence_length": 3,
+      "num_sequences": 42642,
+      "num_classes": 6,
+      "support_by_class_id": {
+        "0": 7164,
+        "1": 6790,
+        "2": 6790,
+        "3": 6893,
+        "4": 7569,
+        "5": 7436
+      },
+      "support_by_label": {
+        "NORMAL": 7164,
+        "RF_LINK_JAMMING": 6790,
+        "GNSS_SPOOFING": 6790,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 6893,
+        "TELECOMMAND_REPLAY": 7569,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7436
+      },
+      "missing_class_ids": [],
+      "missing_labels": []
+    },
+    "test": {
+      "split": "test_strict",
+      "sequence_length": 3,
+      "num_sequences": 43342,
+      "num_classes": 6,
+      "support_by_class_id": {
+        "0": 6672,
+        "1": 7340,
+        "2": 7051,
+        "3": 7586,
+        "4": 7647,
+        "5": 7046
+      },
+      "support_by_label": {
+        "NORMAL": 6672,
+        "RF_LINK_JAMMING": 7340,
+        "GNSS_SPOOFING": 7051,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 7586,
+        "TELECOMMAND_REPLAY": 7647,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7046
+      },
+      "missing_class_ids": [],
+      "missing_labels": []
+    }
+  },
+  "strict_sequence_independence": {
+    "enabled": true,
+    "fit_subset": "full",
+    "primary_test_subset": "full",
+    "split_masks": {
+      "train": {
+        "available": true,
+        "split": "train",
+        "sequence_length": 3,
+        "total_sequences": 203984,
+        "common_evaluation_reference_length": 10,
+        "common_evaluation_min_end_position": 9,
+        "end_position_min": 2,
+        "end_position_max": 139,
+        "counts": {
+          "full": 203984,
+          "common_population": 179414,
+          "non_overlap": 69161,
+          "common_non_overlap": 58631
+        },
+        "ratios": {
+          "full": 1.0,
+          "common_population": 0.8795493764216802,
+          "non_overlap": 0.3390511020472194,
+          "common_non_overlap": 0.28742940622793944
+        }
+      },
+      "val": {
+        "available": true,
+        "split": "val",
+        "sequence_length": 3,
+        "total_sequences": 42642,
+        "common_evaluation_reference_length": 10,
+        "common_evaluation_min_end_position": 9,
+        "end_position_min": 2,
+        "end_position_max": 139,
+        "counts": {
+          "full": 42642,
+          "common_population": 37371,
+          "non_overlap": 14450,
+          "common_non_overlap": 12191
+        },
+        "ratios": {
+          "full": 1.0,
+          "common_population": 0.87638947516533,
+          "non_overlap": 0.3388677829370105,
+          "common_non_overlap": 0.2858918437221519
+        }
+      },
+      "test": {
+        "available": true,
+        "split": "test",
+        "sequence_length": 3,
+        "total_sequences": 43342,
+        "common_evaluation_reference_length": 10,
+        "common_evaluation_min_end_position": 9,
+        "end_position_min": 2,
+        "end_position_max": 139,
+        "counts": {
+          "full": 43342,
+          "common_population": 38078,
+          "non_overlap": 14692,
+          "common_non_overlap": 12436
+        },
+        "ratios": {
+          "full": 1.0,
+          "common_population": 0.8785473674495871,
+          "non_overlap": 0.33897835817451893,
+          "common_non_overlap": 0.2869272299386277
+        }
+      }
+    },
+    "selected_counts": {
+      "train": 203984,
+      "val": 42642,
+      "test": 43342
+    },
+    "episode_leakage_audit": {
+      "sequence_length": 3,
+      "episode_id_available": true,
+      "overlaps": {
+        "train_vs_val": {
+          "count": 0,
+          "examples": []
+        },
+        "train_vs_test": {
+          "count": 0,
+          "examples": []
+        },
+        "val_vs_test": {
+          "count": 0,
+          "examples": []
+        }
+      },
+      "train_num_episodes": 3510,
+      "val_num_episodes": 753,
+      "test_num_episodes": 752,
+      "has_episode_overlap": false
+    },
+    "selected_subset_by_split": {
+      "train": "full",
+      "val": "full",
+      "test": "full"
+    }
+  },
+  "primary_test_subset": "full",
+  "fit_subset_for_train_and_validation": "full",
+  "input_rule": "TST input is embeddings[sequence_indices]. Metadata is not used as model input.",
+  "label_rule": "The sequence label is the label_id of the last 1-second window in the sequence.",
+  "boundary_rule": "All sequences are generated by Step 10 within episode_id and within the same split.",
+  "evaluation_audit_rule": "The primary test result is evaluated on the full test population. common_population metrics compare all L on the verified Step 10 endpoint intersection, while non_overlap metrics are reported as an additional dependence-reduction audit for overlapping sliding windows.",
+  "best_checkpoint_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\checkpoints\\best_tst_model_L3.pt",
+  "training_history_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\training_history_L3.csv",
+  "val_summary": {
+    "accuracy": 0.5730500445570095,
+    "macro_precision": 0.836190767107221,
+    "macro_recall": 0.577938692201642,
+    "macro_f1": 0.60184843632325,
+    "weighted_precision": 0.8369347571576221,
+    "weighted_recall": 0.5730500445570095,
+    "weighted_f1": 0.5974100153328333,
+    "total": 42642,
+    "correct": 24436,
+    "loss": 1.0862803329340562
+  },
+  "test_summary": {
+    "accuracy": 0.5688246965991417,
+    "macro_precision": 0.8301698635214411,
+    "macro_recall": 0.5763469937026199,
+    "macro_f1": 0.5971673319857628,
+    "weighted_precision": 0.8396405160410058,
+    "weighted_recall": 0.5688246965991417,
+    "weighted_f1": 0.5989464882351195,
+    "total": 43342,
+    "correct": 24654,
+    "loss": 1.0847009497517053
+  },
+  "test_metric_protocol": "standard_unperturbed",
+  "use_robust_evidence_budget_as_primary": false,
+  "test_standard_summary": {
+    "accuracy": 0.5688246965991417,
+    "macro_precision": 0.8301698635214411,
+    "macro_recall": 0.5763469937026199,
+    "macro_f1": 0.5971673319857628,
+    "weighted_precision": 0.8396405160410058,
+    "weighted_recall": 0.5688246965991417,
+    "weighted_f1": 0.5989464882351195,
+    "total": 43342,
+    "correct": 24654,
+    "loss": 1.0847009497517053
+  },
+  "test_robust_evidence_budget_summary": null,
+  "robust_evidence_budget_rule": "Legacy embedding-space stress helper is disabled by default and the clean protocol rejects robust-as-primary. It is not a field-deletion experiment or the observable-effect diagnostic. Its last-window setting is a selection-priority probability, not calibrated actual retention; standard unperturbed test results remain the main results.",
+  "robust_evidence_budget_config": {
+    "enabled": false,
+    "use_as_primary_for_long_contexts": false,
+    "primary_min_sequence_length": 5,
+    "mc_repeats": 5,
+    "keep_windows_by_length": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "5": 1,
+      "10": 1
+    },
+    "last_window_keep_prob_by_length": {
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0,
+      "5": 0.0,
+      "10": 0.0
+    },
+    "dim_dropout_prob_by_length": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.3,
+      "10": 0.4
+    },
+    "gaussian_noise_std_by_length": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.07,
+      "10": 0.09
+    }
+  },
+  "test_full_audit_summary": {
+    "accuracy": 0.5688246965991417,
+    "macro_precision": 0.8301698635214411,
+    "macro_recall": 0.5763469937026199,
+    "macro_f1": 0.5971673319857628,
+    "weighted_precision": 0.8396405160410058,
+    "weighted_recall": 0.5688246965991417,
+    "weighted_f1": 0.5989464882351195,
+    "total": 43342,
+    "correct": 24654,
+    "loss": 1.0847009497517053
+  },
+  "temporal_ablation_summaries": {
+    "enabled": true,
+    "split": "test_primary",
+    "sequence_length": 3,
+    "population": "all available sequences for this L, with verified common-endpoint results saved separately",
+    "interpretation": "Fixed-checkpoint controls. history_zero/repeat_last perturb the embedding distribution; they are not retrained baselines or literal field deletion. prefix_reverse tests historical order sensitivity while keeping the current window fixed (it is unchanged at L=2). Full-population scores do not share endpoints across L; common_population scores do. These probes alone do not establish architectural superiority or information bounds.",
+    "history_zero": {
+      "accuracy": 0.41154076876932305,
+      "macro_precision": 0.6451420844387818,
+      "macro_recall": 0.41015639968079753,
+      "macro_f1": 0.41421478098837256,
+      "weighted_precision": 0.6465346629398103,
+      "weighted_recall": 0.41154076876932305,
+      "weighted_f1": 0.41404349820971736,
+      "total": 43342,
+      "correct": 17837,
+      "loss": 1.3909952844450588,
+      "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_per_class_test_primary_history_zero_L3.csv",
+      "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_confusion_matrix_test_primary_history_zero_L3.csv",
+      "common_population": {
+        "accuracy": 0.43434529124428806,
+        "macro_precision": 0.6575133185489547,
+        "macro_recall": 0.43307385858420405,
+        "macro_f1": 0.4366419375560562,
+        "weighted_precision": 0.6598365120498441,
+        "weighted_recall": 0.43434529124428806,
+        "weighted_f1": 0.43641436372735654,
+        "total": 38078,
+        "correct": 16539,
+        "evaluated_sequences": 38078,
+        "selection_ratio": 0.8785473674495871,
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_per_class_test_primary_history_zero_common_population_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_confusion_matrix_test_primary_history_zero_common_population_L3.csv"
+      }
+    },
+    "repeat_last": {
+      "accuracy": 0.39892021595680865,
+      "macro_precision": 0.7515061517385356,
+      "macro_recall": 0.40925785067090586,
+      "macro_f1": 0.4020309841611185,
+      "weighted_precision": 0.7604745894386202,
+      "weighted_recall": 0.39892021595680865,
+      "weighted_f1": 0.40052402160135697,
+      "total": 43342,
+      "correct": 17290,
+      "loss": 1.4246412250443459,
+      "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_per_class_test_primary_repeat_last_L3.csv",
+      "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_confusion_matrix_test_primary_repeat_last_L3.csv",
+      "common_population": {
+        "accuracy": 0.4204002311045748,
+        "macro_precision": 0.761188118827045,
+        "macro_recall": 0.4327362604495022,
+        "macro_f1": 0.426094631604277,
+        "weighted_precision": 0.772067095468327,
+        "weighted_recall": 0.42040023110457486,
+        "weighted_f1": 0.4245684112091471,
+        "total": 38078,
+        "correct": 16008,
+        "evaluated_sequences": 38078,
+        "selection_ratio": 0.8785473674495871,
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_per_class_test_primary_repeat_last_common_population_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_confusion_matrix_test_primary_repeat_last_common_population_L3.csv"
+      }
+    },
+    "prefix_reverse": {
+      "accuracy": 0.5687785519819113,
+      "macro_precision": 0.8300806185047689,
+      "macro_recall": 0.5763015804419477,
+      "macro_f1": 0.597098294042159,
+      "weighted_precision": 0.8395499986621363,
+      "weighted_recall": 0.5687785519819113,
+      "weighted_f1": 0.5988766146826763,
+      "total": 43342,
+      "correct": 24652,
+      "loss": 1.0847066955448468,
+      "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_per_class_test_primary_prefix_reverse_L3.csv",
+      "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_confusion_matrix_test_primary_prefix_reverse_L3.csv",
+      "common_population": {
+        "accuracy": 0.6074373654078471,
+        "macro_precision": 0.8378549637469598,
+        "macro_recall": 0.615925200790049,
+        "macro_f1": 0.6342346047641318,
+        "weighted_precision": 0.8489999579153651,
+        "weighted_recall": 0.6074373654078471,
+        "weighted_f1": 0.6366971192398645,
+        "total": 38078,
+        "correct": 23130,
+        "evaluated_sequences": 38078,
+        "selection_ratio": 0.8785473674495871,
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_per_class_test_primary_prefix_reverse_common_population_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\temporal_ablation_confusion_matrix_test_primary_prefix_reverse_common_population_L3.csv"
+      }
+    }
+  },
+  "val_subset_summaries": {
+    "full": {
+      "accuracy": 0.5730500445570095,
+      "macro_precision": 0.836190767107221,
+      "macro_recall": 0.577938692201642,
+      "macro_f1": 0.60184843632325,
+      "weighted_precision": 0.8369347571576221,
+      "weighted_recall": 0.5730500445570095,
+      "weighted_f1": 0.5974100153328333,
+      "total": 42642,
+      "correct": 24436,
+      "loss": 1.0862803329340562
+    },
+    "mask_info": {
+      "split": "val",
+      "sequence_length": 3,
+      "total_sequences": 42642,
+      "common_evaluation_reference_length": 10,
+      "common_evaluation_min_end_position": 9,
+      "metadata_alignment": {
+        "available": true,
+        "context": "val_L3_subset_masks",
+        "alignment_method": "row_position_iloc",
+        "num_metadata_rows": 42642,
+        "num_aligned_rows": 42642,
+        "sequence_id_min": 0,
+        "sequence_id_max": 42641,
+        "metadata_sequence_id_matches_eval_sequence_ids": true
+      },
+      "subset_metrics_available": true,
+      "end_position_min": 2,
+      "end_position_max": 139,
+      "counts": {
+        "full": 42642,
+        "common_population": 37371,
+        "non_overlap": 14450,
+        "common_non_overlap": 12191
+      },
+      "ratios": {
+        "full": 1.0,
+        "common_population": 0.87638947516533,
+        "non_overlap": 0.3388677829370105,
+        "common_non_overlap": 0.2858918437221519
+      }
+    },
+    "common_population": {
+      "accuracy": 0.611543710363651,
+      "macro_precision": 0.8452853666302889,
+      "macro_recall": 0.6178195160937413,
+      "macro_f1": 0.639566169037256,
+      "weighted_precision": 0.8463559334425439,
+      "weighted_recall": 0.611543710363651,
+      "weighted_f1": 0.6346704695122899,
+      "total": 37371,
+      "correct": 22854,
+      "evaluated_sequences": 37371,
+      "selection_ratio": 0.87638947516533
+    },
+    "non_overlap": {
+      "accuracy": 0.5654671280276816,
+      "macro_precision": 0.8342454760827857,
+      "macro_recall": 0.5702156608907941,
+      "macro_f1": 0.5946224166506927,
+      "weighted_precision": 0.8351260268502214,
+      "weighted_recall": 0.5654671280276816,
+      "weighted_f1": 0.5903532917832042,
+      "total": 14450,
+      "correct": 8171,
+      "evaluated_sequences": 14450,
+      "selection_ratio": 0.3388677829370105
+    },
+    "common_non_overlap": {
+      "accuracy": 0.6144696907554753,
+      "macro_precision": 0.844920892086562,
+      "macro_recall": 0.6209920301440083,
+      "macro_f1": 0.6426839460894739,
+      "weighted_precision": 0.84629784024363,
+      "weighted_recall": 0.6144696907554754,
+      "weighted_f1": 0.6378566724130684,
+      "total": 12191,
+      "correct": 7491,
+      "evaluated_sequences": 12191,
+      "selection_ratio": 0.2858918437221519
+    }
+  },
+  "test_subset_summaries": {
+    "full": {
+      "accuracy": 0.5688246965991417,
+      "macro_precision": 0.8301698635214411,
+      "macro_recall": 0.5763469937026199,
+      "macro_f1": 0.5971673319857628,
+      "weighted_precision": 0.8396405160410058,
+      "weighted_recall": 0.5688246965991417,
+      "weighted_f1": 0.5989464882351195,
+      "total": 43342,
+      "correct": 24654,
+      "loss": 1.0847009497517053
+    },
+    "mask_info": {
+      "split": "test",
+      "sequence_length": 3,
+      "total_sequences": 43342,
+      "common_evaluation_reference_length": 10,
+      "common_evaluation_min_end_position": 9,
+      "metadata_alignment": {
+        "available": true,
+        "context": "test_L3_subset_masks",
+        "alignment_method": "row_position_iloc",
+        "num_metadata_rows": 43342,
+        "num_aligned_rows": 43342,
+        "sequence_id_min": 0,
+        "sequence_id_max": 43341,
+        "metadata_sequence_id_matches_eval_sequence_ids": true
+      },
+      "subset_metrics_available": true,
+      "end_position_min": 2,
+      "end_position_max": 139,
+      "counts": {
+        "full": 43342,
+        "common_population": 38078,
+        "non_overlap": 14692,
+        "common_non_overlap": 12436
+      },
+      "ratios": {
+        "full": 1.0,
+        "common_population": 0.8785473674495871,
+        "non_overlap": 0.33897835817451893,
+        "common_non_overlap": 0.2869272299386277
+      }
+    },
+    "common_population": {
+      "accuracy": 0.6074636272913493,
+      "macro_precision": 0.8378648820743012,
+      "macro_recall": 0.6159497742873047,
+      "macro_f1": 0.6342775927672696,
+      "weighted_precision": 0.8490098500465735,
+      "weighted_recall": 0.6074636272913494,
+      "weighted_f1": 0.6367409560279632,
+      "total": 38078,
+      "correct": 23131,
+      "evaluated_sequences": 38078,
+      "selection_ratio": 0.8785473674495871
+    },
+    "non_overlap": {
+      "accuracy": 0.5609175061257827,
+      "macro_precision": 0.8282294242835553,
+      "macro_recall": 0.5685707641727356,
+      "macro_f1": 0.5892084261356786,
+      "weighted_precision": 0.8375821583827341,
+      "weighted_recall": 0.5609175061257827,
+      "weighted_f1": 0.5907614561532173,
+      "total": 14692,
+      "correct": 8241,
+      "evaluated_sequences": 14692,
+      "selection_ratio": 0.33897835817451893
+    },
+    "common_non_overlap": {
+      "accuracy": 0.6100032164683178,
+      "macro_precision": 0.8379375904598078,
+      "macro_recall": 0.619006551829214,
+      "macro_f1": 0.6364314048786318,
+      "weighted_precision": 0.8494568013581989,
+      "weighted_recall": 0.6100032164683178,
+      "weighted_f1": 0.6388173634729499,
+      "total": 12436,
+      "correct": 7586,
+      "evaluated_sequences": 12436,
+      "selection_ratio": 0.2869272299386277
+    }
+  },
+  "test_full_audit_subset_summaries": {
+    "full": {
+      "accuracy": 0.5688246965991417,
+      "macro_precision": 0.8301698635214411,
+      "macro_recall": 0.5763469937026199,
+      "macro_f1": 0.5971673319857628,
+      "weighted_precision": 0.8396405160410058,
+      "weighted_recall": 0.5688246965991417,
+      "weighted_f1": 0.5989464882351195,
+      "total": 43342,
+      "correct": 24654,
+      "loss": 1.0847009497517053
+    },
+    "mask_info": {
+      "split": "test_full_audit",
+      "sequence_length": 3,
+      "total_sequences": 43342,
+      "common_evaluation_reference_length": 10,
+      "common_evaluation_min_end_position": 9,
+      "metadata_alignment": {
+        "available": true,
+        "context": "test_full_audit_L3_subset_masks",
+        "alignment_method": "row_position_iloc",
+        "num_metadata_rows": 43342,
+        "num_aligned_rows": 43342,
+        "sequence_id_min": 0,
+        "sequence_id_max": 43341,
+        "metadata_sequence_id_matches_eval_sequence_ids": true
+      },
+      "subset_metrics_available": true,
+      "end_position_min": 2,
+      "end_position_max": 139,
+      "counts": {
+        "full": 43342,
+        "common_population": 38078,
+        "non_overlap": 14692,
+        "common_non_overlap": 12436
+      },
+      "ratios": {
+        "full": 1.0,
+        "common_population": 0.8785473674495871,
+        "non_overlap": 0.33897835817451893,
+        "common_non_overlap": 0.2869272299386277
+      }
+    },
+    "common_population": {
+      "accuracy": 0.6074636272913493,
+      "macro_precision": 0.8378648820743012,
+      "macro_recall": 0.6159497742873047,
+      "macro_f1": 0.6342775927672696,
+      "weighted_precision": 0.8490098500465735,
+      "weighted_recall": 0.6074636272913494,
+      "weighted_f1": 0.6367409560279632,
+      "total": 38078,
+      "correct": 23131,
+      "evaluated_sequences": 38078,
+      "selection_ratio": 0.8785473674495871
+    },
+    "non_overlap": {
+      "accuracy": 0.5609175061257827,
+      "macro_precision": 0.8282294242835553,
+      "macro_recall": 0.5685707641727356,
+      "macro_f1": 0.5892084261356786,
+      "weighted_precision": 0.8375821583827341,
+      "weighted_recall": 0.5609175061257827,
+      "weighted_f1": 0.5907614561532173,
+      "total": 14692,
+      "correct": 8241,
+      "evaluated_sequences": 14692,
+      "selection_ratio": 0.33897835817451893
+    },
+    "common_non_overlap": {
+      "accuracy": 0.6100032164683178,
+      "macro_precision": 0.8379375904598078,
+      "macro_recall": 0.619006551829214,
+      "macro_f1": 0.6364314048786318,
+      "weighted_precision": 0.8494568013581989,
+      "weighted_recall": 0.6100032164683178,
+      "weighted_f1": 0.6388173634729499,
+      "total": 12436,
+      "correct": 7586,
+      "evaluated_sequences": 12436,
+      "selection_ratio": 0.2869272299386277
+    }
+  },
+  "artifacts": {
+    "observable_effect_diagnostics": {
+      "val": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\observable_effect_diagnostics_val_L3.json",
+      "test": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\observable_effect_diagnostics_test_L3.json"
+    },
+    "per_class_val_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_val_L3.csv",
+    "per_class_test_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_test_L3.csv",
+    "per_class_test_standard_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_test_standard_L3.csv",
+    "per_class_test_robust_evidence_budget_csv": null,
+    "confusion_matrix_val_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_val_L3.csv",
+    "confusion_matrix_test_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_test_L3.csv",
+    "confusion_matrix_test_standard_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_test_standard_L3.csv",
+    "confusion_matrix_test_robust_evidence_budget_csv": null,
+    "per_class_test_full_audit_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_test_full_audit_L3.csv",
+    "confusion_matrix_test_full_audit_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_test_full_audit_L3.csv",
+    "val_subset_artifacts": {
+      "common_population": {
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_val_common_population_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_val_common_population_L3.csv"
+      },
+      "non_overlap": {
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_val_non_overlap_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_val_non_overlap_L3.csv"
+      },
+      "common_non_overlap": {
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_val_common_non_overlap_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_val_common_non_overlap_L3.csv"
+      }
+    },
+    "test_subset_artifacts": {
+      "common_population": {
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_test_common_population_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_test_common_population_L3.csv"
+      },
+      "non_overlap": {
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_test_non_overlap_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_test_non_overlap_L3.csv"
+      },
+      "common_non_overlap": {
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_test_common_non_overlap_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_test_common_non_overlap_L3.csv"
+      }
+    },
+    "test_full_audit_subset_artifacts": {
+      "common_population": {
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_test_full_audit_common_population_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_test_full_audit_common_population_L3.csv"
+      },
+      "non_overlap": {
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_test_full_audit_non_overlap_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_test_full_audit_non_overlap_L3.csv"
+      },
+      "common_non_overlap": {
+        "per_class_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\per_class_metrics_test_full_audit_common_non_overlap_L3.csv",
+        "confusion_matrix_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\reports\\confusion_matrix_test_full_audit_common_non_overlap_L3.csv"
+      }
+    },
+    "val_predictions_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\predictions\\val_predictions_L3.csv",
+    "test_predictions_csv": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L3\\predictions\\test_predictions_L3.csv"
+  }
+}

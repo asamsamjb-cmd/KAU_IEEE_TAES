@@ -1,0 +1,101 @@
+{
+  "status": "STEP71_COVERAGE_CONTROL_COMPLETE",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "conditions": [
+    "CurrentOnly",
+    "FixedHistory",
+    "VariableHistory"
+  ],
+  "seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614
+  ],
+  "mask_banks": [
+    71101,
+    71102,
+    71103
+  ],
+  "primary": {
+    "contrast": "VariableHistory_minus_FixedHistory",
+    "metric": "macro_f1",
+    "difference": 0.027259064196208715,
+    "ci95_low": 0.024007371120998763,
+    "ci95_high": 0.030607172392524654,
+    "primary": true,
+    "family_size": 1,
+    "role": "single_primary",
+    "positive_fit_differences": 5,
+    "fixed_fit_differences": [
+      0.026429590526031627,
+      0.027161178994544732,
+      0.027504070914644834,
+      0.028512566565107995,
+      0.026687913980714646
+    ]
+  },
+  "results": [
+    {
+      "condition": "CurrentOnly",
+      "macro_f1": 0.39590628930302996,
+      "accuracy": 0.3857853178563299,
+      "normal_false_attack_rate": 0.663473331019322,
+      "recall_NORMAL": 0.336526668980678,
+      "recall_RF_LINK_JAMMING": 0.3205774684196958,
+      "recall_GNSS_SPOOFING": 0.6360211571675303,
+      "recall_UNAUTHORIZED_TELECOMMAND_INJECTION": 0.37734820322180923,
+      "recall_TELECOMMAND_REPLAY": 0.33098549866824495,
+      "recall_GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 0.31908914728682175,
+      "macro_f1_fit_sd": 0.001408449791709878,
+      "endpoint_count": 38078,
+      "episode_count": 752,
+      "fit_count": 5,
+      "mask_banks": 3
+    },
+    {
+      "condition": "FixedHistory",
+      "macro_f1": 0.7581022446325985,
+      "accuracy": 0.7505541257418983,
+      "normal_false_attack_rate": 0.2105981719310424,
+      "recall_NORMAL": 0.7894018280689574,
+      "recall_RF_LINK_JAMMING": 0.7625058004640372,
+      "recall_GNSS_SPOOFING": 0.851878238341969,
+      "recall_UNAUTHORIZED_TELECOMMAND_INJECTION": 0.8106567534076827,
+      "recall_TELECOMMAND_REPLAY": 0.6615073493143928,
+      "recall_GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 0.6327734711455641,
+      "macro_f1_fit_sd": 0.0013125889742371887,
+      "endpoint_count": 38078,
+      "episode_count": 752,
+      "fit_count": 5,
+      "mask_banks": 3
+    },
+    {
+      "condition": "VariableHistory",
+      "macro_f1": 0.7853613088288072,
+      "accuracy": 0.7773710103821979,
+      "normal_false_attack_rate": 0.17246326506999887,
+      "recall_NORMAL": 0.8275367349300012,
+      "recall_RF_LINK_JAMMING": 0.7603299819541119,
+      "recall_GNSS_SPOOFING": 0.9210600172711573,
+      "recall_UNAUTHORIZED_TELECOMMAND_INJECTION": 0.8400000000000001,
+      "recall_TELECOMMAND_REPLAY": 0.674706520666864,
+      "recall_GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 0.6491925064599485,
+      "macro_f1_fit_sd": 0.001002183995034541,
+      "endpoint_count": 38078,
+      "episode_count": 752,
+      "fit_count": 5,
+      "mask_banks": 3
+    }
+  ],
+  "warnings": [],
+  "new_small_models_trained": true,
+  "existing_models_modified": false,
+  "inference_shared_weights": true,
+  "external_validation": false,
+  "interpretation": "Coverage-pattern intervention at equal retained-slot budget; not equal information, individual-field attribution, sensor-outage realism or TST/BERT advantage.",
+  "selection": "One common model per fit; checkpoint chosen using equal-weight 3-view/3-bank validation mean only.",
+  "statistics": "Mean metrics across fixed fit x mask combinations, paired class-stratified episode bootstrap; no ensemble or seed/mask resampling.",
+  "scope": "New diagnostic on already examined benchmark; not an independent confirmatory test set. No post-test retuning."
+}

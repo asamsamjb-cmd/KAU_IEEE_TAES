@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 795, in main
+    rule = load_frozen_rule(context, args.rule_source, clean, out)
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 592, in load_frozen_rule
+    require(run.get("source_contract", {}).get(key) == context["contract"][key], "Rule/model lineage mismatch")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\nos3_detector_evaluation.py", line 54, in require
+    raise ValueError(message)
+ValueError: Rule/model lineage mismatch

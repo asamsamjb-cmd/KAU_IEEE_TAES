@@ -1,0 +1,10 @@
+{
+  "draws": 20000,
+  "seed": 2026100151,
+  "batch_size": 100,
+  "weights_sha256_little_endian_int64": "61f58610a27ebd8c24bd07843eb941dac03812261b612608044a45ebced8b67d",
+  "pairing": "same whole-episode draws for all settings and seeds",
+  "estimand": "endpoint macro-F1 for each seed, then average seeds; not ensemble or pooled-seed confusion",
+  "CI_scope": "conditional on fitted checkpoints and observed encoder seeds; no threshold/model/generator reselection",
+  "family": "seven Full-minus-subset contrasts only; nominal 95% family coverage under percentile bootstrap approximation"
+}

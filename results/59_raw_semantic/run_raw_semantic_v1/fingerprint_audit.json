@@ -1,0 +1,1942 @@
+[
+  {
+    "key": "semantic_no_change_L1_HGB",
+    "status": "COMPLETED",
+    "support": {
+      "train": [
+        35646,
+        25389,
+        10993,
+        26950,
+        29088,
+        30235
+      ],
+      "val": [
+        7422,
+        5083,
+        2099,
+        5468,
+        6708,
+        6618
+      ],
+      "test": [
+        6932,
+        5416,
+        2305,
+        6056,
+        6753,
+        6267
+      ]
+    },
+    "training": {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 29.87104289999843,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 33398,
+        "macro_f1": 0.3144280880195023,
+        "balanced_accuracy": 0.3082949057113052,
+        "accuracy": 0.3322654051140787,
+        "normal_false_alarm_rate": 0.44799245486391803,
+        "support": [
+          7422,
+          5083,
+          2099,
+          5468,
+          6708,
+          6618
+        ],
+        "confusion": [
+          [
+            4097,
+            11,
+            41,
+            1146,
+            870,
+            1257
+          ],
+          [
+            802,
+            3594,
+            5,
+            224,
+            180,
+            278
+          ],
+          [
+            1120,
+            0,
+            131,
+            332,
+            212,
+            304
+          ],
+          [
+            2266,
+            32,
+            29,
+            1110,
+            844,
+            1187
+          ],
+          [
+            3258,
+            15,
+            33,
+            1204,
+            912,
+            1286
+          ],
+          [
+            3210,
+            13,
+            38,
+            1189,
+            915,
+            1253
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 158301,
+      "validation_rows": 33398
+    },
+    "metrics": {
+      "n": 33729,
+      "macro_f1": 0.3168850767621119,
+      "balanced_accuracy": 0.313178385361674,
+      "accuracy": 0.33597201221500783,
+      "normal_false_alarm_rate": 0.44042123485285634,
+      "support": [
+        6932,
+        5416,
+        2305,
+        6056,
+        6753,
+        6267
+      ],
+      "confusion": [
+        [
+          3879,
+          29,
+          31,
+          1061,
+          778,
+          1154
+        ],
+        [
+          851,
+          3864,
+          5,
+          262,
+          164,
+          270
+        ],
+        [
+          1228,
+          5,
+          137,
+          328,
+          246,
+          361
+        ],
+        [
+          2579,
+          12,
+          31,
+          1255,
+          844,
+          1335
+        ],
+        [
+          3201,
+          10,
+          41,
+          1231,
+          974,
+          1296
+        ],
+        [
+          3067,
+          10,
+          33,
+          1171,
+          763,
+          1223
+        ]
+      ]
+    },
+    "train_majority_reference": {
+      "n": 33729,
+      "macro_f1": 0.0568275907298558,
+      "balanced_accuracy": 0.16666666666666666,
+      "accuracy": 0.20552047199739096,
+      "normal_false_alarm_rate": 0.0,
+      "support": [
+        6932,
+        5416,
+        2305,
+        6056,
+        6753,
+        6267
+      ],
+      "confusion": [
+        [
+          6932,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5416,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2305,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6056,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6753,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6267,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "balanced_accuracy_chance_reference": 0.16666666666666666,
+    "interpretation": "Above-chance performance is a diagnostic, not an automatic shortcut finding. Semantic-no-change may retain legitimate raw variation; raw-no-change equality only concerns the allowed monitor inputs."
+  },
+  {
+    "key": "semantic_no_change_L1_MLP",
+    "status": "COMPLETED",
+    "support": {
+      "train": [
+        35646,
+        25389,
+        10993,
+        26950,
+        29088,
+        30235
+      ],
+      "val": [
+        7422,
+        5083,
+        2099,
+        5468,
+        6708,
+        6618
+      ],
+      "test": [
+        6932,
+        5416,
+        2305,
+        6056,
+        6753,
+        6267
+      ]
+    },
+    "training": {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 49,
+      "epochs_completed": 61,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 61.849867999997514,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 33398,
+        "macro_f1": 0.3006481756571863,
+        "balanced_accuracy": 0.3006380725281604,
+        "accuracy": 0.3240613210371879,
+        "normal_false_alarm_rate": 0.4792508757747238,
+        "support": [
+          7422,
+          5083,
+          2099,
+          5468,
+          6708,
+          6618
+        ],
+        "confusion": [
+          [
+            3865,
+            109,
+            74,
+            1394,
+            900,
+            1080
+          ],
+          [
+            832,
+            3581,
+            14,
+            264,
+            178,
+            214
+          ],
+          [
+            1081,
+            24,
+            87,
+            366,
+            216,
+            325
+          ],
+          [
+            2313,
+            76,
+            35,
+            1313,
+            755,
+            976
+          ],
+          [
+            3115,
+            102,
+            52,
+            1395,
+            853,
+            1191
+          ],
+          [
+            3094,
+            66,
+            69,
+            1398,
+            867,
+            1124
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 158301,
+      "validation_rows": 33398
+    },
+    "metrics": {
+      "n": 33729,
+      "macro_f1": 0.30047104326120083,
+      "balanced_accuracy": 0.30302161636986735,
+      "accuracy": 0.32568412938420943,
+      "normal_false_alarm_rate": 0.4635025966532026,
+      "support": [
+        6932,
+        5416,
+        2305,
+        6056,
+        6753,
+        6267
+      ],
+      "confusion": [
+        [
+          3719,
+          125,
+          73,
+          1236,
+          760,
+          1019
+        ],
+        [
+          831,
+          3852,
+          16,
+          279,
+          189,
+          249
+        ],
+        [
+          1184,
+          31,
+          99,
+          366,
+          270,
+          355
+        ],
+        [
+          2541,
+          71,
+          54,
+          1421,
+          846,
+          1123
+        ],
+        [
+          3060,
+          84,
+          67,
+          1538,
+          819,
+          1185
+        ],
+        [
+          2984,
+          81,
+          52,
+          1308,
+          767,
+          1075
+        ]
+      ]
+    },
+    "train_majority_reference": {
+      "n": 33729,
+      "macro_f1": 0.0568275907298558,
+      "balanced_accuracy": 0.16666666666666666,
+      "accuracy": 0.20552047199739096,
+      "normal_false_alarm_rate": 0.0,
+      "support": [
+        6932,
+        5416,
+        2305,
+        6056,
+        6753,
+        6267
+      ],
+      "confusion": [
+        [
+          6932,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5416,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2305,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6056,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6753,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6267,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "balanced_accuracy_chance_reference": 0.16666666666666666,
+    "interpretation": "Above-chance performance is a diagnostic, not an automatic shortcut finding. Semantic-no-change may retain legitimate raw variation; raw-no-change equality only concerns the allowed monitor inputs."
+  },
+  {
+    "key": "raw_no_change_L1_HGB",
+    "status": "COMPLETED",
+    "support": {
+      "train": [
+        35646,
+        7205,
+        10075,
+        26950,
+        29088,
+        30223
+      ],
+      "val": [
+        7422,
+        1478,
+        1917,
+        5468,
+        6708,
+        6618
+      ],
+      "test": [
+        6932,
+        1546,
+        2098,
+        6056,
+        6753,
+        6266
+      ]
+    },
+    "training": {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 27.058344099998067,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 29611,
+        "macro_f1": 0.16125045278208688,
+        "balanced_accuracy": 0.18201563322992345,
+        "accuracy": 0.2521698017628584,
+        "normal_false_alarm_rate": 0.4488008623012665,
+        "support": [
+          7422,
+          1478,
+          1917,
+          5468,
+          6708,
+          6618
+        ],
+        "confusion": [
+          [
+            4091,
+            1,
+            0,
+            1115,
+            927,
+            1288
+          ],
+          [
+            794,
+            0,
+            0,
+            209,
+            194,
+            281
+          ],
+          [
+            1048,
+            0,
+            0,
+            285,
+            239,
+            345
+          ],
+          [
+            2353,
+            0,
+            0,
+            1029,
+            867,
+            1219
+          ],
+          [
+            3350,
+            0,
+            0,
+            1104,
+            952,
+            1302
+          ],
+          [
+            3204,
+            0,
+            0,
+            1091,
+            928,
+            1395
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 139187,
+      "validation_rows": 29611
+    },
+    "metrics": {
+      "n": 29651,
+      "macro_f1": 0.16070019380497172,
+      "balanced_accuracy": 0.18354259510233925,
+      "accuracy": 0.24616370442818117,
+      "normal_false_alarm_rate": 0.4430178880553952,
+      "support": [
+        6932,
+        1546,
+        2098,
+        6056,
+        6753,
+        6266
+      ],
+      "confusion": [
+        [
+          3861,
+          0,
+          2,
+          991,
+          858,
+          1220
+        ],
+        [
+          837,
+          0,
+          0,
+          222,
+          208,
+          279
+        ],
+        [
+          1162,
+          0,
+          2,
+          304,
+          255,
+          375
+        ],
+        [
+          2558,
+          0,
+          1,
+          1178,
+          944,
+          1375
+        ],
+        [
+          3177,
+          0,
+          0,
+          1173,
+          1004,
+          1399
+        ],
+        [
+          3064,
+          2,
+          1,
+          1083,
+          862,
+          1254
+        ]
+      ]
+    },
+    "train_majority_reference": {
+      "n": 29651,
+      "macro_f1": 0.06316230671805666,
+      "balanced_accuracy": 0.16666666666666666,
+      "accuracy": 0.23378638157229098,
+      "normal_false_alarm_rate": 0.0,
+      "support": [
+        6932,
+        1546,
+        2098,
+        6056,
+        6753,
+        6266
+      ],
+      "confusion": [
+        [
+          6932,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1546,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2098,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6056,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6753,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6266,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "balanced_accuracy_chance_reference": 0.16666666666666666,
+    "interpretation": "Above-chance performance is a diagnostic, not an automatic shortcut finding. Semantic-no-change may retain legitimate raw variation; raw-no-change equality only concerns the allowed monitor inputs."
+  },
+  {
+    "key": "raw_no_change_L1_MLP",
+    "status": "COMPLETED",
+    "support": {
+      "train": [
+        35646,
+        7205,
+        10075,
+        26950,
+        29088,
+        30223
+      ],
+      "val": [
+        7422,
+        1478,
+        1917,
+        5468,
+        6708,
+        6618
+      ],
+      "test": [
+        6932,
+        1546,
+        2098,
+        6056,
+        6753,
+        6266
+      ]
+    },
+    "training": {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 47,
+      "epochs_completed": 59,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 52.00284360000296,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 29611,
+        "macro_f1": 0.16892358083978828,
+        "balanced_accuracy": 0.18251827190806316,
+        "accuracy": 0.24433487555300396,
+        "normal_false_alarm_rate": 0.5794933980059283,
+        "support": [
+          7422,
+          1478,
+          1917,
+          5468,
+          6708,
+          6618
+        ],
+        "confusion": [
+          [
+            3121,
+            22,
+            37,
+            1610,
+            1174,
+            1458
+          ],
+          [
+            622,
+            5,
+            3,
+            322,
+            261,
+            265
+          ],
+          [
+            828,
+            8,
+            9,
+            411,
+            313,
+            348
+          ],
+          [
+            1752,
+            8,
+            17,
+            1554,
+            1006,
+            1131
+          ],
+          [
+            2470,
+            20,
+            13,
+            1649,
+            1175,
+            1381
+          ],
+          [
+            2415,
+            22,
+            21,
+            1616,
+            1173,
+            1371
+          ]
+        ]
+      },
+      "features": 174,
+      "training_rows": 139187,
+      "validation_rows": 29611
+    },
+    "metrics": {
+      "n": 29651,
+      "macro_f1": 0.16858852739194263,
+      "balanced_accuracy": 0.18360659649805555,
+      "accuracy": 0.2419817206839567,
+      "normal_false_alarm_rate": 0.5639065204847086,
+      "support": [
+        6932,
+        1546,
+        2098,
+        6056,
+        6753,
+        6266
+      ],
+      "confusion": [
+        [
+          3023,
+          18,
+          18,
+          1466,
+          1132,
+          1275
+        ],
+        [
+          661,
+          5,
+          8,
+          311,
+          257,
+          304
+        ],
+        [
+          883,
+          5,
+          13,
+          450,
+          361,
+          386
+        ],
+        [
+          1946,
+          27,
+          12,
+          1716,
+          1115,
+          1240
+        ],
+        [
+          2452,
+          20,
+          20,
+          1726,
+          1141,
+          1394
+        ],
+        [
+          2331,
+          17,
+          25,
+          1540,
+          1076,
+          1277
+        ]
+      ]
+    },
+    "train_majority_reference": {
+      "n": 29651,
+      "macro_f1": 0.06316230671805666,
+      "balanced_accuracy": 0.16666666666666666,
+      "accuracy": 0.23378638157229098,
+      "normal_false_alarm_rate": 0.0,
+      "support": [
+        6932,
+        1546,
+        2098,
+        6056,
+        6753,
+        6266
+      ],
+      "confusion": [
+        [
+          6932,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1546,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2098,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6056,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6753,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6266,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "balanced_accuracy_chance_reference": 0.16666666666666666,
+    "interpretation": "Above-chance performance is a diagnostic, not an automatic shortcut finding. Semantic-no-change may retain legitimate raw variation; raw-no-change equality only concerns the allowed monitor inputs."
+  },
+  {
+    "key": "semantic_no_change_L10_HGB",
+    "status": "COMPLETED",
+    "support": {
+      "train": [
+        30210,
+        6392,
+        940,
+        2586,
+        7826,
+        8383
+      ],
+      "val": [
+        6261,
+        1333,
+        158,
+        449,
+        1964,
+        1820
+      ],
+      "test": [
+        5762,
+        1175,
+        196,
+        622,
+        1752,
+        1594
+      ]
+    },
+    "training": {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 97.56885359999796,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 11985,
+        "macro_f1": 0.29849842206761273,
+        "balanced_accuracy": 0.32384343591451786,
+        "accuracy": 0.6151856487275761,
+        "normal_false_alarm_rate": 0.02842996326465419,
+        "support": [
+          6261,
+          1333,
+          158,
+          449,
+          1964,
+          1820
+        ],
+        "confusion": [
+          [
+            6083,
+            0,
+            1,
+            28,
+            70,
+            79
+          ],
+          [
+            119,
+            1214,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            151,
+            0,
+            0,
+            1,
+            4,
+            2
+          ],
+          [
+            409,
+            0,
+            0,
+            12,
+            22,
+            6
+          ],
+          [
+            1871,
+            4,
+            0,
+            28,
+            28,
+            33
+          ],
+          [
+            1714,
+            1,
+            0,
+            23,
+            46,
+            36
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 56337,
+      "validation_rows": 11985
+    },
+    "metrics": {
+      "n": 11101,
+      "macro_f1": 0.3067797143881054,
+      "balanced_accuracy": 0.32808626395399737,
+      "accuracy": 0.609044230249527,
+      "normal_false_alarm_rate": 0.028462339465463393,
+      "support": [
+        5762,
+        1175,
+        196,
+        622,
+        1752,
+        1594
+      ],
+      "confusion": [
+        [
+          5598,
+          7,
+          0,
+          21,
+          57,
+          79
+        ],
+        [
+          107,
+          1062,
+          0,
+          1,
+          1,
+          4
+        ],
+        [
+          187,
+          0,
+          0,
+          2,
+          2,
+          5
+        ],
+        [
+          529,
+          0,
+          0,
+          32,
+          32,
+          29
+        ],
+        [
+          1657,
+          0,
+          0,
+          17,
+          28,
+          50
+        ],
+        [
+          1490,
+          0,
+          0,
+          24,
+          39,
+          41
+        ]
+      ]
+    },
+    "train_majority_reference": {
+      "n": 11101,
+      "macro_f1": 0.11389827828183992,
+      "balanced_accuracy": 0.16666666666666666,
+      "accuracy": 0.5190523376272408,
+      "normal_false_alarm_rate": 0.0,
+      "support": [
+        5762,
+        1175,
+        196,
+        622,
+        1752,
+        1594
+      ],
+      "confusion": [
+        [
+          5762,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1175,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          196,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          622,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1752,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1594,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "balanced_accuracy_chance_reference": 0.16666666666666666,
+    "interpretation": "Above-chance performance is a diagnostic, not an automatic shortcut finding. Semantic-no-change may retain legitimate raw variation; raw-no-change equality only concerns the allowed monitor inputs."
+  },
+  {
+    "key": "semantic_no_change_L10_MLP",
+    "status": "COMPLETED",
+    "support": {
+      "train": [
+        30210,
+        6392,
+        940,
+        2586,
+        7826,
+        8383
+      ],
+      "val": [
+        6261,
+        1333,
+        158,
+        449,
+        1964,
+        1820
+      ],
+      "test": [
+        5762,
+        1175,
+        196,
+        622,
+        1752,
+        1594
+      ]
+    },
+    "training": {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 16,
+      "epochs_completed": 28,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 27.373460700000578,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 11985,
+        "macro_f1": 0.3235543499636299,
+        "balanced_accuracy": 0.32172004245780017,
+        "accuracy": 0.4823529411764706,
+        "normal_false_alarm_rate": 0.36224245328222326,
+        "support": [
+          6261,
+          1333,
+          158,
+          449,
+          1964,
+          1820
+        ],
+        "confusion": [
+          [
+            3993,
+            58,
+            69,
+            211,
+            798,
+            1132
+          ],
+          [
+            114,
+            1175,
+            1,
+            8,
+            17,
+            18
+          ],
+          [
+            94,
+            0,
+            1,
+            14,
+            17,
+            32
+          ],
+          [
+            258,
+            0,
+            3,
+            47,
+            63,
+            78
+          ],
+          [
+            1269,
+            16,
+            17,
+            107,
+            257,
+            298
+          ],
+          [
+            1119,
+            16,
+            19,
+            97,
+            261,
+            308
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 56337,
+      "validation_rows": 11985
+    },
+    "metrics": {
+      "n": 11101,
+      "macro_f1": 0.3369775937347305,
+      "balanced_accuracy": 0.33299309428391294,
+      "accuracy": 0.5017565985046393,
+      "normal_false_alarm_rate": 0.3153418951752863,
+      "support": [
+        5762,
+        1175,
+        196,
+        622,
+        1752,
+        1594
+      ],
+      "confusion": [
+        [
+          3945,
+          48,
+          61,
+          171,
+          663,
+          874
+        ],
+        [
+          92,
+          1040,
+          2,
+          8,
+          15,
+          18
+        ],
+        [
+          135,
+          3,
+          0,
+          11,
+          19,
+          28
+        ],
+        [
+          337,
+          5,
+          3,
+          78,
+          109,
+          90
+        ],
+        [
+          1060,
+          10,
+          10,
+          82,
+          270,
+          320
+        ],
+        [
+          1030,
+          7,
+          18,
+          90,
+          212,
+          237
+        ]
+      ]
+    },
+    "train_majority_reference": {
+      "n": 11101,
+      "macro_f1": 0.11389827828183992,
+      "balanced_accuracy": 0.16666666666666666,
+      "accuracy": 0.5190523376272408,
+      "normal_false_alarm_rate": 0.0,
+      "support": [
+        5762,
+        1175,
+        196,
+        622,
+        1752,
+        1594
+      ],
+      "confusion": [
+        [
+          5762,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1175,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          196,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          622,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1752,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1594,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "balanced_accuracy_chance_reference": 0.16666666666666666,
+    "interpretation": "Above-chance performance is a diagnostic, not an automatic shortcut finding. Semantic-no-change may retain legitimate raw variation; raw-no-change equality only concerns the allowed monitor inputs."
+  },
+  {
+    "key": "raw_no_change_L10_HGB",
+    "status": "COMPLETED",
+    "support": {
+      "train": [
+        30210,
+        419,
+        879,
+        2586,
+        7826,
+        8371
+      ],
+      "val": [
+        6261,
+        93,
+        156,
+        449,
+        1964,
+        1820
+      ],
+      "test": [
+        5762,
+        90,
+        191,
+        622,
+        1752,
+        1594
+      ]
+    },
+    "training": {
+      "selection": "Fixed iteration budget; no validation or test selection",
+      "best_iteration": 150,
+      "budget_exhausted": false,
+      "stopping": "PRESPECIFIED_FIXED_BUDGET",
+      "internal_random_validation": false,
+      "training_seconds": 83.94939189999786,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "HGB",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 10743,
+        "macro_f1": 0.13918954903026562,
+        "balanced_accuracy": 0.171476360774218,
+        "accuracy": 0.5720003723354743,
+        "normal_false_alarm_rate": 0.02938827663312571,
+        "support": [
+          6261,
+          93,
+          156,
+          449,
+          1964,
+          1820
+        ],
+        "confusion": [
+          [
+            6077,
+            0,
+            0,
+            27,
+            82,
+            75
+          ],
+          [
+            93,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            149,
+            0,
+            0,
+            0,
+            2,
+            5
+          ],
+          [
+            403,
+            0,
+            0,
+            13,
+            22,
+            11
+          ],
+          [
+            1867,
+            0,
+            0,
+            33,
+            23,
+            41
+          ],
+          [
+            1729,
+            0,
+            0,
+            17,
+            42,
+            32
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 50291,
+      "validation_rows": 10743
+    },
+    "metrics": {
+      "n": 10011,
+      "macro_f1": 0.14690267564788692,
+      "balanced_accuracy": 0.1766656142812146,
+      "accuracy": 0.5715712716012387,
+      "normal_false_alarm_rate": 0.022735161402290927,
+      "support": [
+        5762,
+        90,
+        191,
+        622,
+        1752,
+        1594
+      ],
+      "confusion": [
+        [
+          5631,
+          0,
+          0,
+          18,
+          61,
+          52
+        ],
+        [
+          90,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          180,
+          0,
+          0,
+          3,
+          3,
+          5
+        ],
+        [
+          509,
+          0,
+          0,
+          28,
+          35,
+          50
+        ],
+        [
+          1640,
+          0,
+          0,
+          21,
+          32,
+          59
+        ],
+        [
+          1510,
+          0,
+          0,
+          23,
+          30,
+          31
+        ]
+      ]
+    },
+    "train_majority_reference": {
+      "n": 10011,
+      "macro_f1": 0.12176926815866777,
+      "balanced_accuracy": 0.16666666666666666,
+      "accuracy": 0.5755668764359205,
+      "normal_false_alarm_rate": 0.0,
+      "support": [
+        5762,
+        90,
+        191,
+        622,
+        1752,
+        1594
+      ],
+      "confusion": [
+        [
+          5762,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          90,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          191,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          622,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1752,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1594,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "balanced_accuracy_chance_reference": 0.16666666666666666,
+    "interpretation": "Above-chance performance is a diagnostic, not an automatic shortcut finding. Semantic-no-change may retain legitimate raw variation; raw-no-change equality only concerns the allowed monitor inputs."
+  },
+  {
+    "key": "raw_no_change_L10_MLP",
+    "status": "COMPLETED",
+    "support": {
+      "train": [
+        30210,
+        419,
+        879,
+        2586,
+        7826,
+        8371
+      ],
+      "val": [
+        6261,
+        93,
+        156,
+        449,
+        1964,
+        1820
+      ],
+      "test": [
+        5762,
+        90,
+        191,
+        622,
+        1752,
+        1594
+      ]
+    },
+    "training": {
+      "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+      "best_iteration": 6,
+      "epochs_completed": 18,
+      "budget_exhausted": false,
+      "stopping": "VALIDATION_PLATEAU",
+      "internal_random_validation": false,
+      "training_seconds": 13.611459199997626,
+      "warnings": [],
+      "seed": 20260610,
+      "family": "MLP",
+      "validation_replay": "PASS",
+      "validation": {
+        "n": 10743,
+        "macro_f1": 0.17902864969349394,
+        "balanced_accuracy": 0.1809099206380921,
+        "accuracy": 0.4827329423810854,
+        "normal_false_alarm_rate": 0.25778629611883086,
+        "support": [
+          6261,
+          93,
+          156,
+          449,
+          1964,
+          1820
+        ],
+        "confusion": [
+          [
+            4647,
+            3,
+            13,
+            84,
+            628,
+            886
+          ],
+          [
+            77,
+            0,
+            0,
+            1,
+            9,
+            6
+          ],
+          [
+            122,
+            0,
+            0,
+            4,
+            14,
+            16
+          ],
+          [
+            288,
+            0,
+            0,
+            34,
+            51,
+            76
+          ],
+          [
+            1439,
+            1,
+            2,
+            42,
+            247,
+            233
+          ],
+          [
+            1316,
+            2,
+            3,
+            58,
+            183,
+            258
+          ]
+        ]
+      },
+      "features": 870,
+      "training_rows": 50291,
+      "validation_rows": 10743
+    },
+    "metrics": {
+      "n": 10011,
+      "macro_f1": 0.18622861744284971,
+      "balanced_accuracy": 0.1894206228124458,
+      "accuracy": 0.5066426930376585,
+      "normal_false_alarm_rate": 0.20201318986463035,
+      "support": [
+        5762,
+        90,
+        191,
+        622,
+        1752,
+        1594
+      ],
+      "confusion": [
+        [
+          4598,
+          1,
+          12,
+          82,
+          484,
+          585
+        ],
+        [
+          82,
+          0,
+          0,
+          1,
+          4,
+          3
+        ],
+        [
+          144,
+          0,
+          0,
+          7,
+          20,
+          20
+        ],
+        [
+          395,
+          0,
+          0,
+          54,
+          62,
+          111
+        ],
+        [
+          1201,
+          0,
+          2,
+          56,
+          208,
+          285
+        ],
+        [
+          1150,
+          0,
+          1,
+          57,
+          174,
+          212
+        ]
+      ]
+    },
+    "train_majority_reference": {
+      "n": 10011,
+      "macro_f1": 0.12176926815866777,
+      "balanced_accuracy": 0.16666666666666666,
+      "accuracy": 0.5755668764359205,
+      "normal_false_alarm_rate": 0.0,
+      "support": [
+        5762,
+        90,
+        191,
+        622,
+        1752,
+        1594
+      ],
+      "confusion": [
+        [
+          5762,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          90,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          191,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          622,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1752,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1594,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "balanced_accuracy_chance_reference": 0.16666666666666666,
+    "interpretation": "Above-chance performance is a diagnostic, not an automatic shortcut finding. Semantic-no-change may retain legitimate raw variation; raw-no-change equality only concerns the allowed monitor inputs."
+  }
+]

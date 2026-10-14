@@ -1,0 +1,15 @@
+{
+  "identity": "f5163877952f9f386d663b98e5b8da829ffbce517d60be6c3fccf143fff94d45",
+  "contract": "da92ef0f4c2e6a911e9980324502ae72bd1aa36c57dcf7165e71b9a8db381428",
+  "result": {
+    "condition": "P_moderate",
+    "endpoints": 41028,
+    "runs": 54
+  },
+  "completed_at_utc": "2026-10-07T05:34:08.214790+00:00",
+  "artifact_sha256": {
+    "combined_predictions.npz": "7e1dfe8e3c6f5278a29839a9fc4aa73af80fa28877fed32e574e3758a845d469",
+    "rule_evidence_scores.npz": "3143c15f9ce5b75882cd65130f2a2815cc688cddf61587ef23ed1e3ee7d75642",
+    "combined_metrics_by_run.csv": "eb3971fc8008e9f7fe5334a7423db68343cf2c0abc18e3b78f68f7be38cc6985"
+  }
+}

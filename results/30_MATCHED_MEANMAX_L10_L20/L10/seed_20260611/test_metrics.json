@@ -1,0 +1,20 @@
+{
+  "identity_hash": "de14da0de6c8e1d0f7fb861026c9e9ef795e986e30e3833be1ce964f2c2c003c",
+  "length": 10,
+  "seed": 20260611,
+  "test": {
+    "accuracy": 0.8805994568240568,
+    "macro_precision": 0.9148967613148243,
+    "macro_recall": 0.8831100790327561,
+    "macro_f1": 0.8858795950411817,
+    "weighted_precision": 0.9236988527847023,
+    "weighted_recall": 0.8805994568240567,
+    "weighted_f1": 0.8899905940239986,
+    "total": 30561,
+    "correct": 26912
+  },
+  "test_endpoints": 30561,
+  "best_epoch_selected_on_validation": 9,
+  "validation_checkpoint_sha256": "294dca727dc90b87c724da1dcd79cd9bb47f4c0db1dbd51cc77154ed9ea838f4",
+  "prediction_sha256": "c21688becc3abcf456db4a329586258d6b7181b39ddcc316b4d3b9942a2db7a7"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source": "Hash-bound inference functions and membership sets in saved rule_spec.json",
+  "source_sha256": "c883b7f7493abd8fa1db4ea7089789661d3d4d6d1e33e9c72253675f9c6ab22f",
+  "frozen_config_sha256": "02b895a7b6b208e605d6b082263759f975c52371f062ce83f65f0b2dc44a1893",
+  "original_run": "run_20261004T102431_766880Z",
+  "protocol_version": "shared_nominal_v2_semantic_rules_v1",
+  "thresholds": [
+    0.1,
+    0.5,
+    0.3,
+    0.2,
+    0.1
+  ],
+  "contract_adapter": "dataset_contract_v1",
+  "clean_control_endpoints": 38078,
+  "recalibrated": false
+}

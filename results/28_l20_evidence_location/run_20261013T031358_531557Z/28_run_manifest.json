@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE",
+  "started_utc": "2026-10-13T03:13:58.534318+00:00",
+  "output": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\28_l20_evidence_location\\run_20261013T031358_531557Z",
+  "script_sha256": "043c8e047e3399ffad251c49a731017014550a27f11c25221fbc2697ff87fbd2",
+  "finished_utc": "2026-10-13T03:13:59.568193+00:00",
+  "elapsed_seconds": 4.82,
+  "artifacts": {
+    "28_bootstrap_distribution.npz": "cd065d94cfabf4c0dce12c17eb577697fc36686a567b17b6f705622f473c600f",
+    "28_endpoint_evidence.csv": "2c69da459fa7f95f3e9d344666cbddac416a9b1d2a48394a2de0d4e510ab94bb",
+    "28_findings.json": "fa520c8670afdba23080c0373d4523893637cec9c880873860c3f5f95cc223fb",
+    "28_group_class_detail.csv": "dfc9d2cacf56e09fe3025892d18e6f8c020dc40af15eef35f40102f86d278b50",
+    "28_group_class_means.csv": "ced5df3ad13b395fefef9c5109b993f21085018798d66d9d0ba14c92f2091fa9",
+    "28_group_means.csv": "d46e4b8b664c1ba8fe5c5b9608bda0edcb862aea91f0e2f2b9247e76d0b4016d",
+    "28_group_summary.csv": "8d4f6394e18865e422e8be3acd79729cd968a2c8d7c7840f8b7522b10109a942",
+    "28_input_audit.json": "ab63b20888bb7d1da9a670f638c2e211ff7024323319737e5bcc68e5e0b79936",
+    "28_metrics_by_seed.csv": "5b0be1396bfa0d8ca42e754196b0d93cb2e1f131ce4417c63111eb66e3526c36",
+    "28_model_summary.csv": "662333777302be16bcb0d6a67f8b4ea52068fb29281d92b377c8e3ef7615f6e7",
+    "28_paired_bootstrap.csv": "4e7208192bad5c541d300dbb5ad9db9361e8fbad13540300920c83c5f6ed82d0",
+    "28_prediction_transitions.csv": "b2b34ac61ca739a5c82c83f1b02816081b73e2abec08db7a3ec2775201b68d60",
+    "28_protocol.json": "838e71cba2b650c854c5c2c4b092b9b240e534030abca67c6ead3c1459b179e1"
+  }
+}

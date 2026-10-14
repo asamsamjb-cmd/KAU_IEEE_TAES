@@ -1,0 +1,14 @@
+{
+  "identity": "3cbfa38ce02e6bc51b62a6922b7ecb7d31bc659cbc71b737b640b98f47546ec7",
+  "contract": "5ee6a941bf9b1615325dc8a05009cd09110092448e733eab51ed5a7fdacef2c7",
+  "result": {
+    "condition": "R020",
+    "endpoints": 41028,
+    "runs": 41
+  },
+  "completed_at_utc": "2026-10-09T08:28:49.624189+00:00",
+  "artifact_sha256": {
+    "lsweep_predictions.npz": "cc4b52a779cd45c0b2470fc3e60b4d07cd76dcaedf53140d6dee54aa9ad7b082",
+    "lsweep_metrics_by_run.csv": "e8f8a11f07826cb1d44008d8d8d0ef64adfb2b3bc101c09ad57f6cb25cdd2ebd"
+  }
+}

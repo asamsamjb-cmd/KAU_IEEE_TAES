@@ -1,0 +1,81 @@
+{
+  "selection": "External episode-separated validation macro-F1; tie lower validation logloss",
+  "best_iteration": 49,
+  "epochs_completed": 61,
+  "budget_exhausted": false,
+  "stopping": "VALIDATION_PLATEAU",
+  "internal_random_validation": false,
+  "training_seconds": 49.72847800000454,
+  "warnings": [],
+  "seed": 20260610,
+  "family": "MLP",
+  "validation_replay": "PASS",
+  "validation": {
+    "n": 33398,
+    "macro_f1": 0.3006481756571863,
+    "balanced_accuracy": 0.3006380725281604,
+    "accuracy": 0.3240613210371879,
+    "normal_false_alarm_rate": 0.4792508757747238,
+    "support": [
+      7422,
+      5083,
+      2099,
+      5468,
+      6708,
+      6618
+    ],
+    "confusion": [
+      [
+        3865,
+        109,
+        74,
+        1394,
+        900,
+        1080
+      ],
+      [
+        832,
+        3581,
+        14,
+        264,
+        178,
+        214
+      ],
+      [
+        1081,
+        24,
+        87,
+        366,
+        216,
+        325
+      ],
+      [
+        2313,
+        76,
+        35,
+        1313,
+        755,
+        976
+      ],
+      [
+        3115,
+        102,
+        52,
+        1395,
+        853,
+        1191
+      ],
+      [
+        3094,
+        66,
+        69,
+        1398,
+        867,
+        1124
+      ]
+    ]
+  },
+  "features": 174,
+  "training_rows": 158301,
+  "validation_rows": 33398
+}

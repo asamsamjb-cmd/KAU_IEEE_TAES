@@ -1,0 +1,72 @@
+{
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "serializer_version": "observable22_fixed_order_is_v1",
+  "observable_window_seconds": 1,
+  "tst_sequence_lengths": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "tst_temporal_context_seconds": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "metadata_fields": [
+    "scenario_id",
+    "episode_id",
+    "episode_type",
+    "episode_step",
+    "window_id",
+    "timestamp",
+    "label"
+  ],
+  "observable_fields": [
+    "observation_stage",
+    "path_type",
+    "direction",
+    "source_role",
+    "destination_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "service_context",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "serialized_columns": [
+    "scenario_id",
+    "episode_id",
+    "episode_type",
+    "episode_step",
+    "window_id",
+    "timestamp",
+    "label",
+    "label_id",
+    "text"
+  ],
+  "train_rows": 211006,
+  "val_rows": 44148,
+  "test_rows": 44846,
+  "source_split_files": {
+    "train": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\train_observable.csv",
+    "val": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\val_observable.csv",
+    "test": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\test_observable.csv"
+  },
+  "use_existing_serialized_if_available": false
+}

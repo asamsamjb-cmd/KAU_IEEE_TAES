@@ -1,0 +1,42 @@
+{
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "step46_protocol_identity": "563d73fe6fd6e2e7db05318b188be8c5686d8301fff5b43c52ae3c1d7206ed8d",
+  "test_sha256": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+  "preprocessing": {
+    "max_length": 256,
+    "rows": 44846,
+    "max_token_length": 217,
+    "truncated_rows": 0,
+    "rows_with_tokenizer_UNK": 0,
+    "categorical_unknown_id": 0,
+    "categorical_oov": {
+      "observation_stage": 0,
+      "path_type": 0,
+      "direction": 0,
+      "source_role": 0,
+      "destination_role": 0,
+      "protocol_context": 0,
+      "operational_phase": 0,
+      "message_type": 0,
+      "service_context": 0,
+      "command_intent": 0,
+      "payload_or_parameter_context": 0,
+      "sequence_freshness_status": 0,
+      "control_security_state": 0,
+      "signal_quality_state": 0,
+      "tracking_stability": 0,
+      "navigation_consistency": 0,
+      "timing_consistency": 0,
+      "decoder_status": 0,
+      "command_execution_result": 0,
+      "retry_timeout_state": 0,
+      "session_state": 0,
+      "state_transition_consistency": 0
+    }
+  },
+  "episode_split_disjoint": true,
+  "windows": 44846,
+  "l10": 38078,
+  "episodes": 752,
+  "l10_eligible_episodes": 752
+}

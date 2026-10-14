@@ -1,0 +1,474 @@
+{
+  "train_vocabulary": {
+    "observation_stage": [
+      "COMMAND_HANDLER",
+      "GNSS_RECEIVER",
+      "ONBOARD_MONITOR",
+      "PROTOCOL_HANDLER",
+      "RF_RECEIVER",
+      "SESSION_MANAGER"
+    ],
+    "path_type": [
+      "GATEWAY_LEO",
+      "GNSS_LEO",
+      "INTERNAL_ONBOARD",
+      "IOT_LEO",
+      "LEO_LEO",
+      "UAV_LEO"
+    ],
+    "direction": [
+      "GNSS_TO_SPACE",
+      "GROUND_TO_SPACE",
+      "INTERNAL",
+      "SPACE_TO_GROUND",
+      "SPACE_TO_SPACE",
+      "USER_TO_SPACE"
+    ],
+    "source_role": [
+      "GNSS_CONSTELLATION",
+      "GROUND_CONTROL_SERVICE",
+      "GROUND_GATEWAY",
+      "IOT_TERMINAL",
+      "MONITORED_LEO",
+      "PEER_LEO",
+      "UAV_TERMINAL"
+    ],
+    "destination_role": [
+      "GROUND_GATEWAY",
+      "MONITORED_LEO",
+      "OBC"
+    ],
+    "protocol_context": [
+      "3GPP_NTN",
+      "CCSDS_ISL",
+      "CCSDS_TTC",
+      "GNSS_NAV",
+      "MIOTY",
+      "ONBOARD_INTERNAL"
+    ],
+    "operational_phase": [
+      "COMMAND_SESSION",
+      "CONTACT_WINDOW",
+      "DATA_RELAY",
+      "GNSS_NAVIGATION",
+      "PAYLOAD_OPERATION",
+      "ROUTINE_MONITORING"
+    ],
+    "message_type": [
+      "COMMAND_UPLINK",
+      "GNSS_OBSERVATION",
+      "GNSS_TIMING_UPDATE",
+      "IOT_REPORT",
+      "NAVIGATION_MESSAGE",
+      "NAVIGATION_STATE_UPDATE",
+      "NOMINAL_MIXED_TRAFFIC",
+      "PARTIAL_FRAME",
+      "PNT_SOLUTION",
+      "TELECOMMAND",
+      "TELEMETRY",
+      "UAV_TELEMETRY"
+    ],
+    "service_context": [
+      "CONTROL_SESSION",
+      "DEGRADED_SERVICE",
+      "GNSS_PNT",
+      "HOUSEKEEPING",
+      "IOT_UPLINK",
+      "ISL_ROUTING",
+      "NAVIGATION_FILTERING",
+      "PAYLOAD_DATA",
+      "PNT_MONITORING",
+      "TIMING_SYNCHRONIZATION",
+      "TTC_CONTROL",
+      "UAV_NTN_SERVICE"
+    ],
+    "command_intent": [
+      "ATTITUDE_ADJUST",
+      "CONFIG_UPDATE",
+      "HOUSEKEEPING",
+      "MODE_CHANGE",
+      "NOMINAL_CONTROL",
+      "NO_COMMAND",
+      "ORBIT_CONTROL",
+      "PAYLOAD_CONFIG",
+      "ROUTE_UPDATE",
+      "SESSION_REAUTH",
+      "STATUS_REQUEST",
+      "TIME_SYNC"
+    ],
+    "payload_or_parameter_context": [
+      "CONFIG_PARAMETER",
+      "CONTEXT_MISMATCH_PARAMETER",
+      "CONTROL_PARAMETER",
+      "MISSION_PHASE_MISMATCH_PARAMETER",
+      "NAV_RESIDUAL_VARIATION",
+      "NOMINAL_PARAMETER",
+      "OUT_OF_POLICY_PARAMETER",
+      "PARAMETER_RANGE_VIOLATION",
+      "PARTIAL_PAYLOAD",
+      "PHASE_TRANSITION_PARAMETER",
+      "POLICY_SYNC_CONTEXT",
+      "POSITION_RESIDUAL_VARIATION",
+      "ROUTINE_PARAMETER",
+      "SCHEDULED_CONFIG_PARAMETER",
+      "STATUS_PARAMETER",
+      "SUSPICIOUS_PARAMETER_PATTERN",
+      "TIME_RESIDUAL_VARIATION",
+      "TIME_SYNC_PARAMETER"
+    ],
+    "sequence_freshness_status": [
+      "ACCEPTED",
+      "DUPLICATE",
+      "FRESH",
+      "NOT_APPLICABLE",
+      "OUT_OF_ORDER",
+      "REPLAYED",
+      "STALE"
+    ],
+    "control_security_state": [
+      "AUTH_FAILED",
+      "AUTH_MISSING",
+      "AUTH_VALID",
+      "INTEGRITY_FAILED",
+      "NOT_APPLICABLE",
+      "SOURCE_UNVERIFIED",
+      "UNAUTHORIZED",
+      "VALID_LOOKING_ANOMALOUS"
+    ],
+    "signal_quality_state": [
+      "DEGRADED",
+      "FLUCTUATING",
+      "NOMINAL",
+      "SEVERELY_DEGRADED"
+    ],
+    "tracking_stability": [
+      "CYCLE_SLIP_LIKE",
+      "LOCK_LOSS",
+      "STABLE",
+      "UNSTABLE"
+    ],
+    "navigation_consistency": [
+      "CONSISTENT",
+      "DRIFTING",
+      "INCONSISTENT",
+      "JUMP_DETECTED",
+      "UNAVAILABLE"
+    ],
+    "timing_consistency": [
+      "CONSISTENT",
+      "DRIFTING",
+      "INCONSISTENT",
+      "OFFSET_JUMP"
+    ],
+    "decoder_status": [
+      "CRC_FAIL",
+      "DECODE_FAIL",
+      "DECODE_OK",
+      "DECODE_WARN",
+      "FRAME_LOSS"
+    ],
+    "command_execution_result": [
+      "ACCEPTED",
+      "BLOCKED",
+      "EXECUTED",
+      "HELD",
+      "NO_COMMAND",
+      "REJECTED",
+      "TIMEOUT"
+    ],
+    "retry_timeout_state": [
+      "BURST_TIMEOUT",
+      "NORMAL",
+      "RETRY_INCREASED",
+      "TIMEOUT"
+    ],
+    "session_state": [
+      "ABNORMAL",
+      "ACTIVE",
+      "DEGRADED",
+      "LINK_LOSS",
+      "NO_SESSION",
+      "RESET"
+    ],
+    "state_transition_consistency": [
+      "CONSISTENT",
+      "DELAYED_TRANSITION",
+      "FORBIDDEN_TRANSITION",
+      "INCOMPLETE_TRANSITION",
+      "NO_CHANGE",
+      "UNEXPECTED_TRANSITION"
+    ]
+  },
+  "unseen_from_train": {
+    "train": {
+      "observation_stage": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "path_type": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "direction": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "source_role": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "destination_role": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "protocol_context": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "operational_phase": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "message_type": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "service_context": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "command_intent": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "payload_or_parameter_context": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "sequence_freshness_status": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "control_security_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "signal_quality_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "tracking_stability": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "navigation_consistency": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "timing_consistency": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "decoder_status": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "command_execution_result": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "retry_timeout_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "session_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "state_transition_consistency": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      }
+    },
+    "val": {
+      "observation_stage": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "path_type": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "direction": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "source_role": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "destination_role": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "protocol_context": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "operational_phase": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "message_type": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "service_context": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "command_intent": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "payload_or_parameter_context": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "sequence_freshness_status": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "control_security_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "signal_quality_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "tracking_stability": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "navigation_consistency": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "timing_consistency": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "decoder_status": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "command_execution_result": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "retry_timeout_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "session_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "state_transition_consistency": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      }
+    },
+    "test": {
+      "observation_stage": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "path_type": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "direction": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "source_role": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "destination_role": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "protocol_context": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "operational_phase": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "message_type": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "service_context": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "command_intent": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "payload_or_parameter_context": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "sequence_freshness_status": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "control_security_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "signal_quality_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "tracking_stability": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "navigation_consistency": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "timing_consistency": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "decoder_status": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "command_execution_result": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "retry_timeout_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "session_state": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      },
+      "state_transition_consistency": {
+        "unseen_values": [],
+        "n_rows_with_unseen_value": 0
+      }
+    }
+  }
+}

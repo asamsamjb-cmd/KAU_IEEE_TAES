@@ -1,0 +1,27 @@
+{
+  "identity": "cd3971e45222bebd0526c4ddbc46d452eed340c2b7740f43b1b4b69065068d05",
+  "contract": "e750c0f5de307f2a0cd36f2cfab05c0fe8b129fbcbd5a4eb35585f87606337c3",
+  "result": {
+    "R100": {
+      "rows": 49152,
+      "matching_rows": 46133
+    },
+    "R060": {
+      "rows": 49152,
+      "matching_rows": 46952
+    },
+    "R035": {
+      "rows": 49152,
+      "matching_rows": 47493
+    },
+    "R020": {
+      "rows": 49152,
+      "matching_rows": 47828
+    },
+    "scope": "64-bit hashes of 22-field vectors only; descriptive finite-vocabulary overlap; no row removal or independence proof"
+  },
+  "completed_at_utc": "2026-10-09T08:10:17.486965+00:00",
+  "artifact_sha256": {
+    "audit.json": "4b0f6e45fdb9d8d9a87e8ffe3ebdb3086c4a2f0b3aec1bcec4b60568d594cbf2"
+  }
+}

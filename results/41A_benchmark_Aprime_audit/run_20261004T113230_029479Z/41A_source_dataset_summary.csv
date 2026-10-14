@@ -1,0 +1,7 @@
+﻿label,file,rows,episodes,unique_context_signatures
+NORMAL,normal_observable_dataset.csv,50000,863,16
+RF_LINK_JAMMING,rf_link_jamming_observable_dataset.csv,50000,829,16
+GNSS_SPOOFING,gnss_spoofing_observable_dataset.csv,50000,837,16
+UNAUTHORIZED_TELECOMMAND_INJECTION,unauthorized_telecommand_injection_observable_dataset.csv,50000,824,16
+TELECOMMAND_REPLAY,telecommand_replay_observable_dataset.csv,50000,850,16
+GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE,ground_segment_ttc_control_path_compromise_observable_dataset.csv,50000,813,16

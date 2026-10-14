@@ -1,0 +1,5 @@
+﻿metric,group,target_fpr,direction,target_classes,reference,comparator,reference_estimate,comparator_estimate,difference,ci95_low,ci95_high,paired_fixed_head_sd,positive_head_differences,negative_head_differences,ci_status,focal,family_size,family_adjusted_low,family_adjusted_high
+gap_correct_type_alarm_fraction,all,0.01,higher,"[1, 2, 3, 4, 5]",ActualHistory,MaxHold10,0.82185934363365698,0.76468332962884733,0.05717601400480965,0.04756695302130845,0.067108628838210727,0.0070031777510563128,10,0,ok,True,4,0.045021196248890019,0.069895941986955742
+tail_alarm_fraction_first10,after_last_marked_activity,0.01,lower,"[1, 2, 3, 4, 5]",ActualHistory,MaxHold10,,,,,,,0,0,missing_target_class,True,4,,
+gap_correct_type_alarm_fraction,all,0.050000000000000003,higher,"[1, 2, 3, 4, 5]",ActualHistory,MaxHold10,0.870147330673533,0.84191020310565479,0.028237127567878217,0.017286492612006123,0.039472572005607116,0.0034732479677897919,10,0,ok,True,4,0.014310137223288617,0.042271259140150202
+tail_alarm_fraction_first10,after_last_marked_activity,0.050000000000000003,lower,"[1, 2, 3, 4, 5]",ActualHistory,MaxHold10,,,,,,,0,0,missing_target_class,True,4,,

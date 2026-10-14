@@ -1,0 +1,5 @@
+﻿id,verdict,evidence
+P1,inconsistent,"Reference non-increasing for all L: True; R100-R020 drop L1=0.3062, L10=0.3252"
+P2,inconclusive,"gap10_R060-gap10_R100: 0.0078 [0.0043, 0.0113]; gap10_R035-gap10_R100: 0.0248 [0.0178, 0.0317]; gap10_R020-gap10_R100: 0.0361 [0.0286, 0.0435]"
+P3,consistent,"gain_R060-gain_R100 95% CI [0.0169, 0.0365]"
+P4,consistent,"MeanMax_MLP-TST_L10_R100: 0.0006 [-0.0009, 0.0022]; MeanMax_MLP-TST_L10_R060: 0.0005 [-0.0010, 0.0019]; MeanMax_MLP-TST_L10_R035: 0.0019 [0.0002, 0.0035]; MeanMax_MLP-TST_L10_R020: 0.0021 [0.0005, 0.0036]"

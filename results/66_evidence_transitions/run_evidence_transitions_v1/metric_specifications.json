@@ -1,0 +1,966 @@
+[
+  {
+    "metric": "normal_endpoint_alarm_fraction",
+    "group": "NORMAL",
+    "target_fpr": 0.01,
+    "direction": "lower",
+    "target_classes": [
+      0
+    ]
+  },
+  {
+    "metric": "normal_episode_any_alarm_probability",
+    "group": "NORMAL",
+    "target_fpr": 0.01,
+    "direction": "lower",
+    "target_classes": [
+      0
+    ]
+  },
+  {
+    "metric": "normal_observed_runs_per1000_endpoints",
+    "group": "NORMAL",
+    "target_fpr": 0.01,
+    "direction": "lower",
+    "target_classes": [
+      0
+    ]
+  },
+  {
+    "metric": "gap_alarm_fraction",
+    "group": "all",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_correct_type_alarm_fraction",
+    "group": "all",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_alarm_fraction",
+    "group": "1-3",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_correct_type_alarm_fraction",
+    "group": "1-3",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_alarm_fraction",
+    "group": "4-9",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_correct_type_alarm_fraction",
+    "group": "4-9",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_alarm_fraction",
+    "group": "10+",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_correct_type_alarm_fraction",
+    "group": "10+",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_mean_longest_no_alarm_run",
+    "group": "all",
+    "target_fpr": 0.01,
+    "direction": "lower",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_alarm_fraction_first10",
+    "group": "after_last_observable_change",
+    "target_fpr": 0.01,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_silence_confirmation_probability_first10",
+    "group": "after_last_observable_change",
+    "target_fpr": 0.01,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_capped_confirmation_delay_s",
+    "group": "after_last_observable_change",
+    "target_fpr": 0.01,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_alarm_fraction_first10",
+    "group": "after_last_marked_activity",
+    "target_fpr": 0.01,
+    "direction": "lower",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_silence_confirmation_probability_first10",
+    "group": "after_last_marked_activity",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_capped_confirmation_delay_s",
+    "group": "after_last_marked_activity",
+    "target_fpr": 0.01,
+    "direction": "lower",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_present_by10s",
+    "group": "observable:all",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_by10s",
+    "group": "observable:all",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_in_scored_run",
+    "group": "observable:all",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_in_scored_run",
+    "group": "observable:all",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_preexisting_alarm_probability",
+    "group": "observable:all",
+    "target_fpr": 0.01,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_present_by10s",
+    "group": "observable:repeated",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_by10s",
+    "group": "observable:repeated",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_in_scored_run",
+    "group": "observable:repeated",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_in_scored_run",
+    "group": "observable:repeated",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_preexisting_alarm_probability",
+    "group": "observable:repeated",
+    "target_fpr": 0.01,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_present_by10s",
+    "group": "intervention:all",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_by10s",
+    "group": "intervention:all",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_in_scored_run",
+    "group": "intervention:all",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_in_scored_run",
+    "group": "intervention:all",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_preexisting_alarm_probability",
+    "group": "intervention:all",
+    "target_fpr": 0.01,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_present_by10s",
+    "group": "intervention:repeated",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_by10s",
+    "group": "intervention:repeated",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_in_scored_run",
+    "group": "intervention:repeated",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_in_scored_run",
+    "group": "intervention:repeated",
+    "target_fpr": 0.01,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_preexisting_alarm_probability",
+    "group": "intervention:repeated",
+    "target_fpr": 0.01,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "normal_endpoint_alarm_fraction",
+    "group": "NORMAL",
+    "target_fpr": 0.05,
+    "direction": "lower",
+    "target_classes": [
+      0
+    ]
+  },
+  {
+    "metric": "normal_episode_any_alarm_probability",
+    "group": "NORMAL",
+    "target_fpr": 0.05,
+    "direction": "lower",
+    "target_classes": [
+      0
+    ]
+  },
+  {
+    "metric": "normal_observed_runs_per1000_endpoints",
+    "group": "NORMAL",
+    "target_fpr": 0.05,
+    "direction": "lower",
+    "target_classes": [
+      0
+    ]
+  },
+  {
+    "metric": "gap_alarm_fraction",
+    "group": "all",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_correct_type_alarm_fraction",
+    "group": "all",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_alarm_fraction",
+    "group": "1-3",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_correct_type_alarm_fraction",
+    "group": "1-3",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_alarm_fraction",
+    "group": "4-9",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_correct_type_alarm_fraction",
+    "group": "4-9",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_alarm_fraction",
+    "group": "10+",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_correct_type_alarm_fraction",
+    "group": "10+",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "gap_mean_longest_no_alarm_run",
+    "group": "all",
+    "target_fpr": 0.05,
+    "direction": "lower",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_alarm_fraction_first10",
+    "group": "after_last_observable_change",
+    "target_fpr": 0.05,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_silence_confirmation_probability_first10",
+    "group": "after_last_observable_change",
+    "target_fpr": 0.05,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_capped_confirmation_delay_s",
+    "group": "after_last_observable_change",
+    "target_fpr": 0.05,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_alarm_fraction_first10",
+    "group": "after_last_marked_activity",
+    "target_fpr": 0.05,
+    "direction": "lower",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_silence_confirmation_probability_first10",
+    "group": "after_last_marked_activity",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "tail_capped_confirmation_delay_s",
+    "group": "after_last_marked_activity",
+    "target_fpr": 0.05,
+    "direction": "lower",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_present_by10s",
+    "group": "observable:all",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_by10s",
+    "group": "observable:all",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_in_scored_run",
+    "group": "observable:all",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_in_scored_run",
+    "group": "observable:all",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_preexisting_alarm_probability",
+    "group": "observable:all",
+    "target_fpr": 0.05,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_present_by10s",
+    "group": "observable:repeated",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_by10s",
+    "group": "observable:repeated",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_in_scored_run",
+    "group": "observable:repeated",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_in_scored_run",
+    "group": "observable:repeated",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_preexisting_alarm_probability",
+    "group": "observable:repeated",
+    "target_fpr": 0.05,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_present_by10s",
+    "group": "intervention:all",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_by10s",
+    "group": "intervention:all",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_in_scored_run",
+    "group": "intervention:all",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_in_scored_run",
+    "group": "intervention:all",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_preexisting_alarm_probability",
+    "group": "intervention:all",
+    "target_fpr": 0.05,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_present_by10s",
+    "group": "intervention:repeated",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_by10s",
+    "group": "intervention:repeated",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_any_alarm_in_scored_run",
+    "group": "intervention:repeated",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_known_new_alert_in_scored_run",
+    "group": "intervention:repeated",
+    "target_fpr": 0.05,
+    "direction": "higher",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "metric": "event_preexisting_alarm_probability",
+    "group": "intervention:repeated",
+    "target_fpr": 0.05,
+    "direction": "descriptive",
+    "target_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+]

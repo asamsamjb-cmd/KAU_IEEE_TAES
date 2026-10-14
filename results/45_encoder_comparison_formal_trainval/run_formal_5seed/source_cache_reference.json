@@ -1,0 +1,16 @@
+{
+  "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\43_encoder_comparison_trainval_pilot\\run_20261004T120919_900182Z\\cache",
+  "identity": "77905b7b87e2cda6aabcd09f3e629677a5aee40f8c0e0717e2816f6b241f286c",
+  "max_length": 256,
+  "elapsed_seconds": 28.339411299995845,
+  "artifact_sha256": {
+    "train_attention_mask.npy": "777b9d1e267ee1bf2abb78ec150a7d976e294851dd24c4eefaf272597006ea88",
+    "train_categories.npy": "559451cc47e7674b0c072026cf6230dc36986a88c3fc44d4b6dbdb6e06d9bf83",
+    "train_input_ids.npy": "f2ad74542a976ca18240b36e2d9a23d82da7b4e3297f782e614aa6667e842761",
+    "train_labels.npy": "ff850d40cdf87edae2168390503fd6d07ebf72465aecf7389884a4647523fea7",
+    "val_attention_mask.npy": "3eb986f1cb1fd2056fb53855b092256efe4479a0e7a41b775e003846156a089b",
+    "val_categories.npy": "3b85a103a17751ad50443f08a4f9e32ed5a28136ba6cfaf8405cb3fcd4a996c7",
+    "val_input_ids.npy": "5825cb7aa737be5d933d04763729a0a6765dfd02ed9c76bbfcae5986c1f9e1dc",
+    "val_labels.npy": "85e2ae077bddb6127cb84cec3a2ed4c365e8285996872ecf6ae0d206e515d38f"
+  }
+}

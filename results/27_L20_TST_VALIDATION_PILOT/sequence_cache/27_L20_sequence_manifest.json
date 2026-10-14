@@ -1,0 +1,71 @@
+{
+  "identity": {
+    "schema": "taes_step27_l20_validation_pilot_v1",
+    "length": 20,
+    "stride": 1,
+    "materialize_X": false,
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "original_step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "step9_artifacts": {
+      "embedding_extraction_report.json": "d7525913bea9dd5c713b0d3b67372577db1eb4c0587c02a4da310acac4c68822",
+      "train_window_embeddings.npz": "b6b86adb4cd0b2dcf8d151927d63482d5ef83eb8cb285001a81a72d74b52b7e4",
+      "train_window_metadata.csv": "c09de8d275999b7a6d7b56e75690e47cf15c796bdea9d3a5bfa47e9a0e3b977c",
+      "val_window_embeddings.npz": "a92ab043244aed7f49e50dca125f38e67c6c2d287eb00b66c556597fbd786d51",
+      "val_window_metadata.csv": "95024aac342046f89290926ff96edf53b8e29be5901297032c4f5c5facd513a2",
+      "test_window_embeddings.npz": "67dfc1e4f3a128013dcc585f9b8d80b33bfb8d2d85f6b2a6fe4d9628391becd1",
+      "test_window_metadata.csv": "86f13ac47bc3fc6c337736da94dfac05c1e96e7907c3d8d37b4aa3089d0c7f68"
+    },
+    "observability_audit": {
+      "schema_version": "counterfactual_observable_change_v1",
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+      "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "split_files": {
+        "train": "audit/train_window_observable_effects.csv",
+        "val": "audit/val_window_observable_effects.csv",
+        "test": "audit/test_window_observable_effects.csv"
+      },
+      "artifacts": {
+        "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+        "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+        "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+      },
+      "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+    },
+    "step10_source_sha256": "fe77c53e52034d5df4f7b9a8297123b6ab1105ca803f088ab605b08218ccfc10",
+    "step27_source_sha256": "fbc760d720238d3b627d8218c1360daa4b72d351c88bf90bab51af9f69728711"
+  },
+  "status": "COMPLETE",
+  "completed": "2026-10-12T15:56:18.933445+00:00",
+  "artifacts": {
+    "27_L20_sequence_report.json": "897fb12e764c1aeffadb4c74c07c6aa94a6fdccba3c1471ccb8105eee04f32d1",
+    "test_tst_sequences_L20.npz": "357d1822eac66606425f98e126d26bff1a0f2f2cf1e7b4a41aebbfb91d80cf8b",
+    "test_tst_sequence_metadata_L20.csv": "c3c7b85234a60cc3ca56365b25210d23ec27874adf537db0e6b7f284b7e3ac09",
+    "test_tst_sequence_observable_effects_L20.csv": "6f0ea0ed4d9a2e38c2c5c45460eda41d9ca3e4c7dc3f30393f95707ee31b8d64",
+    "train_tst_sequences_L20.npz": "d6d1c6911f3a2b11e2bbd1c54fb87db05625f130108d4a02184376bf9f1b5311",
+    "train_tst_sequence_metadata_L20.csv": "4aa41d24b767f9b90bdfa7deba893d228ac556dccb3f023570559f7f61ffe205",
+    "train_tst_sequence_observable_effects_L20.csv": "c3d97256d844704eec647b3fdfc68c5c3bd3dd73c65b66cd1b1375719d5127f1",
+    "val_tst_sequences_L20.npz": "70d4fa8072b2c088cc0a0363d3d77d00833100c4eda64d40ac3a147cf8d8309b",
+    "val_tst_sequence_metadata_L20.csv": "e6a7c2b37836460c1df135cd8f0c677fdee66b2a831fcd1b32701b5941b8af18",
+    "val_tst_sequence_observable_effects_L20.csv": "e87ca13c3b252056f524d51555adad80f5901b510c65be4fa9ff4a71dc901d8f",
+    "review_samples/test_L20.csv": "36ce795784c329341b5e98053530d5c425a165b974121153297fef9c314053ea",
+    "review_samples/train_L20.csv": "1f899d601e3c12346da4a7cd1aa1b7b0261398123f9f2ac4634929ab61ff24cc",
+    "review_samples/val_L20.csv": "50d92eeb139ecb3acfed8064493102d54d321f9f431ab28635721a91c6d03d83"
+  },
+  "splits": {
+    "train": {
+      "num_sequences": 144321,
+      "num_episodes": 3511
+    },
+    "val": {
+      "num_sequences": 29841,
+      "num_episodes": 753
+    },
+    "test": {
+      "num_sequences": 30561,
+      "num_episodes": 752
+    }
+  }
+}

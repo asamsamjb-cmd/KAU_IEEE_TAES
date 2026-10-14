@@ -1,0 +1,19 @@
+{
+  "P_reference": {
+    "rows": 49152,
+    "matching_rows": 46133
+  },
+  "P_mild": {
+    "rows": 49152,
+    "matching_rows": 44688
+  },
+  "P_moderate": {
+    "rows": 49152,
+    "matching_rows": 42638
+  },
+  "P_severe": {
+    "rows": 49152,
+    "matching_rows": 39770
+  },
+  "scope": "64-bit hashes of 22-field vectors only; descriptive finite-vocabulary overlap; no row removal or independence proof"
+}

@@ -1,0 +1,99 @@
+{
+  "version": "raw_semantic_frozen_parameter_shift_v2",
+  "script_sha256": "aa5f02e1885aabc1cafd35149bf2a84b2288579a2fbee112383e3acfbc24981a",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "source49": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\49_parameter_stress\\run_parameter_stress_v1",
+  "source59": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\59_raw_semantic\\run_raw_semantic_v2",
+  "step49_protocol_identity": "f9346c2f6eb8c770324639dd3218edf0b2c38dda415251c2f57e3bb1a764d0ab",
+  "step59_protocol_identity": "8db457f25d9056895b70b6488d543b72baeecd2593e3ec2f5da8d5a040584c35",
+  "step60_code_sha256": "250c5d7513638c978ef2126b3e39c2575df68ad721d36d4761bd8d46b21f9102",
+  "step59_code_sha256": "f9d4e611135c390d0f29f6f8097640235430909e9246b1d30bb732d80616ff7a",
+  "conditions": [
+    "P_reference",
+    "P_mild",
+    "P_moderate",
+    "P_severe"
+  ],
+  "groups": [
+    {
+      "representation": "Raw",
+      "family": "HGB"
+    },
+    {
+      "representation": "RawScoped",
+      "family": "HGB"
+    },
+    {
+      "representation": "Semantic22",
+      "family": "HGB"
+    },
+    {
+      "representation": "Raw",
+      "family": "MLP"
+    },
+    {
+      "representation": "RawScoped",
+      "family": "MLP"
+    },
+    {
+      "representation": "Semantic22",
+      "family": "MLP"
+    }
+  ],
+  "seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614
+  ],
+  "length": 10,
+  "training": false,
+  "normalization": "Original Step59 train-fitted vocabulary, explicit UNSEEN bins and saved MLP scaler; no fit on shift",
+  "aggregation": "Numeric and one-hot columns: mean,std(ddof0),min,max,last; identical operations for both representations",
+  "raw_monitor_policy": {
+    "source_unverified_flag": "source_unverified_flag OR source_unverified_benign_flag",
+    "policy_inconsistent_flag": "policy_inconsistent_flag OR valid_looking_benign_flag"
+  },
+  "preflight_only": false,
+  "validation_replay": "16 evenly spaced validation endpoints per true class; audit only, no model selection",
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 2026100761,
+    "unit": "whole common nominal episode including all six class replicas",
+    "pairing": "same multiplicities across four regimes, representations, learners and fixed seeds",
+    "estimator": "mean of per-seed endpoint Macro-F1/FPR/recall; no probability ensemble or pooled-seed confusion",
+    "resample_training_seeds": false,
+    "resample_generator_seeds": false,
+    "intervals": "conditional linear-percentile95; Bonferroni16 within each of three pair families (matched_scope: Semantic22-RawScoped, scope_effect: RawScoped-Raw, all_link: Semantic22-Raw) over 4 conditions x2 learners x2 metrics; change families Bonferroni12"
+  },
+  "scope_policy": "Per-window single-path observation contract of the pinned mapper: the six channels of the four links (snr/sinr, frame_loss_rate, crc_error_count, decode_fail_count, retry_count, timeout_count) are kept only for the link selected by raw_path_type (GATEWAY_LEO->ttc, LEO_LEO->isl, IOT_LEO->iot, UAV_LEO->uav); channels of non-selected links are set to 0 and four link_observed_* indicators are added (all 0 for GNSS_LEO and INTERNAL_ONBOARD). GNSS monitors, command/session/transition flags, counts and the eleven context categories are common to every window and unchanged. This matches the information the 22-field projection can read, not a physical claim that other links are unobservable.",
+  "interpretation": [
+    "Retrospective analysis using previously observed source regimes; not preregistered confirmation.",
+    "Same generator with joint parameter changes; no external validity or isolated factor-causality claim.",
+    "Raw simulated measurements and monitor outputs; not raw RF waveforms.",
+    "Deterministic projection does not create information; differences are learner/feature interactions.",
+    "Raw and semantic temporal statistics do not preserve every ordering detail.",
+    "Report absolute scores and NORMAL false alarms as well as changes; smaller loss alone is not superiority.",
+    "All endpoints including quiet/unchanged inputs retained; no label, provenance, baseline or cause fields enter model.",
+    "Intervals conditional on these trained models and one paired nominal realization; not formal equivalence."
+  ],
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3",
+    "threads": 8,
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "source59_runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "identity": "e7b24c2014d322e5269052421dbb82c6c8302c37d9d944f1488f9efc412363d6"
+}

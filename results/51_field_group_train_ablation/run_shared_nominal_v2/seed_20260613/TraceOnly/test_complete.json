@@ -1,0 +1,14 @@
+{
+  "identity": "b36070182311e33d34e43bb5bd04384c5b10b033c07e95a7ad40f076f7b91641",
+  "artifact_sha256": {
+    "test_predictions_L10.npz": "470af2a692f1e88eed45d94f971fff504e733c0c8bfbbe31a51d9c1651f11494",
+    "test_metrics.json": "dfd2d038c591dd10b24063346cb5cbf1577f420e7bebb656b1a9beaec49ffd98",
+    "validation_replay.json": "515a68a9a52a0390ec71e781ecce230efe98aadd99b7f3a82e86f37c46105470"
+  },
+  "endpoint_identity": "7138e21007978800229676557d3ba1b5af5950350e4f226a09c5e7bf5249edb7",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "seed": 20260613,
+  "setting": "TraceOnly",
+  "evaluation_precision": "float32",
+  "completed_at_utc": "2026-10-06T17:47:20.173597+00:00"
+}

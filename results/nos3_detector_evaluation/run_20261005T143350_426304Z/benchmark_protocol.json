@@ -1,0 +1,53 @@
+{
+  "status": "STARTED",
+  "windows": 44846,
+  "common_endpoints": 38078,
+  "episodes": 752,
+  "conditions": [
+    "clean",
+    "fixed_mask14"
+  ],
+  "available_fields": [
+    "observation_stage",
+    "direction",
+    "destination_role",
+    "protocol_context",
+    "message_type",
+    "service_context",
+    "sequence_freshness_status",
+    "command_execution_result"
+  ],
+  "masked_fields": [
+    "path_type",
+    "source_role",
+    "operational_phase",
+    "command_intent",
+    "payload_or_parameter_context",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "mask_selection": "Fixed field names from the reviewed NOS3 mapping, identical for every benchmark row and class",
+  "population": "All original common L10 test endpoints; L1 evaluated on the same endpoints",
+  "serializer": "observable22_fixed_order_is_v1",
+  "missing_placeholder": "UNK",
+  "seed": 20260610,
+  "model_selection": false,
+  "threshold_tuning": false,
+  "labels_used_for_mask": false,
+  "clean_embedding_source": "Hash-verified existing test embeddings, with the independent clean-control reproduction gate",
+  "inference_precision": "float32",
+  "formal_external_validation": false,
+  "limitations": [
+    "Post-hoc diagnostic proposed after NOS3 results; no model or threshold selected from these outcomes.",
+    "The fixed 14-field mask does not reproduce NOS3's conditional 14/15/18-field missingness or its field-value distribution.",
+    "This comparison estimates the paired effect of this fixed mask on this benchmark, not a decomposition of domain shift.",
+    "All six class outputs are retained. No statistical significance or independent-window confidence interval is claimed."
+  ]
+}

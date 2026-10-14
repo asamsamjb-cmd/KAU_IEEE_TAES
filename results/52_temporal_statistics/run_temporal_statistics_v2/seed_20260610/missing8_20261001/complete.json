@@ -1,0 +1,11 @@
+{
+  "identity": "83ca1b9e0f889daa32d972eff7fc0902e870e4871b923ba4343de8ee0a3d1e6b",
+  "contract": "11473962395f21c08aa2913345bfaeb6222a0a029dbbb59f84812c0e512b74bc",
+  "result": {
+    "endpoint_identity": "861dbeb5ac722c583fd9fd9bd18f79cb9db589115d5a5268ef887c542b5b43e8"
+  },
+  "completed_at_utc": "2026-10-07T01:55:11.905879+00:00",
+  "artifact_sha256": {
+    "predictions.npz": "871376591b0138de263215161a8158605d2dad4292e5ee456c8fdf36fd57ff1f"
+  }
+}

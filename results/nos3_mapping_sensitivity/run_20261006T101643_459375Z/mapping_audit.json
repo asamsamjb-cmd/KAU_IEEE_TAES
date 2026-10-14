@@ -1,0 +1,22 @@
+{
+  "mapping_version": "08.2-restricted-evidence-mapping",
+  "total_windows": 899,
+  "window_counts": {
+    "TC": 30,
+    "TLM": 869
+  },
+  "unk_counts_by_kind": {
+    "TC": {
+      "12": 20,
+      "13": 10
+    },
+    "TLM": {
+      "11": 869
+    }
+  },
+  "first_frame_rule": "UNK",
+  "cold_start_unk_count": 10,
+  "command_receive_event_cross_second_count": 0,
+  "validated_tlm_packets_in_complete_windows": 19313,
+  "unobserved_window_count": 0
+}

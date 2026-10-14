@@ -1,0 +1,326 @@
+{
+  "version": "paired_attack_response_audit_v1",
+  "created_utc": "2026-10-07T10:21:37.284775+00:00",
+  "script_sha256": "250c5d7513638c978ef2126b3e39c2575df68ad721d36d4761bd8d46b21f9102",
+  "source_folder": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\49_parameter_stress\\run_parameter_stress_v1",
+  "source_protocol_identity": "f9346c2f6eb8c770324639dd3218edf0b2c38dda415251c2f57e3bb1a764d0ab",
+  "source_dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "source_encoder_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+  "retrospective": true,
+  "training": false,
+  "inference": false,
+  "selection_on_stress": false,
+  "source_version": "shared_nominal_A_parameter_stress_v1",
+  "labels": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "fields": [
+    "observation_stage",
+    "path_type",
+    "direction",
+    "source_role",
+    "destination_role",
+    "protocol_context",
+    "operational_phase",
+    "message_type",
+    "service_context",
+    "command_intent",
+    "payload_or_parameter_context",
+    "sequence_freshness_status",
+    "control_security_state",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "command_execution_result",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "conditions": [
+    "P_reference",
+    "P_mild",
+    "P_moderate",
+    "P_severe"
+  ],
+  "families": [
+    "TST",
+    "Mean_MLP",
+    "Max_MLP",
+    "MeanMax_MLP",
+    "LSTM",
+    "ProbabilityMean",
+    "MajorityVote",
+    "EWMA",
+    "Rule_L10"
+  ],
+  "runs": [
+    [
+      "TST",
+      20260610
+    ],
+    [
+      "TST",
+      20260611
+    ],
+    [
+      "TST",
+      20260612
+    ],
+    [
+      "TST",
+      20260613
+    ],
+    [
+      "TST",
+      20260614
+    ],
+    [
+      "TST",
+      20260615
+    ],
+    [
+      "TST",
+      20260616
+    ],
+    [
+      "TST",
+      20260617
+    ],
+    [
+      "TST",
+      20260618
+    ],
+    [
+      "TST",
+      20260619
+    ],
+    [
+      "Mean_MLP",
+      20260610
+    ],
+    [
+      "Mean_MLP",
+      20260611
+    ],
+    [
+      "Mean_MLP",
+      20260612
+    ],
+    [
+      "Mean_MLP",
+      20260613
+    ],
+    [
+      "Mean_MLP",
+      20260614
+    ],
+    [
+      "Mean_MLP",
+      20260615
+    ],
+    [
+      "Mean_MLP",
+      20260616
+    ],
+    [
+      "Mean_MLP",
+      20260617
+    ],
+    [
+      "Mean_MLP",
+      20260618
+    ],
+    [
+      "Mean_MLP",
+      20260619
+    ],
+    [
+      "Max_MLP",
+      20260610
+    ],
+    [
+      "Max_MLP",
+      20260611
+    ],
+    [
+      "Max_MLP",
+      20260612
+    ],
+    [
+      "Max_MLP",
+      20260613
+    ],
+    [
+      "Max_MLP",
+      20260614
+    ],
+    [
+      "Max_MLP",
+      20260615
+    ],
+    [
+      "Max_MLP",
+      20260616
+    ],
+    [
+      "Max_MLP",
+      20260617
+    ],
+    [
+      "Max_MLP",
+      20260618
+    ],
+    [
+      "Max_MLP",
+      20260619
+    ],
+    [
+      "MeanMax_MLP",
+      20260610
+    ],
+    [
+      "MeanMax_MLP",
+      20260611
+    ],
+    [
+      "MeanMax_MLP",
+      20260612
+    ],
+    [
+      "MeanMax_MLP",
+      20260613
+    ],
+    [
+      "MeanMax_MLP",
+      20260614
+    ],
+    [
+      "MeanMax_MLP",
+      20260615
+    ],
+    [
+      "MeanMax_MLP",
+      20260616
+    ],
+    [
+      "MeanMax_MLP",
+      20260617
+    ],
+    [
+      "MeanMax_MLP",
+      20260618
+    ],
+    [
+      "MeanMax_MLP",
+      20260619
+    ],
+    [
+      "LSTM",
+      20260610
+    ],
+    [
+      "LSTM",
+      20260611
+    ],
+    [
+      "LSTM",
+      20260612
+    ],
+    [
+      "LSTM",
+      20260613
+    ],
+    [
+      "LSTM",
+      20260614
+    ],
+    [
+      "LSTM",
+      20260615
+    ],
+    [
+      "LSTM",
+      20260616
+    ],
+    [
+      "LSTM",
+      20260617
+    ],
+    [
+      "LSTM",
+      20260618
+    ],
+    [
+      "LSTM",
+      20260619
+    ],
+    [
+      "ProbabilityMean",
+      -1
+    ],
+    [
+      "MajorityVote",
+      -1
+    ],
+    [
+      "EWMA",
+      -1
+    ],
+    [
+      "Rule_L10",
+      -1
+    ]
+  ],
+  "pairing_key": [
+    "shared_nominal_block_id",
+    "sequence_start_step",
+    "sequence_end_step",
+    "sequence_length"
+  ],
+  "retained_population": "Every eligible L10 attack endpoint, including unchanged semantic inputs; no relabeling",
+  "headline_metric": "paired_correct on ALL_ATTACKS/ALL; endpoint-weighted, mean over fixed trained heads",
+  "outcome_definitions": {
+    "paired_correct": "I(nominal prediction == NORMAL and attack prediction == target)",
+    "target_recall": "I(attack prediction == target), includes attacks with unchanged semantic inputs",
+    "target_gain": "I(attack prediction == target) - I(nominal prediction == target); signed [-1,1]",
+    "attack_alarm": "I(attack prediction != NORMAL), including wrong attack classes",
+    "normal_to_any_attack": "I(nominal prediction == NORMAL and attack prediction != NORMAL)",
+    "normal_to_wrong_attack": "I(nominal prediction == NORMAL and attack prediction neither NORMAL nor target)",
+    "label_change": "I(nominal prediction != attack prediction); not itself a success measure",
+    "nominal_false_alarm": "I(unique nominal endpoint prediction != NORMAL); NORMAL endpoints counted once"
+  },
+  "denominators": "Unconditional on nominal correctness; no conditional-detection denominator. ALL_ATTACKS pools endpoints. Classes are balanced in ALL but may not be balanced within CHANGED/UNCHANGED strata.",
+  "strata": "ALL includes every pair. CHANGED and UNCHANGED partition ALL by exact full-L10 22-field differences. Benign nominal strata use any recorded baseline impairment flag in L10, as audit metadata only.",
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 2026100701,
+    "unit": "whole shared nominal episode",
+    "pairing": "same multiplicity vector across all six class replicas, all models, and all four regimes",
+    "estimator": "ratio of endpoint sums after episode resampling; fixed-head mean; not equal-weight episode-rate mean",
+    "head_seed_resampling": false,
+    "generator_seed_resampling": false,
+    "encoder_seed_resampling": false,
+    "intervals": "linear percentile95, conditional on fixed source realization/encoder/heads; no equivalence tests",
+    "empty_strata": "NA, not zero. Omit zero-denominator draws and report their count; CI suppressed if <2 contributing clusters",
+    "multiplicity": "32 TST-minus-comparator contrasts for ALL_ATTACKS/ALL paired_correct: four conditions x eight comparators. Provide unadjusted95 and Bonferroni95 across those32 only; all analyses retrospective/descriptive"
+  },
+  "focus_comparator": "MeanMax_MLP",
+  "focus_condition": "P_moderate",
+  "focus_scope": "Inherited original validation-selected pooling comparator; not newly selected or preregistered",
+  "verification_scope": "Consumed Step49 artifacts and saved producer source only. No re-execution of generator/mapper/inference and no verification of omitted upstream caches/checkpoints. Hash identity is internal integrity, not independent authenticity.",
+  "interpretation": "Within-generator matched prediction response, not external validity, raw-vs-semantic superiority, absence of all simulator fingerprints, or isolated-factor causal identification.",
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "system": "Windows-10-10.0.19045-SP0"
+  },
+  "identity": "b46253f269b8f7cdc7e864db3894235f5cdf3bb568dd5c0de1c0916bf22f0663"
+}

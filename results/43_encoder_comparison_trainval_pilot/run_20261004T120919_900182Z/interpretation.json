@@ -1,0 +1,16 @@
+{
+  "status": "TRAIN_VAL_PILOT_ONLY",
+  "formal": false,
+  "encoder_seeds": 1,
+  "test_evaluation": false,
+  "matched_comparison": "window_val_common_macro_f1 and l10_val_macro_f1 use the same L10 endpoints",
+  "all_window_metric": "window_val_macro_f1 uses all available validation windows and selects the encoder checkpoint",
+  "confounding": "Window classifier and TST also differ in head capacity/training; matched endpoints alone do not isolate a pure temporal effect.",
+  "pretraining_limit": "Random/pretrained pilots retain different learning-rate/epoch budgets to diagnose convergence; these pilot scores alone are not a controlled causal pretraining comparison.",
+  "uncertainty": "No formal seed uncertainty, bootstrap significance or equivalence claim from this pilot.",
+  "shared_nominal_scope": "All conditions use the same current shared-nominal train/validation episodes and 22 fields; metadata and counterfactual audit annotations are not features.",
+  "quiet_windows": "Episode/scenario labels are retained even without observable evidence. This pilot does not filter/relabel them or tune to an expected score.",
+  "evidence_limit": "Overall validation F1 alone does not establish attack-evidence use or rule out generator signatures; interpret alongside the current benchmark audits and evidence-availability diagnostics.",
+  "cost_limit": "Timing includes validation/checkpoint overhead; it is not an onboard inference benchmark.",
+  "next_use": "Use train/validation convergence evidence to specify the formal encoder comparison before test evaluation."
+}

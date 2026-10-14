@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "common_endpoints": 809,
+  "activity_counts": {
+    "quiet_history": 509,
+    "current_command": 30,
+    "recent_command": 270
+  },
+  "tst_prediction_rows": 6472,
+  "rule_prediction_rows": 1618,
+  "silent_truth_assigned": false,
+  "rule_serialization_repeats": false,
+  "interpretation": "Text omission changes field names, sequence length and token positions as well as UNK text. It is not an isolated UNK-token causal effect."
+}

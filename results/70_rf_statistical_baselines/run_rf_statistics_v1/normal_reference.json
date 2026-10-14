@@ -1,0 +1,72 @@
+{
+  "fit_population": "train NORMAL only; observed link only",
+  "links": {
+    "ttc": {
+      "n": 13922,
+      "columns": [
+        "ttc_snr_db",
+        "ttc_frame_loss_rate"
+      ],
+      "mean": [
+        18.38622812814255,
+        0.007346709524493627
+      ],
+      "sample_std": [
+        2.3972130677450485,
+        0.00923706433967798
+      ]
+    },
+    "isl": {
+      "n": 6146,
+      "columns": [
+        "isl_snr_db",
+        "isl_frame_loss_rate"
+      ],
+      "mean": [
+        16.89835893263913,
+        0.009311485519036763
+      ],
+      "sample_std": [
+        2.5873666158690534,
+        0.010090558947643541
+      ]
+    },
+    "iot": {
+      "n": 3635,
+      "columns": [
+        "iot_snr_db",
+        "iot_frame_loss_rate"
+      ],
+      "mean": [
+        -0.22015625859697366,
+        0.02788411829436026
+      ],
+      "sample_std": [
+        4.159729541226077,
+        0.022365216230602104
+      ]
+    },
+    "uav": {
+      "n": 3717,
+      "columns": [
+        "uav_sinr_db",
+        "uav_frame_loss_rate"
+      ],
+      "mean": [
+        9.811884046273892,
+        0.01772353510895881
+      ],
+      "sample_std": [
+        4.052611151673639,
+        0.017032590747277115
+      ]
+    }
+  },
+  "ddof": 1,
+  "directions": [
+    "mean_minus_snr",
+    "loss_minus_mean"
+  ],
+  "k": 0.5,
+  "note": "Includes benign variability; no removal based on attack/effect/nominal flags"
+}

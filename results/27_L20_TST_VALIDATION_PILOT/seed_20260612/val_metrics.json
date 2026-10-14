@@ -1,0 +1,21 @@
+{
+  "seed": 20260612,
+  "best_epoch": 5,
+  "trained_epochs": 12,
+  "training_elapsed_seconds": 108.04819629999838,
+  "val": {
+    "accuracy": 0.9303977748734962,
+    "macro_precision": 0.9458862125363674,
+    "macro_recall": 0.9327234141735142,
+    "macro_f1": 0.9345371607725864,
+    "weighted_precision": 0.9462251684175423,
+    "weighted_recall": 0.9303977748734962,
+    "weighted_f1": 0.9334420007575299,
+    "total": 29841,
+    "correct": 27764,
+    "loss": 0.38150806387463265
+  },
+  "n_train_sequences": 144321,
+  "n_val_sequences": 29841,
+  "head_training_protocol": "Step 11 exact optimizer/epoch/early-stopping/augmentation flags; L20 only"
+}

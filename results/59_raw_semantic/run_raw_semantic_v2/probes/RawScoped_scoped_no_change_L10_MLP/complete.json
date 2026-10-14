@@ -1,0 +1,10 @@
+{
+  "identity": "06e29ed0685a91c7e02d57b55801d3e1b63529605ce12b78e6d4970546e32dcd",
+  "files": {
+    "model.joblib": "cbdec1d42c9dd3a4e04904bad36cb9ecc78b0833861397cf9aae98601f593262",
+    "history.csv": "d502dc9822024cf011b79993eb361ae086614041bd231ade9f3d573c2d2df87e",
+    "training_report.json": "4e8bc4d976e663cc4727ac7c1777786dbf5c16bfeef3faa5fcc9d92cdbd82a57",
+    "validation_predictions.npz": "d3a6bad57984f79a1d93f64c100aab0c470559c8a6a59a8512e5dfb55555d31d"
+  },
+  "completed_at_utc": "2026-10-08T06:20:32.162107+00:00"
+}

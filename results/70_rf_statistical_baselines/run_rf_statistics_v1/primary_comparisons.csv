@@ -1,0 +1,5 @@
+﻿reference,comparator,metric,target_normal_rf_fpr,difference,ci95_low,ci95_high,family_size,family_adjusted_low,family_adjusted_high,interpretation
+TST62_ActualHistory_L10,RF_Threshold_L1,rf_f1,0.01,0.5965024037812936,0.56123402435599468,0.63364942251031864,4,0.55139782869014176,0.6446481650831748,Not an architecture-only/representation-only comparison; fixed fits and thresholds
+TST62_ActualHistory_L10,RF_FiniteCUSUM_L10,rf_f1,0.01,0.42016327463459291,0.36222010609797212,0.48274060902452709,4,0.34808087011880773,0.5000870993734845,Not an architecture-only/representation-only comparison; fixed fits and thresholds
+TST62_ActualHistory_L10,RF_Threshold_L1,rf_f1,0.050000000000000003,0.56250117684138079,0.53021052428760496,0.59624931522849112,4,0.52160278279621008,0.60586950506855852,Not an architecture-only/representation-only comparison; fixed fits and thresholds
+TST62_ActualHistory_L10,RF_FiniteCUSUM_L10,rf_f1,0.050000000000000003,0.22004034822707597,0.17431779494206659,0.27159657276797311,4,0.16236293725708215,0.28601920802651254,Not an architecture-only/representation-only comparison; fixed fits and thresholds

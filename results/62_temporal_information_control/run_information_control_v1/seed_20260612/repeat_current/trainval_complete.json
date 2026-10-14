@@ -1,0 +1,147 @@
+{
+  "contract": "21afed0facc80042a98c193aa40258171f3cea50652bddf7b79a5fa5cfed2156",
+  "result": {
+    "seed": 20260612,
+    "condition": "repeat_current",
+    "epochs_completed": 30,
+    "best_epoch": 23,
+    "updates": 21030,
+    "parameter_count": 234758,
+    "initial_state_sha256": "0d32d4b50a435ea583c2678c1541e3f49f474b7f91bc3958d98da538fe27ed9d",
+    "best_state_sha256": "d56f573ca44989e27cb64ad4b92f7db57c8bacff23a3cbf837a29d0cdd23bb1e",
+    "epoch_order_sha256": [
+      "3b8e6e44548e83332a7dd14026d278069fe7dd590936362a9523a217a38ff4e5",
+      "47678a86943e680b822bfb633cb27825e975185701566c473279659af67d5d7b",
+      "287c04eb5e7da1727f7bcf213783aa17acf2e2890c7aa4f969abc85f20394c21",
+      "94200b5b160723e9d42884e2eaecb97f9e65fc3723883334a9d3059d04c94ef5",
+      "79ad9685430dc625a2f83556baf48e223b6a4c601dd2156e13c62d0c08b1201e",
+      "3dd2f047dee896fe31a45289c62e6f33b175f2eef26f10d050d24cef589ea7cb",
+      "5b722fb8089fa8ae0e9f797ab0dc73cbc17272067ca6a0cc292d70e4f6cee656",
+      "8920aff2087d92e810828af3f9c531a661e35deb0ef0520a5f41e878249d89f1",
+      "8739d469d510cd70e957fbeedecba070f91cecffd2bc737cde8ea778875b6fae",
+      "2aa6e1abb03d2d2a7289785694941611692dfb329d61780b5201ab46cbe8dc3f",
+      "885ce44b4e6b30d603535ec354ee3eab6ec62f1b5dae1a264443fea6a2b7d0cc",
+      "99fb38e4e99dcc545b0eaaff0a32bfb48f6bc1e4922d0314b1339497e0f60b21",
+      "018065cc703a31490d1818d57876b2726a10a9b0eefea3537d175e7ceeed15ff",
+      "a0f30d1d9a02ae913e17a76fac24d0e67dccd1b807349e15daeb1d6fa71d7ebc",
+      "7d7350105ba55ce0a9609082463357f0f5498b158f7b8653b06de270aa0f0935",
+      "66df9c8c6bec359a0076f8e39390a3769892b2f3443359ffd3ea56c36a7991f3",
+      "5ea27e298a253269141450f6314c445f59a644cf2c5b9550c5394afd404319cd",
+      "b82056a147b037ce3ee6b388ede4a8879f517ee6d401ab4c219adb47f52e40a3",
+      "2a6777c7a2a07f38478f49c4c96ef73aa74ce421c7530e2f8492609bb1a9da5c",
+      "a63fed26b8f019d554dedcadfd908dc9bd8e2990aab0e0af261099a4aa4a13ca",
+      "35fc3a682cbc2bd1e20c4208eadebd3863ea297df8fef489474078609f69b233",
+      "68b6875a4f068d69bf83600a92698339a62cbe57d364d2a44a7f41ed0ee401f0",
+      "409e838139fc5f82d77caa09566e4a5ec02b4ba549af02f0e9cee7facb41f54f",
+      "386a9bcd9ec3a8dd061885d651380fbf4fbe31339979203d6f24462693a8e606",
+      "955b193150573b74075617947e10e50992a2d71f57a1b95724ce8301d8d75fed",
+      "cc9c7e96d607a11ea92edeb4196a710d24980cfc44f1ebdfc10888edafd139bd",
+      "fe3a816594a887d54cc976a20aea05407aafb39f503f6c982b5b95ae263dddbb",
+      "7e143d97963d96739bafa9a21e321aba1c34bb0c547dfae17b4163de9a914737",
+      "0d8a7b005ac1a5b9b742af80d7a4c43c789748f528b27f537badc21a7b1a7937",
+      "2efa140987c3565e764c64782f668a9d2ebb305ecaa9d8d045604ef077c37f0f"
+    ],
+    "dropout_seeds": [
+      20260672791043,
+      20260672800219,
+      20260672809395,
+      20260672818571,
+      20260672827747,
+      20260672836923,
+      20260672846099,
+      20260672855275,
+      20260672864451,
+      20260672873627,
+      20260672882803,
+      20260672891979,
+      20260672901155,
+      20260672910331,
+      20260672919507,
+      20260672928683,
+      20260672937859,
+      20260672947035,
+      20260672956211,
+      20260672965387,
+      20260672974563,
+      20260672983739,
+      20260672992915,
+      20260673002091,
+      20260673011267,
+      20260673020443,
+      20260673029619,
+      20260673038795,
+      20260673047971,
+      20260673057147
+    ],
+    "validation": {
+      "macro_f1": 0.44305505262175954,
+      "normal_fpr": 0.5128573710269925,
+      "per_class_recall": {
+        "NORMAL": 0.48714262897300753,
+        "RF_LINK_JAMMING": 0.3608578183046268,
+        "GNSS_SPOOFING": 0.7855450236966824,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 0.2579253112033195,
+        "TELECOMMAND_REPLAY": 0.1640941105949348,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 0.5484655120024309
+      },
+      "confusion_matrix": [
+        [
+          3050,
+          541,
+          110,
+          14,
+          0,
+          2546
+        ],
+        [
+          1988,
+          2137,
+          75,
+          5,
+          0,
+          1717
+        ],
+        [
+          605,
+          131,
+          4641,
+          5,
+          1,
+          525
+        ],
+        [
+          1726,
+          298,
+          76,
+          1554,
+          1,
+          2370
+        ],
+        [
+          2409,
+          412,
+          75,
+          14,
+          1095,
+          2668
+        ],
+        [
+          2429,
+          438,
+          96,
+          7,
+          2,
+          3610
+        ]
+      ],
+      "n": 37371,
+      "loss": 1.3363148437983434
+    }
+  },
+  "artifact_sha256": {
+    "best.pt": "dc4e0b104b780c9a71a3b78f313a6292c6060d6b1cf848d82e9d169b3492f37b",
+    "training_history.csv": "b435091e5bafff0a6d5508bd1527ca201a67fd5440af6268df65cfd5aec6a67a",
+    "val_predictions.csv": "0e5c7256853bf179f9e5b0139a4b1a51ce2576f0bbbf30e6c8e0c0acec57c76a",
+    "validation_metrics.json": "04331951175380ee5f158d7013dfa9043796b21d4e34428bf14bee2b148ab531"
+  }
+}

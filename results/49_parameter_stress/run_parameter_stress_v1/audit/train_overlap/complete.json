@@ -1,0 +1,27 @@
+{
+  "identity": "af08900f73ced95b2a615028b889e3ac14afaef518f21726aca636a1a6c0f5e3",
+  "contract": "ea1d2872e5e71bb48edb115795decbd875810dad528895efbab8017575ca745d",
+  "result": {
+    "P_reference": {
+      "rows": 49152,
+      "matching_rows": 46133
+    },
+    "P_mild": {
+      "rows": 49152,
+      "matching_rows": 44688
+    },
+    "P_moderate": {
+      "rows": 49152,
+      "matching_rows": 42638
+    },
+    "P_severe": {
+      "rows": 49152,
+      "matching_rows": 39770
+    },
+    "scope": "64-bit hashes of 22-field vectors only; descriptive finite-vocabulary overlap; no row removal or independence proof"
+  },
+  "completed_at_utc": "2026-10-07T05:20:56.752060+00:00",
+  "artifact_sha256": {
+    "audit.json": "6ae2c08bd732a6ef1b14eee5f3bd646a500f5430dfa500672ac0e6a40e1c3623"
+  }
+}

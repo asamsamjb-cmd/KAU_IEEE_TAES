@@ -1,0 +1,111 @@
+{
+ "rows": {
+  "train": 211006,
+  "val": 44148,
+  "test": 44846
+ },
+ "episodes": {
+  "train": 3511,
+  "val": 753,
+  "test": 752
+ },
+ "rows_per_class": {
+  "train": {
+   "GNSS_SPOOFING": 35657,
+   "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 35030,
+   "NORMAL": 35646,
+   "RF_LINK_JAMMING": 35372,
+   "TELECOMMAND_REPLAY": 34274,
+   "UNAUTHORIZED_TELECOMMAND_INJECTION": 35027
+  },
+  "val": {
+   "GNSS_SPOOFING": 7042,
+   "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7680,
+   "NORMAL": 7422,
+   "RF_LINK_JAMMING": 7038,
+   "TELECOMMAND_REPLAY": 7825,
+   "UNAUTHORIZED_TELECOMMAND_INJECTION": 7141
+  },
+  "test": {
+   "GNSS_SPOOFING": 7301,
+   "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7290,
+   "NORMAL": 6932,
+   "RF_LINK_JAMMING": 7590,
+   "TELECOMMAND_REPLAY": 7901,
+   "UNAUTHORIZED_TELECOMMAND_INJECTION": 7832
+  }
+ },
+ "F": {
+  "multi_label_signatures": 3688,
+  "unseen_test_signature_fraction": 0.06234669758729876,
+  "lookup_macro_f1": 0.3531764860636763
+ },
+ "gate": [
+  {
+   "check": "A.split",
+   "status": "PASS",
+   "message": "episodes shared across splits: 0"
+  },
+  {
+   "check": "A.counts",
+   "status": "PASS",
+   "message": "rows train/val/test = 211006/44148/44846; episodes 3511/753/752"
+  },
+  {
+   "check": "B.missing_like",
+   "status": "WARN",
+   "message": "missing-like tokens in train: max field rate 0.0066 (values in ['', 'MISSING', 'MISSING_FIELD', 'N/A', 'NA', 'NONE']...)"
+  },
+  {
+   "check": "C.context_probe",
+   "status": "PASS",
+   "message": "context-only macro-F1 (train->test): majority 0.114, logistic 0.144; chance 0.167"
+  },
+  {
+   "check": "C.context_constancy",
+   "status": "PASS",
+   "message": "episode-constant fraction per context field: observation_stage=0.00, path_type=0.00, direction=0.00, source_role=0.00, destination_role=0.00, protocol_context=0.00, operational_phase=0.00"
+  },
+  {
+   "check": "C.context_divergence",
+   "status": "PASS",
+   "message": "max Cramer's V(context field, label) = 0.006 (source_role)"
+  },
+  {
+   "check": "D.single_field",
+   "status": "PASS",
+   "message": "fields with single-field macro-F1 > 0.50: none; best = navigation_consistency 0.187"
+  },
+  {
+   "check": "E.groups",
+   "status": "PASS",
+   "message": "single-window logistic macro-F1 by group: context=0.144, message_control=0.271, receiver=0.246, trace=0.192, all_22=0.408"
+  },
+  {
+   "check": "F.signatures",
+   "status": "PASS",
+   "message": "22-field signatures shared across >1 label (train): 3688; test signatures unseen in train: 0.062; lookup-table baseline macro-F1: 0.353"
+  },
+  {
+   "check": "G.trajectories",
+   "status": "PASS",
+   "message": "identical full-episode trajectories across labels: 0"
+  },
+  {
+   "check": "H.length_probe",
+   "status": "PASS",
+   "message": "episode-length-only probe macro-F1 (episode level): 0.152; mean length per class: GNSS_SPO=60.8, GROUND_S=61.6, NORMAL=59.0, RF_LINK_=61.0, TELECOMM=57.6, UNAUTHOR=60.7"
+  },
+  {
+   "check": "I.temporal",
+   "status": "PASS",
+   "message": "episodes with non-contiguous steps: 0"
+  },
+  {
+   "check": "J.exclusive_tokens",
+   "status": "WARN",
+   "message": "class-exclusive field values in train: 19 (covering >5% of a class: 5); navigation_consistency=JUMP_DETECTED->GNSS_SPO (0.20), navigation_consistency=INCONSISTENT->GNSS_SPO (0.12), sequence_freshness_status=REPLAYED->TELECOMM (0.11), timing_consistency=INCONSISTENT->GNSS_SPO (0.09), control_security_state=UNAUTHORIZED->UNAUTHOR (0.05)"
+  }
+ ],
+ "overall": "WARN"
+}

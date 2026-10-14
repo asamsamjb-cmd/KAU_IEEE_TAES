@@ -1,0 +1,7 @@
+TemporalStats_MLP uses mean, population std, min, max over the same causal L10 embeddings.
+The pooling reference was selected on clean validation: MeanMax_MLP.
+All ten new heads completed clean train/validation before new test inference.
+Every eligible endpoint, including quiet contexts, is retained. No target score or ranking is imposed.
+Four reference-minus-statistics contrasts use paired whole-episode class-stratified bootstrap; Bonferroni family four.
+CIs condition on the fitted heads, encoder, data and three masks. Zero-containing intervals are not equivalence.
+This retrospective extension does not establish equal capacity/compute or external validity.

@@ -1,0 +1,133 @@
+{
+  "protocol_id": "4a13b3cbace9901bc7778e59b710786a8d1f1851ea3b77acdcfb81c1c54d13f9",
+  "version": "taes_novelty_controls_v1.0",
+  "code_sha256": "7ca42eade0e5c5da97603c34f710d6daf85d98b37d3c6127b84569099e1dd232",
+  "step59_source": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\59.raw_semantic_representation_baseline.py",
+  "step59_sha256": "f9d4e611135c390d0f29f6f8097640235430909e9246b1d30bb732d80616ff7a",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "project_input_hashes": {
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\41.benchmark_A_seed_duplicate_context_audit.py": "bf5701921ffbf1fef79c38e57cfb7131b4a3406bd423a033b34744be76b6f729",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\shared_nominal.py": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\shared_context_v4.py": "b228affd6dbcd22c6a68143e5640b0dafbe5528bd77a52d420f1fcf066eea05c",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\build_manifest.json": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\normal_observable_dataset.csv": "1315ee3cd9d44a8d051c736cd3f78ec161e8b8c31ba834ae4d8fbb94dfb607b4",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\normal_observable_dataset_with_raw.csv": "6ac19d5eb978b8e4152c95895c0b4503fd6fda3471264f4553173332e3dd1694",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\rf_link_jamming_observable_dataset.csv": "1206c26fd04b930bfbd9d3b6019160f275a747f7dcac03b5bcc9278aeb69daa7",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\rf_link_jamming_observable_dataset_with_raw.csv": "4494aa08bac5fb7e2be647fdb5c92011a61af3e5a99ddc88006c0d20b8790569",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\gnss_spoofing_observable_dataset.csv": "45b0cd16157c10a3f71810cf6a951732942625d0604335bf7070825c5d4c8351",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\gnss_spoofing_observable_dataset_with_raw.csv": "e185d42287642606527693192798fbc9d9434c0e62ff3191ad35bc0d8f638479",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\unauthorized_telecommand_injection_observable_dataset.csv": "e305217262cb9eeaaedd225094c1f63544cbb713c0d80b9a7b233bb10ca2ccf9",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\unauthorized_telecommand_injection_observable_dataset_with_raw.csv": "44b6bc69becbecb0557882663e042f730f4397cc863202492607e48c9cf11b9d",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\telecommand_replay_observable_dataset.csv": "704e8b5abf2660229aa1a239137c98a078d6d3c9d5018ab42781651e4764f241",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\telecommand_replay_observable_dataset_with_raw.csv": "7c3bab0bc39ed797297e93d3ed387bf5448363c4537b5543a72da9a725b9b078",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\ground_segment_ttc_control_path_compromise_observable_dataset.csv": "0af15af824a10cc0356982be82bbf64c1ea8e260def7adfa5a65af1ac4e5ebcb",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\ground_segment_ttc_control_path_compromise_observable_dataset_with_raw.csv": "d7295d882e47ccdaef40ba8610d2bb78267ce4df2320f09e082dda7a96b1360d",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\audit\\test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\audit\\train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\audit\\val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\reports\\episode_distribution.csv": "b8f5d97b366b9995b41d0dc7c0cb18a1b5bc84ad2f9dd1a3b022f19d48507d82",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\reports\\label_distribution.csv": "f6cd9ebe0579abfbd5f70dd6a0427be3c82b97c144b8494838ed86f0c3cb5626",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\reports\\observable_field_value_summary.csv": "341ea000c13d969b83eaa90294ebb0bf562a18171423170084f84245fc6435dd",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\reports\\schema_validation_report.json": "f1534fade639a2e9fb201503a251bda928f4e481312d99d8828d98ca21348534",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\reports\\tst_temporal_context_plan.json": "cd5def6927e85afbd6e19610b82a5409beb2625d95c6597016b6d8e3c67fa9ce",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\episode_split_manifest.csv": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\split_summary.csv": "67c6fd0aeabd671e342b75d40d379f9b40f35aa629ef512edc080d0fb525fec8",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+    "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\unified_observable_dataset.csv": "37a50999cfcf83173009d4e49795d6aa8bb43fda5fca0a7a436396b0523bce42"
+  },
+  "fractions": [
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "subset_seeds": [
+    20260610,
+    20260611,
+    20260612
+  ],
+  "fusion_seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614
+  ],
+  "classes": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "features": "Step59 v2; category dictionaries fit to FULL unlabeled original train split, never validation or test",
+  "labeled_episode_subsets": "Three nested class-stratified episode samples; all eligible L10 endpoints of each chosen episode",
+  "scope_policy": "Per-window single-path observation contract of the pinned mapper: the six channels of the four links (snr/sinr, frame_loss_rate, crc_error_count, decode_fail_count, retry_count, timeout_count) are kept only for the link selected by raw_path_type (GATEWAY_LEO->ttc, LEO_LEO->isl, IOT_LEO->iot, UAV_LEO->uav); channels of non-selected links are set to 0 and four link_observed_* indicators are added (all 0 for GNSS_LEO and INTERNAL_ONBOARD). GNSS monitors, command/session/transition flags, counts and the eleven context categories are common to every window and unchanged. This matches the information the 22-field projection can read, not a physical claim that other links are unobservable.",
+  "temporal_statistics": "mean,std(ddof=0),min,max,last over 10 one-hot/numeric windows",
+  "training": {
+    "hgb_max_iter": 150,
+    "hgb_learning_rate": 0.08,
+    "hgb_max_leaf_nodes": 31,
+    "hgb_min_samples_leaf": 20,
+    "hgb_l2": 1.0,
+    "mlp_hidden": [
+      128,
+      64
+    ],
+    "mlp_batch_size": 512,
+    "mlp_learning_rate": 0.001,
+    "mlp_alpha": 0.0001,
+    "mlp_max_epochs": 120,
+    "mlp_min_epochs": 10,
+    "mlp_patience": 12,
+    "mlp_min_delta": 0.0001
+  },
+  "group_schema": {
+    "message": [
+      "message_type",
+      "service_context",
+      "command_intent",
+      "payload_or_parameter_context",
+      "sequence_freshness_status",
+      "control_security_state"
+    ],
+    "receiver": [
+      "signal_quality_state",
+      "tracking_stability",
+      "navigation_consistency",
+      "timing_consistency"
+    ],
+    "trace": [
+      "decoder_status",
+      "command_execution_result",
+      "retry_timeout_state",
+      "session_state",
+      "state_transition_consistency"
+    ]
+  },
+  "posttest_mechanism": "Attack-only correct-scenario recall conditioned on 0/1/2/3 evidence groups in the last 10 windows; paired-nominal, descriptive only",
+  "fusion_methods": [
+    "joint HGB",
+    "uniform probability averaging of three group HGB",
+    "validation-only logistic stacking of log probabilities"
+  ],
+  "primary": "Low-label normalized log-fraction AULC Semantic22-RawScoped over 5,10,25% (3 subset seeds)",
+  "secondary": "Five fraction-wise contrasts, Bonferroni within five; joint-minus-late_mean and joint-minus-late_stack, Bonferroni within two",
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 2026100973,
+  "threads": 4,
+  "memory_budget_gib": 8.0,
+  "software": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "claim_scope": "Post-hoc revision experiment, fixed synthetic benchmark, not independent operational evaluation"
+}

@@ -1,0 +1,5 @@
+﻿condition,records,endpoints,shared_nominal_episodes,raw_fields,actual_and_nominal_projection,metadata_and_observable_alignment,raw_changed_windows,scoped_raw_changed_windows,semantic_changed_windows,endpoint_filtering
+P_reference,49152,41028,150,80,PASS,PASS,16573,12660,12374,False
+P_mild,49152,41028,150,80,PASS,PASS,12039,9255,8991,False
+P_moderate,49152,41028,150,80,PASS,PASS,8132,6324,6056,False
+P_severe,49152,41028,150,80,PASS,PASS,4537,3569,3414,False

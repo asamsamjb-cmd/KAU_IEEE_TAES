@@ -1,0 +1,50 @@
+{
+  "identity": "bd6f76f63b02f8bfa07da8dd46877b37b3f7e87dc8d7aee72cb9bc497457cde3",
+  "artifact_sha256": {
+    "encoder/complete.json": "2e1e98164e996aa3783ecca675052ec19bcc1c54c287b784a7bee09ddbd3c23e",
+    "encoder/best.pt": "74c43b8731c918a0ccc24ff233fc10e812a9dd40b2736001105764c39b313bb7",
+    "encoder/last.pt": "eaba970bd692c9c885814e7d0a756ffec0f4cf198617d562d1c3499f369920fb",
+    "encoder/history.csv": "56716b1996d3dff5101e126881f657f2e04cdc2bedad9a244de41b3895a30cb5",
+    "encoder/val_logits.npy": "c0b335561c1df089e394062062f7385bf563dd2c5c1adcecf324d264d12192fb",
+    "tst/complete.json": "d9c2283d4e6c16f2499f7ebda16def5fdad73a7e9f071ccd3aeb6ce303423051",
+    "tst/best.pt": "b7920ee8d8c89573830787e8b8bbdda25973f2fc84bc436d7f4f56384cd42618",
+    "tst/last.pt": "d7fc6dc5b72917ca1b67842124cf63d8598949c279cf5de257f08da5e0fe3b97",
+    "tst/history.csv": "85c5b9f10e03ccc5ef79917051535c1cb0be39b4f5c4fd1fa239e25ee7b44fc3",
+    "tst/val_logits.npy": "d6892d5aac1bc609b91db43de6038af54d89b201eb9f8c19d629c34cb83cd052"
+  },
+  "summary": {
+    "seed": 20260613,
+    "setting": "ContextService",
+    "n_fields": 8,
+    "encoder_val_macro_f1": 0.16520837967579774,
+    "l10_val_macro_f1": 0.3791547786670761,
+    "encoder_best_epoch": 6,
+    "tst_best_epoch": 4,
+    "encoder_convergence": "PLATEAU_OBSERVED",
+    "tst_convergence": "PLATEAU_OBSERVED",
+    "encoder_training_seconds": 44.58884749992285,
+    "tst_training_seconds": 74.05949980008882,
+    "evaluation_precision": "float32",
+    "extraction_precision": "float32",
+    "window_head_seed": 20260929,
+    "tst_seed": 20260610,
+    "encoder_optimizer_updates": 8249,
+    "tst_optimizer_updates": 7708,
+    "encoder_epochs_completed": 10,
+    "tst_epochs_completed": 11
+  },
+  "completed_at_utc": "2026-10-06T17:14:05.788918+00:00",
+  "embedding_provenance": {
+    "identity": "698fcab2eb6df95e860f069118799afd83fb23d3f7169e05ac31541a9a212931",
+    "precision": "float32",
+    "elapsed_seconds": 1.3624059000285342,
+    "rows": {
+      "train": 211006,
+      "val": 44148
+    },
+    "sha256": {
+      "train": "b6444c796472a94ec9722e72f2da5384f5a26bb3e6c7793c94a4ad72138f0913",
+      "val": "03668a90b06c4987976e09c83d372a773855a7ae43d2e856fe0ab77a9bc52d09"
+    }
+  }
+}

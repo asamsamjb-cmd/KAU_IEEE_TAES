@@ -1,0 +1,3 @@
+﻿comparator,reference,delta_macro_f1,delta_percentage_points,ci95_low,ci95_high,bonferroni_ci97_5_low,bonferroni_ci97_5_high,ci95_interpretation,two_contrast_family_interpretation
+Rule_L10,Rule_L1,0.31162280640269346,31.162280640269348,0.2961281161996981,0.3263379883074664,0.2940686618780924,0.3282866783934707,comparator_higher,comparator_higher
+TST_L10,Rule_L10,0.19081626357296633,19.08162635729663,0.1711611122336645,0.2107227747615812,0.16838035208513732,0.21355548719546738,comparator_higher,comparator_higher

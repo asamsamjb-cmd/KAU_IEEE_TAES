@@ -1,0 +1,28 @@
+{
+  "status": "GATES_PASSED",
+  "G1_input_hashes": "matched Step 27 manifest and Step 28 input audit / artifacts",
+  "G2_groupB_coverage": {
+    "endpoints": 1961,
+    "episodes": 272
+  },
+  "G3_step28_groupB_rows_reproduced": true,
+  "bin_definition": {
+    "1": "older10_changed_count in [1, 1]",
+    "2": "older10_changed_count in [2, 2]",
+    "3+": "older10_changed_count in [3, max]"
+  },
+  "bin_counts": {
+    "1": 725,
+    "2": 595,
+    "3+": 641
+  },
+  "older10_changed_count_distribution": {
+    "1": 725,
+    "2": 595,
+    "3": 380,
+    "4": 185,
+    "5": 55,
+    "6": 17,
+    "7": 4
+  }
+}

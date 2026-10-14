@@ -1,0 +1,412 @@
+{
+  "step": "10_build_tst_sequences",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+  "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+  "run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+  "source_artifact_sha256": {
+    "embedding_extraction_report.json": "d7525913bea9dd5c713b0d3b67372577db1eb4c0587c02a4da310acac4c68822",
+    "train_window_embeddings.npz": "b6b86adb4cd0b2dcf8d151927d63482d5ef83eb8cb285001a81a72d74b52b7e4",
+    "train_window_metadata.csv": "c09de8d275999b7a6d7b56e75690e47cf15c796bdea9d3a5bfa47e9a0e3b977c",
+    "val_window_embeddings.npz": "a92ab043244aed7f49e50dca125f38e67c6c2d287eb00b66c556597fbd786d51",
+    "val_window_metadata.csv": "95024aac342046f89290926ff96edf53b8e29be5901297032c4f5c5facd513a2",
+    "test_window_embeddings.npz": "67dfc1e4f3a128013dcc585f9b8d80b33bfb8d2d85f6b2a6fe4d9628391becd1",
+    "test_window_metadata.csv": "86f13ac47bc3fc6c337736da94dfac05c1e96e7907c3d8d37b4aa3089d0c7f68"
+  },
+  "label_semantics": "supplied episode/scenario class; no instantaneous-presence relabeling",
+  "observability_audit": {
+    "schema_version": "counterfactual_observable_change_v1",
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+    "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "split_files": {
+      "train": "audit/train_window_observable_effects.csv",
+      "val": "audit/val_window_observable_effects.csv",
+      "test": "audit/test_window_observable_effects.csv"
+    },
+    "artifacts": {
+      "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+      "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+      "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+    },
+    "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+  },
+  "diagnostic_rule": "Separate posthoc counterfactual-change sidecars; no diagnostic fields enter embeddings, sequence arrays, labels, fitting, or selection. No observable change is not a detectability guarantee or Bayes error bound.",
+  "source_embedding_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main",
+  "source_embedding_report": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\embedding_extraction_report.json",
+  "output_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main",
+  "random_seed": 20260610,
+  "observable_window_seconds": 1,
+  "sequence_length": 3,
+  "temporal_context_seconds": 3,
+  "all_sequence_lengths": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "all_temporal_context_seconds": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "tst_context_mapping": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "5": 5,
+    "10": 10
+  },
+  "stride": 1,
+  "embedding_dim": 768,
+  "embedding_encoder_source": "finetuned",
+  "representation_type": "supervised_finetuned_distilbert_cls",
+  "sort_columns_inside_episode": [
+    "episode_step",
+    "window_id"
+  ],
+  "label_rule": "The TST sequence label is the label_id of the last 1-second window in the sequence.",
+  "boundary_rule": "Sliding sequences are generated only within the same split and same episode_id; sequence construction never crosses episode boundaries.",
+  "temporal_integrity_rule": "Within each episode, episode_step, window_id, and timestamp must advance by one 1-second window.",
+  "input_rule": "TST input is embeddings[sequence_indices]. Metadata is not used as model input.",
+  "storage_rule": "Default output stores sequence_indices and labels. Full materialized X is saved only when MATERIALIZE_X=True.",
+  "materialize_X": false,
+  "materialized_X_dtype": null,
+  "save_compressed_npz": true,
+  "save_sequence_metadata": true,
+  "cleanup_summary": {
+    "enabled": false,
+    "removed_files": [],
+    "removed_count": 0
+  },
+  "step9_config": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "serializer_version": "observable22_fixed_order_is_v1",
+    "observable_window_seconds": 1,
+    "tst_sequence_lengths": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "tst_temporal_context_seconds": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "tst_context_mapping": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "5": 5,
+      "10": 10
+    },
+    "embedding_dim": 768,
+    "embedding_encoder_source": "finetuned",
+    "representation_type": "supervised_finetuned_distilbert_cls",
+    "label_order": [
+      "NORMAL",
+      "RF_LINK_JAMMING",
+      "GNSS_SPOOFING",
+      "UNAUTHORIZED_TELECOMMAND_INJECTION",
+      "TELECOMMAND_REPLAY",
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+    ],
+    "label_to_id": {
+      "NORMAL": 0,
+      "RF_LINK_JAMMING": 1,
+      "GNSS_SPOOFING": 2,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 3,
+      "TELECOMMAND_REPLAY": 4,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 5
+    },
+    "metadata_fields": [
+      "scenario_id",
+      "episode_id",
+      "episode_type",
+      "episode_step",
+      "window_id",
+      "timestamp",
+      "label"
+    ]
+  },
+  "window_validation": {
+    "train": {
+      "embedding_row_index_present": true,
+      "embedding_row_index_source": "provided_by_step9_metadata",
+      "metadata_fields_from_step9_report": [
+        "scenario_id",
+        "episode_id",
+        "episode_type",
+        "episode_step",
+        "window_id",
+        "timestamp",
+        "label"
+      ],
+      "extra_metadata_fields_preserved": [],
+      "input_windows": 211006,
+      "embedding_dim": 768,
+      "embedding_dtype": "float32",
+      "nan_count": 0,
+      "inf_count": 0,
+      "row_indices_alignment_check_passed": true,
+      "embedding_row_index_alignment_check_passed": true,
+      "label_alignment_check_passed": true,
+      "temporal_integrity_check_passed": true,
+      "timestamp_spacing_seconds": 1,
+      "episode_count": 3511,
+      "min_episode_length_rows": 2,
+      "mean_episode_length_rows": 60.09854742238679,
+      "median_episode_length_rows": 54.0,
+      "max_episode_length_rows": 140,
+      "episodes_with_label_transitions": 0
+    },
+    "val": {
+      "embedding_row_index_present": true,
+      "embedding_row_index_source": "provided_by_step9_metadata",
+      "metadata_fields_from_step9_report": [
+        "scenario_id",
+        "episode_id",
+        "episode_type",
+        "episode_step",
+        "window_id",
+        "timestamp",
+        "label"
+      ],
+      "extra_metadata_fields_preserved": [],
+      "input_windows": 44148,
+      "embedding_dim": 768,
+      "embedding_dtype": "float32",
+      "nan_count": 0,
+      "inf_count": 0,
+      "row_indices_alignment_check_passed": true,
+      "embedding_row_index_alignment_check_passed": true,
+      "label_alignment_check_passed": true,
+      "temporal_integrity_check_passed": true,
+      "timestamp_spacing_seconds": 1,
+      "episode_count": 753,
+      "min_episode_length_rows": 20,
+      "mean_episode_length_rows": 58.62948207171315,
+      "median_episode_length_rows": 51.0,
+      "max_episode_length_rows": 140,
+      "episodes_with_label_transitions": 0
+    },
+    "test": {
+      "embedding_row_index_present": true,
+      "embedding_row_index_source": "provided_by_step9_metadata",
+      "metadata_fields_from_step9_report": [
+        "scenario_id",
+        "episode_id",
+        "episode_type",
+        "episode_step",
+        "window_id",
+        "timestamp",
+        "label"
+      ],
+      "extra_metadata_fields_preserved": [],
+      "input_windows": 44846,
+      "embedding_dim": 768,
+      "embedding_dtype": "float32",
+      "nan_count": 0,
+      "inf_count": 0,
+      "row_indices_alignment_check_passed": true,
+      "embedding_row_index_alignment_check_passed": true,
+      "label_alignment_check_passed": true,
+      "temporal_integrity_check_passed": true,
+      "timestamp_spacing_seconds": 1,
+      "episode_count": 752,
+      "min_episode_length_rows": 16,
+      "mean_episode_length_rows": 59.63563829787234,
+      "median_episode_length_rows": 52.0,
+      "max_episode_length_rows": 140,
+      "episodes_with_label_transitions": 0
+    }
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "sequence_length": 3,
+      "stride": 1,
+      "observable_window_seconds": 1,
+      "temporal_context_seconds": 3,
+      "input_windows": 211006,
+      "embedding_dim": 768,
+      "num_episodes": 3511,
+      "num_sequences": 203984,
+      "expected_num_sequences": 203984,
+      "end_row_indices_sha256": "ce5a70073578687e1b2e318edd0efc8ed5e0a11fd8fe96c4ec4f49b2b0960a44",
+      "short_episode_rule": "For each L, an episode shorter than L yields no sequence; no padding or relabeling.",
+      "skipped_short_episodes": 1,
+      "skipped_short_windows": 2,
+      "episodes_with_label_transitions": 0,
+      "sequences_with_label_transition": 0,
+      "sequences_with_label_transition_ratio": 0.0,
+      "window_label_distribution": {
+        "NORMAL": 35646,
+        "RF_LINK_JAMMING": 35372,
+        "GNSS_SPOOFING": 35657,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 35027,
+        "TELECOMMAND_REPLAY": 34274,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 35030
+      },
+      "sequence_label_distribution": {
+        "NORMAL": 34438,
+        "RF_LINK_JAMMING": 34212,
+        "GNSS_SPOOFING": 34485,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 33873,
+        "TELECOMMAND_REPLAY": 33084,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 33892
+      },
+      "episode_length_stats": {
+        "num_episodes": 3511,
+        "min_episode_length": 2,
+        "mean_episode_length": 60.09854742238679,
+        "median_episode_length": 54.0,
+        "max_episode_length": 140
+      },
+      "sequence_indices_shape": [
+        203984,
+        3
+      ],
+      "materialized_X_saved": false,
+      "materialized_X_shape": null,
+      "sequence_npz_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\train_tst_sequences_L3.npz",
+      "sequence_metadata_csv_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\train_tst_sequence_metadata_L3.csv",
+      "sequence_observable_effects_csv_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\train_tst_sequence_observable_effects_L3.csv",
+      "sequence_observable_effects_sha256": "1f7b5539cbfaf063a1d48126a3fa2fcd3d6a518c7e303cce508aaec2fb2266a7",
+      "observable_effect_stratum_counts": {
+        "no_observable_change": 115984,
+        "current_changed": 52705,
+        "history_only_changed": 35295
+      },
+      "save_compressed_npz": true,
+      "save_sequence_metadata": true
+    },
+    "val": {
+      "split": "val",
+      "sequence_length": 3,
+      "stride": 1,
+      "observable_window_seconds": 1,
+      "temporal_context_seconds": 3,
+      "input_windows": 44148,
+      "embedding_dim": 768,
+      "num_episodes": 753,
+      "num_sequences": 42642,
+      "expected_num_sequences": 42642,
+      "end_row_indices_sha256": "c05fd5b907b8cd1c4a4bee745c23ab23b465063d229dfddf6c5f4eae4b3520e6",
+      "short_episode_rule": "For each L, an episode shorter than L yields no sequence; no padding or relabeling.",
+      "skipped_short_episodes": 0,
+      "skipped_short_windows": 0,
+      "episodes_with_label_transitions": 0,
+      "sequences_with_label_transition": 0,
+      "sequences_with_label_transition_ratio": 0.0,
+      "window_label_distribution": {
+        "NORMAL": 7422,
+        "RF_LINK_JAMMING": 7038,
+        "GNSS_SPOOFING": 7042,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 7141,
+        "TELECOMMAND_REPLAY": 7825,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7680
+      },
+      "sequence_label_distribution": {
+        "NORMAL": 7164,
+        "RF_LINK_JAMMING": 6790,
+        "GNSS_SPOOFING": 6790,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 6893,
+        "TELECOMMAND_REPLAY": 7569,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7436
+      },
+      "episode_length_stats": {
+        "num_episodes": 753,
+        "min_episode_length": 20,
+        "mean_episode_length": 58.62948207171315,
+        "median_episode_length": 51.0,
+        "max_episode_length": 140
+      },
+      "sequence_indices_shape": [
+        42642,
+        3
+      ],
+      "materialized_X_saved": false,
+      "materialized_X_shape": null,
+      "sequence_npz_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\val_tst_sequences_L3.npz",
+      "sequence_metadata_csv_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\val_tst_sequence_metadata_L3.csv",
+      "sequence_observable_effects_csv_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\val_tst_sequence_observable_effects_L3.csv",
+      "sequence_observable_effects_sha256": "0ef15912b1812fbc152b649ae679c449f9a598f29e20fd1f6357b7a1d0ef9a05",
+      "observable_effect_stratum_counts": {
+        "no_observable_change": 24426,
+        "current_changed": 10750,
+        "history_only_changed": 7466
+      },
+      "save_compressed_npz": true,
+      "save_sequence_metadata": true
+    },
+    "test": {
+      "split": "test",
+      "sequence_length": 3,
+      "stride": 1,
+      "observable_window_seconds": 1,
+      "temporal_context_seconds": 3,
+      "input_windows": 44846,
+      "embedding_dim": 768,
+      "num_episodes": 752,
+      "num_sequences": 43342,
+      "expected_num_sequences": 43342,
+      "end_row_indices_sha256": "ba9178f257d3a66deed4c75f94629e8ef0181d9745ab525bdc79c57884a3a588",
+      "short_episode_rule": "For each L, an episode shorter than L yields no sequence; no padding or relabeling.",
+      "skipped_short_episodes": 0,
+      "skipped_short_windows": 0,
+      "episodes_with_label_transitions": 0,
+      "sequences_with_label_transition": 0,
+      "sequences_with_label_transition_ratio": 0.0,
+      "window_label_distribution": {
+        "NORMAL": 6932,
+        "RF_LINK_JAMMING": 7590,
+        "GNSS_SPOOFING": 7301,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 7832,
+        "TELECOMMAND_REPLAY": 7901,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7290
+      },
+      "sequence_label_distribution": {
+        "NORMAL": 6672,
+        "RF_LINK_JAMMING": 7340,
+        "GNSS_SPOOFING": 7051,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 7586,
+        "TELECOMMAND_REPLAY": 7647,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 7046
+      },
+      "episode_length_stats": {
+        "num_episodes": 752,
+        "min_episode_length": 16,
+        "mean_episode_length": 59.63563829787234,
+        "median_episode_length": 52.0,
+        "max_episode_length": 140
+      },
+      "sequence_indices_shape": [
+        43342,
+        3
+      ],
+      "materialized_X_saved": false,
+      "materialized_X_shape": null,
+      "sequence_npz_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\test_tst_sequences_L3.npz",
+      "sequence_metadata_csv_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\test_tst_sequence_metadata_L3.csv",
+      "sequence_observable_effects_csv_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\test_tst_sequence_observable_effects_L3.csv",
+      "sequence_observable_effects_sha256": "a5e7486f2df28e1e1fc48260d7701e455d91725d92dc98ea2578df71f06eb29a",
+      "observable_effect_stratum_counts": {
+        "no_observable_change": 24390,
+        "current_changed": 11117,
+        "history_only_changed": 7835
+      },
+      "save_compressed_npz": true,
+      "save_sequence_metadata": true
+    }
+  }
+}

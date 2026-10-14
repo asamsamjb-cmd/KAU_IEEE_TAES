@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "identity_hash": "509819ee3b4b3c280198a1a8a37652b2e3cd9d7646d09b503f131a8470c064f9",
+  "seed": 20260610,
+  "finished": "2026-10-13T03:48:58.170934+00:00",
+  "best_epoch": 6,
+  "training_elapsed_seconds": 98.99478650001402,
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 3060",
+  "amp": true,
+  "artifacts": {
+    "best_L10.pt": "01481f96f2f46d317016d4e6db83de3445756105f9a368fcc0195238d4f37487",
+    "history.csv": "df73fc5b3b43a77149022176c6052f8497e1806d23ddd37fd2c7397b4d4935bf",
+    "val_predictions.csv": "aa18fb34f5306f212ff969d3de10dc43bee59b8644f51273269b307aea2a2d32",
+    "val_metrics.json": "216e286bf6913100f4c2f2e12de58587f6702ab424dab11375e1c9f3991ff3bb"
+  }
+}

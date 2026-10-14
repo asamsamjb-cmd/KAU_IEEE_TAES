@@ -1,0 +1,325 @@
+{
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "input_sha256": {
+    "splits/train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+    "splits/val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+    "splits/test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+    "splits/label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+    "splits/episode_split_manifest.csv": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05"
+  },
+  "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+  "script_sha256": "009f296c4a89bea832f4ab26c68845daff408c015856e5092b7d66939cbb7be6",
+  "protocol": {
+    "model_name": "distilbert-base-uncased",
+    "serializer_version": "observable22_fixed_order_is_v1",
+    "seed": 20260610,
+    "max_length": 256,
+    "epochs": 3,
+    "train_batch": 16,
+    "eval_batch": 32,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "sample_limits": [
+      null,
+      null,
+      null
+    ],
+    "selection": "validation macro-F1",
+    "label_policy": "preserve supplied episode/scenario labels"
+  },
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "torch": "2.12.0+cu126",
+    "transformers": "5.10.2",
+    "datasets": "5.0.0",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 3060"
+  },
+  "initializer_commit": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+  "initializer_config_sha256": "c65dddd24221a1f14b16b6a4a2d8e3e396cad87f333a520216ddded51cc248ec",
+  "tokenizer_sha256": "e2a73874b67afe3161292f54d8d42fc17ce7d930587a9785c2a653a4b06d2d08",
+  "local_initializer_sha256": null,
+  "step7_build": {
+    "policy": {
+      "version": "step7_episode_split_v2",
+      "nominal_substrate": "shared_nominal_v2",
+      "observability_audit_schema": "counterfactual_observable_change_v1",
+      "paired_background_policy": "excluded from the main corpus; independent defaults required",
+      "seed": 20260610,
+      "ratios": [
+        0.7,
+        0.15,
+        0.15
+      ],
+      "stratification": "class; whole episodes; original NumPy shuffle and rounding",
+      "columns": [
+        "scenario_id",
+        "episode_id",
+        "episode_type",
+        "episode_step",
+        "window_id",
+        "timestamp",
+        "label",
+        "observation_stage",
+        "path_type",
+        "direction",
+        "source_role",
+        "destination_role",
+        "protocol_context",
+        "operational_phase",
+        "message_type",
+        "service_context",
+        "command_intent",
+        "payload_or_parameter_context",
+        "sequence_freshness_status",
+        "control_security_state",
+        "signal_quality_state",
+        "tracking_stability",
+        "navigation_consistency",
+        "timing_consistency",
+        "decoder_status",
+        "command_execution_result",
+        "retry_timeout_state",
+        "session_state",
+        "state_transition_consistency"
+      ],
+      "label_order": [
+        "NORMAL",
+        "RF_LINK_JAMMING",
+        "GNSS_SPOOFING",
+        "UNAUTHORIZED_TELECOMMAND_INJECTION",
+        "TELECOMMAND_REPLAY",
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+      ],
+      "window_seconds": 1,
+      "sequence_lengths": [
+        1,
+        2,
+        3,
+        5,
+        10
+      ],
+      "expected_rows_per_class": 50000,
+      "label_policy": "retain supplied scenario/episode label on every window",
+      "filtering": "none; retain quiet/unobserved windows and repeated observable vectors"
+    },
+    "sources": [
+      {
+        "label": "NORMAL",
+        "file": "normal_observable_dataset.csv",
+        "sha256": "1315ee3cd9d44a8d051c736cd3f78ec161e8b8c31ba834ae4d8fbb94dfb607b4",
+        "size_bytes": 17529100,
+        "raw_audit": {
+          "file": "normal_observable_dataset_with_raw.csv",
+          "sha256": "6ac19d5eb978b8e4152c95895c0b4503fd6fda3471264f4553173332e3dd1694",
+          "size_bytes": 100770706
+        }
+      },
+      {
+        "label": "RF_LINK_JAMMING",
+        "file": "rf_link_jamming_observable_dataset.csv",
+        "sha256": "1206c26fd04b930bfbd9d3b6019160f275a747f7dcac03b5bcc9278aeb69daa7",
+        "size_bytes": 18532494,
+        "raw_audit": {
+          "file": "rf_link_jamming_observable_dataset_with_raw.csv",
+          "sha256": "4494aa08bac5fb7e2be647fdb5c92011a61af3e5a99ddc88006c0d20b8790569",
+          "size_bytes": 110313680
+        }
+      },
+      {
+        "label": "GNSS_SPOOFING",
+        "file": "gnss_spoofing_observable_dataset.csv",
+        "sha256": "45b0cd16157c10a3f71810cf6a951732942625d0604335bf7070825c5d4c8351",
+        "size_bytes": 18683047,
+        "raw_audit": {
+          "file": "gnss_spoofing_observable_dataset_with_raw.csv",
+          "sha256": "e185d42287642606527693192798fbc9d9434c0e62ff3191ad35bc0d8f638479",
+          "size_bytes": 109755680
+        }
+      },
+      {
+        "label": "UNAUTHORIZED_TELECOMMAND_INJECTION",
+        "file": "unauthorized_telecommand_injection_observable_dataset.csv",
+        "sha256": "e305217262cb9eeaaedd225094c1f63544cbb713c0d80b9a7b233bb10ca2ccf9",
+        "size_bytes": 20866951,
+        "raw_audit": {
+          "file": "unauthorized_telecommand_injection_observable_dataset_with_raw.csv",
+          "sha256": "44b6bc69becbecb0557882663e042f730f4397cc863202492607e48c9cf11b9d",
+          "size_bytes": 123271530
+        }
+      },
+      {
+        "label": "TELECOMMAND_REPLAY",
+        "file": "telecommand_replay_observable_dataset.csv",
+        "sha256": "704e8b5abf2660229aa1a239137c98a078d6d3c9d5018ab42781651e4764f241",
+        "size_bytes": 19298995,
+        "raw_audit": {
+          "file": "telecommand_replay_observable_dataset_with_raw.csv",
+          "sha256": "7c3bab0bc39ed797297e93d3ed387bf5448363c4537b5543a72da9a725b9b078",
+          "size_bytes": 131862876
+        }
+      },
+      {
+        "label": "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE",
+        "file": "ground_segment_ttc_control_path_compromise_observable_dataset.csv",
+        "sha256": "0af15af824a10cc0356982be82bbf64c1ea8e260def7adfa5a65af1ac4e5ebcb",
+        "size_bytes": 21885650,
+        "raw_audit": {
+          "file": "ground_segment_ttc_control_path_compromise_observable_dataset_with_raw.csv",
+          "sha256": "d7295d882e47ccdaef40ba8610d2bb78267ce4df2320f09e082dda7a96b1360d",
+          "size_bytes": 129267956
+        }
+      }
+    ],
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "builder_sha256": "01e4afc7599ddf8ffb5f0082e773997db01dd49e0f53eae946e8c09843df2af3",
+    "source_scope": "Learning/raw alignment and nominal counterfactual projection annotations; maker physics is not re-audited",
+    "runtime": {
+      "python": "3.14.5",
+      "numpy": "2.4.6",
+      "pandas": "3.0.3"
+    },
+    "status": "complete",
+    "counts": {
+      "train": {
+        "rows": 211006,
+        "episodes": 3511,
+        "sequences_stride1": {
+          "1": 211006,
+          "2": 207495,
+          "3": 203984,
+          "5": 196964,
+          "10": 179414
+        }
+      },
+      "val": {
+        "rows": 44148,
+        "episodes": 753,
+        "sequences_stride1": {
+          "1": 44148,
+          "2": 43395,
+          "3": 42642,
+          "5": 41136,
+          "10": 37371
+        }
+      },
+      "test": {
+        "rows": 44846,
+        "episodes": 752,
+        "sequences_stride1": {
+          "1": 44846,
+          "2": 44094,
+          "3": 43342,
+          "5": 41838,
+          "10": 38078
+        }
+      }
+    },
+    "artifacts": {
+      "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e",
+      "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+      "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+      "reports/episode_distribution.csv": "b8f5d97b366b9995b41d0dc7c0cb18a1b5bc84ad2f9dd1a3b022f19d48507d82",
+      "reports/label_distribution.csv": "f6cd9ebe0579abfbd5f70dd6a0427be3c82b97c144b8494838ed86f0c3cb5626",
+      "reports/observable_field_value_summary.csv": "341ea000c13d969b83eaa90294ebb0bf562a18171423170084f84245fc6435dd",
+      "reports/schema_validation_report.json": "f1534fade639a2e9fb201503a251bda928f4e481312d99d8828d98ca21348534",
+      "reports/tst_temporal_context_plan.json": "cd5def6927e85afbd6e19610b82a5409beb2625d95c6597016b6d8e3c67fa9ce",
+      "splits/episode_split_manifest.csv": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05",
+      "splits/label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+      "splits/split_summary.csv": "67c6fd0aeabd671e342b75d40d379f9b40f35aa629ef512edc080d0fb525fec8",
+      "splits/test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+      "splits/train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+      "splits/val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+      "unified_observable_dataset.csv": "37a50999cfcf83173009d4e49795d6aa8bb43fda5fca0a7a436396b0523bce42"
+    },
+    "model_input_fields": [
+      "observation_stage",
+      "path_type",
+      "direction",
+      "source_role",
+      "destination_role",
+      "protocol_context",
+      "operational_phase",
+      "message_type",
+      "service_context",
+      "command_intent",
+      "payload_or_parameter_context",
+      "sequence_freshness_status",
+      "control_security_state",
+      "signal_quality_state",
+      "tracking_stability",
+      "navigation_consistency",
+      "timing_consistency",
+      "decoder_status",
+      "command_execution_result",
+      "retry_timeout_state",
+      "session_state",
+      "state_transition_consistency"
+    ],
+    "metadata_not_model_features": [
+      "scenario_id",
+      "episode_id",
+      "episode_type",
+      "episode_step",
+      "window_id",
+      "timestamp",
+      "label"
+    ],
+    "observability_audit": {
+      "schema_version": "counterfactual_observable_change_v1",
+      "split_files": {
+        "train": "audit/train_window_observable_effects.csv",
+        "val": "audit/val_window_observable_effects.csv",
+        "test": "audit/test_window_observable_effects.csv"
+      },
+      "columns": [
+        "scenario_id",
+        "episode_id",
+        "episode_type",
+        "episode_step",
+        "window_id",
+        "timestamp",
+        "label",
+        "audit_observable_effect_present",
+        "audit_observable_difference_count",
+        "audit_persistent_effect_present",
+        "audit_attack_active"
+      ],
+      "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+    },
+    "downstream_requirement": "Explicitly select this dataset_id and split files; old trained models retain their old data provenance.",
+    "external_validity": "Not assessed by dataset merging or same-generator fresh realizations."
+  },
+  "run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+  "status": "COMPLETE",
+  "artifacts": {
+    "trained_distilbert_model/config.json": "64b9bbcd239e60e66c2e64802e8555112964cb86e71e9fdbcf023b72f5f778b0",
+    "trained_distilbert_model/label_mapping.json": "253649f289bdf8046aed8caeb3ef65e347af7038223a0f2ea2ee5b1d35f9e7ff",
+    "trained_distilbert_model/model.safetensors": "0792b13df30bed87dced1507a389cbd084558aa2fa3bdeb07299c3909b76464c",
+    "trained_distilbert_model/tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "trained_distilbert_model/tokenizer_config.json": "71cd48543bec670f50e0c9c3556df16b1f58ea720ead6a1b4675f08870c60b17",
+    "trained_distilbert_model/training_args.bin": "a4659c5ed492d23051158b76c31dec84b689475caaced9969fe0ce6d51a27643",
+    "trained_distilbert_model/training_provenance.json": "7c2b3bfa0996b59a79563f43c64bf29f2f829251ca950a0896e1cf1b2a7b221c",
+    "reports/distilbert_window_baseline_summary.json": "ce4db3447f271a548ff3e7e0c3490280a72a9bd1fd1431836a6d627ead224ea4",
+    "reports/test_classification_report.json": "ea0fbcb7b2466b810fde2693557e3dc9ed63a4df76a1fbe6368092209b6b0ccf",
+    "reports/test_classification_report.txt": "c647ebc606cd110bac0931eae9f295ed0333f3d1e24e02614616208b7a36292f",
+    "reports/test_confusion_matrix.csv": "1c73587df67a04756a48e3278d7668ad5dc98cd060dc5b76eaa5d7ad877eefcb",
+    "reports/test_confusion_matrix.png": "1018540bccd44a18bb1417d1ad43748b775e96c194d89207496e472697c160f5",
+    "reports/training_history.json": "643ef26a1c5397b2e0795ccc8bd22a755c571e0205abb2c938e8245e9d973dcd",
+    "reports/val_classification_report.json": "165f327dbe1569c71e29c8f5092573f582b55878c6e8b45cbd8ad0c16ec29f9a",
+    "reports/val_classification_report.txt": "974815ddb7ec63c01c1c521ced9852e7c9261e09046c226fd1ded1f01835748f",
+    "reports/val_confusion_matrix.csv": "1f497515b9d9e1d5576cab36f257337a48aa99662d911c05658e35c7593e1821",
+    "reports/val_confusion_matrix.png": "47a3cb28eec5b4e02f0d4cee41b6d112e653801bed640ec7af5926ba249fca78",
+    "predictions/test_predictions.csv": "f11a12e598f57451c903df89d3bb9123a26a046d1b86c9a6e7dbb0a9dd83c37c",
+    "predictions/val_predictions.csv": "b439cc1434ecf4e0b7ce56a2a2cc8343fc2e31f88ab9aa0c8c49a2cd18cd3a13",
+    "serialized/serialization_manifest.json": "04ccac6d065e35dbfdf596db9bb20082a52173a33064d01dab0325b26242e266",
+    "serialized/serialization_report.json": "0ed0fb3e5f0a6ebbd46033aaaee68ebb211824b99b82f530028dc6bef786bb00",
+    "serialized/serialization_samples.csv": "e37b1ca58d718354a1a592c337ba16b0eed074d802ab77319bc23ed01751ac83",
+    "serialized/test_serialized.csv": "9f8044e37cbe2f51fbe6ca8de3a3fee0e43eb234512870cd45f1b3156c41489a",
+    "serialized/train_serialized.csv": "dfecde83425d14918d2bd36f91ad22548e99b5e2c5e09f1f979b8cd2b4c7b940",
+    "serialized/val_serialized.csv": "c8e6fd17ba06dc0592ab2168098f0c867cc5f7751cd4394ff795432387a9f182"
+  }
+}

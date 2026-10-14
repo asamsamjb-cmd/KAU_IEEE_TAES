@@ -1,0 +1,58 @@
+[
+  {
+    "condition": "CategoricalEmbedding_MLP",
+    "completed_seeds": 5,
+    "planned_seeds": 5,
+    "all_five_complete": true,
+    "window_val_macro_f1_mean": 0.4043458996780861,
+    "window_val_macro_f1_sd": 0.0016887988985983004,
+    "window_val_common_macro_f1_mean": 0.4340669258543602,
+    "window_val_common_macro_f1_sd": 0.0018918172241455737,
+    "l10_val_macro_f1_mean": 0.8386324396616498,
+    "l10_val_macro_f1_sd": 0.0009125008842514952,
+    "temporal_delta_val_common_macro_f1_mean": 0.4045655138072897,
+    "temporal_delta_val_common_macro_f1_sd": 0.0016759665039815656
+  },
+  {
+    "condition": "FieldToken_Encoder",
+    "completed_seeds": 5,
+    "planned_seeds": 5,
+    "all_five_complete": true,
+    "window_val_macro_f1_mean": 0.4045353616068811,
+    "window_val_macro_f1_sd": 0.005571943178886958,
+    "window_val_common_macro_f1_mean": 0.4346555748331185,
+    "window_val_common_macro_f1_sd": 0.0055639523879807634,
+    "l10_val_macro_f1_mean": 0.8353609054901868,
+    "l10_val_macro_f1_sd": 0.0017982824788601388,
+    "temporal_delta_val_common_macro_f1_mean": 0.40070533065706826,
+    "temporal_delta_val_common_macro_f1_sd": 0.005802087383778677
+  },
+  {
+    "condition": "DistilBERT_RandomInit_Train",
+    "completed_seeds": 5,
+    "planned_seeds": 5,
+    "all_five_complete": true,
+    "window_val_macro_f1_mean": 0.4071037512472633,
+    "window_val_macro_f1_sd": 0.004947700385382109,
+    "window_val_common_macro_f1_mean": 0.43790003465574256,
+    "window_val_common_macro_f1_sd": 0.004184246401437109,
+    "l10_val_macro_f1_mean": 0.8343424857666314,
+    "l10_val_macro_f1_sd": 0.0033796181663236125,
+    "temporal_delta_val_common_macro_f1_mean": 0.39644245111088877,
+    "temporal_delta_val_common_macro_f1_sd": 0.006131453267994925
+  },
+  {
+    "condition": "DistilBERT_Pretrained_Finetune",
+    "completed_seeds": 5,
+    "planned_seeds": 5,
+    "all_five_complete": true,
+    "window_val_macro_f1_mean": 0.4085066088820971,
+    "window_val_macro_f1_sd": 0.0022139834581476952,
+    "window_val_common_macro_f1_mean": 0.4386910549293164,
+    "window_val_common_macro_f1_sd": 0.0027547091254282994,
+    "l10_val_macro_f1_mean": 0.8363145876534102,
+    "l10_val_macro_f1_sd": 0.0005675642920386392,
+    "temporal_delta_val_common_macro_f1_mean": 0.39762353272409373,
+    "temporal_delta_val_common_macro_f1_sd": 0.0024526739142550933
+  }
+]

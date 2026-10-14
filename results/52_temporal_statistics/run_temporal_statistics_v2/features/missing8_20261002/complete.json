@@ -1,0 +1,14 @@
+{
+  "identity": "4da1a1cc4705a937e76ec946870264d0c354d770825a247dca3f0b6405f21788",
+  "contract": "fcead2fdea828f482540d0eccb0028149aff99f8d956797932ead3ffce2bcd6b",
+  "result": {
+    "shape": [
+      38078,
+      3072
+    ]
+  },
+  "completed_at_utc": "2026-10-07T01:55:24.286648+00:00",
+  "artifact_sha256": {
+    "features.npy": "9865632d1a70fd93f848f5a6f22445a71ba8b4104cc1a6f36d4a0268bbc53732"
+  }
+}

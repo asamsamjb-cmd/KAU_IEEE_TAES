@@ -1,0 +1,164 @@
+{
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+  "label_semantics": "supplied scenario/episode class; not instantaneous attack-presence annotation",
+  "checkpoint_selection": "validation macro-F1 only; test evaluated after training",
+  "token_length_report": {
+    "max_length": 256,
+    "sampled": false,
+    "splits": {
+      "train": {
+        "rows": 211006,
+        "length_rows_evaluated": 211006,
+        "sampled": false,
+        "min_tokens": 180,
+        "mean_tokens": 192.91072765703345,
+        "p95_tokens": 205.0,
+        "p99_tokens": 209.0,
+        "max_tokens": 217,
+        "rows_over_max_length_in_evaluated_subset": 0,
+        "rows_with_tokenizer_unk": 0
+      },
+      "val": {
+        "rows": 44148,
+        "length_rows_evaluated": 44148,
+        "sampled": false,
+        "min_tokens": 180,
+        "mean_tokens": 192.83315212467156,
+        "p95_tokens": 205.0,
+        "p99_tokens": 209.0,
+        "max_tokens": 217,
+        "rows_over_max_length_in_evaluated_subset": 0,
+        "rows_with_tokenizer_unk": 0
+      },
+      "test": {
+        "rows": 44846,
+        "length_rows_evaluated": 44846,
+        "sampled": false,
+        "min_tokens": 180,
+        "mean_tokens": 192.94211300896401,
+        "p95_tokens": 205.0,
+        "p99_tokens": 209.0,
+        "max_tokens": 217,
+        "rows_over_max_length_in_evaluated_subset": 0,
+        "rows_with_tokenizer_unk": 0
+      }
+    }
+  },
+  "model_name": "distilbert-base-uncased",
+  "model_output_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model",
+  "random_seed": 20260610,
+  "observable_window_seconds": 1,
+  "tst_sequence_lengths": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "tst_temporal_context_seconds": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "temporal_report": {
+    "row_count_check": {
+      "total_rows": 300000,
+      "expected_total_rows": 300000,
+      "label_counts": {
+        "NORMAL": 50000,
+        "RF_LINK_JAMMING": 50000,
+        "GNSS_SPOOFING": 50000,
+        "UNAUTHORIZED_TELECOMMAND_INJECTION": 50000,
+        "TELECOMMAND_REPLAY": 50000,
+        "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 50000
+      }
+    },
+    "splits": {
+      "train": {
+        "split": "train",
+        "rows": 211006,
+        "episodes": 3511,
+        "window_seconds": 1,
+        "min_episode_length_rows": 2,
+        "mean_episode_length_rows": 60.09854742238679,
+        "max_episode_length_rows": 140,
+        "mean_episode_duration_seconds": 60.09854742238679,
+        "short_episode_counts_by_L": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "5": 1,
+          "10": 1
+        }
+      },
+      "val": {
+        "split": "val",
+        "rows": 44148,
+        "episodes": 753,
+        "window_seconds": 1,
+        "min_episode_length_rows": 20,
+        "mean_episode_length_rows": 58.62948207171315,
+        "max_episode_length_rows": 140,
+        "mean_episode_duration_seconds": 58.62948207171315,
+        "short_episode_counts_by_L": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "5": 0,
+          "10": 0
+        }
+      },
+      "test": {
+        "split": "test",
+        "rows": 44846,
+        "episodes": 752,
+        "window_seconds": 1,
+        "min_episode_length_rows": 16,
+        "mean_episode_length_rows": 59.63563829787234,
+        "max_episode_length_rows": 140,
+        "mean_episode_duration_seconds": 59.63563829787234,
+        "short_episode_counts_by_L": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "5": 0,
+          "10": 0
+        }
+      }
+    },
+    "loaded_existing_serialized_inputs": false
+  },
+  "max_length": 256,
+  "num_train_epochs": 3,
+  "per_device_train_batch_size": 16,
+  "per_device_eval_batch_size": 32,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.06,
+  "train_rows": 211006,
+  "val_rows": 44148,
+  "test_rows": 44846,
+  "val_summary": {
+    "split": "val",
+    "accuracy": 0.399225332970916,
+    "macro_f1": 0.40301354921267674,
+    "weighted_f1": 0.3985901197777806,
+    "rows": 44148,
+    "report_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\reports\\val_classification_report.json",
+    "confusion_matrix_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\reports\\val_confusion_matrix.csv",
+    "predictions_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\predictions\\val_predictions.csv"
+  },
+  "test_summary": {
+    "split": "test",
+    "accuracy": 0.4043615930071801,
+    "macro_f1": 0.404848827483399,
+    "weighted_f1": 0.40500284699399236,
+    "rows": 44846,
+    "report_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\reports\\test_classification_report.json",
+    "confusion_matrix_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\reports\\test_confusion_matrix.csv",
+    "predictions_path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\predictions\\test_predictions.csv"
+  }
+}

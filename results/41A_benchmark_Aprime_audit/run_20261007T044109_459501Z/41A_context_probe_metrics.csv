@@ -1,0 +1,13 @@
+﻿split,population,model,rows,accuracy,macro_f1,fit_status,fit_converged
+val,all_windows,majority_mapping,44148,0.1654208571169702,0.11443291054555871,COMPLETED,
+val,all_windows,train_majority_baseline,44148,0.15950892452659238,0.04585531028195611,COMPLETED,
+val,all_windows,logistic,44148,0.16501313762797862,0.10662575765094391,COMPLETED,True
+val,common_L10_endpoints,majority_mapping,37371,0.16486045329266008,0.11440885588649952,COMPLETED,
+val,common_L10_endpoints,train_majority_baseline,37371,0.1580904979797169,0.045503207868327206,COMPLETED,
+val,common_L10_endpoints,logistic,37371,0.16467314227609645,0.1068080364021657,COMPLETED,True
+test,all_windows,majority_mapping,44846,0.16188734781251393,0.1139059072609183,COMPLETED,
+test,all_windows,train_majority_baseline,44846,0.16280158765553226,0.046669351384867136,COMPLETED,
+test,all_windows,logistic,44846,0.16003656959372073,0.10481222744925471,COMPLETED,True
+test,common_L10_endpoints,majority_mapping,38078,0.15985608487840747,0.11306352599099952,COMPLETED,
+test,common_L10_endpoints,train_majority_baseline,38078,0.16219339251011083,0.04651933535198325,COMPLETED,
+test,common_L10_endpoints,logistic,38078,0.15799149114974526,0.10400110127632844,COMPLETED,True

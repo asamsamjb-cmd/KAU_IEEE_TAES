@@ -1,0 +1,15 @@
+{
+  "identity": "e72a1e32f534c495cdd8eaf8f2f7d46a0e7abdbe6f8a35d1f1ad53c4abeab5c9",
+  "contract": "7563ab89f4bc90a9dd83780404159959dcd8c21679adb6501d370a5d2d2b0a29",
+  "result": {
+    "realization": "B_moderate",
+    "records": 49152,
+    "endpoints": 42240,
+    "runs": 53
+  },
+  "completed_at_utc": "2026-10-06T14:31:40.476830+00:00",
+  "artifact_sha256": {
+    "predictions.npz": "ebe5b989ea7b34c0fdbb2723a39a6653ee80e96752a5518fef19c25e3a6d9946",
+    "metrics_by_run.csv": "e2e631d4d736b3fbb8187d02f55356b38f8418462821f594da1df633b614fa3e"
+  }
+}

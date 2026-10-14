@@ -1,0 +1,484 @@
+{
+  "version": "shared_nominal_threshold_recalibration_v2",
+  "script_sha256": "68377c75e28bf2920c8a92c3cc4bcc47978b61afaabcc244f6b9134209d5e68c",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "step59_run": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\59_raw_semantic\\run_raw_semantic_v2",
+  "step59_protocol_identity": "8db457f25d9056895b70b6488d543b72baeecd2593e3ec2f5da8d5a040584c35",
+  "step59_code_sha256": "f9d4e611135c390d0f29f6f8097640235430909e9246b1d30bb732d80616ff7a",
+  "step49_run": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\49_parameter_stress\\run_parameter_stress_v1",
+  "step49_protocol_identity": "f9346c2f6eb8c770324639dd3218edf0b2c38dda415251c2f57e3bb1a764d0ab",
+  "mapper_sha256": "adfe6e2ea4268287efa593fb63e16ca84bc2dddc1bf2d22cd95ad360ca17d71d",
+  "conditions": [
+    "P_reference",
+    "P_mild",
+    "P_moderate",
+    "P_severe"
+  ],
+  "target_condition": "P_reference",
+  "detectors": [
+    {
+      "representation": "Semantic22",
+      "family": "HGB"
+    },
+    {
+      "representation": "Semantic22",
+      "family": "MLP"
+    }
+  ],
+  "seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614
+  ],
+  "training": false,
+  "new_fit_on_regime_data": "quantile maps on benign windows of calibration blocks only",
+  "recalibration": {
+    "channels": [
+      "ttc_snr_db",
+      "isl_snr_db",
+      "iot_snr_db",
+      "uav_sinr_db",
+      "gnss_cn0_mean_dbhz",
+      "gnss_tracking_jitter",
+      "gnss_carrier_lock_ratio",
+      "position_jump_m",
+      "pseudorange_residual_m",
+      "velocity_jump_mps",
+      "time_residual_ns",
+      "clock_drift_ppm",
+      "ttc_frame_loss_rate",
+      "isl_frame_loss_rate",
+      "iot_frame_loss_rate",
+      "uav_frame_loss_rate",
+      "gnss_lock_loss_count",
+      "gnss_cycle_slip_count",
+      "ttc_crc_error_count",
+      "ttc_decode_fail_count",
+      "ttc_retry_count",
+      "ttc_timeout_count",
+      "isl_crc_error_count",
+      "isl_decode_fail_count",
+      "isl_retry_count",
+      "isl_timeout_count",
+      "iot_crc_error_count",
+      "iot_decode_fail_count",
+      "iot_retry_count",
+      "iot_timeout_count",
+      "uav_crc_error_count",
+      "uav_decode_fail_count",
+      "uav_retry_count",
+      "uav_timeout_count"
+    ],
+    "integer_channels": [
+      "gnss_lock_loss_count",
+      "gnss_cycle_slip_count",
+      "ttc_crc_error_count",
+      "ttc_decode_fail_count",
+      "ttc_retry_count",
+      "ttc_timeout_count",
+      "isl_crc_error_count",
+      "isl_decode_fail_count",
+      "isl_retry_count",
+      "isl_timeout_count",
+      "iot_crc_error_count",
+      "iot_decode_fail_count",
+      "iot_retry_count",
+      "iot_timeout_count",
+      "uav_crc_error_count",
+      "uav_decode_fail_count",
+      "uav_retry_count",
+      "uav_timeout_count"
+    ],
+    "bounds": {
+      "ttc_frame_loss_rate": [
+        0.0,
+        1.0
+      ],
+      "isl_frame_loss_rate": [
+        0.0,
+        1.0
+      ],
+      "iot_frame_loss_rate": [
+        0.0,
+        1.0
+      ],
+      "uav_frame_loss_rate": [
+        0.0,
+        1.0
+      ],
+      "gnss_carrier_lock_ratio": [
+        0.0,
+        1.0
+      ],
+      "gnss_tracking_jitter": [
+        0.0,
+        null
+      ],
+      "position_jump_m": [
+        0.0,
+        null
+      ],
+      "pseudorange_residual_m": [
+        0.0,
+        null
+      ],
+      "velocity_jump_mps": [
+        0.0,
+        null
+      ],
+      "time_residual_ns": [
+        0.0,
+        null
+      ],
+      "clock_drift_ppm": [
+        0.0,
+        null
+      ],
+      "gnss_cn0_mean_dbhz": [
+        0.0,
+        null
+      ],
+      "gnss_lock_loss_count": [
+        0.0,
+        null
+      ],
+      "gnss_cycle_slip_count": [
+        0.0,
+        null
+      ],
+      "ttc_crc_error_count": [
+        0.0,
+        null
+      ],
+      "ttc_decode_fail_count": [
+        0.0,
+        null
+      ],
+      "ttc_retry_count": [
+        0.0,
+        null
+      ],
+      "ttc_timeout_count": [
+        0.0,
+        null
+      ],
+      "isl_crc_error_count": [
+        0.0,
+        null
+      ],
+      "isl_decode_fail_count": [
+        0.0,
+        null
+      ],
+      "isl_retry_count": [
+        0.0,
+        null
+      ],
+      "isl_timeout_count": [
+        0.0,
+        null
+      ],
+      "iot_crc_error_count": [
+        0.0,
+        null
+      ],
+      "iot_decode_fail_count": [
+        0.0,
+        null
+      ],
+      "iot_retry_count": [
+        0.0,
+        null
+      ],
+      "iot_timeout_count": [
+        0.0,
+        null
+      ],
+      "uav_crc_error_count": [
+        0.0,
+        null
+      ],
+      "uav_decode_fail_count": [
+        0.0,
+        null
+      ],
+      "uav_retry_count": [
+        0.0,
+        null
+      ],
+      "uav_timeout_count": [
+        0.0,
+        null
+      ]
+    },
+    "grid": 201,
+    "map": "monotone mid-mass quantile map source->target fitted on benign windows (continuous: linear target quantile; integer: smallest target value reaching the mid-mass probability, zero stays zero); slope-1 extension outside the fitted range; physical bounds clipped",
+    "applied_to": "actual and paired nominal raw records of every window; pinned normalizer unchanged",
+    "untouched": "binary monitor flags, command/session counts, context categories"
+  },
+  "block_split": {
+    "blocks": 150,
+    "calibration_blocks": [
+      0,
+      1,
+      3,
+      7,
+      8,
+      11,
+      12,
+      14,
+      19,
+      25,
+      28,
+      30,
+      31,
+      33,
+      34,
+      35,
+      39,
+      40,
+      42,
+      43,
+      45,
+      48,
+      49,
+      52,
+      53,
+      56,
+      59,
+      60,
+      62,
+      64,
+      65,
+      66,
+      71,
+      73,
+      76,
+      77,
+      78,
+      80,
+      84,
+      85,
+      88,
+      90,
+      91,
+      93,
+      94,
+      97,
+      98,
+      99,
+      104,
+      107,
+      108,
+      109,
+      110,
+      111,
+      115,
+      116,
+      117,
+      118,
+      120,
+      121,
+      122,
+      124,
+      126,
+      130,
+      131,
+      133,
+      137,
+      138,
+      139,
+      140,
+      142,
+      143,
+      144,
+      148,
+      149
+    ],
+    "target_fit_blocks": [
+      0,
+      1,
+      3,
+      7,
+      8,
+      11,
+      12,
+      14,
+      19,
+      25,
+      28,
+      30,
+      31,
+      33,
+      34,
+      35,
+      39,
+      40,
+      42,
+      43,
+      45,
+      48,
+      49,
+      52,
+      53,
+      56,
+      59,
+      60,
+      62,
+      64,
+      65,
+      66,
+      71,
+      73,
+      76,
+      77,
+      78
+    ],
+    "source_fit_blocks": [
+      80,
+      84,
+      85,
+      88,
+      90,
+      91,
+      93,
+      94,
+      97,
+      98,
+      99,
+      104,
+      107,
+      108,
+      109,
+      110,
+      111,
+      115,
+      116,
+      117,
+      118,
+      120,
+      121,
+      122,
+      124,
+      126,
+      130,
+      131,
+      133,
+      137,
+      138,
+      139,
+      140,
+      142,
+      143,
+      144,
+      148,
+      149
+    ],
+    "evaluation_blocks": [
+      2,
+      4,
+      5,
+      6,
+      9,
+      10,
+      13,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      23,
+      24,
+      26,
+      27,
+      29,
+      32,
+      36,
+      37,
+      38,
+      41,
+      44,
+      46,
+      47,
+      50,
+      51,
+      54,
+      55,
+      57,
+      58,
+      61,
+      63,
+      67,
+      68,
+      69,
+      70,
+      72,
+      74,
+      75,
+      79,
+      81,
+      82,
+      83,
+      86,
+      87,
+      89,
+      92,
+      95,
+      96,
+      100,
+      101,
+      102,
+      103,
+      105,
+      106,
+      112,
+      113,
+      114,
+      119,
+      123,
+      125,
+      127,
+      128,
+      129,
+      132,
+      134,
+      135,
+      136,
+      141,
+      145,
+      146,
+      147
+    ],
+    "split_seed": 2026100767
+  },
+  "evaluation": "evaluation blocks only; identical endpoints under fixed and recalibrated tokens",
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 2026100768,
+    "unit": "whole shared nominal block (six class replicas)",
+    "estimator": "mean of per-seed endpoint metrics",
+    "intervals": "percentile 95; primary family Bonferroni 16 over 4 regimes x 2 learners x 2 metrics (recalibrated minus fixed)"
+  },
+  "expectation_before_running": [
+    "NORMAL false-alarm rate moves toward the P_reference fixed level",
+    "Macro-F1 recovers partially",
+    "residual loss tracks the drop of the evidence-availability reference",
+    "P_reference recalibrated minus fixed is approximately zero (no-harm control)",
+    "reported regardless of direction"
+  ],
+  "scope": "Within-generator, fixed-encoder/fixed-detector diagnosis of where the shift loss is located; recalibration assumes a benign operating period of the deployment environment; no external validity, physical calibration or retraining claim",
+  "runtime": {
+    "python": "3.14.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "threads": 8
+  },
+  "identity": "c0a2c3593c5783eceeec401640b36941e09b8c56683060b4e4c7e00a47f0adb0"
+}

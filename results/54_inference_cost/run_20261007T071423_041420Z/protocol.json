@@ -1,0 +1,235 @@
+{
+  "version": "shared_nominal_inference_cost_v3_windows_activity",
+  "inventory_sha256": "605cfec03b7b1080d4f2b401430bf3b06c15f83af9b07f2d15548074039d7883",
+  "runtime": {
+    "python": "3.14.5",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "torch": "2.12.0+cu126",
+    "transformers": "5.10.2",
+    "numpy": "2.4.6",
+    "device": "cuda:0",
+    "device_name": "NVIDIA GeForce RTX 3060",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "torch_threads": 8,
+    "torch_interop_threads": 8,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "cuda_matmul_tf32": false,
+    "cudnn_tf32": false,
+    "precision": "FP32",
+    "gpu_activity": {
+      "status": "BACKGROUND_ACTIVITY_RECORDED",
+      "gpu_uuid": "c99a6425-b53e-4c58-65b5-66923c1b5e53",
+      "other_compute_processes": [
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 1792,
+          "name": "[Insufficient Permissions]",
+          "memory_mib": "[N/A]",
+          "resolved_name": "dwm",
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 5052,
+          "name": "[Insufficient Permissions]",
+          "memory_mib": "[N/A]",
+          "resolved_name": "GooglePlayGamesServices",
+          "classification": "unresolved"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 8464,
+          "name": "C:\\Windows\\explorer.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 13676,
+          "name": "C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftStickyNotes_6.1.4.0_x64__8wekyb3d8bbwe\\Microsoft.Notes.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 15700,
+          "name": "C:\\Windows\\SystemApps\\Microsoft.Windows.Search_cw5n1h2txyewy\\SearchApp.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 20516,
+          "name": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 21764,
+          "name": "C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.25072.81.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 23340,
+          "name": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA GeForce Experience\\NVIDIA Share.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 5316,
+          "name": "[Insufficient Permissions]",
+          "memory_mib": "[N/A]",
+          "resolved_name": "AcPowerNotification",
+          "classification": "unresolved"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 23440,
+          "name": "[Insufficient Permissions]",
+          "memory_mib": "[N/A]",
+          "resolved_name": "ArmourySwAgent",
+          "classification": "unresolved"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 22288,
+          "name": "C:\\Users\\User\\AppData\\Local\\Programs\\Notion\\Notion.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 17076,
+          "name": "C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 27284,
+          "name": "C:\\Program Files\\JetBrains\\PyCharm 2026.1.2\\jbr\\bin\\cef_server.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 11496,
+          "name": "C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 20656,
+          "name": "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 21284,
+          "name": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\154.0.4258.62\\msedgewebview2.exe",
+          "memory_mib": "[N/A]",
+          "resolved_name": null,
+          "classification": "desktop_or_system_name"
+        }
+      ],
+      "suspected_compute_processes": [],
+      "unresolved_processes": [
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 5052,
+          "name": "[Insufficient Permissions]",
+          "memory_mib": "[N/A]",
+          "resolved_name": "GooglePlayGamesServices",
+          "classification": "unresolved"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 5316,
+          "name": "[Insufficient Permissions]",
+          "memory_mib": "[N/A]",
+          "resolved_name": "AcPowerNotification",
+          "classification": "unresolved"
+        },
+        {
+          "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+          "pid": 23440,
+          "name": "[Insufficient Permissions]",
+          "memory_mib": "[N/A]",
+          "resolved_name": "ArmourySwAgent",
+          "classification": "unresolved"
+        }
+      ],
+      "background_review_required": true,
+      "detection_policy": "Windows process-name heuristic: suspected compute contexts pause by default; desktop and unresolved entries are recorded without blocking.",
+      "limitation": "A process/context listing is not utilization evidence. Desktop and unresolved processes may interfere. WDDM memory N/A does not mean zero usage; no idle-device proof."
+    }
+  },
+  "samples": 64,
+  "repeats": 3,
+  "rounds": 3,
+  "warmup_first_sample": 50,
+  "warmup_minimum_seconds": 0.5,
+  "warmup_each_other_sample": 2,
+  "timing_method": "Single-decision synchronized wall clock; cyclic GC disabled during latency scopes; no allocator cleanup or probes inside latency blocks.",
+  "ordering": "Fixed seed permutations of common inputs; reversed/rotated case and scope orders across rounds; measurement_schedule.json records actual order.",
+  "aggregation": "All rounds/samples/repeats pooled; no trimming, fastest-round selection, or adaptive stopping.",
+  "memory_method": "Separate untimed pass after all latency rounds; 2 warmups and 2 recorded calls for every input/scope; baseline and peak bytes archived.",
+  "gpu_monitoring": "Boundary snapshots; on Windows, known desktop and unresolved process entries are logged without blocking. Suspected compute executable names pause by default; name classification is heuristic, not utilization evidence.",
+  "sample_seed": 2026101501,
+  "scopes": [
+    "full10_model_only",
+    "stream1_model_only",
+    "full10_end_to_end",
+    "stream1_end_to_end",
+    "head_only"
+  ],
+  "decision_batch_size": 1,
+  "sequence_length": 10,
+  "full10_encoder_window_batch": 10,
+  "stream1_encoder_window_batch": 1,
+  "end_to_end": "in-memory 22 field values -> serialization/tokenization or category lookup -> CPU-to-device -> encoder -> aggregator -> CPU class id",
+  "model_only": "preprocessed device tensors -> encoder and aggregator -> device logits; synchronized wall clock",
+  "head_only": "resident cached [1,10,768] CLS features -> pooling when required and classifier -> device logits",
+  "memory_residency": "encoder plus head remain loaded in every scope, including head_only; only the current sample/cache is on GPU",
+  "stream1": "nine previously encoded CLS vectors already resident on device; encode one new window and concatenate/update context",
+  "excludes": [
+    "disk I/O",
+    "model loading",
+    "raw-to-22-field extraction",
+    "telemetry acquisition/wait time",
+    "network transport"
+  ],
+  "limitations": [
+    "Hardware-specific measurements; not satellite onboard latency.",
+    "PyTorch allocated/reserved GPU memory; not CPU RAM, whole-process GPU memory or whole-device usage.",
+    "Formal encoders use original fixed padding; shared Step8 uses original dynamic padding. Compare aggregators within the shared track.",
+    "All timed heads use FP32. Historical pooling accuracy used AMP; no new full FP32 accuracy evaluation is claimed.",
+    "Repeated timings share samples/checkpoints; they are not independent training seeds or accuracy confidence intervals.",
+    "Warm steady-state in-process timings exclude cyclic-GC pauses; no hard real-time or cold-start claim.",
+    "timing_quality.json contains descriptive variability flags, not a statistical equivalence or stability proof."
+  ],
+  "canary": {
+    "atol": 0.0001,
+    "rtol": 0.0001,
+    "formal_predictions_exact": true
+  }
+}

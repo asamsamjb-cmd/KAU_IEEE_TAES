@@ -1,0 +1,7 @@
+{
+  "source": "completed Step46 full-22-field counterfactual projection-change diagnostics",
+  "subset_specific_change_flags": false,
+  "model_inputs": false,
+  "primary_population_filter": false,
+  "scope": "Full-schema annotation only; dropped-field counterfactuals are not available here. Do not interpret these flags as evidence availability for each retained subset or an oracle ceiling."
+}

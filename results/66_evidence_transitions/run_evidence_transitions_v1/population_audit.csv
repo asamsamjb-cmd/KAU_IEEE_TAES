@@ -1,0 +1,7 @@
+﻿label,episodes,windows,endpoints,observable_runs,intervention_bursts,repeated_observable_runs,fully_followed_observable_onsets,interior_gaps,fully_scored_gaps,gap_scored_windows,terminal_audit_quiet_suffixes,fully_followed_audit_quiet_suffixes,no_eligible_endpoint_episodes
+NORMAL,130,6932,5762,0,0,0,0,0,0,0,0,0,0
+RF_LINK_JAMMING,125,7590,6465,992,587,869,129,869,823,3249,49,0,0
+GNSS_SPOOFING,125,7301,6176,748,498,623,148,623,565,1049,49,0,0
+UNAUTHORIZED_TELECOMMAND_INJECTION,123,7832,6725,1274,647,1151,98,1151,1095,3677,123,18,0
+TELECOMMAND_REPLAY,127,7901,6758,886,1061,762,139,762,755,3281,124,22,0
+GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE,122,7290,6192,830,1152,708,123,708,698,2987,122,20,0

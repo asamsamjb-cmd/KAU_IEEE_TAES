@@ -1,0 +1,26 @@
+{
+  "status": "EVIDENCE_RESPONSE_COMPLETE",
+  "code_version": "1.0-frozen-evidence-response-diagnostics",
+  "completed_at_utc": "2026-10-07T02:16:55.823764+00:00",
+  "output_sha256": {
+    "56.evidence_response_diagnostics.py": "b3d16dc8977d2b187430d388d74c96acef9331be22cc16ab779984027d830fc4",
+    "clean_predictions.npz": "8ebe6494f0ad1a7c6657af12e788defa4c2d119ca986b81215d3d7e97e5c55f5",
+    "eligibility_counts.csv": "e99afb24e55802ba53ef50d2b6ab84b4dcbd559d97772fa663519c60768160d4",
+    "endpoint_evidence_counts.csv": "296630a30704df11855d632dc79c8e33fd292ba1211dad6c25e14418f7c5a752",
+    "episode_inventory.csv": "9553575d20e75fee67a8c2a711741dbd12d58706a52dccc9179d96aa85506953",
+    "episode_sufficient_statistics.npz": "ccfd41d80a53f6910e02c0e3b02f11822c53fb6c887d191a6e9b2b4ad89eb811",
+    "evaluation_endpoints_L10.csv": "817150a89d5aed299450eb6e3cdfd1a42d71fdc37f75889eff452f6d6373a958",
+    "input_audit.json": "5692f8b12c3580575354eceec5babdcc4b2a6af183677eafc548dd840aff0d39",
+    "latency_by_episode_seed.csv": "f51e9a15a0981e7298e88e499663b87bc8d70e1b1fe86e78bdd9484ef88b2e85",
+    "latency_by_seed.csv": "3ca85e1ee2f041057ee8d00baea7c9dad61e648f89c05dc550a355b30a86da45",
+    "latency_summary.csv": "918cc0e3b3836fc00152a051041023a843236fae8676999d3ddd92bf523addd8",
+    "normal_alarm_summary.csv": "919e1ccc356cae73c2f654b7c8a2981aff09c073557f5ab702ede8c8c9bdc46c",
+    "normal_alarms_by_episode_seed.csv": "dea1fd0c73ebf9d3f3f946270e362f2c61539f5ea40b105b88f024c0ff79d87a",
+    "primary_bootstrap.npz": "7a2e28792357acebcf758ef1371ec1f2ba1ed63049e976c7e9a67d10ec65368a",
+    "primary_paired_comparisons.csv": "242034d3aaa8f33fae4b0bd541305b2b146c50886e02a2f27deb0a842cdb5d78",
+    "protocol.json": "b0dc0548d64a3f6bc74f838ca1a0e9075e6a01750ffe6a6aef97a590748b5b6c",
+    "sparse_evidence_recall.csv": "e7f052d88dcf1ed01b4d868cc313e6ea90fc3dcc51fe7169ee8fdf071a13c29a",
+    "summary.json": "95c558348f9841212377fad73a9d732de14c54ef23fe7de71b3866c0489852ae",
+    "window_observable_changes.csv": "76f5afeb8b244c331934fe65fdee5658a198501b1426abc22c02766b1d8955f5"
+  }
+}

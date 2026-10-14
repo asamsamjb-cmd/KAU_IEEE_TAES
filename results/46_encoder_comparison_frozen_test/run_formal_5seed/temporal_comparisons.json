@@ -1,0 +1,62 @@
+[
+  {
+    "condition": "CategoricalEmbedding_MLP",
+    "reference": "L10_TST",
+    "comparator": "window_at_common_L10_endpoints",
+    "comparison_family": "secondary_four_temporal_contrasts",
+    "delta_macro_f1": 0.40963489233990247,
+    "delta_percentage_points": 40.963489233990245,
+    "ci95_low": 0.39902927384127745,
+    "ci95_high": 0.42043047630308406,
+    "bonferroni_confidence": 0.9875,
+    "bonferroni_low": 0.3957622585258372,
+    "bonferroni_high": 0.42366832193160286,
+    "ci95_interpretation": "tst_higher",
+    "familywise_interpretation": "tst_higher"
+  },
+  {
+    "condition": "FieldToken_Encoder",
+    "reference": "L10_TST",
+    "comparator": "window_at_common_L10_endpoints",
+    "comparison_family": "secondary_four_temporal_contrasts",
+    "delta_macro_f1": 0.4092710045630434,
+    "delta_percentage_points": 40.92710045630434,
+    "ci95_low": 0.39938544600203113,
+    "ci95_high": 0.4193257332081904,
+    "bonferroni_confidence": 0.9875,
+    "bonferroni_low": 0.3964711506043832,
+    "bonferroni_high": 0.42210750426450305,
+    "ci95_interpretation": "tst_higher",
+    "familywise_interpretation": "tst_higher"
+  },
+  {
+    "condition": "DistilBERT_RandomInit_Train",
+    "reference": "L10_TST",
+    "comparator": "window_at_common_L10_endpoints",
+    "comparison_family": "secondary_four_temporal_contrasts",
+    "delta_macro_f1": 0.41071295056499013,
+    "delta_percentage_points": 41.07129505649901,
+    "ci95_low": 0.40099972202182244,
+    "ci95_high": 0.42058254414029206,
+    "bonferroni_confidence": 0.9875,
+    "bonferroni_low": 0.39811277255760297,
+    "bonferroni_high": 0.4234431136712192,
+    "ci95_interpretation": "tst_higher",
+    "familywise_interpretation": "tst_higher"
+  },
+  {
+    "condition": "DistilBERT_Pretrained_Finetune",
+    "reference": "L10_TST",
+    "comparator": "window_at_common_L10_endpoints",
+    "comparison_family": "secondary_four_temporal_contrasts",
+    "delta_macro_f1": 0.4104519601766747,
+    "delta_percentage_points": 41.045196017667465,
+    "ci95_low": 0.4006550196826989,
+    "ci95_high": 0.4204932680937559,
+    "bonferroni_confidence": 0.9875,
+    "bonferroni_low": 0.39783832399902597,
+    "bonferroni_high": 0.4232355374885185,
+    "ci95_interpretation": "tst_higher",
+    "familywise_interpretation": "tst_higher"
+  }
+]

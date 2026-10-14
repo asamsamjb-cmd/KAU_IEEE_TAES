@@ -1,0 +1,20 @@
+{
+  "status": "STEP63_TEMPORAL_EVIDENCE_COMPLETE",
+  "completed_at_utc": "2026-10-08T09:08:19.202471+00:00",
+  "output_sha256": {
+    "63.temporal_evidence_analysis.py": "29a8d528634f30b355584e31d82dce0fc522b227862f0b6051bfeb0d0a4d7681",
+    "endpoint_evidence_test.csv": "29ea8359c8255c9b8d13e4443f51902604b52dd223b152d8184d7c8e2507a9b5",
+    "evidence_recall_by_head_seed.csv": "28625d09ba0ef72673c1f03d31d2c0ca0604157a32c1531095730a4fbc49ac3d",
+    "evidence_recall_summary.csv": "2e62b921f3f37ba7884893f6aa47869fb546702acc7242835b2ec87bd1bfa1d9",
+    "input_audit.json": "3f6b0be08b851c973c0869a04db83c7abddb543579295712eaeeb008753cfb4c",
+    "primary_episode_bootstrap.csv": "97a8c00c0fe74233aa4b98af160b86037c6f5db341a1ff5be1f549667424bb65",
+    "protocol.json": "cfb7a3e9324cdcfeb903b23887b188f144cd807849796b7faed7c42d8e09ca93",
+    "step62_metric_replay.csv": "d0e27b3a66857f601104ff596c9a2b1213a8797c23315429e4112ca774ede146",
+    "summary.json": "21269f0bc0333a8daf5f64416c43363eddfb6131cbe9ac3a2133d43e7b0b1fe9"
+  },
+  "details": {
+    "protocol_identity": "ea479fc47178fa0649bab8dc512e94fea20b329168fc4908a97dbe33f8791612"
+  },
+  "training": false,
+  "new_inference": false
+}

@@ -1,0 +1,127 @@
+{
+  "version": "step17_rule_paired_shared_nominal_v4",
+  "created_at_utc": "2026-10-04T10:41:40.784801+00:00",
+  "models": [
+    "Rule_L1",
+    "Rule_L10",
+    "TST_L10"
+  ],
+  "contrasts": [
+    "Rule_L10_minus_Rule_L1",
+    "TST_L10_minus_Rule_L10"
+  ],
+  "source_step15": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\15_paired_episode_bootstrap\\run_20261004T102551_378013Z",
+  "source_step16": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z",
+  "source_contract": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "common_endpoint_report": {
+      "reference_length": 10,
+      "rule": "Intersection of end_row_indices across L within each split; no rows filtered by Step 10.",
+      "downstream_rule": "Compare context lengths on these same endpoints; report all-available-window results separately.",
+      "splits": {
+        "train": {
+          "common_endpoint_count": 179414,
+          "sorted_end_row_indices_sha256": "d05c6340c61c0bfb2dbea11b238a44bdbcda51613663d2b55ccccfd9c207a761",
+          "available_sequences_by_L": {
+            "1": 211006,
+            "2": 207495,
+            "3": 203984,
+            "5": 196964,
+            "10": 179414
+          }
+        },
+        "val": {
+          "common_endpoint_count": 37371,
+          "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2",
+          "available_sequences_by_L": {
+            "1": 44148,
+            "2": 43395,
+            "3": 42642,
+            "5": 41136,
+            "10": 37371
+          }
+        },
+        "test": {
+          "common_endpoint_count": 38078,
+          "sorted_end_row_indices_sha256": "98860cb9acd0348efe69583e7dce14c09f2b59c77c1a43b2a545065cd241098b",
+          "available_sequences_by_L": {
+            "1": 44846,
+            "2": 44094,
+            "3": 43342,
+            "5": 41838,
+            "10": 38078
+          }
+        }
+      }
+    },
+    "observability_audit": {
+      "schema_version": "counterfactual_observable_change_v1",
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+      "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "split_files": {
+        "train": "audit/train_window_observable_effects.csv",
+        "val": "audit/val_window_observable_effects.csv",
+        "test": "audit/test_window_observable_effects.csv"
+      },
+      "artifacts": {
+        "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+        "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+        "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+      },
+      "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+    }
+  },
+  "class_order": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "head_seeds": [
+    20260610,
+    20260611,
+    20260612,
+    20260613,
+    20260614,
+    20260615,
+    20260616,
+    20260617,
+    20260618,
+    20260619
+  ],
+  "n_bootstrap": 20000,
+  "rng_seed": 20260926,
+  "batch_size": 100,
+  "ci_method": "percentile, numpy linear quantile",
+  "ci95_tails": [
+    0.025,
+    0.975
+  ],
+  "bonferroni_two_contrast_tails": [
+    0.0125,
+    0.9875
+  ],
+  "family_size": 2,
+  "nominal_family_coverage": 0.95,
+  "bonferroni_marginal_coverage": 0.975,
+  "sampling": "whole episode with replacement within class; shared across all 12 runs",
+  "statistic": "sequence-level 6-class Macro-F1; TST arithmetic mean of 10 per-seed F1s",
+  "seed_treatment": "fixed; no seed resampling, no deterministic-rule seed duplication",
+  "condition_on": "frozen rules/thresholds, training data, encoder, heads, generator realization and class counts",
+  "study_timing": "carried-forward revision contrasts; no prospective preregistration claim",
+  "assumption": "episodes approximately independent/exchangeable within class",
+  "equivalence_margin": null,
+  "p_values": false,
+  "audit_only": false,
+  "observable_effect_use": "diagnostic alignment only; every common L10 endpoint remains in both contrasts",
+  "script_sha256": "c000ef6afa60b6001c1d265e5959e7b326c6ce40a79259502b53da7bff98fa89",
+  "python": "3.14.5",
+  "numpy": "2.4.6",
+  "pandas": "3.0.3"
+}

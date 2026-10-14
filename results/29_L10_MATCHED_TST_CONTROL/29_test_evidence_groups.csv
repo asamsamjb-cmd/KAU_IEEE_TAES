@@ -1,0 +1,13 @@
+﻿split,seed,group,endpoints,episodes,matched_L10_correct,original_L20_correct,matched_L10_correct_rate,original_L20_correct_rate,L10_wrong_L20_correct,L10_correct_L20_wrong,delta_correct_rate,definition
+test,20260610,A_recent10_change,22988,613,22525,22781,0.9798590568992518,0.9909953018966418,271,15,0.011136244997389943,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260610,B_older11to20_only_change,1961,272,24,1883,0.01223865374808771,0.960224375318715,1859,0,0.9479857215706272,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260610,C_no_change_in20,1147,144,0,0,0.0,0.0,0,0,0.0,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260610,NORMAL,4465,129,4327,4356,0.9690929451287794,0.9755879059350504,83,54,0.006494960806270996,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260611,A_recent10_change,22988,613,22533,22756,0.9802070645554202,0.9899077779711154,263,40,0.009700713415695145,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260611,B_older11to20_only_change,1961,272,24,1890,0.01223865374808771,0.9637939826619072,1866,0,0.9515553289138194,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260611,C_no_change_in20,1147,144,0,0,0.0,0.0,0,0,0.0,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260611,NORMAL,4465,129,4325,4361,0.9686450167973124,0.9767077267637178,84,48,0.008062709966405375,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260612,A_recent10_change,22988,613,22536,22763,0.9803375674264834,0.9902122846702628,260,33,0.009874717243779363,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260612,B_older11to20_only_change,1961,272,25,1889,0.012748597654258032,0.9632840387557369,1864,0,0.9505354411014788,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260612,C_no_change_in20,1147,144,0,0,0.0,0.0,0,0,0.0,posthoc paired-nominal 22-field projection change; not an oracle
+test,20260612,NORMAL,4465,129,4338,4351,0.9715565509518477,0.9744680851063829,73,60,0.0029115341545352742,posthoc paired-nominal 22-field projection change; not an oracle

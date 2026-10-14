@@ -1,0 +1,467 @@
+{
+  "identity": "20b7dd4201fc7e64c7820a9adbae0f383768e684b0f48fd2b9ff6e1bc8037cfc",
+  "protocol": {
+    "version": "shared_nominal_matched_random_pilot_v3",
+    "purpose": "RANDOM_INIT_MATCHED_PRETRAINED_TRAIN_VAL_PILOT",
+    "formal": false,
+    "test_evaluation": false,
+    "research_purpose": "TAES reviewer revision: 22-field representation and cross-window evidence aggregation",
+    "nominal_substrate": "shared_nominal_v2",
+    "label_policy": "retain supplied episode labels, including quiet/unobserved attack windows",
+    "audit_annotation_policy": "provenance only; never features, filtering, relabeling or model selection",
+    "candidate": "main",
+    "conditions": [
+      "DistilBERT_RandomInit_Train"
+    ],
+    "encoder_seed": 20260928,
+    "window_head_seed": 20260929,
+    "encoder_shuffle_seed": 20260930,
+    "tst_seed": 20260610,
+    "tst_shuffle_seed": 20260611,
+    "bert_micro_batch": 16,
+    "device": "cuda",
+    "amp": true,
+    "max_length": 256,
+    "evaluation_precision": "float32",
+    "extraction_precision": "float32",
+    "embedding_dim": 768,
+    "fields": [
+      "observation_stage",
+      "path_type",
+      "direction",
+      "source_role",
+      "destination_role",
+      "protocol_context",
+      "operational_phase",
+      "message_type",
+      "service_context",
+      "command_intent",
+      "payload_or_parameter_context",
+      "sequence_freshness_status",
+      "control_security_state",
+      "signal_quality_state",
+      "tracking_stability",
+      "navigation_consistency",
+      "timing_consistency",
+      "decoder_status",
+      "command_execution_result",
+      "retry_timeout_state",
+      "session_state",
+      "state_transition_consistency"
+    ],
+    "labels": [
+      "NORMAL",
+      "RF_LINK_JAMMING",
+      "GNSS_SPOOFING",
+      "UNAUTHORIZED_TELECOMMAND_INJECTION",
+      "TELECOMMAND_REPLAY",
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+    ],
+    "tst_model": {
+      "input_dim": 768,
+      "num_classes": 6,
+      "sequence_length": 10,
+      "temporal_context_seconds": 10,
+      "d_model": 128,
+      "num_heads": 4,
+      "num_encoder_layers": 1,
+      "dim_feedforward": 256,
+      "dropout": 0.25,
+      "pooling": "last"
+    },
+    "candidates": {
+      "main": [
+        0.001,
+        0.0003,
+        2e-05,
+        2e-05
+      ],
+      "alternate": [
+        0.0003,
+        0.0001,
+        0.0003,
+        5e-05
+      ]
+    },
+    "encoder_max_epochs": [
+      12,
+      12,
+      6,
+      6
+    ],
+    "encoder_patience": 4,
+    "encoder_min_epochs": 3,
+    "encoder_plateau_delta": 0.0001,
+    "selection": "val macro_f1; equal within 1e-12 -> lower val loss",
+    "stop": "encoder meaningful-F1 plateau; TST existing strict best metric patience",
+    "initializer": {
+      "repo": "distilbert/distilbert-base-uncased",
+      "revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+      "weight_sha256": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063"
+    },
+    "limitations": [
+      "one diagnostic seed; exclude from formal seed statistics",
+      "same training rules and maximum budget, not necessarily equal realized optimizer steps or epochs",
+      "compared with the Step 43 random run BOTH learning rate and schedule horizon change",
+      "validation selects encoder/TST checkpoints and informs later settings; this is not held-out evidence",
+      "no full-convergence, equivalence, test-generalization or pure learning-rate causal claim",
+      "window and TST heads differ in capacity/training; common endpoints alone do not isolate time aggregation",
+      "all supplied shared-nominal episode labels are retained, including quiet attack windows; no evidence-based filtering or relabeling",
+      "overall validation F1 alone does not establish attack-evidence use or exclude generator signatures; interpret with the benchmark/evidence audits"
+    ],
+    "source_contract": {
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+      "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+      "manifest_sha256": {
+        "step7": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+        "step8": "665b994dc422fdadd0d8a0cda690d7cd082074ad320537bb873c0afd778be968",
+        "step9": "dbdff8a70be63b51ed0f73167d2d878a2df8daedae70c6be227d2d018df70b17"
+      },
+      "input_sha256": {
+        "splits/train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+        "splits/val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+        "splits/test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+        "splits/label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+        "splits/episode_split_manifest.csv": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05"
+      },
+      "step8_model_sha256": {
+        "trained_distilbert_model/config.json": "64b9bbcd239e60e66c2e64802e8555112964cb86e71e9fdbcf023b72f5f778b0",
+        "trained_distilbert_model/label_mapping.json": "253649f289bdf8046aed8caeb3ef65e347af7038223a0f2ea2ee5b1d35f9e7ff",
+        "trained_distilbert_model/model.safetensors": "0792b13df30bed87dced1507a389cbd084558aa2fa3bdeb07299c3909b76464c",
+        "trained_distilbert_model/tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+        "trained_distilbert_model/tokenizer_config.json": "71cd48543bec670f50e0c9c3556df16b1f58ea720ead6a1b4675f08870c60b17",
+        "trained_distilbert_model/training_args.bin": "a4659c5ed492d23051158b76c31dec84b689475caaced9969fe0ce6d51a27643",
+        "trained_distilbert_model/training_provenance.json": "7c2b3bfa0996b59a79563f43c64bf29f2f829251ca950a0896e1cf1b2a7b221c"
+      },
+      "step9_artifacts": {
+        "embedding_extraction_report.json": "d7525913bea9dd5c713b0d3b67372577db1eb4c0587c02a4da310acac4c68822",
+        "train_window_embeddings.npz": "b6b86adb4cd0b2dcf8d151927d63482d5ef83eb8cb285001a81a72d74b52b7e4",
+        "train_window_metadata.csv": "c09de8d275999b7a6d7b56e75690e47cf15c796bdea9d3a5bfa47e9a0e3b977c",
+        "val_window_embeddings.npz": "a92ab043244aed7f49e50dca125f38e67c6c2d287eb00b66c556597fbd786d51",
+        "val_window_metadata.csv": "95024aac342046f89290926ff96edf53b8e29be5901297032c4f5c5facd513a2",
+        "test_window_embeddings.npz": "67dfc1e4f3a128013dcc585f9b8d80b33bfb8d2d85f6b2a6fe4d9628391becd1",
+        "test_window_metadata.csv": "86f13ac47bc3fc6c337736da94dfac05c1e96e7907c3d8d37b4aa3089d0c7f68"
+      },
+      "tokenizer_sha256": "e2a73874b67afe3161292f54d8d42fc17ce7d930587a9785c2a653a4b06d2d08",
+      "observability_audit": {
+        "schema_version": "counterfactual_observable_change_v1",
+        "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+        "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+        "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+        "split_files": {
+          "train": "audit/train_window_observable_effects.csv",
+          "val": "audit/val_window_observable_effects.csv",
+          "test": "audit/test_window_observable_effects.csv"
+        },
+        "artifacts": {
+          "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+          "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+          "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+        },
+        "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+      }
+    },
+    "split_counts": {
+      "train": {
+        "rows": 211006,
+        "episodes": 3511,
+        "sequences_stride1": {
+          "1": 211006,
+          "2": 207495,
+          "3": 203984,
+          "5": 196964,
+          "10": 179414
+        }
+      },
+      "val": {
+        "rows": 44148,
+        "episodes": 753,
+        "sequences_stride1": {
+          "1": 44148,
+          "2": 43395,
+          "3": 42642,
+          "5": 41136,
+          "10": 37371
+        }
+      }
+    },
+    "comparison_reference": "DistilBERT_Pretrained_Finetune"
+  },
+  "runtime": {
+    "python": "3.14.5",
+    "torch": "2.12.0+cu126",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "transformers": "5.10.2",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "device": "NVIDIA GeForce RTX 3060",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "torch_threads": 8,
+    "torch_interop_threads": 8,
+    "cuda_device_count": 1,
+    "numerical_policy": {
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "cudnn_allow_tf32": true,
+      "cuda_matmul_allow_tf32": false,
+      "float32_matmul_precision": "highest",
+      "deterministic_algorithms": false,
+      "deterministic_warn_only": false,
+      "fp16_reduced_precision_reduction": true,
+      "bf16_reduced_precision_reduction": true,
+      "flash_sdp_enabled": true,
+      "mem_efficient_sdp_enabled": true,
+      "math_sdp_enabled": true,
+      "cublas_workspace_config": null,
+      "nvidia_tf32_override": null
+    }
+  },
+  "source_protocol_identity": "77905b7b87e2cda6aabcd09f3e629677a5aee40f8c0e0717e2816f6b241f286c",
+  "source_manifest_sha256": "aed37b036db2b2a16778c8843faa3fbe9c94b2882cbc549aae3e9dcdc58f3976",
+  "source_run": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\43_encoder_comparison_trainval_pilot\\run_20261004T120919_900182Z",
+  "source_files": [
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\build_manifest.json",
+      "sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "size_bytes": 9249
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\label_mapping.json",
+      "sha256": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+      "size_bytes": 1878
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\episode_split_manifest.csv",
+      "sha256": "63d6cc1b26841ffd724a871ab3ba0ba8898fc5a04bec2523b8cb81f53c8e3e05",
+      "size_bytes": 818258
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\run_manifest.json",
+      "sha256": "665b994dc422fdadd0d8a0cda690d7cd082074ad320537bb873c0afd778be968",
+      "size_bytes": 14593
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\run_manifest.json",
+      "sha256": "dbdff8a70be63b51ed0f73167d2d878a2df8daedae70c6be227d2d018df70b17",
+      "size_bytes": 20341
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\config.json",
+      "sha256": "64b9bbcd239e60e66c2e64802e8555112964cb86e71e9fdbcf023b72f5f778b0",
+      "size_bytes": 1309
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\label_mapping.json",
+      "sha256": "253649f289bdf8046aed8caeb3ef65e347af7038223a0f2ea2ee5b1d35f9e7ff",
+      "size_bytes": 2219
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\model.safetensors",
+      "sha256": "0792b13df30bed87dced1507a389cbd084558aa2fa3bdeb07299c3909b76464c",
+      "size_bytes": 267844872
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\tokenizer.json",
+      "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "size_bytes": 711396
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\tokenizer_config.json",
+      "sha256": "71cd48543bec670f50e0c9c3556df16b1f58ea720ead6a1b4675f08870c60b17",
+      "size_bytes": 366
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\training_args.bin",
+      "sha256": "a4659c5ed492d23051158b76c31dec84b689475caaced9969fe0ce6d51a27643",
+      "size_bytes": 5421
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\trained_distilbert_model\\training_provenance.json",
+      "sha256": "7c2b3bfa0996b59a79563f43c64bf29f2f829251ca950a0896e1cf1b2a7b221c",
+      "size_bytes": 1682
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\embedding_extraction_report.json",
+      "sha256": "d7525913bea9dd5c713b0d3b67372577db1eb4c0587c02a4da310acac4c68822",
+      "size_bytes": 10948
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\train_observable.csv",
+      "sha256": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+      "size_bytes": 82116816
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\train_window_metadata.csv",
+      "sha256": "c09de8d275999b7a6d7b56e75690e47cf15c796bdea9d3a5bfa47e9a0e3b977c",
+      "size_bytes": 28786072
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\serialized\\train_serialized.csv",
+      "sha256": "dfecde83425d14918d2bd36f91ad22548e99b5e2c5e09f1f979b8cd2b4c7b940",
+      "size_bytes": 187408415
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\val_observable.csv",
+      "sha256": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+      "size_bytes": 17197394
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\val_window_metadata.csv",
+      "sha256": "95024aac342046f89290926ff96edf53b8e29be5901297032c4f5c5facd513a2",
+      "size_bytes": 6012054
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\serialized\\val_serialized.csv",
+      "sha256": "c8e6fd17ba06dc0592ab2168098f0c867cc5f7751cd4394ff795432387a9f182",
+      "size_bytes": 39226851
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\42.encoder_comparison_audit.py",
+      "sha256": "5f6cff2f38a150df331296423d832bd7d1f8dc6393ea100d4ff7932a67db4734",
+      "size_bytes": 67084
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\run_manifest.json",
+      "sha256": "2e014329e5956599e6344f8e80ef842e1c0dd01fce94a20690d0cbac48390a92",
+      "size_bytes": 13960
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\checkpoint_inventory.json",
+      "sha256": "e5ccf00bb4ab8727ad9f4bf19b0570b26ab1cb2fe24b5719b1e5800acc0430ba",
+      "size_bytes": 3159
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\comparison_design.json",
+      "sha256": "3ca4b43013cf4b4985c89b1aa53528819a636420e031a8f8ffba5b14371b78f2",
+      "size_bytes": 28894
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\dataset_audit.json",
+      "sha256": "0b3729eb36e7770edb6dd4b16a1656f8d152345aa5c510fecf6e5e22b6ba6785",
+      "size_bytes": 1470
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\findings.csv",
+      "sha256": "2083e3d346661cc5c5aed803c06f8179bd913258e11a675cd4b2839ee24e20b0",
+      "size_bytes": 26
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\input_audit.json",
+      "sha256": "8b695da1ac2df18b120cc436d5f606f28d0a1f7404904a51d5cbdd64262b11ef",
+      "size_bytes": 10047
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\protocol.json",
+      "sha256": "4cb43557c4138e6e69bdd4837ae580af0df528221d4eabcbdeb3f0881f3ffbf0",
+      "size_bytes": 937
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\reference_settings.json",
+      "sha256": "5d29fd9cfe853d3c6628f3657018aa14b46938273ada59577fd1bce205c3468d",
+      "size_bytes": 10173
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\token_coverage_by_field.csv",
+      "sha256": "c7f3621b4dd21478734b81e9d4549ce6119508ab798f023af19947e65615c925",
+      "size_bytes": 2534
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\token_length_histogram.csv",
+      "sha256": "99ae1cb15530a36ce7e32b4a8762a9ab7036089102492fc3c67f25cd91ceec84",
+      "size_bytes": 1076
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\tokenization_summary.json",
+      "sha256": "f411804b637f92451211c03a0a8755fdc608594faa38c797036148d31f8f6592",
+      "size_bytes": 1665
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\train_field_vocabulary.json",
+      "sha256": "035d7b1a6cafc4241a241bc30a055f470511fa4057ae5669b285f57d7bb0c58c",
+      "size_bytes": 5050
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\truncation_examples.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "size_bytes": 4
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\42_encoder_comparison_audit\\run_20261004T113658_658961Z\\vocabulary_audit.csv",
+      "sha256": "bdeb9ee23e757dfe6812352b6afdb7c5585f1d8e140a78a6c3015f509c17640d",
+      "size_bytes": 754
+    }
+  ],
+  "engine_sha256": "bb04a2b8f26473c77e4d50b76b2eaeda56e3eec4026ee01a26712932e41ad238",
+  "script_sha256": "925a8815503038cfa20d5e054a6138c20fcb1dc991c74998d9fded37ec9d5e58",
+  "base_hashes": {
+    "config.json": "69c94b0222d5d1f4b0ad027ca7416cdafb98378cbbb8305d0bf47c9365c60c83",
+    "model.safetensors": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063",
+    "tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+    "tokenizer_config.json": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "encoder_training": {
+    "max_epochs": 6,
+    "min_epochs": 3,
+    "patience": 4,
+    "plateau_delta": 0.0001,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "batch_size": 16,
+    "micro_batch_size": 16,
+    "label_smoothing": 0.0,
+    "warmup_ratio": 0.06,
+    "scheduler": "linear",
+    "eval_batch_size": 16,
+    "seed": 20260928,
+    "shuffle_seed": 20260930,
+    "amp": true
+  },
+  "tst_training": {
+    "max_epochs": 30,
+    "min_epochs": 1,
+    "patience": 7,
+    "plateau_delta": 0.0,
+    "learning_rate": 7e-05,
+    "weight_decay": 0.0005,
+    "batch_size": 256,
+    "micro_batch_size": 256,
+    "label_smoothing": 0.03,
+    "warmup_ratio": 0.0,
+    "scheduler": "plateau",
+    "eval_batch_size": 256,
+    "seed": 20260610,
+    "shuffle_seed": 20260611,
+    "amp": true
+  },
+  "reference_metrics": {
+    "DistilBERT_RandomInit_Train": {
+      "window_val_macro_f1": 0.2825954922299551,
+      "window_val_count": 44148,
+      "window_val_common_macro_f1": 0.3050826371775301,
+      "common_val_count": 37371,
+      "l10_val_macro_f1": 0.6990307848103422,
+      "l10_val_count": 37371,
+      "temporal_delta_val_common_macro_f1": 0.3939481476328121,
+      "encoder_best_epoch": 1,
+      "encoder_epochs": 5,
+      "tst_best_epoch": 29,
+      "tst_epochs": 30
+    },
+    "DistilBERT_Pretrained_Finetune": {
+      "window_val_macro_f1": 0.4040008197170446,
+      "window_val_count": 44148,
+      "window_val_common_macro_f1": 0.4345017402727874,
+      "common_val_count": 37371,
+      "l10_val_macro_f1": 0.8305662193223382,
+      "l10_val_count": 37371,
+      "temporal_delta_val_common_macro_f1": 0.39606447904955083,
+      "encoder_best_epoch": 1,
+      "encoder_epochs": 5,
+      "tst_best_epoch": 28,
+      "tst_epochs": 30
+    }
+  }
+}

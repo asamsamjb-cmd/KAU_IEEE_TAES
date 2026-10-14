@@ -1,0 +1,6 @@
+condition,label,accuracy_mean,macro_f1_mean,macro_f1_head_seed_sd,normal_fpr_mean,delta_f1_condition_minus_clean,bonferroni_ci_low,bonferroni_ci_high
+clean,No removal,0.83538,0.84679,0.00072,0.03983,,,
+remove_context,Context fields,0.78786,0.80167,0.00755,0.06317,-0.04512,-0.06285,-0.02972
+remove_message,Message and control semantics,0.52689,0.48897,0.00143,0.03881,-0.35782,-0.38299,-0.33259
+remove_receiver,RF/GNSS  receiver evidence,0.63559,0.61438,0.01929,0.06434,-0.23241,-0.24624,-0.22024
+remove_trace,Operational and communication trace,0.71031,0.70655,0.00065,0.02123,-0.14025,-0.16794,-0.11465

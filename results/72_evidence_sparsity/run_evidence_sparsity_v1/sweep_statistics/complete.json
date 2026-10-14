@@ -1,0 +1,24 @@
+{
+  "identity": "878b0b88cb3275050f5b0971d472e724555180baccff75fb7ca46e2bab7a75a7",
+  "contract": "d5aa98df8ef3104bfdeb35854c093f03315fc3dcf6c478f090dc4837e395e61a",
+  "result": {
+    "draws": 20000,
+    "clusters": 150,
+    "files": 12
+  },
+  "completed_at_utc": "2026-10-09T08:30:28.585294+00:00",
+  "artifact_sha256": {
+    "block_sufficient_statistics.npz": "763409cabf73bf22d3286f9b46399230ba3fd51cd2a6e143868d8e5f304b894d",
+    "bootstrap_family_metrics.npz": "a1e4b02dc36464d9c6b59a563aef3215bc1929b0b9c0afbc3e0937d3bace16d7",
+    "collapse_points.csv": "9c20bdfe29005bcd5e7fd944b332fbdbb198a228b377540427f06ad0e4f3b8bf",
+    "family_summary.csv": "08232bb0abdd4d4cd0e4342254262d844bdd7a8fc1000afb367b4c359dbd5cd3",
+    "normal_prediction_stability.csv": "f6d8380e4ed7fca781c91b731f2b8e582a4e463eb51a365cd031a13221b33de9",
+    "per_class.csv": "84d251dafd106729730f0933545cf626f1b642be3a04c82d22ae06f0739434f2",
+    "prediction_evaluation.csv": "3ecd6fd89053f311936c5b8c509ec312df0e82be70cb0be0e3110e160ca35801",
+    "primary_contrasts.csv": "e360b96b2aebd5919dee0564803195684b6aa5ab60ca7936f0b517b14b1d1174",
+    "realized_evidence.csv": "a88e16d0ef0744d668672085016337a79280062e8b8de018878f9d0e782d6ef0",
+    "secondary_contrasts.csv": "de2057e0f87d8d686fc1e7cae7f1ebf96fc4bcffd1b8754341d96e8392eb3122",
+    "stratum_accuracy.csv": "e15be095e37df064b66c7cc5b5cb3bd1109fd07b1440fe4ffa402f938744d8bf",
+    "sweep_summary.json": "d55ae4d1d4368b5d9d60b5479805971d579c3c3fea2ef774ef0a11d38be03879"
+  }
+}

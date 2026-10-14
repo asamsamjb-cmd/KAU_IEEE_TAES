@@ -1,0 +1,22 @@
+{
+  "protocol_identity": "af03a209b2df9bb5ab63cfa28345081e49cadbaf4ceaf2dd28738515049c151a",
+  "created_at_utc": "2026-10-08T13:25:04.477942+00:00",
+  "test_score_deserialization_started": false,
+  "artifacts": {
+    "episode_catalog.csv": "767064dff960cd75c6883c7e6b65411f9a76ec6a441c5b10c554bc48ee48787e",
+    "event_catalog.csv": "31df4192a0368f0209a25fead8032b2ff280378bc1e394da653ff6c95ccb5eeb",
+    "gap_catalog.csv": "f548957166d79502da4b37e9122d8d189d235bc631b019bd452b752e4ea7d5d7",
+    "tail_catalog.csv": "5548e93732b5b651ee014ee22a06b1828e62a59801e729656898c30c28a15bc2",
+    "population_audit.csv": "0f16a5ba03891e96edce7330f4d8f4b98a54e2a7c61f367f8f80ae492af2885c",
+    "truth_capability_audit.json": "50aba31bfbb04c3bdfdf6970a952aef2dfcfc857e3315b6d6672bba6bf076940",
+    "metric_specifications.json": "74924be609406ced2abf2bd595730b83e35fcf5f18d23696d0f507e16ca12035",
+    "source/step65_protocol.json": "9e725e776ceb01327257e9fdf2288ddabab3eae1d2ae01eacf84cd2fe2e3c3d1",
+    "source/step65_run_manifest.json": "7f19933c67e7d2ee77b3fb6b90689659ef330582b59493b185ccdabc294f9a80",
+    "source/step65_thresholds.json": "16807b70725be6fc3ef75815b7e203c586053f59b6b0ac01a4c2d57b9e13b085",
+    "source/step65_threshold_lock.json": "850928ac419a0d7d98f54247072387702b59206e5fffb811d6fc1667287a7f7a",
+    "source/step65_thresholds.csv": "abb60fe0baf10cc93b90b84719757bce22448d9e42d808a816b284ea958a3b2c",
+    "source/endpoint_evidence_test.csv": "29ea8359c8255c9b8d13e4443f51902604b52dd223b152d8184d7c8e2507a9b5",
+    "source/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e",
+    "source/66.evidence_transition_alarm_evaluation.py": "715a232335d69565bb9e791307cd2ef61e6a035a92b303bf09d43bdeb1671c7c"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "observable_window_seconds": 1,
+  "tst_sequence_lengths": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "tst_temporal_context_seconds": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "interpretation": "Each row is a 1-second cross-layer observable window. A TST sequence of length L therefore corresponds to L seconds.",
+  "distilbert_input_rule": "Serialize OBSERVABLE_FIELDS only. Metadata is retained only for split/order/evaluation.",
+  "tst_sequence_rule": "Build episode-bounded sequences only; never cross episode or split boundaries."
+}

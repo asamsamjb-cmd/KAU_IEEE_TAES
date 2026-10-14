@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "kind": "TST_L10",
+    "arm": "clean",
+    "config": {
+      "input_dim": 768,
+      "num_classes": 6,
+      "sequence_length": 10,
+      "temporal_context_seconds": 10,
+      "d_model": 128,
+      "num_heads": 4,
+      "num_encoder_layers": 1,
+      "dim_feedforward": 256,
+      "dropout": 0.25,
+      "pooling": "last"
+    },
+    "recipe": {
+      "seed": 20260610,
+      "epochs": 30,
+      "batch_size": 256,
+      "learning_rate": 7e-05,
+      "weight_decay": 0.0005,
+      "label_smoothing": 0.03,
+      "grad_clip_norm": 1.0,
+      "protocol_id": "d169218861a325368fbcd4d7df8c799ee3bf19a36b02ca9c31d328627aebeddd"
+    },
+    "device": "cpu"
+  },
+  "status": "COMPLETE",
+  "initial_state_sha256": "5c7ccb9c000f4ab9a944ab70a396abc7b50bfc4973f20f3fd369226710fd10ed",
+  "selected_epoch": 5,
+  "selection_score": 0.523514052388993,
+  "optimizer_steps": 21030,
+  "masked_sequence_presentations": 0,
+  "total_sequence_presentations": 5382420,
+  "best_checkpoint_sha256": "dd652ada46d012534f2345d3018b546395899a8eee7b4f852dd0bd170064bc74",
+  "parameter_count": 234758
+}

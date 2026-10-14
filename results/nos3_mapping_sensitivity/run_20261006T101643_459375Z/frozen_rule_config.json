@@ -1,0 +1,51 @@
+{
+  "protocol_version": "shared_nominal_v2_semantic_rules_v1",
+  "frozen_at_utc": "2026-10-04T10:24:42.590700+00:00",
+  "protocol_sha256": "cd8fe452dd33c161579060bbdf1f94167cb4d2d199da833af663d50be2cc9f1b",
+  "rule_spec_sha256": "7e9c25d84664ad5d2504960608f1770fc2922d2f28c687785bf914f4d6884754",
+  "script_sha256": "c883b7f7493abd8fa1db4ea7089789661d3d4d6d1e33e9c72253675f9c6ab22f",
+  "label_to_id": {
+    "NORMAL": 0,
+    "RF_LINK_JAMMING": 1,
+    "GNSS_SPOOFING": 2,
+    "UNAUTHORIZED_TELECOMMAND_INJECTION": 3,
+    "TELECOMMAND_REPLAY": 4,
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 5
+  },
+  "models": {
+    "Rule_L1": {
+      "thresholds": [
+        0.3,
+        2.0,
+        0.75,
+        0.2,
+        0.3
+      ],
+      "validation_macro_f1": 0.34132220732002666,
+      "validation_normal_false_alarm_rate": 0.05558217537134643
+    },
+    "Rule_L10": {
+      "thresholds": [
+        0.1,
+        0.5,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "validation_macro_f1": 0.6319023208804043,
+      "validation_normal_false_alarm_rate": 0.10940744290049513
+    }
+  },
+  "calibration_origin": "new_validation_calibration",
+  "calibration_input_sha256": {
+    "dataset/shared_nominal_v2/build_manifest.json": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "outputs/shared_nominal_v2/tst_sequences_finetuned_main/sequence_build_report_index.json": "bff8d5a1ac7a06ce5492f9ad0f0d12e51102e34ce1f51dad07a6e7a83ff76a02",
+    "dataset/shared_nominal_v2/splits/label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+    "dataset/shared_nominal_v2/splits/train_observable.csv": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+    "dataset/shared_nominal_v2/splits/val_observable.csv": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+    "outputs/shared_nominal_v2/tst_embeddings_finetuned_main/val_window_metadata.csv": "95024aac342046f89290926ff96edf53b8e29be5901297032c4f5c5facd513a2",
+    "outputs/shared_nominal_v2/tst_sequences_finetuned_main/val_tst_sequence_metadata_L10.csv": "3cfa6308e1ff332cfc9ad8e5fb392c2ecd8b3bb9fdd9af5bfb7a261a762cabcb",
+    "outputs/shared_nominal_v2/tst_sequences_finetuned_main/val_tst_sequences_L10.npz": "b17f2a4145e6f89eeaa98d631b07c82315e286f2899ffb8158735127453d13db"
+  },
+  "test_inputs_read_before_freeze": false
+}

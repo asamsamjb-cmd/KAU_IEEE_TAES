@@ -1,0 +1,32 @@
+{
+  "schema_columns": [
+    "scenario_id",
+    "episode_id",
+    "episode_type",
+    "episode_step",
+    "window_id",
+    "timestamp",
+    "label",
+    "audit_observable_effect_present",
+    "audit_observable_difference_count",
+    "audit_persistent_effect_present",
+    "audit_attack_active"
+  ],
+  "physical_recovery_evaluation": "NOT_SUPPORTED",
+  "instantaneous_security_state": "NOT_AVAILABLE_IN_CURRENT_AUDIT",
+  "specific_benign_lookalike_annotations": "NOT_AVAILABLE_IN_THIS_EVALUATOR",
+  "continuous_cross_episode_operation": "NOT_EVALUATED",
+  "supported": [
+    "within-record intervention bursts",
+    "observable-change runs and intervening gaps",
+    "known new alerts versus carried alarms",
+    "alarm behavior in terminal audit-quiet suffixes"
+  ],
+  "restrictions": [
+    "All-zero audit flags do not certify recovery or benign operational state.",
+    "No episode stitching, reset at ground-truth onset, relabeling or recovery claim.",
+    "Original episode boundaries remain; repeated events in an episode are not independent samples.",
+    "Terminal suffix identification uses future audit within the record, for retrospective evaluation only."
+  ],
+  "conclusion": "Proceed with limited evidence-transition analysis. A separate recovery experiment needs independent state truth."
+}

@@ -1,0 +1,97 @@
+{
+  "stage": "test",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "identity_hash": "de14da0de6c8e1d0f7fb861026c9e9ef795e986e30e3833be1ce964f2c2c003c",
+  "cohort": {
+    "n_endpoints": 30561,
+    "eligible_episodes": 751,
+    "total_source_episodes": 752,
+    "short_episodes_excluded": 1,
+    "endpoint_sha256": "51510e4bd6b487059a84bd666f5255a0121b7c327c7ffb4ac2bfa2e31cee7800",
+    "labels_sha256": "629eb5ee1492c8ac66dba0f45947999b05e517587458c676370953021f14cbb0",
+    "L10_indices_sha256": "91003e0f72ac81d9486d906b3bc9e760d71fb019eb03f08eff0521c181dc12fe",
+    "L20_indices_sha256": "a167345d2fb9eb08ad42141d41b4500654cb1de5e6f4ff9b00482a8c67731059",
+    "original_step10_L10_exact_match": true,
+    "class_counts": {
+      "NORMAL": 4465,
+      "RF_LINK_JAMMING": 5215,
+      "GNSS_SPOOFING": 4926,
+      "UNAUTHORIZED_TELECOMMAND_INJECTION": 5495,
+      "TELECOMMAND_REPLAY": 5488,
+      "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 4972
+    }
+  },
+  "model": "MeanMax_MLP",
+  "num_seeds": 3,
+  "values": {
+    "10": {
+      "accuracy_mean": 0.8807412497409551,
+      "accuracy_std": 0.0001679134007213663,
+      "macro_f1_mean": 0.8861897791981791,
+      "macro_f1_std": 0.0002693179924331592,
+      "weighted_f1_mean": 0.8903304632901735,
+      "weighted_f1_std": 0.0002945737844021303
+    },
+    "20": {
+      "accuracy_mean": 0.9490527142436438,
+      "accuracy_std": 0.0004820169452130633,
+      "macro_f1_mean": 0.9486756022415684,
+      "macro_f1_std": 0.0004846644499558558,
+      "weighted_f1_mean": 0.951120268834949,
+      "weighted_f1_std": 0.0004561413539030517
+    }
+  },
+  "interpretation": "exploratory, matched train/validation/test endpoint cohort",
+  "scope": "Head-seed SD conditional on fixed encoder/dataset, not paired episode CI.",
+  "2x2": [
+    {
+      "model": "MeanMax_MLP",
+      "length": 10,
+      "n_seeds": 3,
+      "macro_f1_mean": 0.8861897791981791,
+      "macro_f1_sd": 0.0002693179924331592,
+      "accuracy_mean": 0.8807412497409551,
+      "source": "Step30 new matched Mean+Max",
+      "stage": "test",
+      "n_endpoints": 30561,
+      "n_episodes": 751
+    },
+    {
+      "model": "MeanMax_MLP",
+      "length": 20,
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9486756022415684,
+      "macro_f1_sd": 0.0004846644499558558,
+      "accuracy_mean": 0.9490527142436438,
+      "source": "Step30 new matched Mean+Max",
+      "stage": "test",
+      "n_endpoints": 30561,
+      "n_episodes": 751
+    },
+    {
+      "model": "TST",
+      "length": 10,
+      "n_seeds": 3,
+      "macro_f1_mean": 0.8853917078511703,
+      "macro_f1_sd": 0.0003436014515526848,
+      "accuracy_mean": 0.8797377921752124,
+      "source": "Step29 matched L10",
+      "stage": "test",
+      "n_endpoints": 30561,
+      "n_episodes": 751
+    },
+    {
+      "model": "TST",
+      "length": 20,
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9489953531780269,
+      "macro_f1_sd": 0.00028819792392464146,
+      "accuracy_mean": 0.949249042897811,
+      "source": "Step27 L20",
+      "stage": "test",
+      "n_endpoints": 30561,
+      "n_episodes": 751
+    }
+  ],
+  "post_test_design": true
+}

@@ -1,0 +1,42 @@
+{
+  "name": "fresh_1",
+  "maker_seeds": [
+    1754031957,
+    432127698,
+    3183227520,
+    318666098,
+    2781632442,
+    3439734493
+  ],
+  "split_seed": 3449719792,
+  "original_replay_passed": false,
+  "population": {
+    "train": {
+      "rows": 210911,
+      "episodes": 3529
+    },
+    "val": {
+      "rows": 43847,
+      "episodes": 755
+    },
+    "test": {
+      "rows": 45242,
+      "episodes": 757
+    }
+  },
+  "fresh_train_val_used_for_fitting_or_selection": false,
+  "filtering": false,
+  "observable_row_overlap": {
+    "original_train": {
+      "rows_matching": 42432,
+      "total_rows": 45242
+    }
+  },
+  "endpoints": 38429,
+  "eligible_episodes": 757,
+  "effect_strata": {
+    "history_only_changed": 15507,
+    "no_observable_change": 12511,
+    "current_changed": 10411
+  }
+}

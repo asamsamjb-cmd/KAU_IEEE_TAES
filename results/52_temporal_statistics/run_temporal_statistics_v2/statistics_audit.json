@@ -1,0 +1,11 @@
+{
+  "draws": 20000,
+  "seed": 2026100152,
+  "batch_size": 100,
+  "sampling": "class-stratified whole episode; identical draw paired across clean, masks, families and fitted head seeds",
+  "estimand": "per-head endpoint six-class macro-F1, mean heads, then equal mean of three masks; no probability ensemble",
+  "CI_scope": "conditional on dataset, encoder, fitted heads and three masks; no head/mask resampling",
+  "population": "all eligible endpoints, including no_observable_change; effects are diagnostics only",
+  "multiplicity": "four reference-minus-statistics contrasts; Bonferroni 98.75% marginal intervals",
+  "equivalence_claim": false
+}

@@ -1,0 +1,104 @@
+{
+  "status": "COMPLETE",
+  "started_at_utc": "2026-10-04T10:41:40.784801+00:00",
+  "source_contract": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "common_endpoint_report": {
+      "reference_length": 10,
+      "rule": "Intersection of end_row_indices across L within each split; no rows filtered by Step 10.",
+      "downstream_rule": "Compare context lengths on these same endpoints; report all-available-window results separately.",
+      "splits": {
+        "train": {
+          "common_endpoint_count": 179414,
+          "sorted_end_row_indices_sha256": "d05c6340c61c0bfb2dbea11b238a44bdbcda51613663d2b55ccccfd9c207a761",
+          "available_sequences_by_L": {
+            "1": 211006,
+            "2": 207495,
+            "3": 203984,
+            "5": 196964,
+            "10": 179414
+          }
+        },
+        "val": {
+          "common_endpoint_count": 37371,
+          "sorted_end_row_indices_sha256": "5cd4a5d5797eafaf4fe5f4b1bdbadac936ef233dc9e48833cb30bb215a97fcf2",
+          "available_sequences_by_L": {
+            "1": 44148,
+            "2": 43395,
+            "3": 42642,
+            "5": 41136,
+            "10": 37371
+          }
+        },
+        "test": {
+          "common_endpoint_count": 38078,
+          "sorted_end_row_indices_sha256": "98860cb9acd0348efe69583e7dce14c09f2b59c77c1a43b2a545065cd241098b",
+          "available_sequences_by_L": {
+            "1": 44846,
+            "2": 44094,
+            "3": 43342,
+            "5": 41838,
+            "10": 38078
+          }
+        }
+      }
+    },
+    "observability_audit": {
+      "schema_version": "counterfactual_observable_change_v1",
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+      "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "split_files": {
+        "train": "audit/train_window_observable_effects.csv",
+        "val": "audit/val_window_observable_effects.csv",
+        "test": "audit/test_window_observable_effects.csv"
+      },
+      "artifacts": {
+        "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+        "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+        "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+      },
+      "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+    }
+  },
+  "output_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\17_rule_paired_episode_bootstrap\\run_20261004T104140_784045Z",
+  "protocol_sha256": "4077e7c99d2e59fafbed681a6db4c4e41b05b6334a4056c4417f7d3f0250702b",
+  "source_step15": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\15_paired_episode_bootstrap\\run_20261004T102551_378013Z",
+  "source_step16": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z",
+  "source_formats": {
+    "step15": "1.1",
+    "step16": "shared_nominal_v2_semantic_rules_v1",
+    "rule_diagnostics": "not saved by this producer",
+    "step16_access_scope": "Existing v1 reads test episode IDs for count validation before calibration; the recorded full test evidence reads follow saved thresholds. No stronger no-test-read claim."
+  },
+  "metadata_sha256": "817150a89d5aed299450eb6e3cdfd1a42d71fdc37f75889eff452f6d6373a958",
+  "n_sequences": 38078,
+  "n_episodes": 752,
+  "class_episode_counts": {
+    "GNSS_SPOOFING": 125,
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 122,
+    "NORMAL": 130,
+    "RF_LINK_JAMMING": 125,
+    "TELECOMMAND_REPLAY": 127,
+    "UNAUTHORIZED_TELECOMMAND_INJECTION": 123
+  },
+  "step15_tst_bootstrap_max_abs_difference": 0.0,
+  "elapsed_seconds": 10.74297259998275,
+  "finished_at_utc": "2026-10-04T10:41:51.527782+00:00",
+  "output_sha256": {
+    "analysis_summary.md": "4e6f8c6bc554ff9f14e62ddf6a47825d0918bf922c3f3034b3feb9d5d6c5b77c",
+    "bootstrap_distribution.npz": "8973b05e35e43c325a73f4fc8167020177c7f1129c1290bcc042d22abf396c86",
+    "episode_inventory.csv": "b1af1536dd70e328ac12c37bb5f75b23b4bacc1200c06623b63a2b1f4c256bff",
+    "input_audit.json": "915cfa53104d3a4cd4e571ae02b8b7f4f3ca6e26ab398b8c031abf4f4ee37e70",
+    "metrics_by_run.csv": "d101e62309e86225591248dd48d7a8fc7ec5b9720d7c8a5fd28b8ffec871bd2d",
+    "model_summary.csv": "ce9d2ee070d94d3c91f1f468ee2070c9ab353e162cf8a6f0d22ddf53be2eb17c",
+    "paired_comparisons.csv": "37ba92e05b34c8ae1df9d89e735d31dd8f32cc2e3b11838fb5581764ed1cc2b3",
+    "protocol.json": "4077e7c99d2e59fafbed681a6db4c4e41b05b6334a4056c4417f7d3f0250702b",
+    "row_normalized_confusion.csv": "adab16a13367028371d20f701c1244385573d5fd16d91559e9842c76c40eee06"
+  },
+  "review_zip": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\17_rule_paired_episode_bootstrap\\run_20261004T104140_784045Z.zip",
+  "archive_note": "Derived transfer container; output inventory covers its member artifacts, not the ZIP itself."
+}

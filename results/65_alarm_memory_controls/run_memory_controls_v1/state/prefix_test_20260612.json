@@ -1,0 +1,15 @@
+{
+  "identity": "511ed4b92f91f723e280392182437f68245408bc4c2a2626bd8ba1e5239b04e5",
+  "files": {
+    "prefix_predictions/prefix_test_20260612.npz": "6654e0ce9f43d930f5e10b427f74d2ebe687bc0d73f9c0e06804df47bee784f2"
+  },
+  "details": {
+    "prefix_rows": 6768,
+    "canary_endpoints": 1504,
+    "max_abs_canary_error": 1.8656262591565387e-05,
+    "canary_argmax_disagreements": 0,
+    "checkpoint_sha256": "dc4e0b104b780c9a71a3b78f313a6292c6060d6b1cf848d82e9d169b3492f37b",
+    "new_encoder_inference": false,
+    "training": false
+  }
+}

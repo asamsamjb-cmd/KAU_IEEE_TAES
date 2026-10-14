@@ -1,0 +1,436 @@
+[
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\distilbert_window_baseline\\run_manifest.json",
+    "sha256": "665b994dc422fdadd0d8a0cda690d7cd082074ad320537bb873c0afd778be968",
+    "size_bytes": 14593
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\run_manifest.json",
+    "sha256": "dbdff8a70be63b51ed0f73167d2d878a2df8daedae70c6be227d2d018df70b17",
+    "size_bytes": 20341
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\run_manifest.json",
+    "sha256": "7580acc3d0fc1d02a3fea2252d89a442cfdddfcd9ecf171b2106cf1a555bd7d0",
+    "size_bytes": 12618
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\build_manifest.json",
+    "sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "size_bytes": 9249
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\sequence_build_report_index.json",
+    "sha256": "bff8d5a1ac7a06ce5492f9ad0f0d12e51102e34ce1f51dad07a6e7a83ff76a02",
+    "size_bytes": 6163
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\sequence_build_report_L10.json",
+    "sha256": "3a7251ae524206f79ca01dea7e03c344c53063f62ef9a12e188acff9820abf05",
+    "size_bytes": 17756
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\test_tst_sequence_metadata_L10.csv",
+    "sha256": "817150a89d5aed299450eb6e3cdfd1a42d71fdc37f75889eff452f6d6373a958",
+    "size_bytes": 8236379
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\run_manifest.json",
+    "sha256": "7580acc3d0fc1d02a3fea2252d89a442cfdddfcd9ecf171b2106cf1a555bd7d0",
+    "size_bytes": 12618
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\test_tst_sequence_observable_effects_L10.csv",
+    "sha256": "3a9b7d87ba9dede0291e052918645de7927ab9fcf017ed905c0c52985e5baf40",
+    "size_bytes": 9213809
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\15_paired_episode_bootstrap\\run_20261004T102551_378013Z\\run_manifest.json",
+    "sha256": "62f2a39febcc7e8bb0cf8c4744618716f060f2024a4acd4e7aa649132272b126",
+    "size_bytes": 1884
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z\\run_manifest.json",
+    "sha256": "e82ae8bb6ffe19029b48fa4465b1f9b0f74544cc8d4d4a94452a03a4dcf1d651",
+    "size_bytes": 10478
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\15_paired_episode_bootstrap\\run_20261004T102551_378013Z\\protocol.json",
+    "sha256": "f983166d27a5d084ee39687fb5f3a4c308281ced3475efbc318fe9d64fa0fa70",
+    "size_bytes": 2751
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\build_manifest.json",
+    "sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "size_bytes": 9249
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\run_manifest.json",
+    "sha256": "dbdff8a70be63b51ed0f73167d2d878a2df8daedae70c6be227d2d018df70b17",
+    "size_bytes": 20341
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\run_manifest.json",
+    "sha256": "7580acc3d0fc1d02a3fea2252d89a442cfdddfcd9ecf171b2106cf1a555bd7d0",
+    "size_bytes": 12618
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\build_manifest.json",
+    "sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "size_bytes": 9249
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\sequence_build_report_index.json",
+    "sha256": "bff8d5a1ac7a06ce5492f9ad0f0d12e51102e34ce1f51dad07a6e7a83ff76a02",
+    "size_bytes": 6163
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\label_mapping.json",
+    "sha256": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+    "size_bytes": 1878
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\train_observable.csv",
+    "sha256": "82f1b4d5a68a7ef4398cea428df3c9048ae2204e37d5869a04fbf5971939535b",
+    "size_bytes": 82116816
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\val_observable.csv",
+    "sha256": "24676f5a5be9f24da25ce45645b27ba8838e1e3fbd2b90a12039879be564b973",
+    "size_bytes": 17197394
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\test_observable.csv",
+    "sha256": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+    "size_bytes": 17480563
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\val_window_metadata.csv",
+    "sha256": "95024aac342046f89290926ff96edf53b8e29be5901297032c4f5c5facd513a2",
+    "size_bytes": 6012054
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\val_tst_sequence_metadata_L10.csv",
+    "sha256": "3cfa6308e1ff332cfc9ad8e5fb392c2ecd8b3bb9fdd9af5bfb7a261a762cabcb",
+    "size_bytes": 8038693
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\val_tst_sequences_L10.npz",
+    "sha256": "b17f2a4145e6f89eeaa98d631b07c82315e286f2899ffb8158735127453d13db",
+    "size_bytes": 225408
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_embeddings_finetuned_main\\test_window_metadata.csv",
+    "sha256": "86f13ac47bc3fc6c337736da94dfac05c1e96e7907c3d8d37b4aa3089d0c7f68",
+    "size_bytes": 6113270
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\test_tst_sequence_metadata_L10.csv",
+    "sha256": "817150a89d5aed299450eb6e3cdfd1a42d71fdc37f75889eff452f6d6373a958",
+    "size_bytes": 8236379
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_sequences_finetuned_main\\test_tst_sequences_L10.npz",
+    "sha256": "d93eb86d5f4f5acdc185c22e0dc377e15da4cd17cf1bde6e30b30b7dc308efff",
+    "size_bytes": 229288
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\15_paired_episode_bootstrap\\run_20261004T102551_378013Z\\input_audit.csv",
+    "sha256": "f0cc4adcb8d801192b37c6232d742fb31e05b6e7d30bc0d0dc32d60f9bd4ce8f",
+    "size_bytes": 15067
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\15_paired_episode_bootstrap\\run_20261004T102551_378013Z\\metrics_by_seed.csv",
+    "sha256": "d341ae0f73599243c7a2b90515013f4e4355b504d17ab6d92a6d4902ee4a1f09",
+    "size_bytes": 3058
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\15_paired_episode_bootstrap\\run_20261004T102551_378013Z\\model_summary.csv",
+    "sha256": "775bbf6a75e209bf7a9f30fe8516138cc9139617665232b86395c9242e469560",
+    "size_bytes": 537
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\15_paired_episode_bootstrap\\run_20261004T102551_378013Z\\bootstrap_distribution.npz",
+    "sha256": "a5ffcaefc89e4c2cc50cc27456c5b3245b123e63db2d3aac6e69a78cdc775978",
+    "size_bytes": 1267261
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z\\frozen_rule_config.json",
+    "sha256": "02b895a7b6b208e605d6b082263759f975c52371f062ce83f65f0b2dc44a1893",
+    "size_bytes": 2413
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z\\protocol.json",
+    "sha256": "b8490c3efe8093241abcc69ba2b8cab3bc286cb19dad76fd9cfa044d18a31a1b",
+    "size_bytes": 2394
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z\\rule_spec.json",
+    "sha256": "04ea54a5631fa769eeb36746efaf4f4b4a95071dd2b23eab710f8063e6be7027",
+    "size_bytes": 15548
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z\\results_summary.csv",
+    "sha256": "32495947081d54f377adc32fb23829a20ce41f1567fd4980e9889e0a31a0acb1",
+    "size_bytes": 802
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z\\data_audit.json",
+    "sha256": "c311e230b5cb1d215b405feae9e319596c233d3e92e716b3374014b9ddddee11",
+    "size_bytes": 2062
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z\\test_predictions_Rule_L1.csv",
+    "sha256": "ec0f8551411f96caa0ea7844ccc34cef36a61e2fd0f15dc17ce7b598e8265fda",
+    "size_bytes": 11310585,
+    "model": "Rule_L1",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "not emitted by existing Step 16",
+    "seed": null
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\16_observable_rule_baseline\\run_20261004T102431_766880Z\\test_predictions_Rule_L10.csv",
+    "sha256": "24c02d92d9763ccc2c47ce44069fdfe18489026fc81436dccac09b7dc137cf45",
+    "size_bytes": 11728305,
+    "model": "Rule_L10",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "not emitted by existing Step 16",
+    "seed": null
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\run_manifest.json",
+    "sha256": "d99c4c424251e0b0dbf062de3e181309b271b4ec64a1e4b118246fe20c62805b",
+    "size_bytes": 48975,
+    "binding": "derived from the saved prediction path; verified against current upstream inputs"
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L10\\reports\\observable_effect_diagnostics_test_L10.json",
+    "sha256": "c0488857fedc4f3847af13cac816a4798edc0c3d76314676cb92583dedeee818",
+    "size_bytes": 14101
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_main\\L10\\predictions\\test_predictions_L10.csv",
+    "sha256": "dcbacdf276688e9ffc1c4cebecf787dc0349d25c76902da017f0161ce59f45b7",
+    "size_bytes": 26603237,
+    "model": "TST",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "verified",
+    "seed": 20260610
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260611\\run_manifest.json",
+    "sha256": "d559f2e7d34b1597f7c05965796f5f0a5bfbdc74f3099618a1e817b7de1dacca",
+    "size_bytes": 48995,
+    "binding": "derived from the saved prediction path; verified against current upstream inputs"
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260611\\L10\\reports\\observable_effect_diagnostics_test_L10.json",
+    "sha256": "d69487716f2276c83862a02409b7c431a11232297c4f92fc4ecc982c9651887c",
+    "size_bytes": 14107
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260611\\L10\\predictions\\test_predictions_L10.csv",
+    "sha256": "7f6a9d2cf6674a5f2ef887db0540cb127dc8a1e23790c0de4d42e2b546a7680c",
+    "size_bytes": 26603345,
+    "model": "TST",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "verified",
+    "seed": 20260611
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260612\\run_manifest.json",
+    "sha256": "04331ccd699a7d28681d90e4a283504a55483812292610b7635ccf3e543add13",
+    "size_bytes": 48995,
+    "binding": "derived from the saved prediction path; verified against current upstream inputs"
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260612\\L10\\reports\\observable_effect_diagnostics_test_L10.json",
+    "sha256": "62bdb461aac20ff8b0d37e51c15dfa0d18c1890413768f5cac6a650a47c99687",
+    "size_bytes": 14109
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260612\\L10\\predictions\\test_predictions_L10.csv",
+    "sha256": "a5838fb8b28288a245fb7d8a97e4e6fd4f2c77f7cb8b6f57471fdfb9b56c999c",
+    "size_bytes": 26657861,
+    "model": "TST",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "verified",
+    "seed": 20260612
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260613\\run_manifest.json",
+    "sha256": "94fae516941cd09d034777a4423af5a78237a19bd54b11d2f1b81168c9dbe8ad",
+    "size_bytes": 48995,
+    "binding": "derived from the saved prediction path; verified against current upstream inputs"
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260613\\L10\\reports\\observable_effect_diagnostics_test_L10.json",
+    "sha256": "6e6437171aa44c073594d1218cb2747ac9c21d81e6377e821f9a9336209d3e60",
+    "size_bytes": 14107
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260613\\L10\\predictions\\test_predictions_L10.csv",
+    "sha256": "de7f2b1e655bc1d7e512edf104ff2384790d87acdc45ccdf3459e77d83ee3372",
+    "size_bytes": 26603849,
+    "model": "TST",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "verified",
+    "seed": 20260613
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260614\\run_manifest.json",
+    "sha256": "b4d9c34097c26c4d3c0d4c383cddba6d0950bc5beb4b30fd943c95d4684dec67",
+    "size_bytes": 48995,
+    "binding": "derived from the saved prediction path; verified against current upstream inputs"
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260614\\L10\\reports\\observable_effect_diagnostics_test_L10.json",
+    "sha256": "5bc32f7373f61c668d4b5339f62d661abeb42dd69a987e410c286c4549452b34",
+    "size_bytes": 14107
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260614\\L10\\predictions\\test_predictions_L10.csv",
+    "sha256": "295b2df46985a7f1d38e76148d9e5e2b4ceb3372fb358d1fc21355596b206893",
+    "size_bytes": 26605651,
+    "model": "TST",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "verified",
+    "seed": 20260614
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260615\\run_manifest.json",
+    "sha256": "b4908b07f53e624e914970fa4c800cc640865b3538ea454d2003199456807ae7",
+    "size_bytes": 48995,
+    "binding": "derived from the saved prediction path; verified against current upstream inputs"
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260615\\L10\\reports\\observable_effect_diagnostics_test_L10.json",
+    "sha256": "e040d2e038307411b42702b0f7b525339b4ff449a3784f0ca5bf52da77552b49",
+    "size_bytes": 14105
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260615\\L10\\predictions\\test_predictions_L10.csv",
+    "sha256": "64baa9061c5e9e89ada05d18bcee421eece6cb64e2b5d3dfd340ff5273a7437b",
+    "size_bytes": 26606130,
+    "model": "TST",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "verified",
+    "seed": 20260615
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260616\\run_manifest.json",
+    "sha256": "69c40482ca036c771424af71a17c43940463201bea96c4f1c0645dd9756f1448",
+    "size_bytes": 48995,
+    "binding": "derived from the saved prediction path; verified against current upstream inputs"
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260616\\L10\\reports\\observable_effect_diagnostics_test_L10.json",
+    "sha256": "5786974d95207d1d13a2a6d0112af94e11afa9ee44fbe26e4c06adbc7c82d2ef",
+    "size_bytes": 14109
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260616\\L10\\predictions\\test_predictions_L10.csv",
+    "sha256": "747d2d7375816f66985edba0d8e705a6506a4557e25d3d992021256b218ed295",
+    "size_bytes": 26603840,
+    "model": "TST",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "verified",
+    "seed": 20260616
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260617\\run_manifest.json",
+    "sha256": "949d544b7931cf0f826eb08819d80e584a9f41a7b448baa44382b0057a94cd88",
+    "size_bytes": 48995,
+    "binding": "derived from the saved prediction path; verified against current upstream inputs"
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260617\\L10\\reports\\observable_effect_diagnostics_test_L10.json",
+    "sha256": "07a03296f392b2291c65898d120a2f4a5b21321b12b78c2eb9fd67eb7d8c1444",
+    "size_bytes": 14107
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260617\\L10\\predictions\\test_predictions_L10.csv",
+    "sha256": "f6724e5a8ecd9969f57637667e9de57fcb5b955886c6906cb2e2c4953371514a",
+    "size_bytes": 26604361,
+    "model": "TST",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "verified",
+    "seed": 20260617
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\run_manifest.json",
+    "sha256": "08f2dd509ff60ff85f8ff1c24a3dc0072159fde33889790978346d0c5bba9f25",
+    "size_bytes": 48995,
+    "binding": "derived from the saved prediction path; verified against current upstream inputs"
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L10\\reports\\observable_effect_diagnostics_test_L10.json",
+    "sha256": "3f41e504745f37d58297a2f9265d394d5799b905b3c2e581cdf698e7b304fe16",
+    "size_bytes": 14107
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260618\\L10\\predictions\\test_predictions_L10.csv",
+    "sha256": "a054269af0c5e00a4541544ce2ad76d58acad44318ee99e8839e148dd36e93e8",
+    "size_bytes": 26603019,
+    "model": "TST",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "verified",
+    "seed": 20260618
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260619\\run_manifest.json",
+    "sha256": "4ae4723bf74bf8d4a86413af61a2360811483e31afb110825a28ba2527fe5f31",
+    "size_bytes": 48995,
+    "binding": "derived from the saved prediction path; verified against current upstream inputs"
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260619\\L10\\reports\\observable_effect_diagnostics_test_L10.json",
+    "sha256": "bfa403d66711d318b08866903bbae5531d90adf85d8edd3c37d8af3fa456b6ca",
+    "size_bytes": 14109
+  },
+  {
+    "path": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\outputs\\shared_nominal_v2\\tst_training_finetuned_multiseed\\seed_20260619\\L10\\predictions\\test_predictions_L10.csv",
+    "sha256": "7d4dbe5fa346ac09f00decb41f48a35f8f89394f1be1f50ce27eebd066cc89d2",
+    "size_bytes": 26605670,
+    "model": "TST",
+    "rows": 38078,
+    "rows_reordered": false,
+    "alignment": "PASS",
+    "common_population_verification": "complete Step 10 row/endpoint/label identity",
+    "saved_observable_diagnostics": "verified",
+    "seed": 20260619
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "round": 0,
+    "case_indices": [
+      1,
+      2,
+      6,
+      3,
+      4,
+      0,
+      5,
+      7
+    ],
+    "scopes": [
+      "full10_model_only",
+      "stream1_model_only",
+      "full10_end_to_end",
+      "stream1_end_to_end",
+      "head_only"
+    ]
+  },
+  {
+    "round": 1,
+    "case_indices": [
+      7,
+      5,
+      0,
+      4,
+      3,
+      6,
+      2,
+      1
+    ],
+    "scopes": [
+      "full10_model_only",
+      "head_only",
+      "stream1_end_to_end",
+      "full10_end_to_end",
+      "stream1_model_only"
+    ]
+  },
+  {
+    "round": 2,
+    "case_indices": [
+      7,
+      1,
+      2,
+      6,
+      3,
+      4,
+      0,
+      5
+    ],
+    "scopes": [
+      "full10_end_to_end",
+      "stream1_end_to_end",
+      "head_only",
+      "full10_model_only",
+      "stream1_model_only"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "protocol_identity": "6143e2605cf2b3cddf12d99ab5b3b21b7b486445a3f6c1d858436352e12c93a0",
+  "completed_at_utc": "2026-10-08T17:47:43.568917+00:00",
+  "artifacts": {
+    "normal_reference.json": "36a9bfb9c6045d3359f94c8d2160a4ee1a9dc14e1c062c1d1feb68696641c166",
+    "thresholds.json": "a6617e3f5092f4217bc4836fb3b6166f2af235e46e5b1ac0d71cdc1f2cb906a1",
+    "thresholds.csv": "7d1fc65c798f5bdfc1e6716952f787f80501203a96517b9d0c38545d4041b32b",
+    "scores_val.npz": "fdc4058f77be812406fd427513a4630396c32979d48d0f9ad1f629c228bf5980",
+    "raw_rf_components_val.npz": "cb06bc6410c63ded2688dfc3395ddb60ae6cf3ed7bc747f1b1db5e83b95bfac2",
+    "coverage_val.csv": "d9ec1f9dff7ac56c6339dbc4d591d35816b3f42cd5be230642caca1fc7f2d5ed",
+    "hgb_replay_val.json": "5553535061fcee0d95236f69d1342ef71f92e0774eda37612b51087727336fab",
+    "calibration_input_audit.json": "925fa3a1eede7009ae75cbe0fff54a627154cd52a03d898d60b68eb576a4f565"
+  }
+}

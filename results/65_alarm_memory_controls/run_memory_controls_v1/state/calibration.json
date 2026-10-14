@@ -1,0 +1,9 @@
+{
+  "identity": "511ed4b92f91f723e280392182437f68245408bc4c2a2626bd8ba1e5239b04e5",
+  "files": {
+    "thresholds.json": "16807b70725be6fc3ef75815b7e203c586053f59b6b0ac01a4c2d57b9e13b085",
+    "thresholds.csv": "abb60fe0baf10cc93b90b84719757bce22448d9e42d808a816b284ea958a3b2c",
+    "threshold_lock.json": "850928ac419a0d7d98f54247072387702b59206e5fffb811d6fc1667287a7f7a"
+  },
+  "details": {}
+}

@@ -1,0 +1,17 @@
+﻿label,latency_status,episodes
+GNSS_SPOOFING,eligible,48
+GNSS_SPOOFING,change_before_first_prediction,77
+GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE,change_before_first_prediction,13
+GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE,eligible,104
+GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE,less_than_10s_followup,5
+NORMAL,normal_control,130
+RF_LINK_JAMMING,change_before_first_prediction,54
+RF_LINK_JAMMING,eligible,67
+RF_LINK_JAMMING,no_observed_change,2
+RF_LINK_JAMMING,less_than_10s_followup,2
+TELECOMMAND_REPLAY,eligible,105
+TELECOMMAND_REPLAY,change_before_first_prediction,11
+TELECOMMAND_REPLAY,less_than_10s_followup,8
+TELECOMMAND_REPLAY,no_observed_change,3
+UNAUTHORIZED_TELECOMMAND_INJECTION,eligible,55
+UNAUTHORIZED_TELECOMMAND_INJECTION,change_before_first_prediction,68

@@ -1,0 +1,21 @@
+Step 50: shared_nominal_v2 A 시나리오별 독립 Rule one-vs-rest 평가
+
+38,078 matched test endpoints / 752 episodes; existing Step 16 validation thresholds.
+독립 탐지: 각 결합 전 evidence/threshold >= 1. 다중분류 argmax 이진화와 구분.
+기존 multiclass 결과를 본 뒤 정한 retrospective analysis이며 임계값 재탐색 없음.
+
+Attack | L1 binary F1 | L10 binary F1 | delta | paired Bonferroni 99% CI
+RF jamming | 0.189868 | 0.632037 | +0.442169 | [+0.412847, +0.470301]
+GNSS spoofing | 0.788597 | 0.884137 | +0.095539 | [+0.078621, +0.113042]
+TC injection | 0.346111 | 0.655395 | +0.309285 | [+0.274759, +0.342455]
+TC replay | 0.278622 | 0.643880 | +0.365258 | [+0.327976, +0.398940]
+Ground control | 0.140515 | 0.423083 | +0.282568 | [+0.229491, +0.332263]
+
+정상-only FPR 및 rest FPR은 binary_metrics.csv에서 분리 보고.
+양성 예측이 없으면 precision은 미정의(빈 값); CI도 미정의 표본을 제거해 계산하지 않음.
+독립 탐지와 최종 결합은 TP/FP를 함께 바꾸므로 F1 차이로 결합 제거를 권고하지 않음.
+L10은 평균 evidence·replay recurrence·별도 validation 임계값을 함께 바꾼 구성 비교.
+R2-5 부분 대응 및 R2-1 보완. 발표된 탐지기 재현, 외부 검증, TST 우월성 증명은 아님.
+CI는 규칙/임계값 선택을 조건으로 한 클래스별 전체 episode bootstrap 근사.
+기존 여섯 클래스 macro-F1과 다섯 독립 binary F1은 같은 지표가 아니므로 대체 금지.
+관측 정상 오탐 0의 percentile CI [0,0]은 경험적 퇴화 구간이며 모집단 위험의 상한이 아님.

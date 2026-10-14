@@ -1,0 +1,109 @@
+{
+  "status": "COMPLETE",
+  "run_id": "34b01110d483dfeb8c5c3b011f2bccd61f942a372de221dc8a80a0d5799f9772",
+  "identity": {
+    "protocol_version": "label_independent_structured_missing_v2",
+    "input_contract_version": "shared_nominal_v2",
+    "source_contract": {
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "nominal_substrate": "shared_nominal_v2",
+      "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "observability_audit": {
+        "schema_version": "counterfactual_observable_change_v1",
+        "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+        "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+        "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+        "split_files": {
+          "train": "audit/train_window_observable_effects.csv",
+          "val": "audit/val_window_observable_effects.csv",
+          "test": "audit/test_window_observable_effects.csv"
+        },
+        "artifacts": {
+          "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+          "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+          "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+        },
+        "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+      }
+    },
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "input_sha256": {
+      "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\test_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+      "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\splits\\label_mapping.json": "5639633faf7f2c7d760ff319dc11676492ee5287a5db477c41e0c43f08cd5622",
+      "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2\\build_manifest.json": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2"
+    },
+    "script_sha256": "372bb9f9878cc13a51af1ba8cdbcd79c3b886bb98157b0f632f3300f37a005d1",
+    "seed": 20260610,
+    "missing_counts": [
+      2,
+      5,
+      8
+    ],
+    "placeholder": "UNK",
+    "scenarios": {
+      "2": {
+        "missing_count": 2,
+        "affected_fraction": 0.25,
+        "burst_length_range": [
+          2,
+          4
+        ]
+      },
+      "5": {
+        "missing_count": 5,
+        "affected_fraction": 0.35,
+        "burst_length_range": [
+          3,
+          6
+        ]
+      },
+      "8": {
+        "missing_count": 8,
+        "affected_fraction": 0.45,
+        "burst_length_range": [
+          4,
+          8
+        ]
+      }
+    }
+  },
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "source_contract": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "nominal_substrate": "shared_nominal_v2",
+    "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "observability_audit": {
+      "schema_version": "counterfactual_observable_change_v1",
+      "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+      "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+      "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+      "split_files": {
+        "train": "audit/train_window_observable_effects.csv",
+        "val": "audit/val_window_observable_effects.csv",
+        "test": "audit/test_window_observable_effects.csv"
+      },
+      "artifacts": {
+        "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+        "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+        "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+      },
+      "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+    }
+  },
+  "started_at_utc": "2026-10-04T10:51:29.364620+00:00",
+  "completed_at_utc": "2026-10-04T10:52:10.994621+00:00",
+  "artifacts": {
+    "audit/test_realistic_missing2_burst_audit.csv": "098b5a991993e90da5e8c313b3a5921a1420f573d45aa277bdce6364aa23030e",
+    "audit/test_realistic_missing2_mask_audit.csv": "44071cef7d3aad16244c17295003175ae509e0b57f3357e55bb00360153a9863",
+    "audit/test_realistic_missing5_burst_audit.csv": "68e5c83e5b8d7ba2b14f996ceabdeac9c67f9f652b0888042126f8cea73a6693",
+    "audit/test_realistic_missing5_mask_audit.csv": "5ae405dbb1432ed0ad9c9d5c453155eaf7f9deebcf65bff350c4046e60e054f5",
+    "audit/test_realistic_missing8_burst_audit.csv": "13a9b78a94bf728e9aa44cad90cc49e1e1244661c1b3ca27ad9980f86535fd3a",
+    "audit/test_realistic_missing8_mask_audit.csv": "41138d7d941ae13cd0952a762b054403a1b5a3d83a1d0f716141f6f57806b2b0",
+    "realistic_missing_field_manifest_step18.json": "3ab90edf236544451f4579c2305c23560903a3506e0502ec543139915f0d43de",
+    "realistic_missing_field_summary_step18.csv": "5de1f549ad81ca4760f5f9ccb2443d30a123c12bce62282609d302333788a912",
+    "test_complete_observable.csv": "6cd0620976d5fb52192eef615d641b089b215f62aa6aa89b872ca7b72fdf7bd1",
+    "test_realistic_missing2_observable.csv": "2cc428de02f43b9e6b5d21f8d06da5902c0aef16a388bb73a01db25426e19e95",
+    "test_realistic_missing5_observable.csv": "a31ea6895708779404b093147e58b71bc3b8a5ca78dcb9840edea653cdd51091",
+    "test_realistic_missing8_observable.csv": "1c24b53602c801ce8f9bcb14d8dae53dbbd04eb3df33a64f15b1ae36db77b8fe"
+  }
+}

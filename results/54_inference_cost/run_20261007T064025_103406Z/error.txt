@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\54.inference_cost_benchmark.py", line 942, in main
+    require(activity['status']!='BUSY' or args.allow_busy_gpu,
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            'Another compute process is using the GPU (possibly Step49). Run after it finishes; --preflight-only is safe now.')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\54.inference_cost_benchmark.py", line 73, in require
+    raise ValueError(message)
+ValueError: Another compute process is using the GPU (possibly Step49). Run after it finishes; --preflight-only is safe now.

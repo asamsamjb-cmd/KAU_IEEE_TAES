@@ -1,0 +1,32 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "formal": false,
+  "test_evaluation": false,
+  "encoder_convergence": "BUDGET_REVIEW_REQUIRED",
+  "tst_convergence": "PLATEAU_OBSERVED",
+  "first_epoch_f1": 0.4024433105507055,
+  "final_epoch_f1": 0.4096704218947027,
+  "best_epoch": 3,
+  "final_minus_first_f1": 0.007227111343997228,
+  "amp_skipped_updates": 34,
+  "encoder_optimizer_updates": 79094,
+  "tst_optimizer_updates": 10511,
+  "encoder_training_seconds": 8761.734711600002,
+  "extraction_seconds": 875.6120793999871,
+  "tst_training_seconds": 144.43936150008813,
+  "delta_direction": "Step 44 random-init minus Step 43 pretrained",
+  "random_minus_pretrained_window_common_f1": 0.00539379169850579,
+  "random_minus_pretrained_l10_f1": 0.005637371317709472,
+  "comparison_scope": "same training rules/maximum budget; realized epochs and optimizer updates may differ",
+  "evaluation_precision": "float32",
+  "limitations": [
+    "one diagnostic seed; exclude from formal seed statistics",
+    "same training rules and maximum budget, not necessarily equal realized optimizer steps or epochs",
+    "compared with the Step 43 random run BOTH learning rate and schedule horizon change",
+    "validation selects encoder/TST checkpoints and informs later settings; this is not held-out evidence",
+    "no full-convergence, equivalence, test-generalization or pure learning-rate causal claim",
+    "window and TST heads differ in capacity/training; common endpoints alone do not isolate time aggregation",
+    "all supplied shared-nominal episode labels are retained, including quiet attack windows; no evidence-based filtering or relabeling",
+    "overall validation F1 alone does not establish attack-evidence use or exclude generator signatures; interpret with the benchmark/evidence audits"
+  ]
+}

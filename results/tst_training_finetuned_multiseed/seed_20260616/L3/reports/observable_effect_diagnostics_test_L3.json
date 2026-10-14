@@ -1,0 +1,499 @@
+{
+  "split": "test",
+  "sequence_length": 3,
+  "diagnostic_basis": "Actual versus same-window nominal-counterfactual 22-field projection differences.",
+  "interpretation": "Descriptive post-hoc conditioning of fixed-checkpoint predictions. A zero difference is not a no-information proof, Bayes oracle/error bound or statement about class identifiability. Conditioning can change class/context composition and introduce selection bias. No labels, predictions, fitting samples or checkpoint-selection criteria are changed.",
+  "metric_basis": "Accuracy and NORMAL prediction fraction condition on each population/stratum. macro_f1_present_true_classes averages only classes with positive true support in that stratum; absent classes are listed, so this changing-class-basis metric must not replace or be directly compared with the main fixed-six-class macro-F1. Empty strata have null scalar metrics.",
+  "confusion_matrix_labels": [
+    "NORMAL",
+    "RF_LINK_JAMMING",
+    "GNSS_SPOOFING",
+    "UNAUTHORIZED_TELECOMMAND_INJECTION",
+    "TELECOMMAND_REPLAY",
+    "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+  ],
+  "populations": {
+    "full": {
+      "total_sequences": 43342,
+      "strata": {
+        "current_changed": {
+          "num_sequences": 11117,
+          "fraction_of_population": 0.2564948548751788,
+          "support_by_label": {
+            "NORMAL": 0,
+            "RF_LINK_JAMMING": 2174,
+            "GNSS_SPOOFING": 4996,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 1776,
+            "TELECOMMAND_REPLAY": 1148,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 1023
+          },
+          "present_true_labels": [
+            "RF_LINK_JAMMING",
+            "GNSS_SPOOFING",
+            "UNAUTHORIZED_TELECOMMAND_INJECTION",
+            "TELECOMMAND_REPLAY",
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+          ],
+          "absent_true_labels": [
+            "NORMAL"
+          ],
+          "accuracy": 0.9761626338040839,
+          "normal_prediction_fraction": 0.019789511558873797,
+          "macro_f1_present_true_classes": 0.9805856473135087,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              126,
+              2029,
+              14,
+              1,
+              0,
+              4
+            ],
+            [
+              13,
+              7,
+              4973,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1776,
+              0,
+              0
+            ],
+            [
+              5,
+              1,
+              0,
+              0,
+              1132,
+              10
+            ],
+            [
+              76,
+              3,
+              2,
+              0,
+              0,
+              942
+            ]
+          ]
+        },
+        "history_only_changed": {
+          "num_sequences": 7835,
+          "fraction_of_population": 0.1807715380000923,
+          "support_by_label": {
+            "NORMAL": 0,
+            "RF_LINK_JAMMING": 1600,
+            "GNSS_SPOOFING": 962,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 2213,
+            "TELECOMMAND_REPLAY": 1570,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 1490
+          },
+          "present_true_labels": [
+            "RF_LINK_JAMMING",
+            "GNSS_SPOOFING",
+            "UNAUTHORIZED_TELECOMMAND_INJECTION",
+            "TELECOMMAND_REPLAY",
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+          ],
+          "absent_true_labels": [
+            "NORMAL"
+          ],
+          "accuracy": 0.9493299298021698,
+          "normal_prediction_fraction": 0.04530950861518826,
+          "macro_f1_present_true_classes": 0.968247633458901,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              188,
+              1399,
+              13,
+              0,
+              0,
+              0
+            ],
+            [
+              32,
+              4,
+              926,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2211,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              0,
+              0,
+              1555,
+              12
+            ],
+            [
+              133,
+              5,
+              5,
+              0,
+              0,
+              1347
+            ]
+          ]
+        },
+        "no_observable_change": {
+          "num_sequences": 24390,
+          "fraction_of_population": 0.5627336071247289,
+          "support_by_label": {
+            "NORMAL": 6672,
+            "RF_LINK_JAMMING": 3566,
+            "GNSS_SPOOFING": 1093,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 3597,
+            "TELECOMMAND_REPLAY": 4929,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 4533
+          },
+          "present_true_labels": [
+            "NORMAL",
+            "RF_LINK_JAMMING",
+            "GNSS_SPOOFING",
+            "UNAUTHORIZED_TELECOMMAND_INJECTION",
+            "TELECOMMAND_REPLAY",
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+          ],
+          "absent_true_labels": [],
+          "accuracy": 0.26178761787617877,
+          "normal_prediction_fraction": 0.9357113571135711,
+          "macro_f1_present_true_classes": 0.0853034617643179,
+          "confusion_matrix": [
+            [
+              6246,
+              144,
+              232,
+              30,
+              1,
+              19
+            ],
+            [
+              3308,
+              75,
+              165,
+              12,
+              0,
+              6
+            ],
+            [
+              1015,
+              35,
+              39,
+              1,
+              0,
+              3
+            ],
+            [
+              3385,
+              59,
+              131,
+              14,
+              0,
+              8
+            ],
+            [
+              4618,
+              101,
+              168,
+              22,
+              1,
+              19
+            ],
+            [
+              4250,
+              100,
+              164,
+              8,
+              1,
+              10
+            ]
+          ]
+        }
+      }
+    },
+    "common_population": {
+      "total_sequences": 38078,
+      "strata": {
+        "current_changed": {
+          "num_sequences": 10714,
+          "fraction_of_population": 0.2813698198434792,
+          "support_by_label": {
+            "NORMAL": 0,
+            "RF_LINK_JAMMING": 2080,
+            "GNSS_SPOOFING": 4823,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 1668,
+            "TELECOMMAND_REPLAY": 1136,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 1007
+          },
+          "present_true_labels": [
+            "RF_LINK_JAMMING",
+            "GNSS_SPOOFING",
+            "UNAUTHORIZED_TELECOMMAND_INJECTION",
+            "TELECOMMAND_REPLAY",
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+          ],
+          "absent_true_labels": [
+            "NORMAL"
+          ],
+          "accuracy": 0.9774127310061602,
+          "normal_prediction_fraction": 0.018853836102296063,
+          "macro_f1_present_true_classes": 0.9813805572887553,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              112,
+              1951,
+              14,
+              0,
+              0,
+              3
+            ],
+            [
+              10,
+              4,
+              4806,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1668,
+              0,
+              0
+            ],
+            [
+              5,
+              1,
+              0,
+              0,
+              1120,
+              10
+            ],
+            [
+              75,
+              3,
+              2,
+              0,
+              0,
+              927
+            ]
+          ]
+        },
+        "history_only_changed": {
+          "num_sequences": 7568,
+          "fraction_of_population": 0.19874993434529126,
+          "support_by_label": {
+            "NORMAL": 0,
+            "RF_LINK_JAMMING": 1529,
+            "GNSS_SPOOFING": 876,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 2128,
+            "TELECOMMAND_REPLAY": 1562,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 1473
+          },
+          "present_true_labels": [
+            "RF_LINK_JAMMING",
+            "GNSS_SPOOFING",
+            "UNAUTHORIZED_TELECOMMAND_INJECTION",
+            "TELECOMMAND_REPLAY",
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+          ],
+          "absent_true_labels": [
+            "NORMAL"
+          ],
+          "accuracy": 0.9493921775898521,
+          "normal_prediction_fraction": 0.04505813953488372,
+          "macro_f1_present_true_classes": 0.9680278132049771,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              179,
+              1337,
+              13,
+              0,
+              0,
+              0
+            ],
+            [
+              29,
+              4,
+              843,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2126,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              0,
+              0,
+              1547,
+              12
+            ],
+            [
+              131,
+              5,
+              5,
+              0,
+              0,
+              1332
+            ]
+          ]
+        },
+        "no_observable_change": {
+          "num_sequences": 19796,
+          "fraction_of_population": 0.5198802458112296,
+          "support_by_label": {
+            "NORMAL": 5762,
+            "RF_LINK_JAMMING": 2856,
+            "GNSS_SPOOFING": 477,
+            "UNAUTHORIZED_TELECOMMAND_INJECTION": 2929,
+            "TELECOMMAND_REPLAY": 4060,
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE": 3712
+          },
+          "present_true_labels": [
+            "NORMAL",
+            "RF_LINK_JAMMING",
+            "GNSS_SPOOFING",
+            "UNAUTHORIZED_TELECOMMAND_INJECTION",
+            "TELECOMMAND_REPLAY",
+            "GROUND_SEGMENT_TTC_CONTROL_PATH_COMPROMISE"
+          ],
+          "absent_true_labels": [],
+          "accuracy": 0.2772782380278844,
+          "normal_prediction_fraction": 0.9344817134774702,
+          "macro_f1_present_true_classes": 0.08527002407270155,
+          "confusion_matrix": [
+            [
+              5394,
+              124,
+              199,
+              25,
+              1,
+              19
+            ],
+            [
+              2645,
+              63,
+              134,
+              8,
+              0,
+              6
+            ],
+            [
+              449,
+              18,
+              9,
+              1,
+              0,
+              0
+            ],
+            [
+              2751,
+              46,
+              114,
+              12,
+              0,
+              6
+            ],
+            [
+              3793,
+              92,
+              141,
+              15,
+              1,
+              18
+            ],
+            [
+              3467,
+              86,
+              143,
+              5,
+              1,
+              10
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "provenance": {
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "step8_run_id": "059d070ff62e5ddae8b3a596f6cd666b0bb0939ed9cf3098da1f4b78e8aaabb8",
+    "step9_run_id": "e39bea134697a8a44101bf111b7555b1cfd1f38a15eb118dd1067c9790ecad9b",
+    "step10_run_id": "5c49ef8835eb0e50d1825a4f39cbdeb08c40c4366744722b5ce3aac5dce6c266",
+    "step11_run_id": "900c1d5e46519435183eb918fe83f82f699872c8bb2e7bc6cc5813a6f42d8cd4"
+  },
+  "source_audit": {
+    "schema_version": "counterfactual_observable_change_v1",
+    "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+    "source_dataset_dir": "C:\\Users\\User\\Desktop\\2. 연구\\2. 26년 이후 연구\\1. IEEE TAES 저널\\코드 작성\\dataset\\shared_nominal_v2",
+    "step7_build_manifest_sha256": "319b84f92b298fed56a38a5b08845fc9b40154f8a6fef97437869b3d7555a8f2",
+    "split_files": {
+      "train": "audit/train_window_observable_effects.csv",
+      "val": "audit/val_window_observable_effects.csv",
+      "test": "audit/test_window_observable_effects.csv"
+    },
+    "artifacts": {
+      "audit/train_window_observable_effects.csv": "c5794738d486024523013be9c74cc3775162c2d95ba8c51e71c3603b499bde7d",
+      "audit/val_window_observable_effects.csv": "a11fdd6b9e68d61e3c9396f200530b40bd240be4faf566ec2bf2d085e6c8753d",
+      "audit/test_window_observable_effects.csv": "5c466f389a7f07ea57873316d6219a990f586277f70f46b8ca6df0313cefaa6e"
+    },
+    "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+  }
+}

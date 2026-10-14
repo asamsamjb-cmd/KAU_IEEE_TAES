@@ -1,0 +1,182 @@
+{
+  "python": "3.14.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "torch": "2.12.0+cu126",
+  "transformers": "5.10.2",
+  "numpy": "2.4.6",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 3060",
+  "cuda": "12.6",
+  "cudnn": 91002,
+  "torch_threads": 8,
+  "torch_interop_threads": 8,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "cuda_matmul_tf32": false,
+  "cudnn_tf32": false,
+  "precision": "FP32",
+  "gpu_activity": {
+    "status": "BACKGROUND_ACTIVITY_RECORDED",
+    "gpu_uuid": "c99a6425-b53e-4c58-65b5-66923c1b5e53",
+    "other_compute_processes": [
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 1792,
+        "name": "[Insufficient Permissions]",
+        "memory_mib": "[N/A]",
+        "resolved_name": "dwm",
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 5052,
+        "name": "[Insufficient Permissions]",
+        "memory_mib": "[N/A]",
+        "resolved_name": "GooglePlayGamesServices",
+        "classification": "unresolved"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 8464,
+        "name": "C:\\Windows\\explorer.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 13676,
+        "name": "C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftStickyNotes_6.1.4.0_x64__8wekyb3d8bbwe\\Microsoft.Notes.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 15700,
+        "name": "C:\\Windows\\SystemApps\\Microsoft.Windows.Search_cw5n1h2txyewy\\SearchApp.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 20516,
+        "name": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 21764,
+        "name": "C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.25072.81.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 23340,
+        "name": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA GeForce Experience\\NVIDIA Share.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 5316,
+        "name": "[Insufficient Permissions]",
+        "memory_mib": "[N/A]",
+        "resolved_name": "AcPowerNotification",
+        "classification": "unresolved"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 23440,
+        "name": "[Insufficient Permissions]",
+        "memory_mib": "[N/A]",
+        "resolved_name": "ArmourySwAgent",
+        "classification": "unresolved"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 22288,
+        "name": "C:\\Users\\User\\AppData\\Local\\Programs\\Notion\\Notion.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 17076,
+        "name": "C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 27284,
+        "name": "C:\\Program Files\\JetBrains\\PyCharm 2026.1.2\\jbr\\bin\\cef_server.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 11496,
+        "name": "C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 20656,
+        "name": "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 21284,
+        "name": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\154.0.4258.62\\msedgewebview2.exe",
+        "memory_mib": "[N/A]",
+        "resolved_name": null,
+        "classification": "desktop_or_system_name"
+      }
+    ],
+    "suspected_compute_processes": [],
+    "unresolved_processes": [
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 5052,
+        "name": "[Insufficient Permissions]",
+        "memory_mib": "[N/A]",
+        "resolved_name": "GooglePlayGamesServices",
+        "classification": "unresolved"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 5316,
+        "name": "[Insufficient Permissions]",
+        "memory_mib": "[N/A]",
+        "resolved_name": "AcPowerNotification",
+        "classification": "unresolved"
+      },
+      {
+        "gpu_uuid": "GPU-c99a6425-b53e-4c58-65b5-66923c1b5e53",
+        "pid": 23440,
+        "name": "[Insufficient Permissions]",
+        "memory_mib": "[N/A]",
+        "resolved_name": "ArmourySwAgent",
+        "classification": "unresolved"
+      }
+    ],
+    "background_review_required": true,
+    "detection_policy": "Windows process-name heuristic: suspected compute contexts pause by default; desktop and unresolved entries are recorded without blocking.",
+    "limitation": "A process/context listing is not utilization evidence. Desktop and unresolved processes may interfere. WDDM memory N/A does not mean zero usage; no idle-device proof."
+  }
+}

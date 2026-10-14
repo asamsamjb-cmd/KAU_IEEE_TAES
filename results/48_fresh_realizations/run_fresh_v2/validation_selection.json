@@ -1,0 +1,33 @@
+{
+  "selected_pool": "MeanMax_MLP",
+  "ewma_alpha": 0.25,
+  "ewma_validation_scores": [
+    {
+      "alpha": 0.1,
+      "macro_f1": 0.7985853587633424
+    },
+    {
+      "alpha": 0.25,
+      "macro_f1": 0.8043646128019689
+    },
+    {
+      "alpha": 0.5,
+      "macro_f1": 0.7163545450948559
+    },
+    {
+      "alpha": 0.75,
+      "macro_f1": 0.6255797518107875
+    },
+    {
+      "alpha": 1.0,
+      "macro_f1": 0.433140821518805
+    }
+  ],
+  "candidate_pool_mean_validation_f1": {
+    "Mean_MLP": 0.8397511433289111,
+    "Max_MLP": 0.8381479852951819,
+    "MeanMax_MLP": 0.8402666798453573
+  },
+  "selection_data": "clean validation only; no missing-mask or test metrics",
+  "all_ten_head_seeds_retained": true
+}

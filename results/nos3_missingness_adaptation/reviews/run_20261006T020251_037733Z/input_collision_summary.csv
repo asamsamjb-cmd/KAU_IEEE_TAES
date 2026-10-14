@@ -1,0 +1,3 @@
+﻿condition,endpoints,unique_inputs,conflicting_groups,endpoints_in_conflicting_groups,empirical_accuracy_ceiling,interpretation
+clean,38078,38078,0,0,1.0,Finite-sample deterministic accuracy ceiling for exact ordered observable inputs; not a macro-F1 ceiling or an estimate of population Bayes accuracy.
+fixed_mask14,38078,38078,0,0,1.0,Finite-sample deterministic accuracy ceiling for exact ordered observable inputs; not a macro-F1 ceiling or an estimate of population Bayes accuracy.

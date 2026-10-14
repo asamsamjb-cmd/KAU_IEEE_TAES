@@ -1,0 +1,24 @@
+{
+  "length": 20,
+  "seed": 20260611,
+  "validation": {
+    "accuracy": 0.9306323514627526,
+    "macro_precision": 0.9451830260982909,
+    "macro_recall": 0.9329778318529479,
+    "macro_f1": 0.9345884191611201,
+    "weighted_precision": 0.9455320443767754,
+    "weighted_recall": 0.9306323514627526,
+    "weighted_f1": 0.9334913189032528,
+    "total": 29841,
+    "correct": 27771
+  },
+  "best_epoch": 6,
+  "trained_epochs": 13,
+  "training_elapsed_seconds": 53.81396189999941,
+  "n_train": 144321,
+  "n_val": 29841,
+  "train_episode_count": 3508,
+  "val_episode_count": 753,
+  "endpoint_sha256": "848fe202527e9f4e6716df216cc1dadae841f88e7467be9a68db4ebfe8561fea",
+  "selected_by": "maximum validation macro-F1; no test evaluation"
+}

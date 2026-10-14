@@ -1,0 +1,2 @@
+﻿Model,Input representation,Temporal model,Accuracy,Macro-Precision,Macro-Recall,Macro-F1,Notes
+Fixed fine-tuned DistilBERT + LSTM (L=10),Fixed fine-tuned DistilBERT embedding sequence,LSTM,0.8358 $\pm$ 0.0007,0.8990 $\pm$ 0.0004,0.8381 $\pm$ 0.0007,0.8470 $\pm$ 0.0006,"same fixed fine-tuned embeddings, same L=10 sequences, same terminal-window labels as TST"

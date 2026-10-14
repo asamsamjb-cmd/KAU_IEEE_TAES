@@ -1,0 +1,19 @@
+{
+  "identity": "66be2001eaa909a164f6c9b3f72580ea5f4f63a500cc5af61c8bdf51f309640a",
+  "files": {
+    "masks_test.npz": "83fd45ea0493949b7cd3d9a1ccde838267ddb8433b7c29edd2a400e2d539df11",
+    "mask_audit_test.json": "7f43c970d05fb7eb3bacaba80e5921c1003dc056915ab9aa517e6d5e7397f93b",
+    "encoded_test.npz": "fc344faf35c91ae31bfc0805f168edaa9a9a7e0a7024912c7ecbcf5d0c2c0d6f"
+  },
+  "committed_at_utc": "2026-10-09T07:38:50.813176+00:00",
+  "contract": {
+    "seeds": [
+      5989319594863479938,
+      18330410039515592563,
+      2135968649619774676
+    ],
+    "n": 38078,
+    "codes_sha256": "4f9de5c70f7de33b91017a1902dc1999fba2e858ca92e214080cc60302cf28df",
+    "ends_sha256": "8ce83197a7e7e69fbbdb7495635f7d783268315d007101bed828bf5abad4928f"
+  }
+}

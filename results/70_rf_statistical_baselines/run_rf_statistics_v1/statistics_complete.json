@@ -1,0 +1,15 @@
+{
+  "protocol_identity": "6143e2605cf2b3cddf12d99ab5b3b21b7b486445a3f6c1d858436352e12c93a0",
+  "completed_at_utc": "2026-10-08T17:48:12.105989+00:00",
+  "artifacts": {
+    "model_summary.csv": "a2984c5dce60f0e94dad145a01dea86f9186e8d995b2be40838758a42d29ef4a",
+    "metric_intervals.csv": "b239fe66f6ccf54d6affa4627e07712cfd948cc4ed9b01a5847ff98f50e6eca6",
+    "metrics_by_fit.csv": "dd6761ae430edc7c57a04c45ce0bce59e30cfca76b3ce7ac85b11014be4d7198",
+    "rf_alarm_by_true_class.csv": "9c61eaff7c47403ee6d03fe261929083c3c08813fd1ca92a05c67786614c7449",
+    "primary_comparisons.csv": "d9124ff1cfb5734a8808fb125e0963aa59fb76f37693c681790c15e6cf50aa4f",
+    "bootstrap_components.npz": "76a72ad0dca4999039ca14350a5cb23fd6bd32d04160f2c4055820cb664692f4",
+    "bootstrap_distribution.npz": "28fcfbbd02987e0c28f444a0e70d9ea5933222c528e1073ee1f6754d4f0e0b3a",
+    "native_decision_reference.csv": "748304d7892362f034acc92dfe132a97bc2b091410c4ef2faeb292d8b0aa5f8e",
+    "summary.json": "2914b9a08fd55af6c736d53c0dc786d9aa73c112b9344511282ae8b0750729a7"
+  }
+}

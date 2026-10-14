@@ -1,0 +1,33 @@
+{
+  "protocol_id": "4a13b3cbace9901bc7778e59b710786a8d1f1851ea3b77acdcfb81c1c54d13f9",
+  "draws": 20000,
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "common_endpoints": 38078,
+  "test_episodes": 752,
+  "label_efficiency": {
+    "primary_prespecified_low_label_fraction_range": [
+      0.05,
+      0.1,
+      0.25
+    ],
+    "primary_contrast": "Semantic22 minus RawScoped HGB L10; normalized AULC against log(labeled episode fraction)",
+    "aulc_low_5_to_25": {
+      "delta": -0.012149577048684086,
+      "ci95_low": -0.01753357003957875,
+      "ci95_high": -0.006896414249811914
+    },
+    "aulc_all_5_to_100_secondary": {
+      "delta": -0.010672241976707419,
+      "ci95_low": -0.014874196736212519,
+      "ci95_high": -0.006414335916421567
+    }
+  },
+  "comparison_families": {
+    "label_budget": 5,
+    "fusion": 2
+  },
+  "uncertainty": "Class-stratified paired whole-test-episode bootstrap. Training seeds and episode sub-samples FIXED; confidence intervals do not cover new generator roots or deployment.",
+  "preregistration": "This is a revision analysis designed after seeing earlier main benchmark results; contrasts fixed before this Step73 test scoring.",
+  "interpretation": "Differences are comparative model results under this finite protocol, not proof of Semantic22 information gain or deployment generalization.",
+  "predictions_sha256": "dcd541dd67b106f4a05e76d5f38f90d2a21a96f9acfb8b3ef3e658d3770c9a89"
+}

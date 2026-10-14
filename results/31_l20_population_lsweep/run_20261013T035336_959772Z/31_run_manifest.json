@@ -1,0 +1,39 @@
+{
+  "schema": "taes_step31_same_population_lsweep_v1",
+  "status": "COMPLETE",
+  "started_utc": "2026-10-13T03:53:30.784574+00:00",
+  "finished_utc": "2026-10-13T03:53:37.859537+00:00",
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "seeds": [
+    20260610,
+    20260611,
+    20260612
+  ],
+  "lengths": [
+    1,
+    2,
+    3,
+    5,
+    10,
+    20
+  ],
+  "population": "L20-eligible test endpoints (Step 27/28 cohort); all lengths scored on the same endpoints",
+  "head_provenance": {
+    "L1-L10": "Step 12 historical heads, each trained on its own L-eligible training cohort",
+    "L20": "Step 27 heads trained on the L20-eligible training cohort"
+  },
+  "statistical_scope": "3 head seeds, mean and ddof=1 SD; no bootstrap; exploratory extension designed after the L20 test was inspected",
+  "reference_note": "Evidence-availability reference: ground-truth label where any paired-nominal change lies within the L-window context, else NORMAL; nondeployable, not a bound",
+  "script_sha256": "b813ed3b7b6aa5576bbdab6b63d7c9d33884bbd9037bb15e746499b88bddf975",
+  "artifacts": {
+    "31_gate_report.json": "a7e810b5cb18acb8e90e75de18b5f1894cd61b8c0b0dd8339bf2b834bccdeab5",
+    "31_per_class_f1.csv": "ccd7fffa16ed5383a2402c6f3a331aa3d72775877d2e1512d12da0b54a8d9360",
+    "31_per_class_f1_by_seed.csv": "98cb352c7e2aec842db04903b12dfcd8eb22914e7a2b85a11c706f4850ef3b47",
+    "31_per_seed_metrics.csv": "f3e98e314e59ade6662015f45a53b326a2ab8ce0c8ed364ebcc6f1e6378e45e3",
+    "fig_context_length_sweep_L20pop.pdf": "f65a8ee8bc2c1ff40c1b22c58567f00ac14caf69e57a87425695135ee5c6f854",
+    "fig_context_length_sweep_L20pop.png": "ae13be1b6eddec944c341639d74c042bade487e81ebaa041a26dab0ca3ff6ac7",
+    "fig_context_length_sweep_L20pop.svg": "6a04352281e2a7c59d05a0a48cc21da216f83ae12ca79c021e28921bef4d7ba2",
+    "fig_context_length_sweep_L20pop_values.csv": "315c803acb4bf170eec92457c6e0cf6e151eead7163e1d255366e4de27b3f0a9",
+    "sources.txt": "56cdfb32916711e29ac6ad214b2141994c94f4e95b74c93947bfb6b132bcbca3"
+  }
+}

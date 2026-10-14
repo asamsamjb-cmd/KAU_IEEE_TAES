@@ -1,0 +1,10 @@
+{
+  "source_sha256": "68d3cbd8c407ca8366e096b757a34848767512aabe9482bc827e29773bc821db",
+  "models": [
+    "TST_L1",
+    "TST_L10",
+    "Rule_L10"
+  ],
+  "purpose": "Unmodified earlier frozen-detector references. Adaptation effects use the newly matched clean-trained heads, not unmatched historical training.",
+  "independent_external_validation": false
+}

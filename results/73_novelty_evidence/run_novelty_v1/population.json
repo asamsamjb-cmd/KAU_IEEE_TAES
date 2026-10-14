@@ -1,0 +1,18 @@
+{
+  "dataset_id": "478f782ceb970d7a2de73319ccc4e929be06cfea684a054aa72d932ed65ae83b",
+  "train": {
+    "windows": 211006,
+    "endpoints_L10": 179414,
+    "episodes": 3511
+  },
+  "val": {
+    "windows": 44148,
+    "endpoints_L10": 37371,
+    "episodes": 753
+  },
+  "test": {
+    "windows": 44846,
+    "endpoints_L10": 38078,
+    "episodes": 752
+  }
+}

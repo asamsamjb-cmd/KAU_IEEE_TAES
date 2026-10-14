@@ -1,0 +1,51 @@
+{
+  "version": "1.0-nos3-evidence-mapping-sensitivity",
+  "mapping_version": "08.2-restricted-evidence-mapping",
+  "analysis": "Post-hoc mapping sensitivity on previously evaluated NOS3 records",
+  "conditions": {
+    "mapping": [
+      "V1",
+      "V2"
+    ],
+    "freshness": [
+      "observed_partial",
+      "freshness_unk"
+    ],
+    "serialization": [
+      "fixed_unk",
+      "omit_unknown_clauses"
+    ]
+  },
+  "models": [
+    "TST_L1",
+    "TST_L10",
+    "Rule_L10"
+  ],
+  "main_seed": 20260610,
+  "rules": "Structured inputs; evaluated once per mapping/freshness pair, not duplicated for textual serialization",
+  "roles": "Declared logical ground/monitored-spacecraft abstraction at the captured SIL boundary; not authenticated sender identity or physical RF path",
+  "tc_path_priority": "A captured TC frame makes TC the representative path, even when downlink packets coexist",
+  "telemetry": "FSW source to recorded COSMOS peer, outbound UDP 5013, complete version-0 telemetry packet header and exact length",
+  "absence": "No captured TC frame AND no reviewed native command event in the complete second; scoped absence only",
+  "cold_start": "UNK retained; no prior sequence inferred",
+  "events": "Native event stays in its observed second; no backward attribution",
+  "retained_unknown": [
+    "operational_phase",
+    "payload_or_parameter_context",
+    "signal_quality_state",
+    "tracking_stability",
+    "navigation_consistency",
+    "timing_consistency",
+    "decoder_status",
+    "retry_timeout_state",
+    "session_state",
+    "state_transition_consistency"
+  ],
+  "no_command_semantics": "NO_COMMAND/NOT_APPLICABLE do not assert healthy authentication, decoder, session or state transitions",
+  "freshness_ablation": "Remove the whole field, including TLM NOT_APPLICABLE; effect is not an isolated REPLAYED-token intervention",
+  "serialization": "Omission changes field names, text length and positions as well as UNK tokens",
+  "observations": "899 unique seconds; 30 command endpoints; all 809 common L10 endpoints; no independent-window statistical inference",
+  "truth": "25 ordinary command endpoints and 5 controlled replay endpoints; other endpoints have no class truth",
+  "comparison": "Same original fixed checkpoints and six-class argmax; V1 predictions must reproduce before V2 inference",
+  "scope": "No new benchmark mask evaluation, model selection, training, live commands or operational-performance claim"
+}

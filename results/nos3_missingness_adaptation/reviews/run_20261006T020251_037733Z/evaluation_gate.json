@@ -1,0 +1,11 @@
+{
+  "training_seal_sha256": "b73d5994183305830fcc46695e7b1ecb9611f4c5359ebc1b2070ebe58b3e49a8",
+  "protocol_id": "d169218861a325368fbcd4d7df8c799ee3bf19a36b02ca9c31d328627aebeddd",
+  "opened_utc": "2026-10-06T03:20:58.617374+00:00",
+  "head_hashes": {
+    "TST_L10__clean": "dd652ada46d012534f2345d3018b546395899a8eee7b4f852dd0bd170064bc74",
+    "TST_L10__mixed_mask14": "ce78732ab066053f8a382f9e09bc5d5b8f03514e06725ecb4d99ef6f9410c383",
+    "MeanMax_MLP__clean": "1213ec98bf225406c8f1b99fdf3600c8275bc01b71ae389ab072b70c73e845c8",
+    "MeanMax_MLP__mixed_mask14": "cd90cf1f887c2bf0b7013087611725893f53300accfe67a9c23c409156097cf1"
+  }
+}

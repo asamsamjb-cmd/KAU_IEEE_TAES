@@ -1,0 +1,27 @@
+{
+  "unseen_counts": {
+    "observation_stage": 0,
+    "path_type": 0,
+    "direction": 0,
+    "source_role": 0,
+    "destination_role": 0,
+    "protocol_context": 0,
+    "operational_phase": 0,
+    "message_type": 0,
+    "service_context": 0,
+    "command_intent": 0,
+    "payload_or_parameter_context": 0,
+    "sequence_freshness_status": 0,
+    "control_security_state": 0,
+    "signal_quality_state": 0,
+    "tracking_stability": 0,
+    "navigation_consistency": 0,
+    "timing_consistency": 0,
+    "decoder_status": 0,
+    "command_execution_result": 0,
+    "retry_timeout_state": 0,
+    "session_state": 0,
+    "state_transition_consistency": 0
+  },
+  "policy": "fixed train vocabulary, no test refit"
+}

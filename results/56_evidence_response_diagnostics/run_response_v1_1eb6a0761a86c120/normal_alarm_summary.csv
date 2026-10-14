@@ -1,0 +1,10 @@
+﻿family,normal_episodes,head_seeds,normal_episode_confirmed_alarm,normal_endpoint_false_alarm,normal_confirmed_pair_rate,exposure
+TST,130,10,0.19384615384615383,0.039829920166608815,0.029137073863636363,"Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+Mean_MLP,130,10,0.22692307692307692,0.040697674418604654,0.03293678977272728,"Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+Max_MLP,130,10,0.2992307692307692,0.0576883026726831,0.046697443181818184,"Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+MeanMax_MLP,130,10,0.27153846153846156,0.050590072891357175,0.03977272727272728,"Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+LSTM,130,10,0.23846153846153845,0.04057618882332524,0.03149857954545455,"Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+ProbabilityMean,130,1,0.38461538461538464,0.08382506074279764,0.06906960227272728,"Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+MajorityVote,130,1,1.0,0.745400902464422,0.681640625,"Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+EWMA,130,1,0.6615384615384615,0.10482471364109684,0.06321022727272728,"Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"
+Rule_L10,130,1,0.47692307692307695,0.11489066296424852,0.10262784090909091,"Complete observed normal episodes; unequal durations, shared by all models; overlapping pairs not independent"

@@ -1,0 +1,60 @@
+{
+  "status": "GATES_PASSED",
+  "G1_input_hashes": "matched Step 27 manifest and Step 28 input audit",
+  "G2_cohort_coverage": {
+    "test_endpoints": 30561,
+    "test_episodes": 751,
+    "endpoint_sha256": "51510e4bd6b487059a84bd666f5255a0121b7c327c7ffb4ac2bfa2e31cee7800"
+  },
+  "G3_step28_metrics_reproduced": true,
+  "G4_step28_change_counts_reproduced": true,
+  "G5_step27_reference_reproduced": true,
+  "findings_not_enforced": {
+    "tst_below_reference_at_every_L": true,
+    "lengths_where_tst_not_below_reference": [],
+    "tst_monotone_nondecreasing_in_L": true,
+    "reference_monotone_nondecreasing_in_L": true,
+    "gain_L10_to_L20_tst": 0.06403684524025766,
+    "gain_L10_to_L20_reference": 0.05864495128209901,
+    "gain_L1_to_L20_tst": 0.5048827045999913,
+    "gain_L1_to_L20_reference": 0.5070222427458413
+  },
+  "reference_by_L": {
+    "1": {
+      "macro_f1": 0.45517745202242743,
+      "accuracy": 0.4395798566800825,
+      "attack_coverage": 0.3436925199264255,
+      "attack_endpoints_with_change": 8969
+    },
+    "2": {
+      "macro_f1": 0.5920661698249077,
+      "accuracy": 0.5590131212983869,
+      "attack_coverage": 0.48356069895769466,
+      "attack_endpoints_with_change": 12619
+    },
+    "3": {
+      "macro_f1": 0.6784173594227653,
+      "accuracy": 0.6441870357645365,
+      "attack_coverage": 0.5833077866339669,
+      "attack_endpoints_with_change": 15222
+    },
+    "5": {
+      "macro_f1": 0.7849566746892999,
+      "accuracy": 0.760708092012696,
+      "attack_coverage": 0.7197654812998161,
+      "attack_endpoints_with_change": 18783
+    },
+    "10": {
+      "macro_f1": 0.9035547434861697,
+      "accuracy": 0.8983017571414548,
+      "attack_coverage": 0.880901287553648,
+      "attack_endpoints_with_change": 22988
+    },
+    "20": {
+      "macro_f1": 0.9621996947682687,
+      "accuracy": 0.9624685056117274,
+      "attack_coverage": 0.9560469037400368,
+      "attack_endpoints_with_change": 24949
+    }
+  }
+}

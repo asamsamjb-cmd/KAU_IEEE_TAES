@@ -1,0 +1,15 @@
+{
+  "weight_matrix_sha256_little_endian_int64": "70cf57a351ab230d4da31c63d40a168eeb87dd54e2ef14d35486c8b5f247ccd6",
+  "n_resamples": 20000,
+  "seed": 2026100150,
+  "batch_size": 200,
+  "strata_episode_counts": [
+    130,
+    125,
+    125,
+    123,
+    127,
+    122
+  ],
+  "all_models_and_detectors_use_same_draws": true
+}

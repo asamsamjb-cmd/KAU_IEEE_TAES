@@ -1,0 +1,8 @@
+{
+  "population": "First 16 validation L10 endpoints, without label/performance selection",
+  "windows": 25,
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "max_abs_difference": 2.6226043701171875e-06,
+  "status": "PASS"
+}

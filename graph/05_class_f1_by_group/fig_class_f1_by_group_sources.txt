@@ -1,0 +1,3 @@
+Step 53 test-time field-group removal, fixed Step 47 TST heads (ten seeds), 38,078 common test endpoints.
+Cell = mean class F1 over ten head seeds (percent).
+C:\Users\User\Desktop\2. 연구\2. 26년 이후 연구\1. IEEE TAES 저널\코드 작성\outputs\shared_nominal_v2\53_field_group_removal\run_group_removal_v2\per_class_metrics.csv

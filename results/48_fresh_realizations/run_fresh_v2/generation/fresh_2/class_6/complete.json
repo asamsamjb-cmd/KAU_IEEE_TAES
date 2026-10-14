@@ -1,0 +1,18 @@
+{
+  "identity": "7e15d744eb5d06e35352e7057959565b5000986d83a610ff8b9851f2bb5741f6",
+  "contract": "81c7fa9c2ef7813b9cc95ef21a4f5f2426d9f070533f8836e3465a812fe8dc19",
+  "result": {
+    "raw_audit_file": "observable_with_raw.csv",
+    "rows": 50000,
+    "background_stream": "825907856:5132109:6",
+    "observable_effect_windows": 6817,
+    "persistent_effect_windows": 0,
+    "paired_background": false,
+    "scope": "Actual versus paired nominal 22-field projection differences; audit only. No current attack, no projection difference, and no class information are distinct. These annotations are not model inputs, an oracle bound, or a proof of identifiability."
+  },
+  "completed_at_utc": "2026-10-06T13:13:32.539932+00:00",
+  "artifact_sha256": {
+    "observable.csv": "6a275e43b0e8ca5e207fd4dd3f6fa81851762e2dfa5de05781de7dbbd92384e3",
+    "observable_with_raw.csv": "8eff84be2dfc55fe7a1a3a3c1f0ebb6b000138e35b0e23b531d6120d47e23896"
+  }
+}
